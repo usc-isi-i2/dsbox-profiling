@@ -1,3 +1,14 @@
+### Requirements
+1. pandas >= 0.20.1
+
+### Usage
+use data_profile.py to profile the csv file into json format. Command line usage is as following:
+
+```sh
+python data_profile.py data.csv profiled_data.json
+```
+
+### Format
 the output JSON format:
 
 1. for columns
@@ -52,3 +63,7 @@ the output JSON format:
   }
 }
 ```
+
+notes:
+
+1. token: delimiter is blank space

@@ -9,7 +9,7 @@ most refer from: https://github.com/usc-isi-i2/dptk
 
 def convertAlphatoNum(input):
 
-    non_decimal = re.compile(r'[^\d.\s\w]+')
+    non_decimal = re.compile(r'[^\d\.]+')
     return non_decimal.sub(' ', input)
 
 def is_Integer_Number_Ext(s):
