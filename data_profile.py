@@ -1,34 +1,12 @@
 import pandas as pd
-import helper_funcs
 import json
 import sys
 
-def compute_length(column, feature):
-    """
-    compute the mean and std for a given series (column); 
-    mean and std precision: 5 after point
-    missing value (NaN): treated as does not exist
-    """
-    column = column.dropna() # get rid of all missing value
-    
-    feature["length"] = {} # for character and token
-    # 1. for character
-    feature["length"]["character"] = {}
-    lenth_for_all =  column.apply(len)
-    feature["length"]["character"]["average"] = '{0:.5g}'.format(lenth_for_all.mean())
-    feature["length"]["character"]["standard-deviation"] = '{0:.5g}'.format(lenth_for_all.std())
-    
-    # 2. for token
-    feature["length"]["token"] = {}
-    tokenlized = column.str.split()    # default: tokenlize by blank space (can be a hyper-parameter)
-    flatten_list = pd.Series([])
-    for i in tokenlized:
-        flatten_list = flatten_list.append(pd.Series(i), ignore_index = True)
-    
-    lenth_for_token = flatten_list.apply(len)
-    feature["length"]["token"]["average"] = '{0:.5g}'.format(lenth_for_token.mean())
-    feature["length"]["token"]["standard-deviation"] = '{0:.5g}'.format(lenth_for_token.std())
+import feature_compute_lfh
 
+"""
+Main function to profile the data.
+"""
 
 if __name__ == '__main__':
     # STEP 1: get dependency and read data 
@@ -43,11 +21,12 @@ if __name__ == '__main__':
     print "====================calculating the features ... ====================\n"
     result = {} # final result: dict of dict
 
-    for column in data:
+    for column_name in data:
         each_res = {} # dict: map feature name to content
-        compute_length(data[column], each_res)
+        feature_compute_lfh.compute_length(data[column_name], each_res)
+        feature_compute_lfh.compute_missing(data[column_name], each_res)
         
-        result[column] = each_res # add this column features into final result
+        result[column_name] = each_res # add this column features into final result
 
     print "====================calculations finished ====================\n"
     # STEP 3: wirting JSON formated output
