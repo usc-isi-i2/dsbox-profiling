@@ -1,3 +1,6 @@
+### Introduction
+This project is on-going project. Currently it goes on table features computation. We use DataFrame (supported by [Pandas](http://pandas.pydata.org)) as the main dataType for our data.
+
 ### Requirements
 1. pandas >= 0.20.1
 
@@ -17,7 +20,7 @@ the output JSON format:
 ```json
 {
   "column_id": {
-    "num_blank": "the number of blank values in this column",
+    "num_missing": "the number of missing values in this column",
     "language": "language code, en, sp, etc.",
     "length": {
       "character": {
