@@ -1,6 +1,6 @@
 import pandas as pd
 import numpy as np
-
+import helper_funcs as hf
 def tryConvert(cell):
     """
     convert a cell, if possible, to its supposed type(int, float, string)
@@ -54,4 +54,27 @@ def compute_numerics(column, feature):
         feature["decimal"] = numerical_stats(col_float,feature["num_nonblank"])
 
     if "integer" in feature or "decimal" in feature:
-        feature["numerics"] = numerical_stats(pd.concat([col_float,col_int]),feature["num_nonblank"])
+        feature["numeric"] = numerical_stats(pd.concat([col_float,col_int]),feature["num_nonblank"])
+
+def compute_numeric_tokens(column, feature, k=10):
+    """
+    return top k numerical tokens and their counts.
+    tokens are integer or floats
+    """
+    #num_split = lambda x: filter(lambda y: unicode(y).isnumeric(),x.split())    
+    num_split = lambda x: filter(lambda y: hf.is_Decimal_Number(y), x.split())
+    token = column.dropna().apply(num_split).apply(pd.Series).unstack().dropna()
+    if token.count() > 0:
+        feature["most_common_numeric_tokens"] = token.value_counts()[:k].to_dict()
+
+def compute_alphanumeric_tokens(column, feature, k=10):
+    """
+    return top k alphanumerical tokens and their counts.
+    tokens only contain alphabets and/or numbers, decimals with points not included 
+    """
+    alnum_split = lambda x: filter(lambda y: y.isalnum(),x.split())
+    token = column.dropna().apply(alnum_split).apply(pd.Series).unstack().dropna()
+    if token.count() > 0:
+        feature["most_common_alphanumeric_tokens"] = token.value_counts()[:k].to_dict()
+
+
