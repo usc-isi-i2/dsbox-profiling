@@ -24,8 +24,10 @@ if __name__ == '__main__':
 
     for column_name in data:
         each_res = {} # dict: map feature name to content
-        feature_compute_lfh.compute_length(data[column_name], each_res)
+        feature_compute_lfh.compute_length_distinct(data[column_name], each_res)
         feature_compute_lfh.compute_missing(data[column_name], each_res)
+        feature_compute_lfh.compute_lang(data[column_name], each_res)
+        feature_compute_lfh.compute_punctuation(data[column_name], each_res)
         
         result[column_name] = each_res # add this column features into final result
 
