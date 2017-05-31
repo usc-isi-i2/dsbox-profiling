@@ -10,6 +10,10 @@ Main function to profile the data.
 """
 
 if __name__ == '__main__':
+    # hyper-parameters
+    punctuation_outlier_weight = 2;
+    token_delimiter = " ";
+
     # STEP 1: get dependency and read data 
     data_path = sys.argv[1]
     output_filename = sys.argv[2]
@@ -24,10 +28,10 @@ if __name__ == '__main__':
 
     for column_name in data:
         each_res = {} # dict: map feature name to content
-        feature_compute_lfh.compute_length_distinct(data[column_name], each_res)
+        feature_compute_lfh.compute_length_distinct(data[column_name], each_res, delimiter=token_delimiter)
         feature_compute_lfh.compute_missing(data[column_name], each_res)
         feature_compute_lfh.compute_lang(data[column_name], each_res)
-        feature_compute_lfh.compute_punctuation(data[column_name], each_res, weight_outlier=2)
+        feature_compute_lfh.compute_punctuation(data[column_name], each_res, weight_outlier=punctuation_outlier_weight)
         
         result[column_name] = each_res # add this column features into final result
 

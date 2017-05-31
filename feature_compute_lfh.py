@@ -4,7 +4,7 @@ import helper_funcs
 import string
 import numpy as np
 
-# till now, this file totally compute 15 types of features
+# till now, this file totally compute 16 types of features
 
 def compute_missing(column, feature):
     """
@@ -13,7 +13,7 @@ def compute_missing(column, feature):
     feature["num_missing"] = pd.isnull(column).sum()
 
 
-def compute_length_distinct(column, feature):
+def compute_length_distinct(column, feature, delimiter):
     """
     two tasks because of some overlaping computation:
 
@@ -36,7 +36,7 @@ def compute_length_distinct(column, feature):
     
     # 2. for token
     feature["length"]["token"] = {}
-    tokenlized = column.str.split()    # default: tokenlize by blank space (can be a hyper-parameter)
+    tokenlized = column.str.split(delimiter)    # default: tokenlize by blank space (can be a hyper-parameter)
     flatten_list = pd.Series([])    # will be the series of tokens in this column
     for i in tokenlized:
         flatten_list = flatten_list.append(pd.Series(i), ignore_index = True)

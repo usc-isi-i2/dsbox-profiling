@@ -7,7 +7,7 @@ This project is on-going project. Currently it goes on table features computatio
 
 ### TODO
 1. set up some test cases
-2. merge some repeated computation? eg: in ```"num_distinct_tokens" (by fanghao)``` ```"most_common_tokens" (by ihui)`` both compute the Pandas Series of all tokens.
+2. merge some repeated computation? eg: in ```"num_distinct_tokens" (by fanghao)``` ```"most_common_tokens" (by ihui)``` both compute the Pandas Series of all tokens.
 
 ### Usage
 use data_profile.py to profile the csv file into json format. Command line usage is as following:
@@ -91,7 +91,7 @@ the output JSON format:
 
 notes:
 
-1. token: delimiter is blank space
+1. token: delimiter is a parameter (if set to ".", note that this will also be applied to floating numbers)
 2. precision for floats: 5 after point
 3. punctuations does not apply for numbers (eg: for number 1.23, "." does not count as a punctuation)
 
