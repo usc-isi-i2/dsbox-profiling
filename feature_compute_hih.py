@@ -56,9 +56,9 @@ def compute_numerics(column, feature):
     if "integer" in feature or "decimal" in feature:
         feature["numeric"] = numerical_stats(pd.concat([col_float,col_int]),feature["num_nonblank"])
 
-def compute_numeric_tokens(column, feature, k=10):
+def compute_common_numeric_tokens(column, feature, k=10):
     """
-    return top k numerical tokens and their counts.
+    return top k frequent numerical tokens and their counts.
     tokens are integer or floats
     """
     #num_split = lambda x: filter(lambda y: unicode(y).isnumeric(),x.split())    
@@ -67,14 +67,30 @@ def compute_numeric_tokens(column, feature, k=10):
     if token.count() > 0:
         feature["most_common_numeric_tokens"] = token.value_counts()[:k].to_dict()
 
-def compute_alphanumeric_tokens(column, feature, k=10):
+def compute_common_alphanumeric_tokens(column, feature, k=10):
     """
-    return top k alphanumerical tokens and their counts.
+    return top k frequent alphanumerical tokens and their counts.
     tokens only contain alphabets and/or numbers, decimals with points not included 
     """
     alnum_split = lambda x: filter(lambda y: y.isalnum(),x.split())
     token = column.dropna().apply(alnum_split).apply(pd.Series).unstack().dropna()
     if token.count() > 0:
         feature["most_common_alphanumeric_tokens"] = token.value_counts()[:k].to_dict()
+
+def compute_common_values(column, feature, k=10):
+    """
+    return top k frequent cell values and their counts.
+    """
+    if column.count() > 0:
+        feature["most_common_values"] = column.value_counts()[:k].to_dict()
+
+def compute_common_tokens(column, feature, k=10):
+    """
+    return top k frequent tokens and their counts.
+    currently: tokens separated by white space
+    """
+    token = column.dropna().apply(lambda x: x.split()).apply(pd.Series).unstack()
+    if token.count() > 0:
+        feature["most_common_tokens"] = token.value_counts()[:k].to_dict()
 
 

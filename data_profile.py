@@ -29,8 +29,10 @@ if __name__ == '__main__':
         feature_compute_lfh.compute_missing(data[column_name], each_res)
 
         feature_compute_hih.compute_numerics(data[column_name], each_res)
-        feature_compute_hih.compute_numeric_tokens(data[column_name], each_res)
-        feature_compute_hih.compute_alphanumeric_tokens(data[column_name], each_res)
+        feature_compute_hih.compute_common_numeric_tokens(data[column_name], each_res)
+        feature_compute_hih.compute_common_alphanumeric_tokens(data[column_name], each_res)
+        feature_compute_hih.compute_common_values(data[column_name], each_res)
+        feature_compute_hih.compute_common_tokens(data[column_name], each_res)
 
         result[column_name] = each_res # add this column features into final result
 
