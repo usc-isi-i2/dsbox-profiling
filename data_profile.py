@@ -27,7 +27,7 @@ if __name__ == '__main__':
         feature_compute_lfh.compute_length_distinct(data[column_name], each_res)
         feature_compute_lfh.compute_missing(data[column_name], each_res)
         feature_compute_lfh.compute_lang(data[column_name], each_res)
-        feature_compute_lfh.compute_punctuation(data[column_name], each_res)
+        feature_compute_lfh.compute_punctuation(data[column_name], each_res, weight_outlier=2)
         
         result[column_name] = each_res # add this column features into final result
 

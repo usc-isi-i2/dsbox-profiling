@@ -4,6 +4,7 @@ import helper_funcs
 import string
 import numpy as np
 
+# till now, this file totally compute 15 types of features
 
 def compute_missing(column, feature):
     """
@@ -81,10 +82,13 @@ def compute_lang(column, feature):
                 print "there is something may not be any language nor number: {}".format(cell)
                 pass
 
-def compute_punctuation(column, feature):
+def compute_punctuation(column, feature, weight_outlier):
     """
     compute the statistical values related to punctuations, for details, see the format section of README.
+
     not apply for numbers (eg: for number 1.23, "." does not count as a punctuation)
+
+    weight_outlier: = number_of_sigma in function "helper_outlier_calcu"
     """
 
     column = column.dropna() # get rid of all missing value
@@ -95,7 +99,7 @@ def compute_punctuation(column, feature):
 
     number_of_chars =  sum(column.apply(len))   # number of all chars in column
     num_chars_cell = np.zeros(column.size)   # number of chars for each cell
-    puncs_cell = np.zeros([column.size, len(string.punctuation)], dtype=int) # (number of cell * number of puncs) sized array
+    puncs_cell = np.zeros([column.size, len(string.punctuation)], dtype=int) # (number_of_cell * number_of_puncs) sized array
     
     # step 1: pre-calculations
     cell_id = -1
@@ -112,7 +116,6 @@ def compute_punctuation(column, feature):
     counts_column_punc = puncs_cell.sum(axis=0) # number of possible puncs in this column
     cell_density_array = puncs_cell / num_chars_cell.reshape([column.size, 1])
     puncs_density_average = cell_density_array.sum(axis=0) / column.size
-    # calculate outliers
 
     # step 2: extract from pre-calculated data
     # only create this feature when punctuations exist
@@ -121,7 +124,7 @@ def compute_punctuation(column, feature):
 
         # extract the counts to feature, for each punctuation
         for i in xrange(len(string.punctuation)):
-            if (counts_column_punc[i] == 0):
+            if (counts_column_punc[i] == 0):    # if no this punctuation occur in the whole column, ignore
                 continue
             else:
                 feature["frequent-entries"]["most_common_punctuations"][string.punctuation[i]] = {}
@@ -130,6 +133,21 @@ def compute_punctuation(column, feature):
                     float( '{0:.5g}'.format(counts_column_punc[i] / float(number_of_chars)) ) )
                 feature["frequent-entries"]["most_common_punctuations"][string.punctuation[i]]["density_of_cell"] = (
                     float( '{0:.5g}'.format(puncs_density_average[i])) )
+                # calculate outlier
+                outlier_array = helper_outlier_calcu(cell_density_array[:, i], weight_outlier)
+                feature["frequent-entries"]["most_common_punctuations"][string.punctuation[i]]["num_outlier_cells"] = sum(outlier_array)
 
-#def helper_outlier_calculation (array, ):
+def helper_outlier_calcu(array, number_of_sigma):
+    """
+    input: array is a 1D numpy array, number_of_sigma is a integer.
+    output: boolean array, size same with input array; true -> is outlier, false -> not outlier 
+    outlier def:
+        the values that not within mean +- (number_of_sigma * sigma) of the statics of the whole list
+    """
+    mean = np.mean(array)
+    std = np.std(array)
+    upper_bound = mean + number_of_sigma * std
+    lower_bound = mean - number_of_sigma * std
+    outlier = (array > upper_bound) + (array < lower_bound)
+    return outlier
 
