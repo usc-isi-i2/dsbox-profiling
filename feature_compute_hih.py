@@ -65,7 +65,9 @@ def compute_common_numeric_tokens(column, feature, k=10):
     num_split = lambda x: filter(lambda y: hf.is_Decimal_Number(y), x.split())
     token = column.dropna().apply(num_split).apply(pd.Series).unstack().dropna()
     if token.count() > 0:
-        feature["most_common_numeric_tokens"] = token.value_counts()[:k].to_dict()
+        if ("frequent-entries" not in feature.keys()):
+            feature["frequent-entries"] = {}
+        feature["frequent-entries"]["most_common_numeric_tokens"] = token.value_counts()[:k].to_dict()
 
 def compute_common_alphanumeric_tokens(column, feature, k=10):
     """
@@ -75,14 +77,18 @@ def compute_common_alphanumeric_tokens(column, feature, k=10):
     alnum_split = lambda x: filter(lambda y: y.isalnum(),x.split())
     token = column.dropna().apply(alnum_split).apply(pd.Series).unstack().dropna()
     if token.count() > 0:
-        feature["most_common_alphanumeric_tokens"] = token.value_counts()[:k].to_dict()
+        if ("frequent-entries" not in feature.keys()):
+            feature["frequent-entries"] = {}
+        feature["frequent-entries"]["most_common_alphanumeric_tokens"] = token.value_counts()[:k].to_dict()
 
 def compute_common_values(column, feature, k=10):
     """
     compute top k frequent cell values and their counts.
     """
     if column.count() > 0:
-        feature["most_common_values"] = column.value_counts()[:k].to_dict()
+        if ("frequent-entries" not in feature.keys()):
+            feature["frequent-entries"] = {}
+        feature["frequent-entries"]["most_common_values"] = column.value_counts()[:k].to_dict()
 
 def compute_common_tokens(column, feature, k=10):
     """
@@ -91,7 +97,9 @@ def compute_common_tokens(column, feature, k=10):
     """
     token = column.dropna().apply(lambda x: x.split()).apply(pd.Series).unstack()
     if token.count() > 0:
-        feature["most_common_tokens"] = token.value_counts()[:k].to_dict()
+        if ("frequent-entries" not in feature.keys()):
+            feature["frequent-entries"] = {}
+        feature["frequent-entries"]["most_common_tokens"] = token.value_counts()[:k].to_dict()
 
 def compute_numeric_density(column, feature):
     """
