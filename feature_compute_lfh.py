@@ -36,21 +36,17 @@ def compute_length_distinct(column, feature, delimiter):
     
     # 2. for token
     feature["length"]["token"] = {}
-    tokenlized = column.str.split(delimiter)    # default: tokenlize by blank space (can be a hyper-parameter)
-    flatten_list = pd.Series([])    # will be the series of tokens in this column
-    for i in tokenlized:
-        flatten_list = flatten_list.append(pd.Series(i), ignore_index = True)
-    
-    lenth_for_token = flatten_list.apply(len)
+    tokenlized = column.str.split(delimiter, expand=True).unstack().dropna()    # tokenlized Series
+    lenth_for_token = tokenlized.apply(len)
     feature["length"]["token"]["average"] = float( '{0:.5g}'.format(lenth_for_token.mean()) )
     feature["length"]["token"]["standard-deviation"] = float( '{0:.5g}'.format(lenth_for_token.std()) )
     
     # (2)
     feature["num_distinct_values"] = column.nunique()
     feature["ratio_distinct_values"] = float( '{0:.5g}'.format(feature["num_distinct_values"] / float(column.size)) )
-        # using the pre-computed flatten_list in (1), which is series of all tokens
-    feature["num_distinct_tokens"] = flatten_list.nunique()
-    feature["ratio_distinct_tokens"] = float( '{0:.5g}'.format(feature["num_distinct_tokens"] / float(flatten_list.size)) )
+        # using the pre-computed tokenlized in (1), which is series of all tokens
+    feature["num_distinct_tokens"] = tokenlized.nunique()
+    feature["ratio_distinct_tokens"] = float( '{0:.5g}'.format(feature["num_distinct_tokens"] / float(tokenlized.size)) )
     
 
 
