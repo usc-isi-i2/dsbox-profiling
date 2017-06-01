@@ -58,7 +58,7 @@ def compute_numerics(column, feature):
 
 def compute_common_numeric_tokens(column, feature, k=10):
     """
-    return top k frequent numerical tokens and their counts.
+    compute top k frequent numerical tokens and their counts.
     tokens are integer or floats
     """
     #num_split = lambda x: filter(lambda y: unicode(y).isnumeric(),x.split())    
@@ -69,7 +69,7 @@ def compute_common_numeric_tokens(column, feature, k=10):
 
 def compute_common_alphanumeric_tokens(column, feature, k=10):
     """
-    return top k frequent alphanumerical tokens and their counts.
+    compute top k frequent alphanumerical tokens and their counts.
     tokens only contain alphabets and/or numbers, decimals with points not included 
     """
     alnum_split = lambda x: filter(lambda y: y.isalnum(),x.split())
@@ -79,18 +79,24 @@ def compute_common_alphanumeric_tokens(column, feature, k=10):
 
 def compute_common_values(column, feature, k=10):
     """
-    return top k frequent cell values and their counts.
+    compute top k frequent cell values and their counts.
     """
     if column.count() > 0:
         feature["most_common_values"] = column.value_counts()[:k].to_dict()
 
 def compute_common_tokens(column, feature, k=10):
     """
-    return top k frequent tokens and their counts.
+    compute top k frequent tokens and their counts.
     currently: tokens separated by white space
     """
     token = column.dropna().apply(lambda x: x.split()).apply(pd.Series).unstack()
     if token.count() > 0:
         feature["most_common_tokens"] = token.value_counts()[:k].to_dict()
 
-
+def compute_numeric_density(column, feature):
+    """
+    compute overall density of numeric characters in the column.
+    """
+    density = lambda x: (sum(c.isdigit() for c in x),len(x))
+    digit_total = column.dropna().apply(density).apply(pd.Series).sum()
+    feature["numeric_density"] = round(float(digit_total[0])/digit_total[1], 5)
