@@ -39,6 +39,31 @@ the output JSON format:
     },
     "num_integer": "the number of cell that it contains integer",
     "num_decimal": "the number of cell that it contains decimal",
+    "integer": {
+        "mean": "mean of integers in the column",
+        "standard-deviation": "standard deviation of integers in the column",
+        "Q1": "first quartile(25%) of integers in the column",
+        "Q2": "second quartile(50%, median) of integers in the column",
+        "Q3": "third quartile(75%) of integers in the column",
+        "ratio": "ratio of integers in the column, #int divided by #non-blank"
+    },
+    "decimal": {
+        "mean": "mean of integers in the column",
+        "standard-deviation": "standard deviation of decimals in the column",
+        "Q1": "first quartile(25%) of decimals in the column",
+        "Q2": "second quartile(50%, median) of decimals in the column",
+        "Q3": "third quartile(75%) of decimals in the column",
+        "ratio": "ratio of decimals in the column, #int divided by #non-blank"
+    },
+    "numeric": {
+        "mean": "mean of numerical values in the column",
+        "standard-deviation": "standard deviation of integers in the column",
+        "Q1": "first quartile(25%) of integers in the column",
+        "Q2": "second quartile(50%, median) of integers in the column",
+        "Q3": "third quartile(75%) of integers in the column",
+        "ratio": "ratio of integers in the column, #int divided by #non-blank"
+    },
+    "numeric_density": "density of arabic numbers of the column",
     "num_distinct_values": "the number of distinct values (consider the content in a cell as a value), ignore the missing value",
     "ratio_distinct_values": "num_distinct_values/num_rows, for num_rows, also ignore the missing value",
     "num_distinct_tokens": "same as num_distinct_values, but consider each token as a value, ignore the missing value",
