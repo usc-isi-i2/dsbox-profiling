@@ -31,22 +31,22 @@ def compute_length_distinct(column, feature, delimiter):
     # 1. for character
     feature["length"]["character"] = {}
     lenth_for_all =  column.apply(len)
-    feature["length"]["character"]["average"] = float( '{0:.5g}'.format(lenth_for_all.mean()) )
-    feature["length"]["character"]["standard-deviation"] = float( '{0:.5g}'.format(lenth_for_all.std()) )
+    feature["length"]["character"]["average"] = round(lenth_for_all.mean(), 5)
+    feature["length"]["character"]["standard-deviation"] = round(lenth_for_all.std(), 5)
     
     # 2. for token
     feature["length"]["token"] = {}
     tokenlized = column.str.split(delimiter, expand=True).unstack().dropna()    # tokenlized Series
     lenth_for_token = tokenlized.apply(len)
-    feature["length"]["token"]["average"] = float( '{0:.5g}'.format(lenth_for_token.mean()) )
-    feature["length"]["token"]["standard-deviation"] = float( '{0:.5g}'.format(lenth_for_token.std()) )
+    feature["length"]["token"]["average"] = round(lenth_for_token.mean(), 5)
+    feature["length"]["token"]["standard-deviation"] = round(lenth_for_token.std(), 5)
     
     # (2)
     feature["num_distinct_values"] = column.nunique()
-    feature["ratio_distinct_values"] = float( '{0:.5g}'.format(feature["num_distinct_values"] / float(column.size)) )
+    feature["ratio_distinct_values"] = round(feature["num_distinct_values"] / float(column.size), 5)
         # using the pre-computed tokenlized in (1), which is series of all tokens
     feature["num_distinct_tokens"] = tokenlized.nunique()
-    feature["ratio_distinct_tokens"] = float( '{0:.5g}'.format(feature["num_distinct_tokens"] / float(tokenlized.size)) )
+    feature["ratio_distinct_tokens"] = round(feature["num_distinct_tokens"] / float(tokenlized.size), 5)
     
 
 
@@ -89,10 +89,6 @@ def compute_punctuation(column, feature, weight_outlier):
 
     column = column.dropna() # get rid of all missing value
 
-    # because is one subclass of "frequent-entries"
-    if ("frequent-entries" not in feature.keys()):
-        feature["frequent-entries"] = {}
-
     number_of_chars =  sum(column.apply(len))   # number of all chars in column
     num_chars_cell = np.zeros(column.size)   # number of chars for each cell
     puncs_cell = np.zeros([column.size, len(string.punctuation)], dtype=int) # (number_of_cell * number_of_puncs) sized array
@@ -116,6 +112,8 @@ def compute_punctuation(column, feature, weight_outlier):
     # step 2: extract from pre-calculated data
     # only create this feature when punctuations exist
     if (sum(counts_column_punc) > 0):
+        if ("frequent-entries" not in feature.keys()):
+            feature["frequent-entries"] = {}
         feature["frequent-entries"]["most_common_punctuations"] = {}
 
         # extract the counts to feature, for each punctuation
@@ -126,9 +124,9 @@ def compute_punctuation(column, feature, weight_outlier):
                 feature["frequent-entries"]["most_common_punctuations"][string.punctuation[i]] = {}
                 feature["frequent-entries"]["most_common_punctuations"][string.punctuation[i]]["count"] = counts_column_punc[i]
                 feature["frequent-entries"]["most_common_punctuations"][string.punctuation[i]]["density_of_all"] = ( 
-                    float( '{0:.5g}'.format(counts_column_punc[i] / float(number_of_chars)) ) )
+                    round(counts_column_punc[i] / float(number_of_chars), 5) )
                 feature["frequent-entries"]["most_common_punctuations"][string.punctuation[i]]["density_of_cell"] = (
-                    float( '{0:.5g}'.format(puncs_density_average[i])) )
+                    round(puncs_density_average[i], 5) )
                 # calculate outlier
                 outlier_array = helper_outlier_calcu(cell_density_array[:, i], weight_outlier)
                 feature["frequent-entries"]["most_common_punctuations"][string.punctuation[i]]["num_outlier_cells"] = sum(outlier_array)

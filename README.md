@@ -25,16 +25,16 @@ the output JSON format:
 ```json
 {
   "column_id": {
-    "num_missing": "the number of missing values in this column",
+    "num_missing": "the number of missing values (empty cells) in this column",
     "language": "language code, en, sp, etc.",
     "length": {
       "character": {
-        "average": "average number of chars in every cell, in this column",
-        "standard-deviation": "standard deviation of the number of chars in cells, in this column"
+        "average": "mean value of (number of chars in every cell)",
+        "standard-deviation": "standard deviation of (number of chars in every cell)"
       },
       "token": {
-        "average": "average number of tokens, separating by blank or punctuation",
-        "standard-deviation": "token standard deviation"
+        "average": "mean value of (number of chars for every token)",
+        "standard-deviation": "standard deviation of (number of chars for every token)"
       }
     },
     "num_integer": "the number of cell that it contains integer",
