@@ -6,20 +6,16 @@ import sys
 import feature_compute_lfh
 import feature_compute_hih
 
-"""
-Main function to profile the data.
-"""
-
-if __name__ == '__main__':
+def profile_data(data_path, output_filename):
+    """
+    Main function to profile the data.
+    """
     # hyper-parameters
     punctuation_outlier_weight = 2;
     token_delimiter = " ";
 
     # STEP 1: get dependency and read data
-    data_path = sys.argv[1]
-    output_filename = sys.argv[2]
-    # if not specify dtype, it will read in some format: like int
-    data = pd.read_csv(data_path, dtype = object)
+    data = pd.read_csv(data_path, dtype = object)   # all read as str
     print "====================have a look on the data: ====================\n"
     print data.head()
 
@@ -46,8 +42,15 @@ if __name__ == '__main__':
     print "====================calculations finished ====================\n"
     # STEP 3: wirting JSON formated output
     print "     ====================>> wirting to file: {}\n".format(output_filename)
-    output_json = json.dumps(result)
+    output_json = json.dumps(result, indent=4)
     f = open(output_filename, 'w')
     f.write(output_json)
     f.close()
     print  "======================ALL DONE ===================="
+
+
+if __name__ == '__main__':
+    """
+    main function to execute profiler
+    """
+    profile_data(sys.argv[1], sys.argv[2])

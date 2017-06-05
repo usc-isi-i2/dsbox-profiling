@@ -1,0 +1,212 @@
+{
+    "SentenceFilename": {
+        "ratio_distinct_tokens": 0.91334, 
+        "num_integer": 0, 
+        "language": {
+            "en": 23366
+        }, 
+        "num_decimal": 0, 
+        "frequent-entries": {
+            "most_common_values": {
+                "D557-6.txt": 6, 
+                "D359-28.txt": 6, 
+                "D359-12.txt": 6, 
+                "D359-25.txt": 7, 
+                "D359-18.txt": 7, 
+                "D557-0.txt": 6, 
+                "D359-17.txt": 7, 
+                "D359-11.txt": 6, 
+                "D359-16.txt": 7, 
+                "D359-26.txt": 6
+            }, 
+            "most_common_punctuations": {
+                "-": {
+                    "count": 23366, 
+                    "density_of_cell": 0.09303, 
+                    "density_of_all": 0.09261, 
+                    "num_outlier_cells": 698
+                }, 
+                ".": {
+                    "count": 23366, 
+                    "density_of_cell": 0.09303, 
+                    "density_of_all": 0.09261, 
+                    "num_outlier_cells": 698
+                }
+            }, 
+            "most_common_tokens": {
+                "D557-6.txt": 6, 
+                "D359-28.txt": 6, 
+                "D359-12.txt": 6, 
+                "D359-25.txt": 7, 
+                "D359-18.txt": 7, 
+                "D557-0.txt": 6, 
+                "D359-17.txt": 7, 
+                "D359-11.txt": 6, 
+                "D359-16.txt": 7, 
+                "D359-26.txt": 6
+            }
+        }, 
+        "num_nonblank": 23366, 
+        "num_missing": 0, 
+        "num_distinct_values": 21341, 
+        "length": {
+            "token": {
+                "average": 10.79795, 
+                "standard-deviation": 0.71063
+            }, 
+            "character": {
+                "average": 10.79795, 
+                "standard-deviation": 0.71063
+            }
+        }, 
+        "numeric_density": 0.44434, 
+        "ratio_distinct_values": 0.91334, 
+        "num_distinct_tokens": 21341
+    }, 
+    "QuestionFilename": {
+        "ratio_distinct_tokens": 0.12895, 
+        "num_integer": 0, 
+        "language": {
+            "vi": 23366
+        }, 
+        "num_decimal": 0, 
+        "frequent-entries": {
+            "most_common_values": {
+                "Q1075.txt": 26, 
+                "Q187.txt": 27, 
+                "Q1243.txt": 27, 
+                "Q1843.txt": 26, 
+                "Q2203.txt": 28, 
+                "Q558.txt": 26, 
+                "Q1068.txt": 26, 
+                "Q1409.txt": 26, 
+                "Q223.txt": 27, 
+                "Q2184.txt": 27
+            }, 
+            "most_common_punctuations": {
+                ".": {
+                    "count": 23366, 
+                    "density_of_cell": 0.11658, 
+                    "density_of_all": 0.11603, 
+                    "num_outlier_cells": 844
+                }
+            }, 
+            "most_common_tokens": {
+                "Q1075.txt": 26, 
+                "Q187.txt": 27, 
+                "Q1243.txt": 27, 
+                "Q1843.txt": 26, 
+                "Q2203.txt": 28, 
+                "Q558.txt": 26, 
+                "Q1068.txt": 26, 
+                "Q1409.txt": 26, 
+                "Q223.txt": 27, 
+                "Q2184.txt": 27
+            }
+        }, 
+        "num_nonblank": 23366, 
+        "num_missing": 0, 
+        "num_distinct_values": 3013, 
+        "length": {
+            "token": {
+                "average": 8.61846, 
+                "standard-deviation": 0.56481
+            }, 
+            "character": {
+                "average": 8.61846, 
+                "standard-deviation": 0.56481
+            }
+        }, 
+        "numeric_density": 0.41985, 
+        "ratio_distinct_values": 0.12895, 
+        "num_distinct_tokens": 3013
+    }, 
+    "d3mIndex": {
+        "ratio_distinct_tokens": 1.0, 
+        "num_integer": 23366, 
+        "language": {}, 
+        "num_decimal": 0, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "18189": 1, 
+                "18188": 1, 
+                "18185": 1, 
+                "18184": 1, 
+                "26489": 1, 
+                "7436": 1, 
+                "18345": 1, 
+                "18344": 1, 
+                "9858": 1, 
+                "11777": 1
+            }, 
+            "most_common_values": {
+                "18189": 1, 
+                "18188": 1, 
+                "18185": 1, 
+                "18184": 1, 
+                "26489": 1, 
+                "7436": 1, 
+                "18345": 1, 
+                "18344": 1, 
+                "9858": 1, 
+                "11777": 1
+            }, 
+            "most_common_tokens": {
+                "18189": 1, 
+                "18188": 1, 
+                "18185": 1, 
+                "18184": 1, 
+                "26489": 1, 
+                "7436": 1, 
+                "18345": 1, 
+                "18344": 1, 
+                "9858": 1, 
+                "11777": 1
+            }, 
+            "most_common_alphanumeric_tokens": {
+                "18189": 1, 
+                "18188": 1, 
+                "18185": 1, 
+                "18184": 1, 
+                "26489": 1, 
+                "7436": 1, 
+                "18345": 1, 
+                "18344": 1, 
+                "9858": 1, 
+                "11777": 1
+            }
+        }, 
+        "num_nonblank": 23366, 
+        "num_missing": 0, 
+        "num_distinct_values": 23366, 
+        "length": {
+            "token": {
+                "average": 4.62086, 
+                "standard-deviation": 0.56392
+            }, 
+            "character": {
+                "average": 4.62086, 
+                "standard-deviation": 0.56392
+            }
+        }, 
+        "numeric_density": 1.0, 
+        "numeric": {
+            "Q1": 7341.25, 
+            "Q3": 21867.75, 
+            "standard-deviation": 8410.74121, 
+            "ratio": 1.0, 
+            "Q2": 14571.5, 
+            "mean": 14597.56171
+        }, 
+        "ratio_distinct_values": 1.0, 
+        "integer": {
+            "Q1": 7341.25, 
+            "Q3": 21867.75, 
+            "standard-deviation": 8410.74121, 
+            "ratio": 1.0, 
+            "Q2": 14571.5, 
+            "mean": 14597.56171
+        }, 
+        "num_distinct_tokens": 23366
+    }
+}

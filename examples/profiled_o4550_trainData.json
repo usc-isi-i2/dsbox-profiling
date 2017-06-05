@@ -1,0 +1,6130 @@
+{
+    "Genotype": {
+        "ratio_distinct_tokens": 0.00231, 
+        "num_integer": 0, 
+        "language": {
+            "nl": 408, 
+            "it": 457
+        }, 
+        "num_decimal": 0, 
+        "frequent-entries": {
+            "most_common_values": {
+                "Control": 457, 
+                "Ts65Dn": 408
+            }, 
+            "most_common_tokens": {
+                "Control": 457, 
+                "Ts65Dn": 408
+            }, 
+            "most_common_alphanumeric_tokens": {
+                "Control": 457, 
+                "Ts65Dn": 408
+            }
+        }, 
+        "num_nonblank": 865, 
+        "num_missing": 0, 
+        "num_distinct_values": 2, 
+        "length": {
+            "token": {
+                "average": 6.52832, 
+                "standard-deviation": 0.49949
+            }, 
+            "character": {
+                "average": 6.52832, 
+                "standard-deviation": 0.49949
+            }
+        }, 
+        "numeric_density": 0.1445, 
+        "ratio_distinct_values": 0.00231, 
+        "num_distinct_tokens": 2
+    }, 
+    "ITSN1_N": {
+        "ratio_distinct_tokens": 1.0, 
+        "num_integer": 0, 
+        "language": {}, 
+        "num_decimal": 863, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "0.332433291": 1, 
+                "0.503141897": 1, 
+                "0.499109641": 1, 
+                "0.492907348": 1, 
+                "0.584891116": 1, 
+                "0.805064675": 1, 
+                "1.063760627": 1, 
+                "0.466881325": 1, 
+                "0.426959955": 1, 
+                "1.052328373": 1
+            }, 
+            "most_common_values": {
+                "0.332433291": 1, 
+                "0.503141897": 1, 
+                "0.499109641": 1, 
+                "0.492907348": 1, 
+                "0.584891116": 1, 
+                "0.805064675": 1, 
+                "1.063760627": 1, 
+                "0.466881325": 1, 
+                "0.426959955": 1, 
+                "1.052328373": 1
+            }, 
+            "most_common_tokens": {
+                "0.332433291": 1, 
+                "0.503141897": 1, 
+                "0.499109641": 1, 
+                "0.492907348": 1, 
+                "0.584891116": 1, 
+                "0.805064675": 1, 
+                "1.063760627": 1, 
+                "0.466881325": 1, 
+                "0.426959955": 1, 
+                "1.052328373": 1
+            }
+        }, 
+        "num_nonblank": 863, 
+        "num_missing": 2, 
+        "num_distinct_values": 863, 
+        "length": {
+            "token": {
+                "average": 10.84936, 
+                "standard-deviation": 0.53467
+            }, 
+            "character": {
+                "average": 10.84936, 
+                "standard-deviation": 0.53467
+            }
+        }, 
+        "numeric_density": 0.90783, 
+        "numeric": {
+            "Q1": 0.47293, 
+            "Q3": 0.69006, 
+            "standard-deviation": 0.24339, 
+            "ratio": 1.0, 
+            "Q2": 0.56483, 
+            "mean": 0.61455
+        }, 
+        "ratio_distinct_values": 1.0, 
+        "num_distinct_tokens": 863, 
+        "decimal": {
+            "Q1": 0.47293, 
+            "Q3": 0.69006, 
+            "standard-deviation": 0.24339, 
+            "ratio": 1.0, 
+            "Q2": 0.56483, 
+            "mean": 0.61455
+        }
+    }, 
+    "BCL2_N": {
+        "ratio_distinct_tokens": 1.0, 
+        "num_integer": 0, 
+        "language": {}, 
+        "num_decimal": 631, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "0.129700599": 1, 
+                "0.140941766": 1, 
+                "0.199207307": 1, 
+                "0.111146522": 1, 
+                "0.128192614": 1, 
+                "0.133046826": 1, 
+                "0.132965897": 1, 
+                "0.129794911": 1, 
+                "0.1003245": 1, 
+                "0.184583333": 1
+            }, 
+            "most_common_values": {
+                "0.129700599": 1, 
+                "0.199207307": 1, 
+                "0.111146522": 1, 
+                "0.133046826": 1, 
+                "0.132965897": 1, 
+                "0.129794911": 1, 
+                "0.133663937": 1, 
+                "0.1003245": 1, 
+                "0.149856425": 1, 
+                "0.184583333": 1
+            }, 
+            "most_common_tokens": {
+                "0.129700599": 1, 
+                "0.140941766": 1, 
+                "0.199207307": 1, 
+                "0.111146522": 1, 
+                "0.128192614": 1, 
+                "0.133046826": 1, 
+                "0.132965897": 1, 
+                "0.129794911": 1, 
+                "0.1003245": 1, 
+                "0.184583333": 1
+            }
+        }, 
+        "num_nonblank": 631, 
+        "num_missing": 234, 
+        "num_distinct_values": 631, 
+        "length": {
+            "token": {
+                "average": 10.87797, 
+                "standard-deviation": 0.38132
+            }, 
+            "character": {
+                "average": 10.87797, 
+                "standard-deviation": 0.38132
+            }
+        }, 
+        "numeric_density": 0.90807, 
+        "numeric": {
+            "Q1": 0.11577, 
+            "Q3": 0.14896, 
+            "standard-deviation": 0.02773, 
+            "ratio": 1.0, 
+            "Q2": 0.12985, 
+            "mean": 0.13525
+        }, 
+        "ratio_distinct_values": 1.0, 
+        "num_distinct_tokens": 631, 
+        "decimal": {
+            "Q1": 0.11577, 
+            "Q3": 0.14896, 
+            "standard-deviation": 0.02773, 
+            "ratio": 1.0, 
+            "Q2": 0.12985, 
+            "mean": 0.13525
+        }
+    }, 
+    "RAPTOR_N": {
+        "ratio_distinct_tokens": 1.0, 
+        "num_integer": 0, 
+        "language": {}, 
+        "num_decimal": 863, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "0.397398374": 1, 
+                "0.272447409": 1, 
+                "0.305347411": 1, 
+                "0.227767875": 1, 
+                "0.361059558": 1, 
+                "0.245567652": 1, 
+                "0.326200418": 1, 
+                "0.508978328": 1, 
+                "0.373074881": 1, 
+                "0.345289171": 1
+            }, 
+            "most_common_values": {
+                "0.397398374": 1, 
+                "0.272447409": 1, 
+                "0.305347411": 1, 
+                "0.227767875": 1, 
+                "0.361059558": 1, 
+                "0.245567652": 1, 
+                "0.326200418": 1, 
+                "0.508978328": 1, 
+                "0.373074881": 1, 
+                "0.345289171": 1
+            }, 
+            "most_common_tokens": {
+                "0.397398374": 1, 
+                "0.272447409": 1, 
+                "0.305347411": 1, 
+                "0.227767875": 1, 
+                "0.361059558": 1, 
+                "0.245567652": 1, 
+                "0.326200418": 1, 
+                "0.508978328": 1, 
+                "0.373074881": 1, 
+                "0.345289171": 1
+            }
+        }, 
+        "num_nonblank": 863, 
+        "num_missing": 2, 
+        "num_distinct_values": 863, 
+        "length": {
+            "token": {
+                "average": 10.85168, 
+                "standard-deviation": 0.57097
+            }, 
+            "character": {
+                "average": 10.85168, 
+                "standard-deviation": 0.57097
+            }
+        }, 
+        "numeric_density": 0.90785, 
+        "numeric": {
+            "Q1": 0.27609, 
+            "Q3": 0.34687, 
+            "standard-deviation": 0.05514, 
+            "ratio": 1.0, 
+            "Q2": 0.30501, 
+            "mean": 0.31643
+        }, 
+        "ratio_distinct_values": 1.0, 
+        "num_distinct_tokens": 863, 
+        "decimal": {
+            "Q1": 0.27609, 
+            "Q3": 0.34687, 
+            "standard-deviation": 0.05514, 
+            "ratio": 1.0, 
+            "Q2": 0.30501, 
+            "mean": 0.31643
+        }
+    }, 
+    "MTOR_N": {
+        "ratio_distinct_tokens": 1.0, 
+        "num_integer": 0, 
+        "language": {}, 
+        "num_decimal": 863, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "0.51088": 1, 
+                "0.560035167": 1, 
+                "0.551378446": 1, 
+                "0.532897736": 1, 
+                "0.428263929": 1, 
+                "0.521718377": 1, 
+                "0.400730623": 1, 
+                "0.529140219": 1, 
+                "0.506350757": 1, 
+                "0.460970232": 1
+            }, 
+            "most_common_values": {
+                "0.51088": 1, 
+                "0.560035167": 1, 
+                "0.551378446": 1, 
+                "0.532897736": 1, 
+                "0.428263929": 1, 
+                "0.521718377": 1, 
+                "0.400730623": 1, 
+                "0.529140219": 1, 
+                "0.506350757": 1, 
+                "0.460970232": 1
+            }, 
+            "most_common_tokens": {
+                "0.51088": 1, 
+                "0.560035167": 1, 
+                "0.551378446": 1, 
+                "0.532897736": 1, 
+                "0.428263929": 1, 
+                "0.521718377": 1, 
+                "0.400730623": 1, 
+                "0.529140219": 1, 
+                "0.506350757": 1, 
+                "0.460970232": 1
+            }
+        }, 
+        "num_nonblank": 863, 
+        "num_missing": 2, 
+        "num_distinct_values": 863, 
+        "length": {
+            "token": {
+                "average": 10.88644, 
+                "standard-deviation": 0.41278
+            }, 
+            "character": {
+                "average": 10.88644, 
+                "standard-deviation": 0.41278
+            }
+        }, 
+        "numeric_density": 0.90814, 
+        "numeric": {
+            "Q1": 0.41014, 
+            "Q3": 0.48833, 
+            "standard-deviation": 0.06684, 
+            "ratio": 1.0, 
+            "Q2": 0.45162, 
+            "mean": 0.4529
+        }, 
+        "ratio_distinct_values": 1.0, 
+        "num_distinct_tokens": 863, 
+        "decimal": {
+            "Q1": 0.41014, 
+            "Q3": 0.48833, 
+            "standard-deviation": 0.06684, 
+            "ratio": 1.0, 
+            "Q2": 0.45162, 
+            "mean": 0.4529
+        }
+    }, 
+    "PKCA_N": {
+        "ratio_distinct_tokens": 1.0, 
+        "num_integer": 0, 
+        "language": {}, 
+        "num_decimal": 863, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "0.329846583": 1, 
+                "0.211754069": 1, 
+                "0.301823093": 1, 
+                "0.321032556": 1, 
+                "0.349794239": 1, 
+                "0.307257585": 1, 
+                "0.213993871": 1, 
+                "0.326102334": 1, 
+                "0.417433832": 1, 
+                "0.202642385": 1
+            }, 
+            "most_common_values": {
+                "0.329846583": 1, 
+                "0.211754069": 1, 
+                "0.301823093": 1, 
+                "0.321032556": 1, 
+                "0.349794239": 1, 
+                "0.307257585": 1, 
+                "0.213993871": 1, 
+                "0.326102334": 1, 
+                "0.417433832": 1, 
+                "0.202642385": 1
+            }, 
+            "most_common_tokens": {
+                "0.329846583": 1, 
+                "0.211754069": 1, 
+                "0.301823093": 1, 
+                "0.321032556": 1, 
+                "0.349794239": 1, 
+                "0.307257585": 1, 
+                "0.213993871": 1, 
+                "0.326102334": 1, 
+                "0.417433832": 1, 
+                "0.202642385": 1
+            }
+        }, 
+        "num_nonblank": 863, 
+        "num_missing": 2, 
+        "num_distinct_values": 863, 
+        "length": {
+            "token": {
+                "average": 10.8737, 
+                "standard-deviation": 0.48076
+            }, 
+            "character": {
+                "average": 10.8737, 
+                "standard-deviation": 0.48076
+            }
+        }, 
+        "numeric_density": 0.90803, 
+        "numeric": {
+            "Q1": 0.28188, 
+            "Q3": 0.35352, 
+            "standard-deviation": 0.05162, 
+            "ratio": 1.0, 
+            "Q2": 0.31285, 
+            "mean": 0.31782
+        }, 
+        "ratio_distinct_values": 1.0, 
+        "num_distinct_tokens": 863, 
+        "decimal": {
+            "Q1": 0.28188, 
+            "Q3": 0.35352, 
+            "standard-deviation": 0.05162, 
+            "ratio": 1.0, 
+            "Q2": 0.31285, 
+            "mean": 0.31782
+        }
+    }, 
+    "BDNF_N": {
+        "ratio_distinct_tokens": 1.0, 
+        "num_integer": 0, 
+        "language": {}, 
+        "num_decimal": 863, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "0.317620006": 1, 
+                "0.238121048": 1, 
+                "0.233023387": 1, 
+                "0.331712184": 1, 
+                "0.312560668": 1, 
+                "0.296166433": 1, 
+                "0.242491657": 1, 
+                "0.362496176": 1, 
+                "0.336996337": 1, 
+                "0.361929853": 1
+            }, 
+            "most_common_values": {
+                "0.317620006": 1, 
+                "0.238121048": 1, 
+                "0.233023387": 1, 
+                "0.331712184": 1, 
+                "0.312560668": 1, 
+                "0.296166433": 1, 
+                "0.242491657": 1, 
+                "0.362496176": 1, 
+                "0.336996337": 1, 
+                "0.361929853": 1
+            }, 
+            "most_common_tokens": {
+                "0.317620006": 1, 
+                "0.238121048": 1, 
+                "0.233023387": 1, 
+                "0.331712184": 1, 
+                "0.312560668": 1, 
+                "0.296166433": 1, 
+                "0.242491657": 1, 
+                "0.362496176": 1, 
+                "0.336996337": 1, 
+                "0.361929853": 1
+            }
+        }, 
+        "num_nonblank": 863, 
+        "num_missing": 2, 
+        "num_distinct_values": 863, 
+        "length": {
+            "token": {
+                "average": 10.86674, 
+                "standard-deviation": 0.49788
+            }, 
+            "character": {
+                "average": 10.86674, 
+                "standard-deviation": 0.49788
+            }
+        }, 
+        "numeric_density": 0.90798, 
+        "numeric": {
+            "Q1": 0.28778, 
+            "Q3": 0.34809, 
+            "standard-deviation": 0.04931, 
+            "ratio": 1.0, 
+            "Q2": 0.31616, 
+            "mean": 0.31902
+        }, 
+        "ratio_distinct_values": 1.0, 
+        "num_distinct_tokens": 863, 
+        "decimal": {
+            "Q1": 0.28778, 
+            "Q3": 0.34809, 
+            "standard-deviation": 0.04931, 
+            "ratio": 1.0, 
+            "Q2": 0.31616, 
+            "mean": 0.31902
+        }
+    }, 
+    "pAKT_N": {
+        "ratio_distinct_tokens": 0.99884, 
+        "num_integer": 0, 
+        "language": {}, 
+        "num_decimal": 863, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "0.225339763": 1, 
+                "0.216161616": 1, 
+                "0.208864266": 1, 
+                "0.281605495": 1, 
+                "0.211735596": 1, 
+                "0.079463702": 1, 
+                "0.16440149": 1, 
+                "0.253184099": 1, 
+                "0.231176693": 2, 
+                "0.228086535": 1
+            }, 
+            "most_common_values": {
+                "0.225339763": 1, 
+                "0.216161616": 1, 
+                "0.208864266": 1, 
+                "0.281605495": 1, 
+                "0.211735596": 1, 
+                "0.079463702": 1, 
+                "0.16440149": 1, 
+                "0.253184099": 1, 
+                "0.231176693": 2, 
+                "0.228086535": 1
+            }, 
+            "most_common_tokens": {
+                "0.225339763": 1, 
+                "0.216161616": 1, 
+                "0.208864266": 1, 
+                "0.281605495": 1, 
+                "0.211735596": 1, 
+                "0.079463702": 1, 
+                "0.16440149": 1, 
+                "0.253184099": 1, 
+                "0.231176693": 2, 
+                "0.228086535": 1
+            }
+        }, 
+        "num_nonblank": 863, 
+        "num_missing": 2, 
+        "num_distinct_values": 862, 
+        "length": {
+            "token": {
+                "average": 10.88297, 
+                "standard-deviation": 0.47827
+            }, 
+            "character": {
+                "average": 10.88297, 
+                "standard-deviation": 0.47827
+            }
+        }, 
+        "numeric_density": 0.90811, 
+        "numeric": {
+            "Q1": 0.20517, 
+            "Q3": 0.25827, 
+            "standard-deviation": 0.04262, 
+            "ratio": 1.0, 
+            "Q2": 0.23132, 
+            "mean": 0.23357
+        }, 
+        "ratio_distinct_values": 0.99884, 
+        "num_distinct_tokens": 862, 
+        "decimal": {
+            "Q1": 0.20517, 
+            "Q3": 0.25827, 
+            "standard-deviation": 0.04262, 
+            "ratio": 1.0, 
+            "Q2": 0.23132, 
+            "mean": 0.23357
+        }
+    }, 
+    "H3MeK4_N": {
+        "ratio_distinct_tokens": 1.0, 
+        "num_integer": 0, 
+        "language": {}, 
+        "num_decimal": 650, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "0.156903917": 1, 
+                "0.246666667": 1, 
+                "0.139980878": 1, 
+                "0.137085329": 1, 
+                "0.144876922": 1, 
+                "0.163776677": 1, 
+                "0.3070128": 1, 
+                "0.262849205": 1, 
+                "0.127800322": 1, 
+                "0.235606224": 1
+            }, 
+            "most_common_values": {
+                "0.156903917": 1, 
+                "0.246666667": 1, 
+                "0.139980878": 1, 
+                "0.137085329": 1, 
+                "0.144876922": 1, 
+                "0.163776677": 1, 
+                "0.3070128": 1, 
+                "0.262849205": 1, 
+                "0.127800322": 1, 
+                "0.235606224": 1
+            }, 
+            "most_common_tokens": {
+                "0.156903917": 1, 
+                "0.246666667": 1, 
+                "0.139980878": 1, 
+                "0.137085329": 1, 
+                "0.144876922": 1, 
+                "0.163776677": 1, 
+                "0.3070128": 1, 
+                "0.262849205": 1, 
+                "0.127800322": 1, 
+                "0.235606224": 1
+            }
+        }, 
+        "num_nonblank": 650, 
+        "num_missing": 215, 
+        "num_distinct_values": 650, 
+        "length": {
+            "token": {
+                "average": 10.88, 
+                "standard-deviation": 0.40914
+            }, 
+            "character": {
+                "average": 10.88, 
+                "standard-deviation": 0.40914
+            }
+        }, 
+        "numeric_density": 0.90809, 
+        "numeric": {
+            "Q1": 0.16509, 
+            "Q3": 0.23613, 
+            "standard-deviation": 0.05592, 
+            "ratio": 1.0, 
+            "Q2": 0.19321, 
+            "mean": 0.20561
+        }, 
+        "ratio_distinct_values": 1.0, 
+        "num_distinct_tokens": 650, 
+        "decimal": {
+            "Q1": 0.16509, 
+            "Q3": 0.23613, 
+            "standard-deviation": 0.05592, 
+            "ratio": 1.0, 
+            "Q2": 0.19321, 
+            "mean": 0.20561
+        }
+    }, 
+    "pS6_N": {
+        "ratio_distinct_tokens": 1.0, 
+        "num_integer": 0, 
+        "language": {}, 
+        "num_decimal": 865, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "0.148151899": 1, 
+                "0.121282858": 1, 
+                "0.141830379": 1, 
+                "0.124832638": 1, 
+                "0.125": 1, 
+                "0.130377694": 1, 
+                "0.129437707": 1, 
+                "0.139255583": 1, 
+                "0.118685574": 1, 
+                "0.137846962": 1
+            }, 
+            "most_common_values": {
+                "0.148151899": 1, 
+                "0.121282858": 1, 
+                "0.141830379": 1, 
+                "0.124832638": 1, 
+                "0.125": 1, 
+                "0.130377694": 1, 
+                "0.129437707": 1, 
+                "0.139255583": 1, 
+                "0.118685574": 1, 
+                "0.137846962": 1
+            }, 
+            "most_common_tokens": {
+                "0.148151899": 1, 
+                "0.121282858": 1, 
+                "0.141830379": 1, 
+                "0.124832638": 1, 
+                "0.125": 1, 
+                "0.130377694": 1, 
+                "0.129437707": 1, 
+                "0.139255583": 1, 
+                "0.118685574": 1, 
+                "0.137846962": 1
+            }
+        }, 
+        "num_nonblank": 865, 
+        "num_missing": 0, 
+        "num_distinct_values": 865, 
+        "length": {
+            "token": {
+                "average": 10.89942, 
+                "standard-deviation": 0.37307
+            }, 
+            "character": {
+                "average": 10.89942, 
+                "standard-deviation": 0.37307
+            }
+        }, 
+        "numeric_density": 0.90825, 
+        "numeric": {
+            "Q1": 0.11068, 
+            "Q3": 0.13199, 
+            "standard-deviation": 0.01424, 
+            "ratio": 1.0, 
+            "Q2": 0.12163, 
+            "mean": 0.12158
+        }, 
+        "ratio_distinct_values": 1.0, 
+        "num_distinct_tokens": 865, 
+        "decimal": {
+            "Q1": 0.11068, 
+            "Q3": 0.13199, 
+            "standard-deviation": 0.01424, 
+            "ratio": 1.0, 
+            "Q2": 0.12163, 
+            "mean": 0.12158
+        }
+    }, 
+    "Behavior": {
+        "ratio_distinct_tokens": 0.00231, 
+        "num_integer": 0, 
+        "language": {
+            "fr": 135, 
+            "en": 729, 
+            "de": 1
+        }, 
+        "num_decimal": 0, 
+        "frequent-entries": {
+            "most_common_values": {
+                "S/C": 445, 
+                "C/S": 420
+            }, 
+            "most_common_punctuations": {
+                "/": {
+                    "count": 865, 
+                    "density_of_cell": 0.33333, 
+                    "density_of_all": 0.33333, 
+                    "num_outlier_cells": 0
+                }
+            }, 
+            "most_common_tokens": {
+                "S/C": 445, 
+                "C/S": 420
+            }
+        }, 
+        "num_nonblank": 865, 
+        "num_missing": 0, 
+        "num_distinct_values": 2, 
+        "length": {
+            "token": {
+                "average": 3.0, 
+                "standard-deviation": 0.0
+            }, 
+            "character": {
+                "average": 3.0, 
+                "standard-deviation": 0.0
+            }
+        }, 
+        "numeric_density": 0.0, 
+        "ratio_distinct_values": 0.00231, 
+        "num_distinct_tokens": 2
+    }, 
+    "TRKA_N": {
+        "ratio_distinct_tokens": 0.99768, 
+        "num_integer": 0, 
+        "language": {}, 
+        "num_decimal": 863, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "0.659333443": 1, 
+                "0.741355463": 1, 
+                "0.776859504": 2, 
+                "0.939911514": 1, 
+                "0.755202421": 1, 
+                "0.73413991": 1, 
+                "0.666666667": 2, 
+                "0.695682313": 1, 
+                "0.738102276": 1, 
+                "0.900635408": 1
+            }, 
+            "most_common_values": {
+                "0.659333443": 1, 
+                "0.741355463": 1, 
+                "0.776859504": 2, 
+                "0.939911514": 1, 
+                "0.755202421": 1, 
+                "0.73413991": 1, 
+                "0.666666667": 2, 
+                "0.695682313": 1, 
+                "0.738102276": 1, 
+                "0.900635408": 1
+            }, 
+            "most_common_tokens": {
+                "0.659333443": 1, 
+                "0.741355463": 1, 
+                "0.776859504": 2, 
+                "0.939911514": 1, 
+                "0.755202421": 1, 
+                "0.73413991": 1, 
+                "0.666666667": 2, 
+                "0.695682313": 1, 
+                "0.738102276": 1, 
+                "0.900635408": 1
+            }
+        }, 
+        "num_nonblank": 863, 
+        "num_missing": 2, 
+        "num_distinct_values": 861, 
+        "length": {
+            "token": {
+                "average": 10.87486, 
+                "standard-deviation": 0.41782
+            }, 
+            "character": {
+                "average": 10.87486, 
+                "standard-deviation": 0.41782
+            }
+        }, 
+        "numeric_density": 0.90804, 
+        "numeric": {
+            "Q1": 0.61768, 
+            "Q3": 0.7695, 
+            "standard-deviation": 0.11828, 
+            "ratio": 1.0, 
+            "Q2": 0.70436, 
+            "mean": 0.69271
+        }, 
+        "ratio_distinct_values": 0.99768, 
+        "num_distinct_tokens": 861, 
+        "decimal": {
+            "Q1": 0.61768, 
+            "Q3": 0.7695, 
+            "standard-deviation": 0.11828, 
+            "ratio": 1.0, 
+            "Q2": 0.70436, 
+            "mean": 0.69271
+        }
+    }, 
+    "pMTOR_N": {
+        "ratio_distinct_tokens": 1.0, 
+        "num_integer": 0, 
+        "language": {}, 
+        "num_decimal": 863, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "0.702572734": 1, 
+                "0.953250548": 1, 
+                "0.763151042": 1, 
+                "0.804636591": 1, 
+                "0.902242668": 1, 
+                "0.757030802": 1, 
+                "0.181140779": 1, 
+                "0.726623448": 1, 
+                "0.812726112": 1, 
+                "0.721176167": 1
+            }, 
+            "most_common_values": {
+                "0.702572734": 1, 
+                "0.953250548": 1, 
+                "0.763151042": 1, 
+                "0.804636591": 1, 
+                "0.902242668": 1, 
+                "0.757030802": 1, 
+                "0.181140779": 1, 
+                "0.726623448": 1, 
+                "0.812726112": 1, 
+                "0.721176167": 1
+            }, 
+            "most_common_tokens": {
+                "0.702572734": 1, 
+                "0.953250548": 1, 
+                "0.763151042": 1, 
+                "0.804636591": 1, 
+                "0.902242668": 1, 
+                "0.757030802": 1, 
+                "0.181140779": 1, 
+                "0.726623448": 1, 
+                "0.812726112": 1, 
+                "0.721176167": 1
+            }
+        }, 
+        "num_nonblank": 863, 
+        "num_missing": 2, 
+        "num_distinct_values": 863, 
+        "length": {
+            "token": {
+                "average": 10.87138, 
+                "standard-deviation": 0.5196
+            }, 
+            "character": {
+                "average": 10.87138, 
+                "standard-deviation": 0.5196
+            }
+        }, 
+        "numeric_density": 0.90802, 
+        "numeric": {
+            "Q1": 0.68354, 
+            "Q3": 0.84434, 
+            "standard-deviation": 0.12457, 
+            "ratio": 1.0, 
+            "Q2": 0.76087, 
+            "mean": 0.75897
+        }, 
+        "ratio_distinct_values": 1.0, 
+        "num_distinct_tokens": 863, 
+        "decimal": {
+            "Q1": 0.68354, 
+            "Q3": 0.84434, 
+            "standard-deviation": 0.12457, 
+            "ratio": 1.0, 
+            "Q2": 0.76087, 
+            "mean": 0.75897
+        }
+    }, 
+    "Treatment": {
+        "ratio_distinct_tokens": 0.00231, 
+        "num_integer": 0, 
+        "language": {
+            "et": 378, 
+            "fi": 31, 
+            "de": 1, 
+            "it": 226, 
+            "id": 229
+        }, 
+        "num_decimal": 0, 
+        "frequent-entries": {
+            "most_common_values": {
+                "Saline": 408, 
+                "Memantine": 457
+            }, 
+            "most_common_tokens": {
+                "Saline": 408, 
+                "Memantine": 457
+            }, 
+            "most_common_alphanumeric_tokens": {
+                "Saline": 408, 
+                "Memantine": 457
+            }
+        }, 
+        "num_nonblank": 865, 
+        "num_missing": 0, 
+        "num_distinct_values": 2, 
+        "length": {
+            "token": {
+                "average": 7.58497, 
+                "standard-deviation": 1.49846
+            }, 
+            "character": {
+                "average": 7.58497, 
+                "standard-deviation": 1.49846
+            }
+        }, 
+        "numeric_density": 0.0, 
+        "ratio_distinct_values": 0.00231, 
+        "num_distinct_tokens": 2
+    }, 
+    "pCREB_N": {
+        "ratio_distinct_tokens": 1.0, 
+        "num_integer": 0, 
+        "language": {}, 
+        "num_decimal": 863, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "0.213162624": 1, 
+                "0.165978129": 1, 
+                "0.240676796": 1, 
+                "0.185541311": 1, 
+                "0.250535332": 1, 
+                "0.201723804": 1, 
+                "0.184678704": 1, 
+                "0.183409804": 1, 
+                "0.237630208": 1, 
+                "0.227705874": 1
+            }, 
+            "most_common_values": {
+                "0.213162624": 1, 
+                "0.165978129": 1, 
+                "0.240676796": 1, 
+                "0.185541311": 1, 
+                "0.250535332": 1, 
+                "0.201723804": 1, 
+                "0.184678704": 1, 
+                "0.183409804": 1, 
+                "0.237630208": 1, 
+                "0.227705874": 1
+            }, 
+            "most_common_tokens": {
+                "0.213162624": 1, 
+                "0.165978129": 1, 
+                "0.240676796": 1, 
+                "0.185541311": 1, 
+                "0.250535332": 1, 
+                "0.201723804": 1, 
+                "0.184678704": 1, 
+                "0.183409804": 1, 
+                "0.237630208": 1, 
+                "0.227705874": 1
+            }
+        }, 
+        "num_nonblank": 863, 
+        "num_missing": 2, 
+        "num_distinct_values": 863, 
+        "length": {
+            "token": {
+                "average": 10.87138, 
+                "standard-deviation": 0.51285
+            }, 
+            "character": {
+                "average": 10.87138, 
+                "standard-deviation": 0.51285
+            }
+        }, 
+        "numeric_density": 0.90802, 
+        "numeric": {
+            "Q1": 0.1907, 
+            "Q3": 0.2342, 
+            "standard-deviation": 0.03196, 
+            "ratio": 1.0, 
+            "Q2": 0.21056, 
+            "mean": 0.21234
+        }, 
+        "ratio_distinct_values": 1.0, 
+        "num_distinct_tokens": 863, 
+        "decimal": {
+            "Q1": 0.1907, 
+            "Q3": 0.2342, 
+            "standard-deviation": 0.03196, 
+            "ratio": 1.0, 
+            "Q2": 0.21056, 
+            "mean": 0.21234
+        }
+    }, 
+    "CDK5_N": {
+        "ratio_distinct_tokens": 1.0, 
+        "num_integer": 0, 
+        "language": {}, 
+        "num_decimal": 865, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "0.27060946": 1, 
+                "0.317783892": 1, 
+                "0.317716858": 1, 
+                "0.306901615": 1, 
+                "0.262117275": 1, 
+                "0.322946924": 1, 
+                "0.215487572": 1, 
+                "0.270358306": 1, 
+                "0.312461774": 1, 
+                "0.317003397": 1
+            }, 
+            "most_common_values": {
+                "0.27060946": 1, 
+                "0.317783892": 1, 
+                "0.317716858": 1, 
+                "0.306901615": 1, 
+                "0.262117275": 1, 
+                "0.322946924": 1, 
+                "0.215487572": 1, 
+                "0.270358306": 1, 
+                "0.312461774": 1, 
+                "0.317003397": 1
+            }, 
+            "most_common_tokens": {
+                "0.27060946": 1, 
+                "0.317783892": 1, 
+                "0.317716858": 1, 
+                "0.306901615": 1, 
+                "0.262117275": 1, 
+                "0.322946924": 1, 
+                "0.215487572": 1, 
+                "0.270358306": 1, 
+                "0.312461774": 1, 
+                "0.317003397": 1
+            }
+        }, 
+        "num_nonblank": 865, 
+        "num_missing": 0, 
+        "num_distinct_values": 865, 
+        "length": {
+            "token": {
+                "average": 10.88092, 
+                "standard-deviation": 0.37996
+            }, 
+            "character": {
+                "average": 10.88092, 
+                "standard-deviation": 0.37996
+            }
+        }, 
+        "numeric_density": 0.9081, 
+        "numeric": {
+            "Q1": 0.27262, 
+            "Q3": 0.31262, 
+            "standard-deviation": 0.03834, 
+            "ratio": 1.0, 
+            "Q2": 0.29252, 
+            "mean": 0.29248
+        }, 
+        "ratio_distinct_values": 1.0, 
+        "num_distinct_tokens": 865, 
+        "decimal": {
+            "Q1": 0.27262, 
+            "Q3": 0.31262, 
+            "standard-deviation": 0.03834, 
+            "ratio": 1.0, 
+            "Q2": 0.29252, 
+            "mean": 0.29248
+        }
+    }, 
+    "SNCA_N": {
+        "ratio_distinct_tokens": 0.99884, 
+        "num_integer": 0, 
+        "language": {}, 
+        "num_decimal": 865, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "0.150077359": 1, 
+                "0.218192069": 1, 
+                "0.164611523": 1, 
+                "0.146597884": 1, 
+                "0.157531214": 1, 
+                "0.179348204": 1, 
+                "0.201730665": 1, 
+                "0.150249896": 1, 
+                "0.171453953": 2, 
+                "0.179356157": 1
+            }, 
+            "most_common_values": {
+                "0.150077359": 1, 
+                "0.218192069": 1, 
+                "0.164611523": 1, 
+                "0.146597884": 1, 
+                "0.157531214": 1, 
+                "0.179348204": 1, 
+                "0.201730665": 1, 
+                "0.150249896": 1, 
+                "0.171453953": 2, 
+                "0.179356157": 1
+            }, 
+            "most_common_tokens": {
+                "0.150077359": 1, 
+                "0.218192069": 1, 
+                "0.164611523": 1, 
+                "0.146597884": 1, 
+                "0.157531214": 1, 
+                "0.179348204": 1, 
+                "0.201730665": 1, 
+                "0.150249896": 1, 
+                "0.171453953": 2, 
+                "0.179356157": 1
+            }
+        }, 
+        "num_nonblank": 865, 
+        "num_missing": 0, 
+        "num_distinct_values": 864, 
+        "length": {
+            "token": {
+                "average": 10.88208, 
+                "standard-deviation": 0.38785
+            }, 
+            "character": {
+                "average": 10.88208, 
+                "standard-deviation": 0.38785
+            }
+        }, 
+        "numeric_density": 0.90811, 
+        "numeric": {
+            "Q1": 0.14253, 
+            "Q3": 0.17399, 
+            "standard-deviation": 0.02473, 
+            "ratio": 1.0, 
+            "Q2": 0.15749, 
+            "mean": 0.16013
+        }, 
+        "ratio_distinct_values": 0.99884, 
+        "num_distinct_tokens": 864, 
+        "decimal": {
+            "Q1": 0.14253, 
+            "Q3": 0.17399, 
+            "standard-deviation": 0.02473, 
+            "ratio": 1.0, 
+            "Q2": 0.15749, 
+            "mean": 0.16013
+        }
+    }, 
+    "pP70S6_N": {
+        "ratio_distinct_tokens": 0.99884, 
+        "num_integer": 0, 
+        "language": {}, 
+        "num_decimal": 863, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "0.426186579": 1, 
+                "0.214187517": 1, 
+                "0.147007554": 1, 
+                "0.352336123": 1, 
+                "0.5": 2, 
+                "0.209477957": 1, 
+                "0.385921833": 1, 
+                "0.253194888": 1, 
+                "0.353004484": 1, 
+                "0.269314869": 1
+            }, 
+            "most_common_values": {
+                "0.426186579": 1, 
+                "0.214187517": 1, 
+                "0.147007554": 1, 
+                "0.352336123": 1, 
+                "0.5": 2, 
+                "0.209477957": 1, 
+                "0.385921833": 1, 
+                "0.253194888": 1, 
+                "0.353004484": 1, 
+                "0.269314869": 1
+            }, 
+            "most_common_tokens": {
+                "0.426186579": 1, 
+                "0.214187517": 1, 
+                "0.147007554": 1, 
+                "0.352336123": 1, 
+                "0.5": 2, 
+                "0.209477957": 1, 
+                "0.385921833": 1, 
+                "0.253194888": 1, 
+                "0.353004484": 1, 
+                "0.269314869": 1
+            }
+        }, 
+        "num_nonblank": 863, 
+        "num_missing": 2, 
+        "num_distinct_values": 862, 
+        "length": {
+            "token": {
+                "average": 10.83662, 
+                "standard-deviation": 0.66914
+            }, 
+            "character": {
+                "average": 10.83662, 
+                "standard-deviation": 0.66914
+            }
+        }, 
+        "numeric_density": 0.90772, 
+        "numeric": {
+            "Q1": 0.28657, 
+            "Q3": 0.48281, 
+            "standard-deviation": 0.15689, 
+            "ratio": 1.0, 
+            "Q2": 0.38047, 
+            "mean": 0.3957
+        }, 
+        "ratio_distinct_values": 0.99884, 
+        "num_distinct_tokens": 862, 
+        "decimal": {
+            "Q1": 0.28657, 
+            "Q3": 0.48281, 
+            "standard-deviation": 0.15689, 
+            "ratio": 1.0, 
+            "Q2": 0.38047, 
+            "mean": 0.3957
+        }
+    }, 
+    "SYP_N": {
+        "ratio_distinct_tokens": 0.99884, 
+        "num_integer": 0, 
+        "language": {}, 
+        "num_decimal": 865, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "0.400277156": 1, 
+                "0.484529394": 1, 
+                "0.487991266": 2, 
+                "0.448434622": 1, 
+                "0.45479972": 1, 
+                "0.464187035": 1, 
+                "0.284261665": 1, 
+                "0.391690992": 1, 
+                "0.45450853": 1, 
+                "0.428589295": 1
+            }, 
+            "most_common_values": {
+                "0.400277156": 1, 
+                "0.484529394": 1, 
+                "0.487991266": 2, 
+                "0.448434622": 1, 
+                "0.45479972": 1, 
+                "0.464187035": 1, 
+                "0.284261665": 1, 
+                "0.391690992": 1, 
+                "0.45450853": 1, 
+                "0.428589295": 1
+            }, 
+            "most_common_tokens": {
+                "0.400277156": 1, 
+                "0.484529394": 1, 
+                "0.487991266": 2, 
+                "0.448434622": 1, 
+                "0.45479972": 1, 
+                "0.464187035": 1, 
+                "0.284261665": 1, 
+                "0.391690992": 1, 
+                "0.45450853": 1, 
+                "0.428589295": 1
+            }
+        }, 
+        "num_nonblank": 865, 
+        "num_missing": 0, 
+        "num_distinct_values": 864, 
+        "length": {
+            "token": {
+                "average": 10.87861, 
+                "standard-deviation": 0.48859
+            }, 
+            "character": {
+                "average": 10.87861, 
+                "standard-deviation": 0.48859
+            }
+        }, 
+        "numeric_density": 0.90808, 
+        "numeric": {
+            "Q1": 0.39804, 
+            "Q3": 0.49076, 
+            "standard-deviation": 0.06571, 
+            "ratio": 1.0, 
+            "Q2": 0.44982, 
+            "mean": 0.44572
+        }, 
+        "ratio_distinct_values": 0.99884, 
+        "num_distinct_tokens": 864, 
+        "decimal": {
+            "Q1": 0.39804, 
+            "Q3": 0.49076, 
+            "standard-deviation": 0.06571, 
+            "ratio": 1.0, 
+            "Q2": 0.44982, 
+            "mean": 0.44572
+        }
+    }, 
+    "pNUMB_N": {
+        "ratio_distinct_tokens": 1.0, 
+        "num_integer": 0, 
+        "language": {}, 
+        "num_decimal": 863, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "0.319218836": 1, 
+                "0.257239484": 1, 
+                "0.344065041": 1, 
+                "0.307129394": 1, 
+                "0.33818333": 1, 
+                "0.382043935": 1, 
+                "0.523332843": 1, 
+                "0.293053123": 1, 
+                "0.496202532": 1, 
+                "0.333116883": 1
+            }, 
+            "most_common_values": {
+                "0.319218836": 1, 
+                "0.257239484": 1, 
+                "0.344065041": 1, 
+                "0.307129394": 1, 
+                "0.33818333": 1, 
+                "0.382043935": 1, 
+                "0.523332843": 1, 
+                "0.293053123": 1, 
+                "0.496202532": 1, 
+                "0.333116883": 1
+            }, 
+            "most_common_tokens": {
+                "0.319218836": 1, 
+                "0.257239484": 1, 
+                "0.344065041": 1, 
+                "0.307129394": 1, 
+                "0.33818333": 1, 
+                "0.382043935": 1, 
+                "0.523332843": 1, 
+                "0.293053123": 1, 
+                "0.496202532": 1, 
+                "0.333116883": 1
+            }
+        }, 
+        "num_nonblank": 863, 
+        "num_missing": 2, 
+        "num_distinct_values": 863, 
+        "length": {
+            "token": {
+                "average": 10.8876, 
+                "standard-deviation": 0.4145
+            }, 
+            "character": {
+                "average": 10.8876, 
+                "standard-deviation": 0.4145
+            }
+        }, 
+        "numeric_density": 0.90815, 
+        "numeric": {
+            "Q1": 0.31206, 
+            "Q3": 0.39455, 
+            "standard-deviation": 0.06411, 
+            "ratio": 1.0, 
+            "Q2": 0.34731, 
+            "mean": 0.35739
+        }, 
+        "ratio_distinct_values": 1.0, 
+        "num_distinct_tokens": 863, 
+        "decimal": {
+            "Q1": 0.31206, 
+            "Q3": 0.39455, 
+            "standard-deviation": 0.06411, 
+            "ratio": 1.0, 
+            "Q2": 0.34731, 
+            "mean": 0.35739
+        }
+    }, 
+    "DSCR1_N": {
+        "ratio_distinct_tokens": 1.0, 
+        "num_integer": 0, 
+        "language": {}, 
+        "num_decimal": 863, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "0.520614636": 1, 
+                "0.544553512": 1, 
+                "0.567612688": 1, 
+                "0.64426502": 1, 
+                "0.457591423": 1, 
+                "0.643695622": 1, 
+                "0.598984772": 1, 
+                "0.694297915": 1, 
+                "0.524286725": 1, 
+                "0.540545771": 1
+            }, 
+            "most_common_values": {
+                "0.520614636": 1, 
+                "0.544553512": 1, 
+                "0.567612688": 1, 
+                "0.64426502": 1, 
+                "0.457591423": 1, 
+                "0.643695622": 1, 
+                "0.598984772": 1, 
+                "0.694297915": 1, 
+                "0.524286725": 1, 
+                "0.540545771": 1
+            }, 
+            "most_common_tokens": {
+                "0.520614636": 1, 
+                "0.544553512": 1, 
+                "0.567612688": 1, 
+                "0.64426502": 1, 
+                "0.457591423": 1, 
+                "0.643695622": 1, 
+                "0.598984772": 1, 
+                "0.694297915": 1, 
+                "0.524286725": 1, 
+                "0.540545771": 1
+            }
+        }, 
+        "num_nonblank": 863, 
+        "num_missing": 2, 
+        "num_distinct_values": 863, 
+        "length": {
+            "token": {
+                "average": 10.87138, 
+                "standard-deviation": 0.53716
+            }, 
+            "character": {
+                "average": 10.87138, 
+                "standard-deviation": 0.53716
+            }
+        }, 
+        "numeric_density": 0.90802, 
+        "numeric": {
+            "Q1": 0.5305, 
+            "Q3": 0.63723, 
+            "standard-deviation": 0.10265, 
+            "ratio": 1.0, 
+            "Q2": 0.57732, 
+            "mean": 0.58653
+        }, 
+        "ratio_distinct_values": 1.0, 
+        "num_distinct_tokens": 863, 
+        "decimal": {
+            "Q1": 0.5305, 
+            "Q3": 0.63723, 
+            "standard-deviation": 0.10265, 
+            "ratio": 1.0, 
+            "Q2": 0.57732, 
+            "mean": 0.58653
+        }
+    }, 
+    "ARC_N": {
+        "ratio_distinct_tokens": 1.0, 
+        "num_integer": 0, 
+        "language": {}, 
+        "num_decimal": 865, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "0.148151899": 1, 
+                "0.121282858": 1, 
+                "0.141830379": 1, 
+                "0.124832638": 1, 
+                "0.125": 1, 
+                "0.130377694": 1, 
+                "0.129437707": 1, 
+                "0.139255583": 1, 
+                "0.118685574": 1, 
+                "0.137846962": 1
+            }, 
+            "most_common_values": {
+                "0.148151899": 1, 
+                "0.121282858": 1, 
+                "0.141830379": 1, 
+                "0.124832638": 1, 
+                "0.125": 1, 
+                "0.130377694": 1, 
+                "0.129437707": 1, 
+                "0.139255583": 1, 
+                "0.118685574": 1, 
+                "0.137846962": 1
+            }, 
+            "most_common_tokens": {
+                "0.148151899": 1, 
+                "0.121282858": 1, 
+                "0.141830379": 1, 
+                "0.124832638": 1, 
+                "0.125": 1, 
+                "0.130377694": 1, 
+                "0.129437707": 1, 
+                "0.139255583": 1, 
+                "0.118685574": 1, 
+                "0.137846962": 1
+            }
+        }, 
+        "num_nonblank": 865, 
+        "num_missing": 0, 
+        "num_distinct_values": 865, 
+        "length": {
+            "token": {
+                "average": 10.89942, 
+                "standard-deviation": 0.37307
+            }, 
+            "character": {
+                "average": 10.89942, 
+                "standard-deviation": 0.37307
+            }
+        }, 
+        "numeric_density": 0.90825, 
+        "numeric": {
+            "Q1": 0.11068, 
+            "Q3": 0.13199, 
+            "standard-deviation": 0.01424, 
+            "ratio": 1.0, 
+            "Q2": 0.12163, 
+            "mean": 0.12158
+        }, 
+        "ratio_distinct_values": 1.0, 
+        "num_distinct_tokens": 865, 
+        "decimal": {
+            "Q1": 0.11068, 
+            "Q3": 0.13199, 
+            "standard-deviation": 0.01424, 
+            "ratio": 1.0, 
+            "Q2": 0.12163, 
+            "mean": 0.12158
+        }
+    }, 
+    "APP_N": {
+        "ratio_distinct_tokens": 1.0, 
+        "num_integer": 0, 
+        "language": {}, 
+        "num_decimal": 863, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "0.411290323": 1, 
+                "0.416050337": 1, 
+                "0.422621102": 1, 
+                "0.332054234": 1, 
+                "0.421646929": 1, 
+                "0.384229717": 1, 
+                "0.491354741": 1, 
+                "0.312070903": 1, 
+                "0.278264254": 1, 
+                "0.284138152": 1
+            }, 
+            "most_common_values": {
+                "0.411290323": 1, 
+                "0.416050337": 1, 
+                "0.422621102": 1, 
+                "0.332054234": 1, 
+                "0.421646929": 1, 
+                "0.384229717": 1, 
+                "0.491354741": 1, 
+                "0.312070903": 1, 
+                "0.278264254": 1, 
+                "0.284138152": 1
+            }, 
+            "most_common_tokens": {
+                "0.411290323": 1, 
+                "0.416050337": 1, 
+                "0.422621102": 1, 
+                "0.332054234": 1, 
+                "0.421646929": 1, 
+                "0.384229717": 1, 
+                "0.491354741": 1, 
+                "0.312070903": 1, 
+                "0.278264254": 1, 
+                "0.284138152": 1
+            }
+        }, 
+        "num_nonblank": 863, 
+        "num_missing": 2, 
+        "num_distinct_values": 863, 
+        "length": {
+            "token": {
+                "average": 10.87601, 
+                "standard-deviation": 0.45152
+            }, 
+            "character": {
+                "average": 10.87601, 
+                "standard-deviation": 0.45152
+            }
+        }, 
+        "numeric_density": 0.90805, 
+        "numeric": {
+            "Q1": 0.36701, 
+            "Q3": 0.44109, 
+            "standard-deviation": 0.06006, 
+            "ratio": 1.0, 
+            "Q2": 0.40037, 
+            "mean": 0.4043
+        }, 
+        "ratio_distinct_values": 1.0, 
+        "num_distinct_tokens": 863, 
+        "decimal": {
+            "Q1": 0.36701, 
+            "Q3": 0.44109, 
+            "standard-deviation": 0.06006, 
+            "ratio": 1.0, 
+            "Q2": 0.40037, 
+            "mean": 0.4043
+        }
+    }, 
+    "DYRK1A_N": {
+        "ratio_distinct_tokens": 1.0, 
+        "num_integer": 0, 
+        "language": {}, 
+        "num_decimal": 863, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "0.452596073": 1, 
+                "0.415249589": 1, 
+                "0.374019278": 1, 
+                "0.605380298": 1, 
+                "0.303962367": 1, 
+                "0.938244544": 1, 
+                "0.428426138": 1, 
+                "0.329829172": 1, 
+                "0.280754566": 1, 
+                "0.818823529": 1
+            }, 
+            "most_common_values": {
+                "0.452596073": 1, 
+                "0.415249589": 1, 
+                "0.374019278": 1, 
+                "0.605380298": 1, 
+                "0.303962367": 1, 
+                "0.938244544": 1, 
+                "0.428426138": 1, 
+                "0.329829172": 1, 
+                "0.280754566": 1, 
+                "0.818823529": 1
+            }, 
+            "most_common_tokens": {
+                "0.452596073": 1, 
+                "0.415249589": 1, 
+                "0.374019278": 1, 
+                "0.605380298": 1, 
+                "0.303962367": 1, 
+                "0.938244544": 1, 
+                "0.428426138": 1, 
+                "0.329829172": 1, 
+                "0.280754566": 1, 
+                "0.818823529": 1
+            }
+        }, 
+        "num_nonblank": 863, 
+        "num_missing": 2, 
+        "num_distinct_values": 863, 
+        "length": {
+            "token": {
+                "average": 10.87254, 
+                "standard-deviation": 0.42265
+            }, 
+            "character": {
+                "average": 10.87254, 
+                "standard-deviation": 0.42265
+            }
+        }, 
+        "numeric_density": 0.90803, 
+        "numeric": {
+            "Q1": 0.28797, 
+            "Q3": 0.4854, 
+            "standard-deviation": 0.24226, 
+            "ratio": 1.0, 
+            "Q2": 0.36651, 
+            "mean": 0.42394
+        }, 
+        "ratio_distinct_values": 1.0, 
+        "num_distinct_tokens": 863, 
+        "decimal": {
+            "Q1": 0.28797, 
+            "Q3": 0.4854, 
+            "standard-deviation": 0.24226, 
+            "ratio": 1.0, 
+            "Q2": 0.36651, 
+            "mean": 0.42394
+        }
+    }, 
+    "ERK_N": {
+        "ratio_distinct_tokens": 1.0, 
+        "num_integer": 0, 
+        "language": {}, 
+        "num_decimal": 863, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "3.287448946": 1, 
+                "3.737544622": 1, 
+                "2.143527631": 1, 
+                "1.6595618": 1, 
+                "1.438934604": 1, 
+                "2.814616988": 1, 
+                "2.80919179": 1, 
+                "1.93071022": 1, 
+                "2.037187194": 1, 
+                "2.529540481": 1
+            }, 
+            "most_common_values": {
+                "3.287448946": 1, 
+                "3.737544622": 1, 
+                "2.143527631": 1, 
+                "1.6595618": 1, 
+                "1.438934604": 1, 
+                "2.814616988": 1, 
+                "2.80919179": 1, 
+                "1.93071022": 1, 
+                "2.037187194": 1, 
+                "2.529540481": 1
+            }, 
+            "most_common_tokens": {
+                "3.287448946": 1, 
+                "3.737544622": 1, 
+                "2.143527631": 1, 
+                "1.6595618": 1, 
+                "1.438934604": 1, 
+                "2.814616988": 1, 
+                "2.80919179": 1, 
+                "1.93071022": 1, 
+                "2.037187194": 1, 
+                "2.529540481": 1
+            }
+        }, 
+        "num_nonblank": 863, 
+        "num_missing": 2, 
+        "num_distinct_values": 863, 
+        "length": {
+            "token": {
+                "average": 10.85284, 
+                "standard-deviation": 0.54316
+            }, 
+            "character": {
+                "average": 10.85284, 
+                "standard-deviation": 0.54316
+            }
+        }, 
+        "numeric_density": 0.90786, 
+        "numeric": {
+            "Q1": 1.98833, 
+            "Q3": 2.83538, 
+            "standard-deviation": 0.65659, 
+            "ratio": 1.0, 
+            "Q2": 2.38719, 
+            "mean": 2.46574
+        }, 
+        "ratio_distinct_values": 1.0, 
+        "num_distinct_tokens": 863, 
+        "decimal": {
+            "Q1": 1.98833, 
+            "Q3": 2.83538, 
+            "standard-deviation": 0.65659, 
+            "ratio": 1.0, 
+            "Q2": 2.38719, 
+            "mean": 2.46574
+        }
+    }, 
+    "IL1B_N": {
+        "ratio_distinct_tokens": 1.0, 
+        "num_integer": 0, 
+        "language": {}, 
+        "num_decimal": 865, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "0.580891643": 1, 
+                "0.535286604": 1, 
+                "0.415340087": 1, 
+                "0.482649842": 1, 
+                "0.610647657": 1, 
+                "0.475922953": 1, 
+                "0.664876477": 1, 
+                "0.596535547": 1, 
+                "0.584556302": 1, 
+                "0.60564049": 1
+            }, 
+            "most_common_values": {
+                "0.580891643": 1, 
+                "0.535286604": 1, 
+                "0.415340087": 1, 
+                "0.482649842": 1, 
+                "0.610647657": 1, 
+                "0.475922953": 1, 
+                "0.664876477": 1, 
+                "0.596535547": 1, 
+                "0.584556302": 1, 
+                "0.60564049": 1
+            }, 
+            "most_common_tokens": {
+                "0.580891643": 1, 
+                "0.535286604": 1, 
+                "0.415340087": 1, 
+                "0.482649842": 1, 
+                "0.610647657": 1, 
+                "0.475922953": 1, 
+                "0.664876477": 1, 
+                "0.596535547": 1, 
+                "0.584556302": 1, 
+                "0.60564049": 1
+            }
+        }, 
+        "num_nonblank": 865, 
+        "num_missing": 0, 
+        "num_distinct_values": 865, 
+        "length": {
+            "token": {
+                "average": 10.87746, 
+                "standard-deviation": 0.3894
+            }, 
+            "character": {
+                "average": 10.87746, 
+                "standard-deviation": 0.3894
+            }
+        }, 
+        "numeric_density": 0.90807, 
+        "numeric": {
+            "Q1": 0.47579, 
+            "Q3": 0.57891, 
+            "standard-deviation": 0.08347, 
+            "ratio": 1.0, 
+            "Q2": 0.5281, 
+            "mean": 0.52904
+        }, 
+        "ratio_distinct_values": 1.0, 
+        "num_distinct_tokens": 865, 
+        "decimal": {
+            "Q1": 0.47579, 
+            "Q3": 0.57891, 
+            "standard-deviation": 0.08347, 
+            "ratio": 1.0, 
+            "Q2": 0.5281, 
+            "mean": 0.52904
+        }
+    }, 
+    "BRAF_N": {
+        "ratio_distinct_tokens": 1.0, 
+        "num_integer": 0, 
+        "language": {}, 
+        "num_decimal": 863, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "0.311607143": 1, 
+                "0.430232558": 1, 
+                "0.238383838": 1, 
+                "0.360718673": 1, 
+                "0.239716155": 1, 
+                "0.404947917": 1, 
+                "0.589907087": 1, 
+                "0.368671679": 1, 
+                "0.298812253": 1, 
+                "0.373349057": 1
+            }, 
+            "most_common_values": {
+                "0.311607143": 1, 
+                "0.430232558": 1, 
+                "0.238383838": 1, 
+                "0.360718673": 1, 
+                "0.239716155": 1, 
+                "0.404947917": 1, 
+                "0.589907087": 1, 
+                "0.368671679": 1, 
+                "0.298812253": 1, 
+                "0.373349057": 1
+            }, 
+            "most_common_tokens": {
+                "0.311607143": 1, 
+                "0.430232558": 1, 
+                "0.238383838": 1, 
+                "0.360718673": 1, 
+                "0.239716155": 1, 
+                "0.404947917": 1, 
+                "0.589907087": 1, 
+                "0.368671679": 1, 
+                "0.298812253": 1, 
+                "0.373349057": 1
+            }
+        }, 
+        "num_nonblank": 863, 
+        "num_missing": 2, 
+        "num_distinct_values": 863, 
+        "length": {
+            "token": {
+                "average": 10.90151, 
+                "standard-deviation": 0.39225
+            }, 
+            "character": {
+                "average": 10.90151, 
+                "standard-deviation": 0.39225
+            }
+        }, 
+        "numeric_density": 0.90827, 
+        "numeric": {
+            "Q1": 0.26625, 
+            "Q3": 0.41109, 
+            "standard-deviation": 0.21151, 
+            "ratio": 1.0, 
+            "Q2": 0.32698, 
+            "mean": 0.37816
+        }, 
+        "ratio_distinct_values": 1.0, 
+        "num_distinct_tokens": 863, 
+        "decimal": {
+            "Q1": 0.26625, 
+            "Q3": 0.41109, 
+            "standard-deviation": 0.21151, 
+            "ratio": 1.0, 
+            "Q2": 0.32698, 
+            "mean": 0.37816
+        }
+    }, 
+    "ERBB4_N": {
+        "ratio_distinct_tokens": 1.0, 
+        "num_integer": 0, 
+        "language": {}, 
+        "num_decimal": 865, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "0.15317042": 1, 
+                "0.175726336": 1, 
+                "0.153038865": 1, 
+                "0.154707429": 1, 
+                "0.183860981": 1, 
+                "0.161747227": 1, 
+                "0.152551153": 1, 
+                "0.155721853": 1, 
+                "0.153122498": 1, 
+                "0.117225737": 1
+            }, 
+            "most_common_values": {
+                "0.15317042": 1, 
+                "0.175726336": 1, 
+                "0.153038865": 1, 
+                "0.154707429": 1, 
+                "0.183860981": 1, 
+                "0.161747227": 1, 
+                "0.152551153": 1, 
+                "0.155721853": 1, 
+                "0.153122498": 1, 
+                "0.117225737": 1
+            }, 
+            "most_common_tokens": {
+                "0.15317042": 1, 
+                "0.175726336": 1, 
+                "0.153038865": 1, 
+                "0.154707429": 1, 
+                "0.183860981": 1, 
+                "0.161747227": 1, 
+                "0.152551153": 1, 
+                "0.155721853": 1, 
+                "0.153122498": 1, 
+                "0.117225737": 1
+            }
+        }, 
+        "num_nonblank": 865, 
+        "num_missing": 0, 
+        "num_distinct_values": 865, 
+        "length": {
+            "token": {
+                "average": 10.87168, 
+                "standard-deviation": 0.37999
+            }, 
+            "character": {
+                "average": 10.87168, 
+                "standard-deviation": 0.37999
+            }
+        }, 
+        "numeric_density": 0.90802, 
+        "numeric": {
+            "Q1": 0.14682, 
+            "Q3": 0.16559, 
+            "standard-deviation": 0.01514, 
+            "ratio": 1.0, 
+            "Q2": 0.15636, 
+            "mean": 0.15648
+        }, 
+        "ratio_distinct_values": 1.0, 
+        "num_distinct_tokens": 865, 
+        "decimal": {
+            "Q1": 0.14682, 
+            "Q3": 0.16559, 
+            "standard-deviation": 0.01514, 
+            "ratio": 1.0, 
+            "Q2": 0.15636, 
+            "mean": 0.15648
+        }
+    }, 
+    "pNR2A_N": {
+        "ratio_distinct_tokens": 1.0, 
+        "num_integer": 0, 
+        "language": {}, 
+        "num_decimal": 863, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "1.16468039": 1, 
+                "0.89193601": 1, 
+                "0.630760689": 1, 
+                "0.960115223": 1, 
+                "0.797079665": 1, 
+                "0.483027834": 1, 
+                "0.893200607": 1, 
+                "0.459274194": 1, 
+                "0.512341561": 1, 
+                "0.564358167": 1
+            }, 
+            "most_common_values": {
+                "1.16468039": 1, 
+                "0.89193601": 1, 
+                "0.630760689": 1, 
+                "0.960115223": 1, 
+                "0.797079665": 1, 
+                "0.483027834": 1, 
+                "0.893200607": 1, 
+                "0.459274194": 1, 
+                "0.512341561": 1, 
+                "0.564358167": 1
+            }, 
+            "most_common_tokens": {
+                "1.16468039": 1, 
+                "0.89193601": 1, 
+                "0.630760689": 1, 
+                "0.960115223": 1, 
+                "0.797079665": 1, 
+                "0.483027834": 1, 
+                "0.893200607": 1, 
+                "0.459274194": 1, 
+                "0.512341561": 1, 
+                "0.564358167": 1
+            }
+        }, 
+        "num_nonblank": 863, 
+        "num_missing": 2, 
+        "num_distinct_values": 863, 
+        "length": {
+            "token": {
+                "average": 10.84357, 
+                "standard-deviation": 0.50276
+            }, 
+            "character": {
+                "average": 10.84357, 
+                "standard-deviation": 0.50276
+            }
+        }, 
+        "numeric_density": 0.90778, 
+        "numeric": {
+            "Q1": 0.59097, 
+            "Q3": 0.84584, 
+            "standard-deviation": 0.18665, 
+            "ratio": 1.0, 
+            "Q2": 0.72118, 
+            "mean": 0.72625
+        }, 
+        "ratio_distinct_values": 1.0, 
+        "num_distinct_tokens": 863, 
+        "decimal": {
+            "Q1": 0.59097, 
+            "Q3": 0.84584, 
+            "standard-deviation": 0.18665, 
+            "ratio": 1.0, 
+            "Q2": 0.72118, 
+            "mean": 0.72625
+        }
+    }, 
+    "pMEK_N": {
+        "ratio_distinct_tokens": 1.0, 
+        "num_integer": 0, 
+        "language": {}, 
+        "num_decimal": 863, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "0.240985222": 1, 
+                "0.321209465": 1, 
+                "0.256780557": 1, 
+                "0.209097081": 1, 
+                "0.308328036": 1, 
+                "0.270525918": 1, 
+                "0.322154665": 1, 
+                "0.264700927": 1, 
+                "0.316785637": 1, 
+                "0.280851064": 1
+            }, 
+            "most_common_values": {
+                "0.240985222": 1, 
+                "0.321209465": 1, 
+                "0.256780557": 1, 
+                "0.209097081": 1, 
+                "0.308328036": 1, 
+                "0.270525918": 1, 
+                "0.322154665": 1, 
+                "0.264700927": 1, 
+                "0.316785637": 1, 
+                "0.280851064": 1
+            }, 
+            "most_common_tokens": {
+                "0.240985222": 1, 
+                "0.321209465": 1, 
+                "0.256780557": 1, 
+                "0.209097081": 1, 
+                "0.308328036": 1, 
+                "0.270525918": 1, 
+                "0.322154665": 1, 
+                "0.264700927": 1, 
+                "0.316785637": 1, 
+                "0.280851064": 1
+            }
+        }, 
+        "num_nonblank": 863, 
+        "num_missing": 2, 
+        "num_distinct_values": 863, 
+        "length": {
+            "token": {
+                "average": 10.86559, 
+                "standard-deviation": 0.4964
+            }, 
+            "character": {
+                "average": 10.86559, 
+                "standard-deviation": 0.4964
+            }
+        }, 
+        "numeric_density": 0.90797, 
+        "numeric": {
+            "Q1": 0.24389, 
+            "Q3": 0.30316, 
+            "standard-deviation": 0.04712, 
+            "ratio": 1.0, 
+            "Q2": 0.27716, 
+            "mean": 0.27533
+        }, 
+        "ratio_distinct_values": 1.0, 
+        "num_distinct_tokens": 863, 
+        "decimal": {
+            "Q1": 0.24389, 
+            "Q3": 0.30316, 
+            "standard-deviation": 0.04712, 
+            "ratio": 1.0, 
+            "Q2": 0.27716, 
+            "mean": 0.27533
+        }
+    }, 
+    "CAMKII_N": {
+        "ratio_distinct_tokens": 1.0, 
+        "num_integer": 0, 
+        "language": {}, 
+        "num_decimal": 863, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "0.264959644": 1, 
+                "0.297534069": 1, 
+                "0.302160761": 1, 
+                "0.38454911": 1, 
+                "0.292949204": 1, 
+                "0.430232558": 1, 
+                "0.382158161": 1, 
+                "0.332412886": 1, 
+                "0.435213887": 1, 
+                "0.337509877": 1
+            }, 
+            "most_common_values": {
+                "0.264959644": 1, 
+                "0.297534069": 1, 
+                "0.302160761": 1, 
+                "0.38454911": 1, 
+                "0.292949204": 1, 
+                "0.430232558": 1, 
+                "0.382158161": 1, 
+                "0.332412886": 1, 
+                "0.435213887": 1, 
+                "0.337509877": 1
+            }, 
+            "most_common_tokens": {
+                "0.264959644": 1, 
+                "0.297534069": 1, 
+                "0.302160761": 1, 
+                "0.38454911": 1, 
+                "0.292949204": 1, 
+                "0.430232558": 1, 
+                "0.382158161": 1, 
+                "0.332412886": 1, 
+                "0.435213887": 1, 
+                "0.337509877": 1
+            }
+        }, 
+        "num_nonblank": 863, 
+        "num_missing": 2, 
+        "num_distinct_values": 863, 
+        "length": {
+            "token": {
+                "average": 10.9073, 
+                "standard-deviation": 0.42073
+            }, 
+            "character": {
+                "average": 10.9073, 
+                "standard-deviation": 0.42073
+            }
+        }, 
+        "numeric_density": 0.90832, 
+        "numeric": {
+            "Q1": 0.33007, 
+            "Q3": 0.39434, 
+            "standard-deviation": 0.05302, 
+            "ratio": 1.0, 
+            "Q2": 0.36072, 
+            "mean": 0.36399
+        }, 
+        "ratio_distinct_values": 1.0, 
+        "num_distinct_tokens": 863, 
+        "decimal": {
+            "Q1": 0.33007, 
+            "Q3": 0.39434, 
+            "standard-deviation": 0.05302, 
+            "ratio": 1.0, 
+            "Q2": 0.36072, 
+            "mean": 0.36399
+        }
+    }, 
+    "pJNK_N": {
+        "ratio_distinct_tokens": 0.99884, 
+        "num_integer": 0, 
+        "language": {}, 
+        "num_decimal": 863, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "0.262544932": 1, 
+                "0.272137325": 1, 
+                "0.333333333": 2, 
+                "0.30237467": 1, 
+                "0.319966583": 1, 
+                "0.315813598": 1, 
+                "0.347585806": 1, 
+                "0.322794493": 1, 
+                "0.262316224": 1, 
+                "0.376584447": 1
+            }, 
+            "most_common_values": {
+                "0.262544932": 1, 
+                "0.272137325": 1, 
+                "0.333333333": 2, 
+                "0.30237467": 1, 
+                "0.319966583": 1, 
+                "0.315813598": 1, 
+                "0.347585806": 1, 
+                "0.322794493": 1, 
+                "0.262316224": 1, 
+                "0.376584447": 1
+            }, 
+            "most_common_tokens": {
+                "0.262544932": 1, 
+                "0.272137325": 1, 
+                "0.333333333": 2, 
+                "0.30237467": 1, 
+                "0.319966583": 1, 
+                "0.315813598": 1, 
+                "0.347585806": 1, 
+                "0.322794493": 1, 
+                "0.262316224": 1, 
+                "0.376584447": 1
+            }
+        }, 
+        "num_nonblank": 863, 
+        "num_missing": 2, 
+        "num_distinct_values": 862, 
+        "length": {
+            "token": {
+                "average": 10.8737, 
+                "standard-deviation": 0.47101
+            }, 
+            "character": {
+                "average": 10.8737, 
+                "standard-deviation": 0.47101
+            }
+        }, 
+        "numeric_density": 0.90803, 
+        "numeric": {
+            "Q1": 0.2817, 
+            "Q3": 0.34892, 
+            "standard-deviation": 0.05183, 
+            "ratio": 1.0, 
+            "Q2": 0.32099, 
+            "mean": 0.31357
+        }, 
+        "ratio_distinct_values": 0.99884, 
+        "num_distinct_tokens": 862, 
+        "decimal": {
+            "Q1": 0.2817, 
+            "Q3": 0.34892, 
+            "standard-deviation": 0.05183, 
+            "ratio": 1.0, 
+            "Q2": 0.32099, 
+            "mean": 0.31357
+        }
+    }, 
+    "pELK_N": {
+        "ratio_distinct_tokens": 1.0, 
+        "num_integer": 0, 
+        "language": {}, 
+        "num_decimal": 863, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "1.244452595": 1, 
+                "1.170834094": 1, 
+                "1.88392768": 1, 
+                "0.852295777": 1, 
+                "1.760927743": 1, 
+                "1.376873662": 1, 
+                "3.000314564": 1, 
+                "1.2786298": 1, 
+                "1.514092446": 1, 
+                "1.555635063": 1
+            }, 
+            "most_common_values": {
+                "1.244452595": 1, 
+                "1.170834094": 1, 
+                "1.88392768": 1, 
+                "0.852295777": 1, 
+                "1.760927743": 1, 
+                "1.376873662": 1, 
+                "3.000314564": 1, 
+                "1.2786298": 1, 
+                "1.514092446": 1, 
+                "1.555635063": 1
+            }, 
+            "most_common_tokens": {
+                "1.244452595": 1, 
+                "1.170834094": 1, 
+                "1.88392768": 1, 
+                "0.852295777": 1, 
+                "1.760927743": 1, 
+                "1.376873662": 1, 
+                "3.000314564": 1, 
+                "1.2786298": 1, 
+                "1.514092446": 1, 
+                "1.555635063": 1
+            }
+        }, 
+        "num_nonblank": 863, 
+        "num_missing": 2, 
+        "num_distinct_values": 863, 
+        "length": {
+            "token": {
+                "average": 10.86559, 
+                "standard-deviation": 0.50566
+            }, 
+            "character": {
+                "average": 10.86559, 
+                "standard-deviation": 0.50566
+            }
+        }, 
+        "numeric_density": 0.90797, 
+        "numeric": {
+            "Q1": 1.21142, 
+            "Q3": 1.56171, 
+            "standard-deviation": 0.46152, 
+            "ratio": 1.0, 
+            "Q2": 1.35558, 
+            "mean": 1.43067
+        }, 
+        "ratio_distinct_values": 1.0, 
+        "num_distinct_tokens": 863, 
+        "decimal": {
+            "Q1": 1.21142, 
+            "Q3": 1.56171, 
+            "standard-deviation": 0.46152, 
+            "ratio": 1.0, 
+            "Q2": 1.35558, 
+            "mean": 1.43067
+        }
+    }, 
+    "NR1_N": {
+        "ratio_distinct_tokens": 1.0, 
+        "num_integer": 0, 
+        "language": {}, 
+        "num_decimal": 863, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "2.186197917": 1, 
+                "2.281348236": 1, 
+                "2.498280564": 1, 
+                "2.151099831": 1, 
+                "2.686509636": 1, 
+                "2.490127496": 1, 
+                "2.246424385": 1, 
+                "2.015869365": 1, 
+                "2.356974552": 1, 
+                "2.384170582": 1
+            }, 
+            "most_common_values": {
+                "2.186197917": 1, 
+                "2.281348236": 1, 
+                "2.498280564": 1, 
+                "2.151099831": 1, 
+                "2.686509636": 1, 
+                "2.490127496": 1, 
+                "2.246424385": 1, 
+                "2.015869365": 1, 
+                "2.356974552": 1, 
+                "2.384170582": 1
+            }, 
+            "most_common_tokens": {
+                "2.186197917": 1, 
+                "2.281348236": 1, 
+                "2.498280564": 1, 
+                "2.151099831": 1, 
+                "2.686509636": 1, 
+                "2.490127496": 1, 
+                "2.246424385": 1, 
+                "2.015869365": 1, 
+                "2.356974552": 1, 
+                "2.384170582": 1
+            }
+        }, 
+        "num_nonblank": 863, 
+        "num_missing": 2, 
+        "num_distinct_values": 863, 
+        "length": {
+            "token": {
+                "average": 10.83546, 
+                "standard-deviation": 0.69188
+            }, 
+            "character": {
+                "average": 10.83546, 
+                "standard-deviation": 0.69188
+            }
+        }, 
+        "numeric_density": 0.90771, 
+        "numeric": {
+            "Q1": 2.06017, 
+            "Q3": 2.52099, 
+            "standard-deviation": 0.33833, 
+            "ratio": 1.0, 
+            "Q2": 2.29655, 
+            "mean": 2.29513
+        }, 
+        "ratio_distinct_values": 1.0, 
+        "num_distinct_tokens": 863, 
+        "decimal": {
+            "Q1": 2.06017, 
+            "Q3": 2.52099, 
+            "standard-deviation": 0.33833, 
+            "ratio": 1.0, 
+            "Q2": 2.29655, 
+            "mean": 2.29513
+        }
+    }, 
+    "pCFOS_N": {
+        "ratio_distinct_tokens": 1.0, 
+        "num_integer": 0, 
+        "language": {}, 
+        "num_decimal": 808, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "0.110194258": 1, 
+                "0.106154117": 1, 
+                "0.142117289": 1, 
+                "0.114971862": 1, 
+                "0.174759358": 1, 
+                "0.149569358": 1, 
+                "0.17615994": 1, 
+                "0.101446337": 1, 
+                "0.198602794": 1, 
+                "0.114397861": 1
+            }, 
+            "most_common_values": {
+                "0.110194258": 1, 
+                "0.106154117": 1, 
+                "0.142117289": 1, 
+                "0.114971862": 1, 
+                "0.174759358": 1, 
+                "0.149569358": 1, 
+                "0.17615994": 1, 
+                "0.101446337": 1, 
+                "0.198602794": 1, 
+                "0.114397861": 1
+            }, 
+            "most_common_tokens": {
+                "0.110194258": 1, 
+                "0.106154117": 1, 
+                "0.142117289": 1, 
+                "0.114971862": 1, 
+                "0.174759358": 1, 
+                "0.149569358": 1, 
+                "0.17615994": 1, 
+                "0.101446337": 1, 
+                "0.198602794": 1, 
+                "0.114397861": 1
+            }
+        }, 
+        "num_nonblank": 808, 
+        "num_missing": 57, 
+        "num_distinct_values": 808, 
+        "length": {
+            "token": {
+                "average": 10.87995, 
+                "standard-deviation": 0.4244
+            }, 
+            "character": {
+                "average": 10.87995, 
+                "standard-deviation": 0.4244
+            }
+        }, 
+        "numeric_density": 0.90809, 
+        "numeric": {
+            "Q1": 0.11401, 
+            "Q3": 0.14368, 
+            "standard-deviation": 0.02438, 
+            "ratio": 1.0, 
+            "Q2": 0.12651, 
+            "mean": 0.13159
+        }, 
+        "ratio_distinct_values": 1.0, 
+        "num_distinct_tokens": 808, 
+        "decimal": {
+            "Q1": 0.11401, 
+            "Q3": 0.14368, 
+            "standard-deviation": 0.02438, 
+            "ratio": 1.0, 
+            "Q2": 0.12651, 
+            "mean": 0.13159
+        }
+    }, 
+    "pPKCG_N": {
+        "ratio_distinct_tokens": 1.0, 
+        "num_integer": 0, 
+        "language": {}, 
+        "num_decimal": 865, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "2.245026372": 1, 
+                "1.315620588": 1, 
+                "1.98989899": 1, 
+                "1.612579359": 1, 
+                "1.795780591": 1, 
+                "1.527523624": 1, 
+                "1.69072699": 1, 
+                "0.712687832": 1, 
+                "2.6549258": 1, 
+                "1.349320832": 1
+            }, 
+            "most_common_values": {
+                "2.245026372": 1, 
+                "1.315620588": 1, 
+                "1.98989899": 1, 
+                "1.612579359": 1, 
+                "1.795780591": 1, 
+                "1.527523624": 1, 
+                "1.69072699": 1, 
+                "0.712687832": 1, 
+                "2.6549258": 1, 
+                "1.349320832": 1
+            }, 
+            "most_common_tokens": {
+                "2.245026372": 1, 
+                "1.315620588": 1, 
+                "1.98989899": 1, 
+                "1.612579359": 1, 
+                "1.795780591": 1, 
+                "1.527523624": 1, 
+                "1.69072699": 1, 
+                "0.712687832": 1, 
+                "2.6549258": 1, 
+                "1.349320832": 1
+            }
+        }, 
+        "num_nonblank": 865, 
+        "num_missing": 0, 
+        "num_distinct_values": 865, 
+        "length": {
+            "token": {
+                "average": 10.8948, 
+                "standard-deviation": 0.33923
+            }, 
+            "character": {
+                "average": 10.8948, 
+                "standard-deviation": 0.33923
+            }
+        }, 
+        "numeric_density": 0.90821, 
+        "numeric": {
+            "Q1": 1.29761, 
+            "Q3": 2.10695, 
+            "standard-deviation": 0.5799, 
+            "ratio": 1.0, 
+            "Q2": 1.66323, 
+            "mean": 1.7049
+        }, 
+        "ratio_distinct_values": 1.0, 
+        "num_distinct_tokens": 865, 
+        "decimal": {
+            "Q1": 1.29761, 
+            "Q3": 2.10695, 
+            "standard-deviation": 0.5799, 
+            "ratio": 1.0, 
+            "Q2": 1.66323, 
+            "mean": 1.7049
+        }
+    }, 
+    "H3AcK18_N": {
+        "ratio_distinct_tokens": 1.0, 
+        "num_integer": 0, 
+        "language": {}, 
+        "num_decimal": 725, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "0.208542346": 1, 
+                "0.156690433": 1, 
+                "0.195252945": 1, 
+                "0.111111111": 1, 
+                "0.116900145": 1, 
+                "0.10664077": 1, 
+                "0.131540467": 1, 
+                "0.287123828": 1, 
+                "0.150979685": 1, 
+                "0.185964445": 1
+            }, 
+            "most_common_values": {
+                "0.208542346": 1, 
+                "0.156690433": 1, 
+                "0.195252945": 1, 
+                "0.111111111": 1, 
+                "0.116900145": 1, 
+                "0.10664077": 1, 
+                "0.131540467": 1, 
+                "0.287123828": 1, 
+                "0.150979685": 1, 
+                "0.185964445": 1
+            }, 
+            "most_common_tokens": {
+                "0.208542346": 1, 
+                "0.156690433": 1, 
+                "0.195252945": 1, 
+                "0.111111111": 1, 
+                "0.116900145": 1, 
+                "0.10664077": 1, 
+                "0.131540467": 1, 
+                "0.287123828": 1, 
+                "0.150979685": 1, 
+                "0.185964445": 1
+            }
+        }, 
+        "num_nonblank": 725, 
+        "num_missing": 140, 
+        "num_distinct_values": 725, 
+        "length": {
+            "token": {
+                "average": 10.88552, 
+                "standard-deviation": 0.3396
+            }, 
+            "character": {
+                "average": 10.88552, 
+                "standard-deviation": 0.3396
+            }
+        }, 
+        "numeric_density": 0.90813, 
+        "numeric": {
+            "Q1": 0.12566, 
+            "Q3": 0.19836, 
+            "standard-deviation": 0.06045, 
+            "ratio": 1.0, 
+            "Q2": 0.15787, 
+            "mean": 0.17039
+        }, 
+        "ratio_distinct_values": 1.0, 
+        "num_distinct_tokens": 725, 
+        "decimal": {
+            "Q1": 0.12566, 
+            "Q3": 0.19836, 
+            "standard-deviation": 0.06045, 
+            "ratio": 1.0, 
+            "Q2": 0.15787, 
+            "mean": 0.17039
+        }
+    }, 
+    "pCAMKII_N": {
+        "ratio_distinct_tokens": 1.0, 
+        "num_integer": 0, 
+        "language": {}, 
+        "num_decimal": 863, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "5.932452945": 1, 
+                "4.940244702": 1, 
+                "1.895515984": 1, 
+                "5.082848837": 1, 
+                "3.250185782": 1, 
+                "3.184749315": 1, 
+                "2.610132159": 1, 
+                "3.315167876": 1, 
+                "2.488143249": 1, 
+                "2.282965666": 1
+            }, 
+            "most_common_values": {
+                "5.932452945": 1, 
+                "4.940244702": 1, 
+                "1.895515984": 1, 
+                "5.082848837": 1, 
+                "3.250185782": 1, 
+                "3.184749315": 1, 
+                "2.610132159": 1, 
+                "3.315167876": 1, 
+                "2.488143249": 1, 
+                "2.282965666": 1
+            }, 
+            "most_common_tokens": {
+                "5.932452945": 1, 
+                "4.940244702": 1, 
+                "1.895515984": 1, 
+                "5.082848837": 1, 
+                "3.250185782": 1, 
+                "3.184749315": 1, 
+                "2.610132159": 1, 
+                "3.315167876": 1, 
+                "2.488143249": 1, 
+                "2.282965666": 1
+            }
+        }, 
+        "num_nonblank": 863, 
+        "num_missing": 2, 
+        "num_distinct_values": 863, 
+        "length": {
+            "token": {
+                "average": 10.86443, 
+                "standard-deviation": 0.47335
+            }, 
+            "character": {
+                "average": 10.86443, 
+                "standard-deviation": 0.47335
+            }
+        }, 
+        "numeric_density": 0.90796, 
+        "numeric": {
+            "Q1": 2.4679, 
+            "Q3": 4.48263, 
+            "standard-deviation": 1.2963, 
+            "ratio": 1.0, 
+            "Q2": 3.32652, 
+            "mean": 3.53661
+        }, 
+        "ratio_distinct_values": 1.0, 
+        "num_distinct_tokens": 863, 
+        "decimal": {
+            "Q1": 2.4679, 
+            "Q3": 4.48263, 
+            "standard-deviation": 1.2963, 
+            "ratio": 1.0, 
+            "Q2": 3.32652, 
+            "mean": 3.53661
+        }
+    }, 
+    "Tau_N": {
+        "ratio_distinct_tokens": 1.0, 
+        "num_integer": 0, 
+        "language": {}, 
+        "num_decimal": 865, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "0.170229675": 1, 
+                "0.40951259": 1, 
+                "0.230016075": 1, 
+                "0.147513964": 1, 
+                "0.169884771": 1, 
+                "0.178059312": 1, 
+                "0.189282297": 1, 
+                "0.156946907": 1, 
+                "0.25637978": 1, 
+                "0.204014261": 1
+            }, 
+            "most_common_values": {
+                "0.170229675": 1, 
+                "0.40951259": 1, 
+                "0.230016075": 1, 
+                "0.147513964": 1, 
+                "0.169884771": 1, 
+                "0.178059312": 1, 
+                "0.189282297": 1, 
+                "0.156946907": 1, 
+                "0.25637978": 1, 
+                "0.204014261": 1
+            }, 
+            "most_common_tokens": {
+                "0.170229675": 1, 
+                "0.40951259": 1, 
+                "0.230016075": 1, 
+                "0.147513964": 1, 
+                "0.169884771": 1, 
+                "0.178059312": 1, 
+                "0.189282297": 1, 
+                "0.156946907": 1, 
+                "0.25637978": 1, 
+                "0.204014261": 1
+            }
+        }, 
+        "num_nonblank": 865, 
+        "num_missing": 0, 
+        "num_distinct_values": 865, 
+        "length": {
+            "token": {
+                "average": 10.89017, 
+                "standard-deviation": 0.40905
+            }, 
+            "character": {
+                "average": 10.89017, 
+                "standard-deviation": 0.40905
+            }
+        }, 
+        "numeric_density": 0.90817, 
+        "numeric": {
+            "Q1": 0.16813, 
+            "Q3": 0.23245, 
+            "standard-deviation": 0.06899, 
+            "ratio": 1.0, 
+            "Q2": 0.18855, 
+            "mean": 0.21043
+        }, 
+        "ratio_distinct_values": 1.0, 
+        "num_distinct_tokens": 865, 
+        "decimal": {
+            "Q1": 0.16813, 
+            "Q3": 0.23245, 
+            "standard-deviation": 0.06899, 
+            "ratio": 1.0, 
+            "Q2": 0.18855, 
+            "mean": 0.21043
+        }
+    }, 
+    "P70S6_N": {
+        "ratio_distinct_tokens": 1.0, 
+        "num_integer": 0, 
+        "language": {}, 
+        "num_decimal": 865, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "0.724232707": 1, 
+                "1.082851163": 1, 
+                "1.057637461": 1, 
+                "1.301716023": 1, 
+                "0.892413487": 1, 
+                "0.905118869": 1, 
+                "0.891823261": 1, 
+                "0.850284925": 1, 
+                "1.113038764": 1, 
+                "1.20384648": 1
+            }, 
+            "most_common_values": {
+                "0.724232707": 1, 
+                "1.082851163": 1, 
+                "1.057637461": 1, 
+                "1.301716023": 1, 
+                "0.892413487": 1, 
+                "0.905118869": 1, 
+                "0.891823261": 1, 
+                "0.850284925": 1, 
+                "1.113038764": 1, 
+                "1.20384648": 1
+            }, 
+            "most_common_tokens": {
+                "0.724232707": 1, 
+                "1.082851163": 1, 
+                "1.057637461": 1, 
+                "1.301716023": 1, 
+                "0.892413487": 1, 
+                "0.905118869": 1, 
+                "0.891823261": 1, 
+                "0.850284925": 1, 
+                "1.113038764": 1, 
+                "1.20384648": 1
+            }
+        }, 
+        "num_nonblank": 865, 
+        "num_missing": 0, 
+        "num_distinct_values": 865, 
+        "length": {
+            "token": {
+                "average": 10.89595, 
+                "standard-deviation": 0.37675
+            }, 
+            "character": {
+                "average": 10.89595, 
+                "standard-deviation": 0.37675
+            }
+        }, 
+        "numeric_density": 0.90822, 
+        "numeric": {
+            "Q1": 0.82375, 
+            "Q3": 1.04504, 
+            "standard-deviation": 0.16906, 
+            "ratio": 1.0, 
+            "Q2": 0.92293, 
+            "mean": 0.94205
+        }, 
+        "ratio_distinct_values": 1.0, 
+        "num_distinct_tokens": 865, 
+        "decimal": {
+            "Q1": 0.82375, 
+            "Q3": 1.04504, 
+            "standard-deviation": 0.16906, 
+            "ratio": 1.0, 
+            "Q2": 0.92293, 
+            "mean": 0.94205
+        }
+    }, 
+    "MEK_N": {
+        "ratio_distinct_tokens": 1.0, 
+        "num_integer": 0, 
+        "language": {}, 
+        "num_decimal": 859, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "0.223822173": 1, 
+                "0.27191822": 1, 
+                "0.186532282": 1, 
+                "0.279904975": 1, 
+                "0.245848045": 1, 
+                "0.222260749": 1, 
+                "0.255151249": 1, 
+                "0.29844302": 1, 
+                "0.255831083": 1, 
+                "0.291044776": 1
+            }, 
+            "most_common_values": {
+                "0.223822173": 1, 
+                "0.27191822": 1, 
+                "0.186532282": 1, 
+                "0.279904975": 1, 
+                "0.245848045": 1, 
+                "0.222260749": 1, 
+                "0.255151249": 1, 
+                "0.29844302": 1, 
+                "0.255831083": 1, 
+                "0.291044776": 1
+            }, 
+            "most_common_tokens": {
+                "0.223822173": 1, 
+                "0.27191822": 1, 
+                "0.186532282": 1, 
+                "0.279904975": 1, 
+                "0.245848045": 1, 
+                "0.222260749": 1, 
+                "0.255151249": 1, 
+                "0.29844302": 1, 
+                "0.255831083": 1, 
+                "0.291044776": 1
+            }
+        }, 
+        "num_nonblank": 859, 
+        "num_missing": 6, 
+        "num_distinct_values": 859, 
+        "length": {
+            "token": {
+                "average": 10.87194, 
+                "standard-deviation": 0.47294
+            }, 
+            "character": {
+                "average": 10.87194, 
+                "standard-deviation": 0.47294
+            }
+        }, 
+        "numeric_density": 0.90802, 
+        "numeric": {
+            "Q1": 0.24749, 
+            "Q3": 0.2998, 
+            "standard-deviation": 0.0409, 
+            "ratio": 1.0, 
+            "Q2": 0.27282, 
+            "mean": 0.27265
+        }, 
+        "ratio_distinct_values": 1.0, 
+        "num_distinct_tokens": 859, 
+        "decimal": {
+            "Q1": 0.24749, 
+            "Q3": 0.2998, 
+            "standard-deviation": 0.0409, 
+            "ratio": 1.0, 
+            "Q2": 0.27282, 
+            "mean": 0.27265
+        }
+    }, 
+    "ELK_N": {
+        "ratio_distinct_tokens": 1.0, 
+        "num_integer": 0, 
+        "language": {}, 
+        "num_decimal": 852, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "0.955867399": 1, 
+                "1.290438769": 1, 
+                "1.177410618": 1, 
+                "1.047192196": 1, 
+                "1.607272727": 1, 
+                "0.798562819": 1, 
+                "1.340194611": 1, 
+                "1.10200566": 1, 
+                "1.25488": 1, 
+                "1.058671065": 1
+            }, 
+            "most_common_values": {
+                "0.955867399": 1, 
+                "1.290438769": 1, 
+                "1.177410618": 1, 
+                "1.047192196": 1, 
+                "1.607272727": 1, 
+                "0.798562819": 1, 
+                "1.340194611": 1, 
+                "1.10200566": 1, 
+                "1.25488": 1, 
+                "1.058671065": 1
+            }, 
+            "most_common_tokens": {
+                "0.955867399": 1, 
+                "1.290438769": 1, 
+                "1.177410618": 1, 
+                "1.047192196": 1, 
+                "1.607272727": 1, 
+                "0.798562819": 1, 
+                "1.340194611": 1, 
+                "1.10200566": 1, 
+                "1.25488": 1, 
+                "1.058671065": 1
+            }
+        }, 
+        "num_nonblank": 852, 
+        "num_missing": 13, 
+        "num_distinct_values": 852, 
+        "length": {
+            "token": {
+                "average": 10.86854, 
+                "standard-deviation": 0.45383
+            }, 
+            "character": {
+                "average": 10.86854, 
+                "standard-deviation": 0.45383
+            }
+        }, 
+        "numeric_density": 0.90799, 
+        "numeric": {
+            "Q1": 0.94937, 
+            "Q3": 1.30499, 
+            "standard-deviation": 0.32816, 
+            "ratio": 1.0, 
+            "Q2": 1.08945, 
+            "mean": 1.16847
+        }, 
+        "ratio_distinct_values": 1.0, 
+        "num_distinct_tokens": 852, 
+        "decimal": {
+            "Q1": 0.94937, 
+            "Q3": 1.30499, 
+            "standard-deviation": 0.32816, 
+            "ratio": 1.0, 
+            "Q2": 1.08945, 
+            "mean": 1.16847
+        }
+    }, 
+    "CaNA_N": {
+        "ratio_distinct_tokens": 1.0, 
+        "num_integer": 0, 
+        "language": {}, 
+        "num_decimal": 865, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "1.470285294": 1, 
+                "1.336073501": 1, 
+                "0.880398111": 1, 
+                "0.901526801": 1, 
+                "0.93244529": 1, 
+                "1.191461965": 1, 
+                "1.864434362": 1, 
+                "1.015289256": 1, 
+                "1.58677849": 1, 
+                "1.071612805": 1
+            }, 
+            "most_common_values": {
+                "1.470285294": 1, 
+                "1.336073501": 1, 
+                "0.880398111": 1, 
+                "0.901526801": 1, 
+                "0.93244529": 1, 
+                "1.191461965": 1, 
+                "1.864434362": 1, 
+                "1.015289256": 1, 
+                "1.58677849": 1, 
+                "1.071612805": 1
+            }, 
+            "most_common_tokens": {
+                "1.470285294": 1, 
+                "1.336073501": 1, 
+                "0.880398111": 1, 
+                "0.901526801": 1, 
+                "0.93244529": 1, 
+                "1.191461965": 1, 
+                "1.864434362": 1, 
+                "1.015289256": 1, 
+                "1.58677849": 1, 
+                "1.071612805": 1
+            }
+        }, 
+        "num_nonblank": 865, 
+        "num_missing": 0, 
+        "num_distinct_values": 865, 
+        "length": {
+            "token": {
+                "average": 10.88092, 
+                "standard-deviation": 0.45483
+            }, 
+            "character": {
+                "average": 10.88092, 
+                "standard-deviation": 0.45483
+            }
+        }, 
+        "numeric_density": 0.9081, 
+        "numeric": {
+            "Q1": 1.08123, 
+            "Q3": 1.58002, 
+            "standard-deviation": 0.31695, 
+            "ratio": 1.0, 
+            "Q2": 1.32239, 
+            "mean": 1.33853
+        }, 
+        "ratio_distinct_values": 1.0, 
+        "num_distinct_tokens": 865, 
+        "decimal": {
+            "Q1": 1.08123, 
+            "Q3": 1.58002, 
+            "standard-deviation": 0.31695, 
+            "ratio": 1.0, 
+            "Q2": 1.32239, 
+            "mean": 1.33853
+        }
+    }, 
+    "pGSK3B_Tyr216_N": {
+        "ratio_distinct_tokens": 1.0, 
+        "num_integer": 0, 
+        "language": {}, 
+        "num_decimal": 865, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "0.663676149": 1, 
+                "0.885652887": 1, 
+                "0.852809706": 1, 
+                "0.912323322": 1, 
+                "0.85034652": 1, 
+                "0.98215931": 1, 
+                "0.745598832": 1, 
+                "0.952849452": 1, 
+                "0.716687618": 1, 
+                "0.96159226": 1
+            }, 
+            "most_common_values": {
+                "0.663676149": 1, 
+                "0.885652887": 1, 
+                "0.852809706": 1, 
+                "0.912323322": 1, 
+                "0.85034652": 1, 
+                "0.98215931": 1, 
+                "0.745598832": 1, 
+                "0.952849452": 1, 
+                "0.716687618": 1, 
+                "0.96159226": 1
+            }, 
+            "most_common_tokens": {
+                "0.663676149": 1, 
+                "0.885652887": 1, 
+                "0.852809706": 1, 
+                "0.912323322": 1, 
+                "0.85034652": 1, 
+                "0.98215931": 1, 
+                "0.745598832": 1, 
+                "0.952849452": 1, 
+                "0.716687618": 1, 
+                "0.96159226": 1
+            }
+        }, 
+        "num_nonblank": 865, 
+        "num_missing": 0, 
+        "num_distinct_values": 865, 
+        "length": {
+            "token": {
+                "average": 10.89827, 
+                "standard-deviation": 0.4069
+            }, 
+            "character": {
+                "average": 10.89827, 
+                "standard-deviation": 0.4069
+            }
+        }, 
+        "numeric_density": 0.90824, 
+        "numeric": {
+            "Q1": 0.796, 
+            "Q3": 0.91492, 
+            "standard-deviation": 0.09349, 
+            "ratio": 1.0, 
+            "Q2": 0.84987, 
+            "mean": 0.84911
+        }, 
+        "ratio_distinct_values": 1.0, 
+        "num_distinct_tokens": 865, 
+        "decimal": {
+            "Q1": 0.796, 
+            "Q3": 0.91492, 
+            "standard-deviation": 0.09349, 
+            "ratio": 1.0, 
+            "Q2": 0.84987, 
+            "mean": 0.84911
+        }
+    }, 
+    "pNR2B_N": {
+        "ratio_distinct_tokens": 1.0, 
+        "num_integer": 0, 
+        "language": {}, 
+        "num_decimal": 863, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "1.897639815": 1, 
+                "1.336157381": 1, 
+                "1.690428804": 1, 
+                "1.560373295": 1, 
+                "1.41820345": 1, 
+                "1.769861609": 1, 
+                "1.406800243": 1, 
+                "1.234788833": 1, 
+                "1.408809135": 1, 
+                "1.833070037": 1
+            }, 
+            "most_common_values": {
+                "1.897639815": 1, 
+                "1.336157381": 1, 
+                "1.690428804": 1, 
+                "1.560373295": 1, 
+                "1.41820345": 1, 
+                "1.769861609": 1, 
+                "1.406800243": 1, 
+                "1.234788833": 1, 
+                "1.408809135": 1, 
+                "1.833070037": 1
+            }, 
+            "most_common_tokens": {
+                "1.897639815": 1, 
+                "1.336157381": 1, 
+                "1.690428804": 1, 
+                "1.560373295": 1, 
+                "1.41820345": 1, 
+                "1.769861609": 1, 
+                "1.406800243": 1, 
+                "1.234788833": 1, 
+                "1.408809135": 1, 
+                "1.833070037": 1
+            }
+        }, 
+        "num_nonblank": 863, 
+        "num_missing": 2, 
+        "num_distinct_values": 863, 
+        "length": {
+            "token": {
+                "average": 10.89108, 
+                "standard-deviation": 0.4332
+            }, 
+            "character": {
+                "average": 10.89108, 
+                "standard-deviation": 0.4332
+            }
+        }, 
+        "numeric_density": 0.90818, 
+        "numeric": {
+            "Q1": 1.38527, 
+            "Q3": 1.74008, 
+            "standard-deviation": 0.26483, 
+            "ratio": 1.0, 
+            "Q2": 1.56083, 
+            "mean": 1.56151
+        }, 
+        "ratio_distinct_values": 1.0, 
+        "num_distinct_tokens": 863, 
+        "decimal": {
+            "Q1": 1.38527, 
+            "Q3": 1.74008, 
+            "standard-deviation": 0.26483, 
+            "ratio": 1.0, 
+            "Q2": 1.56083, 
+            "mean": 1.56151
+        }
+    }, 
+    "SOD1_N": {
+        "ratio_distinct_tokens": 1.0, 
+        "num_integer": 0, 
+        "language": {}, 
+        "num_decimal": 863, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "0.59536935": 1, 
+                "0.323102745": 1, 
+                "0.73979156": 1, 
+                "0.55248296": 1, 
+                "0.349436393": 1, 
+                "0.973329338": 1, 
+                "0.56384743": 1, 
+                "0.60049903": 1, 
+                "0.939522869": 1, 
+                "0.324574121": 1
+            }, 
+            "most_common_values": {
+                "0.59536935": 1, 
+                "0.323102745": 1, 
+                "0.73979156": 1, 
+                "0.55248296": 1, 
+                "0.349436393": 1, 
+                "0.973329338": 1, 
+                "0.56384743": 1, 
+                "0.60049903": 1, 
+                "0.939522869": 1, 
+                "0.324574121": 1
+            }, 
+            "most_common_tokens": {
+                "0.59536935": 1, 
+                "0.323102745": 1, 
+                "0.73979156": 1, 
+                "0.55248296": 1, 
+                "0.349436393": 1, 
+                "0.973329338": 1, 
+                "0.56384743": 1, 
+                "0.60049903": 1, 
+                "0.939522869": 1, 
+                "0.324574121": 1
+            }
+        }, 
+        "num_nonblank": 863, 
+        "num_missing": 2, 
+        "num_distinct_values": 863, 
+        "length": {
+            "token": {
+                "average": 10.85747, 
+                "standard-deviation": 0.48822
+            }, 
+            "character": {
+                "average": 10.85747, 
+                "standard-deviation": 0.48822
+            }
+        }, 
+        "numeric_density": 0.9079, 
+        "numeric": {
+            "Q1": 0.31979, 
+            "Q3": 0.69833, 
+            "standard-deviation": 0.27588, 
+            "ratio": 1.0, 
+            "Q2": 0.44727, 
+            "mean": 0.54095
+        }, 
+        "ratio_distinct_values": 1.0, 
+        "num_distinct_tokens": 863, 
+        "decimal": {
+            "Q1": 0.31979, 
+            "Q3": 0.69833, 
+            "standard-deviation": 0.27588, 
+            "ratio": 1.0, 
+            "Q2": 0.44727, 
+            "mean": 0.54095
+        }
+    }, 
+    "Bcatenin_N": {
+        "ratio_distinct_tokens": 1.0, 
+        "num_integer": 0, 
+        "language": {}, 
+        "num_decimal": 853, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "1.911904762": 1, 
+                "2.509570686": 1, 
+                "2.572916667": 1, 
+                "3.051450677": 1, 
+                "1.893894267": 1, 
+                "2.512644022": 1, 
+                "2.110551317": 1, 
+                "1.984190248": 1, 
+                "1.661795407": 1, 
+                "1.327926865": 1
+            }, 
+            "most_common_values": {
+                "1.911904762": 1, 
+                "2.509570686": 1, 
+                "2.572916667": 1, 
+                "3.051450677": 1, 
+                "1.893894267": 1, 
+                "2.512644022": 1, 
+                "2.110551317": 1, 
+                "1.984190248": 1, 
+                "1.661795407": 1, 
+                "1.327926865": 1
+            }, 
+            "most_common_tokens": {
+                "1.911904762": 1, 
+                "2.509570686": 1, 
+                "2.572916667": 1, 
+                "3.051450677": 1, 
+                "1.893894267": 1, 
+                "2.512644022": 1, 
+                "2.110551317": 1, 
+                "1.984190248": 1, 
+                "1.661795407": 1, 
+                "1.327926865": 1
+            }
+        }, 
+        "num_nonblank": 853, 
+        "num_missing": 12, 
+        "num_distinct_values": 853, 
+        "length": {
+            "token": {
+                "average": 10.87222, 
+                "standard-deviation": 0.43749
+            }, 
+            "character": {
+                "average": 10.87222, 
+                "standard-deviation": 0.43749
+            }
+        }, 
+        "numeric_density": 0.90802, 
+        "numeric": {
+            "Q1": 1.8301, 
+            "Q3": 2.41435, 
+            "standard-deviation": 0.42565, 
+            "ratio": 1.0, 
+            "Q2": 2.11212, 
+            "mean": 2.1399
+        }, 
+        "ratio_distinct_values": 1.0, 
+        "num_distinct_tokens": 853, 
+        "decimal": {
+            "Q1": 1.8301, 
+            "Q3": 2.41435, 
+            "standard-deviation": 0.42565, 
+            "ratio": 1.0, 
+            "Q2": 2.11212, 
+            "mean": 2.1399
+        }
+    }, 
+    "TIAM1_N": {
+        "ratio_distinct_tokens": 0.99768, 
+        "num_integer": 0, 
+        "language": {}, 
+        "num_decimal": 863, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "0.315566459": 2, 
+                "0.354072398": 1, 
+                "0.571940173": 1, 
+                "0.396623593": 1, 
+                "0.415081967": 1, 
+                "0.474560484": 1, 
+                "0.369482822": 1, 
+                "0.375": 2, 
+                "0.387966805": 1, 
+                "0.438231272": 1
+            }, 
+            "most_common_values": {
+                "0.315566459": 2, 
+                "0.354072398": 1, 
+                "0.571940173": 1, 
+                "0.396623593": 1, 
+                "0.415081967": 1, 
+                "0.474560484": 1, 
+                "0.369482822": 1, 
+                "0.375": 2, 
+                "0.387966805": 1, 
+                "0.438231272": 1
+            }, 
+            "most_common_tokens": {
+                "0.315566459": 2, 
+                "0.354072398": 1, 
+                "0.571940173": 1, 
+                "0.396623593": 1, 
+                "0.415081967": 1, 
+                "0.474560484": 1, 
+                "0.369482822": 1, 
+                "0.375": 2, 
+                "0.387966805": 1, 
+                "0.438231272": 1
+            }
+        }, 
+        "num_nonblank": 863, 
+        "num_missing": 2, 
+        "num_distinct_values": 861, 
+        "length": {
+            "token": {
+                "average": 10.87022, 
+                "standard-deviation": 0.49996
+            }, 
+            "character": {
+                "average": 10.87022, 
+                "standard-deviation": 0.49996
+            }
+        }, 
+        "numeric_density": 0.90801, 
+        "numeric": {
+            "Q1": 0.37187, 
+            "Q3": 0.45528, 
+            "standard-deviation": 0.06807, 
+            "ratio": 1.0, 
+            "Q2": 0.40633, 
+            "mean": 0.41878
+        }, 
+        "ratio_distinct_values": 0.99768, 
+        "num_distinct_tokens": 861, 
+        "decimal": {
+            "Q1": 0.37187, 
+            "Q3": 0.45528, 
+            "standard-deviation": 0.06807, 
+            "ratio": 1.0, 
+            "Q2": 0.40633, 
+            "mean": 0.41878
+        }
+    }, 
+    "BAD_N": {
+        "ratio_distinct_tokens": 0.99855, 
+        "num_integer": 0, 
+        "language": {}, 
+        "num_decimal": 689, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "0.140605979": 1, 
+                "0.116679477": 1, 
+                "0.150467409": 1, 
+                "0.150590849": 1, 
+                "0.145855657": 1, 
+                "0.200276243": 2, 
+                "0.148630815": 1, 
+                "0.127570728": 1, 
+                "0.144722814": 1, 
+                "0.146669725": 1
+            }, 
+            "most_common_values": {
+                "0.140605979": 1, 
+                "0.116679477": 1, 
+                "0.150467409": 1, 
+                "0.150590849": 1, 
+                "0.145855657": 1, 
+                "0.200276243": 2, 
+                "0.148630815": 1, 
+                "0.127570728": 1, 
+                "0.144722814": 1, 
+                "0.146669725": 1
+            }, 
+            "most_common_tokens": {
+                "0.140605979": 1, 
+                "0.116679477": 1, 
+                "0.150467409": 1, 
+                "0.150590849": 1, 
+                "0.145855657": 1, 
+                "0.200276243": 2, 
+                "0.148630815": 1, 
+                "0.127570728": 1, 
+                "0.144722814": 1, 
+                "0.146669725": 1
+            }
+        }, 
+        "num_nonblank": 689, 
+        "num_missing": 176, 
+        "num_distinct_values": 688, 
+        "length": {
+            "token": {
+                "average": 10.87663, 
+                "standard-deviation": 0.38222
+            }, 
+            "character": {
+                "average": 10.87663, 
+                "standard-deviation": 0.38222
+            }
+        }, 
+        "numeric_density": 0.90806, 
+        "numeric": {
+            "Q1": 0.13642, 
+            "Q3": 0.17411, 
+            "standard-deviation": 0.03019, 
+            "ratio": 1.0, 
+            "Q2": 0.15234, 
+            "mean": 0.15837
+        }, 
+        "ratio_distinct_values": 0.99855, 
+        "num_distinct_tokens": 688, 
+        "decimal": {
+            "Q1": 0.13642, 
+            "Q3": 0.17411, 
+            "standard-deviation": 0.03019, 
+            "ratio": 1.0, 
+            "Q2": 0.15234, 
+            "mean": 0.15837
+        }
+    }, 
+    "AcetylH3K9_N": {
+        "ratio_distinct_tokens": 1.0, 
+        "num_integer": 0, 
+        "language": {}, 
+        "num_decimal": 865, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "0.094658235": 1, 
+                "0.117193836": 1, 
+                "0.84114053": 1, 
+                "0.076089445": 1, 
+                "0.096995505": 1, 
+                "0.103847745": 1, 
+                "0.139466055": 1, 
+                "0.183798772": 1, 
+                "0.116624751": 1, 
+                "0.147101904": 1
+            }, 
+            "most_common_values": {
+                "0.094658235": 1, 
+                "0.117193836": 1, 
+                "0.84114053": 1, 
+                "0.076089445": 1, 
+                "0.096995505": 1, 
+                "0.103847745": 1, 
+                "0.139466055": 1, 
+                "0.183798772": 1, 
+                "0.116624751": 1, 
+                "0.147101904": 1
+            }, 
+            "most_common_tokens": {
+                "0.094658235": 1, 
+                "0.117193836": 1, 
+                "0.84114053": 1, 
+                "0.076089445": 1, 
+                "0.096995505": 1, 
+                "0.103847745": 1, 
+                "0.139466055": 1, 
+                "0.183798772": 1, 
+                "0.116624751": 1, 
+                "0.147101904": 1
+            }
+        }, 
+        "num_nonblank": 865, 
+        "num_missing": 0, 
+        "num_distinct_values": 865, 
+        "length": {
+            "token": {
+                "average": 10.85087, 
+                "standard-deviation": 0.567
+            }, 
+            "character": {
+                "average": 10.85087, 
+                "standard-deviation": 0.567
+            }
+        }, 
+        "numeric_density": 0.90784, 
+        "numeric": {
+            "Q1": 0.10362, 
+            "Q3": 0.26775, 
+            "standard-deviation": 0.18233, 
+            "ratio": 1.0, 
+            "Q2": 0.14969, 
+            "mean": 0.21527
+        }, 
+        "ratio_distinct_values": 1.0, 
+        "num_distinct_tokens": 865, 
+        "decimal": {
+            "Q1": 0.10362, 
+            "Q3": 0.26775, 
+            "standard-deviation": 0.18233, 
+            "ratio": 1.0, 
+            "Q2": 0.14969, 
+            "mean": 0.21527
+        }
+    }, 
+    "RSK_N": {
+        "ratio_distinct_tokens": 0.99652, 
+        "num_integer": 0, 
+        "language": {}, 
+        "num_decimal": 863, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "0.162162162": 2, 
+                "0.192931494": 1, 
+                "0.179988388": 1, 
+                "0.176314794": 1, 
+                "0.156821026": 1, 
+                "0.195555556": 2, 
+                "0.187737042": 2, 
+                "0.189035088": 1, 
+                "0.153194544": 1, 
+                "0.116037219": 1
+            }, 
+            "most_common_values": {
+                "0.162162162": 2, 
+                "0.192931494": 1, 
+                "0.179988388": 1, 
+                "0.176314794": 1, 
+                "0.156821026": 1, 
+                "0.195555556": 2, 
+                "0.187737042": 2, 
+                "0.189035088": 1, 
+                "0.153194544": 1, 
+                "0.116037219": 1
+            }, 
+            "most_common_tokens": {
+                "0.162162162": 2, 
+                "0.192931494": 1, 
+                "0.179988388": 1, 
+                "0.176314794": 1, 
+                "0.156821026": 1, 
+                "0.195555556": 2, 
+                "0.187737042": 2, 
+                "0.189035088": 1, 
+                "0.153194544": 1, 
+                "0.116037219": 1
+            }
+        }, 
+        "num_nonblank": 863, 
+        "num_missing": 2, 
+        "num_distinct_values": 860, 
+        "length": {
+            "token": {
+                "average": 10.87138, 
+                "standard-deviation": 0.4318
+            }, 
+            "character": {
+                "average": 10.87138, 
+                "standard-deviation": 0.4318
+            }
+        }, 
+        "numeric_density": 0.90802, 
+        "numeric": {
+            "Q1": 0.14905, 
+            "Q3": 0.18514, 
+            "standard-deviation": 0.02879, 
+            "ratio": 1.0, 
+            "Q2": 0.16708, 
+            "mean": 0.16887
+        }, 
+        "ratio_distinct_values": 0.99652, 
+        "num_distinct_tokens": 860, 
+        "decimal": {
+            "Q1": 0.14905, 
+            "Q3": 0.18514, 
+            "standard-deviation": 0.02879, 
+            "ratio": 1.0, 
+            "Q2": 0.16708, 
+            "mean": 0.16887
+        }
+    }, 
+    "GluR3_N": {
+        "ratio_distinct_tokens": 1.0, 
+        "num_integer": 0, 
+        "language": {}, 
+        "num_decimal": 865, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "0.206924316": 1, 
+                "0.275939115": 1, 
+                "0.128208189": 1, 
+                "0.220836022": 1, 
+                "0.208912314": 1, 
+                "0.261328641": 1, 
+                "0.215580254": 1, 
+                "0.207313175": 1, 
+                "0.201730665": 1, 
+                "0.285077048": 1
+            }, 
+            "most_common_values": {
+                "0.206924316": 1, 
+                "0.275939115": 1, 
+                "0.128208189": 1, 
+                "0.220836022": 1, 
+                "0.208912314": 1, 
+                "0.261328641": 1, 
+                "0.215580254": 1, 
+                "0.207313175": 1, 
+                "0.201730665": 1, 
+                "0.285077048": 1
+            }, 
+            "most_common_tokens": {
+                "0.206924316": 1, 
+                "0.275939115": 1, 
+                "0.128208189": 1, 
+                "0.220836022": 1, 
+                "0.208912314": 1, 
+                "0.261328641": 1, 
+                "0.215580254": 1, 
+                "0.207313175": 1, 
+                "0.201730665": 1, 
+                "0.285077048": 1
+            }
+        }, 
+        "num_nonblank": 865, 
+        "num_missing": 0, 
+        "num_distinct_values": 865, 
+        "length": {
+            "token": {
+                "average": 10.89364, 
+                "standard-deviation": 0.35716
+            }, 
+            "character": {
+                "average": 10.89364, 
+                "standard-deviation": 0.35716
+            }
+        }, 
+        "numeric_density": 0.9082, 
+        "numeric": {
+            "Q1": 0.19641, 
+            "Q3": 0.24645, 
+            "standard-deviation": 0.03511, 
+            "ratio": 1.0, 
+            "Q2": 0.21696, 
+            "mean": 0.22198
+        }, 
+        "ratio_distinct_values": 1.0, 
+        "num_distinct_tokens": 865, 
+        "decimal": {
+            "Q1": 0.19641, 
+            "Q3": 0.24645, 
+            "standard-deviation": 0.03511, 
+            "ratio": 1.0, 
+            "Q2": 0.21696, 
+            "mean": 0.22198
+        }
+    }, 
+    "pGSK3B_N": {
+        "ratio_distinct_tokens": 1.0, 
+        "num_integer": 0, 
+        "language": {}, 
+        "num_decimal": 865, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "0.162543622": 1, 
+                "0.131267649": 1, 
+                "0.173652695": 1, 
+                "0.158835208": 1, 
+                "0.164187698": 1, 
+                "0.1566317": 1, 
+                "0.150677093": 1, 
+                "0.132619279": 1, 
+                "0.169316375": 1, 
+                "0.166903207": 1
+            }, 
+            "most_common_values": {
+                "0.162543622": 1, 
+                "0.131267649": 1, 
+                "0.173652695": 1, 
+                "0.158835208": 1, 
+                "0.164187698": 1, 
+                "0.1566317": 1, 
+                "0.150677093": 1, 
+                "0.132619279": 1, 
+                "0.169316375": 1, 
+                "0.166903207": 1
+            }, 
+            "most_common_tokens": {
+                "0.162543622": 1, 
+                "0.131267649": 1, 
+                "0.173652695": 1, 
+                "0.158835208": 1, 
+                "0.164187698": 1, 
+                "0.1566317": 1, 
+                "0.150677093": 1, 
+                "0.132619279": 1, 
+                "0.169316375": 1, 
+                "0.166903207": 1
+            }
+        }, 
+        "num_nonblank": 865, 
+        "num_missing": 0, 
+        "num_distinct_values": 865, 
+        "length": {
+            "token": {
+                "average": 10.88671, 
+                "standard-deviation": 0.38021
+            }, 
+            "character": {
+                "average": 10.88671, 
+                "standard-deviation": 0.38021
+            }
+        }, 
+        "numeric_density": 0.90814, 
+        "numeric": {
+            "Q1": 0.14942, 
+            "Q3": 0.17252, 
+            "standard-deviation": 0.01899, 
+            "ratio": 1.0, 
+            "Q2": 0.16019, 
+            "mean": 0.16151
+        }, 
+        "ratio_distinct_values": 1.0, 
+        "num_distinct_tokens": 865, 
+        "decimal": {
+            "Q1": 0.14942, 
+            "Q3": 0.17252, 
+            "standard-deviation": 0.01899, 
+            "ratio": 1.0, 
+            "Q2": 0.16019, 
+            "mean": 0.16151
+        }
+    }, 
+    "RRP1_N": {
+        "ratio_distinct_tokens": 1.0, 
+        "num_integer": 0, 
+        "language": {}, 
+        "num_decimal": 865, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "0.179277351": 1, 
+                "0.203555556": 1, 
+                "0.170832473": 1, 
+                "0.14015763": 1, 
+                "0.149042566": 1, 
+                "0.139879692": 1, 
+                "0.150601595": 1, 
+                "0.172039116": 1, 
+                "0.191568297": 1, 
+                "0.169298058": 1
+            }, 
+            "most_common_values": {
+                "0.179277351": 1, 
+                "0.203555556": 1, 
+                "0.170832473": 1, 
+                "0.14015763": 1, 
+                "0.149042566": 1, 
+                "0.139879692": 1, 
+                "0.150601595": 1, 
+                "0.172039116": 1, 
+                "0.191568297": 1, 
+                "0.169298058": 1
+            }, 
+            "most_common_tokens": {
+                "0.179277351": 1, 
+                "0.203555556": 1, 
+                "0.170832473": 1, 
+                "0.14015763": 1, 
+                "0.149042566": 1, 
+                "0.139879692": 1, 
+                "0.150601595": 1, 
+                "0.172039116": 1, 
+                "0.191568297": 1, 
+                "0.169298058": 1
+            }
+        }, 
+        "num_nonblank": 865, 
+        "num_missing": 0, 
+        "num_distinct_values": 865, 
+        "length": {
+            "token": {
+                "average": 10.89595, 
+                "standard-deviation": 0.37055
+            }, 
+            "character": {
+                "average": 10.89595, 
+                "standard-deviation": 0.37055
+            }
+        }, 
+        "numeric_density": 0.90812, 
+        "numeric": {
+            "Q1": 0.14934, 
+            "Q3": 0.17711, 
+            "standard-deviation": 0.03324, 
+            "ratio": 1.0, 
+            "Q2": 0.16192, 
+            "mean": 0.16721
+        }, 
+        "ratio_distinct_values": 1.0, 
+        "num_distinct_tokens": 865, 
+        "decimal": {
+            "Q1": 0.14934, 
+            "Q3": 0.17711, 
+            "standard-deviation": 0.03324, 
+            "ratio": 1.0, 
+            "Q2": 0.16192, 
+            "mean": 0.16721
+        }
+    }, 
+    "NR2B_N": {
+        "ratio_distinct_tokens": 1.0, 
+        "num_integer": 0, 
+        "language": {}, 
+        "num_decimal": 863, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "0.611622555": 1, 
+                "0.628363406": 1, 
+                "0.506337136": 1, 
+                "0.421307128": 1, 
+                "0.580778302": 1, 
+                "0.587657784": 1, 
+                "0.525684544": 1, 
+                "0.529162889": 1, 
+                "0.605208219": 1, 
+                "0.582322118": 1
+            }, 
+            "most_common_values": {
+                "0.611622555": 1, 
+                "0.628363406": 1, 
+                "0.506337136": 1, 
+                "0.421307128": 1, 
+                "0.580778302": 1, 
+                "0.587657784": 1, 
+                "0.525684544": 1, 
+                "0.529162889": 1, 
+                "0.605208219": 1, 
+                "0.582322118": 1
+            }, 
+            "most_common_tokens": {
+                "0.611622555": 1, 
+                "0.628363406": 1, 
+                "0.506337136": 1, 
+                "0.421307128": 1, 
+                "0.580778302": 1, 
+                "0.587657784": 1, 
+                "0.525684544": 1, 
+                "0.529162889": 1, 
+                "0.605208219": 1, 
+                "0.582322118": 1
+            }
+        }, 
+        "num_nonblank": 863, 
+        "num_missing": 2, 
+        "num_distinct_values": 863, 
+        "length": {
+            "token": {
+                "average": 10.85747, 
+                "standard-deviation": 0.56325
+            }, 
+            "character": {
+                "average": 10.85747, 
+                "standard-deviation": 0.56325
+            }
+        }, 
+        "numeric_density": 0.9079, 
+        "numeric": {
+            "Q1": 0.51503, 
+            "Q3": 0.61438, 
+            "standard-deviation": 0.09024, 
+            "ratio": 1.0, 
+            "Q2": 0.56341, 
+            "mean": 0.56605
+        }, 
+        "ratio_distinct_values": 1.0, 
+        "num_distinct_tokens": 863, 
+        "decimal": {
+            "Q1": 0.51503, 
+            "Q3": 0.61438, 
+            "standard-deviation": 0.09024, 
+            "ratio": 1.0, 
+            "Q2": 0.56341, 
+            "mean": 0.56605
+        }
+    }, 
+    "GluR4_N": {
+        "ratio_distinct_tokens": 0.99884, 
+        "num_integer": 0, 
+        "language": {}, 
+        "num_decimal": 865, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "0.127976767": 1, 
+                "0.095015991": 1, 
+                "0.152597403": 1, 
+                "0.107828206": 1, 
+                "0.129637151": 1, 
+                "0.09638692": 1, 
+                "0.116821465": 1, 
+                "0.118254202": 1, 
+                "0.072579682": 1, 
+                "0.110996386": 2
+            }, 
+            "most_common_values": {
+                "0.127976767": 1, 
+                "0.095015991": 1, 
+                "0.152597403": 1, 
+                "0.107828206": 1, 
+                "0.129637151": 1, 
+                "0.09638692": 1, 
+                "0.116821465": 1, 
+                "0.118254202": 1, 
+                "0.072579682": 1, 
+                "0.110996386": 2
+            }, 
+            "most_common_tokens": {
+                "0.127976767": 1, 
+                "0.095015991": 1, 
+                "0.152597403": 1, 
+                "0.107828206": 1, 
+                "0.129637151": 1, 
+                "0.09638692": 1, 
+                "0.116821465": 1, 
+                "0.118254202": 1, 
+                "0.072579682": 1, 
+                "0.110996386": 2
+            }
+        }, 
+        "num_nonblank": 865, 
+        "num_missing": 0, 
+        "num_distinct_values": 864, 
+        "length": {
+            "token": {
+                "average": 10.86127, 
+                "standard-deviation": 0.51071
+            }, 
+            "character": {
+                "average": 10.86127, 
+                "standard-deviation": 0.51071
+            }
+        }, 
+        "numeric_density": 0.90793, 
+        "numeric": {
+            "Q1": 0.10896, 
+            "Q3": 0.14108, 
+            "standard-deviation": 0.02365, 
+            "ratio": 1.0, 
+            "Q2": 0.12358, 
+            "mean": 0.12602
+        }, 
+        "ratio_distinct_values": 0.99884, 
+        "num_distinct_tokens": 864, 
+        "decimal": {
+            "Q1": 0.10896, 
+            "Q3": 0.14108, 
+            "standard-deviation": 0.02365, 
+            "ratio": 1.0, 
+            "Q2": 0.12358, 
+            "mean": 0.12602
+        }
+    }, 
+    "Ubiquitin_N": {
+        "ratio_distinct_tokens": 1.0, 
+        "num_integer": 0, 
+        "language": {}, 
+        "num_decimal": 865, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "1.438325641": 1, 
+                "1.517790998": 1, 
+                "1.220959203": 1, 
+                "1.426054999": 1, 
+                "1.164963504": 1, 
+                "0.948350216": 1, 
+                "1.402077489": 1, 
+                "1.136637213": 1, 
+                "1.007337526": 1, 
+                "1.162727327": 1
+            }, 
+            "most_common_values": {
+                "1.438325641": 1, 
+                "1.517790998": 1, 
+                "1.220959203": 1, 
+                "1.426054999": 1, 
+                "1.164963504": 1, 
+                "0.948350216": 1, 
+                "1.402077489": 1, 
+                "1.136637213": 1, 
+                "1.007337526": 1, 
+                "1.162727327": 1
+            }, 
+            "most_common_tokens": {
+                "1.438325641": 1, 
+                "1.517790998": 1, 
+                "1.220959203": 1, 
+                "1.426054999": 1, 
+                "1.164963504": 1, 
+                "0.948350216": 1, 
+                "1.402077489": 1, 
+                "1.136637213": 1, 
+                "1.007337526": 1, 
+                "1.162727327": 1
+            }
+        }, 
+        "num_nonblank": 865, 
+        "num_missing": 0, 
+        "num_distinct_values": 865, 
+        "length": {
+            "token": {
+                "average": 10.8578, 
+                "standard-deviation": 0.58483
+            }, 
+            "character": {
+                "average": 10.8578, 
+                "standard-deviation": 0.58483
+            }
+        }, 
+        "numeric_density": 0.9079, 
+        "numeric": {
+            "Q1": 1.11532, 
+            "Q3": 1.36301, 
+            "standard-deviation": 0.17431, 
+            "ratio": 1.0, 
+            "Q2": 1.23706, 
+            "mean": 1.2408
+        }, 
+        "ratio_distinct_values": 1.0, 
+        "num_distinct_tokens": 865, 
+        "decimal": {
+            "Q1": 1.11532, 
+            "Q3": 1.36301, 
+            "standard-deviation": 0.17431, 
+            "ratio": 1.0, 
+            "Q2": 1.23706, 
+            "mean": 1.2408
+        }
+    }, 
+    "pRSK_N": {
+        "ratio_distinct_tokens": 1.0, 
+        "num_integer": 0, 
+        "language": {}, 
+        "num_decimal": 863, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "0.313639388": 1, 
+                "0.344550383": 1, 
+                "0.351243243": 1, 
+                "0.436430491": 1, 
+                "0.44851396": 1, 
+                "0.424294338": 1, 
+                "0.498924731": 1, 
+                "0.511568592": 1, 
+                "0.423429319": 1, 
+                "0.475671141": 1
+            }, 
+            "most_common_values": {
+                "0.313639388": 1, 
+                "0.344550383": 1, 
+                "0.351243243": 1, 
+                "0.436430491": 1, 
+                "0.44851396": 1, 
+                "0.424294338": 1, 
+                "0.498924731": 1, 
+                "0.511568592": 1, 
+                "0.423429319": 1, 
+                "0.475671141": 1
+            }, 
+            "most_common_tokens": {
+                "0.313639388": 1, 
+                "0.344550383": 1, 
+                "0.351243243": 1, 
+                "0.436430491": 1, 
+                "0.44851396": 1, 
+                "0.424294338": 1, 
+                "0.498924731": 1, 
+                "0.511568592": 1, 
+                "0.423429319": 1, 
+                "0.475671141": 1
+            }
+        }, 
+        "num_nonblank": 863, 
+        "num_missing": 2, 
+        "num_distinct_values": 863, 
+        "length": {
+            "token": {
+                "average": 10.86327, 
+                "standard-deviation": 0.52751
+            }, 
+            "character": {
+                "average": 10.86327, 
+                "standard-deviation": 0.52751
+            }
+        }, 
+        "numeric_density": 0.90795, 
+        "numeric": {
+            "Q1": 0.40343, 
+            "Q3": 0.48499, 
+            "standard-deviation": 0.06746, 
+            "ratio": 1.0, 
+            "Q2": 0.44029, 
+            "mean": 0.44327
+        }, 
+        "ratio_distinct_values": 1.0, 
+        "num_distinct_tokens": 863, 
+        "decimal": {
+            "Q1": 0.40343, 
+            "Q3": 0.48499, 
+            "standard-deviation": 0.06746, 
+            "ratio": 1.0, 
+            "Q2": 0.44029, 
+            "mean": 0.44327
+        }
+    }, 
+    "pBRAF_N": {
+        "ratio_distinct_tokens": 0.99884, 
+        "num_integer": 0, 
+        "language": {}, 
+        "num_decimal": 863, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "0.174305788": 1, 
+                "0.159704433": 1, 
+                "0.18620801": 1, 
+                "0.171853672": 1, 
+                "0.236002604": 1, 
+                "0.185833728": 1, 
+                "0.210526316": 2, 
+                "0.201015727": 1, 
+                "0.145113269": 1, 
+                "0.190933333": 1
+            }, 
+            "most_common_values": {
+                "0.174305788": 1, 
+                "0.159704433": 1, 
+                "0.18620801": 1, 
+                "0.171853672": 1, 
+                "0.236002604": 1, 
+                "0.185833728": 1, 
+                "0.210526316": 2, 
+                "0.201015727": 1, 
+                "0.145113269": 1, 
+                "0.190933333": 1
+            }, 
+            "most_common_tokens": {
+                "0.174305788": 1, 
+                "0.159704433": 1, 
+                "0.18620801": 1, 
+                "0.171853672": 1, 
+                "0.236002604": 1, 
+                "0.185833728": 1, 
+                "0.210526316": 2, 
+                "0.201015727": 1, 
+                "0.145113269": 1, 
+                "0.190933333": 1
+            }
+        }, 
+        "num_nonblank": 863, 
+        "num_missing": 2, 
+        "num_distinct_values": 862, 
+        "length": {
+            "token": {
+                "average": 10.87833, 
+                "standard-deviation": 0.43382
+            }, 
+            "character": {
+                "average": 10.87833, 
+                "standard-deviation": 0.43382
+            }
+        }, 
+        "numeric_density": 0.90807, 
+        "numeric": {
+            "Q1": 0.16401, 
+            "Q3": 0.19698, 
+            "standard-deviation": 0.02787, 
+            "ratio": 1.0, 
+            "Q2": 0.1825, 
+            "mean": 0.18198
+        }, 
+        "ratio_distinct_values": 0.99884, 
+        "num_distinct_tokens": 862, 
+        "decimal": {
+            "Q1": 0.16401, 
+            "Q3": 0.19698, 
+            "standard-deviation": 0.02787, 
+            "ratio": 1.0, 
+            "Q2": 0.1825, 
+            "mean": 0.18198
+        }
+    }, 
+    "NR2A_N": {
+        "ratio_distinct_tokens": 1.0, 
+        "num_integer": 0, 
+        "language": {}, 
+        "num_decimal": 863, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "2.978824273": 1, 
+                "3.437109481": 1, 
+                "4.764640392": 1, 
+                "3.039470877": 1, 
+                "3.268945869": 1, 
+                "5.231464219": 1, 
+                "2.613440551": 1, 
+                "4.168802589": 1, 
+                "3.255780643": 1, 
+                "2.867328394": 1
+            }, 
+            "most_common_values": {
+                "2.978824273": 1, 
+                "3.437109481": 1, 
+                "4.764640392": 1, 
+                "3.039470877": 1, 
+                "3.268945869": 1, 
+                "5.231464219": 1, 
+                "2.613440551": 1, 
+                "4.168802589": 1, 
+                "3.255780643": 1, 
+                "2.867328394": 1
+            }, 
+            "most_common_tokens": {
+                "2.978824273": 1, 
+                "3.437109481": 1, 
+                "4.764640392": 1, 
+                "3.039470877": 1, 
+                "3.268945869": 1, 
+                "5.231464219": 1, 
+                "2.613440551": 1, 
+                "4.168802589": 1, 
+                "3.255780643": 1, 
+                "2.867328394": 1
+            }
+        }, 
+        "num_nonblank": 863, 
+        "num_missing": 2, 
+        "num_distinct_values": 863, 
+        "length": {
+            "token": {
+                "average": 10.85168, 
+                "standard-deviation": 0.65429
+            }, 
+            "character": {
+                "average": 10.85168, 
+                "standard-deviation": 0.65429
+            }
+        }, 
+        "numeric_density": 0.90785, 
+        "numeric": {
+            "Q1": 3.1524, 
+            "Q3": 4.38923, 
+            "standard-deviation": 0.93371, 
+            "ratio": 1.0, 
+            "Q2": 3.72327, 
+            "mean": 3.8425
+        }, 
+        "ratio_distinct_values": 1.0, 
+        "num_distinct_tokens": 863, 
+        "decimal": {
+            "Q1": 3.1524, 
+            "Q3": 4.38923, 
+            "standard-deviation": 0.93371, 
+            "ratio": 1.0, 
+            "Q2": 3.72327, 
+            "mean": 3.8425
+        }
+    }, 
+    "PSD95_N": {
+        "ratio_distinct_tokens": 1.0, 
+        "num_integer": 0, 
+        "language": {}, 
+        "num_decimal": 865, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "1.696031981": 1, 
+                "1.91636192": 1, 
+                "2.576068784": 1, 
+                "2.485461345": 1, 
+                "2.702405498": 1, 
+                "2.135045237": 1, 
+                "2.053684211": 1, 
+                "2.076545455": 1, 
+                "2.244465087": 1, 
+                "2.406016234": 1
+            }, 
+            "most_common_values": {
+                "1.696031981": 1, 
+                "1.91636192": 1, 
+                "2.576068784": 1, 
+                "2.485461345": 1, 
+                "2.702405498": 1, 
+                "2.135045237": 1, 
+                "2.053684211": 1, 
+                "2.076545455": 1, 
+                "2.244465087": 1, 
+                "2.406016234": 1
+            }, 
+            "most_common_tokens": {
+                "1.696031981": 1, 
+                "1.91636192": 1, 
+                "2.576068784": 1, 
+                "2.485461345": 1, 
+                "2.702405498": 1, 
+                "2.135045237": 1, 
+                "2.053684211": 1, 
+                "2.076545455": 1, 
+                "2.244465087": 1, 
+                "2.406016234": 1
+            }
+        }, 
+        "num_nonblank": 865, 
+        "num_missing": 0, 
+        "num_distinct_values": 865, 
+        "length": {
+            "token": {
+                "average": 10.87746, 
+                "standard-deviation": 0.45263
+            }, 
+            "character": {
+                "average": 10.87746, 
+                "standard-deviation": 0.45263
+            }
+        }, 
+        "numeric_density": 0.90807, 
+        "numeric": {
+            "Q1": 2.07944, 
+            "Q3": 2.41907, 
+            "standard-deviation": 0.25145, 
+            "ratio": 1.0, 
+            "Q2": 2.24325, 
+            "mean": 2.23763
+        }, 
+        "ratio_distinct_values": 1.0, 
+        "num_distinct_tokens": 865, 
+        "decimal": {
+            "Q1": 2.07944, 
+            "Q3": 2.41907, 
+            "standard-deviation": 0.25145, 
+            "ratio": 1.0, 
+            "Q2": 2.24325, 
+            "mean": 2.23763
+        }
+    }, 
+    "S6_N": {
+        "ratio_distinct_tokens": 1.0, 
+        "num_integer": 0, 
+        "language": {}, 
+        "num_decimal": 865, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "0.418376748": 1, 
+                "0.596230305": 1, 
+                "0.130206306": 1, 
+                "0.642157503": 1, 
+                "0.312095775": 1, 
+                "0.498121713": 1, 
+                "0.484571745": 1, 
+                "0.254501125": 1, 
+                "0.312800592": 1, 
+                "0.468716415": 1
+            }, 
+            "most_common_values": {
+                "0.418376748": 1, 
+                "0.596230305": 1, 
+                "0.130206306": 1, 
+                "0.642157503": 1, 
+                "0.312095775": 1, 
+                "0.498121713": 1, 
+                "0.484571745": 1, 
+                "0.254501125": 1, 
+                "0.312800592": 1, 
+                "0.468716415": 1
+            }, 
+            "most_common_tokens": {
+                "0.418376748": 1, 
+                "0.596230305": 1, 
+                "0.130206306": 1, 
+                "0.642157503": 1, 
+                "0.312095775": 1, 
+                "0.498121713": 1, 
+                "0.484571745": 1, 
+                "0.254501125": 1, 
+                "0.312800592": 1, 
+                "0.468716415": 1
+            }
+        }, 
+        "num_nonblank": 865, 
+        "num_missing": 0, 
+        "num_distinct_values": 865, 
+        "length": {
+            "token": {
+                "average": 10.88671, 
+                "standard-deviation": 0.39513
+            }, 
+            "character": {
+                "average": 10.88671, 
+                "standard-deviation": 0.39513
+            }
+        }, 
+        "numeric_density": 0.90814, 
+        "numeric": {
+            "Q1": 0.3121, 
+            "Q3": 0.53666, 
+            "standard-deviation": 0.1374, 
+            "ratio": 1.0, 
+            "Q2": 0.39688, 
+            "mean": 0.42723
+        }, 
+        "ratio_distinct_values": 1.0, 
+        "num_distinct_tokens": 865, 
+        "decimal": {
+            "Q1": 0.3121, 
+            "Q3": 0.53666, 
+            "standard-deviation": 0.1374, 
+            "ratio": 1.0, 
+            "Q2": 0.39688, 
+            "mean": 0.42723
+        }
+    }, 
+    "SHH_N": {
+        "ratio_distinct_tokens": 1.0, 
+        "num_integer": 0, 
+        "language": {}, 
+        "num_decimal": 865, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "0.174797136": 1, 
+                "0.248594788": 1, 
+                "0.274550374": 1, 
+                "0.227744402": 1, 
+                "0.187506343": 1, 
+                "0.224252727": 1, 
+                "0.254735547": 1, 
+                "0.236464315": 1, 
+                "0.227445703": 1, 
+                "0.234359634": 1
+            }, 
+            "most_common_values": {
+                "0.174797136": 1, 
+                "0.248594788": 1, 
+                "0.274550374": 1, 
+                "0.227744402": 1, 
+                "0.187506343": 1, 
+                "0.224252727": 1, 
+                "0.254735547": 1, 
+                "0.236464315": 1, 
+                "0.227445703": 1, 
+                "0.234359634": 1
+            }, 
+            "most_common_tokens": {
+                "0.174797136": 1, 
+                "0.248594788": 1, 
+                "0.274550374": 1, 
+                "0.227744402": 1, 
+                "0.187506343": 1, 
+                "0.224252727": 1, 
+                "0.254735547": 1, 
+                "0.236464315": 1, 
+                "0.227445703": 1, 
+                "0.234359634": 1
+            }
+        }, 
+        "num_nonblank": 865, 
+        "num_missing": 0, 
+        "num_distinct_values": 865, 
+        "length": {
+            "token": {
+                "average": 10.90289, 
+                "standard-deviation": 0.34333
+            }, 
+            "character": {
+                "average": 10.90289, 
+                "standard-deviation": 0.34333
+            }
+        }, 
+        "numeric_density": 0.90828, 
+        "numeric": {
+            "Q1": 0.20668, 
+            "Q3": 0.242, 
+            "standard-deviation": 0.02983, 
+            "ratio": 1.0, 
+            "Q2": 0.22366, 
+            "mean": 0.2271
+        }, 
+        "ratio_distinct_values": 1.0, 
+        "num_distinct_tokens": 865, 
+        "decimal": {
+            "Q1": 0.20668, 
+            "Q3": 0.242, 
+            "standard-deviation": 0.02983, 
+            "ratio": 1.0, 
+            "Q2": 0.22366, 
+            "mean": 0.2271
+        }
+    }, 
+    "BAX_N": {
+        "ratio_distinct_tokens": 1.0, 
+        "num_integer": 0, 
+        "language": {}, 
+        "num_decimal": 865, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "0.174946361": 1, 
+                "0.190374624": 1, 
+                "0.183270752": 1, 
+                "0.176624302": 1, 
+                "0.15403423": 1, 
+                "0.184412563": 1, 
+                "0.206168026": 1, 
+                "0.153535051": 1, 
+                "0.186737566": 1, 
+                "0.180989583": 1
+            }, 
+            "most_common_values": {
+                "0.174946361": 1, 
+                "0.190374624": 1, 
+                "0.183270752": 1, 
+                "0.176624302": 1, 
+                "0.15403423": 1, 
+                "0.184412563": 1, 
+                "0.206168026": 1, 
+                "0.153535051": 1, 
+                "0.186737566": 1, 
+                "0.180989583": 1
+            }, 
+            "most_common_tokens": {
+                "0.174946361": 1, 
+                "0.190374624": 1, 
+                "0.183270752": 1, 
+                "0.176624302": 1, 
+                "0.15403423": 1, 
+                "0.184412563": 1, 
+                "0.206168026": 1, 
+                "0.153535051": 1, 
+                "0.186737566": 1, 
+                "0.180989583": 1
+            }
+        }, 
+        "num_nonblank": 865, 
+        "num_missing": 0, 
+        "num_distinct_values": 865, 
+        "length": {
+            "token": {
+                "average": 10.89827, 
+                "standard-deviation": 0.34535
+            }, 
+            "character": {
+                "average": 10.89827, 
+                "standard-deviation": 0.34535
+            }
+        }, 
+        "numeric_density": 0.90824, 
+        "numeric": {
+            "Q1": 0.16781, 
+            "Q3": 0.19106, 
+            "standard-deviation": 0.01856, 
+            "ratio": 1.0, 
+            "Q2": 0.18058, 
+            "mean": 0.17925
+        }, 
+        "ratio_distinct_values": 1.0, 
+        "num_distinct_tokens": 865, 
+        "decimal": {
+            "Q1": 0.16781, 
+            "Q3": 0.19106, 
+            "standard-deviation": 0.01856, 
+            "ratio": 1.0, 
+            "Q2": 0.18058, 
+            "mean": 0.17925
+        }
+    }, 
+    "pNR1_N": {
+        "ratio_distinct_tokens": 1.0, 
+        "num_integer": 0, 
+        "language": {}, 
+        "num_decimal": 863, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "0.894373966": 1, 
+                "1.048951741": 1, 
+                "0.908926144": 1, 
+                "0.770228216": 1, 
+                "0.730345334": 1, 
+                "0.808030411": 1, 
+                "0.887937898": 1, 
+                "0.934410809": 1, 
+                "0.800981873": 1, 
+                "0.854946181": 1
+            }, 
+            "most_common_values": {
+                "0.894373966": 1, 
+                "1.048951741": 1, 
+                "0.908926144": 1, 
+                "0.770228216": 1, 
+                "0.730345334": 1, 
+                "0.808030411": 1, 
+                "0.887937898": 1, 
+                "0.934410809": 1, 
+                "0.800981873": 1, 
+                "0.854946181": 1
+            }, 
+            "most_common_tokens": {
+                "0.894373966": 1, 
+                "1.048951741": 1, 
+                "0.908926144": 1, 
+                "0.770228216": 1, 
+                "0.730345334": 1, 
+                "0.808030411": 1, 
+                "0.887937898": 1, 
+                "0.934410809": 1, 
+                "0.800981873": 1, 
+                "0.854946181": 1
+            }
+        }, 
+        "num_nonblank": 863, 
+        "num_missing": 2, 
+        "num_distinct_values": 863, 
+        "length": {
+            "token": {
+                "average": 10.88876, 
+                "standard-deviation": 0.49042
+            }, 
+            "character": {
+                "average": 10.88876, 
+                "standard-deviation": 0.49042
+            }
+        }, 
+        "numeric_density": 0.90816, 
+        "numeric": {
+            "Q1": 0.74497, 
+            "Q3": 0.89464, 
+            "standard-deviation": 0.11538, 
+            "ratio": 1.0, 
+            "Q2": 0.82146, 
+            "mean": 0.82583
+        }, 
+        "ratio_distinct_values": 1.0, 
+        "num_distinct_tokens": 863, 
+        "decimal": {
+            "Q1": 0.74497, 
+            "Q3": 0.89464, 
+            "standard-deviation": 0.11538, 
+            "ratio": 1.0, 
+            "Q2": 0.82146, 
+            "mean": 0.82583
+        }
+    }, 
+    "MouseID": {
+        "ratio_distinct_tokens": 1.0, 
+        "num_integer": 0, 
+        "language": {
+            "de": 25, 
+            "da": 12, 
+            "cy": 11, 
+            "hu": 12, 
+            "id": 37, 
+            "es": 12
+        }, 
+        "num_decimal": 0, 
+        "frequent-entries": {
+            "most_common_values": {
+                "3525_12": 1, 
+                "3525_13": 1, 
+                "3520_3": 1, 
+                "3429_14": 1, 
+                "3500_15": 1, 
+                "3505_9": 1, 
+                "3429_11": 1, 
+                "3429_10": 1, 
+                "3505_7": 1, 
+                "3517_14": 1
+            }, 
+            "most_common_punctuations": {
+                "_": {
+                    "count": 865, 
+                    "density_of_cell": 0.15767, 
+                    "density_of_all": 0.15491, 
+                    "num_outlier_cells": 110
+                }
+            }, 
+            "most_common_tokens": {
+                "3525_12": 1, 
+                "3525_13": 1, 
+                "3520_3": 1, 
+                "3429_14": 1, 
+                "3500_15": 1, 
+                "3505_9": 1, 
+                "3429_11": 1, 
+                "3429_10": 1, 
+                "3505_7": 1, 
+                "3517_14": 1
+            }
+        }, 
+        "num_nonblank": 865, 
+        "num_missing": 0, 
+        "num_distinct_values": 865, 
+        "length": {
+            "token": {
+                "average": 6.45549, 
+                "standard-deviation": 0.88096
+            }, 
+            "character": {
+                "average": 6.45549, 
+                "standard-deviation": 0.88096
+            }
+        }, 
+        "numeric_density": 0.82557, 
+        "ratio_distinct_values": 1.0, 
+        "num_distinct_tokens": 865
+    }, 
+    "CREB_N": {
+        "ratio_distinct_tokens": 0.99652, 
+        "num_integer": 0, 
+        "language": {}, 
+        "num_decimal": 863, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "0.168217609": 1, 
+                "0.152628493": 1, 
+                "0.2109375": 2, 
+                "0.14732965": 1, 
+                "0.186046512": 2, 
+                "0.143761302": 1, 
+                "0.228851964": 2, 
+                "0.191784624": 1, 
+                "0.213110729": 1, 
+                "0.163593566": 1
+            }, 
+            "most_common_values": {
+                "0.168217609": 1, 
+                "0.152628493": 1, 
+                "0.2109375": 2, 
+                "0.14732965": 1, 
+                "0.186046512": 2, 
+                "0.143761302": 1, 
+                "0.228851964": 2, 
+                "0.191784624": 1, 
+                "0.213110729": 1, 
+                "0.163593566": 1
+            }, 
+            "most_common_tokens": {
+                "0.168217609": 1, 
+                "0.152628493": 1, 
+                "0.2109375": 2, 
+                "0.14732965": 1, 
+                "0.186046512": 2, 
+                "0.143761302": 1, 
+                "0.228851964": 2, 
+                "0.191784624": 1, 
+                "0.213110729": 1, 
+                "0.163593566": 1
+            }
+        }, 
+        "num_nonblank": 863, 
+        "num_missing": 2, 
+        "num_distinct_values": 860, 
+        "length": {
+            "token": {
+                "average": 10.89919, 
+                "standard-deviation": 0.43649
+            }, 
+            "character": {
+                "average": 10.89919, 
+                "standard-deviation": 0.43649
+            }
+        }, 
+        "numeric_density": 0.90825, 
+        "numeric": {
+            "Q1": 0.16144, 
+            "Q3": 0.19611, 
+            "standard-deviation": 0.02733, 
+            "ratio": 1.0, 
+            "Q2": 0.18009, 
+            "mean": 0.1812
+        }, 
+        "ratio_distinct_values": 0.99652, 
+        "num_distinct_tokens": 860, 
+        "decimal": {
+            "Q1": 0.16144, 
+            "Q3": 0.19611, 
+            "standard-deviation": 0.02733, 
+            "ratio": 1.0, 
+            "Q2": 0.18009, 
+            "mean": 0.1812
+        }
+    }, 
+    "pPKCAB_N": {
+        "ratio_distinct_tokens": 1.0, 
+        "num_integer": 0, 
+        "language": {}, 
+        "num_decimal": 863, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "2.350544798": 1, 
+                "1.002728317": 1, 
+                "0.945858586": 1, 
+                "1.829759863": 1, 
+                "1.600862417": 1, 
+                "1.251323463": 1, 
+                "0.848327716": 1, 
+                "1.505294659": 1, 
+                "2.064983797": 1, 
+                "2.431909983": 1
+            }, 
+            "most_common_values": {
+                "2.350544798": 1, 
+                "1.002728317": 1, 
+                "0.945858586": 1, 
+                "1.829759863": 1, 
+                "1.600862417": 1, 
+                "1.251323463": 1, 
+                "0.848327716": 1, 
+                "1.505294659": 1, 
+                "2.064983797": 1, 
+                "2.431909983": 1
+            }, 
+            "most_common_tokens": {
+                "2.350544798": 1, 
+                "1.002728317": 1, 
+                "0.945858586": 1, 
+                "1.829759863": 1, 
+                "1.600862417": 1, 
+                "1.251323463": 1, 
+                "0.848327716": 1, 
+                "1.505294659": 1, 
+                "2.064983797": 1, 
+                "2.431909983": 1
+            }
+        }, 
+        "num_nonblank": 863, 
+        "num_missing": 2, 
+        "num_distinct_values": 863, 
+        "length": {
+            "token": {
+                "average": 10.8679, 
+                "standard-deviation": 0.49935
+            }, 
+            "character": {
+                "average": 10.8679, 
+                "standard-deviation": 0.49935
+            }
+        }, 
+        "numeric_density": 0.90799, 
+        "numeric": {
+            "Q1": 1.1673, 
+            "Q3": 1.87397, 
+            "standard-deviation": 0.47487, 
+            "ratio": 1.0, 
+            "Q2": 1.37001, 
+            "mean": 1.52309
+        }, 
+        "ratio_distinct_values": 1.0, 
+        "num_distinct_tokens": 863, 
+        "decimal": {
+            "Q1": 1.1673, 
+            "Q3": 1.87397, 
+            "standard-deviation": 0.47487, 
+            "ratio": 1.0, 
+            "Q2": 1.37001, 
+            "mean": 1.52309
+        }
+    }, 
+    "GFAP_N": {
+        "ratio_distinct_tokens": 1.0, 
+        "num_integer": 0, 
+        "language": {}, 
+        "num_decimal": 865, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "0.112621359": 1, 
+                "0.120468586": 1, 
+                "0.120617944": 1, 
+                "0.14198861": 1, 
+                "0.121624156": 1, 
+                "0.102320482": 1, 
+                "0.121054846": 1, 
+                "0.109642903": 1, 
+                "0.099896659": 1, 
+                "0.123921648": 1
+            }, 
+            "most_common_values": {
+                "0.112621359": 1, 
+                "0.120468586": 1, 
+                "0.120617944": 1, 
+                "0.14198861": 1, 
+                "0.121624156": 1, 
+                "0.102320482": 1, 
+                "0.121054846": 1, 
+                "0.109642903": 1, 
+                "0.099896659": 1, 
+                "0.123921648": 1
+            }, 
+            "most_common_tokens": {
+                "0.112621359": 1, 
+                "0.120468586": 1, 
+                "0.120617944": 1, 
+                "0.14198861": 1, 
+                "0.121624156": 1, 
+                "0.102320482": 1, 
+                "0.121054846": 1, 
+                "0.109642903": 1, 
+                "0.099896659": 1, 
+                "0.123921648": 1
+            }
+        }, 
+        "num_nonblank": 865, 
+        "num_missing": 0, 
+        "num_distinct_values": 865, 
+        "length": {
+            "token": {
+                "average": 10.88671, 
+                "standard-deviation": 0.34844
+            }, 
+            "character": {
+                "average": 10.88671, 
+                "standard-deviation": 0.34844
+            }
+        }, 
+        "numeric_density": 0.90814, 
+        "numeric": {
+            "Q1": 0.11331, 
+            "Q3": 0.12771, 
+            "standard-deviation": 0.01303, 
+            "ratio": 1.0, 
+            "Q2": 0.12052, 
+            "mean": 0.12113
+        }, 
+        "ratio_distinct_values": 1.0, 
+        "num_distinct_tokens": 865, 
+        "decimal": {
+            "Q1": 0.11331, 
+            "Q3": 0.12771, 
+            "standard-deviation": 0.01303, 
+            "ratio": 1.0, 
+            "Q2": 0.12052, 
+            "mean": 0.12113
+        }
+    }, 
+    "P38_N": {
+        "ratio_distinct_tokens": 0.99884, 
+        "num_integer": 0, 
+        "language": {}, 
+        "num_decimal": 863, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "0.481804203": 1, 
+                "0.504918033": 1, 
+                "0.333333333": 2, 
+                "0.32633015": 1, 
+                "0.481654625": 1, 
+                "0.38937458": 1, 
+                "0.38131437": 1, 
+                "0.273745799": 1, 
+                "0.565104167": 1, 
+                "0.339492554": 1
+            }, 
+            "most_common_values": {
+                "0.481804203": 1, 
+                "0.504918033": 1, 
+                "0.333333333": 2, 
+                "0.32633015": 1, 
+                "0.481654625": 1, 
+                "0.38937458": 1, 
+                "0.38131437": 1, 
+                "0.273745799": 1, 
+                "0.565104167": 1, 
+                "0.339492554": 1
+            }, 
+            "most_common_tokens": {
+                "0.481804203": 1, 
+                "0.504918033": 1, 
+                "0.333333333": 2, 
+                "0.32633015": 1, 
+                "0.481654625": 1, 
+                "0.38937458": 1, 
+                "0.38131437": 1, 
+                "0.273745799": 1, 
+                "0.565104167": 1, 
+                "0.339492554": 1
+            }
+        }, 
+        "num_nonblank": 863, 
+        "num_missing": 2, 
+        "num_distinct_values": 862, 
+        "length": {
+            "token": {
+                "average": 10.87022, 
+                "standard-deviation": 0.49996
+            }, 
+            "character": {
+                "average": 10.87022, 
+                "standard-deviation": 0.49996
+            }
+        }, 
+        "numeric_density": 0.90801, 
+        "numeric": {
+            "Q1": 0.35119, 
+            "Q3": 0.46604, 
+            "standard-deviation": 0.09063, 
+            "ratio": 1.0, 
+            "Q2": 0.40695, 
+            "mean": 0.41592
+        }, 
+        "ratio_distinct_values": 0.99884, 
+        "num_distinct_tokens": 862, 
+        "decimal": {
+            "Q1": 0.35119, 
+            "Q3": 0.46604, 
+            "standard-deviation": 0.09063, 
+            "ratio": 1.0, 
+            "Q2": 0.40695, 
+            "mean": 0.41592
+        }
+    }, 
+    "nNOS_N": {
+        "ratio_distinct_tokens": 0.99884, 
+        "num_integer": 0, 
+        "language": {}, 
+        "num_decimal": 865, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "0.204004055": 1, 
+                "0.173913043": 2, 
+                "0.193532582": 1, 
+                "0.188209843": 1, 
+                "0.180299414": 1, 
+                "0.189246609": 1, 
+                "0.183123322": 1, 
+                "0.164911069": 1, 
+                "0.179536432": 1, 
+                "0.155988858": 1
+            }, 
+            "most_common_values": {
+                "0.204004055": 1, 
+                "0.173913043": 2, 
+                "0.193532582": 1, 
+                "0.188209843": 1, 
+                "0.180299414": 1, 
+                "0.189246609": 1, 
+                "0.183123322": 1, 
+                "0.164911069": 1, 
+                "0.179536432": 1, 
+                "0.155988858": 1
+            }, 
+            "most_common_tokens": {
+                "0.204004055": 1, 
+                "0.173913043": 2, 
+                "0.193532582": 1, 
+                "0.188209843": 1, 
+                "0.180299414": 1, 
+                "0.189246609": 1, 
+                "0.183123322": 1, 
+                "0.164911069": 1, 
+                "0.179536432": 1, 
+                "0.155988858": 1
+            }
+        }, 
+        "num_nonblank": 865, 
+        "num_missing": 0, 
+        "num_distinct_values": 864, 
+        "length": {
+            "token": {
+                "average": 10.86243, 
+                "standard-deviation": 0.52333
+            }, 
+            "character": {
+                "average": 10.86243, 
+                "standard-deviation": 0.52333
+            }
+        }, 
+        "numeric_density": 0.90794, 
+        "numeric": {
+            "Q1": 0.16582, 
+            "Q3": 0.1982, 
+            "standard-deviation": 0.02432, 
+            "ratio": 1.0, 
+            "Q2": 0.1826, 
+            "mean": 0.18108
+        }, 
+        "ratio_distinct_values": 0.99884, 
+        "num_distinct_tokens": 864, 
+        "decimal": {
+            "Q1": 0.16582, 
+            "Q3": 0.1982, 
+            "standard-deviation": 0.02432, 
+            "ratio": 1.0, 
+            "Q2": 0.1826, 
+            "mean": 0.18108
+        }
+    }, 
+    "NUMB_N": {
+        "ratio_distinct_tokens": 1.0, 
+        "num_integer": 0, 
+        "language": {}, 
+        "num_decimal": 865, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "0.175303939": 1, 
+                "0.22343886": 1, 
+                "0.174674726": 1, 
+                "0.156751073": 1, 
+                "0.182729878": 1, 
+                "0.197453111": 1, 
+                "0.164602839": 1, 
+                "0.192923899": 1, 
+                "0.165345723": 1, 
+                "0.182766469": 1
+            }, 
+            "most_common_values": {
+                "0.175303939": 1, 
+                "0.22343886": 1, 
+                "0.174674726": 1, 
+                "0.156751073": 1, 
+                "0.182729878": 1, 
+                "0.197453111": 1, 
+                "0.164602839": 1, 
+                "0.192923899": 1, 
+                "0.165345723": 1, 
+                "0.182766469": 1
+            }, 
+            "most_common_tokens": {
+                "0.175303939": 1, 
+                "0.22343886": 1, 
+                "0.174674726": 1, 
+                "0.156751073": 1, 
+                "0.182729878": 1, 
+                "0.197453111": 1, 
+                "0.164602839": 1, 
+                "0.192923899": 1, 
+                "0.165345723": 1, 
+                "0.182766469": 1
+            }
+        }, 
+        "num_nonblank": 865, 
+        "num_missing": 0, 
+        "num_distinct_values": 865, 
+        "length": {
+            "token": {
+                "average": 10.88439, 
+                "standard-deviation": 0.37336
+            }, 
+            "character": {
+                "average": 10.88439, 
+                "standard-deviation": 0.37336
+            }
+        }, 
+        "numeric_density": 0.90813, 
+        "numeric": {
+            "Q1": 0.15913, 
+            "Q3": 0.19643, 
+            "standard-deviation": 0.02928, 
+            "ratio": 1.0, 
+            "Q2": 0.17799, 
+            "mean": 0.18079
+        }, 
+        "ratio_distinct_values": 1.0, 
+        "num_distinct_tokens": 865, 
+        "decimal": {
+            "Q1": 0.15913, 
+            "Q3": 0.19643, 
+            "standard-deviation": 0.02928, 
+            "ratio": 1.0, 
+            "Q2": 0.17799, 
+            "mean": 0.18079
+        }
+    }, 
+    "pCASP9_N": {
+        "ratio_distinct_tokens": 1.0, 
+        "num_integer": 0, 
+        "language": {}, 
+        "num_decimal": 865, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "1.349006217": 1, 
+                "1.779748402": 1, 
+                "1.43734254": 1, 
+                "1.248687351": 1, 
+                "1.348259207": 1, 
+                "1.816974001": 1, 
+                "1.596931288": 1, 
+                "1.599865372": 1, 
+                "1.681497925": 1, 
+                "1.570217798": 1
+            }, 
+            "most_common_values": {
+                "1.349006217": 1, 
+                "1.779748402": 1, 
+                "1.43734254": 1, 
+                "1.248687351": 1, 
+                "1.348259207": 1, 
+                "1.816974001": 1, 
+                "1.596931288": 1, 
+                "1.599865372": 1, 
+                "1.681497925": 1, 
+                "1.570217798": 1
+            }, 
+            "most_common_tokens": {
+                "1.349006217": 1, 
+                "1.779748402": 1, 
+                "1.43734254": 1, 
+                "1.248687351": 1, 
+                "1.348259207": 1, 
+                "1.816974001": 1, 
+                "1.596931288": 1, 
+                "1.599865372": 1, 
+                "1.681497925": 1, 
+                "1.570217798": 1
+            }
+        }, 
+        "num_nonblank": 865, 
+        "num_missing": 0, 
+        "num_distinct_values": 865, 
+        "length": {
+            "token": {
+                "average": 10.88786, 
+                "standard-deviation": 0.40271
+            }, 
+            "character": {
+                "average": 10.88786, 
+                "standard-deviation": 0.40271
+            }
+        }, 
+        "numeric_density": 0.90815, 
+        "numeric": {
+            "Q1": 1.38052, 
+            "Q3": 1.72168, 
+            "standard-deviation": 0.24872, 
+            "ratio": 1.0, 
+            "Q2": 1.52284, 
+            "mean": 1.5529
+        }, 
+        "ratio_distinct_values": 1.0, 
+        "num_distinct_tokens": 865, 
+        "decimal": {
+            "Q1": 1.38052, 
+            "Q3": 1.72168, 
+            "standard-deviation": 0.24872, 
+            "ratio": 1.0, 
+            "Q2": 1.52284, 
+            "mean": 1.5529
+        }
+    }, 
+    "AMPKA_N": {
+        "ratio_distinct_tokens": 0.99884, 
+        "num_integer": 0, 
+        "language": {}, 
+        "num_decimal": 863, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "0.378718366": 1, 
+                "0.347048301": 1, 
+                "0.344006148": 1, 
+                "0.333333333": 2, 
+                "0.292804559": 1, 
+                "0.348591549": 1, 
+                "0.305666857": 1, 
+                "0.33605178": 1, 
+                "0.283658459": 1, 
+                "0.474492452": 1
+            }, 
+            "most_common_values": {
+                "0.378718366": 1, 
+                "0.347048301": 1, 
+                "0.344006148": 1, 
+                "0.333333333": 2, 
+                "0.292804559": 1, 
+                "0.348591549": 1, 
+                "0.305666857": 1, 
+                "0.33605178": 1, 
+                "0.283658459": 1, 
+                "0.474492452": 1
+            }, 
+            "most_common_tokens": {
+                "0.378718366": 1, 
+                "0.347048301": 1, 
+                "0.344006148": 1, 
+                "0.333333333": 2, 
+                "0.292804559": 1, 
+                "0.348591549": 1, 
+                "0.305666857": 1, 
+                "0.33605178": 1, 
+                "0.283658459": 1, 
+                "0.474492452": 1
+            }
+        }, 
+        "num_nonblank": 863, 
+        "num_missing": 2, 
+        "num_distinct_values": 862, 
+        "length": {
+            "token": {
+                "average": 10.87601, 
+                "standard-deviation": 0.45152
+            }, 
+            "character": {
+                "average": 10.87601, 
+                "standard-deviation": 0.45152
+            }
+        }, 
+        "numeric_density": 0.90805, 
+        "numeric": {
+            "Q1": 0.32634, 
+            "Q3": 0.40035, 
+            "standard-deviation": 0.06395, 
+            "ratio": 1.0, 
+            "Q2": 0.35672, 
+            "mean": 0.3686
+        }, 
+        "ratio_distinct_values": 0.99884, 
+        "num_distinct_tokens": 862, 
+        "decimal": {
+            "Q1": 0.32634, 
+            "Q3": 0.40035, 
+            "standard-deviation": 0.06395, 
+            "ratio": 1.0, 
+            "Q2": 0.35672, 
+            "mean": 0.3686
+        }
+    }, 
+    "P3525_N": {
+        "ratio_distinct_tokens": 1.0, 
+        "num_integer": 0, 
+        "language": {}, 
+        "num_decimal": 865, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "0.312519037": 1, 
+                "0.291621912": 1, 
+                "0.358114234": 1, 
+                "0.289501004": 1, 
+                "0.297793359": 1, 
+                "0.30224": 1, 
+                "0.306075592": 1, 
+                "0.264757709": 1, 
+                "0.271435977": 1, 
+                "0.310824849": 1
+            }, 
+            "most_common_values": {
+                "0.312519037": 1, 
+                "0.291621912": 1, 
+                "0.358114234": 1, 
+                "0.289501004": 1, 
+                "0.297793359": 1, 
+                "0.30224": 1, 
+                "0.306075592": 1, 
+                "0.264757709": 1, 
+                "0.271435977": 1, 
+                "0.310824849": 1
+            }, 
+            "most_common_tokens": {
+                "0.312519037": 1, 
+                "0.291621912": 1, 
+                "0.358114234": 1, 
+                "0.289501004": 1, 
+                "0.297793359": 1, 
+                "0.30224": 1, 
+                "0.306075592": 1, 
+                "0.264757709": 1, 
+                "0.271435977": 1, 
+                "0.310824849": 1
+            }
+        }, 
+        "num_nonblank": 865, 
+        "num_missing": 0, 
+        "num_distinct_values": 865, 
+        "length": {
+            "token": {
+                "average": 10.88786, 
+                "standard-deviation": 0.36024
+            }, 
+            "character": {
+                "average": 10.88786, 
+                "standard-deviation": 0.36024
+            }
+        }, 
+        "numeric_density": 0.90815, 
+        "numeric": {
+            "Q1": 0.26998, 
+            "Q3": 0.31155, 
+            "standard-deviation": 0.02997, 
+            "ratio": 1.0, 
+            "Q2": 0.2905, 
+            "mean": 0.29139
+        }, 
+        "ratio_distinct_values": 1.0, 
+        "num_distinct_tokens": 865, 
+        "decimal": {
+            "Q1": 0.26998, 
+            "Q3": 0.31155, 
+            "standard-deviation": 0.02997, 
+            "ratio": 1.0, 
+            "Q2": 0.2905, 
+            "mean": 0.29139
+        }
+    }, 
+    "JNK_N": {
+        "ratio_distinct_tokens": 1.0, 
+        "num_integer": 0, 
+        "language": {}, 
+        "num_decimal": 863, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "0.234269885": 1, 
+                "0.23798627": 1, 
+                "0.226177599": 1, 
+                "0.218207088": 1, 
+                "0.190627314": 1, 
+                "0.181941616": 1, 
+                "0.255178625": 1, 
+                "0.230789405": 1, 
+                "0.218835554": 1, 
+                "0.268393782": 1
+            }, 
+            "most_common_values": {
+                "0.234269885": 1, 
+                "0.23798627": 1, 
+                "0.226177599": 1, 
+                "0.218207088": 1, 
+                "0.190627314": 1, 
+                "0.181941616": 1, 
+                "0.255178625": 1, 
+                "0.230789405": 1, 
+                "0.218835554": 1, 
+                "0.268393782": 1
+            }, 
+            "most_common_tokens": {
+                "0.234269885": 1, 
+                "0.23798627": 1, 
+                "0.226177599": 1, 
+                "0.218207088": 1, 
+                "0.190627314": 1, 
+                "0.181941616": 1, 
+                "0.255178625": 1, 
+                "0.230789405": 1, 
+                "0.218835554": 1, 
+                "0.268393782": 1
+            }
+        }, 
+        "num_nonblank": 863, 
+        "num_missing": 2, 
+        "num_distinct_values": 863, 
+        "length": {
+            "token": {
+                "average": 10.84357, 
+                "standard-deviation": 0.57387
+            }, 
+            "character": {
+                "average": 10.84357, 
+                "standard-deviation": 0.57387
+            }
+        }, 
+        "numeric_density": 0.90778, 
+        "numeric": {
+            "Q1": 0.22146, 
+            "Q3": 0.26336, 
+            "standard-deviation": 0.03367, 
+            "ratio": 1.0, 
+            "Q2": 0.24485, 
+            "mean": 0.24201
+        }, 
+        "ratio_distinct_values": 1.0, 
+        "num_distinct_tokens": 863, 
+        "decimal": {
+            "Q1": 0.22146, 
+            "Q3": 0.26336, 
+            "standard-deviation": 0.03367, 
+            "ratio": 1.0, 
+            "Q2": 0.24485, 
+            "mean": 0.24201
+        }
+    }, 
+    "pERK_N": {
+        "ratio_distinct_tokens": 1.0, 
+        "num_integer": 0, 
+        "language": {}, 
+        "num_decimal": 863, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "0.244790014": 1, 
+                "0.346131011": 1, 
+                "0.303848363": 1, 
+                "0.967613132": 1, 
+                "0.838176598": 1, 
+                "0.838573744": 1, 
+                "0.388375883": 1, 
+                "0.255178625": 1, 
+                "0.55431093": 1, 
+                "0.953963034": 1
+            }, 
+            "most_common_values": {
+                "0.244790014": 1, 
+                "0.346131011": 1, 
+                "0.303848363": 1, 
+                "0.967613132": 1, 
+                "0.838176598": 1, 
+                "0.838573744": 1, 
+                "0.388375883": 1, 
+                "0.255178625": 1, 
+                "0.55431093": 1, 
+                "0.953963034": 1
+            }, 
+            "most_common_tokens": {
+                "0.244790014": 1, 
+                "0.346131011": 1, 
+                "0.303848363": 1, 
+                "0.967613132": 1, 
+                "0.838176598": 1, 
+                "0.838573744": 1, 
+                "0.388375883": 1, 
+                "0.255178625": 1, 
+                "0.55431093": 1, 
+                "0.953963034": 1
+            }
+        }, 
+        "num_nonblank": 863, 
+        "num_missing": 2, 
+        "num_distinct_values": 863, 
+        "length": {
+            "token": {
+                "average": 10.88413, 
+                "standard-deviation": 0.46503
+            }, 
+            "character": {
+                "average": 10.88413, 
+                "standard-deviation": 0.46503
+            }
+        }, 
+        "numeric_density": 0.90812, 
+        "numeric": {
+            "Q1": 0.33803, 
+            "Q3": 0.66317, 
+            "standard-deviation": 0.33861, 
+            "ratio": 1.0, 
+            "Q2": 0.44556, 
+            "mean": 0.54418
+        }, 
+        "ratio_distinct_values": 1.0, 
+        "num_distinct_tokens": 863, 
+        "decimal": {
+            "Q1": 0.33803, 
+            "Q3": 0.66317, 
+            "standard-deviation": 0.33861, 
+            "ratio": 1.0, 
+            "Q2": 0.44556, 
+            "mean": 0.54418
+        }
+    }, 
+    "AKT_N": {
+        "ratio_distinct_tokens": 1.0, 
+        "num_integer": 0, 
+        "language": {}, 
+        "num_decimal": 863, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "0.759701956": 1, 
+                "0.507476933": 1, 
+                "0.66543633": 1, 
+                "0.620832642": 1, 
+                "0.603601821": 1, 
+                "0.575127273": 1, 
+                "0.611172363": 1, 
+                "0.515558267": 1, 
+                "0.684846124": 1, 
+                "0.922587131": 1
+            }, 
+            "most_common_values": {
+                "0.759701956": 1, 
+                "0.507476933": 1, 
+                "0.66543633": 1, 
+                "0.620832642": 1, 
+                "0.603601821": 1, 
+                "0.575127273": 1, 
+                "0.611172363": 1, 
+                "0.515558267": 1, 
+                "0.684846124": 1, 
+                "0.922587131": 1
+            }, 
+            "most_common_tokens": {
+                "0.759701956": 1, 
+                "0.507476933": 1, 
+                "0.66543633": 1, 
+                "0.620832642": 1, 
+                "0.603601821": 1, 
+                "0.575127273": 1, 
+                "0.611172363": 1, 
+                "0.515558267": 1, 
+                "0.684846124": 1, 
+                "0.922587131": 1
+            }
+        }, 
+        "num_nonblank": 863, 
+        "num_missing": 2, 
+        "num_distinct_values": 863, 
+        "length": {
+            "token": {
+                "average": 10.86095, 
+                "standard-deviation": 0.5021
+            }, 
+            "character": {
+                "average": 10.86095, 
+                "standard-deviation": 0.5021
+            }
+        }, 
+        "numeric_density": 0.90793, 
+        "numeric": {
+            "Q1": 0.59715, 
+            "Q3": 0.75831, 
+            "standard-deviation": 0.12822, 
+            "ratio": 1.0, 
+            "Q2": 0.68043, 
+            "mean": 0.68246
+        }, 
+        "ratio_distinct_values": 1.0, 
+        "num_distinct_tokens": 863, 
+        "decimal": {
+            "Q1": 0.59715, 
+            "Q3": 0.75831, 
+            "standard-deviation": 0.12822, 
+            "ratio": 1.0, 
+            "Q2": 0.68043, 
+            "mean": 0.68246
+        }
+    }, 
+    "ADARB1_N": {
+        "ratio_distinct_tokens": 1.0, 
+        "num_integer": 0, 
+        "language": {}, 
+        "num_decimal": 865, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "1.01015744": 1, 
+                "2.022946247": 1, 
+                "1.066182225": 1, 
+                "0.856265876": 1, 
+                "0.811548484": 1, 
+                "1.256421903": 1, 
+                "1.232837147": 1, 
+                "1.159770284": 1, 
+                "0.707826348": 1, 
+                "0.926694329": 1
+            }, 
+            "most_common_values": {
+                "1.01015744": 1, 
+                "2.022946247": 1, 
+                "1.066182225": 1, 
+                "0.856265876": 1, 
+                "0.811548484": 1, 
+                "1.256421903": 1, 
+                "1.232837147": 1, 
+                "1.159770284": 1, 
+                "0.707826348": 1, 
+                "0.926694329": 1
+            }, 
+            "most_common_tokens": {
+                "1.01015744": 1, 
+                "2.022946247": 1, 
+                "1.066182225": 1, 
+                "0.856265876": 1, 
+                "0.811548484": 1, 
+                "1.256421903": 1, 
+                "1.232837147": 1, 
+                "1.159770284": 1, 
+                "0.707826348": 1, 
+                "0.926694329": 1
+            }
+        }, 
+        "num_nonblank": 865, 
+        "num_missing": 0, 
+        "num_distinct_values": 865, 
+        "length": {
+            "token": {
+                "average": 10.88208, 
+                "standard-deviation": 0.35022
+            }, 
+            "character": {
+                "average": 10.88208, 
+                "standard-deviation": 0.35022
+            }
+        }, 
+        "numeric_density": 0.90811, 
+        "numeric": {
+            "Q1": 0.93098, 
+            "Q3": 1.38318, 
+            "standard-deviation": 0.36523, 
+            "ratio": 1.0, 
+            "Q2": 1.13277, 
+            "mean": 1.20318
+        }, 
+        "ratio_distinct_values": 1.0, 
+        "num_distinct_tokens": 865, 
+        "decimal": {
+            "Q1": 0.93098, 
+            "Q3": 1.38318, 
+            "standard-deviation": 0.36523, 
+            "ratio": 1.0, 
+            "Q2": 1.13277, 
+            "mean": 1.20318
+        }
+    }, 
+    "d3mIndex": {
+        "ratio_distinct_tokens": 1.0, 
+        "num_integer": 865, 
+        "language": {}, 
+        "num_decimal": 0, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "701": 1, 
+                "392": 1, 
+                "88": 1, 
+                "89": 1, 
+                "397": 1, 
+                "396": 1, 
+                "395": 1, 
+                "394": 1, 
+                "82": 1, 
+                "823": 1
+            }, 
+            "most_common_values": {
+                "701": 1, 
+                "392": 1, 
+                "88": 1, 
+                "89": 1, 
+                "397": 1, 
+                "396": 1, 
+                "395": 1, 
+                "394": 1, 
+                "82": 1, 
+                "823": 1
+            }, 
+            "most_common_tokens": {
+                "701": 1, 
+                "392": 1, 
+                "88": 1, 
+                "89": 1, 
+                "397": 1, 
+                "396": 1, 
+                "395": 1, 
+                "394": 1, 
+                "82": 1, 
+                "823": 1
+            }, 
+            "most_common_alphanumeric_tokens": {
+                "701": 1, 
+                "392": 1, 
+                "88": 1, 
+                "89": 1, 
+                "397": 1, 
+                "396": 1, 
+                "395": 1, 
+                "394": 1, 
+                "82": 1, 
+                "823": 1
+            }
+        }, 
+        "num_nonblank": 865, 
+        "num_missing": 0, 
+        "num_distinct_values": 865, 
+        "length": {
+            "token": {
+                "average": 2.87283, 
+                "standard-deviation": 0.36643
+            }, 
+            "character": {
+                "average": 2.87283, 
+                "standard-deviation": 0.36643
+            }
+        }, 
+        "numeric_density": 1.0, 
+        "numeric": {
+            "Q1": 216.0, 
+            "Q3": 648.0, 
+            "standard-deviation": 249.84829, 
+            "ratio": 1.0, 
+            "Q2": 432.0, 
+            "mean": 432.0
+        }, 
+        "ratio_distinct_values": 1.0, 
+        "integer": {
+            "Q1": 216.0, 
+            "Q3": 648.0, 
+            "standard-deviation": 249.84829, 
+            "ratio": 1.0, 
+            "Q2": 432.0, 
+            "mean": 432.0
+        }, 
+        "num_distinct_tokens": 865
+    }, 
+    "GSK3B_N": {
+        "ratio_distinct_tokens": 1.0, 
+        "num_integer": 0, 
+        "language": {}, 
+        "num_decimal": 863, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "1.513971359": 1, 
+                "1.590684301": 1, 
+                "0.887456491": 1, 
+                "1.314496644": 1, 
+                "1.276931971": 1, 
+                "1.075252023": 1, 
+                "1.120662461": 1, 
+                "1.145619087": 1, 
+                "1.243112485": 1, 
+                "1.096622152": 1
+            }, 
+            "most_common_values": {
+                "1.513971359": 1, 
+                "1.590684301": 1, 
+                "0.887456491": 1, 
+                "1.314496644": 1, 
+                "1.276931971": 1, 
+                "1.075252023": 1, 
+                "1.120662461": 1, 
+                "1.145619087": 1, 
+                "1.243112485": 1, 
+                "1.096622152": 1
+            }, 
+            "most_common_tokens": {
+                "1.513971359": 1, 
+                "1.590684301": 1, 
+                "0.887456491": 1, 
+                "1.314496644": 1, 
+                "1.276931971": 1, 
+                "1.075252023": 1, 
+                "1.120662461": 1, 
+                "1.145619087": 1, 
+                "1.243112485": 1, 
+                "1.096622152": 1
+            }
+        }, 
+        "num_nonblank": 863, 
+        "num_missing": 2, 
+        "num_distinct_values": 863, 
+        "length": {
+            "token": {
+                "average": 10.8737, 
+                "standard-deviation": 0.4298
+            }, 
+            "character": {
+                "average": 10.8737, 
+                "standard-deviation": 0.4298
+            }
+        }, 
+        "numeric_density": 0.90803, 
+        "numeric": {
+            "Q1": 1.02078, 
+            "Q3": 1.30814, 
+            "standard-deviation": 0.24254, 
+            "ratio": 1.0, 
+            "Q2": 1.1557, 
+            "mean": 1.17118
+        }, 
+        "ratio_distinct_values": 1.0, 
+        "num_distinct_tokens": 863, 
+        "decimal": {
+            "Q1": 1.02078, 
+            "Q3": 1.30814, 
+            "standard-deviation": 0.24254, 
+            "ratio": 1.0, 
+            "Q2": 1.1557, 
+            "mean": 1.17118
+        }
+    }, 
+    "EGR1_N": {
+        "ratio_distinct_tokens": 1.0, 
+        "num_integer": 0, 
+        "language": {}, 
+        "num_decimal": 695, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "0.136288455": 1, 
+                "0.146265475": 1, 
+                "0.203534935": 1, 
+                "0.184653079": 1, 
+                "0.319888179": 1, 
+                "0.170882318": 1, 
+                "0.212350855": 1, 
+                "0.235458667": 1, 
+                "0.254117647": 1, 
+                "0.126930047": 1
+            }, 
+            "most_common_values": {
+                "0.136288455": 1, 
+                "0.146265475": 1, 
+                "0.203534935": 1, 
+                "0.184653079": 1, 
+                "0.319888179": 1, 
+                "0.170882318": 1, 
+                "0.212350855": 1, 
+                "0.235458667": 1, 
+                "0.254117647": 1, 
+                "0.126930047": 1
+            }, 
+            "most_common_tokens": {
+                "0.136288455": 1, 
+                "0.146265475": 1, 
+                "0.203534935": 1, 
+                "0.184653079": 1, 
+                "0.319888179": 1, 
+                "0.170882318": 1, 
+                "0.212350855": 1, 
+                "0.235458667": 1, 
+                "0.254117647": 1, 
+                "0.126930047": 1
+            }
+        }, 
+        "num_nonblank": 695, 
+        "num_missing": 170, 
+        "num_distinct_values": 695, 
+        "length": {
+            "token": {
+                "average": 10.89928, 
+                "standard-deviation": 0.38139
+            }, 
+            "character": {
+                "average": 10.89928, 
+                "standard-deviation": 0.38139
+            }
+        }, 
+        "numeric_density": 0.90825, 
+        "numeric": {
+            "Q1": 0.15594, 
+            "Q3": 0.20419, 
+            "standard-deviation": 0.04101, 
+            "ratio": 1.0, 
+            "Q2": 0.17536, 
+            "mean": 0.18399
+        }, 
+        "ratio_distinct_values": 1.0, 
+        "num_distinct_tokens": 695, 
+        "decimal": {
+            "Q1": 0.15594, 
+            "Q3": 0.20419, 
+            "standard-deviation": 0.04101, 
+            "ratio": 1.0, 
+            "Q2": 0.17536, 
+            "mean": 0.18399
+        }
+    }
+}

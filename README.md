@@ -6,8 +6,9 @@ This project is on-going project. Currently it goes on table features computatio
 2. pandas >= 0.20.1
 
 ### TODO
-1. set up some test cases
+1. set up some test cases (travis)
 2. merge some repeated computation? eg: in ```"num_distinct_tokens" (by fanghao)``` ```"most_common_tokens" (by ihui)``` both compute the Pandas Series of all tokens.
+3. make it parallel computation
 
 ### Usage
 use data_profile.py to profile the csv file into json format. Command line usage is as following:
@@ -19,7 +20,7 @@ python data_profile.py data.csv profiled_data.json
 ### Format
 the output JSON format:
 
-1. columns format
+####1. columns format
 
 
 ```json
@@ -121,3 +122,6 @@ notes:
 3. punctuations does not apply for numbers (eg: for number 1.23, "." does not count as a punctuation)
 
 
+#### 2. row format
+1. number of missing value
+2. data type statistic: total count, ratio...

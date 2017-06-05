@@ -26,6 +26,8 @@ def compute_length_distinct(column, feature, delimiter):
     """
     # (1)
     column = column.dropna() # get rid of all missing value
+    if (column.size == 0):      # if the column is empty, do nothing
+        return
     
     feature["length"] = {} # for character and token
     # 1. for character
@@ -61,6 +63,9 @@ def compute_lang(column, feature):
     maybe need to consider the special cases for the above conditions
     """
     column = column.dropna() # ignore all missing value
+    if (column.size == 0):      # if the column is empty, do nothing
+        return
+        
     feature["language"] = {}
 
     for cell in column:
@@ -88,6 +93,8 @@ def compute_punctuation(column, feature, weight_outlier):
     """
 
     column = column.dropna() # get rid of all missing value
+    if (column.size == 0):      # if the column is empty, do nothing
+        return
 
     number_of_chars =  sum(column.apply(len))   # number of all chars in column
     num_chars_cell = np.zeros(column.size)   # number of chars for each cell
