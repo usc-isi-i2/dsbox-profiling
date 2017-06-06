@@ -1,14 +1,19 @@
 import pandas as pd
 import json
 import sys
+import time
 
 # from feature computation functions
 import feature_compute_lfh
 import feature_compute_hih
 
-def profile_data(data_path, output_filename):
+def profile_data(data_path):
     """
     Main function to profile the data.
+    Parameters
+    ----------
+    data_path: file that needs to be profiled
+    ----------
     """
     # hyper-parameters
     punctuation_outlier_weight = 2;
@@ -40,7 +45,17 @@ def profile_data(data_path, output_filename):
         result[column_name] = each_res # add this column features into final result
 
     print "====================calculations finished ====================\n"
-    # STEP 3: wirting JSON formated output
+
+    return result
+    
+
+if __name__ == '__main__':
+    """
+    main function to execute profiler
+    """
+    result = profile_data(sys.argv[1])
+    output_filename = sys.argv[2]
+    # wirting JSON formated output
     print "     ====================>> wirting to file: {}\n".format(output_filename)
     output_json = json.dumps(result, indent=4)
     f = open(output_filename, 'w')
@@ -48,9 +63,3 @@ def profile_data(data_path, output_filename):
     f.close()
     print  "======================ALL DONE ===================="
 
-
-if __name__ == '__main__':
-    """
-    main function to execute profiler
-    """
-    profile_data(sys.argv[1], sys.argv[2])
