@@ -17,9 +17,10 @@ def profile_data(data_path):
     ----------
     """
     # hyper-parameters
-    punctuation_outlier_weight = 2;
+    punctuation_outlier_weight = 3;
     numerical_outlier_weight = 3;
     token_delimiter = " ";
+    detect_language = False;
 
     # STEP 1: get dependency and read data
     data = pd.read_csv(data_path, dtype = object)   # all read as str
@@ -34,7 +35,7 @@ def profile_data(data_path):
         each_res = defaultdict(lambda: defaultdict())
         feature_compute_lfh.compute_length_distinct(data[column_name], each_res, delimiter=token_delimiter)
         feature_compute_lfh.compute_missing(data[column_name], each_res)
-        feature_compute_lfh.compute_lang(data[column_name], each_res)
+        if detect_language: feature_compute_lfh.compute_lang(data[column_name], each_res)
         feature_compute_lfh.compute_punctuation(data[column_name], each_res, weight_outlier=punctuation_outlier_weight)
 
         feature_compute_hih.compute_numerics(data[column_name], each_res)

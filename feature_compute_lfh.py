@@ -44,11 +44,11 @@ def compute_length_distinct(column, feature, delimiter):
     feature["length"]["token"]["standard-deviation"] = round(lenth_for_token.std(), 5)
     
     # (2)
-    feature["num_distinct_values"] = column.nunique()
-    feature["ratio_distinct_values"] = round(feature["num_distinct_values"] / float(column.size), 5)
+    feature["distinct"]["num_distinct_values"] = column.nunique()
+    feature["distinct"]["ratio_distinct_values"] = round(feature["distinct"]["num_distinct_values"] / float(column.size), 5)
         # using the pre-computed tokenlized in (1), which is series of all tokens
-    feature["num_distinct_tokens"] = tokenlized.nunique()
-    feature["ratio_distinct_tokens"] = round(feature["num_distinct_tokens"] / float(tokenlized.size), 5)
+    feature["distinct"]["num_distinct_tokens"] = tokenlized.nunique()
+    feature["distinct"]["ratio_distinct_tokens"] = round(feature["distinct"]["num_distinct_tokens"] / float(tokenlized.size), 5)
     
 
 
