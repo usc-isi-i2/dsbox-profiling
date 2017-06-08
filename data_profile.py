@@ -33,8 +33,10 @@ def profile_data(data_path):
     for column_name in data:
         #each_res = {} # dict: map feature name to content
         each_res = defaultdict(lambda: defaultdict())
+        # compute_missing_space Must be put as the first one because it may change the data content, see function def for details
+        feature_compute_lfh.compute_missing_space(data[column_name], each_res)
+        feature_compute_lfh.compute_filename(data[column_name], each_res)    
         feature_compute_lfh.compute_length_distinct(data[column_name], each_res, delimiter=token_delimiter)
-        feature_compute_lfh.compute_missing(data[column_name], each_res)
         if detect_language: feature_compute_lfh.compute_lang(data[column_name], each_res)
         feature_compute_lfh.compute_punctuation(data[column_name], each_res, weight_outlier=punctuation_outlier_weight)
 

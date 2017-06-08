@@ -26,8 +26,17 @@ the output JSON format:
 ```json
 {
   "column_id": {
-    "num_missing": "the number of missing values (empty cells) in this column",
-    "language": "language code, en, sp, etc.",
+    "missing": {
+        "num_missing": "the number of missing values (empty cells) in this column",
+        "num_nonblank": ,
+        "leading_space": "the number of leading whitespaces in the column",
+        "trailing_space": "the number of trailing whitespaces in the column"
+    },
+    "special_type": {
+    	"language": "language code, en, sp, etc.",
+    	"num_filename": "number of cell that content might be a filename"
+    }
+    
     "length": {
       "character": {
         "average": "mean value of (number of chars in every cell)",

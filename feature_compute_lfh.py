@@ -3,14 +3,51 @@ from langdetect import detect
 import helper_funcs
 import string
 import numpy as np
+import re
 
 # till now, this file totally compute 16 types of features
 
-def compute_missing(column, feature):
+def compute_missing_space(column, feature):
     """
-    compute the number of missing value for a given series (column); store the result into (feature)
+    NOTE: this function may change the input column. It will trim all the leading and trailing whitespace.
+            if a cell is empty after trimming(which means it only contains whitespaces), 
+            it will be set as NaN (missing value), and both leading_space and trailing_space will += 1.
+
+    (1). trim and count the leading space and trailing space if applicable. 
+        note that more than one leading(trailing) spaces in a cell will still be counted as 1.
+    (2). compute the number of missing value for a given series (column); store the result into (feature)
     """
+    leading_space = 0
+    trailing_space = 0
+
+    for id in xrange(len(column)): 
+        cell = column[id]
+    #for cell in column:    # 5x faster loop, but cannot modify the column
+        if (pd.isnull(cell)):
+            continue
+           
+        change = False
+        trim_leading_cell = re.sub(r"^\s+", "", cell)
+        if (trim_leading_cell != cell):
+            leading_space += 1
+            change = True
+        trim_trailing_cell = re.sub(r"\s+$", "", trim_leading_cell)
+        if ( (trim_trailing_cell != trim_leading_cell) or len(trim_trailing_cell) == 0):
+            trailing_space += 1
+            change = True
+
+        # change the origin value in data
+        if change:
+            if (len(trim_trailing_cell) == 0):
+                column[id] = np.nan
+            else:
+                column[id] = trim_trailing_cell
+
+    feature["leading_space"] = leading_space
+    feature["trailing_space"] = trailing_space
+            
     feature["num_missing"] = pd.isnull(column).sum()
+    
 
 
 def compute_length_distinct(column, feature, delimiter):
@@ -66,7 +103,7 @@ def compute_lang(column, feature):
     if (column.size == 0):      # if the column is empty, do nothing
         return
         
-    feature["language"] = {}
+    feature["special_type"]["language"] = {}
 
     for cell in column:
         if cell.isdigit() or helper_funcs.is_Decimal_Number(cell):
@@ -82,6 +119,18 @@ def compute_lang(column, feature):
             except Exception as e:
                 print "there is something may not be any language nor number: {}".format(cell)
                 pass
+
+def compute_filename(column, feature):
+    """
+    compute number of cell whose content might be a filename
+    """
+    column = column.dropna() # ignore all missing value
+
+    filename_pattern = r"^\w+\.[a-z]{1,5}"
+    column.str.match(filename_pattern)
+    num_filename = column.str.match(filename_pattern).sum()
+    feature["special_type"]["num_filename"] = num_filename
+
 
 def compute_punctuation(column, feature, weight_outlier):
     """
