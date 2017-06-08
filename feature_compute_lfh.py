@@ -43,10 +43,10 @@ def compute_missing_space(column, feature):
             else:
                 column[id] = trim_trailing_cell
 
-    feature["leading_space"] = leading_space
-    feature["trailing_space"] = trailing_space
+    feature["missing"]["leading_space"] = leading_space
+    feature["missing"]["trailing_space"] = trailing_space
             
-    feature["num_missing"] = pd.isnull(column).sum()
+    feature["missing"]["num_missing"] = pd.isnull(column).sum()
     
 
 
