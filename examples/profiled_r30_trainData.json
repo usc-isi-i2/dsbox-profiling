@@ -1,0 +1,153 @@
+{
+    "d3mIndex": {
+        "ratio_distinct_tokens": 1.0, 
+        "num_integer": 114, 
+        "language": {}, 
+        "num_decimal": 0, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "55": 1, 
+                "88": 1, 
+                "122": 1, 
+                "124": 1, 
+                "91": 1, 
+                "90": 1, 
+                "93": 1, 
+                "92": 1, 
+                "95": 1, 
+                "94": 1
+            }, 
+            "most_common_values": {
+                "55": 1, 
+                "88": 1, 
+                "122": 1, 
+                "124": 1, 
+                "91": 1, 
+                "90": 1, 
+                "93": 1, 
+                "92": 1, 
+                "95": 1, 
+                "94": 1
+            }, 
+            "most_common_tokens": {
+                "55": 1, 
+                "88": 1, 
+                "122": 1, 
+                "124": 1, 
+                "91": 1, 
+                "90": 1, 
+                "93": 1, 
+                "92": 1, 
+                "95": 1, 
+                "94": 1
+            }, 
+            "most_common_alphanumeric_tokens": {
+                "55": 1, 
+                "88": 1, 
+                "122": 1, 
+                "124": 1, 
+                "91": 1, 
+                "90": 1, 
+                "93": 1, 
+                "92": 1, 
+                "95": 1, 
+                "94": 1
+            }
+        }, 
+        "num_nonblank": 114, 
+        "num_missing": 0, 
+        "num_distinct_values": 114, 
+        "length": {
+            "token": {
+                "average": 2.27193, 
+                "standard-deviation": 0.55311
+            }, 
+            "character": {
+                "average": 2.27193, 
+                "standard-deviation": 0.55311
+            }
+        }, 
+        "numeric_density": 1.0, 
+        "numeric": {
+            "Q1": 37.25, 
+            "Q3": 107.75, 
+            "standard-deviation": 41.60204, 
+            "ratio": 1.0, 
+            "Q2": 75.5, 
+            "mean": 73.5
+        }, 
+        "ratio_distinct_values": 1.0, 
+        "integer": {
+            "Q1": 37.25, 
+            "Q3": 107.75, 
+            "standard-deviation": 41.60204, 
+            "ratio": 1.0, 
+            "Q2": 75.5, 
+            "mean": 73.5
+        }, 
+        "num_distinct_tokens": 114
+    }, 
+    "personality": {
+        "ratio_distinct_tokens": 0.11404, 
+        "num_integer": 0, 
+        "language": {
+            "id": 52, 
+            "es": 62
+        }, 
+        "num_decimal": 0, 
+        "frequent-entries": {
+            "most_common_values": {
+                "ENFJ": 18, 
+                "ESFP": 5, 
+                "INFJ": 12, 
+                "ISTJ": 6, 
+                "ENTJ": 7, 
+                "INTJ": 12, 
+                "ISFJ": 13, 
+                "ESFJ": 22, 
+                "ENFP": 7, 
+                "INFP": 3
+            }, 
+            "most_common_tokens": {
+                "ENFJ": 18, 
+                "ESFP": 5, 
+                "INFJ": 12, 
+                "ISTJ": 6, 
+                "ENTJ": 7, 
+                "INTJ": 12, 
+                "ISFJ": 13, 
+                "ESFJ": 22, 
+                "ENFP": 7, 
+                "INFP": 3
+            }, 
+            "most_common_alphanumeric_tokens": {
+                "ENFJ": 18, 
+                "ESFP": 5, 
+                "INFJ": 12, 
+                "ISTJ": 6, 
+                "ENTJ": 7, 
+                "INTJ": 12, 
+                "ISFJ": 13, 
+                "ESFJ": 22, 
+                "ENFP": 7, 
+                "INFP": 3
+            }
+        }, 
+        "num_nonblank": 114, 
+        "num_missing": 0, 
+        "num_distinct_values": 13, 
+        "length": {
+            "token": {
+                "average": 4.0, 
+                "standard-deviation": 0.0
+            }, 
+            "character": {
+                "average": 4.0, 
+                "standard-deviation": 0.0
+            }
+        }, 
+        "numeric_density": 0.0, 
+        "ratio_distinct_values": 0.11404, 
+        "num_distinct_tokens": 13
+    }
+}
