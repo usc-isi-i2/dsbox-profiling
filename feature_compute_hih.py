@@ -35,6 +35,9 @@ def numerical_stats(column,num_nonblank,sigma=3):
     idict = {}
     idict["mean"] = stats["mean"]
     idict["standard-deviation"] = stats["std"]
+    #temporary ugly patch for std
+    #when count=1, make std=0
+    if stats["count"]==1: idict["standard-deviation"]= 0
     idict["Q1"] = stats["25%"]
     idict["Q2"] = stats["50%"]
     idict["Q3"] = stats["75%"]
@@ -47,6 +50,7 @@ def numerical_stats(column,num_nonblank,sigma=3):
     idict["num_0"] = column[column==0].count()
     idict["num_1"] = column[column==1].count()
     idict["num_-1"] = column[column==-1].count()
+    
     return idict
 
 def compute_numerics(column, feature):
