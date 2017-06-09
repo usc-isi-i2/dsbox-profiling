@@ -20,7 +20,7 @@ python data_profile.py data.csv profiled_data.json
 ### Format
 the output JSON format:
 
-####1. columns format
+#### 1. columns format
 
 
 ```json
@@ -171,10 +171,10 @@ the output JSON format:
 notes:
 
 1. token: delimiter is a parameter (if set to ".", note that this will also be applied to floating numbers)
-2. precision for floats: 5 after point
+2. precision for floats: no round
 3. punctuations does not apply for numbers (eg: for number 1.23, "." does not count as a punctuation)
 
 
-#### 2. row format
+#### 2. row format (TODO)
 1. number of missing value
 2. data type statistic: total count, ratio...
