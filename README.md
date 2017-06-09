@@ -4,6 +4,7 @@ This project is on-going project. Currently it goes on table features computatio
 ### Requirements
 1. python 2.7
 2. pandas >= 0.20.1
+3. langdetect >= 1.0.7
 
 ### TODO
 1. set up some test cases (travis)
