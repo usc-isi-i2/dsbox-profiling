@@ -3,6 +3,12 @@ import numpy as np
 import helper_funcs as hf
 from collections import OrderedDict
 from collections import defaultdict
+from collections import Counter
+
+def ordered_dict2(column, k):
+    unique,counts = np.unique(column, return_counts=True)
+    d = dict(zip(unique,counts))
+    return OrderedDict(Counter(d).most_common(k))
 
 def ordered_dict(column, k):
     d = column.value_counts()[:k].to_dict()
@@ -74,31 +80,34 @@ def compute_common_numeric_tokens(column, feature, k=10):
     tokens are integer or floats
     e.g. "123", "12.3"
     """
-    #num_split = lambda x: filter(lambda y: unicode(y).isnumeric(),x.split())    
-    num_split = lambda x: filter(lambda y: hf.is_Decimal_Number(y), x.split())
-    token = column.dropna()
-    if not token.empty:
-        token = token.apply(num_split).apply(pd.Series).unstack().dropna()
-    #token = column.fillna("_").apply(num_split).apply(pd.Series).unstack().dropna()
-        if token.count() > 0:
-            #if ("frequent-entries" not in feature.keys()):
-            #    feature["frequent-entries"] = {}
-            feature["frequent-entries"]["most_common_numeric_tokens"] = ordered_dict(token, k)
+    #num_split = lambda x: filter(lambda y: hf.is_Decimal_Number(y), x.split())
+    #token = column.dropna()
+    #if not token.empty:
+    #    token = token.apply(num_split).apply(pd.Series).unstack().dropna()
+    #    if token.count() > 0:
+    #        feature["frequent-entries"]["most_common_numeric_tokens"] = ordered_dict(token, k)
+    
+    col = column.str.split(expand=True).unstack().dropna().values
+    token = np.array(filter(lambda x: hf.is_Decimal_Number(x), col))
+    if token.size:
+        feature["frequent-entries"]["most_common_numeric_tokens"] = ordered_dict2(token, k)
 
 def compute_common_alphanumeric_tokens(column, feature, k=10):
     """
     compute top k frequent alphanumerical tokens and their counts.
     tokens only contain alphabets and/or numbers, decimals with points not included 
     """
-    alnum_split = lambda x: filter(lambda y: y.isalnum(),x.split())
-    token = column.dropna()
-    if not token.empty:
-        token = token.apply(alnum_split).apply(pd.Series).unstack().dropna()
-    #token = column.fillna("_").apply(alnum_split).apply(pd.Series).unstack().dropna()
-        if token.count() > 0:
-            #if ("frequent-entries" not in feature.keys()):
-            #    feature["frequent-entries"] = {}
-            feature["frequent-entries"]["most_common_alphanumeric_tokens"] = ordered_dict(token, k)
+    #alnum_split = lambda x: filter(lambda y: y.isalnum(),x.split())
+    #token = column.dropna()
+    #if not token.empty:
+    #    token = token.apply(alnum_split).apply(pd.Series).unstack().dropna()
+    #    if token.count() > 0:
+    #        feature["frequent-entries"]["most_common_alphanumeric_tokens"] = ordered_dict(token, k)
+    
+    col = column.str.split(expand=True).unstack().dropna().values
+    token = np.array(filter(lambda x: x.isalnum(), col))
+    if token.size:
+        feature["frequent-entries"]["most_common_alphanumeric_tokens"] = ordered_dict2(token, k)
 
 def compute_common_values(column, feature, k=10):
     """
@@ -117,40 +126,64 @@ def compute_common_tokens(column, feature, k=10):
     e.g. "$100", "60F", "123-456-7890"
     note: delimiter = " "
     """
-    token = column.dropna()
-    if not token.empty:
-        token = token.str.split(expand=True).unstack()
-        contain_digits = lambda x: any(char.isdigit() for char in x)
-        token_cnt = token.count()
-        if token_cnt > 0:
-            feature["frequent-entries"]["most_common_tokens"] = ordered_dict(token, k)
-            cnt = token.dropna().apply(contain_digits).sum()
-            if cnt > 0:
-                feature["numeric_stats"]["contain_numeric_token"] = {}
-                feature["numeric_stats"]["contain_numeric_token"]["count"] = cnt
-                feature["numeric_stats"]["contain_numeric_token"]["ratio"] = float(cnt)/token_cnt
+    token = column.str.split(expand=True).unstack().dropna().values
+    if token.size:
+        feature["frequent-entries"]["most_common_tokens"] = ordered_dict2(token, k)
+        cnt = sum([any(char.isdigit() for char in c) for c in token])
+        if cnt > 0:
+            feature["numeric_stats"]["contain_numeric_token"] = {}
+            feature["numeric_stats"]["contain_numeric_token"]["count"] = cnt
+            feature["numeric_stats"]["contain_numeric_token"]["ratio"] = float(cnt)/token.size
+
+    #token = column.dropna()
+    #if not token.empty:
+    #    token = token.str.split(expand=True).unstack()
+    #    contain_digits = lambda x: any(char.isdigit() for char in x)
+    #    token_cnt = token.count()
+    #    if token_cnt > 0:
+    #        feature["frequent-entries"]["most_common_tokens"] = ordered_dict(token, k)
+    #        cnt = token.dropna().apply(contain_digits).sum()
+    #        #cnt =  
+    #        if cnt > 0:
+    #            feature["numeric_stats"]["contain_numeric_token"] = {}
+    #            feature["numeric_stats"]["contain_numeric_token"]["count"] = cnt
+    #            feature["numeric_stats"]["contain_numeric_token"]["ratio"] = float(cnt)/token_cnt
 
 def compute_common_tokens_by_puncs(column, feature, k=10):
     """
     tokens seperated by all string.punctuation characters:
     '!"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~'
     """
-    alnum_split = lambda x: "".join((word if word.isalnum() else " ") for word in x).split()
-    token = column.dropna()
-    if not token.empty:
-        token = token.apply(alnum_split).apply(pd.Series).unstack()
-        contain_digits = lambda x: any(char.isdigit() for char in x)
-        token_cnt = token.count()
-        if token_cnt > 0:
-            feature["frequent-entries"]["most_common_tokens_puncs"] = ordered_dict(token, k)
-            dist_cnt = token.nunique()
-            feature["distinct"]["num_distinct_tokens_puncs"] = dist_cnt
-            feature["distinct"]["ratio_distinct_tokens_puncs"] = float(dist_cnt)/token_cnt
-            cnt = token.dropna().apply(contain_digits).sum()
-            if cnt > 0:
-                feature["numeric_stats"]["contain_numeric_token_puncs"] = {}
-                feature["numeric_stats"]["contain_numeric_token_puncs"]["count"] = cnt
-                feature["numeric_stats"]["contain_numeric_token_puncs"]["ratio"] = float(cnt)/token_cnt
+    col = column.dropna().values
+    token_nested = [("".join((word if word.isalnum() else " ") for word in char).split()) for char in col]
+    token = np.array([item for sublist in token_nested for item in sublist])
+    if token.size:
+        feature["frequent-entries"]["most_common_tokens_puncs"] = ordered_dict2(token, k)
+        dist_cnt = np.unique(token).size 
+        feature["distinct"]["num_distinct_tokens_puncs"] = dist_cnt
+        feature["distinct"]["ratio_distinct_tokens_puncs"] = float(dist_cnt)/token.size
+        cnt = sum([any(char.isdigit() for char in c) for c in token])
+        if cnt > 0:
+            feature["numeric_stats"]["contain_numeric_token_puncs"] = {}
+            feature["numeric_stats"]["contain_numeric_token_puncs"]["count"] = cnt
+            feature["numeric_stats"]["contain_numeric_token_puncs"]["ratio"] = float(cnt)/token.size
+
+    #alnum_split = lambda x: "".join((word if word.isalnum() else " ") for word in x).split()
+    #token = column.dropna()
+    #if not token.empty:
+    #    token = token.apply(alnum_split).apply(pd.Series).unstack()
+    #    contain_digits = lambda x: any(char.isdigit() for char in x)
+    #    token_cnt = token.count()
+    #    if token_cnt > 0:
+    #        feature["frequent-entries"]["most_common_tokens_puncs"] = ordered_dict(token, k)
+    #        dist_cnt = token.nunique()
+    #        feature["distinct"]["num_distinct_tokens_puncs"] = dist_cnt
+    #        feature["distinct"]["ratio_distinct_tokens_puncs"] = float(dist_cnt)/token_cnt
+    #        cnt = token.dropna().apply(contain_digits).sum()
+    #        if cnt > 0:
+    #            feature["numeric_stats"]["contain_numeric_token_puncs"] = {}
+    #            feature["numeric_stats"]["contain_numeric_token_puncs"]["count"] = cnt
+    #            feature["numeric_stats"]["contain_numeric_token_puncs"]["ratio"] = float(cnt)/token_cnt
 
 def compute_numeric_density(column, feature):
     """
@@ -161,7 +194,13 @@ def compute_numeric_density(column, feature):
     #if not column.empty:
     #    digit_total = column.apply(density).apply(pd.Series).sum()
     #    feature["numeric_stats"]["numeric_density"] = float(digit_total[0])/digit_total[1]
-    print column.name
+    
+    #col = column.dropna()
+    #if not column.empty:
+    #    density = np.array([(sum(char.isdigit() for char in c), len(c)) for c in col])
+    #    digit_total = density.sum(axis=0)
+    #    feature["numeric_stats"]["numeric_density"] = float(digit_total[0])/digit_total[1]
+
     col = column.dropna().values
     if col.size:
         density = np.array([(sum(char.isdigit() for char in c), len(c)) for c in col])
