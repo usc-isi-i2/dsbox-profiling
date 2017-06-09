@@ -14,7 +14,7 @@ install:
   # Useful for debugging any issues with conda
   - conda info -a
   - conda-env create .
-#  - source activate etk_env
+  - source activate etk_env
 script:
   - cd unit_tests
   - python test_features.py
