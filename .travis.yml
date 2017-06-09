@@ -16,5 +16,5 @@ install:
   - conda-env create .
   - source activate etk_env
 script:
-  - cd unit_tests
+  - cd dsbox/datapreprocessing/profiler/unit_tests
   - python test_features.py
