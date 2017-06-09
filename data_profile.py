@@ -48,8 +48,7 @@ def profile_data(data_path):
         feature_compute_hih.compute_numeric_density(data[column_name], each_res)
         feature_compute_hih.compute_contain_numeric_values(data[column_name], each_res)
         feature_compute_hih.compute_common_tokens_by_puncs(data[column_name], each_res)
-        if not each_res["numeric_stats"]:
-            del each_res["numeric_stats"]
+        if not each_res["numeric_stats"]: del each_res["numeric_stats"]
 
         result[column_name] = each_res # add this column features into final result
 
