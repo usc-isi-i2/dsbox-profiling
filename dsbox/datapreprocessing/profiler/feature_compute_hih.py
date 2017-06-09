@@ -35,6 +35,9 @@ def numerical_stats(column,num_nonblank,sigma=3):
     idict = {}
     idict["mean"] = stats["mean"]
     idict["standard-deviation"] = stats["std"]
+    #temporary ugly patch for std
+    #when count=1, make std=0
+    if stats["count"]==1: idict["standard-deviation"]= 0
     idict["Q1"] = stats["25%"]
     idict["Q2"] = stats["50%"]
     idict["Q3"] = stats["75%"]
@@ -47,6 +50,7 @@ def numerical_stats(column,num_nonblank,sigma=3):
     idict["num_0"] = column[column==0].count()
     idict["num_1"] = column[column==1].count()
     idict["num_-1"] = column[column==-1].count()
+    
     return idict
 
 def compute_numerics(column, feature):
@@ -63,16 +67,17 @@ def compute_numerics(column, feature):
     col_int = pd.Series([e for e in col_nonblank if type(e) == int or type(e) == np.int64])
     col_float = pd.Series([e for e in col_nonblank if type(e) == float or type(e) == np.float64])
 
-    feature["num_nonblank"] = col_nonblank.count()
+    feature["missing"]["num_nonblank"] = col_nonblank.count()
 
     if col_int.count() > 0:
-        feature["numeric_stats"]["integer"] = numerical_stats(col_int,feature["num_nonblank"])
+        feature["numeric_stats"]["integer"] = numerical_stats(col_int,feature["missing"]["num_nonblank"])
 
     if col_float.count() > 0:
-        feature["numeric_stats"]["decimal"] = numerical_stats(col_float,feature["num_nonblank"])
+        feature["numeric_stats"]["decimal"] = numerical_stats(col_float,feature["missing"]["num_nonblank"])
 
     if "integer" in feature["numeric_stats"] or "decimal" in feature["numeric_stats"]:
-        feature["numeric_stats"]["numeric"] = numerical_stats(pd.concat([col_float,col_int]),feature["num_nonblank"])
+        col_num = pd.concat([col_float,col_int])
+        feature["numeric_stats"]["numeric"] = numerical_stats(col_num,feature["missing"]["num_nonblank"])
 
 def compute_common_numeric_tokens(column, feature, k=10):
     """

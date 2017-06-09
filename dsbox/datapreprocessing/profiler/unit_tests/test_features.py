@@ -15,6 +15,7 @@ class TestStringMethods(unittest.TestCase):
     def helper(self, prefix, field_name, gt_dict, pr_dict):
         """
         BFS search to compare all the items in the given ground truth and profiler result dictionaries.
+        there is 1E-6 precision tolerance for floating value
         Parameters
         ----------
         prefix: the prefix name for the current field (from the root)
@@ -28,7 +29,11 @@ class TestStringMethods(unittest.TestCase):
         prefix += "/{}".format(field_name) 
         # end case: no sub-node anymore
         if (type(gt) != dict):
-            self.assertEqual(gt, pr, "field {} value: {} does not match with ground truth value: {}".format(prefix, pr, gt))
+            if (type(gt) == float): # set 1E-6 tolerance for floating value
+                self.assertEqual(round(gt,5), round(pr,5), 
+                    "field {} value: {} does not match with ground truth value: {}".format(prefix, pr, gt))
+            else:
+                self.assertEqual(gt, pr, "field {} value: {} does not match with ground truth value: {}".format(prefix, pr, gt))
             return
 
         # general case:
@@ -41,16 +46,14 @@ class TestStringMethods(unittest.TestCase):
         test main function. Only check the if the existed items in ground_truth also exist in profiler result.
         For the items that only exists in profiler result, will be ignored and pass the test.
         """
+        tested_fields = ["numeric_stats", "distinct", "frequent-entries", "length", "special_type", "missing"]
         for column_name in self.ground_truth:
             gt = self.ground_truth.get(column_name)
             pr = self.profiler_result.get(column_name)
             # to be tested field:
-            self.helper(column_name, "numeric_stats", gt, pr)
-            self.helper(column_name, "distinct", gt, pr)
-            self.helper(column_name, "frequent-entries", gt, pr)
-            self.helper(column_name, "length", gt, pr)
-            #self.helper(column_name, "language", gt, pr)
-            #self.helper(column_name, "missing", gt, pr)
+            for field_name in tested_fields:
+                self.helper(column_name, field_name, gt, pr)
+            
 
 
 if __name__ == '__main__':
