@@ -61,6 +61,7 @@
             }
         }, 
         "missing": {
+            "num_nonblank": 9, 
             "leading_space": 0, 
             "trailing_space": 0, 
             "num_missing": 2
@@ -130,7 +131,6 @@
                 "696": 1
             }
         }, 
-        "num_nonblank": 9, 
         "special_type": {
             "num_filename": 0
         }, 
@@ -192,6 +192,7 @@
             }
         }, 
         "missing": {
+            "num_nonblank": 11, 
             "leading_space": 0, 
             "trailing_space": 0, 
             "num_missing": 0
@@ -254,7 +255,6 @@
                 "0.936": 1
             }
         }, 
-        "num_nonblank": 11, 
         "special_type": {
             "num_filename": 0
         }, 
@@ -316,6 +316,7 @@
             }
         }, 
         "missing": {
+            "num_nonblank": 11, 
             "leading_space": 0, 
             "trailing_space": 0, 
             "num_missing": 0
@@ -390,7 +391,6 @@
                 "7674": 1
             }
         }, 
-        "num_nonblank": 11, 
         "special_type": {
             "num_filename": 0
         }, 
@@ -467,6 +467,7 @@
             }
         }, 
         "missing": {
+            "num_nonblank": 11, 
             "leading_space": 0, 
             "trailing_space": 0, 
             "num_missing": 0
@@ -532,7 +533,6 @@
                 "24": 1
             }
         }, 
-        "num_nonblank": 11, 
         "special_type": {
             "num_filename": 0
         }, 
@@ -594,6 +594,7 @@
             }
         }, 
         "missing": {
+            "num_nonblank": 11, 
             "leading_space": 0, 
             "trailing_space": 0, 
             "num_missing": 0
@@ -668,7 +669,6 @@
                 "474": 1
             }
         }, 
-        "num_nonblank": 11, 
         "special_type": {
             "num_filename": 0
         }, 
@@ -688,6 +688,7 @@
             "numeric_density": 0.0
         }, 
         "missing": {
+            "num_nonblank": 10, 
             "leading_space": 0, 
             "trailing_space": 0, 
             "num_missing": 1
@@ -756,7 +757,6 @@
                 "TOM": 1
             }
         }, 
-        "num_nonblank": 10, 
         "special_type": {
             "num_filename": 0
         }, 
@@ -818,6 +818,7 @@
             }
         }, 
         "missing": {
+            "num_nonblank": 11, 
             "leading_space": 0, 
             "trailing_space": 0, 
             "num_missing": 0
@@ -892,7 +893,6 @@
                 "80": 1
             }
         }, 
-        "num_nonblank": 11, 
         "special_type": {
             "num_filename": 0
         }, 
@@ -912,6 +912,7 @@
             "numeric_density": 0.0
         }, 
         "missing": {
+            "num_nonblank": 11, 
             "leading_space": 0, 
             "trailing_space": 0, 
             "num_missing": 0
@@ -961,7 +962,6 @@
                 "Outfield": 1
             }
         }, 
-        "num_nonblank": 11, 
         "special_type": {
             "num_filename": 0
         }, 
@@ -1023,6 +1023,7 @@
             }
         }, 
         "missing": {
+            "num_nonblank": 11, 
             "leading_space": 0, 
             "trailing_space": 0, 
             "num_missing": 0
@@ -1097,7 +1098,6 @@
                 "9": 1
             }
         }, 
-        "num_nonblank": 11, 
         "special_type": {
             "num_filename": 0
         }, 
