@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/usc-isi-i2/dsbox-cleaning.svg?branch=master)](https://travis-ci.org/usc-isi-i2/dsbox-cleaning)
+
 ### Introduction
 This project is an on-going project. Currently it generates data
 profiles for tabular data. We use DataFrame (supported by
@@ -9,9 +11,8 @@ profiles for tabular data. We use DataFrame (supported by
 3. langdetect >= 1.0.7
 
 ### TODO
-1. set up some test cases (travis)
-2. merge some repeated computation? eg: in ```"num_distinct_tokens" (by fanghao)``` ```"most_common_tokens" (by ihui)``` both compute the Pandas Series of all tokens.
-3. perform parallel computation
+1. merge some repeated computation? eg: in ```"num_distinct_tokens" (by fanghao)``` ```"most_common_tokens" (by ihui)``` both compute the Pandas Series of all tokens.
+2. perform parallel computation
 
 ### Usage
 To profile a csv data file, do:

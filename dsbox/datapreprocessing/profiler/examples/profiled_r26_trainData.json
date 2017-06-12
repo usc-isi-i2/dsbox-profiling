@@ -1,0 +1,2927 @@
+{
+    "stoptm": {
+        "numeric_stats": {
+            "contain_numeric_token_puncs": {
+                "count": 1838, 
+                "ratio": 1.0
+            }, 
+            "decimal": {
+                "Q1": 1000.0, 
+                "count": 919, 
+                "Q3": 1835.5, 
+                "standard-deviation": 508.2098282557618, 
+                "ratio": 1.0, 
+                "num_positive": 915, 
+                "num_outlier": 0, 
+                "Q2": 1420.0, 
+                "num_-1": 0, 
+                "num_0": 4, 
+                "num_1": 0, 
+                "num_negative": 0, 
+                "mean": 1420.341675734494
+            }, 
+            "numeric": {
+                "Q1": 1000.0, 
+                "count": 919, 
+                "Q3": 1835.5, 
+                "standard-deviation": 508.2098282557618, 
+                "ratio": 1.0, 
+                "num_positive": 915, 
+                "num_outlier": 0, 
+                "Q2": 1420.0, 
+                "num_-1": 0, 
+                "num_0": 4, 
+                "num_1": 0, 
+                "num_negative": 0, 
+                "mean": 1420.341675734494
+            }, 
+            "contain_numeric": {
+                "count": 919, 
+                "ratio": 1.0
+            }, 
+            "numeric_density": 0.8258150113722517, 
+            "contain_numeric_token": {
+                "count": 919, 
+                "ratio": 1.0
+            }
+        }, 
+        "missing": {
+            "num_nonblank": 919, 
+            "leading_space": 0, 
+            "trailing_space": 0, 
+            "num_missing": 0
+        }, 
+        "distinct": {
+            "ratio_distinct_tokens": 0.24483133841131666, 
+            "num_distinct_tokens_puncs": 225, 
+            "ratio_distinct_tokens_puncs": 0.12241566920565833, 
+            "num_distinct_values": 225, 
+            "ratio_distinct_values": 0.24483133841131666, 
+            "num_distinct_tokens": 225
+        }, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "1000.0": 37, 
+                "800.0": 36, 
+                "1900.0": 28, 
+                "900.0": 28, 
+                "1800.0": 27, 
+                "1600.0": 26, 
+                "700.0": 25, 
+                "2100.0": 25, 
+                "1300.0": 24, 
+                "1700.0": 24
+            }, 
+            "most_common_tokens_puncs": {
+                "0": 923, 
+                "1000": 37, 
+                "800": 36, 
+                "1900": 28, 
+                "900": 28, 
+                "1800": 27, 
+                "1600": 26, 
+                "700": 25, 
+                "2100": 25, 
+                "1300": 24
+            }, 
+            "most_common_values": {
+                "1000.0": 37, 
+                "800.0": 36, 
+                "900.0": 28, 
+                "1900.0": 28, 
+                "1800.0": 27, 
+                "1600.0": 26, 
+                "2100.0": 25, 
+                "700.0": 25, 
+                "1300.0": 24, 
+                "1700.0": 24
+            }, 
+            "most_common_tokens": {
+                "1000.0": 37, 
+                "800.0": 36, 
+                "1900.0": 28, 
+                "900.0": 28, 
+                "1800.0": 27, 
+                "1600.0": 26, 
+                "700.0": 25, 
+                "2100.0": 25, 
+                "1300.0": 24, 
+                "1700.0": 24
+            }
+        }, 
+        "special_type": {
+            "num_filename": 0
+        }, 
+        "length": {
+            "token": {
+                "average": 5.741022850924918, 
+                "standard-deviation": 0.4695098247237483
+            }, 
+            "character": {
+                "average": 5.741022850924918, 
+                "standard-deviation": 0.4695098247237483
+            }
+        }
+    }, 
+    "county": {
+        "numeric_stats": {
+            "numeric_density": 0.0
+        }, 
+        "missing": {
+            "num_nonblank": 919, 
+            "leading_space": 0, 
+            "trailing_space": 0, 
+            "num_missing": 0
+        }, 
+        "distinct": {
+            "ratio_distinct_tokens": 0.08842297174111212, 
+            "num_distinct_tokens_puncs": 97, 
+            "ratio_distinct_tokens_puncs": 0.08842297174111212, 
+            "num_distinct_values": 85, 
+            "ratio_distinct_values": 0.09249183895538629, 
+            "num_distinct_tokens": 97
+        }, 
+        "frequent-entries": {
+            "most_common_values": {
+                "ST LOUIS": 116, 
+                "HENNEPIN": 105, 
+                "DAKOTA": 63, 
+                "ANOKA": 52, 
+                "WASHINGTON": 46, 
+                "RAMSEY": 32, 
+                "STEARNS": 25, 
+                "OLMSTED": 23, 
+                "ROSEAU": 14, 
+                "CLAY": 14
+            }, 
+            "most_common_tokens_puncs": {
+                "ST": 116, 
+                "LOUIS": 116, 
+                "HENNEPIN": 105, 
+                "DAKOTA": 63, 
+                "ANOKA": 52, 
+                "WASHINGTON": 46, 
+                "RAMSEY": 32, 
+                "STEARNS": 25, 
+                "OLMSTED": 23, 
+                "EARTH": 14
+            }, 
+            "most_common_tokens": {
+                "ST": 116, 
+                "LOUIS": 116, 
+                "HENNEPIN": 105, 
+                "DAKOTA": 63, 
+                "ANOKA": 52, 
+                "WASHINGTON": 46, 
+                "RAMSEY": 32, 
+                "STEARNS": 25, 
+                "OLMSTED": 23, 
+                "EARTH": 14
+            }, 
+            "most_common_alphanumeric_tokens": {
+                "ST": 116, 
+                "LOUIS": 116, 
+                "HENNEPIN": 105, 
+                "DAKOTA": 63, 
+                "ANOKA": 52, 
+                "WASHINGTON": 46, 
+                "RAMSEY": 32, 
+                "STEARNS": 25, 
+                "OLMSTED": 23, 
+                "EARTH": 14
+            }
+        }, 
+        "special_type": {
+            "num_filename": 0
+        }, 
+        "length": {
+            "token": {
+                "average": 5.789425706472197, 
+                "standard-deviation": 2.0984781890770288
+            }, 
+            "character": {
+                "average": 7.104461371055495, 
+                "standard-deviation": 1.8173611158075047
+            }
+        }
+    }, 
+    "county_code": {
+        "numeric_stats": {
+            "contain_numeric_token_puncs": {
+                "count": 919, 
+                "ratio": 1.0
+            }, 
+            "numeric": {
+                "Q1": 20.0, 
+                "count": 919, 
+                "Q3": 69.0, 
+                "standard-deviation": 25.674840541422444, 
+                "ratio": 1.0, 
+                "num_positive": 915, 
+                "num_outlier": 0, 
+                "Q2": 43.0, 
+                "num_-1": 0, 
+                "num_0": 4, 
+                "num_1": 52, 
+                "num_negative": 0, 
+                "mean": 42.523394994559304
+            }, 
+            "contain_numeric": {
+                "count": 919, 
+                "ratio": 1.0
+            }, 
+            "numeric_density": 1.0, 
+            "integer": {
+                "Q1": 20.0, 
+                "count": 919, 
+                "Q3": 69.0, 
+                "standard-deviation": 25.674840541422444, 
+                "ratio": 1.0, 
+                "num_positive": 915, 
+                "num_outlier": 0, 
+                "Q2": 43.0, 
+                "num_-1": 0, 
+                "num_0": 4, 
+                "num_1": 52, 
+                "num_negative": 0, 
+                "mean": 42.523394994559304
+            }, 
+            "contain_numeric_token": {
+                "count": 919, 
+                "ratio": 1.0
+            }
+        }, 
+        "missing": {
+            "num_nonblank": 919, 
+            "leading_space": 0, 
+            "trailing_space": 0, 
+            "num_missing": 0
+        }, 
+        "distinct": {
+            "ratio_distinct_tokens": 0.09249183895538629, 
+            "num_distinct_tokens_puncs": 85, 
+            "ratio_distinct_tokens_puncs": 0.09249183895538629, 
+            "num_distinct_values": 85, 
+            "ratio_distinct_values": 0.09249183895538629, 
+            "num_distinct_tokens": 85
+        }, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "69": 116, 
+                "25": 105, 
+                "18": 63, 
+                "1": 52, 
+                "79": 46, 
+                "60": 32, 
+                "70": 25, 
+                "53": 23, 
+                "65": 14, 
+                "24": 14
+            }, 
+            "most_common_tokens_puncs": {
+                "69": 116, 
+                "25": 105, 
+                "18": 63, 
+                "1": 52, 
+                "79": 46, 
+                "60": 32, 
+                "70": 25, 
+                "53": 23, 
+                "65": 14, 
+                "24": 14
+            }, 
+            "most_common_values": {
+                "69": 116, 
+                "25": 105, 
+                "18": 63, 
+                "1": 52, 
+                "79": 46, 
+                "60": 32, 
+                "70": 25, 
+                "53": 23, 
+                "24": 14, 
+                "65": 14
+            }, 
+            "most_common_tokens": {
+                "69": 116, 
+                "25": 105, 
+                "18": 63, 
+                "1": 52, 
+                "79": 46, 
+                "60": 32, 
+                "70": 25, 
+                "53": 23, 
+                "65": 14, 
+                "24": 14
+            }, 
+            "most_common_alphanumeric_tokens": {
+                "69": 116, 
+                "25": 105, 
+                "18": 63, 
+                "1": 52, 
+                "79": 46, 
+                "60": 32, 
+                "70": 25, 
+                "53": 23, 
+                "65": 14, 
+                "24": 14
+            }
+        }, 
+        "special_type": {
+            "num_filename": 0
+        }, 
+        "length": {
+            "token": {
+                "average": 1.883569096844396, 
+                "standard-deviation": 0.32091558382471574
+            }, 
+            "character": {
+                "average": 1.883569096844396, 
+                "standard-deviation": 0.32091558382471574
+            }
+        }
+    }, 
+    "startdt": {
+        "numeric_stats": {
+            "contain_numeric_token_puncs": {
+                "count": 1838, 
+                "ratio": 1.0
+            }, 
+            "decimal": {
+                "Q1": 12688.0, 
+                "count": 919, 
+                "Q3": 121687.0, 
+                "standard-deviation": 51281.333735117725, 
+                "ratio": 1.0, 
+                "num_positive": 919, 
+                "num_outlier": 0, 
+                "Q2": 22488.0, 
+                "num_-1": 0, 
+                "num_0": 0, 
+                "num_1": 0, 
+                "num_negative": 0, 
+                "mean": 58827.3231773667
+            }, 
+            "numeric": {
+                "Q1": 12688.0, 
+                "count": 919, 
+                "Q3": 121687.0, 
+                "standard-deviation": 51281.333735117725, 
+                "ratio": 1.0, 
+                "num_positive": 919, 
+                "num_outlier": 0, 
+                "Q2": 22488.0, 
+                "num_-1": 0, 
+                "num_0": 0, 
+                "num_1": 0, 
+                "num_negative": 0, 
+                "mean": 58827.3231773667
+            }, 
+            "contain_numeric": {
+                "count": 919, 
+                "ratio": 1.0
+            }, 
+            "numeric_density": 0.8647534952170713, 
+            "contain_numeric_token": {
+                "count": 919, 
+                "ratio": 1.0
+            }
+        }, 
+        "missing": {
+            "num_nonblank": 919, 
+            "leading_space": 0, 
+            "trailing_space": 0, 
+            "num_missing": 0
+        }, 
+        "distinct": {
+            "ratio_distinct_tokens": 0.09140369967355821, 
+            "num_distinct_tokens_puncs": 85, 
+            "ratio_distinct_tokens_puncs": 0.046245919477693145, 
+            "num_distinct_values": 84, 
+            "ratio_distinct_values": 0.09140369967355821, 
+            "num_distinct_tokens": 84
+        }, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "20288.0": 120, 
+                "10188.0": 45, 
+                "122687.0": 39, 
+                "121287.0": 37, 
+                "122887.0": 33, 
+                "12688.0": 31, 
+                "122787.0": 27, 
+                "121387.0": 26, 
+                "11788.0": 24, 
+                "30388.0": 24
+            }, 
+            "most_common_tokens_puncs": {
+                "0": 919, 
+                "20288": 120, 
+                "10188": 45, 
+                "122687": 39, 
+                "121287": 37, 
+                "122887": 33, 
+                "12688": 31, 
+                "122787": 27, 
+                "121387": 26, 
+                "11788": 24
+            }, 
+            "most_common_values": {
+                "20288.0": 120, 
+                "10188.0": 45, 
+                "122687.0": 39, 
+                "121287.0": 37, 
+                "122887.0": 33, 
+                "12688.0": 31, 
+                "122787.0": 27, 
+                "121387.0": 26, 
+                "30388.0": 24, 
+                "121687.0": 24
+            }, 
+            "most_common_tokens": {
+                "20288.0": 120, 
+                "10188.0": 45, 
+                "122687.0": 39, 
+                "121287.0": 37, 
+                "122887.0": 33, 
+                "12688.0": 31, 
+                "122787.0": 27, 
+                "121387.0": 26, 
+                "11788.0": 24, 
+                "30388.0": 24
+            }
+        }, 
+        "special_type": {
+            "num_filename": 0
+        }, 
+        "length": {
+            "token": {
+                "average": 7.393906420021763, 
+                "standard-deviation": 0.4888805806841456
+            }, 
+            "character": {
+                "average": 7.393906420021763, 
+                "standard-deviation": 0.4888805806841456
+            }
+        }
+    }, 
+    "radonFile_index": {
+        "numeric_stats": {
+            "contain_numeric_token_puncs": {
+                "count": 919, 
+                "ratio": 1.0
+            }, 
+            "numeric": {
+                "Q1": 5310.5, 
+                "count": 919, 
+                "Q3": 5769.5, 
+                "standard-deviation": 265.43674701643454, 
+                "ratio": 1.0, 
+                "num_positive": 919, 
+                "num_outlier": 0, 
+                "Q2": 5540.0, 
+                "num_-1": 0, 
+                "num_0": 0, 
+                "num_1": 0, 
+                "num_negative": 0, 
+                "mean": 5540.0
+            }, 
+            "contain_numeric": {
+                "count": 919, 
+                "ratio": 1.0
+            }, 
+            "numeric_density": 1.0, 
+            "integer": {
+                "Q1": 5310.5, 
+                "count": 919, 
+                "Q3": 5769.5, 
+                "standard-deviation": 265.43674701643454, 
+                "ratio": 1.0, 
+                "num_positive": 919, 
+                "num_outlier": 0, 
+                "Q2": 5540.0, 
+                "num_-1": 0, 
+                "num_0": 0, 
+                "num_1": 0, 
+                "num_negative": 0, 
+                "mean": 5540.0
+            }, 
+            "contain_numeric_token": {
+                "count": 919, 
+                "ratio": 1.0
+            }
+        }, 
+        "missing": {
+            "num_nonblank": 919, 
+            "leading_space": 0, 
+            "trailing_space": 0, 
+            "num_missing": 0
+        }, 
+        "distinct": {
+            "ratio_distinct_tokens": 1.0, 
+            "num_distinct_tokens_puncs": 919, 
+            "ratio_distinct_tokens_puncs": 1.0, 
+            "num_distinct_values": 919, 
+            "ratio_distinct_values": 1.0, 
+            "num_distinct_tokens": 919
+        }, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "5259": 1, 
+                "5553": 1, 
+                "5552": 1, 
+                "5821": 1, 
+                "5820": 1, 
+                "5823": 1, 
+                "5822": 1, 
+                "5825": 1, 
+                "5824": 1, 
+                "5827": 1
+            }, 
+            "most_common_tokens_puncs": {
+                "5259": 1, 
+                "5553": 1, 
+                "5552": 1, 
+                "5821": 1, 
+                "5820": 1, 
+                "5823": 1, 
+                "5822": 1, 
+                "5825": 1, 
+                "5824": 1, 
+                "5827": 1
+            }, 
+            "most_common_values": {
+                "5458": 1, 
+                "5289": 1, 
+                "5618": 1, 
+                "5983": 1, 
+                "5962": 1, 
+                "5963": 1, 
+                "5964": 1, 
+                "5965": 1, 
+                "5849": 1, 
+                "5848": 1
+            }, 
+            "most_common_tokens": {
+                "5259": 1, 
+                "5553": 1, 
+                "5552": 1, 
+                "5821": 1, 
+                "5820": 1, 
+                "5823": 1, 
+                "5822": 1, 
+                "5825": 1, 
+                "5824": 1, 
+                "5827": 1
+            }, 
+            "most_common_alphanumeric_tokens": {
+                "5259": 1, 
+                "5553": 1, 
+                "5552": 1, 
+                "5821": 1, 
+                "5820": 1, 
+                "5823": 1, 
+                "5822": 1, 
+                "5825": 1, 
+                "5824": 1, 
+                "5827": 1
+            }
+        }, 
+        "special_type": {
+            "num_filename": 0
+        }, 
+        "length": {
+            "token": {
+                "average": 4.0, 
+                "standard-deviation": 0.0
+            }, 
+            "character": {
+                "average": 4.0, 
+                "standard-deviation": 0.0
+            }
+        }
+    }, 
+    "zip": {
+        "numeric_stats": {
+            "contain_numeric_token_puncs": {
+                "count": 919, 
+                "ratio": 1.0
+            }, 
+            "numeric": {
+                "Q1": 55318.0, 
+                "count": 919, 
+                "Q3": 56119.5, 
+                "standard-deviation": 516.7936025676579, 
+                "ratio": 1.0, 
+                "num_positive": 919, 
+                "num_outlier": 0, 
+                "Q2": 55746.0, 
+                "num_-1": 0, 
+                "num_0": 0, 
+                "num_1": 0, 
+                "num_negative": 0, 
+                "mean": 55729.57780195865
+            }, 
+            "contain_numeric": {
+                "count": 919, 
+                "ratio": 1.0
+            }, 
+            "numeric_density": 1.0, 
+            "integer": {
+                "Q1": 55318.0, 
+                "count": 919, 
+                "Q3": 56119.5, 
+                "standard-deviation": 516.7936025676579, 
+                "ratio": 1.0, 
+                "num_positive": 919, 
+                "num_outlier": 0, 
+                "Q2": 55746.0, 
+                "num_-1": 0, 
+                "num_0": 0, 
+                "num_1": 0, 
+                "num_negative": 0, 
+                "mean": 55729.57780195865
+            }, 
+            "contain_numeric_token": {
+                "count": 919, 
+                "ratio": 1.0
+            }
+        }, 
+        "missing": {
+            "num_nonblank": 919, 
+            "leading_space": 0, 
+            "trailing_space": 0, 
+            "num_missing": 0
+        }, 
+        "distinct": {
+            "ratio_distinct_tokens": 0.40369967355821545, 
+            "num_distinct_tokens_puncs": 371, 
+            "ratio_distinct_tokens_puncs": 0.40369967355821545, 
+            "num_distinct_values": 371, 
+            "ratio_distinct_values": 0.40369967355821545, 
+            "num_distinct_tokens": 371
+        }, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "55075": 19, 
+                "55303": 15, 
+                "55804": 14, 
+                "55082": 12, 
+                "55025": 12, 
+                "55033": 11, 
+                "55746": 11, 
+                "56001": 11, 
+                "55901": 10, 
+                "55807": 10
+            }, 
+            "most_common_tokens_puncs": {
+                "55075": 19, 
+                "55303": 15, 
+                "55804": 14, 
+                "55082": 12, 
+                "55025": 12, 
+                "55033": 11, 
+                "55746": 11, 
+                "56001": 11, 
+                "55901": 10, 
+                "55807": 10
+            }, 
+            "most_common_values": {
+                "55075": 19, 
+                "55303": 15, 
+                "55804": 14, 
+                "55082": 12, 
+                "55025": 12, 
+                "56001": 11, 
+                "55033": 11, 
+                "55746": 11, 
+                "55807": 10, 
+                "55304": 10
+            }, 
+            "most_common_tokens": {
+                "55075": 19, 
+                "55303": 15, 
+                "55804": 14, 
+                "55082": 12, 
+                "55025": 12, 
+                "55033": 11, 
+                "55746": 11, 
+                "56001": 11, 
+                "55901": 10, 
+                "55807": 10
+            }, 
+            "most_common_alphanumeric_tokens": {
+                "55075": 19, 
+                "55303": 15, 
+                "55804": 14, 
+                "55082": 12, 
+                "55025": 12, 
+                "55033": 11, 
+                "55746": 11, 
+                "56001": 11, 
+                "55901": 10, 
+                "55807": 10
+            }
+        }, 
+        "special_type": {
+            "num_filename": 0
+        }, 
+        "length": {
+            "token": {
+                "average": 5.0, 
+                "standard-deviation": 0.0
+            }, 
+            "character": {
+                "average": 5.0, 
+                "standard-deviation": 0.0
+            }
+        }
+    }, 
+    "floor": {
+        "numeric_stats": {
+            "contain_numeric_token_puncs": {
+                "count": 1838, 
+                "ratio": 1.0
+            }, 
+            "decimal": {
+                "Q1": 0.0, 
+                "count": 919, 
+                "Q3": 0.0, 
+                "standard-deviation": 0.37271854660058273, 
+                "ratio": 1.0, 
+                "num_positive": 153, 
+                "num_outlier": 0, 
+                "Q2": 0.0, 
+                "num_-1": 0, 
+                "num_0": 766, 
+                "num_1": 153, 
+                "num_negative": 0, 
+                "mean": 0.16648531011969533
+            }, 
+            "numeric": {
+                "Q1": 0.0, 
+                "count": 919, 
+                "Q3": 0.0, 
+                "standard-deviation": 0.37271854660058273, 
+                "ratio": 1.0, 
+                "num_positive": 153, 
+                "num_outlier": 0, 
+                "Q2": 0.0, 
+                "num_-1": 0, 
+                "num_0": 766, 
+                "num_1": 153, 
+                "num_negative": 0, 
+                "mean": 0.16648531011969533
+            }, 
+            "contain_numeric": {
+                "count": 919, 
+                "ratio": 1.0
+            }, 
+            "numeric_density": 0.6666666666666666, 
+            "contain_numeric_token": {
+                "count": 919, 
+                "ratio": 1.0
+            }
+        }, 
+        "missing": {
+            "num_nonblank": 919, 
+            "leading_space": 0, 
+            "trailing_space": 0, 
+            "num_missing": 0
+        }, 
+        "distinct": {
+            "ratio_distinct_tokens": 0.002176278563656148, 
+            "num_distinct_tokens_puncs": 2, 
+            "ratio_distinct_tokens_puncs": 0.001088139281828074, 
+            "num_distinct_values": 2, 
+            "ratio_distinct_values": 0.002176278563656148, 
+            "num_distinct_tokens": 2
+        }, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "0.0": 766, 
+                "1.0": 153
+            }, 
+            "most_common_tokens_puncs": {
+                "0": 1685, 
+                "1": 153
+            }, 
+            "most_common_values": {
+                "0.0": 766, 
+                "1.0": 153
+            }, 
+            "most_common_tokens": {
+                "0.0": 766, 
+                "1.0": 153
+            }
+        }, 
+        "special_type": {
+            "num_filename": 0
+        }, 
+        "length": {
+            "token": {
+                "average": 3.0, 
+                "standard-deviation": 0.0
+            }, 
+            "character": {
+                "average": 3.0, 
+                "standard-deviation": 0.0
+            }
+        }
+    }, 
+    "rep": {
+        "numeric_stats": {
+            "contain_numeric_token_puncs": {
+                "count": 919, 
+                "ratio": 1.0
+            }, 
+            "numeric": {
+                "Q1": 2.0, 
+                "count": 919, 
+                "Q3": 4.0, 
+                "standard-deviation": 1.4241702154475475, 
+                "ratio": 1.0, 
+                "num_positive": 919, 
+                "num_outlier": 0, 
+                "Q2": 3.0, 
+                "num_-1": 0, 
+                "num_0": 0, 
+                "num_1": 194, 
+                "num_negative": 0, 
+                "mean": 2.942328618063112
+            }, 
+            "contain_numeric": {
+                "count": 919, 
+                "ratio": 1.0
+            }, 
+            "numeric_density": 1.0, 
+            "integer": {
+                "Q1": 2.0, 
+                "count": 919, 
+                "Q3": 4.0, 
+                "standard-deviation": 1.4241702154475475, 
+                "ratio": 1.0, 
+                "num_positive": 919, 
+                "num_outlier": 0, 
+                "Q2": 3.0, 
+                "num_-1": 0, 
+                "num_0": 0, 
+                "num_1": 194, 
+                "num_negative": 0, 
+                "mean": 2.942328618063112
+            }, 
+            "contain_numeric_token": {
+                "count": 919, 
+                "ratio": 1.0
+            }
+        }, 
+        "missing": {
+            "num_nonblank": 919, 
+            "leading_space": 0, 
+            "trailing_space": 0, 
+            "num_missing": 0
+        }, 
+        "distinct": {
+            "ratio_distinct_tokens": 0.00544069640914037, 
+            "num_distinct_tokens_puncs": 5, 
+            "ratio_distinct_tokens_puncs": 0.00544069640914037, 
+            "num_distinct_values": 5, 
+            "ratio_distinct_values": 0.00544069640914037, 
+            "num_distinct_tokens": 5
+        }, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "2": 196, 
+                "1": 194, 
+                "5": 181, 
+                "3": 179, 
+                "4": 169
+            }, 
+            "most_common_tokens_puncs": {
+                "2": 196, 
+                "1": 194, 
+                "5": 181, 
+                "3": 179, 
+                "4": 169
+            }, 
+            "most_common_values": {
+                "2": 196, 
+                "1": 194, 
+                "5": 181, 
+                "3": 179, 
+                "4": 169
+            }, 
+            "most_common_tokens": {
+                "2": 196, 
+                "1": 194, 
+                "5": 181, 
+                "3": 179, 
+                "4": 169
+            }, 
+            "most_common_alphanumeric_tokens": {
+                "2": 196, 
+                "1": 194, 
+                "5": 181, 
+                "3": 179, 
+                "4": 169
+            }
+        }, 
+        "special_type": {
+            "num_filename": 0
+        }, 
+        "length": {
+            "token": {
+                "average": 1.0, 
+                "standard-deviation": 0.0
+            }, 
+            "character": {
+                "average": 1.0, 
+                "standard-deviation": 0.0
+            }
+        }
+    }, 
+    "zipflag": {
+        "numeric_stats": {
+            "contain_numeric_token_puncs": {
+                "count": 1838, 
+                "ratio": 1.0
+            }, 
+            "decimal": {
+                "Q1": 0.0, 
+                "count": 919, 
+                "Q3": 0.0, 
+                "standard-deviation": 0.03298695623770212, 
+                "ratio": 1.0, 
+                "num_positive": 1, 
+                "num_outlier": 1, 
+                "Q2": 0.0, 
+                "num_-1": 0, 
+                "num_0": 918, 
+                "num_1": 1, 
+                "num_negative": 0, 
+                "mean": 0.001088139281828074
+            }, 
+            "numeric": {
+                "Q1": 0.0, 
+                "count": 919, 
+                "Q3": 0.0, 
+                "standard-deviation": 0.03298695623770212, 
+                "ratio": 1.0, 
+                "num_positive": 1, 
+                "num_outlier": 1, 
+                "Q2": 0.0, 
+                "num_-1": 0, 
+                "num_0": 918, 
+                "num_1": 1, 
+                "num_negative": 0, 
+                "mean": 0.001088139281828074
+            }, 
+            "contain_numeric": {
+                "count": 919, 
+                "ratio": 1.0
+            }, 
+            "numeric_density": 0.6666666666666666, 
+            "contain_numeric_token": {
+                "count": 919, 
+                "ratio": 1.0
+            }
+        }, 
+        "missing": {
+            "num_nonblank": 919, 
+            "leading_space": 0, 
+            "trailing_space": 0, 
+            "num_missing": 0
+        }, 
+        "distinct": {
+            "ratio_distinct_tokens": 0.002176278563656148, 
+            "num_distinct_tokens_puncs": 2, 
+            "ratio_distinct_tokens_puncs": 0.001088139281828074, 
+            "num_distinct_values": 2, 
+            "ratio_distinct_values": 0.002176278563656148, 
+            "num_distinct_tokens": 2
+        }, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "0.0": 918, 
+                "1.0": 1
+            }, 
+            "most_common_tokens_puncs": {
+                "0": 1837, 
+                "1": 1
+            }, 
+            "most_common_values": {
+                "0.0": 918, 
+                "1.0": 1
+            }, 
+            "most_common_tokens": {
+                "0.0": 918, 
+                "1.0": 1
+            }
+        }, 
+        "special_type": {
+            "num_filename": 0
+        }, 
+        "length": {
+            "token": {
+                "average": 3.0, 
+                "standard-deviation": 0.0
+            }, 
+            "character": {
+                "average": 3.0, 
+                "standard-deviation": 0.0
+            }
+        }
+    }, 
+    "dupflag": {
+        "numeric_stats": {
+            "contain_numeric_token_puncs": {
+                "count": 1838, 
+                "ratio": 1.0
+            }, 
+            "decimal": {
+                "Q1": 0.0, 
+                "count": 919, 
+                "Q3": 0.0, 
+                "standard-deviation": 0.34014113875338875, 
+                "ratio": 1.0, 
+                "num_positive": 62, 
+                "num_outlier": 17, 
+                "Q2": 0.0, 
+                "num_-1": 0, 
+                "num_0": 857, 
+                "num_1": 45, 
+                "num_negative": 0, 
+                "mean": 0.08596300326441784
+            }, 
+            "numeric": {
+                "Q1": 0.0, 
+                "count": 919, 
+                "Q3": 0.0, 
+                "standard-deviation": 0.34014113875338875, 
+                "ratio": 1.0, 
+                "num_positive": 62, 
+                "num_outlier": 17, 
+                "Q2": 0.0, 
+                "num_-1": 0, 
+                "num_0": 857, 
+                "num_1": 45, 
+                "num_negative": 0, 
+                "mean": 0.08596300326441784
+            }, 
+            "contain_numeric": {
+                "count": 919, 
+                "ratio": 1.0
+            }, 
+            "numeric_density": 0.6666666666666666, 
+            "contain_numeric_token": {
+                "count": 919, 
+                "ratio": 1.0
+            }
+        }, 
+        "missing": {
+            "num_nonblank": 919, 
+            "leading_space": 0, 
+            "trailing_space": 0, 
+            "num_missing": 0
+        }, 
+        "distinct": {
+            "ratio_distinct_tokens": 0.003264417845484222, 
+            "num_distinct_tokens_puncs": 3, 
+            "ratio_distinct_tokens_puncs": 0.001632208922742111, 
+            "num_distinct_values": 3, 
+            "ratio_distinct_values": 0.003264417845484222, 
+            "num_distinct_tokens": 3
+        }, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "0.0": 857, 
+                "1.0": 45, 
+                "2.0": 17
+            }, 
+            "most_common_tokens_puncs": {
+                "0": 1776, 
+                "1": 45, 
+                "2": 17
+            }, 
+            "most_common_values": {
+                "0.0": 857, 
+                "1.0": 45, 
+                "2.0": 17
+            }, 
+            "most_common_tokens": {
+                "0.0": 857, 
+                "1.0": 45, 
+                "2.0": 17
+            }
+        }, 
+        "special_type": {
+            "num_filename": 0
+        }, 
+        "length": {
+            "token": {
+                "average": 3.0, 
+                "standard-deviation": 0.0
+            }, 
+            "character": {
+                "average": 3.0, 
+                "standard-deviation": 0.0
+            }
+        }
+    }, 
+    "state": {
+        "numeric_stats": {
+            "numeric_density": 0.0
+        }, 
+        "missing": {
+            "num_nonblank": 919, 
+            "leading_space": 0, 
+            "trailing_space": 0, 
+            "num_missing": 0
+        }, 
+        "distinct": {
+            "ratio_distinct_tokens": 0.001088139281828074, 
+            "num_distinct_tokens_puncs": 1, 
+            "ratio_distinct_tokens_puncs": 0.001088139281828074, 
+            "num_distinct_values": 1, 
+            "ratio_distinct_values": 0.001088139281828074, 
+            "num_distinct_tokens": 1
+        }, 
+        "frequent-entries": {
+            "most_common_values": {
+                "MN": 919
+            }, 
+            "most_common_tokens_puncs": {
+                "MN": 919
+            }, 
+            "most_common_tokens": {
+                "MN": 919
+            }, 
+            "most_common_alphanumeric_tokens": {
+                "MN": 919
+            }
+        }, 
+        "special_type": {
+            "num_filename": 0
+        }, 
+        "length": {
+            "token": {
+                "average": 2.0, 
+                "standard-deviation": 0.0
+            }, 
+            "character": {
+                "average": 2.0, 
+                "standard-deviation": 0.0
+            }
+        }
+    }, 
+    "stratum": {
+        "numeric_stats": {
+            "contain_numeric_token_puncs": {
+                "count": 1838, 
+                "ratio": 1.0
+            }, 
+            "decimal": {
+                "Q1": 2.0, 
+                "count": 919, 
+                "Q3": 4.0, 
+                "standard-deviation": 1.1283800305879566, 
+                "ratio": 1.0, 
+                "num_positive": 919, 
+                "num_outlier": 0, 
+                "Q2": 3.0, 
+                "num_-1": 0, 
+                "num_0": 0, 
+                "num_1": 27, 
+                "num_negative": 0, 
+                "mean": 3.1719260065288357
+            }, 
+            "numeric": {
+                "Q1": 2.0, 
+                "count": 919, 
+                "Q3": 4.0, 
+                "standard-deviation": 1.1283800305879566, 
+                "ratio": 1.0, 
+                "num_positive": 919, 
+                "num_outlier": 0, 
+                "Q2": 3.0, 
+                "num_-1": 0, 
+                "num_0": 0, 
+                "num_1": 27, 
+                "num_negative": 0, 
+                "mean": 3.1719260065288357
+            }, 
+            "contain_numeric": {
+                "count": 919, 
+                "ratio": 1.0
+            }, 
+            "numeric_density": 0.6666666666666666, 
+            "contain_numeric_token": {
+                "count": 919, 
+                "ratio": 1.0
+            }
+        }, 
+        "missing": {
+            "num_nonblank": 919, 
+            "leading_space": 0, 
+            "trailing_space": 0, 
+            "num_missing": 0
+        }, 
+        "distinct": {
+            "ratio_distinct_tokens": 0.00544069640914037, 
+            "num_distinct_tokens_puncs": 6, 
+            "ratio_distinct_tokens_puncs": 0.003264417845484222, 
+            "num_distinct_values": 5, 
+            "ratio_distinct_values": 0.00544069640914037, 
+            "num_distinct_tokens": 5
+        }, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "3.0": 296, 
+                "2.0": 274, 
+                "5.0": 164, 
+                "4.0": 158, 
+                "1.0": 27
+            }, 
+            "most_common_tokens_puncs": {
+                "0": 919, 
+                "3": 296, 
+                "2": 274, 
+                "5": 164, 
+                "4": 158, 
+                "1": 27
+            }, 
+            "most_common_values": {
+                "3.0": 296, 
+                "2.0": 274, 
+                "5.0": 164, 
+                "4.0": 158, 
+                "1.0": 27
+            }, 
+            "most_common_tokens": {
+                "3.0": 296, 
+                "2.0": 274, 
+                "5.0": 164, 
+                "4.0": 158, 
+                "1.0": 27
+            }
+        }, 
+        "special_type": {
+            "num_filename": 0
+        }, 
+        "length": {
+            "token": {
+                "average": 3.0, 
+                "standard-deviation": 0.0
+            }, 
+            "character": {
+                "average": 3.0, 
+                "standard-deviation": 0.0
+            }
+        }
+    }, 
+    "typebldg": {
+        "numeric_stats": {
+            "contain_numeric_token_puncs": {
+                "count": 1838, 
+                "ratio": 1.0
+            }, 
+            "decimal": {
+                "Q1": 1.0, 
+                "count": 919, 
+                "Q3": 1.0, 
+                "standard-deviation": 0.4532499100129462, 
+                "ratio": 1.0, 
+                "num_positive": 892, 
+                "num_outlier": 10, 
+                "Q2": 1.0, 
+                "num_-1": 0, 
+                "num_0": 27, 
+                "num_1": 855, 
+                "num_negative": 0, 
+                "mean": 1.0391730141458106
+            }, 
+            "numeric": {
+                "Q1": 1.0, 
+                "count": 919, 
+                "Q3": 1.0, 
+                "standard-deviation": 0.4532499100129462, 
+                "ratio": 1.0, 
+                "num_positive": 892, 
+                "num_outlier": 10, 
+                "Q2": 1.0, 
+                "num_-1": 0, 
+                "num_0": 27, 
+                "num_1": 855, 
+                "num_negative": 0, 
+                "mean": 1.0391730141458106
+            }, 
+            "contain_numeric": {
+                "count": 919, 
+                "ratio": 1.0
+            }, 
+            "numeric_density": 0.6666666666666666, 
+            "contain_numeric_token": {
+                "count": 919, 
+                "ratio": 1.0
+            }
+        }, 
+        "missing": {
+            "num_nonblank": 919, 
+            "leading_space": 0, 
+            "trailing_space": 0, 
+            "num_missing": 0
+        }, 
+        "distinct": {
+            "ratio_distinct_tokens": 0.00544069640914037, 
+            "num_distinct_tokens_puncs": 5, 
+            "ratio_distinct_tokens_puncs": 0.002720348204570185, 
+            "num_distinct_values": 5, 
+            "ratio_distinct_values": 0.00544069640914037, 
+            "num_distinct_tokens": 5
+        }, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "1.0": 855, 
+                "0.0": 27, 
+                "2.0": 27, 
+                "5.0": 8, 
+                "3.0": 2
+            }, 
+            "most_common_tokens_puncs": {
+                "0": 946, 
+                "1": 855, 
+                "2": 27, 
+                "5": 8, 
+                "3": 2
+            }, 
+            "most_common_values": {
+                "1.0": 855, 
+                "0.0": 27, 
+                "2.0": 27, 
+                "5.0": 8, 
+                "3.0": 2
+            }, 
+            "most_common_tokens": {
+                "1.0": 855, 
+                "0.0": 27, 
+                "2.0": 27, 
+                "5.0": 8, 
+                "3.0": 2
+            }
+        }, 
+        "special_type": {
+            "num_filename": 0
+        }, 
+        "length": {
+            "token": {
+                "average": 3.0, 
+                "standard-deviation": 0.0
+            }, 
+            "character": {
+                "average": 3.0, 
+                "standard-deviation": 0.0
+            }
+        }
+    }, 
+    "Uppm": {
+        "numeric_stats": {
+            "contain_numeric_token_puncs": {
+                "count": 1838, 
+                "ratio": 1.0
+            }, 
+            "decimal": {
+                "Q1": 0.622088, 
+                "count": 919, 
+                "Q3": 1.2011, 
+                "standard-deviation": 0.32009404777330724, 
+                "ratio": 1.0, 
+                "num_positive": 919, 
+                "num_outlier": 0, 
+                "Q2": 0.907991, 
+                "num_-1": 0, 
+                "num_0": 0, 
+                "num_1": 0, 
+                "num_negative": 0, 
+                "mean": 0.9339116202393904
+            }, 
+            "numeric": {
+                "Q1": 0.622088, 
+                "count": 919, 
+                "Q3": 1.2011, 
+                "standard-deviation": 0.32009404777330724, 
+                "ratio": 1.0, 
+                "num_positive": 919, 
+                "num_outlier": 0, 
+                "Q2": 0.907991, 
+                "num_-1": 0, 
+                "num_0": 0, 
+                "num_1": 0, 
+                "num_negative": 0, 
+                "mean": 0.9339116202393904
+            }, 
+            "contain_numeric": {
+                "count": 919, 
+                "ratio": 1.0
+            }, 
+            "numeric_density": 0.8819373072970196, 
+            "contain_numeric_token": {
+                "count": 919, 
+                "ratio": 1.0
+            }
+        }, 
+        "missing": {
+            "num_nonblank": 919, 
+            "leading_space": 0, 
+            "trailing_space": 0, 
+            "num_missing": 0
+        }, 
+        "distinct": {
+            "ratio_distinct_tokens": 0.09249183895538629, 
+            "num_distinct_tokens_puncs": 87, 
+            "ratio_distinct_tokens_puncs": 0.04733405875952122, 
+            "num_distinct_values": 85, 
+            "ratio_distinct_values": 0.09249183895538629, 
+            "num_distinct_tokens": 85
+        }, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "0.622088": 116, 
+                "0.907991": 105, 
+                "0.976144": 63, 
+                "0.428565": 52, 
+                "0.862876": 46, 
+                "0.658327": 32, 
+                "1.12344": 25, 
+                "1.27526": 23, 
+                "1.41027": 14, 
+                "1.31208": 14
+            }, 
+            "most_common_tokens_puncs": {
+                "0": 588, 
+                "1": 331, 
+                "622088": 116, 
+                "907991": 105, 
+                "976144": 63, 
+                "428565": 52, 
+                "862876": 46, 
+                "658327": 32, 
+                "12344": 25, 
+                "27526": 23
+            }, 
+            "most_common_values": {
+                "0.622088": 116, 
+                "0.907991": 105, 
+                "0.976144": 63, 
+                "0.428565": 52, 
+                "0.862876": 46, 
+                "0.658327": 32, 
+                "1.12344": 25, 
+                "1.27526": 23, 
+                "1.31208": 14, 
+                "0.808928": 14
+            }, 
+            "most_common_tokens": {
+                "0.622088": 116, 
+                "0.907991": 105, 
+                "0.976144": 63, 
+                "0.428565": 52, 
+                "0.862876": 46, 
+                "0.658327": 32, 
+                "1.12344": 25, 
+                "1.27526": 23, 
+                "1.41027": 14, 
+                "1.31208": 14
+            }
+        }, 
+        "special_type": {
+            "num_filename": 0
+        }, 
+        "length": {
+            "token": {
+                "average": 8.470076169749728, 
+                "standard-deviation": 2.882772640838506
+            }, 
+            "character": {
+                "average": 8.470076169749728, 
+                "standard-deviation": 2.882772640838506
+            }
+        }
+    }, 
+    "stfips": {
+        "numeric_stats": {
+            "contain_numeric_token_puncs": {
+                "count": 1838, 
+                "ratio": 1.0
+            }, 
+            "decimal": {
+                "Q1": 27.0, 
+                "count": 919, 
+                "Q3": 27.0, 
+                "standard-deviation": 0.0, 
+                "ratio": 1.0, 
+                "num_positive": 919, 
+                "num_outlier": 0, 
+                "Q2": 27.0, 
+                "num_-1": 0, 
+                "num_0": 0, 
+                "num_1": 0, 
+                "num_negative": 0, 
+                "mean": 27.0
+            }, 
+            "numeric": {
+                "Q1": 27.0, 
+                "count": 919, 
+                "Q3": 27.0, 
+                "standard-deviation": 0.0, 
+                "ratio": 1.0, 
+                "num_positive": 919, 
+                "num_outlier": 0, 
+                "Q2": 27.0, 
+                "num_-1": 0, 
+                "num_0": 0, 
+                "num_1": 0, 
+                "num_negative": 0, 
+                "mean": 27.0
+            }, 
+            "contain_numeric": {
+                "count": 919, 
+                "ratio": 1.0
+            }, 
+            "numeric_density": 0.75, 
+            "contain_numeric_token": {
+                "count": 919, 
+                "ratio": 1.0
+            }
+        }, 
+        "missing": {
+            "num_nonblank": 919, 
+            "leading_space": 0, 
+            "trailing_space": 0, 
+            "num_missing": 0
+        }, 
+        "distinct": {
+            "ratio_distinct_tokens": 0.001088139281828074, 
+            "num_distinct_tokens_puncs": 2, 
+            "ratio_distinct_tokens_puncs": 0.001088139281828074, 
+            "num_distinct_values": 1, 
+            "ratio_distinct_values": 0.001088139281828074, 
+            "num_distinct_tokens": 1
+        }, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "27.0": 919
+            }, 
+            "most_common_tokens_puncs": {
+                "0": 919, 
+                "27": 919
+            }, 
+            "most_common_values": {
+                "27.0": 919
+            }, 
+            "most_common_tokens": {
+                "27.0": 919
+            }
+        }, 
+        "special_type": {
+            "num_filename": 0
+        }, 
+        "length": {
+            "token": {
+                "average": 4.0, 
+                "standard-deviation": 0.0
+            }, 
+            "character": {
+                "average": 4.0, 
+                "standard-deviation": 0.0
+            }
+        }
+    }, 
+    "stopdt": {
+        "numeric_stats": {
+            "contain_numeric_token_puncs": {
+                "count": 1838, 
+                "ratio": 1.0
+            }, 
+            "decimal": {
+                "Q1": 12638.0, 
+                "count": 919, 
+                "Q3": 121787.0, 
+                "standard-deviation": 50830.21872963283, 
+                "ratio": 1.0, 
+                "num_positive": 919, 
+                "num_outlier": 0, 
+                "Q2": 22588.0, 
+                "num_-1": 0, 
+                "num_0": 0, 
+                "num_1": 0, 
+                "num_negative": 0, 
+                "mean": 57139.74646354734
+            }, 
+            "numeric": {
+                "Q1": 12638.0, 
+                "count": 919, 
+                "Q3": 121787.0, 
+                "standard-deviation": 50830.21872963283, 
+                "ratio": 1.0, 
+                "num_positive": 919, 
+                "num_outlier": 0, 
+                "Q2": 22588.0, 
+                "num_-1": 0, 
+                "num_0": 0, 
+                "num_1": 0, 
+                "num_negative": 0, 
+                "mean": 57139.74646354734
+            }, 
+            "contain_numeric": {
+                "count": 919, 
+                "ratio": 1.0
+            }, 
+            "numeric_density": 0.8644142814989673, 
+            "contain_numeric_token": {
+                "count": 919, 
+                "ratio": 1.0
+            }
+        }, 
+        "missing": {
+            "num_nonblank": 919, 
+            "leading_space": 0, 
+            "trailing_space": 0, 
+            "num_missing": 0
+        }, 
+        "distinct": {
+            "ratio_distinct_tokens": 0.09140369967355821, 
+            "num_distinct_tokens_puncs": 85, 
+            "ratio_distinct_tokens_puncs": 0.046245919477693145, 
+            "num_distinct_values": 84, 
+            "ratio_distinct_values": 0.09140369967355821, 
+            "num_distinct_tokens": 84
+        }, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "20288.0": 118, 
+                "10188.0": 52, 
+                "122887.0": 38, 
+                "121487.0": 35, 
+                "123087.0": 31, 
+                "12888.0": 30, 
+                "30388.0": 28, 
+                "122987.0": 27, 
+                "11988.0": 26, 
+                "121587.0": 24
+            }, 
+            "most_common_tokens_puncs": {
+                "0": 919, 
+                "20288": 118, 
+                "10188": 52, 
+                "122887": 38, 
+                "121487": 35, 
+                "123087": 31, 
+                "12888": 30, 
+                "30388": 28, 
+                "122987": 27, 
+                "11988": 26
+            }, 
+            "most_common_values": {
+                "20288.0": 118, 
+                "10188.0": 52, 
+                "122887.0": 38, 
+                "121487.0": 35, 
+                "123087.0": 31, 
+                "12888.0": 30, 
+                "30388.0": 28, 
+                "122987.0": 27, 
+                "11988.0": 26, 
+                "121587.0": 24
+            }, 
+            "most_common_tokens": {
+                "20288.0": 118, 
+                "10188.0": 52, 
+                "122887.0": 38, 
+                "121487.0": 35, 
+                "123087.0": 31, 
+                "12888.0": 30, 
+                "30388.0": 28, 
+                "122987.0": 27, 
+                "11988.0": 26, 
+                "121587.0": 24
+            }
+        }, 
+        "special_type": {
+            "num_filename": 0
+        }, 
+        "length": {
+            "token": {
+                "average": 7.375408052230686, 
+                "standard-deviation": 0.4844917625228733
+            }, 
+            "character": {
+                "average": 7.375408052230686, 
+                "standard-deviation": 0.4844917625228733
+            }
+        }
+    }, 
+    "pcterr": {
+        "numeric_stats": {
+            "contain_numeric_token_puncs": {
+                "count": 1838, 
+                "ratio": 1.0
+            }, 
+            "decimal": {
+                "Q1": 5.2, 
+                "count": 919, 
+                "Q3": 12.7, 
+                "standard-deviation": 8.477540035785978, 
+                "ratio": 1.0, 
+                "num_positive": 902, 
+                "num_outlier": 19, 
+                "Q2": 8.1, 
+                "num_-1": 0, 
+                "num_0": 17, 
+                "num_1": 0, 
+                "num_negative": 0, 
+                "mean": 10.481719260065288
+            }, 
+            "numeric": {
+                "Q1": 5.2, 
+                "count": 919, 
+                "Q3": 12.7, 
+                "standard-deviation": 8.477540035785978, 
+                "ratio": 1.0, 
+                "num_positive": 902, 
+                "num_outlier": 19, 
+                "Q2": 8.1, 
+                "num_-1": 0, 
+                "num_0": 17, 
+                "num_1": 0, 
+                "num_negative": 0, 
+                "mean": 10.481719260065288
+            }, 
+            "contain_numeric": {
+                "count": 919, 
+                "ratio": 1.0
+            }, 
+            "numeric_density": 0.7032612205360026, 
+            "contain_numeric_token": {
+                "count": 919, 
+                "ratio": 1.0
+            }
+        }, 
+        "missing": {
+            "num_nonblank": 919, 
+            "leading_space": 0, 
+            "trailing_space": 0, 
+            "num_missing": 0
+        }, 
+        "distinct": {
+            "ratio_distinct_tokens": 0.25680087051142547, 
+            "num_distinct_tokens_puncs": 50, 
+            "ratio_distinct_tokens_puncs": 0.02720348204570185, 
+            "num_distinct_values": 236, 
+            "ratio_distinct_values": 0.25680087051142547, 
+            "num_distinct_tokens": 236
+        }, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "0.0": 17, 
+                "5.1": 16, 
+                "7.0": 14, 
+                "3.9": 13, 
+                "10.8": 12, 
+                "7.8": 12, 
+                "4.4": 12, 
+                "4.2": 12, 
+                "3.8": 11, 
+                "9.0": 11
+            }, 
+            "most_common_tokens_puncs": {
+                "8": 171, 
+                "4": 170, 
+                "3": 169, 
+                "7": 164, 
+                "5": 160, 
+                "6": 156, 
+                "9": 156, 
+                "0": 144, 
+                "2": 120, 
+                "1": 88
+            }, 
+            "most_common_values": {
+                "0.0": 17, 
+                "5.1": 16, 
+                "7.0": 14, 
+                "3.9": 13, 
+                "4.2": 12, 
+                "10.8": 12, 
+                "4.4": 12, 
+                "7.8": 12, 
+                "9.0": 11, 
+                "3.8": 11
+            }, 
+            "most_common_tokens": {
+                "0.0": 17, 
+                "5.1": 16, 
+                "7.0": 14, 
+                "3.9": 13, 
+                "10.8": 12, 
+                "7.8": 12, 
+                "4.4": 12, 
+                "4.2": 12, 
+                "3.8": 11, 
+                "9.0": 11
+            }
+        }, 
+        "special_type": {
+            "num_filename": 0
+        }, 
+        "length": {
+            "token": {
+                "average": 3.369967355821545, 
+                "standard-deviation": 0.48305840616823764
+            }, 
+            "character": {
+                "average": 3.369967355821545, 
+                "standard-deviation": 0.48305840616823764
+            }
+        }
+    }, 
+    "wave": {
+        "numeric_stats": {
+            "contain_numeric_token_puncs": {
+                "count": 919, 
+                "ratio": 1.0
+            }, 
+            "numeric": {
+                "Q1": 25.0, 
+                "count": 919, 
+                "Q3": 42.0, 
+                "standard-deviation": 13.005271400991445, 
+                "ratio": 1.0, 
+                "num_positive": 919, 
+                "num_outlier": 0, 
+                "Q2": 34.0, 
+                "num_-1": 0, 
+                "num_0": 0, 
+                "num_1": 25, 
+                "num_negative": 0, 
+                "mean": 32.01305767138194
+            }, 
+            "contain_numeric": {
+                "count": 919, 
+                "ratio": 1.0
+            }, 
+            "numeric_density": 1.0, 
+            "integer": {
+                "Q1": 25.0, 
+                "count": 919, 
+                "Q3": 42.0, 
+                "standard-deviation": 13.005271400991445, 
+                "ratio": 1.0, 
+                "num_positive": 919, 
+                "num_outlier": 0, 
+                "Q2": 34.0, 
+                "num_-1": 0, 
+                "num_0": 0, 
+                "num_1": 25, 
+                "num_negative": 0, 
+                "mean": 32.01305767138194
+            }, 
+            "contain_numeric_token": {
+                "count": 919, 
+                "ratio": 1.0
+            }
+        }, 
+        "missing": {
+            "num_nonblank": 919, 
+            "leading_space": 0, 
+            "trailing_space": 0, 
+            "num_missing": 0
+        }, 
+        "distinct": {
+            "ratio_distinct_tokens": 0.036996735582154515, 
+            "num_distinct_tokens_puncs": 34, 
+            "ratio_distinct_tokens_puncs": 0.036996735582154515, 
+            "num_distinct_values": 34, 
+            "ratio_distinct_values": 0.036996735582154515, 
+            "num_distinct_tokens": 34
+        }, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "22": 35, 
+                "34": 35, 
+                "26": 33, 
+                "28": 31, 
+                "44": 31, 
+                "36": 31, 
+                "30": 30, 
+                "47": 30, 
+                "40": 29, 
+                "24": 28
+            }, 
+            "most_common_tokens_puncs": {
+                "22": 35, 
+                "34": 35, 
+                "26": 33, 
+                "28": 31, 
+                "44": 31, 
+                "36": 31, 
+                "30": 30, 
+                "47": 30, 
+                "40": 29, 
+                "24": 28
+            }, 
+            "most_common_values": {
+                "22": 35, 
+                "34": 35, 
+                "26": 33, 
+                "44": 31, 
+                "28": 31, 
+                "36": 31, 
+                "47": 30, 
+                "30": 30, 
+                "40": 29, 
+                "24": 28
+            }, 
+            "most_common_tokens": {
+                "22": 35, 
+                "34": 35, 
+                "26": 33, 
+                "28": 31, 
+                "44": 31, 
+                "36": 31, 
+                "30": 30, 
+                "47": 30, 
+                "40": 29, 
+                "24": 28
+            }, 
+            "most_common_alphanumeric_tokens": {
+                "22": 35, 
+                "34": 35, 
+                "26": 33, 
+                "28": 31, 
+                "44": 31, 
+                "36": 31, 
+                "30": 30, 
+                "47": 30, 
+                "40": 29, 
+                "24": 28
+            }
+        }, 
+        "special_type": {
+            "num_filename": 0
+        }, 
+        "length": {
+            "token": {
+                "average": 1.896626768226333, 
+                "standard-deviation": 0.30461151190075475
+            }, 
+            "character": {
+                "average": 1.896626768226333, 
+                "standard-deviation": 0.30461151190075475
+            }
+        }
+    }, 
+    "state2": {
+        "numeric_stats": {
+            "numeric_density": 0.0
+        }, 
+        "missing": {
+            "num_nonblank": 919, 
+            "leading_space": 0, 
+            "trailing_space": 0, 
+            "num_missing": 0
+        }, 
+        "distinct": {
+            "ratio_distinct_tokens": 0.001088139281828074, 
+            "num_distinct_tokens_puncs": 1, 
+            "ratio_distinct_tokens_puncs": 0.001088139281828074, 
+            "num_distinct_values": 1, 
+            "ratio_distinct_values": 0.001088139281828074, 
+            "num_distinct_tokens": 1
+        }, 
+        "frequent-entries": {
+            "most_common_values": {
+                "MN": 919
+            }, 
+            "most_common_tokens_puncs": {
+                "MN": 919
+            }, 
+            "most_common_tokens": {
+                "MN": 919
+            }, 
+            "most_common_alphanumeric_tokens": {
+                "MN": 919
+            }
+        }, 
+        "special_type": {
+            "num_filename": 0
+        }, 
+        "length": {
+            "token": {
+                "average": 2.0, 
+                "standard-deviation": 0.0
+            }, 
+            "character": {
+                "average": 2.0, 
+                "standard-deviation": 0.0
+            }
+        }
+    }, 
+    "starttm": {
+        "numeric_stats": {
+            "contain_numeric_token_puncs": {
+                "count": 1838, 
+                "ratio": 1.0
+            }, 
+            "decimal": {
+                "Q1": 1000.0, 
+                "count": 919, 
+                "Q3": 1817.5, 
+                "standard-deviation": 483.2706977606833, 
+                "ratio": 1.0, 
+                "num_positive": 917, 
+                "num_outlier": 0, 
+                "Q2": 1415.0, 
+                "num_-1": 0, 
+                "num_0": 2, 
+                "num_1": 0, 
+                "num_negative": 0, 
+                "mean": 1413.8248095756257
+            }, 
+            "numeric": {
+                "Q1": 1000.0, 
+                "count": 919, 
+                "Q3": 1817.5, 
+                "standard-deviation": 483.2706977606833, 
+                "ratio": 1.0, 
+                "num_positive": 917, 
+                "num_outlier": 0, 
+                "Q2": 1415.0, 
+                "num_-1": 0, 
+                "num_0": 2, 
+                "num_1": 0, 
+                "num_negative": 0, 
+                "mean": 1413.8248095756257
+            }, 
+            "contain_numeric": {
+                "count": 919, 
+                "ratio": 1.0
+            }, 
+            "numeric_density": 0.8261774163041422, 
+            "contain_numeric_token": {
+                "count": 919, 
+                "ratio": 1.0
+            }
+        }, 
+        "missing": {
+            "num_nonblank": 919, 
+            "leading_space": 0, 
+            "trailing_space": 0, 
+            "num_missing": 0
+        }, 
+        "distinct": {
+            "ratio_distinct_tokens": 0.20565832426550598, 
+            "num_distinct_tokens_puncs": 189, 
+            "ratio_distinct_tokens_puncs": 0.10282916213275299, 
+            "num_distinct_values": 189, 
+            "ratio_distinct_values": 0.20565832426550598, 
+            "num_distinct_tokens": 189
+        }, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "800.0": 38, 
+                "1000.0": 37, 
+                "900.0": 35, 
+                "1800.0": 32, 
+                "1100.0": 29, 
+                "1900.0": 29, 
+                "1600.0": 28, 
+                "2100.0": 27, 
+                "1700.0": 26, 
+                "1830.0": 24
+            }, 
+            "most_common_tokens_puncs": {
+                "0": 921, 
+                "800": 38, 
+                "1000": 37, 
+                "900": 35, 
+                "1800": 32, 
+                "1900": 29, 
+                "1100": 29, 
+                "1600": 28, 
+                "2100": 27, 
+                "1700": 26
+            }, 
+            "most_common_values": {
+                "800.0": 38, 
+                "1000.0": 37, 
+                "900.0": 35, 
+                "1800.0": 32, 
+                "1900.0": 29, 
+                "1100.0": 29, 
+                "1600.0": 28, 
+                "2100.0": 27, 
+                "1700.0": 26, 
+                "1830.0": 24
+            }, 
+            "most_common_tokens": {
+                "800.0": 38, 
+                "1000.0": 37, 
+                "900.0": 35, 
+                "1800.0": 32, 
+                "1100.0": 29, 
+                "1900.0": 29, 
+                "1600.0": 28, 
+                "2100.0": 27, 
+                "1700.0": 26, 
+                "1830.0": 24
+            }
+        }, 
+        "special_type": {
+            "num_filename": 0
+        }, 
+        "length": {
+            "token": {
+                "average": 5.752992383025028, 
+                "standard-deviation": 0.44639596585287156
+            }, 
+            "character": {
+                "average": 5.752992383025028, 
+                "standard-deviation": 0.44639596585287156
+            }
+        }
+    }, 
+    "fips": {
+        "numeric_stats": {
+            "contain_numeric_token_puncs": {
+                "count": 1838, 
+                "ratio": 1.0
+            }, 
+            "decimal": {
+                "Q1": 27041.0, 
+                "count": 919, 
+                "Q3": 27137.0, 
+                "standard-deviation": 52.12623851276699, 
+                "ratio": 1.0, 
+                "num_positive": 919, 
+                "num_outlier": 0, 
+                "Q2": 27085.0, 
+                "num_-1": 0, 
+                "num_0": 0, 
+                "num_1": 0, 
+                "num_negative": 0, 
+                "mean": 27087.413492927095
+            }, 
+            "numeric": {
+                "Q1": 27041.0, 
+                "count": 919, 
+                "Q3": 27137.0, 
+                "standard-deviation": 52.12623851276699, 
+                "ratio": 1.0, 
+                "num_positive": 919, 
+                "num_outlier": 0, 
+                "Q2": 27085.0, 
+                "num_-1": 0, 
+                "num_0": 0, 
+                "num_1": 0, 
+                "num_negative": 0, 
+                "mean": 27087.413492927095
+            }, 
+            "contain_numeric": {
+                "count": 919, 
+                "ratio": 1.0
+            }, 
+            "numeric_density": 0.8571428571428571, 
+            "contain_numeric_token": {
+                "count": 919, 
+                "ratio": 1.0
+            }
+        }, 
+        "missing": {
+            "num_nonblank": 919, 
+            "leading_space": 0, 
+            "trailing_space": 0, 
+            "num_missing": 0
+        }, 
+        "distinct": {
+            "ratio_distinct_tokens": 0.09249183895538629, 
+            "num_distinct_tokens_puncs": 86, 
+            "ratio_distinct_tokens_puncs": 0.046789989118607184, 
+            "num_distinct_values": 85, 
+            "ratio_distinct_values": 0.09249183895538629, 
+            "num_distinct_tokens": 85
+        }, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "27137.0": 116, 
+                "27053.0": 105, 
+                "27037.0": 63, 
+                "27003.0": 52, 
+                "27163.0": 46, 
+                "27123.0": 32, 
+                "27145.0": 25, 
+                "27109.0": 23, 
+                "27027.0": 14, 
+                "27135.0": 14
+            }, 
+            "most_common_tokens_puncs": {
+                "0": 919, 
+                "27137": 116, 
+                "27053": 105, 
+                "27037": 63, 
+                "27003": 52, 
+                "27163": 46, 
+                "27123": 32, 
+                "27145": 25, 
+                "27109": 23, 
+                "27049": 14
+            }, 
+            "most_common_values": {
+                "27137.0": 116, 
+                "27053.0": 105, 
+                "27037.0": 63, 
+                "27003.0": 52, 
+                "27163.0": 46, 
+                "27123.0": 32, 
+                "27145.0": 25, 
+                "27109.0": 23, 
+                "27027.0": 14, 
+                "27135.0": 14
+            }, 
+            "most_common_tokens": {
+                "27137.0": 116, 
+                "27053.0": 105, 
+                "27037.0": 63, 
+                "27003.0": 52, 
+                "27163.0": 46, 
+                "27123.0": 32, 
+                "27145.0": 25, 
+                "27109.0": 23, 
+                "27027.0": 14, 
+                "27135.0": 14
+            }
+        }, 
+        "special_type": {
+            "num_filename": 0
+        }, 
+        "length": {
+            "token": {
+                "average": 7.0, 
+                "standard-deviation": 0.0
+            }, 
+            "character": {
+                "average": 7.0, 
+                "standard-deviation": 0.0
+            }
+        }
+    }, 
+    "basement": {
+        "numeric_stats": {
+            "numeric_density": 0.0
+        }, 
+        "missing": {
+            "num_nonblank": 878, 
+            "leading_space": 41, 
+            "trailing_space": 41, 
+            "num_missing": 41
+        }, 
+        "distinct": {
+            "ratio_distinct_tokens": 0.002277904328018223, 
+            "num_distinct_tokens_puncs": 2, 
+            "ratio_distinct_tokens_puncs": 0.002277904328018223, 
+            "num_distinct_values": 2, 
+            "ratio_distinct_values": 0.002277904328018223, 
+            "num_distinct_tokens": 2
+        }, 
+        "frequent-entries": {
+            "most_common_values": {
+                "Y": 819, 
+                "N": 59
+            }, 
+            "most_common_tokens_puncs": {
+                "Y": 819, 
+                "N": 59
+            }, 
+            "most_common_tokens": {
+                "Y": 819, 
+                "N": 59
+            }, 
+            "most_common_alphanumeric_tokens": {
+                "Y": 819, 
+                "N": 59
+            }
+        }, 
+        "special_type": {
+            "num_filename": 0
+        }, 
+        "length": {
+            "token": {
+                "average": 1.0, 
+                "standard-deviation": 0.0
+            }, 
+            "character": {
+                "average": 1.0, 
+                "standard-deviation": 0.0
+            }
+        }
+    }, 
+    "room": {
+        "numeric_stats": {
+            "contain_numeric_token_puncs": {
+                "count": 1838, 
+                "ratio": 1.0
+            }, 
+            "decimal": {
+                "Q1": 2.0, 
+                "count": 919, 
+                "Q3": 4.0, 
+                "standard-deviation": 1.6240652639694069, 
+                "ratio": 1.0, 
+                "num_positive": 862, 
+                "num_outlier": 0, 
+                "Q2": 4.0, 
+                "num_-1": 0, 
+                "num_0": 57, 
+                "num_1": 47, 
+                "num_negative": 0, 
+                "mean": 3.2850924918389555
+            }, 
+            "numeric": {
+                "Q1": 2.0, 
+                "count": 919, 
+                "Q3": 4.0, 
+                "standard-deviation": 1.6240652639694069, 
+                "ratio": 1.0, 
+                "num_positive": 862, 
+                "num_outlier": 0, 
+                "Q2": 4.0, 
+                "num_-1": 0, 
+                "num_0": 57, 
+                "num_1": 47, 
+                "num_negative": 0, 
+                "mean": 3.2850924918389555
+            }, 
+            "contain_numeric": {
+                "count": 919, 
+                "ratio": 1.0
+            }, 
+            "numeric_density": 0.6666666666666666, 
+            "contain_numeric_token": {
+                "count": 919, 
+                "ratio": 1.0
+            }
+        }, 
+        "missing": {
+            "num_nonblank": 919, 
+            "leading_space": 0, 
+            "trailing_space": 0, 
+            "num_missing": 0
+        }, 
+        "distinct": {
+            "ratio_distinct_tokens": 0.007616974972796518, 
+            "num_distinct_tokens_puncs": 7, 
+            "ratio_distinct_tokens_puncs": 0.003808487486398259, 
+            "num_distinct_values": 7, 
+            "ratio_distinct_values": 0.007616974972796518, 
+            "num_distinct_tokens": 7
+        }, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "4.0": 425, 
+                "2.0": 202, 
+                "3.0": 106, 
+                "7.0": 70, 
+                "0.0": 57, 
+                "1.0": 47, 
+                "5.0": 12
+            }, 
+            "most_common_tokens_puncs": {
+                "0": 976, 
+                "4": 425, 
+                "2": 202, 
+                "3": 106, 
+                "7": 70, 
+                "1": 47, 
+                "5": 12
+            }, 
+            "most_common_values": {
+                "4.0": 425, 
+                "2.0": 202, 
+                "3.0": 106, 
+                "7.0": 70, 
+                "0.0": 57, 
+                "1.0": 47, 
+                "5.0": 12
+            }, 
+            "most_common_tokens": {
+                "4.0": 425, 
+                "2.0": 202, 
+                "3.0": 106, 
+                "7.0": 70, 
+                "0.0": 57, 
+                "1.0": 47, 
+                "5.0": 12
+            }
+        }, 
+        "special_type": {
+            "num_filename": 0
+        }, 
+        "length": {
+            "token": {
+                "average": 3.0, 
+                "standard-deviation": 0.0
+            }, 
+            "character": {
+                "average": 3.0, 
+                "standard-deviation": 0.0
+            }
+        }
+    }, 
+    "region": {
+        "numeric_stats": {
+            "contain_numeric_token_puncs": {
+                "count": 1838, 
+                "ratio": 1.0
+            }, 
+            "decimal": {
+                "Q1": 2.0, 
+                "count": 919, 
+                "Q3": 4.0, 
+                "standard-deviation": 1.3031023459663675, 
+                "ratio": 1.0, 
+                "num_positive": 919, 
+                "num_outlier": 0, 
+                "Q2": 3.0, 
+                "num_-1": 0, 
+                "num_0": 0, 
+                "num_1": 127, 
+                "num_negative": 0, 
+                "mean": 3.119695321001088
+            }, 
+            "numeric": {
+                "Q1": 2.0, 
+                "count": 919, 
+                "Q3": 4.0, 
+                "standard-deviation": 1.3031023459663675, 
+                "ratio": 1.0, 
+                "num_positive": 919, 
+                "num_outlier": 0, 
+                "Q2": 3.0, 
+                "num_-1": 0, 
+                "num_0": 0, 
+                "num_1": 127, 
+                "num_negative": 0, 
+                "mean": 3.119695321001088
+            }, 
+            "contain_numeric": {
+                "count": 919, 
+                "ratio": 1.0
+            }, 
+            "numeric_density": 0.6666666666666666, 
+            "contain_numeric_token": {
+                "count": 919, 
+                "ratio": 1.0
+            }
+        }, 
+        "missing": {
+            "num_nonblank": 919, 
+            "leading_space": 0, 
+            "trailing_space": 0, 
+            "num_missing": 0
+        }, 
+        "distinct": {
+            "ratio_distinct_tokens": 0.00544069640914037, 
+            "num_distinct_tokens_puncs": 6, 
+            "ratio_distinct_tokens_puncs": 0.003264417845484222, 
+            "num_distinct_values": 5, 
+            "ratio_distinct_values": 0.00544069640914037, 
+            "num_distinct_tokens": 5
+        }, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "3.0": 298, 
+                "5.0": 190, 
+                "2.0": 160, 
+                "4.0": 144, 
+                "1.0": 127
+            }, 
+            "most_common_tokens_puncs": {
+                "0": 919, 
+                "3": 298, 
+                "5": 190, 
+                "2": 160, 
+                "4": 144, 
+                "1": 127
+            }, 
+            "most_common_values": {
+                "3.0": 298, 
+                "5.0": 190, 
+                "2.0": 160, 
+                "4.0": 144, 
+                "1.0": 127
+            }, 
+            "most_common_tokens": {
+                "3.0": 298, 
+                "5.0": 190, 
+                "2.0": 160, 
+                "4.0": 144, 
+                "1.0": 127
+            }
+        }, 
+        "special_type": {
+            "num_filename": 0
+        }, 
+        "length": {
+            "token": {
+                "average": 3.0, 
+                "standard-deviation": 0.0
+            }, 
+            "character": {
+                "average": 3.0, 
+                "standard-deviation": 0.0
+            }
+        }
+    }, 
+    "adjwt": {
+        "numeric_stats": {
+            "contain_numeric_token_puncs": {
+                "count": 1838, 
+                "ratio": 1.0
+            }, 
+            "decimal": {
+                "Q1": 471.3662230000001, 
+                "count": 919, 
+                "Q3": 1146.49919, 
+                "standard-deviation": 595.8415318730667, 
+                "ratio": 1.0, 
+                "num_positive": 919, 
+                "num_outlier": 0, 
+                "Q2": 990.411554, 
+                "num_-1": 0, 
+                "num_0": 0, 
+                "num_1": 0, 
+                "num_negative": 0, 
+                "mean": 1051.6819331664856
+            }, 
+            "numeric": {
+                "Q1": 471.3662230000001, 
+                "count": 919, 
+                "Q3": 1146.49919, 
+                "standard-deviation": 595.8415318730667, 
+                "ratio": 1.0, 
+                "num_positive": 919, 
+                "num_outlier": 0, 
+                "Q2": 990.411554, 
+                "num_-1": 0, 
+                "num_0": 0, 
+                "num_1": 0, 
+                "num_negative": 0, 
+                "mean": 1051.6819331664856
+            }, 
+            "contain_numeric": {
+                "count": 919, 
+                "ratio": 1.0
+            }, 
+            "numeric_density": 0.9109841146842309, 
+            "contain_numeric_token": {
+                "count": 919, 
+                "ratio": 1.0
+            }
+        }, 
+        "missing": {
+            "num_nonblank": 919, 
+            "leading_space": 0, 
+            "trailing_space": 0, 
+            "num_missing": 0
+        }, 
+        "distinct": {
+            "ratio_distinct_tokens": 0.025027203482045703, 
+            "num_distinct_tokens_puncs": 45, 
+            "ratio_distinct_tokens_puncs": 0.024483133841131665, 
+            "num_distinct_values": 23, 
+            "ratio_distinct_values": 0.025027203482045703, 
+            "num_distinct_tokens": 23
+        }, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "921.864905": 67, 
+                "1024.442902": 64, 
+                "893.2374300000001": 61, 
+                "433.316718": 60, 
+                "471.3662230000001": 56, 
+                "461.62367": 56, 
+                "990.411554": 53, 
+                "485.435931": 52, 
+                "1071.318034": 51, 
+                "461.274696": 50
+            }, 
+            "most_common_tokens_puncs": {
+                "461": 106, 
+                "864905": 67, 
+                "921": 67, 
+                "1024": 64, 
+                "442902": 64, 
+                "2374300000001": 61, 
+                "893": 61, 
+                "316718": 60, 
+                "433": 60, 
+                "62367": 56
+            }, 
+            "most_common_values": {
+                "921.864905": 67, 
+                "1024.442902": 64, 
+                "893.2374300000001": 61, 
+                "433.316718": 60, 
+                "471.3662230000001": 56, 
+                "461.62367": 56, 
+                "990.411554": 53, 
+                "485.435931": 52, 
+                "1071.318034": 51, 
+                "461.274696": 50
+            }, 
+            "most_common_tokens": {
+                "921.864905": 67, 
+                "1024.442902": 64, 
+                "893.2374300000001": 61, 
+                "433.316718": 60, 
+                "471.3662230000001": 56, 
+                "461.62367": 56, 
+                "990.411554": 53, 
+                "485.435931": 52, 
+                "1071.318034": 51, 
+                "461.274696": 50
+            }
+        }, 
+        "special_type": {
+            "num_filename": 0
+        }, 
+        "length": {
+            "token": {
+                "average": 11.233949945593036, 
+                "standard-deviation": 2.277267780072018
+            }, 
+            "character": {
+                "average": 11.233949945593036, 
+                "standard-deviation": 2.277267780072018
+            }
+        }
+    }, 
+    "windoor": {
+        "special_type": {
+            "num_filename": 0
+        }, 
+        "missing": {
+            "num_nonblank": 0, 
+            "leading_space": 919, 
+            "trailing_space": 919, 
+            "num_missing": 919
+        }
+    }, 
+    "cntyfips": {
+        "numeric_stats": {
+            "contain_numeric_token_puncs": {
+                "count": 1838, 
+                "ratio": 1.0
+            }, 
+            "decimal": {
+                "Q1": 41.0, 
+                "count": 919, 
+                "Q3": 137.0, 
+                "standard-deviation": 52.12623851276701, 
+                "ratio": 1.0, 
+                "num_positive": 919, 
+                "num_outlier": 0, 
+                "Q2": 85.0, 
+                "num_-1": 0, 
+                "num_0": 0, 
+                "num_1": 4, 
+                "num_negative": 0, 
+                "mean": 87.41349292709467
+            }, 
+            "numeric": {
+                "Q1": 41.0, 
+                "count": 919, 
+                "Q3": 137.0, 
+                "standard-deviation": 52.12623851276701, 
+                "ratio": 1.0, 
+                "num_positive": 919, 
+                "num_outlier": 0, 
+                "Q2": 85.0, 
+                "num_-1": 0, 
+                "num_0": 0, 
+                "num_1": 4, 
+                "num_negative": 0, 
+                "mean": 87.41349292709467
+            }, 
+            "contain_numeric": {
+                "count": 919, 
+                "ratio": 1.0
+            }, 
+            "numeric_density": 0.7712223052028877, 
+            "contain_numeric_token": {
+                "count": 919, 
+                "ratio": 1.0
+            }
+        }, 
+        "missing": {
+            "num_nonblank": 919, 
+            "leading_space": 0, 
+            "trailing_space": 0, 
+            "num_missing": 0
+        }, 
+        "distinct": {
+            "ratio_distinct_tokens": 0.09249183895538629, 
+            "num_distinct_tokens_puncs": 86, 
+            "ratio_distinct_tokens_puncs": 0.046789989118607184, 
+            "num_distinct_values": 85, 
+            "ratio_distinct_values": 0.09249183895538629, 
+            "num_distinct_tokens": 85
+        }, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "137.0": 116, 
+                "53.0": 105, 
+                "37.0": 63, 
+                "3.0": 52, 
+                "163.0": 46, 
+                "123.0": 32, 
+                "145.0": 25, 
+                "109.0": 23, 
+                "135.0": 14, 
+                "49.0": 14
+            }, 
+            "most_common_tokens_puncs": {
+                "0": 919, 
+                "137": 116, 
+                "53": 105, 
+                "37": 63, 
+                "3": 52, 
+                "163": 46, 
+                "123": 32, 
+                "145": 25, 
+                "109": 23, 
+                "135": 14
+            }, 
+            "most_common_values": {
+                "137.0": 116, 
+                "53.0": 105, 
+                "37.0": 63, 
+                "3.0": 52, 
+                "163.0": 46, 
+                "123.0": 32, 
+                "145.0": 25, 
+                "109.0": 23, 
+                "49.0": 14, 
+                "13.0": 14
+            }, 
+            "most_common_tokens": {
+                "137.0": 116, 
+                "53.0": 105, 
+                "37.0": 63, 
+                "3.0": 52, 
+                "163.0": 46, 
+                "123.0": 32, 
+                "145.0": 25, 
+                "109.0": 23, 
+                "135.0": 14, 
+                "49.0": 14
+            }
+        }, 
+        "special_type": {
+            "num_filename": 0
+        }, 
+        "length": {
+            "token": {
+                "average": 4.3710554951033735, 
+                "standard-deviation": 0.621395993370628
+            }, 
+            "character": {
+                "average": 4.3710554951033735, 
+                "standard-deviation": 0.621395993370628
+            }
+        }
+    }, 
+    "activity": {
+        "numeric_stats": {
+            "contain_numeric_token_puncs": {
+                "count": 1838, 
+                "ratio": 1.0
+            }, 
+            "decimal": {
+                "Q1": 1.9, 
+                "count": 919, 
+                "Q3": 6.0, 
+                "standard-deviation": 4.481583695737934, 
+                "ratio": 1.0, 
+                "num_positive": 916, 
+                "num_outlier": 17, 
+                "Q2": 3.6, 
+                "num_-1": 0, 
+                "num_0": 3, 
+                "num_1": 8, 
+                "num_negative": 0, 
+                "mean": 4.768117519042437
+            }, 
+            "numeric": {
+                "Q1": 1.9, 
+                "count": 919, 
+                "Q3": 6.0, 
+                "standard-deviation": 4.481583695737934, 
+                "ratio": 1.0, 
+                "num_positive": 916, 
+                "num_outlier": 17, 
+                "Q2": 3.6, 
+                "num_-1": 0, 
+                "num_0": 3, 
+                "num_1": 8, 
+                "num_negative": 0, 
+                "mean": 4.768117519042437
+            }, 
+            "contain_numeric": {
+                "count": 919, 
+                "ratio": 1.0
+            }, 
+            "numeric_density": 0.6766361717100633, 
+            "contain_numeric_token": {
+                "count": 919, 
+                "ratio": 1.0
+            }
+        }, 
+        "missing": {
+            "num_nonblank": 919, 
+            "leading_space": 0, 
+            "trailing_space": 0, 
+            "num_missing": 0
+        }, 
+        "distinct": {
+            "ratio_distinct_tokens": 0.16974972796517954, 
+            "num_distinct_tokens_puncs": 28, 
+            "ratio_distinct_tokens_puncs": 0.015233949945593036, 
+            "num_distinct_values": 156, 
+            "ratio_distinct_values": 0.16974972796517954, 
+            "num_distinct_tokens": 156
+        }, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "1.8": 25, 
+                "1.5": 24, 
+                "2.9": 20, 
+                "2.2": 19, 
+                "2.1": 19, 
+                "2.8": 18, 
+                "2.5": 18, 
+                "1.4": 18, 
+                "1.6": 18, 
+                "1.7": 18
+            }, 
+            "most_common_tokens_puncs": {
+                "1": 256, 
+                "2": 243, 
+                "4": 207, 
+                "3": 202, 
+                "5": 167, 
+                "6": 151, 
+                "0": 148, 
+                "8": 135, 
+                "7": 124, 
+                "9": 120
+            }, 
+            "most_common_values": {
+                "1.8": 25, 
+                "1.5": 24, 
+                "2.9": 20, 
+                "2.2": 19, 
+                "2.1": 19, 
+                "1.4": 18, 
+                "1.6": 18, 
+                "1.7": 18, 
+                "1.1": 18, 
+                "2.8": 18
+            }, 
+            "most_common_tokens": {
+                "1.8": 25, 
+                "1.5": 24, 
+                "2.9": 20, 
+                "2.2": 19, 
+                "2.1": 19, 
+                "2.8": 18, 
+                "2.5": 18, 
+                "1.4": 18, 
+                "1.6": 18, 
+                "1.7": 18
+            }
+        }, 
+        "special_type": {
+            "num_filename": 0
+        }, 
+        "length": {
+            "token": {
+                "average": 3.0924918389553864, 
+                "standard-deviation": 0.28987675558770976
+            }, 
+            "character": {
+                "average": 3.0924918389553864, 
+                "standard-deviation": 0.28987675558770976
+            }
+        }
+    }
+}

@@ -1,143 +1,274 @@
 {
     "SentenceFilename": {
-        "ratio_distinct_tokens": 0.91334, 
-        "num_integer": 0, 
-        "language": {
-            "en": 23366
+        "numeric_stats": {
+            "numeric_density": 0.44433919264382393, 
+            "contain_numeric_token": {
+                "count": 23366, 
+                "ratio": 1.0
+            }, 
+            "contain_numeric_token_puncs": {
+                "count": 46732, 
+                "ratio": 0.6666666666666666
+            }, 
+            "contain_numeric": {
+                "count": 23366, 
+                "ratio": 1.0
+            }
         }, 
-        "num_decimal": 0, 
+        "missing": {
+            "num_nonblank": 23366, 
+            "leading_space": 0, 
+            "trailing_space": 0, 
+            "num_missing": 0
+        }, 
+        "distinct": {
+            "ratio_distinct_tokens": 0.9133356158520928, 
+            "num_distinct_tokens_puncs": 2811, 
+            "ratio_distinct_tokens_puncs": 0.04010100145510571, 
+            "num_distinct_values": 21341, 
+            "ratio_distinct_values": 0.9133356158520928, 
+            "num_distinct_tokens": 21341
+        }, 
         "frequent-entries": {
             "most_common_values": {
+                "D359-25.txt": 7, 
+                "D359-18.txt": 7, 
+                "D359-17.txt": 7, 
+                "D359-16.txt": 7, 
                 "D557-6.txt": 6, 
                 "D359-28.txt": 6, 
                 "D359-12.txt": 6, 
-                "D359-25.txt": 7, 
-                "D359-18.txt": 7, 
                 "D557-0.txt": 6, 
-                "D359-17.txt": 7, 
                 "D359-11.txt": 6, 
-                "D359-16.txt": 7, 
                 "D359-26.txt": 6
+            }, 
+            "most_common_tokens_puncs": {
+                "txt": 23366, 
+                "0": 2393, 
+                "1": 2362, 
+                "2": 2221, 
+                "3": 2055, 
+                "4": 1866, 
+                "5": 1652, 
+                "6": 1517, 
+                "7": 1330, 
+                "8": 1160
             }, 
             "most_common_punctuations": {
                 "-": {
                     "count": 23366, 
-                    "density_of_cell": 0.09303, 
-                    "density_of_all": 0.09261, 
-                    "num_outlier_cells": 698
+                    "density_of_cell": 0.09302621351748966, 
+                    "density_of_all": 0.09261013455936268, 
+                    "num_outlier_cells": 64
                 }, 
                 ".": {
                     "count": 23366, 
-                    "density_of_cell": 0.09303, 
-                    "density_of_all": 0.09261, 
-                    "num_outlier_cells": 698
+                    "density_of_cell": 0.09302621351748966, 
+                    "density_of_all": 0.09261013455936268, 
+                    "num_outlier_cells": 64
                 }
             }, 
             "most_common_tokens": {
-                "D557-6.txt": 6, 
-                "D359-28.txt": 6, 
-                "D359-12.txt": 6, 
-                "D359-25.txt": 7, 
-                "D359-18.txt": 7, 
-                "D557-0.txt": 6, 
                 "D359-17.txt": 7, 
-                "D359-11.txt": 6, 
                 "D359-16.txt": 7, 
-                "D359-26.txt": 6
+                "D359-18.txt": 7, 
+                "D359-25.txt": 7, 
+                "D557-14.txt": 6, 
+                "D557-16.txt": 6, 
+                "D359-24.txt": 6, 
+                "D557-0.txt": 6, 
+                "D359-28.txt": 6, 
+                "D557-15.txt": 6
             }
         }, 
-        "num_nonblank": 23366, 
-        "num_missing": 0, 
-        "num_distinct_values": 21341, 
+        "special_type": {
+            "num_filename": 0
+        }, 
         "length": {
             "token": {
-                "average": 10.79795, 
-                "standard-deviation": 0.71063
+                "average": 10.797954292561842, 
+                "standard-deviation": 0.7106280159000216
             }, 
             "character": {
-                "average": 10.79795, 
-                "standard-deviation": 0.71063
+                "average": 10.797954292561842, 
+                "standard-deviation": 0.7106280159000216
             }
-        }, 
-        "numeric_density": 0.44434, 
-        "ratio_distinct_values": 0.91334, 
-        "num_distinct_tokens": 21341
+        }
     }, 
     "QuestionFilename": {
-        "ratio_distinct_tokens": 0.12895, 
-        "num_integer": 0, 
-        "language": {
-            "vi": 23366
+        "numeric_stats": {
+            "numeric_density": 0.41985013333068494, 
+            "contain_numeric_token": {
+                "count": 23366, 
+                "ratio": 1.0
+            }, 
+            "contain_numeric_token_puncs": {
+                "count": 23366, 
+                "ratio": 0.5
+            }, 
+            "contain_numeric": {
+                "count": 23366, 
+                "ratio": 1.0
+            }
         }, 
-        "num_decimal": 0, 
+        "missing": {
+            "num_nonblank": 23366, 
+            "leading_space": 0, 
+            "trailing_space": 0, 
+            "num_missing": 0
+        }, 
+        "distinct": {
+            "ratio_distinct_tokens": 0.128948044166738, 
+            "num_distinct_tokens_puncs": 3014, 
+            "ratio_distinct_tokens_puncs": 0.06449542069673884, 
+            "num_distinct_values": 3013, 
+            "ratio_distinct_values": 0.128948044166738, 
+            "num_distinct_tokens": 3013
+        }, 
         "frequent-entries": {
             "most_common_values": {
-                "Q1075.txt": 26, 
+                "Q2203.txt": 28, 
                 "Q187.txt": 27, 
                 "Q1243.txt": 27, 
+                "Q223.txt": 27, 
+                "Q2184.txt": 27, 
+                "Q1075.txt": 26, 
                 "Q1843.txt": 26, 
-                "Q2203.txt": 28, 
                 "Q558.txt": 26, 
                 "Q1068.txt": 26, 
-                "Q1409.txt": 26, 
-                "Q223.txt": 27, 
-                "Q2184.txt": 27
+                "Q1409.txt": 26
+            }, 
+            "most_common_tokens_puncs": {
+                "txt": 23366, 
+                "Q2203": 28, 
+                "Q1243": 27, 
+                "Q223": 27, 
+                "Q2184": 27, 
+                "Q187": 27, 
+                "Q558": 26, 
+                "Q1068": 26, 
+                "Q1075": 26, 
+                "Q1843": 26
             }, 
             "most_common_punctuations": {
                 ".": {
                     "count": 23366, 
-                    "density_of_cell": 0.11658, 
-                    "density_of_all": 0.11603, 
+                    "density_of_cell": 0.11658032496004546, 
+                    "density_of_all": 0.11602997333386302, 
                     "num_outlier_cells": 844
                 }
             }, 
             "most_common_tokens": {
-                "Q1075.txt": 26, 
-                "Q187.txt": 27, 
-                "Q1243.txt": 27, 
-                "Q1843.txt": 26, 
                 "Q2203.txt": 28, 
-                "Q558.txt": 26, 
-                "Q1068.txt": 26, 
-                "Q1409.txt": 26, 
+                "Q1243.txt": 27, 
                 "Q223.txt": 27, 
-                "Q2184.txt": 27
+                "Q187.txt": 27, 
+                "Q2184.txt": 27, 
+                "Q1409.txt": 26, 
+                "Q1075.txt": 26, 
+                "Q1068.txt": 26, 
+                "Q558.txt": 26, 
+                "Q1843.txt": 26
             }
         }, 
-        "num_nonblank": 23366, 
-        "num_missing": 0, 
-        "num_distinct_values": 3013, 
+        "special_type": {
+            "num_filename": 23366
+        }, 
         "length": {
             "token": {
-                "average": 8.61846, 
-                "standard-deviation": 0.56481
+                "average": 8.61846272361551, 
+                "standard-deviation": 0.5648069188646311
             }, 
             "character": {
-                "average": 8.61846, 
-                "standard-deviation": 0.56481
+                "average": 8.61846272361551, 
+                "standard-deviation": 0.5648069188646311
             }
-        }, 
-        "numeric_density": 0.41985, 
-        "ratio_distinct_values": 0.12895, 
-        "num_distinct_tokens": 3013
+        }
     }, 
     "d3mIndex": {
-        "ratio_distinct_tokens": 1.0, 
-        "num_integer": 23366, 
-        "language": {}, 
-        "num_decimal": 0, 
+        "numeric_stats": {
+            "contain_numeric_token_puncs": {
+                "count": 23366, 
+                "ratio": 1.0
+            }, 
+            "numeric": {
+                "Q1": 7341.25, 
+                "count": 23366, 
+                "Q3": 21867.75, 
+                "standard-deviation": 8410.741206913259, 
+                "ratio": 1.0, 
+                "num_positive": 23365, 
+                "num_outlier": 0, 
+                "Q2": 14571.5, 
+                "num_-1": 0, 
+                "num_0": 1, 
+                "num_1": 1, 
+                "num_negative": 0, 
+                "mean": 14597.561713600959
+            }, 
+            "contain_numeric": {
+                "count": 23366, 
+                "ratio": 1.0
+            }, 
+            "numeric_density": 1.0, 
+            "integer": {
+                "Q1": 7341.25, 
+                "count": 23366, 
+                "Q3": 21867.75, 
+                "standard-deviation": 8410.741206913259, 
+                "ratio": 1.0, 
+                "num_positive": 23365, 
+                "num_outlier": 0, 
+                "Q2": 14571.5, 
+                "num_-1": 0, 
+                "num_0": 1, 
+                "num_1": 1, 
+                "num_negative": 0, 
+                "mean": 14597.561713600959
+            }, 
+            "contain_numeric_token": {
+                "count": 23366, 
+                "ratio": 1.0
+            }
+        }, 
+        "missing": {
+            "num_nonblank": 23366, 
+            "leading_space": 0, 
+            "trailing_space": 0, 
+            "num_missing": 0
+        }, 
+        "distinct": {
+            "ratio_distinct_tokens": 1.0, 
+            "num_distinct_tokens_puncs": 23366, 
+            "ratio_distinct_tokens_puncs": 1.0, 
+            "num_distinct_values": 23366, 
+            "ratio_distinct_values": 1.0, 
+            "num_distinct_tokens": 23366
+        }, 
         "frequent-entries": {
             "most_common_numeric_tokens": {
-                "18189": 1, 
-                "18188": 1, 
-                "18185": 1, 
-                "18184": 1, 
-                "26489": 1, 
-                "7436": 1, 
-                "18345": 1, 
-                "18344": 1, 
-                "9858": 1, 
-                "11777": 1
+                "11542": 1, 
+                "11543": 1, 
+                "11540": 1, 
+                "11541": 1, 
+                "11546": 1, 
+                "11547": 1, 
+                "11544": 1, 
+                "11545": 1, 
+                "11548": 1, 
+                "11549": 1
+            }, 
+            "most_common_tokens_puncs": {
+                "11542": 1, 
+                "11543": 1, 
+                "11540": 1, 
+                "11541": 1, 
+                "11546": 1, 
+                "11547": 1, 
+                "11544": 1, 
+                "11545": 1, 
+                "11548": 1, 
+                "11549": 1
             }, 
             "most_common_values": {
                 "18189": 1, 
@@ -152,61 +283,42 @@
                 "11777": 1
             }, 
             "most_common_tokens": {
-                "18189": 1, 
-                "18188": 1, 
-                "18185": 1, 
-                "18184": 1, 
-                "26489": 1, 
-                "7436": 1, 
-                "18345": 1, 
-                "18344": 1, 
-                "9858": 1, 
-                "11777": 1
+                "11542": 1, 
+                "11543": 1, 
+                "11540": 1, 
+                "11541": 1, 
+                "11546": 1, 
+                "11547": 1, 
+                "11544": 1, 
+                "11545": 1, 
+                "11548": 1, 
+                "11549": 1
             }, 
             "most_common_alphanumeric_tokens": {
-                "18189": 1, 
-                "18188": 1, 
-                "18185": 1, 
-                "18184": 1, 
-                "26489": 1, 
-                "7436": 1, 
-                "18345": 1, 
-                "18344": 1, 
-                "9858": 1, 
-                "11777": 1
+                "11542": 1, 
+                "11543": 1, 
+                "11540": 1, 
+                "11541": 1, 
+                "11546": 1, 
+                "11547": 1, 
+                "11544": 1, 
+                "11545": 1, 
+                "11548": 1, 
+                "11549": 1
             }
         }, 
-        "num_nonblank": 23366, 
-        "num_missing": 0, 
-        "num_distinct_values": 23366, 
+        "special_type": {
+            "num_filename": 0
+        }, 
         "length": {
             "token": {
-                "average": 4.62086, 
-                "standard-deviation": 0.56392
+                "average": 4.620859368312933, 
+                "standard-deviation": 0.5639195602586394
             }, 
             "character": {
-                "average": 4.62086, 
-                "standard-deviation": 0.56392
+                "average": 4.620859368312933, 
+                "standard-deviation": 0.5639195602586394
             }
-        }, 
-        "numeric_density": 1.0, 
-        "numeric": {
-            "Q1": 7341.25, 
-            "Q3": 21867.75, 
-            "standard-deviation": 8410.74121, 
-            "ratio": 1.0, 
-            "Q2": 14571.5, 
-            "mean": 14597.56171
-        }, 
-        "ratio_distinct_values": 1.0, 
-        "integer": {
-            "Q1": 7341.25, 
-            "Q3": 21867.75, 
-            "standard-deviation": 8410.74121, 
-            "ratio": 1.0, 
-            "Q2": 14571.5, 
-            "mean": 14597.56171
-        }, 
-        "num_distinct_tokens": 23366
+        }
     }
 }
