@@ -95,10 +95,11 @@ def profile_data(data_path, punctuation_outlier_weight=3,
             fc_hih.compute_numeric_density(col, each_res)
             fc_hih.compute_contain_numeric_values(col, each_res)
             fc_hih.compute_common_tokens_by_puncs(col, each_res, topk)
-            if not each_res["numeric_stats"]: del each_res["numeric_stats"]
+            #if not each_res["numeric_stats"]: del each_res["numeric_stats"]
         else:
             print "cannot recoginze dtype of the column, please make it some recognizable dtype first."
 
+        if not each_res["numeric_stats"]: del each_res["numeric_stats"]
         result[column_name] = each_res # add this column features into final result
 
     print "====================calculations finished ====================\n"

@@ -62,9 +62,9 @@ def compute_numerics(column, feature):
     """
     feature["missing"]["num_nonblank"] = column.count()
 
-    if column.dtype == np.integer:
+    if column.dtype == np.integer and column.count() > 0:
         feature["numeric_stats"]["integer"] = numerical_stats(column,feature["missing"]["num_nonblank"])
-    elif column.dtype == np.float:
+    elif column.dtype == np.float and column.count() > 0:
         feature["numeric_stats"]["decimal"] = numerical_stats(column,feature["missing"]["num_nonblank"])
     #elif column.dtype == 
     
