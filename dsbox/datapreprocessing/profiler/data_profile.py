@@ -49,24 +49,34 @@ def profile_data(data_path, punctuation_outlier_weight=3,
         each_res = defaultdict(lambda: defaultdict())
 
         if col.dtype == np.float:
-            ##num_missing?for NaN=float
+            each_res["missing"]["num_missing"] = pd.isnull(col).sum()
             each_res["special_type"]["dtype"] = "float"
             fc_hih.compute_numerics(col, each_res)
             fc_hih.compute_common_values(col.dropna().astype(str), each_res,topk)
+            each_res["distinct"]["num_distinct_values"] = col.nunique()
+            each_res["distinct"]["ratio_distinct_values"] = each_res["distinct"]["num_distinct_values"] / float(col.size)
         elif col.dtype == np.integer:
             ##probably no missing?
             each_res["special_type"]["dtype"] = "integer"
             fc_hih.compute_numerics(col, each_res)
             fc_hih.compute_common_values(col.dropna().astype(str), each_res,topk)
+            each_res["distinct"]["num_distinct_values"] = col.nunique()
+            each_res["distinct"]["ratio_distinct_values"] = each_res["distinct"]["num_distinct_values"] / float(col.size)
         elif col.dtype == 'datetime64[ns]':
             each_res["special_type"]["dtype"] = "datetime64[ns]"
+            each_res["distinct"]["num_distinct_values"] = col.nunique()
+            each_res["distinct"]["ratio_distinct_values"] = each_res["distinct"]["num_distinct_values"] / float(col.size)
         elif col.dtype == 'timedelta64[ns]':
             each_res["special_type"]["dtype"] = "timedelta64[ns]"
+            each_res["distinct"]["num_distinct_values"] = col.nunique()
+            each_res["distinct"]["ratio_distinct_values"] = each_res["distinct"]["num_distinct_values"] / float(col.size)
         elif col.dtype == bool:
             ##probably no missing?
             each_res["missing"]["num_nonblank"] = col.count()
             each_res["special_type"]["dtype"] = "bool"
             fc_hih.compute_common_values(col.dropna().astype(str), each_res, topk)
+            each_res["distinct"]["num_distinct_values"] = col.nunique()
+            each_res["distinct"]["ratio_distinct_values"] = each_res["distinct"]["num_distinct_values"] / float(col.size)
         elif col.dtype == object:
             if isDF:
                 col = col.fillna('').astype(str)
