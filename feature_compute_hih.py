@@ -11,7 +11,8 @@ def ordered_dict2(column, k):
     return OrderedDict(Counter(d).most_common(k))
 
 def ordered_dict(column, k):
-    d = column.value_counts()[:k].to_dict()
+    #d = column.value_counts()[:k].to_dict()
+    d = column.value_counts().head(k).to_dict()
     return OrderedDict(sorted(d.items(), key=lambda x: x[1], reverse=True))
 
 def tryConvert(cell):
@@ -59,27 +60,36 @@ def compute_numerics(column, feature):
     # of integers/ decimal(float only)/ nonblank values in the column
     statistics of int/decimal/numerics
     """
-    convert = lambda v: tryConvert(v)
-    col = column.apply(convert, convert_dtype=False)
-    #col = pd.to_numeric(column,errors='ignore') #doesn't work in messy column?
+    feature["missing"]["num_nonblank"] = column.count()
 
-    col_nonblank = col.dropna()
-    col_int = pd.Series([e for e in col_nonblank if type(e) == int or type(e) == np.int64])
-    col_float = pd.Series([e for e in col_nonblank if type(e) == float or type(e) == np.float64])
+    if column.dtype == np.integer:
+        feature["numeric_stats"]["integer"] = numerical_stats(column,feature["missing"]["num_nonblank"])
+    elif column.dtype == np.float:
+        feature["numeric_stats"]["decimal"] = numerical_stats(column,feature["missing"]["num_nonblank"])
+    #elif column.dtype == 
+    
+    else:
+        convert = lambda v: tryConvert(v)
+        col = column.apply(convert, convert_dtype=False)
+        #col = pd.to_numeric(column,errors='ignore') #doesn't work in messy column?
 
-    feature["missing"]["num_nonblank"] = col_nonblank.count()
+        col_nonblank = col.dropna()
+        #col_int = pd.Series([e for e in col_nonblank if type(e) == np.integer])
+        #col_float = pd.Series([e for e in col_nonblank if type(e) == np.float])
+        col_int = pd.Series([e for e in col_nonblank if type(e) == int or type(e) == np.int64])
+        col_float = pd.Series([e for e in col_nonblank if type(e) == float or type(e) == np.float64])
 
-    if col_int.count() > 0:
-        feature["numeric_stats"]["integer"] = numerical_stats(col_int,feature["missing"]["num_nonblank"])
+        if col_int.count() > 0:
+            feature["numeric_stats"]["integer"] = numerical_stats(col_int,feature["missing"]["num_nonblank"])
 
-    if col_float.count() > 0:
-        feature["numeric_stats"]["decimal"] = numerical_stats(col_float,feature["missing"]["num_nonblank"])
+        if col_float.count() > 0:
+            feature["numeric_stats"]["decimal"] = numerical_stats(col_float,feature["missing"]["num_nonblank"])
 
-    if "integer" in feature["numeric_stats"] or "decimal" in feature["numeric_stats"]:
-        col_num = pd.concat([col_float,col_int])
-        feature["numeric_stats"]["numeric"] = numerical_stats(col_num,feature["missing"]["num_nonblank"])
+        if "integer" in feature["numeric_stats"] or "decimal" in feature["numeric_stats"]:
+            col_num = pd.concat([col_float,col_int])
+            feature["numeric_stats"]["numeric"] = numerical_stats(col_num,feature["missing"]["num_nonblank"])
 
-def compute_common_numeric_tokens(column, feature, k=10):
+def compute_common_numeric_tokens(column, feature, k):
     """
     compute top k frequent numerical tokens and their counts.
     tokens are integer or floats
@@ -97,7 +107,7 @@ def compute_common_numeric_tokens(column, feature, k=10):
     if token.size:
         feature["frequent-entries"]["most_common_numeric_tokens"] = ordered_dict2(token, k)
 
-def compute_common_alphanumeric_tokens(column, feature, k=10):
+def compute_common_alphanumeric_tokens(column, feature, k):
     """
     compute top k frequent alphanumerical tokens and their counts.
     tokens only contain alphabets and/or numbers, decimals with points not included
@@ -114,16 +124,14 @@ def compute_common_alphanumeric_tokens(column, feature, k=10):
     if token.size:
         feature["frequent-entries"]["most_common_alphanumeric_tokens"] = ordered_dict2(token, k)
 
-def compute_common_values(column, feature, k=10):
+def compute_common_values(column, feature, k):
     """
     compute top k frequent cell values and their counts.
     """
     if column.count() > 0:
-        if ("frequent-entries" not in feature.keys()):
-            feature["frequent-entries"] = {}
         feature["frequent-entries"]["most_common_values"] = ordered_dict(column, k)
 
-def compute_common_tokens(column, feature, k=10):
+def compute_common_tokens(column, feature, k):
     """
     compute top k frequent tokens and their counts.
     currently: tokens separated by white space
@@ -154,7 +162,7 @@ def compute_common_tokens(column, feature, k=10):
     #            feature["numeric_stats"]["contain_numeric_token"]["count"] = cnt
     #            feature["numeric_stats"]["contain_numeric_token"]["ratio"] = float(cnt)/token_cnt
 
-def compute_common_tokens_by_puncs(column, feature, k=10):
+def compute_common_tokens_by_puncs(column, feature, k):
     """
     tokens seperated by all string.punctuation characters:
     '!"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~'
