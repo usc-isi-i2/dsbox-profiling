@@ -1,0 +1,2296 @@
+{
+    "Runs": {
+        "numeric_stats": {
+            "contain_numeric_token_puncs": {
+                "count": 1073, 
+                "ratio": 1.0
+            }, 
+            "numeric": {
+                "Q1": 357.0, 
+                "count": 1073, 
+                "Q3": 851.0, 
+                "standard-deviation": 379.3653577396687, 
+                "ratio": 1.0, 
+                "num_positive": 1073, 
+                "num_outlier": 12, 
+                "Q2": 579.0, 
+                "num_-1": 0, 
+                "num_0": 0, 
+                "num_1": 0, 
+                "num_negative": 0, 
+                "mean": 643.0428704566635
+            }, 
+            "contain_numeric": {
+                "count": 1073, 
+                "ratio": 1.0
+            }, 
+            "numeric_density": 1.0, 
+            "integer": {
+                "Q1": 357.0, 
+                "count": 1073, 
+                "Q3": 851.0, 
+                "standard-deviation": 379.3653577396687, 
+                "ratio": 1.0, 
+                "num_positive": 1073, 
+                "num_outlier": 12, 
+                "Q2": 579.0, 
+                "num_-1": 0, 
+                "num_0": 0, 
+                "num_1": 0, 
+                "num_negative": 0, 
+                "mean": 643.0428704566635
+            }, 
+            "contain_numeric_token": {
+                "count": 1073, 
+                "ratio": 1.0
+            }
+        }, 
+        "missing": {
+            "num_nonblank": 1073, 
+            "leading_space": 0, 
+            "trailing_space": 0, 
+            "num_missing": 0
+        }, 
+        "distinct": {
+            "ratio_distinct_tokens": 0.6672879776328052, 
+            "num_distinct_tokens_puncs": 716, 
+            "ratio_distinct_tokens_puncs": 0.6672879776328052, 
+            "num_distinct_values": 716, 
+            "ratio_distinct_values": 0.6672879776328052, 
+            "num_distinct_tokens": 716
+        }, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "331": 5, 
+                "552": 5, 
+                "146": 5, 
+                "245": 5, 
+                "357": 5, 
+                "676": 5, 
+                "348": 4, 
+                "826": 4, 
+                "372": 4, 
+                "518": 4
+            }, 
+            "most_common_tokens_puncs": {
+                "331": 5, 
+                "552": 5, 
+                "146": 5, 
+                "245": 5, 
+                "357": 5, 
+                "676": 5, 
+                "348": 4, 
+                "826": 4, 
+                "372": 4, 
+                "518": 4
+            }, 
+            "most_common_values": {
+                "146": 5, 
+                "245": 5, 
+                "676": 5, 
+                "331": 5, 
+                "552": 5, 
+                "357": 5, 
+                "605": 4, 
+                "575": 4, 
+                "826": 4, 
+                "539": 4
+            }, 
+            "most_common_tokens": {
+                "331": 5, 
+                "552": 5, 
+                "146": 5, 
+                "245": 5, 
+                "357": 5, 
+                "676": 5, 
+                "348": 4, 
+                "826": 4, 
+                "372": 4, 
+                "518": 4
+            }, 
+            "most_common_alphanumeric_tokens": {
+                "331": 5, 
+                "552": 5, 
+                "146": 5, 
+                "245": 5, 
+                "357": 5, 
+                "676": 5, 
+                "348": 4, 
+                "826": 4, 
+                "372": 4, 
+                "518": 4
+            }
+        }, 
+        "special_type": {
+            "num_filename": 0
+        }, 
+        "length": {
+            "token": {
+                "average": 3.1444547996272134, 
+                "standard-deviation": 0.39423256505825155
+            }, 
+            "character": {
+                "average": 3.1444547996272134, 
+                "standard-deviation": 0.39423256505825155
+            }
+        }
+    }, 
+    "Fielding_ave": {
+        "numeric_stats": {
+            "contain_numeric_token_puncs": {
+                "count": 2146, 
+                "ratio": 1.0
+            }, 
+            "decimal": {
+                "Q1": 0.957, 
+                "count": 1073, 
+                "Q3": 0.983, 
+                "standard-deviation": 0.025336178497455078, 
+                "ratio": 1.0, 
+                "num_positive": 1073, 
+                "num_outlier": 26, 
+                "Q2": 0.973, 
+                "num_-1": 0, 
+                "num_0": 0, 
+                "num_1": 0, 
+                "num_negative": 0, 
+                "mean": 0.9659748369058714
+            }, 
+            "numeric": {
+                "Q1": 0.957, 
+                "count": 1073, 
+                "Q3": 0.983, 
+                "standard-deviation": 0.025336178497455078, 
+                "ratio": 1.0, 
+                "num_positive": 1073, 
+                "num_outlier": 26, 
+                "Q2": 0.973, 
+                "num_-1": 0, 
+                "num_0": 0, 
+                "num_1": 0, 
+                "num_negative": 0, 
+                "mean": 0.9659748369058714
+            }, 
+            "contain_numeric": {
+                "count": 1073, 
+                "ratio": 1.0
+            }, 
+            "numeric_density": 0.795346175853519, 
+            "contain_numeric_token": {
+                "count": 1073, 
+                "ratio": 1.0
+            }
+        }, 
+        "missing": {
+            "num_nonblank": 1073, 
+            "leading_space": 0, 
+            "trailing_space": 0, 
+            "num_missing": 0
+        }, 
+        "distinct": {
+            "ratio_distinct_tokens": 0.10904007455731593, 
+            "num_distinct_tokens_puncs": 118, 
+            "ratio_distinct_tokens_puncs": 0.05498602050326188, 
+            "num_distinct_values": 117, 
+            "ratio_distinct_values": 0.10904007455731593, 
+            "num_distinct_tokens": 117
+        }, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "0.982": 36, 
+                "0.984": 35, 
+                "0.98": 33, 
+                "0.983": 32, 
+                "0.99": 31, 
+                "0.985": 27, 
+                "0.981": 27, 
+                "0.986": 26, 
+                "0.978": 26, 
+                "0.97": 25
+            }, 
+            "most_common_tokens_puncs": {
+                "0": 1073, 
+                "982": 36, 
+                "984": 35, 
+                "98": 33, 
+                "983": 32, 
+                "99": 31, 
+                "981": 27, 
+                "985": 27, 
+                "978": 26, 
+                "986": 26
+            }, 
+            "most_common_values": {
+                "0.982": 36, 
+                "0.984": 35, 
+                "0.98": 33, 
+                "0.983": 32, 
+                "0.99": 31, 
+                "0.985": 27, 
+                "0.981": 27, 
+                "0.986": 26, 
+                "0.978": 26, 
+                "0.97": 25
+            }, 
+            "most_common_tokens": {
+                "0.982": 36, 
+                "0.984": 35, 
+                "0.98": 33, 
+                "0.983": 32, 
+                "0.99": 31, 
+                "0.985": 27, 
+                "0.981": 27, 
+                "0.986": 26, 
+                "0.978": 26, 
+                "0.97": 25
+            }
+        }, 
+        "special_type": {
+            "num_filename": 0
+        }, 
+        "length": {
+            "token": {
+                "average": 4.8863000931966445, 
+                "standard-deviation": 0.32051819541394094
+            }, 
+            "character": {
+                "average": 4.8863000931966445, 
+                "standard-deviation": 0.32051819541394094
+            }
+        }
+    }, 
+    "Triples": {
+        "numeric_stats": {
+            "contain_numeric_token_puncs": {
+                "count": 1073, 
+                "ratio": 1.0
+            }, 
+            "numeric": {
+                "Q1": 23.0, 
+                "count": 1073, 
+                "Q3": 71.0, 
+                "standard-deviation": 41.646923041549925, 
+                "ratio": 1.0, 
+                "num_positive": 1073, 
+                "num_outlier": 14, 
+                "Q2": 42.0, 
+                "num_-1": 0, 
+                "num_0": 0, 
+                "num_1": 5, 
+                "num_negative": 0, 
+                "mean": 52.08760484622554
+            }, 
+            "contain_numeric": {
+                "count": 1073, 
+                "ratio": 1.0
+            }, 
+            "numeric_density": 1.0, 
+            "integer": {
+                "Q1": 23.0, 
+                "count": 1073, 
+                "Q3": 71.0, 
+                "standard-deviation": 41.646923041549925, 
+                "ratio": 1.0, 
+                "num_positive": 1073, 
+                "num_outlier": 14, 
+                "Q2": 42.0, 
+                "num_-1": 0, 
+                "num_0": 0, 
+                "num_1": 5, 
+                "num_negative": 0, 
+                "mean": 52.08760484622554
+            }, 
+            "contain_numeric_token": {
+                "count": 1073, 
+                "ratio": 1.0
+            }
+        }, 
+        "missing": {
+            "num_nonblank": 1073, 
+            "leading_space": 0, 
+            "trailing_space": 0, 
+            "num_missing": 0
+        }, 
+        "distinct": {
+            "ratio_distinct_tokens": 0.15936626281453867, 
+            "num_distinct_tokens_puncs": 171, 
+            "ratio_distinct_tokens_puncs": 0.15936626281453867, 
+            "num_distinct_values": 171, 
+            "ratio_distinct_values": 0.15936626281453867, 
+            "num_distinct_tokens": 171
+        }, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "12": 24, 
+                "28": 21, 
+                "33": 20, 
+                "11": 19, 
+                "26": 18, 
+                "10": 18, 
+                "35": 17, 
+                "20": 16, 
+                "31": 16, 
+                "16": 16
+            }, 
+            "most_common_tokens_puncs": {
+                "12": 24, 
+                "28": 21, 
+                "33": 20, 
+                "11": 19, 
+                "26": 18, 
+                "10": 18, 
+                "35": 17, 
+                "20": 16, 
+                "31": 16, 
+                "16": 16
+            }, 
+            "most_common_values": {
+                "12": 24, 
+                "28": 21, 
+                "33": 20, 
+                "11": 19, 
+                "10": 18, 
+                "26": 18, 
+                "35": 17, 
+                "20": 16, 
+                "16": 16, 
+                "31": 16
+            }, 
+            "most_common_tokens": {
+                "12": 24, 
+                "28": 21, 
+                "33": 20, 
+                "11": 19, 
+                "26": 18, 
+                "10": 18, 
+                "35": 17, 
+                "20": 16, 
+                "31": 16, 
+                "16": 16
+            }, 
+            "most_common_alphanumeric_tokens": {
+                "12": 24, 
+                "28": 21, 
+                "33": 20, 
+                "11": 19, 
+                "26": 18, 
+                "10": 18, 
+                "35": 17, 
+                "20": 16, 
+                "31": 16, 
+                "16": 16
+            }
+        }, 
+        "special_type": {
+            "num_filename": 0
+        }, 
+        "length": {
+            "token": {
+                "average": 2.0335507921714817, 
+                "standard-deviation": 0.4306279815244862
+            }, 
+            "character": {
+                "average": 2.0335507921714817, 
+                "standard-deviation": 0.4306279815244862
+            }
+        }
+    }, 
+    "At_bats": {
+        "numeric_stats": {
+            "contain_numeric_token_puncs": {
+                "count": 1073, 
+                "ratio": 1.0
+            }, 
+            "numeric": {
+                "Q1": 3028.0, 
+                "count": 1073, 
+                "Q3": 5839.0, 
+                "standard-deviation": 2120.1152578482556, 
+                "ratio": 1.0, 
+                "num_positive": 1073, 
+                "num_outlier": 5, 
+                "Q2": 4334.0, 
+                "num_-1": 0, 
+                "num_0": 0, 
+                "num_1": 0, 
+                "num_negative": 0, 
+                "mean": 4576.038210624418
+            }, 
+            "contain_numeric": {
+                "count": 1073, 
+                "ratio": 1.0
+            }, 
+            "numeric_density": 1.0, 
+            "integer": {
+                "Q1": 3028.0, 
+                "count": 1073, 
+                "Q3": 5839.0, 
+                "standard-deviation": 2120.1152578482556, 
+                "ratio": 1.0, 
+                "num_positive": 1073, 
+                "num_outlier": 5, 
+                "Q2": 4334.0, 
+                "num_-1": 0, 
+                "num_0": 0, 
+                "num_1": 0, 
+                "num_negative": 0, 
+                "mean": 4576.038210624418
+            }, 
+            "contain_numeric_token": {
+                "count": 1073, 
+                "ratio": 1.0
+            }
+        }, 
+        "missing": {
+            "num_nonblank": 1073, 
+            "leading_space": 0, 
+            "trailing_space": 0, 
+            "num_missing": 0
+        }, 
+        "distinct": {
+            "ratio_distinct_tokens": 0.9422180801491147, 
+            "num_distinct_tokens_puncs": 1011, 
+            "ratio_distinct_tokens_puncs": 0.9422180801491147, 
+            "num_distinct_values": 1011, 
+            "ratio_distinct_values": 0.9422180801491147, 
+            "num_distinct_tokens": 1011
+        }, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "1963": 3, 
+                "2877": 3, 
+                "4553": 3, 
+                "5984": 2, 
+                "3853": 2, 
+                "3330": 2, 
+                "6653": 2, 
+                "3774": 2, 
+                "1125": 2, 
+                "3028": 2
+            }, 
+            "most_common_tokens_puncs": {
+                "1963": 3, 
+                "2877": 3, 
+                "4553": 3, 
+                "5984": 2, 
+                "3853": 2, 
+                "3330": 2, 
+                "6653": 2, 
+                "3774": 2, 
+                "1125": 2, 
+                "3028": 2
+            }, 
+            "most_common_values": {
+                "2877": 3, 
+                "1963": 3, 
+                "4553": 3, 
+                "4692": 2, 
+                "5222": 2, 
+                "4069": 2, 
+                "6653": 2, 
+                "7030": 2, 
+                "4451": 2, 
+                "5606": 2
+            }, 
+            "most_common_tokens": {
+                "1963": 3, 
+                "2877": 3, 
+                "4553": 3, 
+                "5984": 2, 
+                "3853": 2, 
+                "3330": 2, 
+                "6653": 2, 
+                "3774": 2, 
+                "1125": 2, 
+                "3028": 2
+            }, 
+            "most_common_alphanumeric_tokens": {
+                "1963": 3, 
+                "2877": 3, 
+                "4553": 3, 
+                "5984": 2, 
+                "3853": 2, 
+                "3330": 2, 
+                "6653": 2, 
+                "3774": 2, 
+                "1125": 2, 
+                "3028": 2
+            }
+        }, 
+        "special_type": {
+            "num_filename": 0
+        }, 
+        "length": {
+            "token": {
+                "average": 3.9981360671015844, 
+                "standard-deviation": 0.16160422487770504
+            }, 
+            "character": {
+                "average": 3.9981360671015844, 
+                "standard-deviation": 0.16160422487770504
+            }
+        }
+    }, 
+    "Batting_average": {
+        "numeric_stats": {
+            "contain_numeric_token_puncs": {
+                "count": 2146, 
+                "ratio": 1.0
+            }, 
+            "decimal": {
+                "Q1": 0.253, 
+                "count": 1073, 
+                "Q3": 0.285, 
+                "standard-deviation": 0.025890547242075377, 
+                "ratio": 1.0, 
+                "num_positive": 1073, 
+                "num_outlier": 6, 
+                "Q2": 0.268, 
+                "num_-1": 0, 
+                "num_0": 0, 
+                "num_1": 0, 
+                "num_negative": 0, 
+                "mean": 0.2691276794035415
+            }, 
+            "numeric": {
+                "Q1": 0.253, 
+                "count": 1073, 
+                "Q3": 0.285, 
+                "standard-deviation": 0.025890547242075377, 
+                "ratio": 1.0, 
+                "num_positive": 1073, 
+                "num_outlier": 6, 
+                "Q2": 0.268, 
+                "num_-1": 0, 
+                "num_0": 0, 
+                "num_1": 0, 
+                "num_negative": 0, 
+                "mean": 0.2691276794035415
+            }, 
+            "contain_numeric": {
+                "count": 1073, 
+                "ratio": 1.0
+            }, 
+            "numeric_density": 0.7955021917286068, 
+            "contain_numeric_token": {
+                "count": 1073, 
+                "ratio": 1.0
+            }
+        }, 
+        "missing": {
+            "num_nonblank": 1073, 
+            "leading_space": 0, 
+            "trailing_space": 0, 
+            "num_missing": 0
+        }, 
+        "distinct": {
+            "ratio_distinct_tokens": 0.12954333643988816, 
+            "num_distinct_tokens_puncs": 140, 
+            "ratio_distinct_tokens_puncs": 0.06523765144454799, 
+            "num_distinct_values": 139, 
+            "ratio_distinct_values": 0.12954333643988816, 
+            "num_distinct_tokens": 139
+        }, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "0.271": 24, 
+                "0.254": 23, 
+                "0.262": 22, 
+                "0.267": 21, 
+                "0.269": 20, 
+                "0.26": 20, 
+                "0.258": 20, 
+                "0.265": 20, 
+                "0.264": 20, 
+                "0.261": 20
+            }, 
+            "most_common_tokens_puncs": {
+                "0": 1073, 
+                "271": 24, 
+                "254": 23, 
+                "262": 22, 
+                "267": 21, 
+                "26": 20, 
+                "261": 20, 
+                "265": 20, 
+                "264": 20, 
+                "269": 20
+            }, 
+            "most_common_values": {
+                "0.271": 24, 
+                "0.254": 23, 
+                "0.262": 22, 
+                "0.267": 21, 
+                "0.269": 20, 
+                "0.26": 20, 
+                "0.265": 20, 
+                "0.258": 20, 
+                "0.264": 20, 
+                "0.261": 20
+            }, 
+            "most_common_tokens": {
+                "0.271": 24, 
+                "0.254": 23, 
+                "0.262": 22, 
+                "0.267": 21, 
+                "0.269": 20, 
+                "0.26": 20, 
+                "0.258": 20, 
+                "0.265": 20, 
+                "0.264": 20, 
+                "0.261": 20
+            }
+        }, 
+        "special_type": {
+            "num_filename": 0
+        }, 
+        "length": {
+            "token": {
+                "average": 4.8900279589934765, 
+                "standard-deviation": 0.3275635109336469
+            }, 
+            "character": {
+                "average": 4.8900279589934765, 
+                "standard-deviation": 0.3275635109336469
+            }
+        }
+    }, 
+    "Strikeouts": {
+        "numeric_stats": {
+            "contain_numeric_token_puncs": {
+                "count": 1055, 
+                "ratio": 1.0
+            }, 
+            "numeric": {
+                "Q1": 220.0, 
+                "count": 1055, 
+                "Q3": 601.0, 
+                "standard-deviation": 329.06986959728425, 
+                "ratio": 1.0, 
+                "num_positive": 1052, 
+                "num_outlier": 16, 
+                "Q2": 374.0, 
+                "num_-1": 0, 
+                "num_0": 3, 
+                "num_1": 0, 
+                "num_negative": 0, 
+                "mean": 452.2284360189573
+            }, 
+            "contain_numeric": {
+                "count": 1055, 
+                "ratio": 1.0
+            }, 
+            "numeric_density": 1.0, 
+            "integer": {
+                "Q1": 220.0, 
+                "count": 1055, 
+                "Q3": 601.0, 
+                "standard-deviation": 329.06986959728425, 
+                "ratio": 1.0, 
+                "num_positive": 1052, 
+                "num_outlier": 16, 
+                "Q2": 374.0, 
+                "num_-1": 0, 
+                "num_0": 3, 
+                "num_1": 0, 
+                "num_negative": 0, 
+                "mean": 452.2284360189573
+            }, 
+            "contain_numeric_token": {
+                "count": 1055, 
+                "ratio": 1.0
+            }
+        }, 
+        "missing": {
+            "num_nonblank": 1055, 
+            "leading_space": 0, 
+            "trailing_space": 0, 
+            "num_missing": 18
+        }, 
+        "distinct": {
+            "ratio_distinct_tokens": 0.6113744075829384, 
+            "num_distinct_tokens_puncs": 645, 
+            "ratio_distinct_tokens_puncs": 0.6113744075829384, 
+            "num_distinct_values": 645, 
+            "ratio_distinct_values": 0.6113744075829384, 
+            "num_distinct_tokens": 645
+        }, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "453": 7, 
+                "345": 6, 
+                "218": 6, 
+                "361": 6, 
+                "382": 6, 
+                "246": 5, 
+                "243": 5, 
+                "312": 5, 
+                "357": 5, 
+                "118": 5
+            }, 
+            "most_common_tokens_puncs": {
+                "453": 7, 
+                "345": 6, 
+                "218": 6, 
+                "361": 6, 
+                "382": 6, 
+                "246": 5, 
+                "243": 5, 
+                "312": 5, 
+                "357": 5, 
+                "118": 5
+            }, 
+            "most_common_values": {
+                "453": 7, 
+                "218": 6, 
+                "345": 6, 
+                "382": 6, 
+                "361": 6, 
+                "428": 5, 
+                "312": 5, 
+                "357": 5, 
+                "243": 5, 
+                "118": 5
+            }, 
+            "most_common_tokens": {
+                "453": 7, 
+                "345": 6, 
+                "218": 6, 
+                "361": 6, 
+                "382": 6, 
+                "246": 5, 
+                "243": 5, 
+                "312": 5, 
+                "357": 5, 
+                "118": 5
+            }, 
+            "most_common_alphanumeric_tokens": {
+                "453": 7, 
+                "345": 6, 
+                "218": 6, 
+                "361": 6, 
+                "382": 6, 
+                "246": 5, 
+                "243": 5, 
+                "312": 5, 
+                "357": 5, 
+                "118": 5
+            }
+        }, 
+        "special_type": {
+            "num_filename": 0
+        }, 
+        "length": {
+            "token": {
+                "average": 2.995260663507109, 
+                "standard-deviation": 0.40744530059480244
+            }, 
+            "character": {
+                "average": 2.995260663507109, 
+                "standard-deviation": 0.40744530059480244
+            }
+        }
+    }, 
+    "RBIs": {
+        "numeric_stats": {
+            "contain_numeric_token_puncs": {
+                "count": 1073, 
+                "ratio": 1.0
+            }, 
+            "numeric": {
+                "Q1": 318.0, 
+                "count": 1073, 
+                "Q3": 736.0, 
+                "standard-deviation": 361.5758211531281, 
+                "ratio": 1.0, 
+                "num_positive": 1073, 
+                "num_outlier": 14, 
+                "Q2": 490.0, 
+                "num_-1": 0, 
+                "num_0": 0, 
+                "num_1": 0, 
+                "num_negative": 0, 
+                "mean": 571.8350419384902
+            }, 
+            "contain_numeric": {
+                "count": 1073, 
+                "ratio": 1.0
+            }, 
+            "numeric_density": 1.0, 
+            "integer": {
+                "Q1": 318.0, 
+                "count": 1073, 
+                "Q3": 736.0, 
+                "standard-deviation": 361.5758211531281, 
+                "ratio": 1.0, 
+                "num_positive": 1073, 
+                "num_outlier": 14, 
+                "Q2": 490.0, 
+                "num_-1": 0, 
+                "num_0": 0, 
+                "num_1": 0, 
+                "num_negative": 0, 
+                "mean": 571.8350419384902
+            }, 
+            "contain_numeric_token": {
+                "count": 1073, 
+                "ratio": 1.0
+            }
+        }, 
+        "missing": {
+            "num_nonblank": 1073, 
+            "leading_space": 0, 
+            "trailing_space": 0, 
+            "num_missing": 0
+        }, 
+        "distinct": {
+            "ratio_distinct_tokens": 0.6477166821994408, 
+            "num_distinct_tokens_puncs": 695, 
+            "ratio_distinct_tokens_puncs": 0.6477166821994408, 
+            "num_distinct_values": 695, 
+            "ratio_distinct_values": 0.6477166821994408, 
+            "num_distinct_tokens": 695
+        }, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "272": 6, 
+                "525": 5, 
+                "435": 5, 
+                "391": 5, 
+                "329": 5, 
+                "417": 5, 
+                "501": 5, 
+                "229": 5, 
+                "591": 5, 
+                "471": 5
+            }, 
+            "most_common_tokens_puncs": {
+                "272": 6, 
+                "525": 5, 
+                "435": 5, 
+                "391": 5, 
+                "329": 5, 
+                "417": 5, 
+                "501": 5, 
+                "229": 5, 
+                "591": 5, 
+                "471": 5
+            }, 
+            "most_common_values": {
+                "272": 6, 
+                "591": 5, 
+                "435": 5, 
+                "391": 5, 
+                "525": 5, 
+                "471": 5, 
+                "229": 5, 
+                "417": 5, 
+                "329": 5, 
+                "501": 5
+            }, 
+            "most_common_tokens": {
+                "272": 6, 
+                "525": 5, 
+                "435": 5, 
+                "391": 5, 
+                "329": 5, 
+                "417": 5, 
+                "501": 5, 
+                "229": 5, 
+                "591": 5, 
+                "471": 5
+            }, 
+            "most_common_alphanumeric_tokens": {
+                "272": 6, 
+                "525": 5, 
+                "435": 5, 
+                "391": 5, 
+                "329": 5, 
+                "417": 5, 
+                "501": 5, 
+                "229": 5, 
+                "591": 5, 
+                "471": 5
+            }
+        }, 
+        "special_type": {
+            "num_filename": 0
+        }, 
+        "length": {
+            "token": {
+                "average": 3.0978564771668218, 
+                "standard-deviation": 0.3699599992212295
+            }, 
+            "character": {
+                "average": 3.0978564771668218, 
+                "standard-deviation": 0.3699599992212295
+            }
+        }
+    }, 
+    "Home_runs": {
+        "numeric_stats": {
+            "contain_numeric_token_puncs": {
+                "count": 1073, 
+                "ratio": 1.0
+            }, 
+            "numeric": {
+                "Q1": 23.0, 
+                "count": 1073, 
+                "Q3": 107.0, 
+                "standard-deviation": 99.34849353344259, 
+                "ratio": 1.0, 
+                "num_positive": 1069, 
+                "num_outlier": 23, 
+                "Q2": 51.0, 
+                "num_-1": 0, 
+                "num_0": 4, 
+                "num_1": 6, 
+                "num_negative": 0, 
+                "mean": 85.92544268406337
+            }, 
+            "contain_numeric": {
+                "count": 1073, 
+                "ratio": 1.0
+            }, 
+            "numeric_density": 1.0, 
+            "integer": {
+                "Q1": 23.0, 
+                "count": 1073, 
+                "Q3": 107.0, 
+                "standard-deviation": 99.34849353344259, 
+                "ratio": 1.0, 
+                "num_positive": 1069, 
+                "num_outlier": 23, 
+                "Q2": 51.0, 
+                "num_-1": 0, 
+                "num_0": 4, 
+                "num_1": 6, 
+                "num_negative": 0, 
+                "mean": 85.92544268406337
+            }, 
+            "contain_numeric_token": {
+                "count": 1073, 
+                "ratio": 1.0
+            }
+        }, 
+        "missing": {
+            "num_nonblank": 1073, 
+            "leading_space": 0, 
+            "trailing_space": 0, 
+            "num_missing": 0
+        }, 
+        "distinct": {
+            "ratio_distinct_tokens": 0.2581547064305685, 
+            "num_distinct_tokens_puncs": 277, 
+            "ratio_distinct_tokens_puncs": 0.2581547064305685, 
+            "num_distinct_values": 277, 
+            "ratio_distinct_values": 0.2581547064305685, 
+            "num_distinct_tokens": 277
+        }, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "9": 18, 
+                "20": 18, 
+                "7": 17, 
+                "27": 16, 
+                "3": 15, 
+                "32": 15, 
+                "21": 15, 
+                "22": 15, 
+                "13": 15, 
+                "28": 13
+            }, 
+            "most_common_tokens_puncs": {
+                "9": 18, 
+                "20": 18, 
+                "7": 17, 
+                "27": 16, 
+                "3": 15, 
+                "32": 15, 
+                "21": 15, 
+                "22": 15, 
+                "13": 15, 
+                "28": 13
+            }, 
+            "most_common_values": {
+                "20": 18, 
+                "9": 18, 
+                "7": 17, 
+                "27": 16, 
+                "13": 15, 
+                "21": 15, 
+                "22": 15, 
+                "32": 15, 
+                "3": 15, 
+                "28": 13
+            }, 
+            "most_common_tokens": {
+                "9": 18, 
+                "20": 18, 
+                "7": 17, 
+                "27": 16, 
+                "3": 15, 
+                "32": 15, 
+                "21": 15, 
+                "22": 15, 
+                "13": 15, 
+                "28": 13
+            }, 
+            "most_common_alphanumeric_tokens": {
+                "9": 18, 
+                "20": 18, 
+                "7": 17, 
+                "27": 16, 
+                "3": 15, 
+                "32": 15, 
+                "21": 15, 
+                "22": 15, 
+                "13": 15, 
+                "28": 13
+            }
+        }, 
+        "special_type": {
+            "num_filename": 0
+        }, 
+        "length": {
+            "token": {
+                "average": 2.173345759552656, 
+                "standard-deviation": 0.5873016406349831
+            }, 
+            "character": {
+                "average": 2.173345759552656, 
+                "standard-deviation": 0.5873016406349831
+            }
+        }
+    }, 
+    "Number_seasons": {
+        "numeric_stats": {
+            "contain_numeric_token_puncs": {
+                "count": 1073, 
+                "ratio": 1.0
+            }, 
+            "numeric": {
+                "Q1": 11.0, 
+                "count": 1073, 
+                "Q3": 16.0, 
+                "standard-deviation": 3.180751620457165, 
+                "ratio": 1.0, 
+                "num_positive": 1073, 
+                "num_outlier": 6, 
+                "Q2": 13.0, 
+                "num_-1": 0, 
+                "num_0": 0, 
+                "num_1": 0, 
+                "num_negative": 0, 
+                "mean": 13.565703634669152
+            }, 
+            "contain_numeric": {
+                "count": 1073, 
+                "ratio": 1.0
+            }, 
+            "numeric_density": 1.0, 
+            "integer": {
+                "Q1": 11.0, 
+                "count": 1073, 
+                "Q3": 16.0, 
+                "standard-deviation": 3.180751620457165, 
+                "ratio": 1.0, 
+                "num_positive": 1073, 
+                "num_outlier": 6, 
+                "Q2": 13.0, 
+                "num_-1": 0, 
+                "num_0": 0, 
+                "num_1": 0, 
+                "num_negative": 0, 
+                "mean": 13.565703634669152
+            }, 
+            "contain_numeric_token": {
+                "count": 1073, 
+                "ratio": 1.0
+            }
+        }, 
+        "missing": {
+            "num_nonblank": 1073, 
+            "leading_space": 0, 
+            "trailing_space": 0, 
+            "num_missing": 0
+        }, 
+        "distinct": {
+            "ratio_distinct_tokens": 0.015843429636533086, 
+            "num_distinct_tokens_puncs": 17, 
+            "ratio_distinct_tokens_puncs": 0.015843429636533086, 
+            "num_distinct_values": 17, 
+            "ratio_distinct_values": 0.015843429636533086, 
+            "num_distinct_tokens": 17
+        }, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "10": 184, 
+                "11": 170, 
+                "12": 153, 
+                "13": 117, 
+                "15": 94, 
+                "14": 86, 
+                "17": 70, 
+                "16": 63, 
+                "18": 49, 
+                "19": 32
+            }, 
+            "most_common_tokens_puncs": {
+                "10": 184, 
+                "11": 170, 
+                "12": 153, 
+                "13": 117, 
+                "15": 94, 
+                "14": 86, 
+                "17": 70, 
+                "16": 63, 
+                "18": 49, 
+                "19": 32
+            }, 
+            "most_common_values": {
+                "10": 184, 
+                "11": 170, 
+                "12": 153, 
+                "13": 117, 
+                "15": 94, 
+                "14": 86, 
+                "17": 70, 
+                "16": 63, 
+                "18": 49, 
+                "19": 32
+            }, 
+            "most_common_tokens": {
+                "10": 184, 
+                "11": 170, 
+                "12": 153, 
+                "13": 117, 
+                "15": 94, 
+                "14": 86, 
+                "17": 70, 
+                "16": 63, 
+                "18": 49, 
+                "19": 32
+            }, 
+            "most_common_alphanumeric_tokens": {
+                "10": 184, 
+                "11": 170, 
+                "12": 153, 
+                "13": 117, 
+                "15": 94, 
+                "14": 86, 
+                "17": 70, 
+                "16": 63, 
+                "18": 49, 
+                "19": 32
+            }
+        }, 
+        "special_type": {
+            "num_filename": 0
+        }, 
+        "length": {
+            "token": {
+                "average": 2.0, 
+                "standard-deviation": 0.0
+            }, 
+            "character": {
+                "average": 2.0, 
+                "standard-deviation": 0.0
+            }
+        }
+    }, 
+    "Player": {
+        "numeric_stats": {
+            "numeric_density": 0.0
+        }, 
+        "missing": {
+            "num_nonblank": 1073, 
+            "leading_space": 0, 
+            "trailing_space": 0, 
+            "num_missing": 0
+        }, 
+        "distinct": {
+            "ratio_distinct_tokens": 0.9990680335507922, 
+            "num_distinct_tokens_puncs": 1276, 
+            "ratio_distinct_tokens_puncs": 0.5907407407407408, 
+            "num_distinct_values": 1072, 
+            "ratio_distinct_values": 0.9990680335507922, 
+            "num_distinct_tokens": 1072
+        }, 
+        "frequent-entries": {
+            "most_common_values": {
+                "ELMER_SMITH": 2, 
+                "LARRY_BIITTNER": 1, 
+                "FRANK_ISBELL": 1, 
+                "EDDIE_STANKY": 1, 
+                "JOHN_WARNER": 1, 
+                "DICK_GERNERT": 1, 
+                "MOE_BERG": 1, 
+                "GRAIG_NETTLES": 1, 
+                "BARNEY_McCOSKY": 1, 
+                "MATT_SINATRO": 1
+            }, 
+            "most_common_tokens_puncs": {
+                "JOE": 31, 
+                "JIM": 29, 
+                "BOB": 24, 
+                "BILL": 22, 
+                "GEORGE": 20, 
+                "MIKE": 19, 
+                "JOHN": 18, 
+                "JOHNNY": 17, 
+                "FRANK": 17, 
+                "JACK": 17
+            }, 
+            "most_common_punctuations": {
+                "-": {
+                    "count": 6, 
+                    "density_of_cell": 0.00038940556181935493, 
+                    "density_of_all": 0.0004730741938027281, 
+                    "num_outlier_cells": 6
+                }, 
+                "_": {
+                    "count": 1073, 
+                    "density_of_cell": 0.08712098316560832, 
+                    "density_of_all": 0.08460143499172121, 
+                    "num_outlier_cells": 5
+                }, 
+                ".": {
+                    "count": 16, 
+                    "density_of_cell": 0.0009693863142139004, 
+                    "density_of_all": 0.0012615311834739415, 
+                    "num_outlier_cells": 8
+                }
+            }, 
+            "most_common_tokens": {
+                "ELMER_SMITH": 2, 
+                "J.C._MARTIN": 1, 
+                "DWIGHT_EVANS": 1, 
+                "AL_BUMBRY": 1, 
+                "HARRY_STEINFELDT": 1, 
+                "PEP_YOUNG": 1, 
+                "DAVE_ROBERTS": 1, 
+                "BENNY_AYALA": 1, 
+                "MIGUEL_DILONE": 1, 
+                "JOHN_WARNER": 1
+            }
+        }, 
+        "special_type": {
+            "num_filename": 0
+        }, 
+        "length": {
+            "token": {
+                "average": 11.82013047530289, 
+                "standard-deviation": 2.0278575705024005
+            }, 
+            "character": {
+                "average": 11.82013047530289, 
+                "standard-deviation": 2.0278575705024005
+            }
+        }
+    }, 
+    "Position": {
+        "numeric_stats": {
+            "numeric_density": 0.0
+        }, 
+        "missing": {
+            "num_nonblank": 1073, 
+            "leading_space": 0, 
+            "trailing_space": 0, 
+            "num_missing": 0
+        }, 
+        "distinct": {
+            "ratio_distinct_tokens": 0.0065237651444548, 
+            "num_distinct_tokens_puncs": 9, 
+            "ratio_distinct_tokens_puncs": 0.0063335679099225895, 
+            "num_distinct_values": 7, 
+            "ratio_distinct_values": 0.0065237651444548, 
+            "num_distinct_tokens": 7
+        }, 
+        "frequent-entries": {
+            "most_common_values": {
+                "Outfield": 403, 
+                "Catcher": 191, 
+                "Shortstop": 131, 
+                "Second_base": 117, 
+                "Third_base": 116, 
+                "First_base": 108, 
+                "Designated_hitter": 7
+            }, 
+            "most_common_tokens_puncs": {
+                "Outfield": 403, 
+                "base": 341, 
+                "Catcher": 191, 
+                "Shortstop": 131, 
+                "Second": 117, 
+                "Third": 116, 
+                "First": 108, 
+                "hitter": 7, 
+                "Designated": 7
+            }, 
+            "most_common_punctuations": {
+                "_": {
+                    "count": 348, 
+                    "density_of_cell": 0.031172533403770825, 
+                    "density_of_all": 0.037076496910291926, 
+                    "num_outlier_cells": 0
+                }
+            }, 
+            "most_common_tokens": {
+                "Outfield": 403, 
+                "Catcher": 191, 
+                "Shortstop": 131, 
+                "Second_base": 117, 
+                "Third_base": 116, 
+                "First_base": 108, 
+                "Designated_hitter": 7
+            }, 
+            "most_common_alphanumeric_tokens": {
+                "Outfield": 403, 
+                "Catcher": 191, 
+                "Shortstop": 131
+            }
+        }, 
+        "special_type": {
+            "num_filename": 0
+        }, 
+        "length": {
+            "token": {
+                "average": 8.74743709226468, 
+                "standard-deviation": 1.4450621829838481
+            }, 
+            "character": {
+                "average": 8.74743709226468, 
+                "standard-deviation": 1.4450621829838481
+            }
+        }
+    }, 
+    "Walks": {
+        "numeric_stats": {
+            "contain_numeric_token_puncs": {
+                "count": 1073, 
+                "ratio": 1.0
+            }, 
+            "numeric": {
+                "Q1": 235.0, 
+                "count": 1073, 
+                "Q3": 587.0, 
+                "standard-deviation": 294.793314104618, 
+                "ratio": 1.0, 
+                "num_positive": 1073, 
+                "num_outlier": 19, 
+                "Q2": 382.0, 
+                "num_-1": 0, 
+                "num_0": 0, 
+                "num_1": 0, 
+                "num_negative": 0, 
+                "mean": 448.618825722274
+            }, 
+            "contain_numeric": {
+                "count": 1073, 
+                "ratio": 1.0
+            }, 
+            "numeric_density": 1.0, 
+            "integer": {
+                "Q1": 235.0, 
+                "count": 1073, 
+                "Q3": 587.0, 
+                "standard-deviation": 294.793314104618, 
+                "ratio": 1.0, 
+                "num_positive": 1073, 
+                "num_outlier": 19, 
+                "Q2": 382.0, 
+                "num_-1": 0, 
+                "num_0": 0, 
+                "num_1": 0, 
+                "num_negative": 0, 
+                "mean": 448.618825722274
+            }, 
+            "contain_numeric_token": {
+                "count": 1073, 
+                "ratio": 1.0
+            }
+        }, 
+        "missing": {
+            "num_nonblank": 1073, 
+            "leading_space": 0, 
+            "trailing_space": 0, 
+            "num_missing": 0
+        }, 
+        "distinct": {
+            "ratio_distinct_tokens": 0.5852749301025163, 
+            "num_distinct_tokens_puncs": 628, 
+            "ratio_distinct_tokens_puncs": 0.5852749301025163, 
+            "num_distinct_values": 628, 
+            "ratio_distinct_values": 0.5852749301025163, 
+            "num_distinct_tokens": 628
+        }, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "190": 6, 
+                "298": 5, 
+                "299": 5, 
+                "331": 5, 
+                "333": 5, 
+                "236": 5, 
+                "142": 5, 
+                "245": 5, 
+                "246": 5, 
+                "243": 5
+            }, 
+            "most_common_tokens_puncs": {
+                "190": 6, 
+                "298": 5, 
+                "299": 5, 
+                "331": 5, 
+                "333": 5, 
+                "236": 5, 
+                "142": 5, 
+                "245": 5, 
+                "246": 5, 
+                "243": 5
+            }, 
+            "most_common_values": {
+                "190": 6, 
+                "142": 5, 
+                "299": 5, 
+                "331": 5, 
+                "456": 5, 
+                "314": 5, 
+                "333": 5, 
+                "369": 5, 
+                "389": 5, 
+                "236": 5
+            }, 
+            "most_common_tokens": {
+                "190": 6, 
+                "298": 5, 
+                "299": 5, 
+                "331": 5, 
+                "333": 5, 
+                "236": 5, 
+                "142": 5, 
+                "245": 5, 
+                "246": 5, 
+                "243": 5
+            }, 
+            "most_common_alphanumeric_tokens": {
+                "190": 6, 
+                "298": 5, 
+                "299": 5, 
+                "331": 5, 
+                "333": 5, 
+                "236": 5, 
+                "142": 5, 
+                "245": 5, 
+                "246": 5, 
+                "243": 5
+            }
+        }, 
+        "special_type": {
+            "num_filename": 0
+        }, 
+        "length": {
+            "token": {
+                "average": 3.0139794967381173, 
+                "standard-deviation": 0.3096554228856774
+            }, 
+            "character": {
+                "average": 3.0139794967381173, 
+                "standard-deviation": 0.3096554228856774
+            }
+        }
+    }, 
+    "Hits": {
+        "numeric_stats": {
+            "contain_numeric_token_puncs": {
+                "count": 1073, 
+                "ratio": 1.0
+            }, 
+            "numeric": {
+                "Q1": 778.0, 
+                "count": 1073, 
+                "Q3": 1617.0, 
+                "standard-deviation": 654.8054733448785, 
+                "ratio": 1.0, 
+                "num_positive": 1073, 
+                "num_outlier": 10, 
+                "Q2": 1177.0, 
+                "num_-1": 0, 
+                "num_0": 0, 
+                "num_1": 0, 
+                "num_negative": 0, 
+                "mean": 1260.7949673811743
+            }, 
+            "contain_numeric": {
+                "count": 1073, 
+                "ratio": 1.0
+            }, 
+            "numeric_density": 1.0, 
+            "integer": {
+                "Q1": 778.0, 
+                "count": 1073, 
+                "Q3": 1617.0, 
+                "standard-deviation": 654.8054733448785, 
+                "ratio": 1.0, 
+                "num_positive": 1073, 
+                "num_outlier": 10, 
+                "Q2": 1177.0, 
+                "num_-1": 0, 
+                "num_0": 0, 
+                "num_1": 0, 
+                "num_negative": 0, 
+                "mean": 1260.7949673811743
+            }, 
+            "contain_numeric_token": {
+                "count": 1073, 
+                "ratio": 1.0
+            }
+        }, 
+        "missing": {
+            "num_nonblank": 1073, 
+            "leading_space": 0, 
+            "trailing_space": 0, 
+            "num_missing": 0
+        }, 
+        "distinct": {
+            "ratio_distinct_tokens": 0.7977632805219013, 
+            "num_distinct_tokens_puncs": 856, 
+            "ratio_distinct_tokens_puncs": 0.7977632805219013, 
+            "num_distinct_values": 856, 
+            "ratio_distinct_values": 0.7977632805219013, 
+            "num_distinct_tokens": 856
+        }, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "1064": 4, 
+                "972": 4, 
+                "699": 4, 
+                "833": 4, 
+                "786": 4, 
+                "1103": 4, 
+                "877": 4, 
+                "1122": 3, 
+                "1455": 3, 
+                "432": 3
+            }, 
+            "most_common_tokens_puncs": {
+                "1064": 4, 
+                "972": 4, 
+                "699": 4, 
+                "833": 4, 
+                "786": 4, 
+                "1103": 4, 
+                "877": 4, 
+                "1122": 3, 
+                "1455": 3, 
+                "432": 3
+            }, 
+            "most_common_values": {
+                "833": 4, 
+                "786": 4, 
+                "972": 4, 
+                "877": 4, 
+                "699": 4, 
+                "1064": 4, 
+                "1103": 4, 
+                "1230": 3, 
+                "731": 3, 
+                "1016": 3
+            }, 
+            "most_common_tokens": {
+                "1064": 4, 
+                "972": 4, 
+                "699": 4, 
+                "833": 4, 
+                "786": 4, 
+                "1103": 4, 
+                "877": 4, 
+                "1122": 3, 
+                "1455": 3, 
+                "432": 3
+            }, 
+            "most_common_alphanumeric_tokens": {
+                "1064": 4, 
+                "972": 4, 
+                "699": 4, 
+                "833": 4, 
+                "786": 4, 
+                "1103": 4, 
+                "877": 4, 
+                "1122": 3, 
+                "1455": 3, 
+                "432": 3
+            }
+        }, 
+        "special_type": {
+            "num_filename": 0
+        }, 
+        "length": {
+            "token": {
+                "average": 3.615097856477167, 
+                "standard-deviation": 0.48871157779756574
+            }, 
+            "character": {
+                "average": 3.615097856477167, 
+                "standard-deviation": 0.48871157779756574
+            }
+        }
+    }, 
+    "Doubles": {
+        "numeric_stats": {
+            "contain_numeric_token_puncs": {
+                "count": 1073, 
+                "ratio": 1.0
+            }, 
+            "numeric": {
+                "Q1": 117.0, 
+                "count": 1073, 
+                "Q3": 266.0, 
+                "standard-deviation": 118.14051269101715, 
+                "ratio": 1.0, 
+                "num_positive": 1073, 
+                "num_outlier": 9, 
+                "Q2": 186.0, 
+                "num_-1": 0, 
+                "num_0": 0, 
+                "num_1": 0, 
+                "num_negative": 0, 
+                "mean": 205.42218080149115
+            }, 
+            "contain_numeric": {
+                "count": 1073, 
+                "ratio": 1.0
+            }, 
+            "numeric_density": 1.0, 
+            "integer": {
+                "Q1": 117.0, 
+                "count": 1073, 
+                "Q3": 266.0, 
+                "standard-deviation": 118.14051269101715, 
+                "ratio": 1.0, 
+                "num_positive": 1073, 
+                "num_outlier": 9, 
+                "Q2": 186.0, 
+                "num_-1": 0, 
+                "num_0": 0, 
+                "num_1": 0, 
+                "num_negative": 0, 
+                "mean": 205.42218080149115
+            }, 
+            "contain_numeric_token": {
+                "count": 1073, 
+                "ratio": 1.0
+            }
+        }, 
+        "missing": {
+            "num_nonblank": 1073, 
+            "leading_space": 0, 
+            "trailing_space": 0, 
+            "num_missing": 0
+        }, 
+        "distinct": {
+            "ratio_distinct_tokens": 0.36439888164026096, 
+            "num_distinct_tokens_puncs": 391, 
+            "ratio_distinct_tokens_puncs": 0.36439888164026096, 
+            "num_distinct_values": 391, 
+            "ratio_distinct_values": 0.36439888164026096, 
+            "num_distinct_tokens": 391
+        }, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "128": 8, 
+                "191": 8, 
+                "190": 8, 
+                "216": 8, 
+                "244": 8, 
+                "157": 8, 
+                "112": 8, 
+                "68": 7, 
+                "91": 7, 
+                "147": 7
+            }, 
+            "most_common_tokens_puncs": {
+                "128": 8, 
+                "191": 8, 
+                "190": 8, 
+                "216": 8, 
+                "244": 8, 
+                "157": 8, 
+                "112": 8, 
+                "68": 7, 
+                "91": 7, 
+                "147": 7
+            }, 
+            "most_common_values": {
+                "216": 8, 
+                "157": 8, 
+                "191": 8, 
+                "190": 8, 
+                "244": 8, 
+                "112": 8, 
+                "128": 8, 
+                "91": 7, 
+                "186": 7, 
+                "73": 7
+            }, 
+            "most_common_tokens": {
+                "128": 8, 
+                "191": 8, 
+                "190": 8, 
+                "216": 8, 
+                "244": 8, 
+                "157": 8, 
+                "112": 8, 
+                "68": 7, 
+                "91": 7, 
+                "147": 7
+            }, 
+            "most_common_alphanumeric_tokens": {
+                "128": 8, 
+                "191": 8, 
+                "190": 8, 
+                "216": 8, 
+                "244": 8, 
+                "157": 8, 
+                "112": 8, 
+                "68": 7, 
+                "91": 7, 
+                "147": 7
+            }
+        }, 
+        "special_type": {
+            "num_filename": 0
+        }, 
+        "length": {
+            "token": {
+                "average": 2.81547064305685, 
+                "standard-deviation": 0.39049240265945506
+            }, 
+            "character": {
+                "average": 2.81547064305685, 
+                "standard-deviation": 0.39049240265945506
+            }
+        }
+    }, 
+    "Games_played": {
+        "numeric_stats": {
+            "contain_numeric_token_puncs": {
+                "count": 1073, 
+                "ratio": 1.0
+            }, 
+            "numeric": {
+                "Q1": 964.0, 
+                "count": 1073, 
+                "Q3": 1659.0, 
+                "standard-deviation": 525.1637100097523, 
+                "ratio": 1.0, 
+                "num_positive": 1073, 
+                "num_outlier": 7, 
+                "Q2": 1287.0, 
+                "num_-1": 0, 
+                "num_0": 0, 
+                "num_1": 0, 
+                "num_negative": 0, 
+                "mean": 1342.6123019571296
+            }, 
+            "contain_numeric": {
+                "count": 1073, 
+                "ratio": 1.0
+            }, 
+            "numeric_density": 1.0, 
+            "integer": {
+                "Q1": 964.0, 
+                "count": 1073, 
+                "Q3": 1659.0, 
+                "standard-deviation": 525.1637100097523, 
+                "ratio": 1.0, 
+                "num_positive": 1073, 
+                "num_outlier": 7, 
+                "Q2": 1287.0, 
+                "num_-1": 0, 
+                "num_0": 0, 
+                "num_1": 0, 
+                "num_negative": 0, 
+                "mean": 1342.6123019571296
+            }, 
+            "contain_numeric_token": {
+                "count": 1073, 
+                "ratio": 1.0
+            }
+        }, 
+        "missing": {
+            "num_nonblank": 1073, 
+            "leading_space": 0, 
+            "trailing_space": 0, 
+            "num_missing": 0
+        }, 
+        "distinct": {
+            "ratio_distinct_tokens": 0.7791239515377446, 
+            "num_distinct_tokens_puncs": 836, 
+            "ratio_distinct_tokens_puncs": 0.7791239515377446, 
+            "num_distinct_values": 836, 
+            "ratio_distinct_values": 0.7791239515377446, 
+            "num_distinct_tokens": 836
+        }, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "813": 4, 
+                "1010": 4, 
+                "1435": 4, 
+                "1421": 4, 
+                "730": 4, 
+                "989": 4, 
+                "1806": 4, 
+                "1941": 3, 
+                "1264": 3, 
+                "1062": 3
+            }, 
+            "most_common_tokens_puncs": {
+                "813": 4, 
+                "1010": 4, 
+                "1435": 4, 
+                "1421": 4, 
+                "730": 4, 
+                "989": 4, 
+                "1806": 4, 
+                "1941": 3, 
+                "1264": 3, 
+                "1062": 3
+            }, 
+            "most_common_values": {
+                "1421": 4, 
+                "1806": 4, 
+                "989": 4, 
+                "730": 4, 
+                "1435": 4, 
+                "813": 4, 
+                "1010": 4, 
+                "1042": 3, 
+                "733": 3, 
+                "1415": 3
+            }, 
+            "most_common_tokens": {
+                "813": 4, 
+                "1010": 4, 
+                "1435": 4, 
+                "1421": 4, 
+                "730": 4, 
+                "989": 4, 
+                "1806": 4, 
+                "1941": 3, 
+                "1264": 3, 
+                "1062": 3
+            }, 
+            "most_common_alphanumeric_tokens": {
+                "813": 4, 
+                "1010": 4, 
+                "1435": 4, 
+                "1421": 4, 
+                "730": 4, 
+                "989": 4, 
+                "1806": 4, 
+                "1941": 3, 
+                "1264": 3, 
+                "1062": 3
+            }
+        }, 
+        "special_type": {
+            "num_filename": 0
+        }, 
+        "length": {
+            "token": {
+                "average": 3.722273998136067, 
+                "standard-deviation": 0.4480863658636572
+            }, 
+            "character": {
+                "average": 3.722273998136067, 
+                "standard-deviation": 0.4480863658636572
+            }
+        }
+    }, 
+    "d3mIndex": {
+        "numeric_stats": {
+            "contain_numeric_token_puncs": {
+                "count": 1073, 
+                "ratio": 1.0
+            }, 
+            "numeric": {
+                "Q1": 268.0, 
+                "count": 1073, 
+                "Q3": 804.0, 
+                "standard-deviation": 309.89272337375075, 
+                "ratio": 1.0, 
+                "num_positive": 1072, 
+                "num_outlier": 0, 
+                "Q2": 536.0, 
+                "num_-1": 0, 
+                "num_0": 1, 
+                "num_1": 1, 
+                "num_negative": 0, 
+                "mean": 536.0
+            }, 
+            "contain_numeric": {
+                "count": 1073, 
+                "ratio": 1.0
+            }, 
+            "numeric_density": 1.0, 
+            "integer": {
+                "Q1": 268.0, 
+                "count": 1073, 
+                "Q3": 804.0, 
+                "standard-deviation": 309.89272337375075, 
+                "ratio": 1.0, 
+                "num_positive": 1072, 
+                "num_outlier": 0, 
+                "Q2": 536.0, 
+                "num_-1": 0, 
+                "num_0": 1, 
+                "num_1": 1, 
+                "num_negative": 0, 
+                "mean": 536.0
+            }, 
+            "contain_numeric_token": {
+                "count": 1073, 
+                "ratio": 1.0
+            }
+        }, 
+        "missing": {
+            "num_nonblank": 1073, 
+            "leading_space": 0, 
+            "trailing_space": 0, 
+            "num_missing": 0
+        }, 
+        "distinct": {
+            "ratio_distinct_tokens": 1.0, 
+            "num_distinct_tokens_puncs": 1073, 
+            "ratio_distinct_tokens_puncs": 1.0, 
+            "num_distinct_values": 1073, 
+            "ratio_distinct_values": 1.0, 
+            "num_distinct_tokens": 1073
+        }, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "344": 1, 
+                "345": 1, 
+                "346": 1, 
+                "347": 1, 
+                "340": 1, 
+                "341": 1, 
+                "342": 1, 
+                "343": 1, 
+                "348": 1, 
+                "349": 1
+            }, 
+            "most_common_tokens_puncs": {
+                "344": 1, 
+                "345": 1, 
+                "346": 1, 
+                "347": 1, 
+                "340": 1, 
+                "341": 1, 
+                "342": 1, 
+                "343": 1, 
+                "348": 1, 
+                "349": 1
+            }, 
+            "most_common_values": {
+                "797": 1, 
+                "796": 1, 
+                "795": 1, 
+                "794": 1, 
+                "793": 1, 
+                "84": 1, 
+                "395": 1, 
+                "87": 1, 
+                "823": 1, 
+                "85": 1
+            }, 
+            "most_common_tokens": {
+                "344": 1, 
+                "345": 1, 
+                "346": 1, 
+                "347": 1, 
+                "340": 1, 
+                "341": 1, 
+                "342": 1, 
+                "343": 1, 
+                "348": 1, 
+                "349": 1
+            }, 
+            "most_common_alphanumeric_tokens": {
+                "344": 1, 
+                "345": 1, 
+                "346": 1, 
+                "347": 1, 
+                "340": 1, 
+                "341": 1, 
+                "342": 1, 
+                "343": 1, 
+                "348": 1, 
+                "349": 1
+            }
+        }, 
+        "special_type": {
+            "num_filename": 0
+        }, 
+        "length": {
+            "token": {
+                "average": 2.9655172413793105, 
+                "standard-deviation": 0.43379200292460224
+            }, 
+            "character": {
+                "average": 2.9655172413793105, 
+                "standard-deviation": 0.43379200292460224
+            }
+        }
+    }, 
+    "Slugging_pct": {
+        "numeric_stats": {
+            "contain_numeric_token_puncs": {
+                "count": 2146, 
+                "ratio": 1.0
+            }, 
+            "decimal": {
+                "Q1": 0.344, 
+                "count": 1073, 
+                "Q3": 0.426, 
+                "standard-deviation": 0.06046791222147383, 
+                "ratio": 1.0, 
+                "num_positive": 1073, 
+                "num_outlier": 7, 
+                "Q2": 0.381, 
+                "num_-1": 0, 
+                "num_0": 0, 
+                "num_1": 0, 
+                "num_negative": 0, 
+                "mean": 0.38626095060577814
+            }, 
+            "numeric": {
+                "Q1": 0.344, 
+                "count": 1073, 
+                "Q3": 0.426, 
+                "standard-deviation": 0.06046791222147383, 
+                "ratio": 1.0, 
+                "num_positive": 1073, 
+                "num_outlier": 7, 
+                "Q2": 0.381, 
+                "num_-1": 0, 
+                "num_0": 0, 
+                "num_1": 0, 
+                "num_negative": 0, 
+                "mean": 0.38626095060577814
+            }, 
+            "contain_numeric": {
+                "count": 1073, 
+                "ratio": 1.0
+            }, 
+            "numeric_density": 0.795033428844317, 
+            "contain_numeric_token": {
+                "count": 1073, 
+                "ratio": 1.0
+            }
+        }, 
+        "missing": {
+            "num_nonblank": 1073, 
+            "leading_space": 0, 
+            "trailing_space": 0, 
+            "num_missing": 0
+        }, 
+        "distinct": {
+            "ratio_distinct_tokens": 0.2413793103448276, 
+            "num_distinct_tokens_puncs": 260, 
+            "ratio_distinct_tokens_puncs": 0.1211556383970177, 
+            "num_distinct_values": 259, 
+            "ratio_distinct_values": 0.2413793103448276, 
+            "num_distinct_tokens": 259
+        }, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "0.351": 13, 
+                "0.403": 12, 
+                "0.367": 11, 
+                "0.364": 11, 
+                "0.343": 11, 
+                "0.333": 11, 
+                "0.37": 11, 
+                "0.379": 11, 
+                "0.355": 11, 
+                "0.42": 10
+            }, 
+            "most_common_tokens_puncs": {
+                "0": 1073, 
+                "351": 13, 
+                "403": 12, 
+                "343": 11, 
+                "367": 11, 
+                "364": 11, 
+                "37": 11, 
+                "333": 11, 
+                "355": 11, 
+                "379": 11
+            }, 
+            "most_common_values": {
+                "0.351": 13, 
+                "0.403": 12, 
+                "0.37": 11, 
+                "0.333": 11, 
+                "0.379": 11, 
+                "0.367": 11, 
+                "0.364": 11, 
+                "0.355": 11, 
+                "0.343": 11, 
+                "0.408": 10
+            }, 
+            "most_common_tokens": {
+                "0.351": 13, 
+                "0.403": 12, 
+                "0.367": 11, 
+                "0.364": 11, 
+                "0.343": 11, 
+                "0.333": 11, 
+                "0.37": 11, 
+                "0.379": 11, 
+                "0.355": 11, 
+                "0.42": 10
+            }
+        }, 
+        "special_type": {
+            "num_filename": 0
+        }, 
+        "length": {
+            "token": {
+                "average": 4.878844361602982, 
+                "standard-deviation": 0.3591160465586076
+            }, 
+            "character": {
+                "average": 4.878844361602982, 
+                "standard-deviation": 0.3591160465586076
+            }
+        }
+    }, 
+    "On_base_pct": {
+        "numeric_stats": {
+            "contain_numeric_token_puncs": {
+                "count": 2146, 
+                "ratio": 1.0
+            }, 
+            "decimal": {
+                "Q1": 0.315, 
+                "count": 1073, 
+                "Q3": 0.358, 
+                "standard-deviation": 0.03341018897404771, 
+                "ratio": 1.0, 
+                "num_positive": 1073, 
+                "num_outlier": 5, 
+                "Q2": 0.335, 
+                "num_-1": 0, 
+                "num_0": 0, 
+                "num_1": 0, 
+                "num_negative": 0, 
+                "mean": 0.3364240447343896
+            }, 
+            "numeric": {
+                "Q1": 0.315, 
+                "count": 1073, 
+                "Q3": 0.358, 
+                "standard-deviation": 0.03341018897404771, 
+                "ratio": 1.0, 
+                "num_positive": 1073, 
+                "num_outlier": 5, 
+                "Q2": 0.335, 
+                "num_-1": 0, 
+                "num_0": 0, 
+                "num_1": 0, 
+                "num_negative": 0, 
+                "mean": 0.3364240447343896
+            }, 
+            "contain_numeric": {
+                "count": 1073, 
+                "ratio": 1.0
+            }, 
+            "numeric_density": 0.795346175853519, 
+            "contain_numeric_token": {
+                "count": 1073, 
+                "ratio": 1.0
+            }
+        }, 
+        "missing": {
+            "num_nonblank": 1073, 
+            "leading_space": 0, 
+            "trailing_space": 0, 
+            "num_missing": 0
+        }, 
+        "distinct": {
+            "ratio_distinct_tokens": 0.15563839701770738, 
+            "num_distinct_tokens_puncs": 168, 
+            "ratio_distinct_tokens_puncs": 0.0782851817334576, 
+            "num_distinct_values": 167, 
+            "ratio_distinct_values": 0.15563839701770738, 
+            "num_distinct_tokens": 167
+        }, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "0.351": 19, 
+                "0.329": 19, 
+                "0.34": 19, 
+                "0.346": 18, 
+                "0.333": 17, 
+                "0.323": 17, 
+                "0.318": 17, 
+                "0.316": 17, 
+                "0.331": 16, 
+                "0.33": 16
+            }, 
+            "most_common_tokens_puncs": {
+                "0": 1073, 
+                "34": 19, 
+                "329": 19, 
+                "351": 19, 
+                "346": 18, 
+                "318": 17, 
+                "316": 17, 
+                "333": 17, 
+                "323": 17, 
+                "33": 16
+            }, 
+            "most_common_values": {
+                "0.329": 19, 
+                "0.34": 19, 
+                "0.351": 19, 
+                "0.346": 18, 
+                "0.318": 17, 
+                "0.323": 17, 
+                "0.333": 17, 
+                "0.316": 17, 
+                "0.331": 16, 
+                "0.33": 16
+            }, 
+            "most_common_tokens": {
+                "0.351": 19, 
+                "0.329": 19, 
+                "0.34": 19, 
+                "0.346": 18, 
+                "0.333": 17, 
+                "0.323": 17, 
+                "0.318": 17, 
+                "0.316": 17, 
+                "0.331": 16, 
+                "0.33": 16
+            }
+        }, 
+        "special_type": {
+            "num_filename": 0
+        }, 
+        "length": {
+            "token": {
+                "average": 4.8863000931966445, 
+                "standard-deviation": 0.35107592006731353
+            }, 
+            "character": {
+                "average": 4.8863000931966445, 
+                "standard-deviation": 0.35107592006731353
+            }
+        }
+    }
+}
