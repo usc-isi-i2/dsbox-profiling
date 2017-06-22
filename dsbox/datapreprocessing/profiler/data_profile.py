@@ -18,12 +18,6 @@ def profile_data(data_path, punctuation_outlier_weight=3,
     data_path: file or pandas DataFrame that needs to be profiled
     ----------
     """
-    ## hyper-parameters
-    #punctuation_outlier_weight = 3;
-    #numerical_outlier_weight = 3;
-    #token_delimiter = " ";
-    #detect_language = False;
-
     # STEP 1: get dependency and read data
     
     isDF = False
@@ -47,39 +41,41 @@ def profile_data(data_path, punctuation_outlier_weight=3,
         col = data[column_name]
         # dict: map feature name to content
         each_res = defaultdict(lambda: defaultdict())
-
-        if col.dtype == np.float:
+        
+        if col.dtype.kind in np.typecodes['AllInteger']+'uMmf':
             each_res["missing"]["num_missing"] = pd.isnull(col).sum()
-            each_res["special_type"]["dtype"] = "float"
-            fc_hih.compute_numerics(col, each_res)
-            fc_hih.compute_common_values(col.dropna().astype(str), each_res,topk)
-            each_res["distinct"]["num_distinct_values"] = col.nunique()
-            each_res["distinct"]["ratio_distinct_values"] = each_res["distinct"]["num_distinct_values"] / float(col.size)
-        elif col.dtype == np.integer:
-            ##probably no missing?
-            each_res["special_type"]["dtype"] = "integer"
-            fc_hih.compute_numerics(col, each_res)
-            fc_hih.compute_common_values(col.dropna().astype(str), each_res,topk)
-            each_res["distinct"]["num_distinct_values"] = col.nunique()
-            each_res["distinct"]["ratio_distinct_values"] = each_res["distinct"]["num_distinct_values"] / float(col.size)
-        elif col.dtype == 'datetime64[ns]':
-            each_res["special_type"]["dtype"] = "datetime64[ns]"
-            each_res["distinct"]["num_distinct_values"] = col.nunique()
-            each_res["distinct"]["ratio_distinct_values"] = each_res["distinct"]["num_distinct_values"] / float(col.size)
-        elif col.dtype == 'timedelta64[ns]':
-            each_res["special_type"]["dtype"] = "timedelta64[ns]"
-            each_res["distinct"]["num_distinct_values"] = col.nunique()
-            each_res["distinct"]["ratio_distinct_values"] = each_res["distinct"]["num_distinct_values"] / float(col.size)
-        elif col.dtype == bool:
-            ##probably no missing?
             each_res["missing"]["num_nonblank"] = col.count()
-            each_res["special_type"]["dtype"] = "bool"
+            each_res["special_type"]["dtype"] = str(col.dtype) 
+            ndistinct = col.nunique()
+            each_res["distinct"]["num_distinct_values"] = ndistinct
+            each_res["distinct"]["ratio_distinct_values"] = ndistinct/ float(col.size)
+        
+        if col.dtype.kind == 'b':
+            each_res["special_type"]["data_type"] = 'bool'
             fc_hih.compute_common_values(col.dropna().astype(str), each_res, topk)
-            each_res["distinct"]["num_distinct_values"] = col.nunique()
-            each_res["distinct"]["ratio_distinct_values"] = each_res["distinct"]["num_distinct_values"] / float(col.size)
-        elif col.dtype == object:
+            
+        elif col.dtype.kind in np.typecodes['AllInteger']+'u':
+            each_res["special_type"]["data_type"] = 'integer'
+            fc_hih.compute_numerics(col, each_res)
+            fc_hih.compute_common_values(col.dropna().astype(str), each_res,topk)
+       
+        elif col.dtype.kind == 'f':
+            each_res["special_type"]["data_type"] = "float"
+            fc_hih.compute_numerics(col, each_res)
+            fc_hih.compute_common_values(col.dropna().astype(str), each_res,topk)
+ 
+        elif col.dtype.kind == 'M':
+            each_res["special_type"]["data_type"] = "datetime" 
+            
+        elif col.dtype.kind == 'm':
+            each_res["special_type"]["data_type"] = "timedelta"
+
+        else:
             if isDF:
-                col = col.fillna('').astype(str)
+                if col.dtype.name == 'category':
+                    each_res["special_type"]["data_type"] = 'category'
+                col = col.astype(object).fillna('').astype(str)
+
             # compute_missing_space Must be put as the first one because it may change the data content, see function def for details
             fc_lfh.compute_missing_space(col, each_res)
             fc_lfh.compute_filename(col, each_res)    
@@ -95,11 +91,9 @@ def profile_data(data_path, punctuation_outlier_weight=3,
             fc_hih.compute_numeric_density(col, each_res)
             fc_hih.compute_contain_numeric_values(col, each_res)
             fc_hih.compute_common_tokens_by_puncs(col, each_res, topk)
-            #if not each_res["numeric_stats"]: del each_res["numeric_stats"]
-        else:
-            print "cannot recoginze dtype of the column, please make it some recognizable dtype first."
-
+       
         if not each_res["numeric_stats"]: del each_res["numeric_stats"]
+        
         result[column_name] = each_res # add this column features into final result
 
     print "====================calculations finished ====================\n"
