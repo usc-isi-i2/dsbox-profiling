@@ -39,6 +39,8 @@ the output JSON format:
     "special_type": {
     	"language": "language code, en, sp, etc.",
     	"num_filename": "number of cell that content might be a filename"
+        "data_type": "general data type of the column, for most common types other than object"
+        "dtype": "dtype of the column, most are subdtypes of numpy.generic, except category"
     },
 
     "length": {
