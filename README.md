@@ -41,6 +41,16 @@ profiles for tabular data. We use DataFrame (supported by
 the output JSON format:
 
 #### 1. columns format
+profile for each column, the first level is:
+
+* missing
+* special_type
+* length
+* numeric_stats
+* distinct
+* frequent-entries
+
+detail format is shown below:
 
 ```json
 {
