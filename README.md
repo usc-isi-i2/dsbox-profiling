@@ -18,10 +18,18 @@ profiles for tabular data. We use DataFrame (supported by
 
 1. install
 
+	use pip:
+	
 	```shell
 	pip install dsbox-datapreprocessing
 	```
-
+	
+	Or, if you have [conda](https://conda.io/docs/using/envs.html):
+	
+	```shell
+	conda-env create .
+	source activate etk_env
+	```
 2. To profile a csv data file, do:
 
 	```python
