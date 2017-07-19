@@ -24,12 +24,19 @@ def profile_data(data_path, punctuation_outlier_weight=3,
     ## csv as input ##
     if not isinstance(data_path, pd.DataFrame):
         data = pd.read_csv(data_path, dtype = object)   # all read as str
-    
+        data_for_corr = pd.read_csv(data_path)
+        corr_pearson = data_for_corr.corr()
+        corr_spearman = data_for_corr.corr(method='spearman')
+
     ## data frame as imput ##
     else:
         data = data_path
         isDF = True
-    
+        corr_pearson = data.corr()
+        corr_spearman = data.corr(method='spearman')
+
+    corr_columns = list(corr_pearson.columns)
+
     print "====================have a look on the data: ====================\n"
     print data.head()
 
@@ -42,6 +49,14 @@ def profile_data(data_path, punctuation_outlier_weight=3,
         # dict: map feature name to content
         each_res = defaultdict(lambda: defaultdict())
         
+        if column_name in corr_columns:
+            corr_dict = {}
+            corr_dict["columns"] = corr_columns
+            corr_dict["pearson"] = list(corr_pearson[column_name])
+            corr_dict["spearman"] = list(corr_spearman[column_name])
+
+            each_res["numeric_stats"]["correlation"] = corr_dict
+
         if col.dtype.kind in np.typecodes['AllInteger']+'uMmf':
             each_res["missing"]["num_missing"] = pd.isnull(col).sum()
             each_res["missing"]["num_nonblank"] = col.count()

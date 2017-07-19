@@ -114,6 +114,11 @@ the output JSON format:
             "num_-1":"number of -1 and -1.0 in the column",
             "num_outlier": "number of outliers n sigma away from mean, default n = 3",
         },
+        "correlation": {
+            "columns": "column names (in order) in the correlation coefficient table",
+            "pearson": "pearson correlation coefficient of this column with others",
+            "spearman": "spearman correlation coefficient of this column with others"
+        },
         "numeric_density": "density of Arabic numbers of the column",
         "contain_numeric": {
             "count": "number of cells which contain numeric character(s)",
