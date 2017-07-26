@@ -1,49 +1,7 @@
 {
     "stoptm": {
-        "numeric_stats": {
-            "contain_numeric_token_puncs": {
-                "count": 1838, 
-                "ratio": 1.0
-            }, 
-            "decimal": {
-                "Q1": 1000.0, 
-                "count": 919, 
-                "Q3": 1835.5, 
-                "standard-deviation": 508.2098282557618, 
-                "ratio": 1.0, 
-                "num_positive": 915, 
-                "num_outlier": 0, 
-                "Q2": 1420.0, 
-                "num_-1": 0, 
-                "num_0": 4, 
-                "num_1": 0, 
-                "num_negative": 0, 
-                "mean": 1420.341675734494
-            }, 
-            "numeric": {
-                "Q1": 1000.0, 
-                "count": 919, 
-                "Q3": 1835.5, 
-                "standard-deviation": 508.2098282557618, 
-                "ratio": 1.0, 
-                "num_positive": 915, 
-                "num_outlier": 0, 
-                "Q2": 1420.0, 
-                "num_-1": 0, 
-                "num_0": 4, 
-                "num_1": 0, 
-                "num_negative": 0, 
-                "mean": 1420.341675734494
-            }, 
-            "contain_numeric": {
-                "count": 919, 
-                "ratio": 1.0
-            }, 
-            "numeric_density": 0.8258150113722517, 
-            "contain_numeric_token": {
-                "count": 919, 
-                "ratio": 1.0
-            }
+        "special_type": {
+            "num_filename": 0
         }, 
         "missing": {
             "num_nonblank": 919, 
@@ -109,8 +67,127 @@
                 "1700.0": 24
             }
         }, 
-        "special_type": {
-            "num_filename": 0
+        "numeric_stats": {
+            "contain_numeric_token_puncs": {
+                "count": 1838, 
+                "ratio": 1.0
+            }, 
+            "decimal": {
+                "Q1": 1000.0, 
+                "count": 919, 
+                "Q3": 1835.5, 
+                "standard-deviation": 508.2098282557618, 
+                "ratio": 1.0, 
+                "num_positive": 915, 
+                "num_outlier": 0, 
+                "Q2": 1420.0, 
+                "num_-1": 0, 
+                "num_0": 4, 
+                "num_1": 0, 
+                "num_negative": 0, 
+                "mean": 1420.341675734494
+            }, 
+            "numeric": {
+                "Q1": 1000.0, 
+                "count": 919, 
+                "Q3": 1835.5, 
+                "standard-deviation": 508.2098282557618, 
+                "ratio": 1.0, 
+                "num_positive": 915, 
+                "num_outlier": 0, 
+                "Q2": 1420.0, 
+                "num_-1": 0, 
+                "num_0": 4, 
+                "num_1": 0, 
+                "num_negative": 0, 
+                "mean": 1420.341675734494
+            }, 
+            "contain_numeric": {
+                "count": 919, 
+                "ratio": 1.0
+            }, 
+            "numeric_density": 0.8258150113722517, 
+            "correlation": {
+                "spearman": [
+                    0.004069274146006195, 
+                    NaN, 
+                    -0.027984925882750904, 
+                    -0.017401374167932415, 
+                    -0.04237296694431369, 
+                    -0.02300604471258892, 
+                    -0.03371189982623255, 
+                    -0.07650167580226243, 
+                    0.03784542540891526, 
+                    0.044104709103892234, 
+                    0.8441864946600205, 
+                    1.0, 
+                    -0.02440094890710133, 
+                    -0.01757981531641211, 
+                    0.025694549683962255, 
+                    0.03880891093408189, 
+                    0.04285368763654775, 
+                    0.017972455017675425, 
+                    -0.011634665187105693, 
+                    0.003535128685549257, 
+                    0.003535128685549257, 
+                    -0.007567849331242124, 
+                    0.0019519466978271812
+                ], 
+                "pearson": [
+                    0.003984278770583624, 
+                    NaN, 
+                    -0.033307265804396594, 
+                    -0.016961377903741973, 
+                    -0.01734295150758502, 
+                    -0.020911738578520956, 
+                    -0.017923678710914194, 
+                    -0.07283847624262804, 
+                    0.046007992045622975, 
+                    0.028692996075445513, 
+                    0.8394170658680927, 
+                    1.0, 
+                    -0.030839070312948184, 
+                    -0.02548653973487166, 
+                    0.010537387402260139, 
+                    0.024231461822663877, 
+                    0.06959947227402931, 
+                    0.009540764102509616, 
+                    -0.012368183024940624, 
+                    -0.003519821677695848, 
+                    -0.0035198216776958792, 
+                    -0.011542752286286016, 
+                    -0.005806050664593894
+                ], 
+                "columns": [
+                    "radonFile_index", 
+                    "stfips", 
+                    "zip", 
+                    "region", 
+                    "typebldg", 
+                    "floor", 
+                    "room", 
+                    "rep", 
+                    "stratum", 
+                    "wave", 
+                    "starttm", 
+                    "stoptm", 
+                    "startdt", 
+                    "stopdt", 
+                    "activity", 
+                    "pcterr", 
+                    "adjwt", 
+                    "dupflag", 
+                    "zipflag", 
+                    "cntyfips", 
+                    "fips", 
+                    "Uppm", 
+                    "county_code"
+                ]
+            }, 
+            "contain_numeric_token": {
+                "count": 919, 
+                "ratio": 1.0
+            }
         }, 
         "length": {
             "token": {
@@ -206,50 +283,8 @@
         }
     }, 
     "county_code": {
-        "numeric_stats": {
-            "contain_numeric_token_puncs": {
-                "count": 919, 
-                "ratio": 1.0
-            }, 
-            "numeric": {
-                "Q1": 20.0, 
-                "count": 919, 
-                "Q3": 69.0, 
-                "standard-deviation": 25.674840541422444, 
-                "ratio": 1.0, 
-                "num_positive": 915, 
-                "num_outlier": 0, 
-                "Q2": 43.0, 
-                "num_-1": 0, 
-                "num_0": 4, 
-                "num_1": 52, 
-                "num_negative": 0, 
-                "mean": 42.523394994559304
-            }, 
-            "contain_numeric": {
-                "count": 919, 
-                "ratio": 1.0
-            }, 
-            "numeric_density": 1.0, 
-            "integer": {
-                "Q1": 20.0, 
-                "count": 919, 
-                "Q3": 69.0, 
-                "standard-deviation": 25.674840541422444, 
-                "ratio": 1.0, 
-                "num_positive": 915, 
-                "num_outlier": 0, 
-                "Q2": 43.0, 
-                "num_-1": 0, 
-                "num_0": 4, 
-                "num_1": 52, 
-                "num_negative": 0, 
-                "mean": 42.523394994559304
-            }, 
-            "contain_numeric_token": {
-                "count": 919, 
-                "ratio": 1.0
-            }
+        "special_type": {
+            "num_filename": 0
         }, 
         "missing": {
             "num_nonblank": 919, 
@@ -327,8 +362,127 @@
                 "24": 14
             }
         }, 
-        "special_type": {
-            "num_filename": 0
+        "numeric_stats": {
+            "contain_numeric_token_puncs": {
+                "count": 919, 
+                "ratio": 1.0
+            }, 
+            "numeric": {
+                "Q1": 20.0, 
+                "count": 919, 
+                "Q3": 69.0, 
+                "standard-deviation": 25.674840541422444, 
+                "ratio": 1.0, 
+                "num_positive": 915, 
+                "num_outlier": 0, 
+                "Q2": 43.0, 
+                "num_-1": 0, 
+                "num_0": 4, 
+                "num_1": 52, 
+                "num_negative": 0, 
+                "mean": 42.523394994559304
+            }, 
+            "contain_numeric": {
+                "count": 919, 
+                "ratio": 1.0
+            }, 
+            "numeric_density": 1.0, 
+            "correlation": {
+                "spearman": [
+                    0.9978689776646315, 
+                    NaN, 
+                    0.04863626880354413, 
+                    -0.1504498871245418, 
+                    -0.0022659831351683588, 
+                    0.002074433878879463, 
+                    0.0656864593073401, 
+                    0.02759217507152567, 
+                    -0.18037562849217223, 
+                    -0.013829141764854395, 
+                    0.010500934008672181, 
+                    0.0019519466978271812, 
+                    0.06564982348642491, 
+                    0.04717116431082276, 
+                    -0.021945009312276862, 
+                    0.013709748926261214, 
+                    -0.173880951196189, 
+                    0.01677535200408342, 
+                    -0.02668051942204823, 
+                    0.9967740281605534, 
+                    0.9967740281605534, 
+                    0.06411598263507484, 
+                    1.0
+                ], 
+                "pearson": [
+                    0.9896945044231658, 
+                    NaN, 
+                    0.049117499579138725, 
+                    -0.1616415392785927, 
+                    -0.020204505983111565, 
+                    0.007162443009207689, 
+                    0.07335389208690717, 
+                    0.02868115600619082, 
+                    -0.19731625964809252, 
+                    -0.006636529533371902, 
+                    0.006621622811709846, 
+                    -0.005806050664593894, 
+                    0.06318864280462563, 
+                    0.05144114752645791, 
+                    -0.00834682714604455, 
+                    0.05912872044774686, 
+                    -0.22026969201573343, 
+                    0.014800102281645418, 
+                    -0.025110922081079113, 
+                    0.9992605689558017, 
+                    0.9992605689557886, 
+                    0.09270886744294181, 
+                    1.0
+                ], 
+                "columns": [
+                    "radonFile_index", 
+                    "stfips", 
+                    "zip", 
+                    "region", 
+                    "typebldg", 
+                    "floor", 
+                    "room", 
+                    "rep", 
+                    "stratum", 
+                    "wave", 
+                    "starttm", 
+                    "stoptm", 
+                    "startdt", 
+                    "stopdt", 
+                    "activity", 
+                    "pcterr", 
+                    "adjwt", 
+                    "dupflag", 
+                    "zipflag", 
+                    "cntyfips", 
+                    "fips", 
+                    "Uppm", 
+                    "county_code"
+                ]
+            }, 
+            "integer": {
+                "Q1": 20.0, 
+                "count": 919, 
+                "Q3": 69.0, 
+                "standard-deviation": 25.674840541422444, 
+                "ratio": 1.0, 
+                "num_positive": 915, 
+                "num_outlier": 0, 
+                "Q2": 43.0, 
+                "num_-1": 0, 
+                "num_0": 4, 
+                "num_1": 52, 
+                "num_negative": 0, 
+                "mean": 42.523394994559304
+            }, 
+            "contain_numeric_token": {
+                "count": 919, 
+                "ratio": 1.0
+            }
         }, 
         "length": {
             "token": {
@@ -342,50 +496,8 @@
         }
     }, 
     "startdt": {
-        "numeric_stats": {
-            "contain_numeric_token_puncs": {
-                "count": 1838, 
-                "ratio": 1.0
-            }, 
-            "decimal": {
-                "Q1": 12688.0, 
-                "count": 919, 
-                "Q3": 121687.0, 
-                "standard-deviation": 51281.333735117725, 
-                "ratio": 1.0, 
-                "num_positive": 919, 
-                "num_outlier": 0, 
-                "Q2": 22488.0, 
-                "num_-1": 0, 
-                "num_0": 0, 
-                "num_1": 0, 
-                "num_negative": 0, 
-                "mean": 58827.3231773667
-            }, 
-            "numeric": {
-                "Q1": 12688.0, 
-                "count": 919, 
-                "Q3": 121687.0, 
-                "standard-deviation": 51281.333735117725, 
-                "ratio": 1.0, 
-                "num_positive": 919, 
-                "num_outlier": 0, 
-                "Q2": 22488.0, 
-                "num_-1": 0, 
-                "num_0": 0, 
-                "num_1": 0, 
-                "num_negative": 0, 
-                "mean": 58827.3231773667
-            }, 
-            "contain_numeric": {
-                "count": 919, 
-                "ratio": 1.0
-            }, 
-            "numeric_density": 0.8647534952170713, 
-            "contain_numeric_token": {
-                "count": 919, 
-                "ratio": 1.0
-            }
+        "special_type": {
+            "num_filename": 0
         }, 
         "missing": {
             "num_nonblank": 919, 
@@ -451,8 +563,127 @@
                 "30388.0": 24
             }
         }, 
-        "special_type": {
-            "num_filename": 0
+        "numeric_stats": {
+            "contain_numeric_token_puncs": {
+                "count": 1838, 
+                "ratio": 1.0
+            }, 
+            "decimal": {
+                "Q1": 12688.0, 
+                "count": 919, 
+                "Q3": 121687.0, 
+                "standard-deviation": 51281.333735117725, 
+                "ratio": 1.0, 
+                "num_positive": 919, 
+                "num_outlier": 0, 
+                "Q2": 22488.0, 
+                "num_-1": 0, 
+                "num_0": 0, 
+                "num_1": 0, 
+                "num_negative": 0, 
+                "mean": 58827.3231773667
+            }, 
+            "numeric": {
+                "Q1": 12688.0, 
+                "count": 919, 
+                "Q3": 121687.0, 
+                "standard-deviation": 51281.333735117725, 
+                "ratio": 1.0, 
+                "num_positive": 919, 
+                "num_outlier": 0, 
+                "Q2": 22488.0, 
+                "num_-1": 0, 
+                "num_0": 0, 
+                "num_1": 0, 
+                "num_negative": 0, 
+                "mean": 58827.3231773667
+            }, 
+            "contain_numeric": {
+                "count": 919, 
+                "ratio": 1.0
+            }, 
+            "numeric_density": 0.8647534952170713, 
+            "correlation": {
+                "spearman": [
+                    0.061768426792214275, 
+                    NaN, 
+                    0.03423569205686297, 
+                    0.009846903713488304, 
+                    -0.06816015581241996, 
+                    0.03778631995048614, 
+                    0.04164925543170946, 
+                    -0.011632488924917741, 
+                    -0.03769056704654612, 
+                    -0.41767281340059315, 
+                    -0.03579654326245317, 
+                    -0.02440094890710133, 
+                    1.0, 
+                    0.8945360987181252, 
+                    -0.08344617772377654, 
+                    0.14059910512336732, 
+                    -0.04007924037485028, 
+                    -0.05389949812913695, 
+                    -0.04534826088384858, 
+                    0.06636083867848228, 
+                    0.06636083867848228, 
+                    0.010305507815389994, 
+                    0.06564982348642491
+                ], 
+                "pearson": [
+                    0.05591291520245877, 
+                    NaN, 
+                    0.04603275202110085, 
+                    -0.021004964500101583, 
+                    -0.06534640332865216, 
+                    0.012984098833842807, 
+                    0.02173806738942003, 
+                    -0.024444586736589072, 
+                    -0.04967346015391577, 
+                    -0.2653947070639042, 
+                    -0.05436435560292969, 
+                    -0.030839070312948184, 
+                    1.0, 
+                    0.9549925851617369, 
+                    -0.07129709174227483, 
+                    0.11146435875795836, 
+                    -0.05615652976564656, 
+                    -0.03270139612973825, 
+                    -0.030355619840213007, 
+                    0.06399245031642824, 
+                    0.06399245031642828, 
+                    -0.004356128854584652, 
+                    0.06318864280462563
+                ], 
+                "columns": [
+                    "radonFile_index", 
+                    "stfips", 
+                    "zip", 
+                    "region", 
+                    "typebldg", 
+                    "floor", 
+                    "room", 
+                    "rep", 
+                    "stratum", 
+                    "wave", 
+                    "starttm", 
+                    "stoptm", 
+                    "startdt", 
+                    "stopdt", 
+                    "activity", 
+                    "pcterr", 
+                    "adjwt", 
+                    "dupflag", 
+                    "zipflag", 
+                    "cntyfips", 
+                    "fips", 
+                    "Uppm", 
+                    "county_code"
+                ]
+            }, 
+            "contain_numeric_token": {
+                "count": 919, 
+                "ratio": 1.0
+            }
         }, 
         "length": {
             "token": {
@@ -466,50 +697,8 @@
         }
     }, 
     "radonFile_index": {
-        "numeric_stats": {
-            "contain_numeric_token_puncs": {
-                "count": 919, 
-                "ratio": 1.0
-            }, 
-            "numeric": {
-                "Q1": 5310.5, 
-                "count": 919, 
-                "Q3": 5769.5, 
-                "standard-deviation": 265.43674701643454, 
-                "ratio": 1.0, 
-                "num_positive": 919, 
-                "num_outlier": 0, 
-                "Q2": 5540.0, 
-                "num_-1": 0, 
-                "num_0": 0, 
-                "num_1": 0, 
-                "num_negative": 0, 
-                "mean": 5540.0
-            }, 
-            "contain_numeric": {
-                "count": 919, 
-                "ratio": 1.0
-            }, 
-            "numeric_density": 1.0, 
-            "integer": {
-                "Q1": 5310.5, 
-                "count": 919, 
-                "Q3": 5769.5, 
-                "standard-deviation": 265.43674701643454, 
-                "ratio": 1.0, 
-                "num_positive": 919, 
-                "num_outlier": 0, 
-                "Q2": 5540.0, 
-                "num_-1": 0, 
-                "num_0": 0, 
-                "num_1": 0, 
-                "num_negative": 0, 
-                "mean": 5540.0
-            }, 
-            "contain_numeric_token": {
-                "count": 919, 
-                "ratio": 1.0
-            }
+        "special_type": {
+            "num_filename": 0
         }, 
         "missing": {
             "num_nonblank": 919, 
@@ -587,8 +776,127 @@
                 "5827": 1
             }
         }, 
-        "special_type": {
-            "num_filename": 0
+        "numeric_stats": {
+            "contain_numeric_token_puncs": {
+                "count": 919, 
+                "ratio": 1.0
+            }, 
+            "numeric": {
+                "Q1": 5310.5, 
+                "count": 919, 
+                "Q3": 5769.5, 
+                "standard-deviation": 265.43674701643454, 
+                "ratio": 1.0, 
+                "num_positive": 919, 
+                "num_outlier": 0, 
+                "Q2": 5540.0, 
+                "num_-1": 0, 
+                "num_0": 0, 
+                "num_1": 0, 
+                "num_negative": 0, 
+                "mean": 5540.0
+            }, 
+            "contain_numeric": {
+                "count": 919, 
+                "ratio": 1.0
+            }, 
+            "numeric_density": 1.0, 
+            "correlation": {
+                "spearman": [
+                    1.0, 
+                    NaN, 
+                    0.0572150866992621, 
+                    -0.1501292750547257, 
+                    -0.002936698019669734, 
+                    0.0011230922756539, 
+                    0.062394017890477535, 
+                    0.0298054936668437, 
+                    -0.17239483829016192, 
+                    -0.012303951526971842, 
+                    0.013850467346954826, 
+                    0.004069274146006195, 
+                    0.061768426792214275, 
+                    0.04289369934773628, 
+                    -0.02413219937179882, 
+                    0.016660415931826256, 
+                    -0.16583984615515723, 
+                    0.016133638182244975, 
+                    -0.026126024085236114, 
+                    0.994649880443228, 
+                    0.994649880443228, 
+                    0.0639793500440254, 
+                    0.9978689776646315
+                ], 
+                "pearson": [
+                    1.0, 
+                    NaN, 
+                    0.047757346042503306, 
+                    -0.16242338669548007, 
+                    -0.01767414278560657, 
+                    0.0011230922756540235, 
+                    0.06761805500679177, 
+                    0.028945717196753797, 
+                    -0.17166908031101522, 
+                    -0.005955809572809836, 
+                    0.013827798242697833, 
+                    0.003984278770583624, 
+                    0.05591291520245877, 
+                    0.04199040112728747, 
+                    -0.00903316281543351, 
+                    0.05403794047838869, 
+                    -0.18922450889898715, 
+                    0.007178836740878299, 
+                    -0.02612602408523572, 
+                    0.9900503304924219, 
+                    0.9900503304924132, 
+                    0.09908174364359257, 
+                    0.9896945044231658
+                ], 
+                "columns": [
+                    "radonFile_index", 
+                    "stfips", 
+                    "zip", 
+                    "region", 
+                    "typebldg", 
+                    "floor", 
+                    "room", 
+                    "rep", 
+                    "stratum", 
+                    "wave", 
+                    "starttm", 
+                    "stoptm", 
+                    "startdt", 
+                    "stopdt", 
+                    "activity", 
+                    "pcterr", 
+                    "adjwt", 
+                    "dupflag", 
+                    "zipflag", 
+                    "cntyfips", 
+                    "fips", 
+                    "Uppm", 
+                    "county_code"
+                ]
+            }, 
+            "integer": {
+                "Q1": 5310.5, 
+                "count": 919, 
+                "Q3": 5769.5, 
+                "standard-deviation": 265.43674701643454, 
+                "ratio": 1.0, 
+                "num_positive": 919, 
+                "num_outlier": 0, 
+                "Q2": 5540.0, 
+                "num_-1": 0, 
+                "num_0": 0, 
+                "num_1": 0, 
+                "num_negative": 0, 
+                "mean": 5540.0
+            }, 
+            "contain_numeric_token": {
+                "count": 919, 
+                "ratio": 1.0
+            }
         }, 
         "length": {
             "token": {
@@ -602,50 +910,8 @@
         }
     }, 
     "zip": {
-        "numeric_stats": {
-            "contain_numeric_token_puncs": {
-                "count": 919, 
-                "ratio": 1.0
-            }, 
-            "numeric": {
-                "Q1": 55318.0, 
-                "count": 919, 
-                "Q3": 56119.5, 
-                "standard-deviation": 516.7936025676579, 
-                "ratio": 1.0, 
-                "num_positive": 919, 
-                "num_outlier": 0, 
-                "Q2": 55746.0, 
-                "num_-1": 0, 
-                "num_0": 0, 
-                "num_1": 0, 
-                "num_negative": 0, 
-                "mean": 55729.57780195865
-            }, 
-            "contain_numeric": {
-                "count": 919, 
-                "ratio": 1.0
-            }, 
-            "numeric_density": 1.0, 
-            "integer": {
-                "Q1": 55318.0, 
-                "count": 919, 
-                "Q3": 56119.5, 
-                "standard-deviation": 516.7936025676579, 
-                "ratio": 1.0, 
-                "num_positive": 919, 
-                "num_outlier": 0, 
-                "Q2": 55746.0, 
-                "num_-1": 0, 
-                "num_0": 0, 
-                "num_1": 0, 
-                "num_negative": 0, 
-                "mean": 55729.57780195865
-            }, 
-            "contain_numeric_token": {
-                "count": 919, 
-                "ratio": 1.0
-            }
+        "special_type": {
+            "num_filename": 0
         }, 
         "missing": {
             "num_nonblank": 919, 
@@ -723,8 +989,127 @@
                 "55807": 10
             }
         }, 
-        "special_type": {
-            "num_filename": 0
+        "numeric_stats": {
+            "contain_numeric_token_puncs": {
+                "count": 919, 
+                "ratio": 1.0
+            }, 
+            "numeric": {
+                "Q1": 55318.0, 
+                "count": 919, 
+                "Q3": 56119.5, 
+                "standard-deviation": 516.7936025676579, 
+                "ratio": 1.0, 
+                "num_positive": 919, 
+                "num_outlier": 0, 
+                "Q2": 55746.0, 
+                "num_-1": 0, 
+                "num_0": 0, 
+                "num_1": 0, 
+                "num_negative": 0, 
+                "mean": 55729.57780195865
+            }, 
+            "contain_numeric": {
+                "count": 919, 
+                "ratio": 1.0
+            }, 
+            "numeric_density": 1.0, 
+            "correlation": {
+                "spearman": [
+                    0.0572150866992621, 
+                    NaN, 
+                    1.0, 
+                    -0.14604510543018404, 
+                    0.02713789260581317, 
+                    0.21399804709008896, 
+                    0.0022919224816697016, 
+                    -0.009589670209941023, 
+                    -0.04678568901267161, 
+                    -0.03463714208651036, 
+                    -0.019649775582181183, 
+                    -0.027984925882750904, 
+                    0.03423569205686297, 
+                    0.035790764850040596, 
+                    0.04396766033707197, 
+                    -0.04482591065607557, 
+                    -0.03634768060391956, 
+                    -0.011003382774556678, 
+                    0.057105338505788514, 
+                    0.045390958615699695, 
+                    0.045390958615699695, 
+                    0.24951653341567068, 
+                    0.04863626880354413
+                ], 
+                "pearson": [
+                    0.047757346042503306, 
+                    NaN, 
+                    1.0, 
+                    -0.14318934859282043, 
+                    0.013859505875805521, 
+                    0.23446836498674262, 
+                    0.011145750654699233, 
+                    -0.009381155257542902, 
+                    -0.17805221641694277, 
+                    -0.03067950083087507, 
+                    -0.026617587225340373, 
+                    -0.033307265804396594, 
+                    0.04603275202110085, 
+                    0.048271667913267695, 
+                    0.06096154991559022, 
+                    -0.013289214277247906, 
+                    -0.21647350280890038, 
+                    0.00517668096666463, 
+                    0.08156283146647031, 
+                    0.050204895883712866, 
+                    0.05020489588371243, 
+                    0.23995518235112315, 
+                    0.049117499579138725
+                ], 
+                "columns": [
+                    "radonFile_index", 
+                    "stfips", 
+                    "zip", 
+                    "region", 
+                    "typebldg", 
+                    "floor", 
+                    "room", 
+                    "rep", 
+                    "stratum", 
+                    "wave", 
+                    "starttm", 
+                    "stoptm", 
+                    "startdt", 
+                    "stopdt", 
+                    "activity", 
+                    "pcterr", 
+                    "adjwt", 
+                    "dupflag", 
+                    "zipflag", 
+                    "cntyfips", 
+                    "fips", 
+                    "Uppm", 
+                    "county_code"
+                ]
+            }, 
+            "integer": {
+                "Q1": 55318.0, 
+                "count": 919, 
+                "Q3": 56119.5, 
+                "standard-deviation": 516.7936025676579, 
+                "ratio": 1.0, 
+                "num_positive": 919, 
+                "num_outlier": 0, 
+                "Q2": 55746.0, 
+                "num_-1": 0, 
+                "num_0": 0, 
+                "num_1": 0, 
+                "num_negative": 0, 
+                "mean": 55729.57780195865
+            }, 
+            "contain_numeric_token": {
+                "count": 919, 
+                "ratio": 1.0
+            }
         }, 
         "length": {
             "token": {
@@ -738,6 +1123,41 @@
         }
     }, 
     "floor": {
+        "special_type": {
+            "num_filename": 0
+        }, 
+        "missing": {
+            "num_nonblank": 919, 
+            "leading_space": 0, 
+            "trailing_space": 0, 
+            "num_missing": 0
+        }, 
+        "distinct": {
+            "ratio_distinct_tokens": 0.002176278563656148, 
+            "num_distinct_tokens_puncs": 2, 
+            "ratio_distinct_tokens_puncs": 0.001088139281828074, 
+            "num_distinct_values": 2, 
+            "ratio_distinct_values": 0.002176278563656148, 
+            "num_distinct_tokens": 2
+        }, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "0.0": 766, 
+                "1.0": 153
+            }, 
+            "most_common_tokens_puncs": {
+                "0": 1685, 
+                "1": 153
+            }, 
+            "most_common_values": {
+                "0.0": 766, 
+                "1.0": 153
+            }, 
+            "most_common_tokens": {
+                "0.0": 766, 
+                "1.0": 153
+            }
+        }, 
         "numeric_stats": {
             "contain_numeric_token_puncs": {
                 "count": 1838, 
@@ -778,45 +1198,87 @@
                 "ratio": 1.0
             }, 
             "numeric_density": 0.6666666666666666, 
+            "correlation": {
+                "spearman": [
+                    0.0011230922756539, 
+                    NaN, 
+                    0.21399804709008896, 
+                    -0.058786886865489094, 
+                    0.09424681115788806, 
+                    1.0, 
+                    -0.18733550992734957, 
+                    0.00026413619956243607, 
+                    -0.06583020416725845, 
+                    -0.010354776115447556, 
+                    -0.038261171178182, 
+                    -0.02300604471258892, 
+                    0.03778631995048614, 
+                    0.04626354191608826, 
+                    -0.24822235151666583, 
+                    0.19415861857796585, 
+                    -0.0648480408594785, 
+                    0.043723368454386714, 
+                    0.07384946081341305, 
+                    0.0028909663631192517, 
+                    0.0028909663631192517, 
+                    0.037229467592230364, 
+                    0.002074433878879463
+                ], 
+                "pearson": [
+                    0.0011230922756540235, 
+                    NaN, 
+                    0.23446836498674262, 
+                    -0.047802454871292206, 
+                    0.14835072966128457, 
+                    1.0, 
+                    -0.09469273836946761, 
+                    -0.000361754480831158, 
+                    -0.07849294274408596, 
+                    -0.022921751539367017, 
+                    -0.03744816456566058, 
+                    -0.020911738578520956, 
+                    0.012984098833842807, 
+                    0.019291960417623984, 
+                    -0.1486383970704699, 
+                    0.24873732924508468, 
+                    -0.07424435759737472, 
+                    0.05024574665274878, 
+                    0.07384946081341073, 
+                    0.008002988238729131, 
+                    0.00800298823872894, 
+                    0.04282678359724533, 
+                    0.007162443009207689
+                ], 
+                "columns": [
+                    "radonFile_index", 
+                    "stfips", 
+                    "zip", 
+                    "region", 
+                    "typebldg", 
+                    "floor", 
+                    "room", 
+                    "rep", 
+                    "stratum", 
+                    "wave", 
+                    "starttm", 
+                    "stoptm", 
+                    "startdt", 
+                    "stopdt", 
+                    "activity", 
+                    "pcterr", 
+                    "adjwt", 
+                    "dupflag", 
+                    "zipflag", 
+                    "cntyfips", 
+                    "fips", 
+                    "Uppm", 
+                    "county_code"
+                ]
+            }, 
             "contain_numeric_token": {
                 "count": 919, 
                 "ratio": 1.0
             }
-        }, 
-        "missing": {
-            "num_nonblank": 919, 
-            "leading_space": 0, 
-            "trailing_space": 0, 
-            "num_missing": 0
-        }, 
-        "distinct": {
-            "ratio_distinct_tokens": 0.002176278563656148, 
-            "num_distinct_tokens_puncs": 2, 
-            "ratio_distinct_tokens_puncs": 0.001088139281828074, 
-            "num_distinct_values": 2, 
-            "ratio_distinct_values": 0.002176278563656148, 
-            "num_distinct_tokens": 2
-        }, 
-        "frequent-entries": {
-            "most_common_numeric_tokens": {
-                "0.0": 766, 
-                "1.0": 153
-            }, 
-            "most_common_tokens_puncs": {
-                "0": 1685, 
-                "1": 153
-            }, 
-            "most_common_values": {
-                "0.0": 766, 
-                "1.0": 153
-            }, 
-            "most_common_tokens": {
-                "0.0": 766, 
-                "1.0": 153
-            }
-        }, 
-        "special_type": {
-            "num_filename": 0
         }, 
         "length": {
             "token": {
@@ -830,50 +1292,8 @@
         }
     }, 
     "rep": {
-        "numeric_stats": {
-            "contain_numeric_token_puncs": {
-                "count": 919, 
-                "ratio": 1.0
-            }, 
-            "numeric": {
-                "Q1": 2.0, 
-                "count": 919, 
-                "Q3": 4.0, 
-                "standard-deviation": 1.4241702154475475, 
-                "ratio": 1.0, 
-                "num_positive": 919, 
-                "num_outlier": 0, 
-                "Q2": 3.0, 
-                "num_-1": 0, 
-                "num_0": 0, 
-                "num_1": 194, 
-                "num_negative": 0, 
-                "mean": 2.942328618063112
-            }, 
-            "contain_numeric": {
-                "count": 919, 
-                "ratio": 1.0
-            }, 
-            "numeric_density": 1.0, 
-            "integer": {
-                "Q1": 2.0, 
-                "count": 919, 
-                "Q3": 4.0, 
-                "standard-deviation": 1.4241702154475475, 
-                "ratio": 1.0, 
-                "num_positive": 919, 
-                "num_outlier": 0, 
-                "Q2": 3.0, 
-                "num_-1": 0, 
-                "num_0": 0, 
-                "num_1": 194, 
-                "num_negative": 0, 
-                "mean": 2.942328618063112
-            }, 
-            "contain_numeric_token": {
-                "count": 919, 
-                "ratio": 1.0
-            }
+        "special_type": {
+            "num_filename": 0
         }, 
         "missing": {
             "num_nonblank": 919, 
@@ -926,8 +1346,127 @@
                 "4": 169
             }
         }, 
-        "special_type": {
-            "num_filename": 0
+        "numeric_stats": {
+            "contain_numeric_token_puncs": {
+                "count": 919, 
+                "ratio": 1.0
+            }, 
+            "numeric": {
+                "Q1": 2.0, 
+                "count": 919, 
+                "Q3": 4.0, 
+                "standard-deviation": 1.4241702154475475, 
+                "ratio": 1.0, 
+                "num_positive": 919, 
+                "num_outlier": 0, 
+                "Q2": 3.0, 
+                "num_-1": 0, 
+                "num_0": 0, 
+                "num_1": 194, 
+                "num_negative": 0, 
+                "mean": 2.942328618063112
+            }, 
+            "contain_numeric": {
+                "count": 919, 
+                "ratio": 1.0
+            }, 
+            "numeric_density": 1.0, 
+            "correlation": {
+                "spearman": [
+                    0.0298054936668437, 
+                    NaN, 
+                    -0.009589670209941023, 
+                    -0.008609116813327194, 
+                    0.014058899610859089, 
+                    0.00026413619956243607, 
+                    -0.00020995583299320437, 
+                    1.0, 
+                    -0.021064492519512472, 
+                    0.014833472994482134, 
+                    -0.05110042267323271, 
+                    -0.07650167580226243, 
+                    -0.011632488924917741, 
+                    -0.03609349038537132, 
+                    -0.04033528355314334, 
+                    0.015624126800238317, 
+                    -0.07858970123996374, 
+                    -0.016693685449128075, 
+                    0.0025399713494514598, 
+                    0.026470874339240825, 
+                    0.026470874339240825, 
+                    0.000477076728094703, 
+                    0.02759217507152567
+                ], 
+                "pearson": [
+                    0.028945717196753797, 
+                    NaN, 
+                    -0.009381155257542902, 
+                    -0.00801576742389261, 
+                    0.008566310855609095, 
+                    -0.000361754480831158, 
+                    0.002406603362553246, 
+                    1.0, 
+                    -0.018904107486364938, 
+                    0.007921692575694084, 
+                    -0.04832732010279343, 
+                    -0.07283847624262804, 
+                    -0.024444586736589072, 
+                    -0.03919973001234327, 
+                    -0.052121678787145104, 
+                    -0.01400006956771963, 
+                    -0.028845683630820938, 
+                    -0.014490692822529138, 
+                    0.0013372528552197229, 
+                    0.027908093239284493, 
+                    0.02790809323928452, 
+                    0.00014961478575874757, 
+                    0.02868115600619082
+                ], 
+                "columns": [
+                    "radonFile_index", 
+                    "stfips", 
+                    "zip", 
+                    "region", 
+                    "typebldg", 
+                    "floor", 
+                    "room", 
+                    "rep", 
+                    "stratum", 
+                    "wave", 
+                    "starttm", 
+                    "stoptm", 
+                    "startdt", 
+                    "stopdt", 
+                    "activity", 
+                    "pcterr", 
+                    "adjwt", 
+                    "dupflag", 
+                    "zipflag", 
+                    "cntyfips", 
+                    "fips", 
+                    "Uppm", 
+                    "county_code"
+                ]
+            }, 
+            "integer": {
+                "Q1": 2.0, 
+                "count": 919, 
+                "Q3": 4.0, 
+                "standard-deviation": 1.4241702154475475, 
+                "ratio": 1.0, 
+                "num_positive": 919, 
+                "num_outlier": 0, 
+                "Q2": 3.0, 
+                "num_-1": 0, 
+                "num_0": 0, 
+                "num_1": 194, 
+                "num_negative": 0, 
+                "mean": 2.942328618063112
+            }, 
+            "contain_numeric_token": {
+                "count": 919, 
+                "ratio": 1.0
+            }
         }, 
         "length": {
             "token": {
@@ -941,50 +1480,8 @@
         }
     }, 
     "zipflag": {
-        "numeric_stats": {
-            "contain_numeric_token_puncs": {
-                "count": 1838, 
-                "ratio": 1.0
-            }, 
-            "decimal": {
-                "Q1": 0.0, 
-                "count": 919, 
-                "Q3": 0.0, 
-                "standard-deviation": 0.03298695623770212, 
-                "ratio": 1.0, 
-                "num_positive": 1, 
-                "num_outlier": 1, 
-                "Q2": 0.0, 
-                "num_-1": 0, 
-                "num_0": 918, 
-                "num_1": 1, 
-                "num_negative": 0, 
-                "mean": 0.001088139281828074
-            }, 
-            "numeric": {
-                "Q1": 0.0, 
-                "count": 919, 
-                "Q3": 0.0, 
-                "standard-deviation": 0.03298695623770212, 
-                "ratio": 1.0, 
-                "num_positive": 1, 
-                "num_outlier": 1, 
-                "Q2": 0.0, 
-                "num_-1": 0, 
-                "num_0": 918, 
-                "num_1": 1, 
-                "num_negative": 0, 
-                "mean": 0.001088139281828074
-            }, 
-            "contain_numeric": {
-                "count": 919, 
-                "ratio": 1.0
-            }, 
-            "numeric_density": 0.6666666666666666, 
-            "contain_numeric_token": {
-                "count": 919, 
-                "ratio": 1.0
-            }
+        "special_type": {
+            "num_filename": 0
         }, 
         "missing": {
             "num_nonblank": 919, 
@@ -1018,8 +1515,127 @@
                 "1.0": 1
             }
         }, 
-        "special_type": {
-            "num_filename": 0
+        "numeric_stats": {
+            "contain_numeric_token_puncs": {
+                "count": 1838, 
+                "ratio": 1.0
+            }, 
+            "decimal": {
+                "Q1": 0.0, 
+                "count": 919, 
+                "Q3": 0.0, 
+                "standard-deviation": 0.03298695623770212, 
+                "ratio": 1.0, 
+                "num_positive": 1, 
+                "num_outlier": 1, 
+                "Q2": 0.0, 
+                "num_-1": 0, 
+                "num_0": 918, 
+                "num_1": 1, 
+                "num_negative": 0, 
+                "mean": 0.001088139281828074
+            }, 
+            "numeric": {
+                "Q1": 0.0, 
+                "count": 919, 
+                "Q3": 0.0, 
+                "standard-deviation": 0.03298695623770212, 
+                "ratio": 1.0, 
+                "num_positive": 1, 
+                "num_outlier": 1, 
+                "Q2": 0.0, 
+                "num_-1": 0, 
+                "num_0": 918, 
+                "num_1": 1, 
+                "num_negative": 0, 
+                "mean": 0.001088139281828074
+            }, 
+            "contain_numeric": {
+                "count": 919, 
+                "ratio": 1.0
+            }, 
+            "numeric_density": 0.6666666666666666, 
+            "correlation": {
+                "spearman": [
+                    -0.026126024085236114, 
+                    NaN, 
+                    0.057105338505788514, 
+                    0.025271748615923923, 
+                    0.12294260884645886, 
+                    0.07384946081341305, 
+                    -0.013267315256920296, 
+                    0.0025399713494514598, 
+                    -0.0013550863270272782, 
+                    0.018109839970051604, 
+                    -0.011075343682897514, 
+                    -0.011634665187105693, 
+                    -0.04534826088384858, 
+                    -0.04335322434443723, 
+                    0.025195434972928477, 
+                    0.007962495491940846, 
+                    0.013954120305500292, 
+                    -0.00887305706830271, 
+                    1.0, 
+                    -0.02668051942204823, 
+                    -0.02668051942204823, 
+                    0.03353766226416343, 
+                    -0.02668051942204823
+                ], 
+                "pearson": [
+                    -0.02612602408523572, 
+                    NaN, 
+                    0.08156283146647031, 
+                    0.022308458305867196, 
+                    0.07000394906499331, 
+                    0.07384946081341073, 
+                    -0.005796920932253378, 
+                    0.0013372528552197229, 
+                    -0.005031543809130665, 
+                    0.017741192708111326, 
+                    -0.012561130741935217, 
+                    -0.012368183024940624, 
+                    -0.030355619840213007, 
+                    -0.02939872130026058, 
+                    0.0061297892243866265, 
+                    -0.0057717983691072195, 
+                    0.0010882772651553633, 
+                    -0.008345790776821755, 
+                    1.0, 
+                    -0.02560265921859097, 
+                    -0.02560265921859075, 
+                    0.032746851213232855, 
+                    -0.025110922081079113
+                ], 
+                "columns": [
+                    "radonFile_index", 
+                    "stfips", 
+                    "zip", 
+                    "region", 
+                    "typebldg", 
+                    "floor", 
+                    "room", 
+                    "rep", 
+                    "stratum", 
+                    "wave", 
+                    "starttm", 
+                    "stoptm", 
+                    "startdt", 
+                    "stopdt", 
+                    "activity", 
+                    "pcterr", 
+                    "adjwt", 
+                    "dupflag", 
+                    "zipflag", 
+                    "cntyfips", 
+                    "fips", 
+                    "Uppm", 
+                    "county_code"
+                ]
+            }, 
+            "contain_numeric_token": {
+                "count": 919, 
+                "ratio": 1.0
+            }
         }, 
         "length": {
             "token": {
@@ -1033,50 +1649,8 @@
         }
     }, 
     "dupflag": {
-        "numeric_stats": {
-            "contain_numeric_token_puncs": {
-                "count": 1838, 
-                "ratio": 1.0
-            }, 
-            "decimal": {
-                "Q1": 0.0, 
-                "count": 919, 
-                "Q3": 0.0, 
-                "standard-deviation": 0.34014113875338875, 
-                "ratio": 1.0, 
-                "num_positive": 62, 
-                "num_outlier": 17, 
-                "Q2": 0.0, 
-                "num_-1": 0, 
-                "num_0": 857, 
-                "num_1": 45, 
-                "num_negative": 0, 
-                "mean": 0.08596300326441784
-            }, 
-            "numeric": {
-                "Q1": 0.0, 
-                "count": 919, 
-                "Q3": 0.0, 
-                "standard-deviation": 0.34014113875338875, 
-                "ratio": 1.0, 
-                "num_positive": 62, 
-                "num_outlier": 17, 
-                "Q2": 0.0, 
-                "num_-1": 0, 
-                "num_0": 857, 
-                "num_1": 45, 
-                "num_negative": 0, 
-                "mean": 0.08596300326441784
-            }, 
-            "contain_numeric": {
-                "count": 919, 
-                "ratio": 1.0
-            }, 
-            "numeric_density": 0.6666666666666666, 
-            "contain_numeric_token": {
-                "count": 919, 
-                "ratio": 1.0
-            }
+        "special_type": {
+            "num_filename": 0
         }, 
         "missing": {
             "num_nonblank": 919, 
@@ -1114,8 +1688,127 @@
                 "2.0": 17
             }
         }, 
-        "special_type": {
-            "num_filename": 0
+        "numeric_stats": {
+            "contain_numeric_token_puncs": {
+                "count": 1838, 
+                "ratio": 1.0
+            }, 
+            "decimal": {
+                "Q1": 0.0, 
+                "count": 919, 
+                "Q3": 0.0, 
+                "standard-deviation": 0.34014113875338875, 
+                "ratio": 1.0, 
+                "num_positive": 62, 
+                "num_outlier": 17, 
+                "Q2": 0.0, 
+                "num_-1": 0, 
+                "num_0": 857, 
+                "num_1": 45, 
+                "num_negative": 0, 
+                "mean": 0.08596300326441784
+            }, 
+            "numeric": {
+                "Q1": 0.0, 
+                "count": 919, 
+                "Q3": 0.0, 
+                "standard-deviation": 0.34014113875338875, 
+                "ratio": 1.0, 
+                "num_positive": 62, 
+                "num_outlier": 17, 
+                "Q2": 0.0, 
+                "num_-1": 0, 
+                "num_0": 857, 
+                "num_1": 45, 
+                "num_negative": 0, 
+                "mean": 0.08596300326441784
+            }, 
+            "contain_numeric": {
+                "count": 919, 
+                "ratio": 1.0
+            }, 
+            "numeric_density": 0.6666666666666666, 
+            "correlation": {
+                "spearman": [
+                    0.016133638182244975, 
+                    NaN, 
+                    -0.011003382774556678, 
+                    -0.016967707689471104, 
+                    0.03622770993892682, 
+                    0.043723368454386714, 
+                    -0.01111284505040472, 
+                    -0.016693685449128075, 
+                    -0.06425956391200849, 
+                    0.05521667879898541, 
+                    0.011723058839074187, 
+                    0.017972455017675425, 
+                    -0.05389949812913695, 
+                    -0.050266542937717665, 
+                    0.1108833821480661, 
+                    -0.10949318860536228, 
+                    -0.04775895333095622, 
+                    1.0, 
+                    -0.00887305706830271, 
+                    0.024955056281849818, 
+                    0.024955056281849818, 
+                    0.004767406674455549, 
+                    0.01677535200408342
+                ], 
+                "pearson": [
+                    0.007178836740878299, 
+                    NaN, 
+                    0.00517668096666463, 
+                    -0.0011205162067302525, 
+                    0.013462665821611385, 
+                    0.05024574665274878, 
+                    0.022633373462374037, 
+                    -0.014490692822529138, 
+                    -0.06976903400993165, 
+                    0.04210122153985732, 
+                    0.011138689046357614, 
+                    0.009540764102509616, 
+                    -0.03270139612973825, 
+                    -0.03042607619801704, 
+                    0.42448932648150234, 
+                    -0.0783329605495231, 
+                    -0.0523222495382888, 
+                    1.0, 
+                    -0.008345790776821755, 
+                    0.016916157007842415, 
+                    0.01691615700784243, 
+                    0.007849425376351315, 
+                    0.014800102281645418
+                ], 
+                "columns": [
+                    "radonFile_index", 
+                    "stfips", 
+                    "zip", 
+                    "region", 
+                    "typebldg", 
+                    "floor", 
+                    "room", 
+                    "rep", 
+                    "stratum", 
+                    "wave", 
+                    "starttm", 
+                    "stoptm", 
+                    "startdt", 
+                    "stopdt", 
+                    "activity", 
+                    "pcterr", 
+                    "adjwt", 
+                    "dupflag", 
+                    "zipflag", 
+                    "cntyfips", 
+                    "fips", 
+                    "Uppm", 
+                    "county_code"
+                ]
+            }, 
+            "contain_numeric_token": {
+                "count": 919, 
+                "ratio": 1.0
+            }
         }, 
         "length": {
             "token": {
@@ -1175,50 +1868,8 @@
         }
     }, 
     "stratum": {
-        "numeric_stats": {
-            "contain_numeric_token_puncs": {
-                "count": 1838, 
-                "ratio": 1.0
-            }, 
-            "decimal": {
-                "Q1": 2.0, 
-                "count": 919, 
-                "Q3": 4.0, 
-                "standard-deviation": 1.1283800305879566, 
-                "ratio": 1.0, 
-                "num_positive": 919, 
-                "num_outlier": 0, 
-                "Q2": 3.0, 
-                "num_-1": 0, 
-                "num_0": 0, 
-                "num_1": 27, 
-                "num_negative": 0, 
-                "mean": 3.1719260065288357
-            }, 
-            "numeric": {
-                "Q1": 2.0, 
-                "count": 919, 
-                "Q3": 4.0, 
-                "standard-deviation": 1.1283800305879566, 
-                "ratio": 1.0, 
-                "num_positive": 919, 
-                "num_outlier": 0, 
-                "Q2": 3.0, 
-                "num_-1": 0, 
-                "num_0": 0, 
-                "num_1": 27, 
-                "num_negative": 0, 
-                "mean": 3.1719260065288357
-            }, 
-            "contain_numeric": {
-                "count": 919, 
-                "ratio": 1.0
-            }, 
-            "numeric_density": 0.6666666666666666, 
-            "contain_numeric_token": {
-                "count": 919, 
-                "ratio": 1.0
-            }
+        "special_type": {
+            "num_filename": 0
         }, 
         "missing": {
             "num_nonblank": 919, 
@@ -1265,8 +1916,127 @@
                 "1.0": 27
             }
         }, 
-        "special_type": {
-            "num_filename": 0
+        "numeric_stats": {
+            "contain_numeric_token_puncs": {
+                "count": 1838, 
+                "ratio": 1.0
+            }, 
+            "decimal": {
+                "Q1": 2.0, 
+                "count": 919, 
+                "Q3": 4.0, 
+                "standard-deviation": 1.1283800305879566, 
+                "ratio": 1.0, 
+                "num_positive": 919, 
+                "num_outlier": 0, 
+                "Q2": 3.0, 
+                "num_-1": 0, 
+                "num_0": 0, 
+                "num_1": 27, 
+                "num_negative": 0, 
+                "mean": 3.1719260065288357
+            }, 
+            "numeric": {
+                "Q1": 2.0, 
+                "count": 919, 
+                "Q3": 4.0, 
+                "standard-deviation": 1.1283800305879566, 
+                "ratio": 1.0, 
+                "num_positive": 919, 
+                "num_outlier": 0, 
+                "Q2": 3.0, 
+                "num_-1": 0, 
+                "num_0": 0, 
+                "num_1": 27, 
+                "num_negative": 0, 
+                "mean": 3.1719260065288357
+            }, 
+            "contain_numeric": {
+                "count": 919, 
+                "ratio": 1.0
+            }, 
+            "numeric_density": 0.6666666666666666, 
+            "correlation": {
+                "spearman": [
+                    -0.17239483829016192, 
+                    NaN, 
+                    -0.04678568901267161, 
+                    0.4653800688491845, 
+                    0.09397122384951835, 
+                    -0.06583020416725845, 
+                    -0.00953502646287054, 
+                    -0.021064492519512472, 
+                    1.0, 
+                    0.011272652486233948, 
+                    0.05787176546678887, 
+                    0.03784542540891526, 
+                    -0.03769056704654612, 
+                    -0.030527949816554788, 
+                    0.13764231498674448, 
+                    -0.11069855484010589, 
+                    0.9602210480597667, 
+                    -0.06425956391200849, 
+                    -0.0013550863270272782, 
+                    -0.1634837586535157, 
+                    -0.1634837586535157, 
+                    0.3006032297942896, 
+                    -0.18037562849217223
+                ], 
+                "pearson": [
+                    -0.17166908031101522, 
+                    NaN, 
+                    -0.17805221641694277, 
+                    0.4253064556949596, 
+                    0.061364537403978126, 
+                    -0.07849294274408596, 
+                    -0.0035930809474572127, 
+                    -0.018904107486364938, 
+                    1.0, 
+                    0.025679075345799548, 
+                    0.06422063727710448, 
+                    0.046007992045622975, 
+                    -0.04967346015391577, 
+                    -0.0470121063662827, 
+                    0.03341850471957133, 
+                    -0.09409703735766763, 
+                    0.9488669638004616, 
+                    -0.06976903400993165, 
+                    -0.005031543809130665, 
+                    -0.18389315640604112, 
+                    -0.1838931564060403, 
+                    0.22148171506804892, 
+                    -0.19731625964809252
+                ], 
+                "columns": [
+                    "radonFile_index", 
+                    "stfips", 
+                    "zip", 
+                    "region", 
+                    "typebldg", 
+                    "floor", 
+                    "room", 
+                    "rep", 
+                    "stratum", 
+                    "wave", 
+                    "starttm", 
+                    "stoptm", 
+                    "startdt", 
+                    "stopdt", 
+                    "activity", 
+                    "pcterr", 
+                    "adjwt", 
+                    "dupflag", 
+                    "zipflag", 
+                    "cntyfips", 
+                    "fips", 
+                    "Uppm", 
+                    "county_code"
+                ]
+            }, 
+            "contain_numeric_token": {
+                "count": 919, 
+                "ratio": 1.0
+            }
         }, 
         "length": {
             "token": {
@@ -1280,50 +2050,8 @@
         }
     }, 
     "typebldg": {
-        "numeric_stats": {
-            "contain_numeric_token_puncs": {
-                "count": 1838, 
-                "ratio": 1.0
-            }, 
-            "decimal": {
-                "Q1": 1.0, 
-                "count": 919, 
-                "Q3": 1.0, 
-                "standard-deviation": 0.4532499100129462, 
-                "ratio": 1.0, 
-                "num_positive": 892, 
-                "num_outlier": 10, 
-                "Q2": 1.0, 
-                "num_-1": 0, 
-                "num_0": 27, 
-                "num_1": 855, 
-                "num_negative": 0, 
-                "mean": 1.0391730141458106
-            }, 
-            "numeric": {
-                "Q1": 1.0, 
-                "count": 919, 
-                "Q3": 1.0, 
-                "standard-deviation": 0.4532499100129462, 
-                "ratio": 1.0, 
-                "num_positive": 892, 
-                "num_outlier": 10, 
-                "Q2": 1.0, 
-                "num_-1": 0, 
-                "num_0": 27, 
-                "num_1": 855, 
-                "num_negative": 0, 
-                "mean": 1.0391730141458106
-            }, 
-            "contain_numeric": {
-                "count": 919, 
-                "ratio": 1.0
-            }, 
-            "numeric_density": 0.6666666666666666, 
-            "contain_numeric_token": {
-                "count": 919, 
-                "ratio": 1.0
-            }
+        "special_type": {
+            "num_filename": 0
         }, 
         "missing": {
             "num_nonblank": 919, 
@@ -1369,8 +2097,127 @@
                 "3.0": 2
             }
         }, 
-        "special_type": {
-            "num_filename": 0
+        "numeric_stats": {
+            "contain_numeric_token_puncs": {
+                "count": 1838, 
+                "ratio": 1.0
+            }, 
+            "decimal": {
+                "Q1": 1.0, 
+                "count": 919, 
+                "Q3": 1.0, 
+                "standard-deviation": 0.4532499100129462, 
+                "ratio": 1.0, 
+                "num_positive": 892, 
+                "num_outlier": 10, 
+                "Q2": 1.0, 
+                "num_-1": 0, 
+                "num_0": 27, 
+                "num_1": 855, 
+                "num_negative": 0, 
+                "mean": 1.0391730141458106
+            }, 
+            "numeric": {
+                "Q1": 1.0, 
+                "count": 919, 
+                "Q3": 1.0, 
+                "standard-deviation": 0.4532499100129462, 
+                "ratio": 1.0, 
+                "num_positive": 892, 
+                "num_outlier": 10, 
+                "Q2": 1.0, 
+                "num_-1": 0, 
+                "num_0": 27, 
+                "num_1": 855, 
+                "num_negative": 0, 
+                "mean": 1.0391730141458106
+            }, 
+            "contain_numeric": {
+                "count": 919, 
+                "ratio": 1.0
+            }, 
+            "numeric_density": 0.6666666666666666, 
+            "correlation": {
+                "spearman": [
+                    -0.002936698019669734, 
+                    NaN, 
+                    0.02713789260581317, 
+                    0.03410283275038069, 
+                    1.0, 
+                    0.09424681115788806, 
+                    0.194818097225674, 
+                    0.014058899610859089, 
+                    0.09397122384951835, 
+                    0.0609203079861737, 
+                    -0.007698794618461727, 
+                    -0.04237296694431369, 
+                    -0.06816015581241996, 
+                    -0.0796476560638986, 
+                    -0.09809219611218159, 
+                    0.03826787727064664, 
+                    0.09070202406182361, 
+                    0.03622770993892682, 
+                    0.12294260884645886, 
+                    -0.0031569492707399166, 
+                    -0.0031569492707399166, 
+                    0.05441519221619309, 
+                    -0.0022659831351683588
+                ], 
+                "pearson": [
+                    -0.01767414278560657, 
+                    NaN, 
+                    0.013859505875805521, 
+                    0.006807401998389533, 
+                    1.0, 
+                    0.14835072966128457, 
+                    0.12243741547591533, 
+                    0.008566310855609095, 
+                    0.061364537403978126, 
+                    0.031698598956520836, 
+                    0.0013741077499413415, 
+                    -0.01734295150758502, 
+                    -0.06534640332865216, 
+                    -0.08281759239435608, 
+                    -0.08395514981470081, 
+                    0.0685095494373092, 
+                    0.08417998963284584, 
+                    0.013462665821611385, 
+                    0.07000394906499331, 
+                    -0.019590041969414617, 
+                    -0.019590041969414558, 
+                    0.030477880530578236, 
+                    -0.020204505983111565
+                ], 
+                "columns": [
+                    "radonFile_index", 
+                    "stfips", 
+                    "zip", 
+                    "region", 
+                    "typebldg", 
+                    "floor", 
+                    "room", 
+                    "rep", 
+                    "stratum", 
+                    "wave", 
+                    "starttm", 
+                    "stoptm", 
+                    "startdt", 
+                    "stopdt", 
+                    "activity", 
+                    "pcterr", 
+                    "adjwt", 
+                    "dupflag", 
+                    "zipflag", 
+                    "cntyfips", 
+                    "fips", 
+                    "Uppm", 
+                    "county_code"
+                ]
+            }, 
+            "contain_numeric_token": {
+                "count": 919, 
+                "ratio": 1.0
+            }
         }, 
         "length": {
             "token": {
@@ -1384,50 +2231,8 @@
         }
     }, 
     "Uppm": {
-        "numeric_stats": {
-            "contain_numeric_token_puncs": {
-                "count": 1838, 
-                "ratio": 1.0
-            }, 
-            "decimal": {
-                "Q1": 0.622088, 
-                "count": 919, 
-                "Q3": 1.2011, 
-                "standard-deviation": 0.32009404777330724, 
-                "ratio": 1.0, 
-                "num_positive": 919, 
-                "num_outlier": 0, 
-                "Q2": 0.907991, 
-                "num_-1": 0, 
-                "num_0": 0, 
-                "num_1": 0, 
-                "num_negative": 0, 
-                "mean": 0.9339116202393904
-            }, 
-            "numeric": {
-                "Q1": 0.622088, 
-                "count": 919, 
-                "Q3": 1.2011, 
-                "standard-deviation": 0.32009404777330724, 
-                "ratio": 1.0, 
-                "num_positive": 919, 
-                "num_outlier": 0, 
-                "Q2": 0.907991, 
-                "num_-1": 0, 
-                "num_0": 0, 
-                "num_1": 0, 
-                "num_negative": 0, 
-                "mean": 0.9339116202393904
-            }, 
-            "contain_numeric": {
-                "count": 919, 
-                "ratio": 1.0
-            }, 
-            "numeric_density": 0.8819373072970196, 
-            "contain_numeric_token": {
-                "count": 919, 
-                "ratio": 1.0
-            }
+        "special_type": {
+            "num_filename": 0
         }, 
         "missing": {
             "num_nonblank": 919, 
@@ -1493,8 +2298,127 @@
                 "1.31208": 14
             }
         }, 
-        "special_type": {
-            "num_filename": 0
+        "numeric_stats": {
+            "contain_numeric_token_puncs": {
+                "count": 1838, 
+                "ratio": 1.0
+            }, 
+            "decimal": {
+                "Q1": 0.622088, 
+                "count": 919, 
+                "Q3": 1.2011, 
+                "standard-deviation": 0.32009404777330724, 
+                "ratio": 1.0, 
+                "num_positive": 919, 
+                "num_outlier": 0, 
+                "Q2": 0.907991, 
+                "num_-1": 0, 
+                "num_0": 0, 
+                "num_1": 0, 
+                "num_negative": 0, 
+                "mean": 0.9339116202393904
+            }, 
+            "numeric": {
+                "Q1": 0.622088, 
+                "count": 919, 
+                "Q3": 1.2011, 
+                "standard-deviation": 0.32009404777330724, 
+                "ratio": 1.0, 
+                "num_positive": 919, 
+                "num_outlier": 0, 
+                "Q2": 0.907991, 
+                "num_-1": 0, 
+                "num_0": 0, 
+                "num_1": 0, 
+                "num_negative": 0, 
+                "mean": 0.9339116202393904
+            }, 
+            "contain_numeric": {
+                "count": 919, 
+                "ratio": 1.0
+            }, 
+            "numeric_density": 0.8819373072970196, 
+            "correlation": {
+                "spearman": [
+                    0.0639793500440254, 
+                    NaN, 
+                    0.24951653341567068, 
+                    0.5685748620783039, 
+                    0.05441519221619309, 
+                    0.037229467592230364, 
+                    0.02089856718356741, 
+                    0.000477076728094703, 
+                    0.3006032297942896, 
+                    -0.006160502215567749, 
+                    0.023759061911018304, 
+                    -0.007567849331242124, 
+                    0.010305507815389994, 
+                    0.0009970010734661533, 
+                    0.35649542767303577, 
+                    -0.3403438224576938, 
+                    0.28444387200481885, 
+                    0.004767406674455549, 
+                    0.03353766226416343, 
+                    0.07612399184595306, 
+                    0.07612399184595306, 
+                    1.0, 
+                    0.06411598263507484
+                ], 
+                "pearson": [
+                    0.09908174364359257, 
+                    NaN, 
+                    0.23995518235112315, 
+                    0.564030065914868, 
+                    0.030477880530578236, 
+                    0.04282678359724533, 
+                    0.03446647155223957, 
+                    0.00014961478575874757, 
+                    0.22148171506804892, 
+                    -0.013815046203841278, 
+                    0.02066354124626337, 
+                    -0.011542752286286016, 
+                    -0.004356128854584652, 
+                    -0.013936082296274127, 
+                    0.29773674281868034, 
+                    -0.25616383302318674, 
+                    0.11668439316458204, 
+                    0.007849425376351315, 
+                    0.032746851213232855, 
+                    0.10472041102054937, 
+                    0.10472041102054733, 
+                    1.0, 
+                    0.09270886744294181
+                ], 
+                "columns": [
+                    "radonFile_index", 
+                    "stfips", 
+                    "zip", 
+                    "region", 
+                    "typebldg", 
+                    "floor", 
+                    "room", 
+                    "rep", 
+                    "stratum", 
+                    "wave", 
+                    "starttm", 
+                    "stoptm", 
+                    "startdt", 
+                    "stopdt", 
+                    "activity", 
+                    "pcterr", 
+                    "adjwt", 
+                    "dupflag", 
+                    "zipflag", 
+                    "cntyfips", 
+                    "fips", 
+                    "Uppm", 
+                    "county_code"
+                ]
+            }, 
+            "contain_numeric_token": {
+                "count": 919, 
+                "ratio": 1.0
+            }
         }, 
         "length": {
             "token": {
@@ -1508,6 +2432,38 @@
         }
     }, 
     "stfips": {
+        "special_type": {
+            "num_filename": 0
+        }, 
+        "missing": {
+            "num_nonblank": 919, 
+            "leading_space": 0, 
+            "trailing_space": 0, 
+            "num_missing": 0
+        }, 
+        "distinct": {
+            "ratio_distinct_tokens": 0.001088139281828074, 
+            "num_distinct_tokens_puncs": 2, 
+            "ratio_distinct_tokens_puncs": 0.001088139281828074, 
+            "num_distinct_values": 1, 
+            "ratio_distinct_values": 0.001088139281828074, 
+            "num_distinct_tokens": 1
+        }, 
+        "frequent-entries": {
+            "most_common_numeric_tokens": {
+                "27.0": 919
+            }, 
+            "most_common_tokens_puncs": {
+                "0": 919, 
+                "27": 919
+            }, 
+            "most_common_values": {
+                "27.0": 919
+            }, 
+            "most_common_tokens": {
+                "27.0": 919
+            }
+        }, 
         "numeric_stats": {
             "contain_numeric_token_puncs": {
                 "count": 1838, 
@@ -1548,42 +2504,87 @@
                 "ratio": 1.0
             }, 
             "numeric_density": 0.75, 
+            "correlation": {
+                "spearman": [
+                    NaN, 
+                    NaN, 
+                    NaN, 
+                    NaN, 
+                    NaN, 
+                    NaN, 
+                    NaN, 
+                    NaN, 
+                    NaN, 
+                    NaN, 
+                    NaN, 
+                    NaN, 
+                    NaN, 
+                    NaN, 
+                    NaN, 
+                    NaN, 
+                    NaN, 
+                    NaN, 
+                    NaN, 
+                    NaN, 
+                    NaN, 
+                    NaN, 
+                    NaN
+                ], 
+                "pearson": [
+                    NaN, 
+                    NaN, 
+                    NaN, 
+                    NaN, 
+                    NaN, 
+                    NaN, 
+                    NaN, 
+                    NaN, 
+                    NaN, 
+                    NaN, 
+                    NaN, 
+                    NaN, 
+                    NaN, 
+                    NaN, 
+                    NaN, 
+                    NaN, 
+                    NaN, 
+                    NaN, 
+                    NaN, 
+                    NaN, 
+                    NaN, 
+                    NaN, 
+                    NaN
+                ], 
+                "columns": [
+                    "radonFile_index", 
+                    "stfips", 
+                    "zip", 
+                    "region", 
+                    "typebldg", 
+                    "floor", 
+                    "room", 
+                    "rep", 
+                    "stratum", 
+                    "wave", 
+                    "starttm", 
+                    "stoptm", 
+                    "startdt", 
+                    "stopdt", 
+                    "activity", 
+                    "pcterr", 
+                    "adjwt", 
+                    "dupflag", 
+                    "zipflag", 
+                    "cntyfips", 
+                    "fips", 
+                    "Uppm", 
+                    "county_code"
+                ]
+            }, 
             "contain_numeric_token": {
                 "count": 919, 
                 "ratio": 1.0
             }
-        }, 
-        "missing": {
-            "num_nonblank": 919, 
-            "leading_space": 0, 
-            "trailing_space": 0, 
-            "num_missing": 0
-        }, 
-        "distinct": {
-            "ratio_distinct_tokens": 0.001088139281828074, 
-            "num_distinct_tokens_puncs": 2, 
-            "ratio_distinct_tokens_puncs": 0.001088139281828074, 
-            "num_distinct_values": 1, 
-            "ratio_distinct_values": 0.001088139281828074, 
-            "num_distinct_tokens": 1
-        }, 
-        "frequent-entries": {
-            "most_common_numeric_tokens": {
-                "27.0": 919
-            }, 
-            "most_common_tokens_puncs": {
-                "0": 919, 
-                "27": 919
-            }, 
-            "most_common_values": {
-                "27.0": 919
-            }, 
-            "most_common_tokens": {
-                "27.0": 919
-            }
-        }, 
-        "special_type": {
-            "num_filename": 0
         }, 
         "length": {
             "token": {
@@ -1597,50 +2598,8 @@
         }
     }, 
     "stopdt": {
-        "numeric_stats": {
-            "contain_numeric_token_puncs": {
-                "count": 1838, 
-                "ratio": 1.0
-            }, 
-            "decimal": {
-                "Q1": 12638.0, 
-                "count": 919, 
-                "Q3": 121787.0, 
-                "standard-deviation": 50830.21872963283, 
-                "ratio": 1.0, 
-                "num_positive": 919, 
-                "num_outlier": 0, 
-                "Q2": 22588.0, 
-                "num_-1": 0, 
-                "num_0": 0, 
-                "num_1": 0, 
-                "num_negative": 0, 
-                "mean": 57139.74646354734
-            }, 
-            "numeric": {
-                "Q1": 12638.0, 
-                "count": 919, 
-                "Q3": 121787.0, 
-                "standard-deviation": 50830.21872963283, 
-                "ratio": 1.0, 
-                "num_positive": 919, 
-                "num_outlier": 0, 
-                "Q2": 22588.0, 
-                "num_-1": 0, 
-                "num_0": 0, 
-                "num_1": 0, 
-                "num_negative": 0, 
-                "mean": 57139.74646354734
-            }, 
-            "contain_numeric": {
-                "count": 919, 
-                "ratio": 1.0
-            }, 
-            "numeric_density": 0.8644142814989673, 
-            "contain_numeric_token": {
-                "count": 919, 
-                "ratio": 1.0
-            }
+        "special_type": {
+            "num_filename": 0
         }, 
         "missing": {
             "num_nonblank": 919, 
@@ -1706,8 +2665,127 @@
                 "121587.0": 24
             }
         }, 
-        "special_type": {
-            "num_filename": 0
+        "numeric_stats": {
+            "contain_numeric_token_puncs": {
+                "count": 1838, 
+                "ratio": 1.0
+            }, 
+            "decimal": {
+                "Q1": 12638.0, 
+                "count": 919, 
+                "Q3": 121787.0, 
+                "standard-deviation": 50830.21872963283, 
+                "ratio": 1.0, 
+                "num_positive": 919, 
+                "num_outlier": 0, 
+                "Q2": 22588.0, 
+                "num_-1": 0, 
+                "num_0": 0, 
+                "num_1": 0, 
+                "num_negative": 0, 
+                "mean": 57139.74646354734
+            }, 
+            "numeric": {
+                "Q1": 12638.0, 
+                "count": 919, 
+                "Q3": 121787.0, 
+                "standard-deviation": 50830.21872963283, 
+                "ratio": 1.0, 
+                "num_positive": 919, 
+                "num_outlier": 0, 
+                "Q2": 22588.0, 
+                "num_-1": 0, 
+                "num_0": 0, 
+                "num_1": 0, 
+                "num_negative": 0, 
+                "mean": 57139.74646354734
+            }, 
+            "contain_numeric": {
+                "count": 919, 
+                "ratio": 1.0
+            }, 
+            "numeric_density": 0.8644142814989673, 
+            "correlation": {
+                "spearman": [
+                    0.04289369934773628, 
+                    NaN, 
+                    0.035790764850040596, 
+                    0.012115466313189209, 
+                    -0.0796476560638986, 
+                    0.04626354191608826, 
+                    0.02896908322112483, 
+                    -0.03609349038537132, 
+                    -0.030527949816554788, 
+                    -0.4021218423655324, 
+                    -0.028582304040606948, 
+                    -0.01757981531641211, 
+                    0.8945360987181252, 
+                    1.0, 
+                    -0.06856407572740864, 
+                    0.11264897147306915, 
+                    -0.02617623906008838, 
+                    -0.050266542937717665, 
+                    -0.04335322434443723, 
+                    0.04643343712054286, 
+                    0.04643343712054286, 
+                    0.0009970010734661533, 
+                    0.04717116431082276
+                ], 
+                "pearson": [
+                    0.04199040112728747, 
+                    NaN, 
+                    0.048271667913267695, 
+                    -0.02020075814201666, 
+                    -0.08281759239435608, 
+                    0.019291960417623984, 
+                    0.013834847566142302, 
+                    -0.03919973001234327, 
+                    -0.0470121063662827, 
+                    -0.26896825325265716, 
+                    -0.050094678520344826, 
+                    -0.02548653973487166, 
+                    0.9549925851617369, 
+                    1.0, 
+                    -0.06775638590577404, 
+                    0.08316777484608187, 
+                    -0.05857810705671809, 
+                    -0.03042607619801704, 
+                    -0.02939872130026058, 
+                    0.05144102897942795, 
+                    0.05144102897942783, 
+                    -0.013936082296274127, 
+                    0.05144114752645791
+                ], 
+                "columns": [
+                    "radonFile_index", 
+                    "stfips", 
+                    "zip", 
+                    "region", 
+                    "typebldg", 
+                    "floor", 
+                    "room", 
+                    "rep", 
+                    "stratum", 
+                    "wave", 
+                    "starttm", 
+                    "stoptm", 
+                    "startdt", 
+                    "stopdt", 
+                    "activity", 
+                    "pcterr", 
+                    "adjwt", 
+                    "dupflag", 
+                    "zipflag", 
+                    "cntyfips", 
+                    "fips", 
+                    "Uppm", 
+                    "county_code"
+                ]
+            }, 
+            "contain_numeric_token": {
+                "count": 919, 
+                "ratio": 1.0
+            }
         }, 
         "length": {
             "token": {
@@ -1721,50 +2799,8 @@
         }
     }, 
     "pcterr": {
-        "numeric_stats": {
-            "contain_numeric_token_puncs": {
-                "count": 1838, 
-                "ratio": 1.0
-            }, 
-            "decimal": {
-                "Q1": 5.2, 
-                "count": 919, 
-                "Q3": 12.7, 
-                "standard-deviation": 8.477540035785978, 
-                "ratio": 1.0, 
-                "num_positive": 902, 
-                "num_outlier": 19, 
-                "Q2": 8.1, 
-                "num_-1": 0, 
-                "num_0": 17, 
-                "num_1": 0, 
-                "num_negative": 0, 
-                "mean": 10.481719260065288
-            }, 
-            "numeric": {
-                "Q1": 5.2, 
-                "count": 919, 
-                "Q3": 12.7, 
-                "standard-deviation": 8.477540035785978, 
-                "ratio": 1.0, 
-                "num_positive": 902, 
-                "num_outlier": 19, 
-                "Q2": 8.1, 
-                "num_-1": 0, 
-                "num_0": 17, 
-                "num_1": 0, 
-                "num_negative": 0, 
-                "mean": 10.481719260065288
-            }, 
-            "contain_numeric": {
-                "count": 919, 
-                "ratio": 1.0
-            }, 
-            "numeric_density": 0.7032612205360026, 
-            "contain_numeric_token": {
-                "count": 919, 
-                "ratio": 1.0
-            }
+        "special_type": {
+            "num_filename": 0
         }, 
         "missing": {
             "num_nonblank": 919, 
@@ -1830,8 +2866,127 @@
                 "9.0": 11
             }
         }, 
-        "special_type": {
-            "num_filename": 0
+        "numeric_stats": {
+            "contain_numeric_token_puncs": {
+                "count": 1838, 
+                "ratio": 1.0
+            }, 
+            "decimal": {
+                "Q1": 5.2, 
+                "count": 919, 
+                "Q3": 12.7, 
+                "standard-deviation": 8.477540035785978, 
+                "ratio": 1.0, 
+                "num_positive": 902, 
+                "num_outlier": 19, 
+                "Q2": 8.1, 
+                "num_-1": 0, 
+                "num_0": 17, 
+                "num_1": 0, 
+                "num_negative": 0, 
+                "mean": 10.481719260065288
+            }, 
+            "numeric": {
+                "Q1": 5.2, 
+                "count": 919, 
+                "Q3": 12.7, 
+                "standard-deviation": 8.477540035785978, 
+                "ratio": 1.0, 
+                "num_positive": 902, 
+                "num_outlier": 19, 
+                "Q2": 8.1, 
+                "num_-1": 0, 
+                "num_0": 17, 
+                "num_1": 0, 
+                "num_negative": 0, 
+                "mean": 10.481719260065288
+            }, 
+            "contain_numeric": {
+                "count": 919, 
+                "ratio": 1.0
+            }, 
+            "numeric_density": 0.7032612205360026, 
+            "correlation": {
+                "spearman": [
+                    0.016660415931826256, 
+                    NaN, 
+                    -0.04482591065607557, 
+                    -0.23348454284154319, 
+                    0.03826787727064664, 
+                    0.19415861857796585, 
+                    -0.03995004315232867, 
+                    0.015624126800238317, 
+                    -0.11069855484010589, 
+                    -0.06509834211556935, 
+                    0.008769851330334397, 
+                    0.03880891093408189, 
+                    0.14059910512336732, 
+                    0.11264897147306915, 
+                    -0.8164501511437785, 
+                    1.0, 
+                    -0.11008856363873822, 
+                    -0.10949318860536228, 
+                    0.007962495491940846, 
+                    0.00772944662055274, 
+                    0.00772944662055274, 
+                    -0.3403438224576938, 
+                    0.013709748926261214
+                ], 
+                "pearson": [
+                    0.05403794047838869, 
+                    NaN, 
+                    -0.013289214277247906, 
+                    -0.20850400300394495, 
+                    0.0685095494373092, 
+                    0.24873732924508468, 
+                    -0.032329088263417974, 
+                    -0.01400006956771963, 
+                    -0.09409703735766763, 
+                    -0.029752213399613384, 
+                    -0.004625274341321726, 
+                    0.024231461822663877, 
+                    0.11146435875795836, 
+                    0.08316777484608187, 
+                    -0.4742721049394638, 
+                    1.0, 
+                    -0.0583282246155266, 
+                    -0.0783329605495231, 
+                    -0.0057717983691072195, 
+                    0.05233352471758577, 
+                    0.05233352471758571, 
+                    -0.25616383302318674, 
+                    0.05912872044774686
+                ], 
+                "columns": [
+                    "radonFile_index", 
+                    "stfips", 
+                    "zip", 
+                    "region", 
+                    "typebldg", 
+                    "floor", 
+                    "room", 
+                    "rep", 
+                    "stratum", 
+                    "wave", 
+                    "starttm", 
+                    "stoptm", 
+                    "startdt", 
+                    "stopdt", 
+                    "activity", 
+                    "pcterr", 
+                    "adjwt", 
+                    "dupflag", 
+                    "zipflag", 
+                    "cntyfips", 
+                    "fips", 
+                    "Uppm", 
+                    "county_code"
+                ]
+            }, 
+            "contain_numeric_token": {
+                "count": 919, 
+                "ratio": 1.0
+            }
         }, 
         "length": {
             "token": {
@@ -1845,50 +3000,8 @@
         }
     }, 
     "wave": {
-        "numeric_stats": {
-            "contain_numeric_token_puncs": {
-                "count": 919, 
-                "ratio": 1.0
-            }, 
-            "numeric": {
-                "Q1": 25.0, 
-                "count": 919, 
-                "Q3": 42.0, 
-                "standard-deviation": 13.005271400991445, 
-                "ratio": 1.0, 
-                "num_positive": 919, 
-                "num_outlier": 0, 
-                "Q2": 34.0, 
-                "num_-1": 0, 
-                "num_0": 0, 
-                "num_1": 25, 
-                "num_negative": 0, 
-                "mean": 32.01305767138194
-            }, 
-            "contain_numeric": {
-                "count": 919, 
-                "ratio": 1.0
-            }, 
-            "numeric_density": 1.0, 
-            "integer": {
-                "Q1": 25.0, 
-                "count": 919, 
-                "Q3": 42.0, 
-                "standard-deviation": 13.005271400991445, 
-                "ratio": 1.0, 
-                "num_positive": 919, 
-                "num_outlier": 0, 
-                "Q2": 34.0, 
-                "num_-1": 0, 
-                "num_0": 0, 
-                "num_1": 25, 
-                "num_negative": 0, 
-                "mean": 32.01305767138194
-            }, 
-            "contain_numeric_token": {
-                "count": 919, 
-                "ratio": 1.0
-            }
+        "special_type": {
+            "num_filename": 0
         }, 
         "missing": {
             "num_nonblank": 919, 
@@ -1966,8 +3079,127 @@
                 "24": 28
             }
         }, 
-        "special_type": {
-            "num_filename": 0
+        "numeric_stats": {
+            "contain_numeric_token_puncs": {
+                "count": 919, 
+                "ratio": 1.0
+            }, 
+            "numeric": {
+                "Q1": 25.0, 
+                "count": 919, 
+                "Q3": 42.0, 
+                "standard-deviation": 13.005271400991445, 
+                "ratio": 1.0, 
+                "num_positive": 919, 
+                "num_outlier": 0, 
+                "Q2": 34.0, 
+                "num_-1": 0, 
+                "num_0": 0, 
+                "num_1": 25, 
+                "num_negative": 0, 
+                "mean": 32.01305767138194
+            }, 
+            "contain_numeric": {
+                "count": 919, 
+                "ratio": 1.0
+            }, 
+            "numeric_density": 1.0, 
+            "correlation": {
+                "spearman": [
+                    -0.012303951526971842, 
+                    NaN, 
+                    -0.03463714208651036, 
+                    -0.008351241918687547, 
+                    0.0609203079861737, 
+                    -0.010354776115447556, 
+                    0.053570180130352675, 
+                    0.014833472994482134, 
+                    0.011272652486233948, 
+                    1.0, 
+                    0.056918971216208245, 
+                    0.044104709103892234, 
+                    -0.41767281340059315, 
+                    -0.4021218423655324, 
+                    0.06465520372522332, 
+                    -0.06509834211556935, 
+                    0.006443453729494832, 
+                    0.05521667879898541, 
+                    0.018109839970051604, 
+                    -0.015238700584458345, 
+                    -0.015238700584458345, 
+                    -0.006160502215567749, 
+                    -0.013829141764854395
+                ], 
+                "pearson": [
+                    -0.005955809572809836, 
+                    NaN, 
+                    -0.03067950083087507, 
+                    -0.014619052901968252, 
+                    0.031698598956520836, 
+                    -0.022921751539367017, 
+                    0.04541535271698603, 
+                    0.007921692575694084, 
+                    0.025679075345799548, 
+                    1.0, 
+                    0.0382493789562526, 
+                    0.028692996075445513, 
+                    -0.2653947070639042, 
+                    -0.26896825325265716, 
+                    0.005333764817139282, 
+                    -0.029752213399613384, 
+                    0.033661337861443284, 
+                    0.04210122153985732, 
+                    0.017741192708111326, 
+                    -0.007328885859413252, 
+                    -0.007328885859413211, 
+                    -0.013815046203841278, 
+                    -0.006636529533371902
+                ], 
+                "columns": [
+                    "radonFile_index", 
+                    "stfips", 
+                    "zip", 
+                    "region", 
+                    "typebldg", 
+                    "floor", 
+                    "room", 
+                    "rep", 
+                    "stratum", 
+                    "wave", 
+                    "starttm", 
+                    "stoptm", 
+                    "startdt", 
+                    "stopdt", 
+                    "activity", 
+                    "pcterr", 
+                    "adjwt", 
+                    "dupflag", 
+                    "zipflag", 
+                    "cntyfips", 
+                    "fips", 
+                    "Uppm", 
+                    "county_code"
+                ]
+            }, 
+            "integer": {
+                "Q1": 25.0, 
+                "count": 919, 
+                "Q3": 42.0, 
+                "standard-deviation": 13.005271400991445, 
+                "ratio": 1.0, 
+                "num_positive": 919, 
+                "num_outlier": 0, 
+                "Q2": 34.0, 
+                "num_-1": 0, 
+                "num_0": 0, 
+                "num_1": 25, 
+                "num_negative": 0, 
+                "mean": 32.01305767138194
+            }, 
+            "contain_numeric_token": {
+                "count": 919, 
+                "ratio": 1.0
+            }
         }, 
         "length": {
             "token": {
@@ -2027,50 +3259,8 @@
         }
     }, 
     "starttm": {
-        "numeric_stats": {
-            "contain_numeric_token_puncs": {
-                "count": 1838, 
-                "ratio": 1.0
-            }, 
-            "decimal": {
-                "Q1": 1000.0, 
-                "count": 919, 
-                "Q3": 1817.5, 
-                "standard-deviation": 483.2706977606833, 
-                "ratio": 1.0, 
-                "num_positive": 917, 
-                "num_outlier": 0, 
-                "Q2": 1415.0, 
-                "num_-1": 0, 
-                "num_0": 2, 
-                "num_1": 0, 
-                "num_negative": 0, 
-                "mean": 1413.8248095756257
-            }, 
-            "numeric": {
-                "Q1": 1000.0, 
-                "count": 919, 
-                "Q3": 1817.5, 
-                "standard-deviation": 483.2706977606833, 
-                "ratio": 1.0, 
-                "num_positive": 917, 
-                "num_outlier": 0, 
-                "Q2": 1415.0, 
-                "num_-1": 0, 
-                "num_0": 2, 
-                "num_1": 0, 
-                "num_negative": 0, 
-                "mean": 1413.8248095756257
-            }, 
-            "contain_numeric": {
-                "count": 919, 
-                "ratio": 1.0
-            }, 
-            "numeric_density": 0.8261774163041422, 
-            "contain_numeric_token": {
-                "count": 919, 
-                "ratio": 1.0
-            }
+        "special_type": {
+            "num_filename": 0
         }, 
         "missing": {
             "num_nonblank": 919, 
@@ -2136,8 +3326,127 @@
                 "1830.0": 24
             }
         }, 
-        "special_type": {
-            "num_filename": 0
+        "numeric_stats": {
+            "contain_numeric_token_puncs": {
+                "count": 1838, 
+                "ratio": 1.0
+            }, 
+            "decimal": {
+                "Q1": 1000.0, 
+                "count": 919, 
+                "Q3": 1817.5, 
+                "standard-deviation": 483.2706977606833, 
+                "ratio": 1.0, 
+                "num_positive": 917, 
+                "num_outlier": 0, 
+                "Q2": 1415.0, 
+                "num_-1": 0, 
+                "num_0": 2, 
+                "num_1": 0, 
+                "num_negative": 0, 
+                "mean": 1413.8248095756257
+            }, 
+            "numeric": {
+                "Q1": 1000.0, 
+                "count": 919, 
+                "Q3": 1817.5, 
+                "standard-deviation": 483.2706977606833, 
+                "ratio": 1.0, 
+                "num_positive": 917, 
+                "num_outlier": 0, 
+                "Q2": 1415.0, 
+                "num_-1": 0, 
+                "num_0": 2, 
+                "num_1": 0, 
+                "num_negative": 0, 
+                "mean": 1413.8248095756257
+            }, 
+            "contain_numeric": {
+                "count": 919, 
+                "ratio": 1.0
+            }, 
+            "numeric_density": 0.8261774163041422, 
+            "correlation": {
+                "spearman": [
+                    0.013850467346954826, 
+                    NaN, 
+                    -0.019649775582181183, 
+                    -0.0007157487611483762, 
+                    -0.007698794618461727, 
+                    -0.038261171178182, 
+                    -0.019995967405146656, 
+                    -0.05110042267323271, 
+                    0.05787176546678887, 
+                    0.056918971216208245, 
+                    1.0, 
+                    0.8441864946600205, 
+                    -0.03579654326245317, 
+                    -0.028582304040606948, 
+                    0.03260250322996659, 
+                    0.008769851330334397, 
+                    0.05377980134699855, 
+                    0.011723058839074187, 
+                    -0.011075343682897514, 
+                    0.01142352055411502, 
+                    0.01142352055411502, 
+                    0.023759061911018304, 
+                    0.010500934008672181
+                ], 
+                "pearson": [
+                    0.013827798242697833, 
+                    NaN, 
+                    -0.026617587225340373, 
+                    -0.0055607414668280035, 
+                    0.0013741077499413415, 
+                    -0.03744816456566058, 
+                    -0.006914739567696864, 
+                    -0.04832732010279343, 
+                    0.06422063727710448, 
+                    0.0382493789562526, 
+                    1.0, 
+                    0.8394170658680927, 
+                    -0.05436435560292969, 
+                    -0.050094678520344826, 
+                    0.024944091723713598, 
+                    -0.004625274341321726, 
+                    0.0767189325651081, 
+                    0.011138689046357614, 
+                    -0.012561130741935217, 
+                    0.008823823232823104, 
+                    0.008823823232823137, 
+                    0.02066354124626337, 
+                    0.006621622811709846
+                ], 
+                "columns": [
+                    "radonFile_index", 
+                    "stfips", 
+                    "zip", 
+                    "region", 
+                    "typebldg", 
+                    "floor", 
+                    "room", 
+                    "rep", 
+                    "stratum", 
+                    "wave", 
+                    "starttm", 
+                    "stoptm", 
+                    "startdt", 
+                    "stopdt", 
+                    "activity", 
+                    "pcterr", 
+                    "adjwt", 
+                    "dupflag", 
+                    "zipflag", 
+                    "cntyfips", 
+                    "fips", 
+                    "Uppm", 
+                    "county_code"
+                ]
+            }, 
+            "contain_numeric_token": {
+                "count": 919, 
+                "ratio": 1.0
+            }
         }, 
         "length": {
             "token": {
@@ -2151,50 +3460,8 @@
         }
     }, 
     "fips": {
-        "numeric_stats": {
-            "contain_numeric_token_puncs": {
-                "count": 1838, 
-                "ratio": 1.0
-            }, 
-            "decimal": {
-                "Q1": 27041.0, 
-                "count": 919, 
-                "Q3": 27137.0, 
-                "standard-deviation": 52.12623851276699, 
-                "ratio": 1.0, 
-                "num_positive": 919, 
-                "num_outlier": 0, 
-                "Q2": 27085.0, 
-                "num_-1": 0, 
-                "num_0": 0, 
-                "num_1": 0, 
-                "num_negative": 0, 
-                "mean": 27087.413492927095
-            }, 
-            "numeric": {
-                "Q1": 27041.0, 
-                "count": 919, 
-                "Q3": 27137.0, 
-                "standard-deviation": 52.12623851276699, 
-                "ratio": 1.0, 
-                "num_positive": 919, 
-                "num_outlier": 0, 
-                "Q2": 27085.0, 
-                "num_-1": 0, 
-                "num_0": 0, 
-                "num_1": 0, 
-                "num_negative": 0, 
-                "mean": 27087.413492927095
-            }, 
-            "contain_numeric": {
-                "count": 919, 
-                "ratio": 1.0
-            }, 
-            "numeric_density": 0.8571428571428571, 
-            "contain_numeric_token": {
-                "count": 919, 
-                "ratio": 1.0
-            }
+        "special_type": {
+            "num_filename": 0
         }, 
         "missing": {
             "num_nonblank": 919, 
@@ -2260,8 +3527,127 @@
                 "27135.0": 14
             }
         }, 
-        "special_type": {
-            "num_filename": 0
+        "numeric_stats": {
+            "contain_numeric_token_puncs": {
+                "count": 1838, 
+                "ratio": 1.0
+            }, 
+            "decimal": {
+                "Q1": 27041.0, 
+                "count": 919, 
+                "Q3": 27137.0, 
+                "standard-deviation": 52.12623851276699, 
+                "ratio": 1.0, 
+                "num_positive": 919, 
+                "num_outlier": 0, 
+                "Q2": 27085.0, 
+                "num_-1": 0, 
+                "num_0": 0, 
+                "num_1": 0, 
+                "num_negative": 0, 
+                "mean": 27087.413492927095
+            }, 
+            "numeric": {
+                "Q1": 27041.0, 
+                "count": 919, 
+                "Q3": 27137.0, 
+                "standard-deviation": 52.12623851276699, 
+                "ratio": 1.0, 
+                "num_positive": 919, 
+                "num_outlier": 0, 
+                "Q2": 27085.0, 
+                "num_-1": 0, 
+                "num_0": 0, 
+                "num_1": 0, 
+                "num_negative": 0, 
+                "mean": 27087.413492927095
+            }, 
+            "contain_numeric": {
+                "count": 919, 
+                "ratio": 1.0
+            }, 
+            "numeric_density": 0.8571428571428571, 
+            "correlation": {
+                "spearman": [
+                    0.994649880443228, 
+                    NaN, 
+                    0.045390958615699695, 
+                    -0.11658233163770514, 
+                    -0.0031569492707399166, 
+                    0.0028909663631192517, 
+                    0.0645157710723934, 
+                    0.026470874339240825, 
+                    -0.1634837586535157, 
+                    -0.015238700584458345, 
+                    0.01142352055411502, 
+                    0.003535128685549257, 
+                    0.06636083867848228, 
+                    0.04643343712054286, 
+                    -0.014055681139457868, 
+                    0.00772944662055274, 
+                    -0.15706898037061845, 
+                    0.024955056281849818, 
+                    -0.02668051942204823, 
+                    1.0, 
+                    1.0, 
+                    0.07612399184595306, 
+                    0.9967740281605534
+                ], 
+                "pearson": [
+                    0.9900503304924132, 
+                    NaN, 
+                    0.05020489588371243, 
+                    -0.14336226949427072, 
+                    -0.019590041969414558, 
+                    0.00800298823872894, 
+                    0.0730064334324283, 
+                    0.02790809323928452, 
+                    -0.1838931564060403, 
+                    -0.007328885859413211, 
+                    0.008823823232823137, 
+                    -0.0035198216776958792, 
+                    0.06399245031642828, 
+                    0.05144102897942783, 
+                    -0.0035806791767466, 
+                    0.05233352471758571, 
+                    -0.20752372734979904, 
+                    0.01691615700784243, 
+                    -0.02560265921859075, 
+                    0.9999999999999994, 
+                    1.0, 
+                    0.10472041102054733, 
+                    0.9992605689557886
+                ], 
+                "columns": [
+                    "radonFile_index", 
+                    "stfips", 
+                    "zip", 
+                    "region", 
+                    "typebldg", 
+                    "floor", 
+                    "room", 
+                    "rep", 
+                    "stratum", 
+                    "wave", 
+                    "starttm", 
+                    "stoptm", 
+                    "startdt", 
+                    "stopdt", 
+                    "activity", 
+                    "pcterr", 
+                    "adjwt", 
+                    "dupflag", 
+                    "zipflag", 
+                    "cntyfips", 
+                    "fips", 
+                    "Uppm", 
+                    "county_code"
+                ]
+            }, 
+            "contain_numeric_token": {
+                "count": 919, 
+                "ratio": 1.0
+            }
         }, 
         "length": {
             "token": {
@@ -2325,50 +3711,8 @@
         }
     }, 
     "room": {
-        "numeric_stats": {
-            "contain_numeric_token_puncs": {
-                "count": 1838, 
-                "ratio": 1.0
-            }, 
-            "decimal": {
-                "Q1": 2.0, 
-                "count": 919, 
-                "Q3": 4.0, 
-                "standard-deviation": 1.6240652639694069, 
-                "ratio": 1.0, 
-                "num_positive": 862, 
-                "num_outlier": 0, 
-                "Q2": 4.0, 
-                "num_-1": 0, 
-                "num_0": 57, 
-                "num_1": 47, 
-                "num_negative": 0, 
-                "mean": 3.2850924918389555
-            }, 
-            "numeric": {
-                "Q1": 2.0, 
-                "count": 919, 
-                "Q3": 4.0, 
-                "standard-deviation": 1.6240652639694069, 
-                "ratio": 1.0, 
-                "num_positive": 862, 
-                "num_outlier": 0, 
-                "Q2": 4.0, 
-                "num_-1": 0, 
-                "num_0": 57, 
-                "num_1": 47, 
-                "num_negative": 0, 
-                "mean": 3.2850924918389555
-            }, 
-            "contain_numeric": {
-                "count": 919, 
-                "ratio": 1.0
-            }, 
-            "numeric_density": 0.6666666666666666, 
-            "contain_numeric_token": {
-                "count": 919, 
-                "ratio": 1.0
-            }
+        "special_type": {
+            "num_filename": 0
         }, 
         "missing": {
             "num_nonblank": 919, 
@@ -2422,8 +3766,127 @@
                 "5.0": 12
             }
         }, 
-        "special_type": {
-            "num_filename": 0
+        "numeric_stats": {
+            "contain_numeric_token_puncs": {
+                "count": 1838, 
+                "ratio": 1.0
+            }, 
+            "decimal": {
+                "Q1": 2.0, 
+                "count": 919, 
+                "Q3": 4.0, 
+                "standard-deviation": 1.6240652639694069, 
+                "ratio": 1.0, 
+                "num_positive": 862, 
+                "num_outlier": 0, 
+                "Q2": 4.0, 
+                "num_-1": 0, 
+                "num_0": 57, 
+                "num_1": 47, 
+                "num_negative": 0, 
+                "mean": 3.2850924918389555
+            }, 
+            "numeric": {
+                "Q1": 2.0, 
+                "count": 919, 
+                "Q3": 4.0, 
+                "standard-deviation": 1.6240652639694069, 
+                "ratio": 1.0, 
+                "num_positive": 862, 
+                "num_outlier": 0, 
+                "Q2": 4.0, 
+                "num_-1": 0, 
+                "num_0": 57, 
+                "num_1": 47, 
+                "num_negative": 0, 
+                "mean": 3.2850924918389555
+            }, 
+            "contain_numeric": {
+                "count": 919, 
+                "ratio": 1.0
+            }, 
+            "numeric_density": 0.6666666666666666, 
+            "correlation": {
+                "spearman": [
+                    0.062394017890477535, 
+                    NaN, 
+                    0.0022919224816697016, 
+                    0.020119340394677065, 
+                    0.194818097225674, 
+                    -0.18733550992734957, 
+                    1.0, 
+                    -0.00020995583299320437, 
+                    -0.00953502646287054, 
+                    0.053570180130352675, 
+                    -0.019995967405146656, 
+                    -0.03371189982623255, 
+                    0.04164925543170946, 
+                    0.02896908322112483, 
+                    0.05456640802230922, 
+                    -0.03995004315232867, 
+                    0.0011699931122764145, 
+                    -0.01111284505040472, 
+                    -0.013267315256920296, 
+                    0.0645157710723934, 
+                    0.0645157710723934, 
+                    0.02089856718356741, 
+                    0.0656864593073401
+                ], 
+                "pearson": [
+                    0.06761805500679177, 
+                    NaN, 
+                    0.011145750654699233, 
+                    0.009594385539521744, 
+                    0.12243741547591533, 
+                    -0.09469273836946761, 
+                    1.0, 
+                    0.002406603362553246, 
+                    -0.0035930809474572127, 
+                    0.04541535271698603, 
+                    -0.006914739567696864, 
+                    -0.017923678710914194, 
+                    0.02173806738942003, 
+                    0.013834847566142302, 
+                    0.05692583577134533, 
+                    -0.032329088263417974, 
+                    -0.006766831020018828, 
+                    0.022633373462374037, 
+                    -0.005796920932253378, 
+                    0.07300643343242784, 
+                    0.0730064334324283, 
+                    0.03446647155223957, 
+                    0.07335389208690717
+                ], 
+                "columns": [
+                    "radonFile_index", 
+                    "stfips", 
+                    "zip", 
+                    "region", 
+                    "typebldg", 
+                    "floor", 
+                    "room", 
+                    "rep", 
+                    "stratum", 
+                    "wave", 
+                    "starttm", 
+                    "stoptm", 
+                    "startdt", 
+                    "stopdt", 
+                    "activity", 
+                    "pcterr", 
+                    "adjwt", 
+                    "dupflag", 
+                    "zipflag", 
+                    "cntyfips", 
+                    "fips", 
+                    "Uppm", 
+                    "county_code"
+                ]
+            }, 
+            "contain_numeric_token": {
+                "count": 919, 
+                "ratio": 1.0
+            }
         }, 
         "length": {
             "token": {
@@ -2437,50 +3900,8 @@
         }
     }, 
     "region": {
-        "numeric_stats": {
-            "contain_numeric_token_puncs": {
-                "count": 1838, 
-                "ratio": 1.0
-            }, 
-            "decimal": {
-                "Q1": 2.0, 
-                "count": 919, 
-                "Q3": 4.0, 
-                "standard-deviation": 1.3031023459663675, 
-                "ratio": 1.0, 
-                "num_positive": 919, 
-                "num_outlier": 0, 
-                "Q2": 3.0, 
-                "num_-1": 0, 
-                "num_0": 0, 
-                "num_1": 127, 
-                "num_negative": 0, 
-                "mean": 3.119695321001088
-            }, 
-            "numeric": {
-                "Q1": 2.0, 
-                "count": 919, 
-                "Q3": 4.0, 
-                "standard-deviation": 1.3031023459663675, 
-                "ratio": 1.0, 
-                "num_positive": 919, 
-                "num_outlier": 0, 
-                "Q2": 3.0, 
-                "num_-1": 0, 
-                "num_0": 0, 
-                "num_1": 127, 
-                "num_negative": 0, 
-                "mean": 3.119695321001088
-            }, 
-            "contain_numeric": {
-                "count": 919, 
-                "ratio": 1.0
-            }, 
-            "numeric_density": 0.6666666666666666, 
-            "contain_numeric_token": {
-                "count": 919, 
-                "ratio": 1.0
-            }
+        "special_type": {
+            "num_filename": 0
         }, 
         "missing": {
             "num_nonblank": 919, 
@@ -2527,8 +3948,127 @@
                 "1.0": 127
             }
         }, 
-        "special_type": {
-            "num_filename": 0
+        "numeric_stats": {
+            "contain_numeric_token_puncs": {
+                "count": 1838, 
+                "ratio": 1.0
+            }, 
+            "decimal": {
+                "Q1": 2.0, 
+                "count": 919, 
+                "Q3": 4.0, 
+                "standard-deviation": 1.3031023459663675, 
+                "ratio": 1.0, 
+                "num_positive": 919, 
+                "num_outlier": 0, 
+                "Q2": 3.0, 
+                "num_-1": 0, 
+                "num_0": 0, 
+                "num_1": 127, 
+                "num_negative": 0, 
+                "mean": 3.119695321001088
+            }, 
+            "numeric": {
+                "Q1": 2.0, 
+                "count": 919, 
+                "Q3": 4.0, 
+                "standard-deviation": 1.3031023459663675, 
+                "ratio": 1.0, 
+                "num_positive": 919, 
+                "num_outlier": 0, 
+                "Q2": 3.0, 
+                "num_-1": 0, 
+                "num_0": 0, 
+                "num_1": 127, 
+                "num_negative": 0, 
+                "mean": 3.119695321001088
+            }, 
+            "contain_numeric": {
+                "count": 919, 
+                "ratio": 1.0
+            }, 
+            "numeric_density": 0.6666666666666666, 
+            "correlation": {
+                "spearman": [
+                    -0.1501292750547257, 
+                    NaN, 
+                    -0.14604510543018404, 
+                    1.0, 
+                    0.03410283275038069, 
+                    -0.058786886865489094, 
+                    0.020119340394677065, 
+                    -0.008609116813327194, 
+                    0.4653800688491845, 
+                    -0.008351241918687547, 
+                    -0.0007157487611483762, 
+                    -0.017401374167932415, 
+                    0.009846903713488304, 
+                    0.012115466313189209, 
+                    0.266896314043364, 
+                    -0.23348454284154319, 
+                    0.4459720183025638, 
+                    -0.016967707689471104, 
+                    0.025271748615923923, 
+                    -0.11658233163770514, 
+                    -0.11658233163770514, 
+                    0.5685748620783039, 
+                    -0.1504498871245418
+                ], 
+                "pearson": [
+                    -0.16242338669548007, 
+                    NaN, 
+                    -0.14318934859282043, 
+                    1.0, 
+                    0.006807401998389533, 
+                    -0.047802454871292206, 
+                    0.009594385539521744, 
+                    -0.00801576742389261, 
+                    0.4253064556949596, 
+                    -0.014619052901968252, 
+                    -0.0055607414668280035, 
+                    -0.016961377903741973, 
+                    -0.021004964500101583, 
+                    -0.02020075814201666, 
+                    0.19235043100613688, 
+                    -0.20850400300394495, 
+                    0.25464910611890734, 
+                    -0.0011205162067302525, 
+                    0.022308458305867196, 
+                    -0.14336226949427056, 
+                    -0.14336226949427072, 
+                    0.564030065914868, 
+                    -0.1616415392785927
+                ], 
+                "columns": [
+                    "radonFile_index", 
+                    "stfips", 
+                    "zip", 
+                    "region", 
+                    "typebldg", 
+                    "floor", 
+                    "room", 
+                    "rep", 
+                    "stratum", 
+                    "wave", 
+                    "starttm", 
+                    "stoptm", 
+                    "startdt", 
+                    "stopdt", 
+                    "activity", 
+                    "pcterr", 
+                    "adjwt", 
+                    "dupflag", 
+                    "zipflag", 
+                    "cntyfips", 
+                    "fips", 
+                    "Uppm", 
+                    "county_code"
+                ]
+            }, 
+            "contain_numeric_token": {
+                "count": 919, 
+                "ratio": 1.0
+            }
         }, 
         "length": {
             "token": {
@@ -2542,50 +4082,8 @@
         }
     }, 
     "adjwt": {
-        "numeric_stats": {
-            "contain_numeric_token_puncs": {
-                "count": 1838, 
-                "ratio": 1.0
-            }, 
-            "decimal": {
-                "Q1": 471.3662230000001, 
-                "count": 919, 
-                "Q3": 1146.49919, 
-                "standard-deviation": 595.8415318730667, 
-                "ratio": 1.0, 
-                "num_positive": 919, 
-                "num_outlier": 0, 
-                "Q2": 990.411554, 
-                "num_-1": 0, 
-                "num_0": 0, 
-                "num_1": 0, 
-                "num_negative": 0, 
-                "mean": 1051.6819331664856
-            }, 
-            "numeric": {
-                "Q1": 471.3662230000001, 
-                "count": 919, 
-                "Q3": 1146.49919, 
-                "standard-deviation": 595.8415318730667, 
-                "ratio": 1.0, 
-                "num_positive": 919, 
-                "num_outlier": 0, 
-                "Q2": 990.411554, 
-                "num_-1": 0, 
-                "num_0": 0, 
-                "num_1": 0, 
-                "num_negative": 0, 
-                "mean": 1051.6819331664856
-            }, 
-            "contain_numeric": {
-                "count": 919, 
-                "ratio": 1.0
-            }, 
-            "numeric_density": 0.9109841146842309, 
-            "contain_numeric_token": {
-                "count": 919, 
-                "ratio": 1.0
-            }
+        "special_type": {
+            "num_filename": 0
         }, 
         "missing": {
             "num_nonblank": 919, 
@@ -2651,8 +4149,127 @@
                 "461.274696": 50
             }
         }, 
-        "special_type": {
-            "num_filename": 0
+        "numeric_stats": {
+            "contain_numeric_token_puncs": {
+                "count": 1838, 
+                "ratio": 1.0
+            }, 
+            "decimal": {
+                "Q1": 471.3662230000001, 
+                "count": 919, 
+                "Q3": 1146.49919, 
+                "standard-deviation": 595.8415318730667, 
+                "ratio": 1.0, 
+                "num_positive": 919, 
+                "num_outlier": 0, 
+                "Q2": 990.411554, 
+                "num_-1": 0, 
+                "num_0": 0, 
+                "num_1": 0, 
+                "num_negative": 0, 
+                "mean": 1051.6819331664856
+            }, 
+            "numeric": {
+                "Q1": 471.3662230000001, 
+                "count": 919, 
+                "Q3": 1146.49919, 
+                "standard-deviation": 595.8415318730667, 
+                "ratio": 1.0, 
+                "num_positive": 919, 
+                "num_outlier": 0, 
+                "Q2": 990.411554, 
+                "num_-1": 0, 
+                "num_0": 0, 
+                "num_1": 0, 
+                "num_negative": 0, 
+                "mean": 1051.6819331664856
+            }, 
+            "contain_numeric": {
+                "count": 919, 
+                "ratio": 1.0
+            }, 
+            "numeric_density": 0.9109841146842309, 
+            "correlation": {
+                "spearman": [
+                    -0.16583984615515723, 
+                    NaN, 
+                    -0.03634768060391956, 
+                    0.4459720183025638, 
+                    0.09070202406182361, 
+                    -0.0648480408594785, 
+                    0.0011699931122764145, 
+                    -0.07858970123996374, 
+                    0.9602210480597667, 
+                    0.006443453729494832, 
+                    0.05377980134699855, 
+                    0.04285368763654775, 
+                    -0.04007924037485028, 
+                    -0.02617623906008838, 
+                    0.13365731047490345, 
+                    -0.11008856363873822, 
+                    1.0, 
+                    -0.04775895333095622, 
+                    0.013954120305500292, 
+                    -0.15706898037061845, 
+                    -0.15706898037061845, 
+                    0.28444387200481885, 
+                    -0.173880951196189
+                ], 
+                "pearson": [
+                    -0.18922450889898715, 
+                    NaN, 
+                    -0.21647350280890038, 
+                    0.25464910611890734, 
+                    0.08417998963284584, 
+                    -0.07424435759737472, 
+                    -0.006766831020018828, 
+                    -0.028845683630820938, 
+                    0.9488669638004616, 
+                    0.033661337861443284, 
+                    0.0767189325651081, 
+                    0.06959947227402931, 
+                    -0.05615652976564656, 
+                    -0.05857810705671809, 
+                    0.0102053670875955, 
+                    -0.0583282246155266, 
+                    1.0, 
+                    -0.0523222495382888, 
+                    0.0010882772651553633, 
+                    -0.20752372734979943, 
+                    -0.20752372734979904, 
+                    0.11668439316458204, 
+                    -0.22026969201573343
+                ], 
+                "columns": [
+                    "radonFile_index", 
+                    "stfips", 
+                    "zip", 
+                    "region", 
+                    "typebldg", 
+                    "floor", 
+                    "room", 
+                    "rep", 
+                    "stratum", 
+                    "wave", 
+                    "starttm", 
+                    "stoptm", 
+                    "startdt", 
+                    "stopdt", 
+                    "activity", 
+                    "pcterr", 
+                    "adjwt", 
+                    "dupflag", 
+                    "zipflag", 
+                    "cntyfips", 
+                    "fips", 
+                    "Uppm", 
+                    "county_code"
+                ]
+            }, 
+            "contain_numeric_token": {
+                "count": 919, 
+                "ratio": 1.0
+            }
         }, 
         "length": {
             "token": {
@@ -2677,50 +4294,8 @@
         }
     }, 
     "cntyfips": {
-        "numeric_stats": {
-            "contain_numeric_token_puncs": {
-                "count": 1838, 
-                "ratio": 1.0
-            }, 
-            "decimal": {
-                "Q1": 41.0, 
-                "count": 919, 
-                "Q3": 137.0, 
-                "standard-deviation": 52.12623851276701, 
-                "ratio": 1.0, 
-                "num_positive": 919, 
-                "num_outlier": 0, 
-                "Q2": 85.0, 
-                "num_-1": 0, 
-                "num_0": 0, 
-                "num_1": 4, 
-                "num_negative": 0, 
-                "mean": 87.41349292709467
-            }, 
-            "numeric": {
-                "Q1": 41.0, 
-                "count": 919, 
-                "Q3": 137.0, 
-                "standard-deviation": 52.12623851276701, 
-                "ratio": 1.0, 
-                "num_positive": 919, 
-                "num_outlier": 0, 
-                "Q2": 85.0, 
-                "num_-1": 0, 
-                "num_0": 0, 
-                "num_1": 4, 
-                "num_negative": 0, 
-                "mean": 87.41349292709467
-            }, 
-            "contain_numeric": {
-                "count": 919, 
-                "ratio": 1.0
-            }, 
-            "numeric_density": 0.7712223052028877, 
-            "contain_numeric_token": {
-                "count": 919, 
-                "ratio": 1.0
-            }
+        "special_type": {
+            "num_filename": 0
         }, 
         "missing": {
             "num_nonblank": 919, 
@@ -2786,8 +4361,127 @@
                 "49.0": 14
             }
         }, 
-        "special_type": {
-            "num_filename": 0
+        "numeric_stats": {
+            "contain_numeric_token_puncs": {
+                "count": 1838, 
+                "ratio": 1.0
+            }, 
+            "decimal": {
+                "Q1": 41.0, 
+                "count": 919, 
+                "Q3": 137.0, 
+                "standard-deviation": 52.12623851276701, 
+                "ratio": 1.0, 
+                "num_positive": 919, 
+                "num_outlier": 0, 
+                "Q2": 85.0, 
+                "num_-1": 0, 
+                "num_0": 0, 
+                "num_1": 4, 
+                "num_negative": 0, 
+                "mean": 87.41349292709467
+            }, 
+            "numeric": {
+                "Q1": 41.0, 
+                "count": 919, 
+                "Q3": 137.0, 
+                "standard-deviation": 52.12623851276701, 
+                "ratio": 1.0, 
+                "num_positive": 919, 
+                "num_outlier": 0, 
+                "Q2": 85.0, 
+                "num_-1": 0, 
+                "num_0": 0, 
+                "num_1": 4, 
+                "num_negative": 0, 
+                "mean": 87.41349292709467
+            }, 
+            "contain_numeric": {
+                "count": 919, 
+                "ratio": 1.0
+            }, 
+            "numeric_density": 0.7712223052028877, 
+            "correlation": {
+                "spearman": [
+                    0.994649880443228, 
+                    NaN, 
+                    0.045390958615699695, 
+                    -0.11658233163770514, 
+                    -0.0031569492707399166, 
+                    0.0028909663631192517, 
+                    0.0645157710723934, 
+                    0.026470874339240825, 
+                    -0.1634837586535157, 
+                    -0.015238700584458345, 
+                    0.01142352055411502, 
+                    0.003535128685549257, 
+                    0.06636083867848228, 
+                    0.04643343712054286, 
+                    -0.014055681139457868, 
+                    0.00772944662055274, 
+                    -0.15706898037061845, 
+                    0.024955056281849818, 
+                    -0.02668051942204823, 
+                    1.0, 
+                    1.0, 
+                    0.07612399184595306, 
+                    0.9967740281605534
+                ], 
+                "pearson": [
+                    0.9900503304924219, 
+                    NaN, 
+                    0.050204895883712866, 
+                    -0.14336226949427056, 
+                    -0.019590041969414617, 
+                    0.008002988238729131, 
+                    0.07300643343242784, 
+                    0.027908093239284493, 
+                    -0.18389315640604112, 
+                    -0.007328885859413252, 
+                    0.008823823232823104, 
+                    -0.003519821677695848, 
+                    0.06399245031642824, 
+                    0.05144102897942795, 
+                    -0.0035806791767465885, 
+                    0.05233352471758577, 
+                    -0.20752372734979943, 
+                    0.016916157007842415, 
+                    -0.02560265921859097, 
+                    1.0, 
+                    0.9999999999999994, 
+                    0.10472041102054937, 
+                    0.9992605689558017
+                ], 
+                "columns": [
+                    "radonFile_index", 
+                    "stfips", 
+                    "zip", 
+                    "region", 
+                    "typebldg", 
+                    "floor", 
+                    "room", 
+                    "rep", 
+                    "stratum", 
+                    "wave", 
+                    "starttm", 
+                    "stoptm", 
+                    "startdt", 
+                    "stopdt", 
+                    "activity", 
+                    "pcterr", 
+                    "adjwt", 
+                    "dupflag", 
+                    "zipflag", 
+                    "cntyfips", 
+                    "fips", 
+                    "Uppm", 
+                    "county_code"
+                ]
+            }, 
+            "contain_numeric_token": {
+                "count": 919, 
+                "ratio": 1.0
+            }
         }, 
         "length": {
             "token": {
@@ -2801,50 +4495,8 @@
         }
     }, 
     "activity": {
-        "numeric_stats": {
-            "contain_numeric_token_puncs": {
-                "count": 1838, 
-                "ratio": 1.0
-            }, 
-            "decimal": {
-                "Q1": 1.9, 
-                "count": 919, 
-                "Q3": 6.0, 
-                "standard-deviation": 4.481583695737934, 
-                "ratio": 1.0, 
-                "num_positive": 916, 
-                "num_outlier": 17, 
-                "Q2": 3.6, 
-                "num_-1": 0, 
-                "num_0": 3, 
-                "num_1": 8, 
-                "num_negative": 0, 
-                "mean": 4.768117519042437
-            }, 
-            "numeric": {
-                "Q1": 1.9, 
-                "count": 919, 
-                "Q3": 6.0, 
-                "standard-deviation": 4.481583695737934, 
-                "ratio": 1.0, 
-                "num_positive": 916, 
-                "num_outlier": 17, 
-                "Q2": 3.6, 
-                "num_-1": 0, 
-                "num_0": 3, 
-                "num_1": 8, 
-                "num_negative": 0, 
-                "mean": 4.768117519042437
-            }, 
-            "contain_numeric": {
-                "count": 919, 
-                "ratio": 1.0
-            }, 
-            "numeric_density": 0.6766361717100633, 
-            "contain_numeric_token": {
-                "count": 919, 
-                "ratio": 1.0
-            }
+        "special_type": {
+            "num_filename": 0
         }, 
         "missing": {
             "num_nonblank": 919, 
@@ -2910,8 +4562,127 @@
                 "1.7": 18
             }
         }, 
-        "special_type": {
-            "num_filename": 0
+        "numeric_stats": {
+            "contain_numeric_token_puncs": {
+                "count": 1838, 
+                "ratio": 1.0
+            }, 
+            "decimal": {
+                "Q1": 1.9, 
+                "count": 919, 
+                "Q3": 6.0, 
+                "standard-deviation": 4.481583695737934, 
+                "ratio": 1.0, 
+                "num_positive": 916, 
+                "num_outlier": 17, 
+                "Q2": 3.6, 
+                "num_-1": 0, 
+                "num_0": 3, 
+                "num_1": 8, 
+                "num_negative": 0, 
+                "mean": 4.768117519042437
+            }, 
+            "numeric": {
+                "Q1": 1.9, 
+                "count": 919, 
+                "Q3": 6.0, 
+                "standard-deviation": 4.481583695737934, 
+                "ratio": 1.0, 
+                "num_positive": 916, 
+                "num_outlier": 17, 
+                "Q2": 3.6, 
+                "num_-1": 0, 
+                "num_0": 3, 
+                "num_1": 8, 
+                "num_negative": 0, 
+                "mean": 4.768117519042437
+            }, 
+            "contain_numeric": {
+                "count": 919, 
+                "ratio": 1.0
+            }, 
+            "numeric_density": 0.6766361717100633, 
+            "correlation": {
+                "spearman": [
+                    -0.02413219937179882, 
+                    NaN, 
+                    0.04396766033707197, 
+                    0.266896314043364, 
+                    -0.09809219611218159, 
+                    -0.24822235151666583, 
+                    0.05456640802230922, 
+                    -0.04033528355314334, 
+                    0.13764231498674448, 
+                    0.06465520372522332, 
+                    0.03260250322996659, 
+                    0.025694549683962255, 
+                    -0.08344617772377654, 
+                    -0.06856407572740864, 
+                    1.0, 
+                    -0.8164501511437785, 
+                    0.13365731047490345, 
+                    0.1108833821480661, 
+                    0.025195434972928477, 
+                    -0.014055681139457868, 
+                    -0.014055681139457868, 
+                    0.35649542767303577, 
+                    -0.021945009312276862
+                ], 
+                "pearson": [
+                    -0.00903316281543351, 
+                    NaN, 
+                    0.06096154991559022, 
+                    0.19235043100613688, 
+                    -0.08395514981470081, 
+                    -0.1486383970704699, 
+                    0.05692583577134533, 
+                    -0.052121678787145104, 
+                    0.03341850471957133, 
+                    0.005333764817139282, 
+                    0.024944091723713598, 
+                    0.010537387402260139, 
+                    -0.07129709174227483, 
+                    -0.06775638590577404, 
+                    1.0, 
+                    -0.4742721049394638, 
+                    0.0102053670875955, 
+                    0.42448932648150234, 
+                    0.0061297892243866265, 
+                    -0.0035806791767465885, 
+                    -0.0035806791767466, 
+                    0.29773674281868034, 
+                    -0.00834682714604455
+                ], 
+                "columns": [
+                    "radonFile_index", 
+                    "stfips", 
+                    "zip", 
+                    "region", 
+                    "typebldg", 
+                    "floor", 
+                    "room", 
+                    "rep", 
+                    "stratum", 
+                    "wave", 
+                    "starttm", 
+                    "stoptm", 
+                    "startdt", 
+                    "stopdt", 
+                    "activity", 
+                    "pcterr", 
+                    "adjwt", 
+                    "dupflag", 
+                    "zipflag", 
+                    "cntyfips", 
+                    "fips", 
+                    "Uppm", 
+                    "county_code"
+                ]
+            }, 
+            "contain_numeric_token": {
+                "count": 919, 
+                "ratio": 1.0
+            }
         }, 
         "length": {
             "token": {

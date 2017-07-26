@@ -96,50 +96,8 @@
         }
     }, 
     "TSH": {
-        "numeric_stats": {
-            "contain_numeric_token_puncs": {
-                "count": 5446, 
-                "ratio": 1.0
-            }, 
-            "decimal": {
-                "Q1": 0.44, 
-                "count": 2723, 
-                "Q3": 2.7, 
-                "standard-deviation": 26.794596209066842, 
-                "ratio": 1.0, 
-                "num_positive": 2723, 
-                "num_outlier": 31, 
-                "Q2": 1.3, 
-                "num_-1": 0, 
-                "num_0": 0, 
-                "num_1": 54, 
-                "num_negative": 0, 
-                "mean": 5.48295262578039
-            }, 
-            "numeric": {
-                "Q1": 0.44, 
-                "count": 2723, 
-                "Q3": 2.7, 
-                "standard-deviation": 26.794596209066842, 
-                "ratio": 1.0, 
-                "num_positive": 2723, 
-                "num_outlier": 31, 
-                "Q2": 1.3, 
-                "num_-1": 0, 
-                "num_0": 0, 
-                "num_1": 54, 
-                "num_negative": 0, 
-                "mean": 5.48295262578039
-            }, 
-            "contain_numeric": {
-                "count": 2723, 
-                "ratio": 1.0
-            }, 
-            "numeric_density": 0.7029886561954625, 
-            "contain_numeric_token": {
-                "count": 2723, 
-                "ratio": 1.0
-            }
+        "special_type": {
+            "num_filename": 0
         }, 
         "missing": {
             "num_nonblank": 2723, 
@@ -205,8 +163,82 @@
                 "0.25": 56
             }
         }, 
-        "special_type": {
-            "num_filename": 0
+        "numeric_stats": {
+            "contain_numeric_token_puncs": {
+                "count": 5446, 
+                "ratio": 1.0
+            }, 
+            "decimal": {
+                "Q1": 0.44, 
+                "count": 2723, 
+                "Q3": 2.7, 
+                "standard-deviation": 26.794596209066842, 
+                "ratio": 1.0, 
+                "num_positive": 2723, 
+                "num_outlier": 31, 
+                "Q2": 1.3, 
+                "num_-1": 0, 
+                "num_0": 0, 
+                "num_1": 54, 
+                "num_negative": 0, 
+                "mean": 5.48295262578039
+            }, 
+            "numeric": {
+                "Q1": 0.44, 
+                "count": 2723, 
+                "Q3": 2.7, 
+                "standard-deviation": 26.794596209066842, 
+                "ratio": 1.0, 
+                "num_positive": 2723, 
+                "num_outlier": 31, 
+                "Q2": 1.3, 
+                "num_-1": 0, 
+                "num_0": 0, 
+                "num_1": 54, 
+                "num_negative": 0, 
+                "mean": 5.48295262578039
+            }, 
+            "contain_numeric": {
+                "count": 2723, 
+                "ratio": 1.0
+            }, 
+            "numeric_density": 0.7029886561954625, 
+            "correlation": {
+                "spearman": [
+                    0.0040370615752230036, 
+                    -0.00689919954937886, 
+                    1.0, 
+                    -0.2519277354860406, 
+                    -0.37444420900617353, 
+                    0.06503492911466137, 
+                    -0.4336288594236182, 
+                    NaN
+                ], 
+                "pearson": [
+                    -0.04416886126216269, 
+                    -0.06417846806802964, 
+                    1.0, 
+                    -0.17139895265840774, 
+                    -0.28165959991780937, 
+                    0.08216584446893058, 
+                    -0.3186144880852677, 
+                    NaN
+                ], 
+                "columns": [
+                    "d3mIndex", 
+                    "age", 
+                    "TSH", 
+                    "T3", 
+                    "TT4", 
+                    "T4U", 
+                    "FTI", 
+                    "TBG"
+                ]
+            }, 
+            "contain_numeric_token": {
+                "count": 2723, 
+                "ratio": 1.0
+            }
         }, 
         "length": {
             "token": {
@@ -332,50 +364,8 @@
         }
     }, 
     "T4U": {
-        "numeric_stats": {
-            "contain_numeric_token_puncs": {
-                "count": 5384, 
-                "ratio": 1.0
-            }, 
-            "decimal": {
-                "Q1": 0.88, 
-                "count": 2692, 
-                "Q3": 1.08, 
-                "standard-deviation": 0.1974834256537133, 
-                "ratio": 1.0, 
-                "num_positive": 2692, 
-                "num_outlier": 53, 
-                "Q2": 0.98, 
-                "num_-1": 0, 
-                "num_0": 0, 
-                "num_1": 72, 
-                "num_negative": 0, 
-                "mean": 0.9955698365527488
-            }, 
-            "numeric": {
-                "Q1": 0.88, 
-                "count": 2692, 
-                "Q3": 1.08, 
-                "standard-deviation": 0.1974834256537133, 
-                "ratio": 1.0, 
-                "num_positive": 2692, 
-                "num_outlier": 53, 
-                "Q2": 0.98, 
-                "num_-1": 0, 
-                "num_0": 0, 
-                "num_1": 72, 
-                "num_negative": 0, 
-                "mean": 0.9955698365527488
-            }, 
-            "contain_numeric": {
-                "count": 2692, 
-                "ratio": 1.0
-            }, 
-            "numeric_density": 0.7433012300944026, 
-            "contain_numeric_token": {
-                "count": 2692, 
-                "ratio": 1.0
-            }
+        "special_type": {
+            "num_filename": 0
         }, 
         "missing": {
             "num_nonblank": 2692, 
@@ -441,8 +431,82 @@
                 "0.94": 65
             }
         }, 
-        "special_type": {
-            "num_filename": 0
+        "numeric_stats": {
+            "contain_numeric_token_puncs": {
+                "count": 5384, 
+                "ratio": 1.0
+            }, 
+            "decimal": {
+                "Q1": 0.88, 
+                "count": 2692, 
+                "Q3": 1.08, 
+                "standard-deviation": 0.1974834256537133, 
+                "ratio": 1.0, 
+                "num_positive": 2692, 
+                "num_outlier": 53, 
+                "Q2": 0.98, 
+                "num_-1": 0, 
+                "num_0": 0, 
+                "num_1": 72, 
+                "num_negative": 0, 
+                "mean": 0.9955698365527488
+            }, 
+            "numeric": {
+                "Q1": 0.88, 
+                "count": 2692, 
+                "Q3": 1.08, 
+                "standard-deviation": 0.1974834256537133, 
+                "ratio": 1.0, 
+                "num_positive": 2692, 
+                "num_outlier": 53, 
+                "Q2": 0.98, 
+                "num_-1": 0, 
+                "num_0": 0, 
+                "num_1": 72, 
+                "num_negative": 0, 
+                "mean": 0.9955698365527488
+            }, 
+            "contain_numeric": {
+                "count": 2692, 
+                "ratio": 1.0
+            }, 
+            "numeric_density": 0.7433012300944026, 
+            "correlation": {
+                "spearman": [
+                    0.006929063375350067, 
+                    -0.14819060937314693, 
+                    0.06503492911466137, 
+                    0.43546510077310163, 
+                    0.4168529051647047, 
+                    1.0, 
+                    -0.20207300485125015, 
+                    NaN
+                ], 
+                "pearson": [
+                    0.007082001280353865, 
+                    -0.16286169826880684, 
+                    0.08216584446893058, 
+                    0.45112258166567915, 
+                    0.4240556774548539, 
+                    1.0, 
+                    -0.18793903387678856, 
+                    NaN
+                ], 
+                "columns": [
+                    "d3mIndex", 
+                    "age", 
+                    "TSH", 
+                    "T3", 
+                    "TT4", 
+                    "T4U", 
+                    "FTI", 
+                    "TBG"
+                ]
+            }, 
+            "contain_numeric_token": {
+                "count": 2692, 
+                "ratio": 1.0
+            }
         }, 
         "length": {
             "token": {
@@ -1056,50 +1120,8 @@
         }
     }, 
     "T3": {
-        "numeric_stats": {
-            "contain_numeric_token_puncs": {
-                "count": 4828, 
-                "ratio": 1.0
-            }, 
-            "decimal": {
-                "Q1": 1.6, 
-                "count": 2414, 
-                "Q3": 2.4, 
-                "standard-deviation": 0.8234201488237864, 
-                "ratio": 1.0, 
-                "num_positive": 2414, 
-                "num_outlier": 36, 
-                "Q2": 2.0, 
-                "num_-1": 0, 
-                "num_0": 0, 
-                "num_1": 40, 
-                "num_negative": 0, 
-                "mean": 2.0119469759734883
-            }, 
-            "numeric": {
-                "Q1": 1.6, 
-                "count": 2414, 
-                "Q3": 2.4, 
-                "standard-deviation": 0.8234201488237864, 
-                "ratio": 1.0, 
-                "num_positive": 2414, 
-                "num_outlier": 36, 
-                "Q2": 2.0, 
-                "num_-1": 0, 
-                "num_0": 0, 
-                "num_1": 40, 
-                "num_negative": 0, 
-                "mean": 2.0119469759734883
-            }, 
-            "contain_numeric": {
-                "count": 2414, 
-                "ratio": 1.0
-            }, 
-            "numeric_density": 0.6668506762351643, 
-            "contain_numeric_token": {
-                "count": 2414, 
-                "ratio": 1.0
-            }
+        "special_type": {
+            "num_filename": 0
         }, 
         "missing": {
             "num_nonblank": 2414, 
@@ -1165,8 +1187,82 @@
                 "1.5": 111
             }
         }, 
-        "special_type": {
-            "num_filename": 0
+        "numeric_stats": {
+            "contain_numeric_token_puncs": {
+                "count": 4828, 
+                "ratio": 1.0
+            }, 
+            "decimal": {
+                "Q1": 1.6, 
+                "count": 2414, 
+                "Q3": 2.4, 
+                "standard-deviation": 0.8234201488237864, 
+                "ratio": 1.0, 
+                "num_positive": 2414, 
+                "num_outlier": 36, 
+                "Q2": 2.0, 
+                "num_-1": 0, 
+                "num_0": 0, 
+                "num_1": 40, 
+                "num_negative": 0, 
+                "mean": 2.0119469759734883
+            }, 
+            "numeric": {
+                "Q1": 1.6, 
+                "count": 2414, 
+                "Q3": 2.4, 
+                "standard-deviation": 0.8234201488237864, 
+                "ratio": 1.0, 
+                "num_positive": 2414, 
+                "num_outlier": 36, 
+                "Q2": 2.0, 
+                "num_-1": 0, 
+                "num_0": 0, 
+                "num_1": 40, 
+                "num_negative": 0, 
+                "mean": 2.0119469759734883
+            }, 
+            "contain_numeric": {
+                "count": 2414, 
+                "ratio": 1.0
+            }, 
+            "numeric_density": 0.6668506762351643, 
+            "correlation": {
+                "spearman": [
+                    0.030800085051338653, 
+                    -0.2834204203227362, 
+                    -0.2519277354860406, 
+                    1.0, 
+                    0.4261511136962467, 
+                    0.43546510077310163, 
+                    0.12357647255109588, 
+                    NaN
+                ], 
+                "pearson": [
+                    0.04054929124912157, 
+                    -0.2299383606088932, 
+                    -0.17139895265840774, 
+                    1.0, 
+                    0.551944495485438, 
+                    0.45112258166567915, 
+                    0.3424070402463263, 
+                    NaN
+                ], 
+                "columns": [
+                    "d3mIndex", 
+                    "age", 
+                    "TSH", 
+                    "T3", 
+                    "TT4", 
+                    "T4U", 
+                    "FTI", 
+                    "TBG"
+                ]
+            }, 
+            "contain_numeric_token": {
+                "count": 2414, 
+                "ratio": 1.0
+            }
         }, 
         "length": {
             "token": {
@@ -1180,50 +1276,8 @@
         }
     }, 
     "TT4": {
-        "numeric_stats": {
-            "contain_numeric_token_puncs": {
-                "count": 5668, 
-                "ratio": 1.0
-            }, 
-            "decimal": {
-                "Q1": 88.0, 
-                "count": 2834, 
-                "Q3": 125.0, 
-                "standard-deviation": 35.676570036141726, 
-                "ratio": 1.0, 
-                "num_positive": 2834, 
-                "num_outlier": 30, 
-                "Q2": 104.0, 
-                "num_-1": 0, 
-                "num_0": 0, 
-                "num_1": 0, 
-                "num_negative": 0, 
-                "mean": 108.25116443189837
-            }, 
-            "numeric": {
-                "Q1": 88.0, 
-                "count": 2834, 
-                "Q3": 125.0, 
-                "standard-deviation": 35.676570036141726, 
-                "ratio": 1.0, 
-                "num_positive": 2834, 
-                "num_outlier": 30, 
-                "Q2": 104.0, 
-                "num_-1": 0, 
-                "num_0": 0, 
-                "num_1": 0, 
-                "num_negative": 0, 
-                "mean": 108.25116443189837
-            }, 
-            "contain_numeric": {
-                "count": 2834, 
-                "ratio": 1.0
-            }, 
-            "numeric_density": 0.7811414008803769, 
-            "contain_numeric_token": {
-                "count": 2834, 
-                "ratio": 1.0
-            }
+        "special_type": {
+            "num_filename": 0
         }, 
         "missing": {
             "num_nonblank": 2834, 
@@ -1289,8 +1343,82 @@
                 "87.0": 47
             }
         }, 
-        "special_type": {
-            "num_filename": 0
+        "numeric_stats": {
+            "contain_numeric_token_puncs": {
+                "count": 5668, 
+                "ratio": 1.0
+            }, 
+            "decimal": {
+                "Q1": 88.0, 
+                "count": 2834, 
+                "Q3": 125.0, 
+                "standard-deviation": 35.676570036141726, 
+                "ratio": 1.0, 
+                "num_positive": 2834, 
+                "num_outlier": 30, 
+                "Q2": 104.0, 
+                "num_-1": 0, 
+                "num_0": 0, 
+                "num_1": 0, 
+                "num_negative": 0, 
+                "mean": 108.25116443189837
+            }, 
+            "numeric": {
+                "Q1": 88.0, 
+                "count": 2834, 
+                "Q3": 125.0, 
+                "standard-deviation": 35.676570036141726, 
+                "ratio": 1.0, 
+                "num_positive": 2834, 
+                "num_outlier": 30, 
+                "Q2": 104.0, 
+                "num_-1": 0, 
+                "num_0": 0, 
+                "num_1": 0, 
+                "num_negative": 0, 
+                "mean": 108.25116443189837
+            }, 
+            "contain_numeric": {
+                "count": 2834, 
+                "ratio": 1.0
+            }, 
+            "numeric_density": 0.7811414008803769, 
+            "correlation": {
+                "spearman": [
+                    0.020190958383640826, 
+                    -0.01931368553101691, 
+                    -0.37444420900617353, 
+                    0.4261511136962467, 
+                    1.0, 
+                    0.4168529051647047, 
+                    0.7451724153766034, 
+                    NaN
+                ], 
+                "pearson": [
+                    0.025875599433880094, 
+                    -0.033066433096359954, 
+                    -0.28165959991780937, 
+                    0.551944495485438, 
+                    1.0, 
+                    0.4240556774548539, 
+                    0.7903910097671357, 
+                    NaN
+                ], 
+                "columns": [
+                    "d3mIndex", 
+                    "age", 
+                    "TSH", 
+                    "T3", 
+                    "TT4", 
+                    "T4U", 
+                    "FTI", 
+                    "TBG"
+                ]
+            }, 
+            "contain_numeric_token": {
+                "count": 2834, 
+                "ratio": 1.0
+            }
         }, 
         "length": {
             "token": {
@@ -1304,50 +1432,8 @@
         }
     }, 
     "FTI": {
-        "numeric_stats": {
-            "contain_numeric_token_puncs": {
-                "count": 5388, 
-                "ratio": 1.0
-            }, 
-            "decimal": {
-                "Q1": 93.0, 
-                "count": 2694, 
-                "Q3": 125.0, 
-                "standard-deviation": 33.512953330608475, 
-                "ratio": 1.0, 
-                "num_positive": 2694, 
-                "num_outlier": 50, 
-                "Q2": 107.0, 
-                "num_-1": 0, 
-                "num_0": 0, 
-                "num_1": 0, 
-                "num_negative": 0, 
-                "mean": 110.58934669636228
-            }, 
-            "numeric": {
-                "Q1": 93.0, 
-                "count": 2694, 
-                "Q3": 125.0, 
-                "standard-deviation": 33.512953330608475, 
-                "ratio": 1.0, 
-                "num_positive": 2694, 
-                "num_outlier": 50, 
-                "Q2": 107.0, 
-                "num_-1": 0, 
-                "num_0": 0, 
-                "num_1": 0, 
-                "num_negative": 0, 
-                "mean": 110.58934669636228
-            }, 
-            "contain_numeric": {
-                "count": 2694, 
-                "ratio": 1.0
-            }, 
-            "numeric_density": 0.7841173170927158, 
-            "contain_numeric_token": {
-                "count": 2694, 
-                "ratio": 1.0
-            }
+        "special_type": {
+            "num_filename": 0
         }, 
         "missing": {
             "num_nonblank": 2694, 
@@ -1413,8 +1499,82 @@
                 "111.0": 46
             }
         }, 
-        "special_type": {
-            "num_filename": 0
+        "numeric_stats": {
+            "contain_numeric_token_puncs": {
+                "count": 5388, 
+                "ratio": 1.0
+            }, 
+            "decimal": {
+                "Q1": 93.0, 
+                "count": 2694, 
+                "Q3": 125.0, 
+                "standard-deviation": 33.512953330608475, 
+                "ratio": 1.0, 
+                "num_positive": 2694, 
+                "num_outlier": 50, 
+                "Q2": 107.0, 
+                "num_-1": 0, 
+                "num_0": 0, 
+                "num_1": 0, 
+                "num_negative": 0, 
+                "mean": 110.58934669636228
+            }, 
+            "numeric": {
+                "Q1": 93.0, 
+                "count": 2694, 
+                "Q3": 125.0, 
+                "standard-deviation": 33.512953330608475, 
+                "ratio": 1.0, 
+                "num_positive": 2694, 
+                "num_outlier": 50, 
+                "Q2": 107.0, 
+                "num_-1": 0, 
+                "num_0": 0, 
+                "num_1": 0, 
+                "num_negative": 0, 
+                "mean": 110.58934669636228
+            }, 
+            "contain_numeric": {
+                "count": 2694, 
+                "ratio": 1.0
+            }, 
+            "numeric_density": 0.7841173170927158, 
+            "correlation": {
+                "spearman": [
+                    0.01117988465820062, 
+                    0.08130068457645986, 
+                    -0.4336288594236182, 
+                    0.12357647255109588, 
+                    0.7451724153766034, 
+                    -0.20207300485125015, 
+                    1.0, 
+                    NaN
+                ], 
+                "pearson": [
+                    0.027425909398717058, 
+                    0.05459637600038438, 
+                    -0.3186144880852677, 
+                    0.3424070402463263, 
+                    0.7903910097671357, 
+                    -0.18793903387678856, 
+                    1.0, 
+                    NaN
+                ], 
+                "columns": [
+                    "d3mIndex", 
+                    "age", 
+                    "TSH", 
+                    "T3", 
+                    "TT4", 
+                    "T4U", 
+                    "FTI", 
+                    "TBG"
+                ]
+            }, 
+            "contain_numeric_token": {
+                "count": 2694, 
+                "ratio": 1.0
+            }
         }, 
         "length": {
             "token": {
@@ -1578,50 +1738,8 @@
         }
     }, 
     "age": {
-        "numeric_stats": {
-            "contain_numeric_token_puncs": {
-                "count": 3017, 
-                "ratio": 1.0
-            }, 
-            "numeric": {
-                "Q1": 36.0, 
-                "count": 3017, 
-                "Q3": 67.0, 
-                "standard-deviation": 20.373823011806742, 
-                "ratio": 1.0, 
-                "num_positive": 3017, 
-                "num_outlier": 1, 
-                "Q2": 54.0, 
-                "num_-1": 0, 
-                "num_0": 0, 
-                "num_1": 5, 
-                "num_negative": 0, 
-                "mean": 51.755386145177326
-            }, 
-            "contain_numeric": {
-                "count": 3017, 
-                "ratio": 1.0
-            }, 
-            "numeric_density": 1.0, 
-            "integer": {
-                "Q1": 36.0, 
-                "count": 3017, 
-                "Q3": 67.0, 
-                "standard-deviation": 20.373823011806742, 
-                "ratio": 1.0, 
-                "num_positive": 3017, 
-                "num_outlier": 1, 
-                "Q2": 54.0, 
-                "num_-1": 0, 
-                "num_0": 0, 
-                "num_1": 5, 
-                "num_negative": 0, 
-                "mean": 51.755386145177326
-            }, 
-            "contain_numeric_token": {
-                "count": 3017, 
-                "ratio": 1.0
-            }
+        "special_type": {
+            "num_filename": 0
         }, 
         "missing": {
             "num_nonblank": 3017, 
@@ -1699,8 +1817,82 @@
                 "53": 57
             }
         }, 
-        "special_type": {
-            "num_filename": 0
+        "numeric_stats": {
+            "contain_numeric_token_puncs": {
+                "count": 3017, 
+                "ratio": 1.0
+            }, 
+            "numeric": {
+                "Q1": 36.0, 
+                "count": 3017, 
+                "Q3": 67.0, 
+                "standard-deviation": 20.373823011806742, 
+                "ratio": 1.0, 
+                "num_positive": 3017, 
+                "num_outlier": 1, 
+                "Q2": 54.0, 
+                "num_-1": 0, 
+                "num_0": 0, 
+                "num_1": 5, 
+                "num_negative": 0, 
+                "mean": 51.755386145177326
+            }, 
+            "contain_numeric": {
+                "count": 3017, 
+                "ratio": 1.0
+            }, 
+            "numeric_density": 1.0, 
+            "correlation": {
+                "spearman": [
+                    0.01971732714508434, 
+                    1.0, 
+                    -0.00689919954937886, 
+                    -0.2834204203227362, 
+                    -0.01931368553101691, 
+                    -0.14819060937314693, 
+                    0.08130068457645986, 
+                    NaN
+                ], 
+                "pearson": [
+                    0.01909458681470466, 
+                    1.0, 
+                    -0.06417846806802964, 
+                    -0.2299383606088932, 
+                    -0.033066433096359954, 
+                    -0.16286169826880684, 
+                    0.05459637600038438, 
+                    NaN
+                ], 
+                "columns": [
+                    "d3mIndex", 
+                    "age", 
+                    "TSH", 
+                    "T3", 
+                    "TT4", 
+                    "T4U", 
+                    "FTI", 
+                    "TBG"
+                ]
+            }, 
+            "integer": {
+                "Q1": 36.0, 
+                "count": 3017, 
+                "Q3": 67.0, 
+                "standard-deviation": 20.373823011806742, 
+                "ratio": 1.0, 
+                "num_positive": 3017, 
+                "num_outlier": 1, 
+                "Q2": 54.0, 
+                "num_-1": 0, 
+                "num_0": 0, 
+                "num_1": 5, 
+                "num_negative": 0, 
+                "mean": 51.755386145177326
+            }, 
+            "contain_numeric_token": {
+                "count": 3017, 
+                "ratio": 1.0
+            }
         }, 
         "length": {
             "token": {
@@ -1864,50 +2056,8 @@
         }
     }, 
     "d3mIndex": {
-        "numeric_stats": {
-            "contain_numeric_token_puncs": {
-                "count": 3018, 
-                "ratio": 1.0
-            }, 
-            "numeric": {
-                "Q1": 754.25, 
-                "count": 3018, 
-                "Q3": 2262.75, 
-                "standard-deviation": 871.3658818200308, 
-                "ratio": 1.0, 
-                "num_positive": 3017, 
-                "num_outlier": 0, 
-                "Q2": 1508.5, 
-                "num_-1": 0, 
-                "num_0": 1, 
-                "num_1": 1, 
-                "num_negative": 0, 
-                "mean": 1508.5
-            }, 
-            "contain_numeric": {
-                "count": 3018, 
-                "ratio": 1.0
-            }, 
-            "numeric_density": 1.0, 
-            "integer": {
-                "Q1": 754.25, 
-                "count": 3018, 
-                "Q3": 2262.75, 
-                "standard-deviation": 871.3658818200308, 
-                "ratio": 1.0, 
-                "num_positive": 3017, 
-                "num_outlier": 0, 
-                "Q2": 1508.5, 
-                "num_-1": 0, 
-                "num_0": 1, 
-                "num_1": 1, 
-                "num_negative": 0, 
-                "mean": 1508.5
-            }, 
-            "contain_numeric_token": {
-                "count": 3018, 
-                "ratio": 1.0
-            }
+        "special_type": {
+            "num_filename": 0
         }, 
         "missing": {
             "num_nonblank": 3018, 
@@ -1985,8 +2135,82 @@
                 "349": 1
             }
         }, 
-        "special_type": {
-            "num_filename": 0
+        "numeric_stats": {
+            "contain_numeric_token_puncs": {
+                "count": 3018, 
+                "ratio": 1.0
+            }, 
+            "numeric": {
+                "Q1": 754.25, 
+                "count": 3018, 
+                "Q3": 2262.75, 
+                "standard-deviation": 871.3658818200308, 
+                "ratio": 1.0, 
+                "num_positive": 3017, 
+                "num_outlier": 0, 
+                "Q2": 1508.5, 
+                "num_-1": 0, 
+                "num_0": 1, 
+                "num_1": 1, 
+                "num_negative": 0, 
+                "mean": 1508.5
+            }, 
+            "contain_numeric": {
+                "count": 3018, 
+                "ratio": 1.0
+            }, 
+            "numeric_density": 1.0, 
+            "correlation": {
+                "spearman": [
+                    1.0, 
+                    0.01971732714508434, 
+                    0.0040370615752230036, 
+                    0.030800085051338653, 
+                    0.020190958383640826, 
+                    0.006929063375350067, 
+                    0.01117988465820062, 
+                    NaN
+                ], 
+                "pearson": [
+                    1.0, 
+                    0.01909458681470466, 
+                    -0.04416886126216269, 
+                    0.04054929124912157, 
+                    0.025875599433880094, 
+                    0.007082001280353865, 
+                    0.027425909398717058, 
+                    NaN
+                ], 
+                "columns": [
+                    "d3mIndex", 
+                    "age", 
+                    "TSH", 
+                    "T3", 
+                    "TT4", 
+                    "T4U", 
+                    "FTI", 
+                    "TBG"
+                ]
+            }, 
+            "integer": {
+                "Q1": 754.25, 
+                "count": 3018, 
+                "Q3": 2262.75, 
+                "standard-deviation": 871.3658818200308, 
+                "ratio": 1.0, 
+                "num_positive": 3017, 
+                "num_outlier": 0, 
+                "Q2": 1508.5, 
+                "num_-1": 0, 
+                "num_0": 1, 
+                "num_1": 1, 
+                "num_negative": 0, 
+                "mean": 1508.5
+            }, 
+            "contain_numeric_token": {
+                "count": 3018, 
+                "ratio": 1.0
+            }
         }, 
         "length": {
             "token": {
@@ -2000,6 +2224,40 @@
         }
     }, 
     "TBG": {
+        "numeric_stats": {
+            "correlation": {
+                "spearman": [
+                    NaN, 
+                    NaN, 
+                    NaN, 
+                    NaN, 
+                    NaN, 
+                    NaN, 
+                    NaN, 
+                    NaN
+                ], 
+                "pearson": [
+                    NaN, 
+                    NaN, 
+                    NaN, 
+                    NaN, 
+                    NaN, 
+                    NaN, 
+                    NaN, 
+                    NaN
+                ], 
+                "columns": [
+                    "d3mIndex", 
+                    "age", 
+                    "TSH", 
+                    "T3", 
+                    "TT4", 
+                    "T4U", 
+                    "FTI", 
+                    "TBG"
+                ]
+            }
+        }, 
         "special_type": {
             "num_filename": 0
         }, 

@@ -186,50 +186,8 @@
         }
     }, 
     "d3mIndex": {
-        "numeric_stats": {
-            "contain_numeric_token_puncs": {
-                "count": 23366, 
-                "ratio": 1.0
-            }, 
-            "numeric": {
-                "Q1": 7341.25, 
-                "count": 23366, 
-                "Q3": 21867.75, 
-                "standard-deviation": 8410.741206913259, 
-                "ratio": 1.0, 
-                "num_positive": 23365, 
-                "num_outlier": 0, 
-                "Q2": 14571.5, 
-                "num_-1": 0, 
-                "num_0": 1, 
-                "num_1": 1, 
-                "num_negative": 0, 
-                "mean": 14597.561713600959
-            }, 
-            "contain_numeric": {
-                "count": 23366, 
-                "ratio": 1.0
-            }, 
-            "numeric_density": 1.0, 
-            "integer": {
-                "Q1": 7341.25, 
-                "count": 23366, 
-                "Q3": 21867.75, 
-                "standard-deviation": 8410.741206913259, 
-                "ratio": 1.0, 
-                "num_positive": 23365, 
-                "num_outlier": 0, 
-                "Q2": 14571.5, 
-                "num_-1": 0, 
-                "num_0": 1, 
-                "num_1": 1, 
-                "num_negative": 0, 
-                "mean": 14597.561713600959
-            }, 
-            "contain_numeric_token": {
-                "count": 23366, 
-                "ratio": 1.0
-            }
+        "special_type": {
+            "num_filename": 0
         }, 
         "missing": {
             "num_nonblank": 23366, 
@@ -307,8 +265,61 @@
                 "11549": 1
             }
         }, 
-        "special_type": {
-            "num_filename": 0
+        "numeric_stats": {
+            "contain_numeric_token_puncs": {
+                "count": 23366, 
+                "ratio": 1.0
+            }, 
+            "numeric": {
+                "Q1": 7341.25, 
+                "count": 23366, 
+                "Q3": 21867.75, 
+                "standard-deviation": 8410.741206913259, 
+                "ratio": 1.0, 
+                "num_positive": 23365, 
+                "num_outlier": 0, 
+                "Q2": 14571.5, 
+                "num_-1": 0, 
+                "num_0": 1, 
+                "num_1": 1, 
+                "num_negative": 0, 
+                "mean": 14597.561713600959
+            }, 
+            "contain_numeric": {
+                "count": 23366, 
+                "ratio": 1.0
+            }, 
+            "numeric_density": 1.0, 
+            "correlation": {
+                "spearman": [
+                    1.0
+                ], 
+                "pearson": [
+                    1.0
+                ], 
+                "columns": [
+                    "d3mIndex"
+                ]
+            }, 
+            "integer": {
+                "Q1": 7341.25, 
+                "count": 23366, 
+                "Q3": 21867.75, 
+                "standard-deviation": 8410.741206913259, 
+                "ratio": 1.0, 
+                "num_positive": 23365, 
+                "num_outlier": 0, 
+                "Q2": 14571.5, 
+                "num_-1": 0, 
+                "num_0": 1, 
+                "num_1": 1, 
+                "num_negative": 0, 
+                "mean": 14597.561713600959
+            }, 
+            "contain_numeric_token": {
+                "count": 23366, 
+                "ratio": 1.0
+            }
         }, 
         "length": {
             "token": {

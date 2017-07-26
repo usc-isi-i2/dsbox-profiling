@@ -1,49 +1,7 @@
 {
     "Runs": {
-        "numeric_stats": {
-            "contain_numeric_token_puncs": {
-                "count": 1073, 
-                "ratio": 1.0
-            }, 
-            "numeric": {
-                "Q1": 357.0, 
-                "count": 1073, 
-                "Q3": 851.0, 
-                "standard-deviation": 379.3653577396687, 
-                "ratio": 1.0, 
-                "num_positive": 1073, 
-                "num_outlier": 12, 
-                "Q2": 579.0, 
-                "num_-1": 0, 
-                "num_0": 0, 
-                "num_1": 0, 
-                "num_negative": 0, 
-                "mean": 643.0428704566635
-            }, 
-            "contain_numeric": {
-                "count": 1073, 
-                "ratio": 1.0
-            }, 
-            "numeric_density": 1.0, 
-            "integer": {
-                "Q1": 357.0, 
-                "count": 1073, 
-                "Q3": 851.0, 
-                "standard-deviation": 379.3653577396687, 
-                "ratio": 1.0, 
-                "num_positive": 1073, 
-                "num_outlier": 12, 
-                "Q2": 579.0, 
-                "num_-1": 0, 
-                "num_0": 0, 
-                "num_1": 0, 
-                "num_negative": 0, 
-                "mean": 643.0428704566635
-            }, 
-            "contain_numeric_token": {
-                "count": 1073, 
-                "ratio": 1.0
-            }
+        "special_type": {
+            "num_filename": 0
         }, 
         "missing": {
             "num_nonblank": 1073, 
@@ -121,8 +79,106 @@
                 "518": 4
             }
         }, 
-        "special_type": {
-            "num_filename": 0
+        "numeric_stats": {
+            "contain_numeric_token_puncs": {
+                "count": 1073, 
+                "ratio": 1.0
+            }, 
+            "numeric": {
+                "Q1": 357.0, 
+                "count": 1073, 
+                "Q3": 851.0, 
+                "standard-deviation": 379.3653577396687, 
+                "ratio": 1.0, 
+                "num_positive": 1073, 
+                "num_outlier": 12, 
+                "Q2": 579.0, 
+                "num_-1": 0, 
+                "num_0": 0, 
+                "num_1": 0, 
+                "num_negative": 0, 
+                "mean": 643.0428704566635
+            }, 
+            "contain_numeric": {
+                "count": 1073, 
+                "ratio": 1.0
+            }, 
+            "numeric_density": 1.0, 
+            "correlation": {
+                "spearman": [
+                    0.001672552305952324, 
+                    0.610068515508149, 
+                    0.8803476140038998, 
+                    0.9460775144794974, 
+                    1.0, 
+                    0.9603212247514478, 
+                    0.9161003322015688, 
+                    0.8164244885844529, 
+                    0.537144903925132, 
+                    0.8714789674391124, 
+                    0.8399120893521042, 
+                    0.41983822836339196, 
+                    0.6306455242961514, 
+                    0.59279468483286, 
+                    0.5419423158297969, 
+                    -0.12363353666780164
+                ], 
+                "pearson": [
+                    0.013995088686323405, 
+                    0.6660453609458616, 
+                    0.8761591381416747, 
+                    0.9296992717629092, 
+                    1.0, 
+                    0.9516372729578016, 
+                    0.8985164645240242, 
+                    0.7795688000160769, 
+                    0.5666766743894445, 
+                    0.8667183405671259, 
+                    0.8316967267174163, 
+                    0.4435504820926437, 
+                    0.6400483743330392, 
+                    0.6147035588911863, 
+                    0.5744699146676289, 
+                    -0.13175206154988742
+                ], 
+                "columns": [
+                    "d3mIndex", 
+                    "Number_seasons", 
+                    "Games_played", 
+                    "At_bats", 
+                    "Runs", 
+                    "Hits", 
+                    "Doubles", 
+                    "Triples", 
+                    "Home_runs", 
+                    "RBIs", 
+                    "Walks", 
+                    "Strikeouts", 
+                    "Batting_average", 
+                    "On_base_pct", 
+                    "Slugging_pct", 
+                    "Fielding_ave"
+                ]
+            }, 
+            "integer": {
+                "Q1": 357.0, 
+                "count": 1073, 
+                "Q3": 851.0, 
+                "standard-deviation": 379.3653577396687, 
+                "ratio": 1.0, 
+                "num_positive": 1073, 
+                "num_outlier": 12, 
+                "Q2": 579.0, 
+                "num_-1": 0, 
+                "num_0": 0, 
+                "num_1": 0, 
+                "num_negative": 0, 
+                "mean": 643.0428704566635
+            }, 
+            "contain_numeric_token": {
+                "count": 1073, 
+                "ratio": 1.0
+            }
         }, 
         "length": {
             "token": {
@@ -136,50 +192,8 @@
         }
     }, 
     "Fielding_ave": {
-        "numeric_stats": {
-            "contain_numeric_token_puncs": {
-                "count": 2146, 
-                "ratio": 1.0
-            }, 
-            "decimal": {
-                "Q1": 0.957, 
-                "count": 1073, 
-                "Q3": 0.983, 
-                "standard-deviation": 0.025336178497455078, 
-                "ratio": 1.0, 
-                "num_positive": 1073, 
-                "num_outlier": 26, 
-                "Q2": 0.973, 
-                "num_-1": 0, 
-                "num_0": 0, 
-                "num_1": 0, 
-                "num_negative": 0, 
-                "mean": 0.9659748369058714
-            }, 
-            "numeric": {
-                "Q1": 0.957, 
-                "count": 1073, 
-                "Q3": 0.983, 
-                "standard-deviation": 0.025336178497455078, 
-                "ratio": 1.0, 
-                "num_positive": 1073, 
-                "num_outlier": 26, 
-                "Q2": 0.973, 
-                "num_-1": 0, 
-                "num_0": 0, 
-                "num_1": 0, 
-                "num_negative": 0, 
-                "mean": 0.9659748369058714
-            }, 
-            "contain_numeric": {
-                "count": 1073, 
-                "ratio": 1.0
-            }, 
-            "numeric_density": 0.795346175853519, 
-            "contain_numeric_token": {
-                "count": 1073, 
-                "ratio": 1.0
-            }
+        "special_type": {
+            "num_filename": 0
         }, 
         "missing": {
             "num_nonblank": 1073, 
@@ -245,8 +259,106 @@
                 "0.97": 25
             }
         }, 
-        "special_type": {
-            "num_filename": 0
+        "numeric_stats": {
+            "contain_numeric_token_puncs": {
+                "count": 2146, 
+                "ratio": 1.0
+            }, 
+            "decimal": {
+                "Q1": 0.957, 
+                "count": 1073, 
+                "Q3": 0.983, 
+                "standard-deviation": 0.025336178497455078, 
+                "ratio": 1.0, 
+                "num_positive": 1073, 
+                "num_outlier": 26, 
+                "Q2": 0.973, 
+                "num_-1": 0, 
+                "num_0": 0, 
+                "num_1": 0, 
+                "num_negative": 0, 
+                "mean": 0.9659748369058714
+            }, 
+            "numeric": {
+                "Q1": 0.957, 
+                "count": 1073, 
+                "Q3": 0.983, 
+                "standard-deviation": 0.025336178497455078, 
+                "ratio": 1.0, 
+                "num_positive": 1073, 
+                "num_outlier": 26, 
+                "Q2": 0.973, 
+                "num_-1": 0, 
+                "num_0": 0, 
+                "num_1": 0, 
+                "num_negative": 0, 
+                "mean": 0.9659748369058714
+            }, 
+            "contain_numeric": {
+                "count": 1073, 
+                "ratio": 1.0
+            }, 
+            "numeric_density": 0.795346175853519, 
+            "correlation": {
+                "spearman": [
+                    -0.010198536412255607, 
+                    0.0825862496534868, 
+                    0.062043630061128764, 
+                    -0.0462864295946329, 
+                    -0.12363353666780164, 
+                    -0.05219867177164607, 
+                    -0.0004051654030147491, 
+                    -0.29082416883663675, 
+                    0.30559460242042225, 
+                    0.03666629597056049, 
+                    0.06208674580508335, 
+                    0.3047497360487197, 
+                    -0.046151293578303214, 
+                    0.06525394249849527, 
+                    0.17498477498784115, 
+                    1.0
+                ], 
+                "pearson": [
+                    -0.0031972939227776923, 
+                    0.086042790964871, 
+                    0.0917518127940001, 
+                    -0.02224192529792623, 
+                    -0.13175206154988742, 
+                    -0.021140086997254403, 
+                    0.03139218142384756, 
+                    -0.2417888929740674, 
+                    0.24317773749441093, 
+                    0.0645598593265686, 
+                    0.07807795391219759, 
+                    0.26286294204201527, 
+                    -0.03875805124477538, 
+                    0.08335205372975327, 
+                    0.17170164208706065, 
+                    1.0
+                ], 
+                "columns": [
+                    "d3mIndex", 
+                    "Number_seasons", 
+                    "Games_played", 
+                    "At_bats", 
+                    "Runs", 
+                    "Hits", 
+                    "Doubles", 
+                    "Triples", 
+                    "Home_runs", 
+                    "RBIs", 
+                    "Walks", 
+                    "Strikeouts", 
+                    "Batting_average", 
+                    "On_base_pct", 
+                    "Slugging_pct", 
+                    "Fielding_ave"
+                ]
+            }, 
+            "contain_numeric_token": {
+                "count": 1073, 
+                "ratio": 1.0
+            }
         }, 
         "length": {
             "token": {
@@ -260,50 +372,8 @@
         }
     }, 
     "Triples": {
-        "numeric_stats": {
-            "contain_numeric_token_puncs": {
-                "count": 1073, 
-                "ratio": 1.0
-            }, 
-            "numeric": {
-                "Q1": 23.0, 
-                "count": 1073, 
-                "Q3": 71.0, 
-                "standard-deviation": 41.646923041549925, 
-                "ratio": 1.0, 
-                "num_positive": 1073, 
-                "num_outlier": 14, 
-                "Q2": 42.0, 
-                "num_-1": 0, 
-                "num_0": 0, 
-                "num_1": 5, 
-                "num_negative": 0, 
-                "mean": 52.08760484622554
-            }, 
-            "contain_numeric": {
-                "count": 1073, 
-                "ratio": 1.0
-            }, 
-            "numeric_density": 1.0, 
-            "integer": {
-                "Q1": 23.0, 
-                "count": 1073, 
-                "Q3": 71.0, 
-                "standard-deviation": 41.646923041549925, 
-                "ratio": 1.0, 
-                "num_positive": 1073, 
-                "num_outlier": 14, 
-                "Q2": 42.0, 
-                "num_-1": 0, 
-                "num_0": 0, 
-                "num_1": 5, 
-                "num_negative": 0, 
-                "mean": 52.08760484622554
-            }, 
-            "contain_numeric_token": {
-                "count": 1073, 
-                "ratio": 1.0
-            }
+        "special_type": {
+            "num_filename": 0
         }, 
         "missing": {
             "num_nonblank": 1073, 
@@ -381,8 +451,106 @@
                 "16": 16
             }
         }, 
-        "special_type": {
-            "num_filename": 0
+        "numeric_stats": {
+            "contain_numeric_token_puncs": {
+                "count": 1073, 
+                "ratio": 1.0
+            }, 
+            "numeric": {
+                "Q1": 23.0, 
+                "count": 1073, 
+                "Q3": 71.0, 
+                "standard-deviation": 41.646923041549925, 
+                "ratio": 1.0, 
+                "num_positive": 1073, 
+                "num_outlier": 14, 
+                "Q2": 42.0, 
+                "num_-1": 0, 
+                "num_0": 0, 
+                "num_1": 5, 
+                "num_negative": 0, 
+                "mean": 52.08760484622554
+            }, 
+            "contain_numeric": {
+                "count": 1073, 
+                "ratio": 1.0
+            }, 
+            "numeric_density": 1.0, 
+            "correlation": {
+                "spearman": [
+                    0.004877752493350677, 
+                    0.43397797991505654, 
+                    0.6572528572219408, 
+                    0.7534811906138318, 
+                    0.8164244885844529, 
+                    0.7878677589117035, 
+                    0.7324536178846096, 
+                    1.0, 
+                    0.2219661291086728, 
+                    0.676646685887301, 
+                    0.5744785125505635, 
+                    0.11691680105982134, 
+                    0.6453408542922994, 
+                    0.45299204558899425, 
+                    0.37667134425206794, 
+                    -0.29082416883663675
+                ], 
+                "pearson": [
+                    0.014405959309618377, 
+                    0.4661613364091388, 
+                    0.6141707040495014, 
+                    0.7023224910575194, 
+                    0.7795688000160769, 
+                    0.7560742797668155, 
+                    0.7016361178405612, 
+                    1.0, 
+                    0.15665443691196165, 
+                    0.6309800180503988, 
+                    0.492316819213308, 
+                    0.05056584751276849, 
+                    0.6397268440983455, 
+                    0.46347301799073837, 
+                    0.3989414675387878, 
+                    -0.2417888929740674
+                ], 
+                "columns": [
+                    "d3mIndex", 
+                    "Number_seasons", 
+                    "Games_played", 
+                    "At_bats", 
+                    "Runs", 
+                    "Hits", 
+                    "Doubles", 
+                    "Triples", 
+                    "Home_runs", 
+                    "RBIs", 
+                    "Walks", 
+                    "Strikeouts", 
+                    "Batting_average", 
+                    "On_base_pct", 
+                    "Slugging_pct", 
+                    "Fielding_ave"
+                ]
+            }, 
+            "integer": {
+                "Q1": 23.0, 
+                "count": 1073, 
+                "Q3": 71.0, 
+                "standard-deviation": 41.646923041549925, 
+                "ratio": 1.0, 
+                "num_positive": 1073, 
+                "num_outlier": 14, 
+                "Q2": 42.0, 
+                "num_-1": 0, 
+                "num_0": 0, 
+                "num_1": 5, 
+                "num_negative": 0, 
+                "mean": 52.08760484622554
+            }, 
+            "contain_numeric_token": {
+                "count": 1073, 
+                "ratio": 1.0
+            }
         }, 
         "length": {
             "token": {
@@ -396,50 +564,8 @@
         }
     }, 
     "At_bats": {
-        "numeric_stats": {
-            "contain_numeric_token_puncs": {
-                "count": 1073, 
-                "ratio": 1.0
-            }, 
-            "numeric": {
-                "Q1": 3028.0, 
-                "count": 1073, 
-                "Q3": 5839.0, 
-                "standard-deviation": 2120.1152578482556, 
-                "ratio": 1.0, 
-                "num_positive": 1073, 
-                "num_outlier": 5, 
-                "Q2": 4334.0, 
-                "num_-1": 0, 
-                "num_0": 0, 
-                "num_1": 0, 
-                "num_negative": 0, 
-                "mean": 4576.038210624418
-            }, 
-            "contain_numeric": {
-                "count": 1073, 
-                "ratio": 1.0
-            }, 
-            "numeric_density": 1.0, 
-            "integer": {
-                "Q1": 3028.0, 
-                "count": 1073, 
-                "Q3": 5839.0, 
-                "standard-deviation": 2120.1152578482556, 
-                "ratio": 1.0, 
-                "num_positive": 1073, 
-                "num_outlier": 5, 
-                "Q2": 4334.0, 
-                "num_-1": 0, 
-                "num_0": 0, 
-                "num_1": 0, 
-                "num_negative": 0, 
-                "mean": 4576.038210624418
-            }, 
-            "contain_numeric_token": {
-                "count": 1073, 
-                "ratio": 1.0
-            }
+        "special_type": {
+            "num_filename": 0
         }, 
         "missing": {
             "num_nonblank": 1073, 
@@ -517,8 +643,106 @@
                 "3028": 2
             }
         }, 
-        "special_type": {
-            "num_filename": 0
+        "numeric_stats": {
+            "contain_numeric_token_puncs": {
+                "count": 1073, 
+                "ratio": 1.0
+            }, 
+            "numeric": {
+                "Q1": 3028.0, 
+                "count": 1073, 
+                "Q3": 5839.0, 
+                "standard-deviation": 2120.1152578482556, 
+                "ratio": 1.0, 
+                "num_positive": 1073, 
+                "num_outlier": 5, 
+                "Q2": 4334.0, 
+                "num_-1": 0, 
+                "num_0": 0, 
+                "num_1": 0, 
+                "num_negative": 0, 
+                "mean": 4576.038210624418
+            }, 
+            "contain_numeric": {
+                "count": 1073, 
+                "ratio": 1.0
+            }, 
+            "numeric_density": 1.0, 
+            "correlation": {
+                "spearman": [
+                    0.011083237787426498, 
+                    0.7074305917108383, 
+                    0.9637803118646581, 
+                    1.0, 
+                    0.9460775144794974, 
+                    0.9883055821857437, 
+                    0.9381383818431898, 
+                    0.7534811906138318, 
+                    0.5399867997953403, 
+                    0.8961316357280327, 
+                    0.8102489929946238, 
+                    0.4845546811250597, 
+                    0.5301692741219035, 
+                    0.443059223462711, 
+                    0.44670915616802925, 
+                    -0.0462864295946329
+                ], 
+                "pearson": [
+                    0.01874297378819474, 
+                    0.7513786691883105, 
+                    0.9713385054379507, 
+                    1.0, 
+                    0.9296992717629092, 
+                    0.9837116580464464, 
+                    0.9261021742463877, 
+                    0.7023224910575194, 
+                    0.5606172669530128, 
+                    0.8761751399475088, 
+                    0.7789181686617247, 
+                    0.5247942450288086, 
+                    0.5318677958698181, 
+                    0.4478758988868307, 
+                    0.4732979125361028, 
+                    -0.02224192529792623
+                ], 
+                "columns": [
+                    "d3mIndex", 
+                    "Number_seasons", 
+                    "Games_played", 
+                    "At_bats", 
+                    "Runs", 
+                    "Hits", 
+                    "Doubles", 
+                    "Triples", 
+                    "Home_runs", 
+                    "RBIs", 
+                    "Walks", 
+                    "Strikeouts", 
+                    "Batting_average", 
+                    "On_base_pct", 
+                    "Slugging_pct", 
+                    "Fielding_ave"
+                ]
+            }, 
+            "integer": {
+                "Q1": 3028.0, 
+                "count": 1073, 
+                "Q3": 5839.0, 
+                "standard-deviation": 2120.1152578482556, 
+                "ratio": 1.0, 
+                "num_positive": 1073, 
+                "num_outlier": 5, 
+                "Q2": 4334.0, 
+                "num_-1": 0, 
+                "num_0": 0, 
+                "num_1": 0, 
+                "num_negative": 0, 
+                "mean": 4576.038210624418
+            }, 
+            "contain_numeric_token": {
+                "count": 1073, 
+                "ratio": 1.0
+            }
         }, 
         "length": {
             "token": {
@@ -532,50 +756,8 @@
         }
     }, 
     "Batting_average": {
-        "numeric_stats": {
-            "contain_numeric_token_puncs": {
-                "count": 2146, 
-                "ratio": 1.0
-            }, 
-            "decimal": {
-                "Q1": 0.253, 
-                "count": 1073, 
-                "Q3": 0.285, 
-                "standard-deviation": 0.025890547242075377, 
-                "ratio": 1.0, 
-                "num_positive": 1073, 
-                "num_outlier": 6, 
-                "Q2": 0.268, 
-                "num_-1": 0, 
-                "num_0": 0, 
-                "num_1": 0, 
-                "num_negative": 0, 
-                "mean": 0.2691276794035415
-            }, 
-            "numeric": {
-                "Q1": 0.253, 
-                "count": 1073, 
-                "Q3": 0.285, 
-                "standard-deviation": 0.025890547242075377, 
-                "ratio": 1.0, 
-                "num_positive": 1073, 
-                "num_outlier": 6, 
-                "Q2": 0.268, 
-                "num_-1": 0, 
-                "num_0": 0, 
-                "num_1": 0, 
-                "num_negative": 0, 
-                "mean": 0.2691276794035415
-            }, 
-            "contain_numeric": {
-                "count": 1073, 
-                "ratio": 1.0
-            }, 
-            "numeric_density": 0.7955021917286068, 
-            "contain_numeric_token": {
-                "count": 1073, 
-                "ratio": 1.0
-            }
+        "special_type": {
+            "num_filename": 0
         }, 
         "missing": {
             "num_nonblank": 1073, 
@@ -641,8 +823,106 @@
                 "0.261": 20
             }
         }, 
-        "special_type": {
-            "num_filename": 0
+        "numeric_stats": {
+            "contain_numeric_token_puncs": {
+                "count": 2146, 
+                "ratio": 1.0
+            }, 
+            "decimal": {
+                "Q1": 0.253, 
+                "count": 1073, 
+                "Q3": 0.285, 
+                "standard-deviation": 0.025890547242075377, 
+                "ratio": 1.0, 
+                "num_positive": 1073, 
+                "num_outlier": 6, 
+                "Q2": 0.268, 
+                "num_-1": 0, 
+                "num_0": 0, 
+                "num_1": 0, 
+                "num_negative": 0, 
+                "mean": 0.2691276794035415
+            }, 
+            "numeric": {
+                "Q1": 0.253, 
+                "count": 1073, 
+                "Q3": 0.285, 
+                "standard-deviation": 0.025890547242075377, 
+                "ratio": 1.0, 
+                "num_positive": 1073, 
+                "num_outlier": 6, 
+                "Q2": 0.268, 
+                "num_-1": 0, 
+                "num_0": 0, 
+                "num_1": 0, 
+                "num_negative": 0, 
+                "mean": 0.2691276794035415
+            }, 
+            "contain_numeric": {
+                "count": 1073, 
+                "ratio": 1.0
+            }, 
+            "numeric_density": 0.7955021917286068, 
+            "correlation": {
+                "spearman": [
+                    -0.013099056635392686, 
+                    0.29034878464339137, 
+                    0.4587929086906879, 
+                    0.5301692741219035, 
+                    0.6306455242961514, 
+                    0.6426477805208886, 
+                    0.6468959525674022, 
+                    0.6453408542922994, 
+                    0.34449931194448424, 
+                    0.6099025594906241, 
+                    0.4450573457749509, 
+                    0.030406710260422458, 
+                    1.0, 
+                    0.725257424621119, 
+                    0.6801707489299579, 
+                    -0.046151293578303214
+                ], 
+                "pearson": [
+                    -0.0025945913067228787, 
+                    0.3167566446173405, 
+                    0.4649410865051933, 
+                    0.5318677958698181, 
+                    0.6400483743330392, 
+                    0.6518500220913375, 
+                    0.650459996504339, 
+                    0.6397268440983455, 
+                    0.2802794695216739, 
+                    0.5995961074194581, 
+                    0.42390549766952024, 
+                    0.04575178725192275, 
+                    1.0, 
+                    0.7661615400417624, 
+                    0.7061399818321517, 
+                    -0.03875805124477538
+                ], 
+                "columns": [
+                    "d3mIndex", 
+                    "Number_seasons", 
+                    "Games_played", 
+                    "At_bats", 
+                    "Runs", 
+                    "Hits", 
+                    "Doubles", 
+                    "Triples", 
+                    "Home_runs", 
+                    "RBIs", 
+                    "Walks", 
+                    "Strikeouts", 
+                    "Batting_average", 
+                    "On_base_pct", 
+                    "Slugging_pct", 
+                    "Fielding_ave"
+                ]
+            }, 
+            "contain_numeric_token": {
+                "count": 1073, 
+                "ratio": 1.0
+            }
         }, 
         "length": {
             "token": {
@@ -656,50 +936,8 @@
         }
     }, 
     "Strikeouts": {
-        "numeric_stats": {
-            "contain_numeric_token_puncs": {
-                "count": 1055, 
-                "ratio": 1.0
-            }, 
-            "numeric": {
-                "Q1": 220.0, 
-                "count": 1055, 
-                "Q3": 601.0, 
-                "standard-deviation": 329.06986959728425, 
-                "ratio": 1.0, 
-                "num_positive": 1052, 
-                "num_outlier": 16, 
-                "Q2": 374.0, 
-                "num_-1": 0, 
-                "num_0": 3, 
-                "num_1": 0, 
-                "num_negative": 0, 
-                "mean": 452.2284360189573
-            }, 
-            "contain_numeric": {
-                "count": 1055, 
-                "ratio": 1.0
-            }, 
-            "numeric_density": 1.0, 
-            "integer": {
-                "Q1": 220.0, 
-                "count": 1055, 
-                "Q3": 601.0, 
-                "standard-deviation": 329.06986959728425, 
-                "ratio": 1.0, 
-                "num_positive": 1052, 
-                "num_outlier": 16, 
-                "Q2": 374.0, 
-                "num_-1": 0, 
-                "num_0": 3, 
-                "num_1": 0, 
-                "num_negative": 0, 
-                "mean": 452.2284360189573
-            }, 
-            "contain_numeric_token": {
-                "count": 1055, 
-                "ratio": 1.0
-            }
+        "special_type": {
+            "num_filename": 0
         }, 
         "missing": {
             "num_nonblank": 1055, 
@@ -777,8 +1015,106 @@
                 "118": 5
             }
         }, 
-        "special_type": {
-            "num_filename": 0
+        "numeric_stats": {
+            "contain_numeric_token_puncs": {
+                "count": 1055, 
+                "ratio": 1.0
+            }, 
+            "numeric": {
+                "Q1": 220.0, 
+                "count": 1055, 
+                "Q3": 601.0, 
+                "standard-deviation": 329.06986959728425, 
+                "ratio": 1.0, 
+                "num_positive": 1052, 
+                "num_outlier": 16, 
+                "Q2": 374.0, 
+                "num_-1": 0, 
+                "num_0": 3, 
+                "num_1": 0, 
+                "num_negative": 0, 
+                "mean": 452.2284360189573
+            }, 
+            "contain_numeric": {
+                "count": 1055, 
+                "ratio": 1.0
+            }, 
+            "numeric_density": 1.0, 
+            "correlation": {
+                "spearman": [
+                    0.00718634217892383, 
+                    0.3985912467646312, 
+                    0.565514960003089, 
+                    0.4845546811250597, 
+                    0.41983822836339196, 
+                    0.4391463610391795, 
+                    0.4921176657558777, 
+                    0.11691680105982134, 
+                    0.7601640320043805, 
+                    0.5134999968154731, 
+                    0.5563227138749862, 
+                    1.0, 
+                    0.030406710260422458, 
+                    0.20049715342092034, 
+                    0.4513506444527345, 
+                    0.3047497360487197
+                ], 
+                "pearson": [
+                    0.01107525083858399, 
+                    0.43368874769629384, 
+                    0.5961119114614584, 
+                    0.5247942450288086, 
+                    0.4435504820926437, 
+                    0.46099778184686147, 
+                    0.4869881925822946, 
+                    0.05056584751276849, 
+                    0.7969958050675684, 
+                    0.5706325643558723, 
+                    0.5848835193535076, 
+                    1.0, 
+                    0.04575178725192275, 
+                    0.21872694136255005, 
+                    0.49090528864431915, 
+                    0.26286294204201527
+                ], 
+                "columns": [
+                    "d3mIndex", 
+                    "Number_seasons", 
+                    "Games_played", 
+                    "At_bats", 
+                    "Runs", 
+                    "Hits", 
+                    "Doubles", 
+                    "Triples", 
+                    "Home_runs", 
+                    "RBIs", 
+                    "Walks", 
+                    "Strikeouts", 
+                    "Batting_average", 
+                    "On_base_pct", 
+                    "Slugging_pct", 
+                    "Fielding_ave"
+                ]
+            }, 
+            "integer": {
+                "Q1": 220.0, 
+                "count": 1055, 
+                "Q3": 601.0, 
+                "standard-deviation": 329.06986959728425, 
+                "ratio": 1.0, 
+                "num_positive": 1052, 
+                "num_outlier": 16, 
+                "Q2": 374.0, 
+                "num_-1": 0, 
+                "num_0": 3, 
+                "num_1": 0, 
+                "num_negative": 0, 
+                "mean": 452.2284360189573
+            }, 
+            "contain_numeric_token": {
+                "count": 1055, 
+                "ratio": 1.0
+            }
         }, 
         "length": {
             "token": {
@@ -792,50 +1128,8 @@
         }
     }, 
     "RBIs": {
-        "numeric_stats": {
-            "contain_numeric_token_puncs": {
-                "count": 1073, 
-                "ratio": 1.0
-            }, 
-            "numeric": {
-                "Q1": 318.0, 
-                "count": 1073, 
-                "Q3": 736.0, 
-                "standard-deviation": 361.5758211531281, 
-                "ratio": 1.0, 
-                "num_positive": 1073, 
-                "num_outlier": 14, 
-                "Q2": 490.0, 
-                "num_-1": 0, 
-                "num_0": 0, 
-                "num_1": 0, 
-                "num_negative": 0, 
-                "mean": 571.8350419384902
-            }, 
-            "contain_numeric": {
-                "count": 1073, 
-                "ratio": 1.0
-            }, 
-            "numeric_density": 1.0, 
-            "integer": {
-                "Q1": 318.0, 
-                "count": 1073, 
-                "Q3": 736.0, 
-                "standard-deviation": 361.5758211531281, 
-                "ratio": 1.0, 
-                "num_positive": 1073, 
-                "num_outlier": 14, 
-                "Q2": 490.0, 
-                "num_-1": 0, 
-                "num_0": 0, 
-                "num_1": 0, 
-                "num_negative": 0, 
-                "mean": 571.8350419384902
-            }, 
-            "contain_numeric_token": {
-                "count": 1073, 
-                "ratio": 1.0
-            }
+        "special_type": {
+            "num_filename": 0
         }, 
         "missing": {
             "num_nonblank": 1073, 
@@ -913,8 +1207,106 @@
                 "471": 5
             }
         }, 
-        "special_type": {
-            "num_filename": 0
+        "numeric_stats": {
+            "contain_numeric_token_puncs": {
+                "count": 1073, 
+                "ratio": 1.0
+            }, 
+            "numeric": {
+                "Q1": 318.0, 
+                "count": 1073, 
+                "Q3": 736.0, 
+                "standard-deviation": 361.5758211531281, 
+                "ratio": 1.0, 
+                "num_positive": 1073, 
+                "num_outlier": 14, 
+                "Q2": 490.0, 
+                "num_-1": 0, 
+                "num_0": 0, 
+                "num_1": 0, 
+                "num_negative": 0, 
+                "mean": 571.8350419384902
+            }, 
+            "contain_numeric": {
+                "count": 1073, 
+                "ratio": 1.0
+            }, 
+            "numeric_density": 1.0, 
+            "correlation": {
+                "spearman": [
+                    0.01713351166448946, 
+                    0.654811902574, 
+                    0.8732269301935692, 
+                    0.8961316357280327, 
+                    0.8714789674391124, 
+                    0.9101815579485389, 
+                    0.9218478952217652, 
+                    0.676646685887301, 
+                    0.7247076978204496, 
+                    1.0, 
+                    0.7832680800601225, 
+                    0.5134999968154731, 
+                    0.6099025594906241, 
+                    0.5506592910964706, 
+                    0.6936259245895463, 
+                    0.03666629597056049
+                ], 
+                "pearson": [
+                    0.027060915643238877, 
+                    0.6995254536544591, 
+                    0.8649605417668941, 
+                    0.8761751399475088, 
+                    0.8667183405671259, 
+                    0.8979550080239602, 
+                    0.91176966093443, 
+                    0.6309800180503988, 
+                    0.776310760710378, 
+                    1.0, 
+                    0.7703914406009892, 
+                    0.5706325643558723, 
+                    0.5995961074194581, 
+                    0.557772175131893, 
+                    0.727598879271368, 
+                    0.0645598593265686
+                ], 
+                "columns": [
+                    "d3mIndex", 
+                    "Number_seasons", 
+                    "Games_played", 
+                    "At_bats", 
+                    "Runs", 
+                    "Hits", 
+                    "Doubles", 
+                    "Triples", 
+                    "Home_runs", 
+                    "RBIs", 
+                    "Walks", 
+                    "Strikeouts", 
+                    "Batting_average", 
+                    "On_base_pct", 
+                    "Slugging_pct", 
+                    "Fielding_ave"
+                ]
+            }, 
+            "integer": {
+                "Q1": 318.0, 
+                "count": 1073, 
+                "Q3": 736.0, 
+                "standard-deviation": 361.5758211531281, 
+                "ratio": 1.0, 
+                "num_positive": 1073, 
+                "num_outlier": 14, 
+                "Q2": 490.0, 
+                "num_-1": 0, 
+                "num_0": 0, 
+                "num_1": 0, 
+                "num_negative": 0, 
+                "mean": 571.8350419384902
+            }, 
+            "contain_numeric_token": {
+                "count": 1073, 
+                "ratio": 1.0
+            }
         }, 
         "length": {
             "token": {
@@ -928,50 +1320,8 @@
         }
     }, 
     "Home_runs": {
-        "numeric_stats": {
-            "contain_numeric_token_puncs": {
-                "count": 1073, 
-                "ratio": 1.0
-            }, 
-            "numeric": {
-                "Q1": 23.0, 
-                "count": 1073, 
-                "Q3": 107.0, 
-                "standard-deviation": 99.34849353344259, 
-                "ratio": 1.0, 
-                "num_positive": 1069, 
-                "num_outlier": 23, 
-                "Q2": 51.0, 
-                "num_-1": 0, 
-                "num_0": 4, 
-                "num_1": 6, 
-                "num_negative": 0, 
-                "mean": 85.92544268406337
-            }, 
-            "contain_numeric": {
-                "count": 1073, 
-                "ratio": 1.0
-            }, 
-            "numeric_density": 1.0, 
-            "integer": {
-                "Q1": 23.0, 
-                "count": 1073, 
-                "Q3": 107.0, 
-                "standard-deviation": 99.34849353344259, 
-                "ratio": 1.0, 
-                "num_positive": 1069, 
-                "num_outlier": 23, 
-                "Q2": 51.0, 
-                "num_-1": 0, 
-                "num_0": 4, 
-                "num_1": 6, 
-                "num_negative": 0, 
-                "mean": 85.92544268406337
-            }, 
-            "contain_numeric_token": {
-                "count": 1073, 
-                "ratio": 1.0
-            }
+        "special_type": {
+            "num_filename": 0
         }, 
         "missing": {
             "num_nonblank": 1073, 
@@ -1049,8 +1399,106 @@
                 "28": 13
             }
         }, 
-        "special_type": {
-            "num_filename": 0
+        "numeric_stats": {
+            "contain_numeric_token_puncs": {
+                "count": 1073, 
+                "ratio": 1.0
+            }, 
+            "numeric": {
+                "Q1": 23.0, 
+                "count": 1073, 
+                "Q3": 107.0, 
+                "standard-deviation": 99.34849353344259, 
+                "ratio": 1.0, 
+                "num_positive": 1069, 
+                "num_outlier": 23, 
+                "Q2": 51.0, 
+                "num_-1": 0, 
+                "num_0": 4, 
+                "num_1": 6, 
+                "num_negative": 0, 
+                "mean": 85.92544268406337
+            }, 
+            "contain_numeric": {
+                "count": 1073, 
+                "ratio": 1.0
+            }, 
+            "numeric_density": 1.0, 
+            "correlation": {
+                "spearman": [
+                    0.01901476932202831, 
+                    0.40817403034188815, 
+                    0.5879247822392925, 
+                    0.5399867997953403, 
+                    0.537144903925132, 
+                    0.5452541743138831, 
+                    0.627894409130698, 
+                    0.2219661291086728, 
+                    1.0, 
+                    0.7247076978204496, 
+                    0.6083449592328674, 
+                    0.7601640320043805, 
+                    0.34449931194448424, 
+                    0.4614642964607768, 
+                    0.8297476228207566, 
+                    0.30559460242042225
+                ], 
+                "pearson": [
+                    0.01889152068294909, 
+                    0.46404987338253156, 
+                    0.6084805283989543, 
+                    0.5606172669530128, 
+                    0.5666766743894445, 
+                    0.5518489414149528, 
+                    0.5924871878861956, 
+                    0.15665443691196165, 
+                    1.0, 
+                    0.776310760710378, 
+                    0.6600047477821905, 
+                    0.7969958050675684, 
+                    0.2802794695216739, 
+                    0.41363531309146273, 
+                    0.7587548337025587, 
+                    0.24317773749441093
+                ], 
+                "columns": [
+                    "d3mIndex", 
+                    "Number_seasons", 
+                    "Games_played", 
+                    "At_bats", 
+                    "Runs", 
+                    "Hits", 
+                    "Doubles", 
+                    "Triples", 
+                    "Home_runs", 
+                    "RBIs", 
+                    "Walks", 
+                    "Strikeouts", 
+                    "Batting_average", 
+                    "On_base_pct", 
+                    "Slugging_pct", 
+                    "Fielding_ave"
+                ]
+            }, 
+            "integer": {
+                "Q1": 23.0, 
+                "count": 1073, 
+                "Q3": 107.0, 
+                "standard-deviation": 99.34849353344259, 
+                "ratio": 1.0, 
+                "num_positive": 1069, 
+                "num_outlier": 23, 
+                "Q2": 51.0, 
+                "num_-1": 0, 
+                "num_0": 4, 
+                "num_1": 6, 
+                "num_negative": 0, 
+                "mean": 85.92544268406337
+            }, 
+            "contain_numeric_token": {
+                "count": 1073, 
+                "ratio": 1.0
+            }
         }, 
         "length": {
             "token": {
@@ -1064,50 +1512,8 @@
         }
     }, 
     "Number_seasons": {
-        "numeric_stats": {
-            "contain_numeric_token_puncs": {
-                "count": 1073, 
-                "ratio": 1.0
-            }, 
-            "numeric": {
-                "Q1": 11.0, 
-                "count": 1073, 
-                "Q3": 16.0, 
-                "standard-deviation": 3.180751620457165, 
-                "ratio": 1.0, 
-                "num_positive": 1073, 
-                "num_outlier": 6, 
-                "Q2": 13.0, 
-                "num_-1": 0, 
-                "num_0": 0, 
-                "num_1": 0, 
-                "num_negative": 0, 
-                "mean": 13.565703634669152
-            }, 
-            "contain_numeric": {
-                "count": 1073, 
-                "ratio": 1.0
-            }, 
-            "numeric_density": 1.0, 
-            "integer": {
-                "Q1": 11.0, 
-                "count": 1073, 
-                "Q3": 16.0, 
-                "standard-deviation": 3.180751620457165, 
-                "ratio": 1.0, 
-                "num_positive": 1073, 
-                "num_outlier": 6, 
-                "Q2": 13.0, 
-                "num_-1": 0, 
-                "num_0": 0, 
-                "num_1": 0, 
-                "num_negative": 0, 
-                "mean": 13.565703634669152
-            }, 
-            "contain_numeric_token": {
-                "count": 1073, 
-                "ratio": 1.0
-            }
+        "special_type": {
+            "num_filename": 0
         }, 
         "missing": {
             "num_nonblank": 1073, 
@@ -1185,8 +1591,106 @@
                 "19": 32
             }
         }, 
-        "special_type": {
-            "num_filename": 0
+        "numeric_stats": {
+            "contain_numeric_token_puncs": {
+                "count": 1073, 
+                "ratio": 1.0
+            }, 
+            "numeric": {
+                "Q1": 11.0, 
+                "count": 1073, 
+                "Q3": 16.0, 
+                "standard-deviation": 3.180751620457165, 
+                "ratio": 1.0, 
+                "num_positive": 1073, 
+                "num_outlier": 6, 
+                "Q2": 13.0, 
+                "num_-1": 0, 
+                "num_0": 0, 
+                "num_1": 0, 
+                "num_negative": 0, 
+                "mean": 13.565703634669152
+            }, 
+            "contain_numeric": {
+                "count": 1073, 
+                "ratio": 1.0
+            }, 
+            "numeric_density": 1.0, 
+            "correlation": {
+                "spearman": [
+                    -0.010479872972857464, 
+                    1.0, 
+                    0.7870003717016766, 
+                    0.7074305917108383, 
+                    0.610068515508149, 
+                    0.6843490489040461, 
+                    0.6672447964683494, 
+                    0.43397797991505654, 
+                    0.40817403034188815, 
+                    0.654811902574, 
+                    0.5897678539060411, 
+                    0.3985912467646312, 
+                    0.29034878464339137, 
+                    0.2821961574820073, 
+                    0.2698934615310606, 
+                    0.0825862496534868
+                ], 
+                "pearson": [
+                    -0.005455862172593665, 
+                    1.0, 
+                    0.8199159251432374, 
+                    0.7513786691883105, 
+                    0.6660453609458616, 
+                    0.7346222133549669, 
+                    0.7138710751234442, 
+                    0.4661613364091388, 
+                    0.46404987338253156, 
+                    0.6995254536544591, 
+                    0.6241238192917221, 
+                    0.43368874769629384, 
+                    0.3167566446173405, 
+                    0.3090442526025314, 
+                    0.3128099731589521, 
+                    0.086042790964871
+                ], 
+                "columns": [
+                    "d3mIndex", 
+                    "Number_seasons", 
+                    "Games_played", 
+                    "At_bats", 
+                    "Runs", 
+                    "Hits", 
+                    "Doubles", 
+                    "Triples", 
+                    "Home_runs", 
+                    "RBIs", 
+                    "Walks", 
+                    "Strikeouts", 
+                    "Batting_average", 
+                    "On_base_pct", 
+                    "Slugging_pct", 
+                    "Fielding_ave"
+                ]
+            }, 
+            "integer": {
+                "Q1": 11.0, 
+                "count": 1073, 
+                "Q3": 16.0, 
+                "standard-deviation": 3.180751620457165, 
+                "ratio": 1.0, 
+                "num_positive": 1073, 
+                "num_outlier": 6, 
+                "Q2": 13.0, 
+                "num_-1": 0, 
+                "num_0": 0, 
+                "num_1": 0, 
+                "num_negative": 0, 
+                "mean": 13.565703634669152
+            }, 
+            "contain_numeric_token": {
+                "count": 1073, 
+                "ratio": 1.0
+            }
         }, 
         "length": {
             "token": {
@@ -1366,50 +1870,8 @@
         }
     }, 
     "Walks": {
-        "numeric_stats": {
-            "contain_numeric_token_puncs": {
-                "count": 1073, 
-                "ratio": 1.0
-            }, 
-            "numeric": {
-                "Q1": 235.0, 
-                "count": 1073, 
-                "Q3": 587.0, 
-                "standard-deviation": 294.793314104618, 
-                "ratio": 1.0, 
-                "num_positive": 1073, 
-                "num_outlier": 19, 
-                "Q2": 382.0, 
-                "num_-1": 0, 
-                "num_0": 0, 
-                "num_1": 0, 
-                "num_negative": 0, 
-                "mean": 448.618825722274
-            }, 
-            "contain_numeric": {
-                "count": 1073, 
-                "ratio": 1.0
-            }, 
-            "numeric_density": 1.0, 
-            "integer": {
-                "Q1": 235.0, 
-                "count": 1073, 
-                "Q3": 587.0, 
-                "standard-deviation": 294.793314104618, 
-                "ratio": 1.0, 
-                "num_positive": 1073, 
-                "num_outlier": 19, 
-                "Q2": 382.0, 
-                "num_-1": 0, 
-                "num_0": 0, 
-                "num_1": 0, 
-                "num_negative": 0, 
-                "mean": 448.618825722274
-            }, 
-            "contain_numeric_token": {
-                "count": 1073, 
-                "ratio": 1.0
-            }
+        "special_type": {
+            "num_filename": 0
         }, 
         "missing": {
             "num_nonblank": 1073, 
@@ -1487,8 +1949,106 @@
                 "243": 5
             }
         }, 
-        "special_type": {
-            "num_filename": 0
+        "numeric_stats": {
+            "contain_numeric_token_puncs": {
+                "count": 1073, 
+                "ratio": 1.0
+            }, 
+            "numeric": {
+                "Q1": 235.0, 
+                "count": 1073, 
+                "Q3": 587.0, 
+                "standard-deviation": 294.793314104618, 
+                "ratio": 1.0, 
+                "num_positive": 1073, 
+                "num_outlier": 19, 
+                "Q2": 382.0, 
+                "num_-1": 0, 
+                "num_0": 0, 
+                "num_1": 0, 
+                "num_negative": 0, 
+                "mean": 448.618825722274
+            }, 
+            "contain_numeric": {
+                "count": 1073, 
+                "ratio": 1.0
+            }, 
+            "numeric_density": 1.0, 
+            "correlation": {
+                "spearman": [
+                    -0.0016626412669294712, 
+                    0.5897678539060411, 
+                    0.833876134385014, 
+                    0.8102489929946238, 
+                    0.8399120893521042, 
+                    0.8040596415398622, 
+                    0.7918778040310599, 
+                    0.5744785125505635, 
+                    0.6083449592328674, 
+                    0.7832680800601225, 
+                    1.0, 
+                    0.5563227138749862, 
+                    0.4450573457749509, 
+                    0.7316873989471332, 
+                    0.5231337454816625, 
+                    0.06208674580508335
+                ], 
+                "pearson": [
+                    -0.002600217363942582, 
+                    0.6241238192917221, 
+                    0.8085657766016647, 
+                    0.7789181686617247, 
+                    0.8316967267174163, 
+                    0.7717085418343921, 
+                    0.7529206415850699, 
+                    0.492316819213308, 
+                    0.6600047477821905, 
+                    0.7703914406009892, 
+                    1.0, 
+                    0.5848835193535076, 
+                    0.42390549766952024, 
+                    0.7126885353197633, 
+                    0.5410790379866535, 
+                    0.07807795391219759
+                ], 
+                "columns": [
+                    "d3mIndex", 
+                    "Number_seasons", 
+                    "Games_played", 
+                    "At_bats", 
+                    "Runs", 
+                    "Hits", 
+                    "Doubles", 
+                    "Triples", 
+                    "Home_runs", 
+                    "RBIs", 
+                    "Walks", 
+                    "Strikeouts", 
+                    "Batting_average", 
+                    "On_base_pct", 
+                    "Slugging_pct", 
+                    "Fielding_ave"
+                ]
+            }, 
+            "integer": {
+                "Q1": 235.0, 
+                "count": 1073, 
+                "Q3": 587.0, 
+                "standard-deviation": 294.793314104618, 
+                "ratio": 1.0, 
+                "num_positive": 1073, 
+                "num_outlier": 19, 
+                "Q2": 382.0, 
+                "num_-1": 0, 
+                "num_0": 0, 
+                "num_1": 0, 
+                "num_negative": 0, 
+                "mean": 448.618825722274
+            }, 
+            "contain_numeric_token": {
+                "count": 1073, 
+                "ratio": 1.0
+            }
         }, 
         "length": {
             "token": {
@@ -1502,50 +2062,8 @@
         }
     }, 
     "Hits": {
-        "numeric_stats": {
-            "contain_numeric_token_puncs": {
-                "count": 1073, 
-                "ratio": 1.0
-            }, 
-            "numeric": {
-                "Q1": 778.0, 
-                "count": 1073, 
-                "Q3": 1617.0, 
-                "standard-deviation": 654.8054733448785, 
-                "ratio": 1.0, 
-                "num_positive": 1073, 
-                "num_outlier": 10, 
-                "Q2": 1177.0, 
-                "num_-1": 0, 
-                "num_0": 0, 
-                "num_1": 0, 
-                "num_negative": 0, 
-                "mean": 1260.7949673811743
-            }, 
-            "contain_numeric": {
-                "count": 1073, 
-                "ratio": 1.0
-            }, 
-            "numeric_density": 1.0, 
-            "integer": {
-                "Q1": 778.0, 
-                "count": 1073, 
-                "Q3": 1617.0, 
-                "standard-deviation": 654.8054733448785, 
-                "ratio": 1.0, 
-                "num_positive": 1073, 
-                "num_outlier": 10, 
-                "Q2": 1177.0, 
-                "num_-1": 0, 
-                "num_0": 0, 
-                "num_1": 0, 
-                "num_negative": 0, 
-                "mean": 1260.7949673811743
-            }, 
-            "contain_numeric_token": {
-                "count": 1073, 
-                "ratio": 1.0
-            }
+        "special_type": {
+            "num_filename": 0
         }, 
         "missing": {
             "num_nonblank": 1073, 
@@ -1623,8 +2141,106 @@
                 "432": 3
             }
         }, 
-        "special_type": {
-            "num_filename": 0
+        "numeric_stats": {
+            "contain_numeric_token_puncs": {
+                "count": 1073, 
+                "ratio": 1.0
+            }, 
+            "numeric": {
+                "Q1": 778.0, 
+                "count": 1073, 
+                "Q3": 1617.0, 
+                "standard-deviation": 654.8054733448785, 
+                "ratio": 1.0, 
+                "num_positive": 1073, 
+                "num_outlier": 10, 
+                "Q2": 1177.0, 
+                "num_-1": 0, 
+                "num_0": 0, 
+                "num_1": 0, 
+                "num_negative": 0, 
+                "mean": 1260.7949673811743
+            }, 
+            "contain_numeric": {
+                "count": 1073, 
+                "ratio": 1.0
+            }, 
+            "numeric_density": 1.0, 
+            "correlation": {
+                "spearman": [
+                    0.007855027076774938, 
+                    0.6843490489040461, 
+                    0.9424681904636995, 
+                    0.9883055821857437, 
+                    0.9603212247514478, 
+                    1.0, 
+                    0.9551729872606424, 
+                    0.7878677589117035, 
+                    0.5452541743138831, 
+                    0.9101815579485389, 
+                    0.8040596415398622, 
+                    0.4391463610391795, 
+                    0.6426477805208886, 
+                    0.5218873258517137, 
+                    0.5175871485663689, 
+                    -0.05219867177164607
+                ], 
+                "pearson": [
+                    0.017360074669016415, 
+                    0.7346222133549669, 
+                    0.9454069907876087, 
+                    0.9837116580464464, 
+                    0.9516372729578016, 
+                    1.0, 
+                    0.951262381851209, 
+                    0.7560742797668155, 
+                    0.5518489414149528, 
+                    0.8979550080239602, 
+                    0.7717085418343921, 
+                    0.46099778184686147, 
+                    0.6518500220913375, 
+                    0.5359547072235666, 
+                    0.546543607746157, 
+                    -0.021140086997254403
+                ], 
+                "columns": [
+                    "d3mIndex", 
+                    "Number_seasons", 
+                    "Games_played", 
+                    "At_bats", 
+                    "Runs", 
+                    "Hits", 
+                    "Doubles", 
+                    "Triples", 
+                    "Home_runs", 
+                    "RBIs", 
+                    "Walks", 
+                    "Strikeouts", 
+                    "Batting_average", 
+                    "On_base_pct", 
+                    "Slugging_pct", 
+                    "Fielding_ave"
+                ]
+            }, 
+            "integer": {
+                "Q1": 778.0, 
+                "count": 1073, 
+                "Q3": 1617.0, 
+                "standard-deviation": 654.8054733448785, 
+                "ratio": 1.0, 
+                "num_positive": 1073, 
+                "num_outlier": 10, 
+                "Q2": 1177.0, 
+                "num_-1": 0, 
+                "num_0": 0, 
+                "num_1": 0, 
+                "num_negative": 0, 
+                "mean": 1260.7949673811743
+            }, 
+            "contain_numeric_token": {
+                "count": 1073, 
+                "ratio": 1.0
+            }
         }, 
         "length": {
             "token": {
@@ -1638,50 +2254,8 @@
         }
     }, 
     "Doubles": {
-        "numeric_stats": {
-            "contain_numeric_token_puncs": {
-                "count": 1073, 
-                "ratio": 1.0
-            }, 
-            "numeric": {
-                "Q1": 117.0, 
-                "count": 1073, 
-                "Q3": 266.0, 
-                "standard-deviation": 118.14051269101715, 
-                "ratio": 1.0, 
-                "num_positive": 1073, 
-                "num_outlier": 9, 
-                "Q2": 186.0, 
-                "num_-1": 0, 
-                "num_0": 0, 
-                "num_1": 0, 
-                "num_negative": 0, 
-                "mean": 205.42218080149115
-            }, 
-            "contain_numeric": {
-                "count": 1073, 
-                "ratio": 1.0
-            }, 
-            "numeric_density": 1.0, 
-            "integer": {
-                "Q1": 117.0, 
-                "count": 1073, 
-                "Q3": 266.0, 
-                "standard-deviation": 118.14051269101715, 
-                "ratio": 1.0, 
-                "num_positive": 1073, 
-                "num_outlier": 9, 
-                "Q2": 186.0, 
-                "num_-1": 0, 
-                "num_0": 0, 
-                "num_1": 0, 
-                "num_negative": 0, 
-                "mean": 205.42218080149115
-            }, 
-            "contain_numeric_token": {
-                "count": 1073, 
-                "ratio": 1.0
-            }
+        "special_type": {
+            "num_filename": 0
         }, 
         "missing": {
             "num_nonblank": 1073, 
@@ -1759,8 +2333,106 @@
                 "147": 7
             }
         }, 
-        "special_type": {
-            "num_filename": 0
+        "numeric_stats": {
+            "contain_numeric_token_puncs": {
+                "count": 1073, 
+                "ratio": 1.0
+            }, 
+            "numeric": {
+                "Q1": 117.0, 
+                "count": 1073, 
+                "Q3": 266.0, 
+                "standard-deviation": 118.14051269101715, 
+                "ratio": 1.0, 
+                "num_positive": 1073, 
+                "num_outlier": 9, 
+                "Q2": 186.0, 
+                "num_-1": 0, 
+                "num_0": 0, 
+                "num_1": 0, 
+                "num_negative": 0, 
+                "mean": 205.42218080149115
+            }, 
+            "contain_numeric": {
+                "count": 1073, 
+                "ratio": 1.0
+            }, 
+            "numeric_density": 1.0, 
+            "correlation": {
+                "spearman": [
+                    0.011646468887678767, 
+                    0.6672447964683494, 
+                    0.9045637607133761, 
+                    0.9381383818431898, 
+                    0.9161003322015688, 
+                    0.9551729872606424, 
+                    1.0, 
+                    0.7324536178846096, 
+                    0.627894409130698, 
+                    0.9218478952217652, 
+                    0.7918778040310599, 
+                    0.4921176657558777, 
+                    0.6468959525674022, 
+                    0.5469071840964306, 
+                    0.6065343673707437, 
+                    -0.0004051654030147491
+                ], 
+                "pearson": [
+                    0.02364170759913972, 
+                    0.7138710751234442, 
+                    0.8997915681050143, 
+                    0.9261021742463877, 
+                    0.8985164645240242, 
+                    0.951262381851209, 
+                    1.0, 
+                    0.7016361178405612, 
+                    0.5924871878861956, 
+                    0.91176966093443, 
+                    0.7529206415850699, 
+                    0.4869881925822946, 
+                    0.650459996504339, 
+                    0.5535139661795112, 
+                    0.622941121181539, 
+                    0.03139218142384756
+                ], 
+                "columns": [
+                    "d3mIndex", 
+                    "Number_seasons", 
+                    "Games_played", 
+                    "At_bats", 
+                    "Runs", 
+                    "Hits", 
+                    "Doubles", 
+                    "Triples", 
+                    "Home_runs", 
+                    "RBIs", 
+                    "Walks", 
+                    "Strikeouts", 
+                    "Batting_average", 
+                    "On_base_pct", 
+                    "Slugging_pct", 
+                    "Fielding_ave"
+                ]
+            }, 
+            "integer": {
+                "Q1": 117.0, 
+                "count": 1073, 
+                "Q3": 266.0, 
+                "standard-deviation": 118.14051269101715, 
+                "ratio": 1.0, 
+                "num_positive": 1073, 
+                "num_outlier": 9, 
+                "Q2": 186.0, 
+                "num_-1": 0, 
+                "num_0": 0, 
+                "num_1": 0, 
+                "num_negative": 0, 
+                "mean": 205.42218080149115
+            }, 
+            "contain_numeric_token": {
+                "count": 1073, 
+                "ratio": 1.0
+            }
         }, 
         "length": {
             "token": {
@@ -1774,50 +2446,8 @@
         }
     }, 
     "Games_played": {
-        "numeric_stats": {
-            "contain_numeric_token_puncs": {
-                "count": 1073, 
-                "ratio": 1.0
-            }, 
-            "numeric": {
-                "Q1": 964.0, 
-                "count": 1073, 
-                "Q3": 1659.0, 
-                "standard-deviation": 525.1637100097523, 
-                "ratio": 1.0, 
-                "num_positive": 1073, 
-                "num_outlier": 7, 
-                "Q2": 1287.0, 
-                "num_-1": 0, 
-                "num_0": 0, 
-                "num_1": 0, 
-                "num_negative": 0, 
-                "mean": 1342.6123019571296
-            }, 
-            "contain_numeric": {
-                "count": 1073, 
-                "ratio": 1.0
-            }, 
-            "numeric_density": 1.0, 
-            "integer": {
-                "Q1": 964.0, 
-                "count": 1073, 
-                "Q3": 1659.0, 
-                "standard-deviation": 525.1637100097523, 
-                "ratio": 1.0, 
-                "num_positive": 1073, 
-                "num_outlier": 7, 
-                "Q2": 1287.0, 
-                "num_-1": 0, 
-                "num_0": 0, 
-                "num_1": 0, 
-                "num_negative": 0, 
-                "mean": 1342.6123019571296
-            }, 
-            "contain_numeric_token": {
-                "count": 1073, 
-                "ratio": 1.0
-            }
+        "special_type": {
+            "num_filename": 0
         }, 
         "missing": {
             "num_nonblank": 1073, 
@@ -1895,8 +2525,106 @@
                 "1062": 3
             }
         }, 
-        "special_type": {
-            "num_filename": 0
+        "numeric_stats": {
+            "contain_numeric_token_puncs": {
+                "count": 1073, 
+                "ratio": 1.0
+            }, 
+            "numeric": {
+                "Q1": 964.0, 
+                "count": 1073, 
+                "Q3": 1659.0, 
+                "standard-deviation": 525.1637100097523, 
+                "ratio": 1.0, 
+                "num_positive": 1073, 
+                "num_outlier": 7, 
+                "Q2": 1287.0, 
+                "num_-1": 0, 
+                "num_0": 0, 
+                "num_1": 0, 
+                "num_negative": 0, 
+                "mean": 1342.6123019571296
+            }, 
+            "contain_numeric": {
+                "count": 1073, 
+                "ratio": 1.0
+            }, 
+            "numeric_density": 1.0, 
+            "correlation": {
+                "spearman": [
+                    0.008452582655343235, 
+                    0.7870003717016766, 
+                    1.0, 
+                    0.9637803118646581, 
+                    0.8803476140038998, 
+                    0.9424681904636995, 
+                    0.9045637607133761, 
+                    0.6572528572219408, 
+                    0.5879247822392925, 
+                    0.8732269301935692, 
+                    0.833876134385014, 
+                    0.565514960003089, 
+                    0.4587929086906879, 
+                    0.44311439544031483, 
+                    0.44001955406533133, 
+                    0.062043630061128764
+                ], 
+                "pearson": [
+                    0.02154131435281204, 
+                    0.8199159251432374, 
+                    1.0, 
+                    0.9713385054379507, 
+                    0.8761591381416747, 
+                    0.9454069907876087, 
+                    0.8997915681050143, 
+                    0.6141707040495014, 
+                    0.6084805283989543, 
+                    0.8649605417668941, 
+                    0.8085657766016647, 
+                    0.5961119114614584, 
+                    0.4649410865051933, 
+                    0.4507397165937091, 
+                    0.47220001103385467, 
+                    0.0917518127940001
+                ], 
+                "columns": [
+                    "d3mIndex", 
+                    "Number_seasons", 
+                    "Games_played", 
+                    "At_bats", 
+                    "Runs", 
+                    "Hits", 
+                    "Doubles", 
+                    "Triples", 
+                    "Home_runs", 
+                    "RBIs", 
+                    "Walks", 
+                    "Strikeouts", 
+                    "Batting_average", 
+                    "On_base_pct", 
+                    "Slugging_pct", 
+                    "Fielding_ave"
+                ]
+            }, 
+            "integer": {
+                "Q1": 964.0, 
+                "count": 1073, 
+                "Q3": 1659.0, 
+                "standard-deviation": 525.1637100097523, 
+                "ratio": 1.0, 
+                "num_positive": 1073, 
+                "num_outlier": 7, 
+                "Q2": 1287.0, 
+                "num_-1": 0, 
+                "num_0": 0, 
+                "num_1": 0, 
+                "num_negative": 0, 
+                "mean": 1342.6123019571296
+            }, 
+            "contain_numeric_token": {
+                "count": 1073, 
+                "ratio": 1.0
+            }
         }, 
         "length": {
             "token": {
@@ -1910,50 +2638,8 @@
         }
     }, 
     "d3mIndex": {
-        "numeric_stats": {
-            "contain_numeric_token_puncs": {
-                "count": 1073, 
-                "ratio": 1.0
-            }, 
-            "numeric": {
-                "Q1": 268.0, 
-                "count": 1073, 
-                "Q3": 804.0, 
-                "standard-deviation": 309.89272337375075, 
-                "ratio": 1.0, 
-                "num_positive": 1072, 
-                "num_outlier": 0, 
-                "Q2": 536.0, 
-                "num_-1": 0, 
-                "num_0": 1, 
-                "num_1": 1, 
-                "num_negative": 0, 
-                "mean": 536.0
-            }, 
-            "contain_numeric": {
-                "count": 1073, 
-                "ratio": 1.0
-            }, 
-            "numeric_density": 1.0, 
-            "integer": {
-                "Q1": 268.0, 
-                "count": 1073, 
-                "Q3": 804.0, 
-                "standard-deviation": 309.89272337375075, 
-                "ratio": 1.0, 
-                "num_positive": 1072, 
-                "num_outlier": 0, 
-                "Q2": 536.0, 
-                "num_-1": 0, 
-                "num_0": 1, 
-                "num_1": 1, 
-                "num_negative": 0, 
-                "mean": 536.0
-            }, 
-            "contain_numeric_token": {
-                "count": 1073, 
-                "ratio": 1.0
-            }
+        "special_type": {
+            "num_filename": 0
         }, 
         "missing": {
             "num_nonblank": 1073, 
@@ -2031,8 +2717,106 @@
                 "349": 1
             }
         }, 
-        "special_type": {
-            "num_filename": 0
+        "numeric_stats": {
+            "contain_numeric_token_puncs": {
+                "count": 1073, 
+                "ratio": 1.0
+            }, 
+            "numeric": {
+                "Q1": 268.0, 
+                "count": 1073, 
+                "Q3": 804.0, 
+                "standard-deviation": 309.89272337375075, 
+                "ratio": 1.0, 
+                "num_positive": 1072, 
+                "num_outlier": 0, 
+                "Q2": 536.0, 
+                "num_-1": 0, 
+                "num_0": 1, 
+                "num_1": 1, 
+                "num_negative": 0, 
+                "mean": 536.0
+            }, 
+            "contain_numeric": {
+                "count": 1073, 
+                "ratio": 1.0
+            }, 
+            "numeric_density": 1.0, 
+            "correlation": {
+                "spearman": [
+                    1.0, 
+                    -0.010479872972857464, 
+                    0.008452582655343235, 
+                    0.011083237787426498, 
+                    0.001672552305952324, 
+                    0.007855027076774938, 
+                    0.011646468887678767, 
+                    0.004877752493350677, 
+                    0.01901476932202831, 
+                    0.01713351166448946, 
+                    -0.0016626412669294712, 
+                    0.00718634217892383, 
+                    -0.013099056635392686, 
+                    -0.02394137951162434, 
+                    0.005487044582779926, 
+                    -0.010198536412255607
+                ], 
+                "pearson": [
+                    1.0, 
+                    -0.005455862172593665, 
+                    0.02154131435281204, 
+                    0.01874297378819474, 
+                    0.013995088686323405, 
+                    0.017360074669016415, 
+                    0.02364170759913972, 
+                    0.014405959309618377, 
+                    0.01889152068294909, 
+                    0.027060915643238877, 
+                    -0.002600217363942582, 
+                    0.01107525083858399, 
+                    -0.0025945913067228787, 
+                    -0.016706412160512028, 
+                    0.011618129669575265, 
+                    -0.0031972939227776923
+                ], 
+                "columns": [
+                    "d3mIndex", 
+                    "Number_seasons", 
+                    "Games_played", 
+                    "At_bats", 
+                    "Runs", 
+                    "Hits", 
+                    "Doubles", 
+                    "Triples", 
+                    "Home_runs", 
+                    "RBIs", 
+                    "Walks", 
+                    "Strikeouts", 
+                    "Batting_average", 
+                    "On_base_pct", 
+                    "Slugging_pct", 
+                    "Fielding_ave"
+                ]
+            }, 
+            "integer": {
+                "Q1": 268.0, 
+                "count": 1073, 
+                "Q3": 804.0, 
+                "standard-deviation": 309.89272337375075, 
+                "ratio": 1.0, 
+                "num_positive": 1072, 
+                "num_outlier": 0, 
+                "Q2": 536.0, 
+                "num_-1": 0, 
+                "num_0": 1, 
+                "num_1": 1, 
+                "num_negative": 0, 
+                "mean": 536.0
+            }, 
+            "contain_numeric_token": {
+                "count": 1073, 
+                "ratio": 1.0
+            }
         }, 
         "length": {
             "token": {
@@ -2046,50 +2830,8 @@
         }
     }, 
     "Slugging_pct": {
-        "numeric_stats": {
-            "contain_numeric_token_puncs": {
-                "count": 2146, 
-                "ratio": 1.0
-            }, 
-            "decimal": {
-                "Q1": 0.344, 
-                "count": 1073, 
-                "Q3": 0.426, 
-                "standard-deviation": 0.06046791222147383, 
-                "ratio": 1.0, 
-                "num_positive": 1073, 
-                "num_outlier": 7, 
-                "Q2": 0.381, 
-                "num_-1": 0, 
-                "num_0": 0, 
-                "num_1": 0, 
-                "num_negative": 0, 
-                "mean": 0.38626095060577814
-            }, 
-            "numeric": {
-                "Q1": 0.344, 
-                "count": 1073, 
-                "Q3": 0.426, 
-                "standard-deviation": 0.06046791222147383, 
-                "ratio": 1.0, 
-                "num_positive": 1073, 
-                "num_outlier": 7, 
-                "Q2": 0.381, 
-                "num_-1": 0, 
-                "num_0": 0, 
-                "num_1": 0, 
-                "num_negative": 0, 
-                "mean": 0.38626095060577814
-            }, 
-            "contain_numeric": {
-                "count": 1073, 
-                "ratio": 1.0
-            }, 
-            "numeric_density": 0.795033428844317, 
-            "contain_numeric_token": {
-                "count": 1073, 
-                "ratio": 1.0
-            }
+        "special_type": {
+            "num_filename": 0
         }, 
         "missing": {
             "num_nonblank": 1073, 
@@ -2155,8 +2897,106 @@
                 "0.42": 10
             }
         }, 
-        "special_type": {
-            "num_filename": 0
+        "numeric_stats": {
+            "contain_numeric_token_puncs": {
+                "count": 2146, 
+                "ratio": 1.0
+            }, 
+            "decimal": {
+                "Q1": 0.344, 
+                "count": 1073, 
+                "Q3": 0.426, 
+                "standard-deviation": 0.06046791222147383, 
+                "ratio": 1.0, 
+                "num_positive": 1073, 
+                "num_outlier": 7, 
+                "Q2": 0.381, 
+                "num_-1": 0, 
+                "num_0": 0, 
+                "num_1": 0, 
+                "num_negative": 0, 
+                "mean": 0.38626095060577814
+            }, 
+            "numeric": {
+                "Q1": 0.344, 
+                "count": 1073, 
+                "Q3": 0.426, 
+                "standard-deviation": 0.06046791222147383, 
+                "ratio": 1.0, 
+                "num_positive": 1073, 
+                "num_outlier": 7, 
+                "Q2": 0.381, 
+                "num_-1": 0, 
+                "num_0": 0, 
+                "num_1": 0, 
+                "num_negative": 0, 
+                "mean": 0.38626095060577814
+            }, 
+            "contain_numeric": {
+                "count": 1073, 
+                "ratio": 1.0
+            }, 
+            "numeric_density": 0.795033428844317, 
+            "correlation": {
+                "spearman": [
+                    0.005487044582779926, 
+                    0.2698934615310606, 
+                    0.44001955406533133, 
+                    0.44670915616802925, 
+                    0.5419423158297969, 
+                    0.5175871485663689, 
+                    0.6065343673707437, 
+                    0.37667134425206794, 
+                    0.8297476228207566, 
+                    0.6936259245895463, 
+                    0.5231337454816625, 
+                    0.4513506444527345, 
+                    0.6801707489299579, 
+                    0.6915822878107525, 
+                    1.0, 
+                    0.17498477498784115
+                ], 
+                "pearson": [
+                    0.011618129669575265, 
+                    0.3128099731589521, 
+                    0.47220001103385467, 
+                    0.4732979125361028, 
+                    0.5744699146676289, 
+                    0.546543607746157, 
+                    0.622941121181539, 
+                    0.3989414675387878, 
+                    0.7587548337025587, 
+                    0.727598879271368, 
+                    0.5410790379866535, 
+                    0.49090528864431915, 
+                    0.7061399818321517, 
+                    0.7119752807427955, 
+                    1.0, 
+                    0.17170164208706065
+                ], 
+                "columns": [
+                    "d3mIndex", 
+                    "Number_seasons", 
+                    "Games_played", 
+                    "At_bats", 
+                    "Runs", 
+                    "Hits", 
+                    "Doubles", 
+                    "Triples", 
+                    "Home_runs", 
+                    "RBIs", 
+                    "Walks", 
+                    "Strikeouts", 
+                    "Batting_average", 
+                    "On_base_pct", 
+                    "Slugging_pct", 
+                    "Fielding_ave"
+                ]
+            }, 
+            "contain_numeric_token": {
+                "count": 1073, 
+                "ratio": 1.0
+            }
         }, 
         "length": {
             "token": {
@@ -2170,50 +3010,8 @@
         }
     }, 
     "On_base_pct": {
-        "numeric_stats": {
-            "contain_numeric_token_puncs": {
-                "count": 2146, 
-                "ratio": 1.0
-            }, 
-            "decimal": {
-                "Q1": 0.315, 
-                "count": 1073, 
-                "Q3": 0.358, 
-                "standard-deviation": 0.03341018897404771, 
-                "ratio": 1.0, 
-                "num_positive": 1073, 
-                "num_outlier": 5, 
-                "Q2": 0.335, 
-                "num_-1": 0, 
-                "num_0": 0, 
-                "num_1": 0, 
-                "num_negative": 0, 
-                "mean": 0.3364240447343896
-            }, 
-            "numeric": {
-                "Q1": 0.315, 
-                "count": 1073, 
-                "Q3": 0.358, 
-                "standard-deviation": 0.03341018897404771, 
-                "ratio": 1.0, 
-                "num_positive": 1073, 
-                "num_outlier": 5, 
-                "Q2": 0.335, 
-                "num_-1": 0, 
-                "num_0": 0, 
-                "num_1": 0, 
-                "num_negative": 0, 
-                "mean": 0.3364240447343896
-            }, 
-            "contain_numeric": {
-                "count": 1073, 
-                "ratio": 1.0
-            }, 
-            "numeric_density": 0.795346175853519, 
-            "contain_numeric_token": {
-                "count": 1073, 
-                "ratio": 1.0
-            }
+        "special_type": {
+            "num_filename": 0
         }, 
         "missing": {
             "num_nonblank": 1073, 
@@ -2279,8 +3077,106 @@
                 "0.33": 16
             }
         }, 
-        "special_type": {
-            "num_filename": 0
+        "numeric_stats": {
+            "contain_numeric_token_puncs": {
+                "count": 2146, 
+                "ratio": 1.0
+            }, 
+            "decimal": {
+                "Q1": 0.315, 
+                "count": 1073, 
+                "Q3": 0.358, 
+                "standard-deviation": 0.03341018897404771, 
+                "ratio": 1.0, 
+                "num_positive": 1073, 
+                "num_outlier": 5, 
+                "Q2": 0.335, 
+                "num_-1": 0, 
+                "num_0": 0, 
+                "num_1": 0, 
+                "num_negative": 0, 
+                "mean": 0.3364240447343896
+            }, 
+            "numeric": {
+                "Q1": 0.315, 
+                "count": 1073, 
+                "Q3": 0.358, 
+                "standard-deviation": 0.03341018897404771, 
+                "ratio": 1.0, 
+                "num_positive": 1073, 
+                "num_outlier": 5, 
+                "Q2": 0.335, 
+                "num_-1": 0, 
+                "num_0": 0, 
+                "num_1": 0, 
+                "num_negative": 0, 
+                "mean": 0.3364240447343896
+            }, 
+            "contain_numeric": {
+                "count": 1073, 
+                "ratio": 1.0
+            }, 
+            "numeric_density": 0.795346175853519, 
+            "correlation": {
+                "spearman": [
+                    -0.02394137951162434, 
+                    0.2821961574820073, 
+                    0.44311439544031483, 
+                    0.443059223462711, 
+                    0.59279468483286, 
+                    0.5218873258517137, 
+                    0.5469071840964306, 
+                    0.45299204558899425, 
+                    0.4614642964607768, 
+                    0.5506592910964706, 
+                    0.7316873989471332, 
+                    0.20049715342092034, 
+                    0.725257424621119, 
+                    1.0, 
+                    0.6915822878107525, 
+                    0.06525394249849527
+                ], 
+                "pearson": [
+                    -0.016706412160512028, 
+                    0.3090442526025314, 
+                    0.4507397165937091, 
+                    0.4478758988868307, 
+                    0.6147035588911863, 
+                    0.5359547072235666, 
+                    0.5535139661795112, 
+                    0.46347301799073837, 
+                    0.41363531309146273, 
+                    0.557772175131893, 
+                    0.7126885353197633, 
+                    0.21872694136255005, 
+                    0.7661615400417624, 
+                    1.0, 
+                    0.7119752807427955, 
+                    0.08335205372975327
+                ], 
+                "columns": [
+                    "d3mIndex", 
+                    "Number_seasons", 
+                    "Games_played", 
+                    "At_bats", 
+                    "Runs", 
+                    "Hits", 
+                    "Doubles", 
+                    "Triples", 
+                    "Home_runs", 
+                    "RBIs", 
+                    "Walks", 
+                    "Strikeouts", 
+                    "Batting_average", 
+                    "On_base_pct", 
+                    "Slugging_pct", 
+                    "Fielding_ave"
+                ]
+            }, 
+            "contain_numeric_token": {
+                "count": 1073, 
+                "ratio": 1.0
+            }
         }, 
         "length": {
             "token": {

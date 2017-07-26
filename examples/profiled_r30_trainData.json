@@ -236,50 +236,8 @@
         }
     }, 
     "d3mIndex": {
-        "numeric_stats": {
-            "contain_numeric_token_puncs": {
-                "count": 114, 
-                "ratio": 1.0
-            }, 
-            "numeric": {
-                "Q1": 37.25, 
-                "count": 114, 
-                "Q3": 107.75, 
-                "standard-deviation": 41.60204428265004, 
-                "ratio": 1.0, 
-                "num_positive": 114, 
-                "num_outlier": 0, 
-                "Q2": 75.5, 
-                "num_-1": 0, 
-                "num_0": 0, 
-                "num_1": 1, 
-                "num_negative": 0, 
-                "mean": 73.5
-            }, 
-            "contain_numeric": {
-                "count": 114, 
-                "ratio": 1.0
-            }, 
-            "numeric_density": 1.0, 
-            "integer": {
-                "Q1": 37.25, 
-                "count": 114, 
-                "Q3": 107.75, 
-                "standard-deviation": 41.60204428265004, 
-                "ratio": 1.0, 
-                "num_positive": 114, 
-                "num_outlier": 0, 
-                "Q2": 75.5, 
-                "num_-1": 0, 
-                "num_0": 0, 
-                "num_1": 1, 
-                "num_negative": 0, 
-                "mean": 73.5
-            }, 
-            "contain_numeric_token": {
-                "count": 114, 
-                "ratio": 1.0
-            }
+        "special_type": {
+            "num_filename": 0
         }, 
         "missing": {
             "num_nonblank": 114, 
@@ -357,8 +315,61 @@
                 "24": 1
             }
         }, 
-        "special_type": {
-            "num_filename": 0
+        "numeric_stats": {
+            "contain_numeric_token_puncs": {
+                "count": 114, 
+                "ratio": 1.0
+            }, 
+            "numeric": {
+                "Q1": 37.25, 
+                "count": 114, 
+                "Q3": 107.75, 
+                "standard-deviation": 41.60204428265004, 
+                "ratio": 1.0, 
+                "num_positive": 114, 
+                "num_outlier": 0, 
+                "Q2": 75.5, 
+                "num_-1": 0, 
+                "num_0": 0, 
+                "num_1": 1, 
+                "num_negative": 0, 
+                "mean": 73.5
+            }, 
+            "contain_numeric": {
+                "count": 114, 
+                "ratio": 1.0
+            }, 
+            "numeric_density": 1.0, 
+            "correlation": {
+                "spearman": [
+                    1.0
+                ], 
+                "pearson": [
+                    1.0
+                ], 
+                "columns": [
+                    "d3mIndex"
+                ]
+            }, 
+            "integer": {
+                "Q1": 37.25, 
+                "count": 114, 
+                "Q3": 107.75, 
+                "standard-deviation": 41.60204428265004, 
+                "ratio": 1.0, 
+                "num_positive": 114, 
+                "num_outlier": 0, 
+                "Q2": 75.5, 
+                "num_-1": 0, 
+                "num_0": 0, 
+                "num_1": 1, 
+                "num_negative": 0, 
+                "mean": 73.5
+            }, 
+            "contain_numeric_token": {
+                "count": 114, 
+                "ratio": 1.0
+            }
         }, 
         "length": {
             "token": {
