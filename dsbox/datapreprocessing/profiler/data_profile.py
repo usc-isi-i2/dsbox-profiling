@@ -115,6 +115,16 @@ def profile_data(data_path, punctuation_outlier_weight=3,
 
     return result
 
+class MyEncoder(json.JSONEncoder):
+    def default(self, obj):
+        if isinstance(obj, np.integer):
+            return int(obj)
+        elif isinstance(obj, np.floating):
+            return float(obj)
+        elif isinstance(obj, np.ndarray):
+            return obj.tolist()
+        else:
+            return super(MyEncoder, self).default(obj)
 
 if __name__ == '__main__':
     """
@@ -124,7 +134,7 @@ if __name__ == '__main__':
     output_filename = sys.argv[2]
     # wirting JSON formated output
     print("     ====================>> wirting to file: {}\n".format(output_filename))
-    output_json = json.dumps(result, indent=4)
+    output_json = json.dumps(result, indent=4, cls=MyEncoder)
     f = open(output_filename, 'w')
     f.write(output_json)
     f.close()

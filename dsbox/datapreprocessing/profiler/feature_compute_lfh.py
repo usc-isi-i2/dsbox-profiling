@@ -1,3 +1,4 @@
+from builtins import range
 import pandas as pd
 from langdetect import detect
 import helper_funcs
@@ -20,7 +21,7 @@ def compute_missing_space(column, feature):
     leading_space = 0
     trailing_space = 0
 
-    for id in xrange(len(column)):
+    for id in range(len(column)):
         cell = column[id]
     #for cell in column:    # 5x faster loop, but cannot modify the column
         if (pd.isnull(cell)):
@@ -173,7 +174,7 @@ def compute_punctuation(column, feature, weight_outlier):
         feature["frequent-entries"]["most_common_punctuations"] = {}
 
         # extract the counts to feature, for each punctuation
-        for i in xrange(len(string.punctuation)):
+        for i in range(len(string.punctuation)):
             if (counts_column_punc[i] == 0):    # if no this punctuation occur in the whole column, ignore
                 continue
             else:

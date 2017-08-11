@@ -4,6 +4,7 @@ import helper_funcs as hf
 from collections import OrderedDict
 from collections import defaultdict
 from collections import Counter
+from builtins import filter
 
 def ordered_dict2(column, k):
     unique,counts = np.unique(column, return_counts=True)
@@ -93,7 +94,7 @@ def compute_common_numeric_tokens(column, feature, k):
     e.g. "123", "12.3"
     """
     col = column.str.split(expand=True).unstack().dropna().values
-    token = np.array(filter(lambda x: hf.is_Decimal_Number(x), col))
+    token = np.array(list(filter(lambda x: hf.is_Decimal_Number(x), col)))
     if token.size:
         feature["frequent-entries"]["most_common_numeric_tokens"] = ordered_dict2(token, k)
 
@@ -103,7 +104,7 @@ def compute_common_alphanumeric_tokens(column, feature, k):
     tokens only contain alphabets and/or numbers, decimals with points not included
     """
     col = column.str.split(expand=True).unstack().dropna().values
-    token = np.array(filter(lambda x: x.isalnum(), col))
+    token = np.array(list(filter(lambda x: x.isalnum(), col)))
     if token.size:
         feature["frequent-entries"]["most_common_alphanumeric_tokens"] = ordered_dict2(token, k)
 

@@ -9,5 +9,5 @@ setup(name='dsbox-datapreprocessing',
       license='MIT',
       packages=['dsbox', 'dsbox.datapreprocessing', 'dsbox.datapreprocessing.profiler'],
       zip_safe=False,
-      install_requires=['pandas', 'langdetect']
+      install_requires=['pandas', 'langdetect', 'future']
       )
