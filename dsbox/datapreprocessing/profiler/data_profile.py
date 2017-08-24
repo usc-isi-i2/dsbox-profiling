@@ -10,7 +10,9 @@ import feature_compute_hih as fc_hih
 from collections import defaultdict
 
 def profile_data(data_path, punctuation_outlier_weight=3,
-        numerical_outlier_weight=3, token_delimiter=" ", detect_language=False, topk=10):
+        numerical_outlier_weight=3, token_delimiter=" ", 
+        detect_language=False, topk=10, verbose=False):
+
     """
     Main function to profile the data.
     Parameters
@@ -37,12 +39,13 @@ def profile_data(data_path, punctuation_outlier_weight=3,
 
     corr_columns = list(corr_pearson.columns)
 
-    print("====================have a look on the data: ====================\n")
-    print(data.head())
+    if verbose:
+        print("====================have a look on the data: ====================\n")
+        print(data.head())
 
     # STEP 2: calculations
-
-    print("====================calculating the features ... ====================\n")
+    if verbose: 
+        print("====================calculating the features ... ====================\n")
     result = {} # final result: dict of dict
     for column_name in data:
         col = data[column_name]
@@ -111,7 +114,7 @@ def profile_data(data_path, punctuation_outlier_weight=3,
 
         result[column_name] = each_res # add this column features into final result
 
-    print("====================calculations finished ====================\n")
+    if verbose: print("====================calculations finished ====================\n")
 
     return result
 

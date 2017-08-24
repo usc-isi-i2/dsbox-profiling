@@ -1,4 +1,4 @@
-name: etk_env
+name: profile_env
 dependencies:
 - pip=9.0.1=py27_0
 - python=2.7.12=1

@@ -28,7 +28,7 @@ profiles for tabular data. We use DataFrame (supported by
 	
 	```shell
 	conda-env create .
-	source activate etk_env
+	source activate profile_env
 	```
 2. To profile a csv data file, do:
 
