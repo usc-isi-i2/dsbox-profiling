@@ -2,14 +2,15 @@ import unittest
 import sys
 import json
 sys.path.append('../')
-from data_profile import profile_data
+from data_profile import Profiler
 
 class TestStringMethods(unittest.TestCase):
     def setUp(self):
         with open('./sources/gt.json') as data_file:    
             self.ground_truth = json.load(data_file)
 
-        self.profiler_result = profile_data("./sources/testData.csv")
+        profiler = Profiler()
+        self.profiler_result = profiler.profile_data("./sources/testData.csv")
 
 
     def helper(self, prefix, field_name, gt_dict, pr_dict):

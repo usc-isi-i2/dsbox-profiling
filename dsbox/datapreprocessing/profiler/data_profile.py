@@ -167,7 +167,8 @@ if __name__ == '__main__':
     """
     main function to execute profiler
     """
-    result = profile_data(sys.argv[1])
+    profiler = Profiler()
+    result = profiler.profile_data(sys.argv[1])
     output_filename = sys.argv[2]
     # wirting JSON formated output
     print("     ====================>> wirting to file: {}\n".format(output_filename))
