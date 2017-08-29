@@ -12,20 +12,26 @@ from collections import defaultdict
 
 class Profiler(object):
     """
-    Integrated imputation methods moduel.
+    data profiler moduel. Now only supports csv data.
+
     Parameters:
     ----------
-    punctuation_outlier_weight
+    punctuation_outlier_weight: a integer
+        the coefficient used in outlier detection for punctuation. default is 3 
 
     numerical_outlier_weight
 
-    token_delimiter
+    token_delimiter: a string
+        delimiter that used to seperate tokens, default is blank space " ".
 
-    detect_language
+    detect_language: boolean
+        true: do detect language; false: not detect language
 
-    topk
+    topk: a integer
+    
 
-    verbose
+    verbose: boolean
+        control the verbose 
 
     Attributes:
     ----------
