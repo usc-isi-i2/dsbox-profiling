@@ -33,8 +33,10 @@ profiles for tabular data. We use DataFrame (supported by
 2. To profile a csv data file, do:
 
 	```python
-	from dsbox.datapreprocessing.profiler import profile_data
-	jsonResult = profile_data('data.csv')
+	from dsbox.datapreprocessing.profiler import Profiler
+
+    profiler = Profiler()
+    jsonResult = profiler.profile_data('testData.csv')
 	```
 
 ### Format
