@@ -1,7 +1,7 @@
 from builtins import range
 import pandas as pd
 from langdetect import detect
-import helper_funcs
+from . import helper_funcs
 import string
 import numpy as np
 import re

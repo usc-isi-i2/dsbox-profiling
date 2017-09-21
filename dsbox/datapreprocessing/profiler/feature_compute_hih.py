@@ -1,6 +1,6 @@
 import pandas as pd
 import numpy as np
-import helper_funcs as hf
+from . import helper_funcs as hf
 from collections import OrderedDict
 from collections import defaultdict
 from collections import Counter
