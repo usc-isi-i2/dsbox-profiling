@@ -1,0 +1,56 @@
+#!/usr/bin/env python3
+
+from os import path
+from dsbox.datapreprocessing.profiler import Profiler, MyEncoder
+import pandas as pd
+import numpy as np
+import json
+import pprint
+
+# Example for the documentation of the TA1 pipeline submission process
+#
+# It executes a TA1 pipeline using a ta1-pipeline-config.json file that follows this structure:
+# {
+#   "problem_schema":"path/to/problem_schema.json",
+#   "dataset_schema":"path/to/dataset_schema.json",
+#   "data_root":"path/to/data/root/folder/",
+#   "output_file":"path/to/output/file"
+# }
+
+# Load the json configuration file
+with open("ta1-pipeline-config.json", 'r') as inputFile:
+    jsonCall = json.load(inputFile)
+    inputFile.close()
+
+# Load the input files from the data_root folder path information
+dataRoot = jsonCall['data_root']
+# Load profile targets as their raw values, not letting pandas automate dtypes
+trainData = pd.read_csv( path.join(dataRoot, 'trainData.csv.gz'), dtype = object )
+trainTargets = pd.read_csv( path.join(dataRoot, 'trainTargets.csv.gz'), dtype = object )
+testData = pd.read_csv( path.join(dataRoot, 'testData.csv.gz') )
+
+print(trainData.head())
+print(trainTargets.head())
+# print(np.asarray(trainTargets['Class']))
+# print(testData.head())
+
+# Initialize the DSBox Profiler
+prof = Profiler()
+# profile for the first two columns, excluding d3mIndex
+trainData_profile = prof.profile_data(trainData.drop('d3mIndex',1).iloc[:,:2])
+trainTargets_profile = prof.profile_data(trainTargets.drop('d3mIndex',1))
+print("=== Profile for the first two columns in trainData, excluding d3mIndex ===")
+print(json.dumps(trainData_profile, indent=4, cls=MyEncoder))
+print("=== Profile for trainTargets, excluding d3mIndex ===")
+print(json.dumps(trainTargets_profile, indent=4, cls=MyEncoder))
+
+# To create a dummy prediction
+random_sample = trainTargets['Class'].dropna()[0]
+testData['Class'] = random_sample
+predictedTargets = testData['Class']
+# print(predictedTargets)
+
+
+# Outputs the predicted targets in the location specified in the JSON configuration file
+with open(jsonCall['output_file'], 'w') as outputFile:
+    output = pd.DataFrame(predictedTargets).to_csv(outputFile, index_label='d3mIndex', header=['Class'])
