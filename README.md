@@ -19,13 +19,13 @@ profiles for tabular data. We use DataFrame (supported by
 1. install
 
 	use pip:
-	
+
 	```shell
 	pip install dsbox-datapreprocessing
 	```
-	
+
 	Or, if you have [conda](https://conda.io/docs/using/envs.html):
-	
+
 	```shell
 	conda-env create .
 	source activate profile_env
@@ -34,9 +34,11 @@ profiles for tabular data. We use DataFrame (supported by
 
 	```python
 	from dsbox.datapreprocessing.profiler import Profiler
+	import pandas as pd
 
     profiler = Profiler()
-    jsonResult = profiler.profile_data('testData.csv')
+	data = pd.read_csv('testData.csv', dtype = object)
+    jsonResult = profiler.procude(data)
 	```
 
 ### Format
@@ -169,7 +171,7 @@ detail format is shown below:
       "most_common_tokens_puncs":{
           "token-1": "count 1",
           "token-2": "count-2",
-          "token-k": "count-k"          
+          "token-k": "count-k"
       },
       "most_common_punctuations": {
         "punctuation-1": {
@@ -220,4 +222,3 @@ notes:
 ### Sample output
 
 See [examples](https://github.com/usc-isi-i2/dsbox-profiling/tree/master/examples) directory for more sample outputs.
-
