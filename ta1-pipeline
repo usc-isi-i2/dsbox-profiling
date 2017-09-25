@@ -37,8 +37,8 @@ print(trainTargets.head())
 # Initialize the DSBox Profiler
 prof = Profiler()
 # profile for the first two columns, excluding d3mIndex
-trainData_profile = prof.profile_data(trainData.drop('d3mIndex',1).iloc[:,:2])
-trainTargets_profile = prof.profile_data(trainTargets.drop('d3mIndex',1))
+trainData_profile = prof.produce(inputs=trainData.drop('d3mIndex',1).iloc[:,:2])
+trainTargets_profile = prof.produce(inputs=trainTargets.drop('d3mIndex',1))
 print("=== Profile for the first two columns in trainData, excluding d3mIndex ===")
 print(json.dumps(trainData_profile, indent=4, cls=MyEncoder))
 print("=== Profile for trainTargets, excluding d3mIndex ===")

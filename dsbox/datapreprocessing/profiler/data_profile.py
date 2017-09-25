@@ -4,20 +4,26 @@ import sys
 import time
 import numpy as np
 
+
 # from feature computation functions
 from . import feature_compute_lfh as fc_lfh
 from . import feature_compute_hih as fc_hih
 from collections import defaultdict
 
+from typing import Sequence
+from primitive_interfaces.transformer import TransformerPrimitiveBase
+Input = pd.DataFrame
+Output = dict
 
-class Profiler(object):
+
+class Profiler(TransformerPrimitiveBase[Input, Output]):
     """
     data profiler moduel. Now only supports csv data.
 
     Parameters:
     ----------
     punctuation_outlier_weight: a integer
-        the coefficient used in outlier detection for punctuation. default is 3 
+        the coefficient used in outlier detection for punctuation. default is 3
 
     numerical_outlier_weight
 
@@ -28,18 +34,18 @@ class Profiler(object):
         true: do detect language; false: not detect language
 
     topk: a integer
-    
+
 
     verbose: boolean
-        control the verbose 
+        control the verbose
 
     Attributes:
     ----------
-    
+
     """
 
-    def __init__(self, punctuation_outlier_weight=3, 
-        numerical_outlier_weight=3, token_delimiter=" ", 
+    def __init__(self, punctuation_outlier_weight=3,
+        numerical_outlier_weight=3, token_delimiter=" ",
         detect_language=False, topk=10, verbose=False):
         self.punctuation_outlier_weight = punctuation_outlier_weight
         self.numerical_outlier_weight = numerical_outlier_weight
@@ -50,6 +56,14 @@ class Profiler(object):
 
 
 
+    def produce(self, *, inputs: Sequence[Input], timeout: float = None, iterations: int = None) -> Sequence[Output]:
+        if isinstance(inputs, pd.DataFrame):
+            return self.profile_data(inputs)
+        else:
+            results = []
+            for x in inputs:
+                results.append(self.profile_data(x))
+            return results
 
     def profile_data(self, data_path):
 
@@ -84,7 +98,7 @@ class Profiler(object):
             print(data.head())
 
         # STEP 2: calculations
-        if self.verbose: 
+        if self.verbose:
             print("====================calculating the features ... ====================\n")
         result = {} # final result: dict of dict
         for column_name in data:
