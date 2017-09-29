@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(name='dsbox-dataprofiling',
-      version='0.1.5',
+      version='0.1.6',
       url='https://github.com/usc-isi-i2/dsbox-cleaning.git',
       maintainer_email='kyao@isi.edu',
       maintainer='Ke-Thia Yao',
@@ -15,7 +15,7 @@ setup(name='dsbox-dataprofiling',
       ],
       entry_points = {
           'd3m.primitives': [
-              'dsbox.Profiler = dsbox.datapreprocessingf.profiler:Profiler',
+              'dsbox.Profiler = dsbox.datapreprocessing.profiler:Profiler',
           ],
       },
 
