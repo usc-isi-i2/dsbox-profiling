@@ -1,12 +1,12 @@
 import unittest
 import sys
 import json
-sys.path.append('../')
-from data_profile import Profiler
+#sys.path.append('../')
+from dsbox.datapreprocessing.profiler import Profiler
 
 class TestStringMethods(unittest.TestCase):
     def setUp(self):
-        with open('./sources/gt.json') as data_file:    
+        with open('./sources/gt.json') as data_file:
             self.ground_truth = json.load(data_file)
 
         profiler = Profiler()
@@ -27,11 +27,11 @@ class TestStringMethods(unittest.TestCase):
         """
         gt = gt_dict.get(field_name)
         pr = pr_dict.get(field_name)
-        prefix += "/{}".format(field_name) 
+        prefix += "/{}".format(field_name)
         # end case: no sub-node anymore
         if (type(gt) != dict):
             if (type(gt) == float): # set 1E-6 tolerance for floating value
-                self.assertEqual(round(gt,5), round(pr,5), 
+                self.assertEqual(round(gt,5), round(pr,5),
                     "field {} value: {} does not match with ground truth value: {}".format(prefix, pr, gt))
             else:
                 self.assertEqual(gt, pr, "field {} value: {} does not match with ground truth value: {}".format(prefix, pr, gt))
@@ -54,7 +54,7 @@ class TestStringMethods(unittest.TestCase):
             # to be tested field:
             for field_name in tested_fields:
                 self.helper(column_name, field_name, gt, pr)
-            
+
 
 
 if __name__ == '__main__':
