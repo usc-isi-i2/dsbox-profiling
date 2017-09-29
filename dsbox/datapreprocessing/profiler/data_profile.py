@@ -56,7 +56,7 @@ class Profiler(TransformerPrimitiveBase[Input, Output]):
 
 
 
-    def produce(self, *, inputs: Sequence[Input], timeout: float = None, iterations: int = None) -> Sequence[Output]:
+    def produce(self, inputs, timeout = None, iterations = None):
         if isinstance(inputs, pd.DataFrame):
             return self.profile_data(inputs)
         else:
