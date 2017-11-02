@@ -37,8 +37,8 @@ profiles for tabular data. We use DataFrame (supported by
 	import pandas as pd
 
     profiler = Profiler()
-	data = pd.read_csv('testData.csv', dtype = object)
-    jsonResult = profiler.procude(data)
+	data = pd.read_csv('testData.csv', dtype=object)
+    jsonResult = profiler.produce(inputs=data)
 	```
 
 ### Format
