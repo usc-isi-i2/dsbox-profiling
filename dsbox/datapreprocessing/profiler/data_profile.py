@@ -17,6 +17,81 @@ Output = dict
 
 
 class Profiler(TransformerPrimitiveBase[Input, Output]):
+    
+    __author__ = "USC ISI"
+    __metadata__ = {
+            "id": "b2612849-39e4-33ce-bfda-24f3e2cb1e93",
+            "name": "dsbox.datapreprocessing.profiler.Profiler",
+            "common_name": "DSBox Data Profiler",
+            "description": "Generate profile of tabular data in json, including language_detection, missing_data_detection, distinct_values, value_length, numerical_stats, frequency, correlation and others",
+            "languages": [ "python3.5", "python3.6" ],
+            "library": "dsbox",
+            "version": "0.2.0",
+            "is_class": True,
+            "parameters": [
+                {
+                    "name": "punctuation_outlier_weight",
+                    "description": "Outlier distance in number of standard deviations",
+                    "type": "float",
+                    "default":"3",
+                    "is_hyperparameter": True
+                    },
+                {
+                    "name": "numerical_outlier_weight",
+                    "description": "Outlier distance in number of standard deviations",
+                    "type": "float",
+                    "default": "3",
+                    "is_hyperparameter": True
+                    },
+                {
+                    "name": "token_delimiter",
+                    "description": "Character to separate word tokens. Default is space.",
+                    "type": "character",
+                    "default": " ",
+                    "is_hyperparameter": True
+                    },
+                {
+                    "name": "detect_language",
+                    "description": "Detect language (e.g. English) from text fields",
+                    "type": "character",
+                    "default": "false",
+                    "is_hyperparameter": False
+                    },
+                {
+                    "name": "topk",
+                    "description": "Number of top values to return",
+                    "type": "integer",
+                    "default": "10",
+                    "is_hyperparameter": False
+                    },
+                {
+                    "name": "verbose",
+                    "description": "Generate extra dianostic output",
+                    "type": "boolean",
+                    "default": "false",
+                    "is_hyperparameter": False
+                    }
+                ],
+            "task_type": [ "Data preprocessing" ],
+            "tags": [ "preprocessing", "profile" ],
+            "build": [{ "type": "pip", "package": "dsbox-dataprofiling" }],
+            "team": "USC ISI",
+            "schema_version": 1.0,
+            "interfaces": [ "TransformerPrimitiveBase" ],
+            "interfaces_version": "2017.9.22rc0",
+            "compute_resources": {
+                    "cores_per_node": [],
+                    "disk_per_node": [],
+                    "expected_running_time": [],
+                    "gpus_per_node": [],
+                    "mem_per_gpu": [],
+                    "mem_per_node": [],
+                    "num_nodes": [],
+                    "sample_size": [],
+                    "sample_unit": []
+                    }
+            }
+    
     """
     data profiler moduel. Now only supports csv data.
 
