@@ -87,3 +87,10 @@ ENV/
 
 # Rope project settings
 .ropeproject
+
+# Mypy
+.mypy_cache
+
+# Eclipse
+.project
+.pydevproject

@@ -12,11 +12,13 @@ from collections import defaultdict
 
 from typing import Sequence
 from primitive_interfaces.transformer import TransformerPrimitiveBase
-Input = pd.DataFrame
+from d3m_metadata.container.pandas import DataFrame
+Input = DataFrame
 Output = dict
+Hyperparameter = None
 
 
-class Profiler(TransformerPrimitiveBase[Input, Output]):
+class Profiler(TransformerPrimitiveBase[Input, Output, Hyperparameter]):
     
     __author__ = "USC ISI"
     __metadata__ = {
