@@ -1,8 +1,8 @@
-import pandas as pd
+import pandas as pd  # type: ignore
 import json
 import sys
 import time
-import numpy as np
+import numpy as np  # type: ignore
 
 
 # from feature computation functions
@@ -10,15 +10,14 @@ from . import feature_compute_lfh as fc_lfh
 from . import feature_compute_hih as fc_hih
 from collections import defaultdict
 
-from typing import Sequence
+from typing import Dict
 from primitive_interfaces.transformer import TransformerPrimitiveBase
 from d3m_metadata.container.pandas import DataFrame
+
 Input = DataFrame
-Output = dict
-Hyperparameter = None
+Output = Dict
 
-
-class Profiler(TransformerPrimitiveBase[Input, Output, Hyperparameter]):
+class Profiler(TransformerPrimitiveBase[Input, Output, None]):
     
     __author__ = "USC ISI"
     __metadata__ = {
@@ -133,7 +132,7 @@ class Profiler(TransformerPrimitiveBase[Input, Output, Hyperparameter]):
 
 
 
-    def produce(self, *, inputs: Sequence[Input], timeout: float = None, iterations: int = None) -> Sequence[Output]:
+    def produce(self, *, inputs: Input, timeout: float = None, iterations: int = None) -> Output:
         if isinstance(inputs, pd.DataFrame):
             return self.profile_data(inputs)
         else:

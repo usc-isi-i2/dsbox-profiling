@@ -1,9 +1,9 @@
 from builtins import range
-import pandas as pd
+import pandas as pd  # type: ignore
 from langdetect import detect
 from . import helper_funcs
 import string
-import numpy as np
+import numpy as np  # type: ignore
 import re
 
 # till now, this file totally compute 16 types of features
