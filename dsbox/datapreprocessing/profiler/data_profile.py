@@ -14,8 +14,13 @@ from typing import Dict
 from primitive_interfaces.transformer import TransformerPrimitiveBase
 from d3m_metadata.container.pandas import DataFrame
 
+# TODO: change this to `from d3m_metadata import metadata` once confirm the code
+import sys 
+sys.path.append("/Users/luofanghao/work/USC_lab/isi-II/work/DSBox_project/end2end_sys/metadata/d3m_metadata") 
+import metadata
+
 Input = DataFrame
-Output = Dict
+Output = metadata.Metadata
 
 class Profiler(TransformerPrimitiveBase[Input, Output, None]):
     
@@ -129,6 +134,8 @@ class Profiler(TransformerPrimitiveBase[Input, Output, None]):
         self.detect_language = detect_language
         self.topk = topk
         self.verbose = verbose
+        self.results = metadata.Metadata()  # profiler result
+        self.counter = 0
 
 
 
@@ -136,10 +143,12 @@ class Profiler(TransformerPrimitiveBase[Input, Output, None]):
         if isinstance(inputs, pd.DataFrame):
             return self.profile_data(inputs)
         else:
-            results = []
             for x in inputs:
-                results.append(self.profile_data(x))
-            return results
+                self.profile_data(x)    # inplace manipulate
+                self.counter += 1
+
+            self.counter = 0
+            return self.results
 
     def profile_data(self, data_path):
 
@@ -242,11 +251,14 @@ class Profiler(TransformerPrimitiveBase[Input, Output, None]):
 
             if not each_res["numeric_stats"]: del each_res["numeric_stats"]
 
-            result[column_name] = each_res # add this column features into final result
+            # result[column_name] = each_res # add this column features into final result
+
+            self.results = self.results.update((self.counter, column_name,), each_res)
 
         if self.verbose: print("====================calculations finished ====================\n")
 
-        return result
+
+        return self.results
 
 class MyEncoder(json.JSONEncoder):
     def default(self, obj):
