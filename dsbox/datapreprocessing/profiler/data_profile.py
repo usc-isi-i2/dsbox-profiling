@@ -13,16 +13,11 @@ from collections import defaultdict
 
 from primitive_interfaces.transformer import TransformerPrimitiveBase
 from d3m_metadata import container, hyperparams, metadata
-
-# TODO: change this to `from d3m_metadata import metadata` once confirm the code
-import sys 
-sys.path.insert(0, "/Users/luofanghao/work/USC_lab/isi-II/work/DSBox_project/end2end_sys/metadata/") 
-from d3m_metadata import container
 from d3m_metadata.container import dataset
 
-# Input = typing.Union[dataset.Dataset, \
-#                     DataFrame]
-Input = container.DataFrame
+Input = typing.Union[container.Dataset, \
+                    container.DataFrame]
+# Input = container.DataFrame
 Output = container.Dataset
 
 class Hyperparams(hyperparams.Hyperparams):
@@ -31,8 +26,6 @@ class Hyperparams(hyperparams.Hyperparams):
     """
 
     pass
-
-
 
 class Profiler(TransformerPrimitiveBase[Input, Output, Hyperparams]):
     """
@@ -120,6 +113,7 @@ class Profiler(TransformerPrimitiveBase[Input, Output, Hyperparams]):
             self.results = inputs.metadata
             for table_id in inputs:
                 dataframe = pd.DataFrame(data = inputs[table_id])
+                print (dataframe)
                 self._profile_data(dataframe, table_id)    # inplace manipulate
 
             inputs.metadata = self.results
@@ -128,10 +122,10 @@ class Profiler(TransformerPrimitiveBase[Input, Output, Hyperparams]):
             # single table
             key = "0" # default key for single table
             self.results = metadata.Metadata()
-            self._profile_data(inputs[0], key)
+            self._profile_data(inputs, key)
  
             
-            ds = dataset.Dataset({key: input[0]}, self.results)
+            ds = dataset.Dataset({key: inputs}, self.results)
             return ds
             
 
@@ -187,12 +181,12 @@ class Profiler(TransformerPrimitiveBase[Input, Output, Hyperparams]):
                 each_res["numeric_stats"]["correlation"] = corr_dict
 
             if col.dtype.kind in np.typecodes['AllInteger']+'uMmf':
-                each_res["missing"]["num_missing"] = pd.isnull(col).sum()
-                each_res["missing"]["num_nonblank"] = col.count()
+                each_res["missing_value_count"] = pd.isnull(col).sum()
+                each_res["non_missing_value_count"] = col.count()
                 each_res["special_type"]["dtype"] = str(col.dtype)
                 ndistinct = col.nunique()
-                each_res["distinct"]["num_distinct_values"] = ndistinct
-                each_res["distinct"]["ratio_distinct_values"] = ndistinct/ float(col.size)
+                each_res["distinct_value_count"] = ndistinct
+                each_res["distinct_value_ratio"] = ndistinct/ float(col.size)
 
             if col.dtype.kind == 'b':
                 each_res["special_type"]["data_type"] = 'bool'
@@ -222,7 +216,7 @@ class Profiler(TransformerPrimitiveBase[Input, Output, Hyperparams]):
 
                 # compute_missing_space Must be put as the first one because it may change the data content, see function def for details
                 fc_lfh.compute_missing_space(col, each_res)
-                fc_lfh.compute_filename(col, each_res)
+                # fc_lfh.compute_filename(col, each_res)
                 fc_lfh.compute_length_distinct(col, each_res, delimiter=self._token_delimiter)
                 if self._detect_language: fc_lfh.compute_lang(col, each_res)
                 fc_lfh.compute_punctuation(col, each_res, weight_outlier=self._punctuation_outlier_weight)
