@@ -9,6 +9,7 @@ import typing
 # from feature computation functions
 from . import feature_compute_lfh as fc_lfh
 from . import feature_compute_hih as fc_hih
+from . import category_detection
 from collections import defaultdict
 
 from primitive_interfaces.transformer import TransformerPrimitiveBase
@@ -157,6 +158,8 @@ class Profiler(TransformerPrimitiveBase[Input, Output, Hyperparams]):
 
         corr_columns = list(corr_pearson.columns)
         corr_id = [data.columns.get_loc(n) for n in corr_columns]
+        
+        is_category = category_detection.category_detect(data)
 
         if self._verbose:
             print("====================have a look on the data: ====================\n")
@@ -172,7 +175,9 @@ class Profiler(TransformerPrimitiveBase[Input, Output, Hyperparams]):
             col = data[column_name]
             # dict: map feature name to content
             each_res = defaultdict(lambda: defaultdict())
-
+            
+            each_res['is_categorical'] = is_category[column_name]
+            
             if column_name in corr_columns:
                 corr_dict_sp = {}
                 corr_dict_sp["column_id"] = corr_id
@@ -220,7 +225,6 @@ class Profiler(TransformerPrimitiveBase[Input, Output, Hyperparams]):
                 fc_hih.compute_contain_numeric_values(col, each_res)
                 fc_hih.compute_common_tokens_by_puncs(col, each_res, self._topk)
 
-            if not each_res["numeric_stats"]: del each_res["numeric_stats"]
 
             # result[column_name] = each_res # add this column features into final result
 
