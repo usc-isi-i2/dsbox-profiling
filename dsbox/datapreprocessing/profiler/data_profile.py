@@ -156,6 +156,7 @@ class Profiler(TransformerPrimitiveBase[Input, Output, Hyperparams]):
             corr_spearman = data.corr(method='spearman')
 
         corr_columns = list(corr_pearson.columns)
+        corr_id = [data.columns.get_loc(n) for n in corr_columns]
 
         if self._verbose:
             print("====================have a look on the data: ====================\n")
@@ -173,45 +174,34 @@ class Profiler(TransformerPrimitiveBase[Input, Output, Hyperparams]):
             each_res = defaultdict(lambda: defaultdict())
 
             if column_name in corr_columns:
-                corr_dict = {}
-                corr_dict["columns"] = corr_columns
-                corr_dict["pearson"] = list(corr_pearson[column_name])
-                corr_dict["spearman"] = list(corr_spearman[column_name])
+                corr_dict_sp = {}
+                corr_dict_sp["column_id"] = corr_id
+                corr_dict_sp["correlation"] = list(corr_spearman[column_name])
 
-                each_res["numeric_stats"]["correlation"] = corr_dict
+                each_res["correlation_spearman"] = corr_dict_sp
+                
+                corr_dict_pr = {}
+                corr_dict_pr["column_id"] = corr_id
+                corr_dict_pr["correlation"] = list(corr_pearson[column_name])
+
+                each_res["correlation_pearson"] = corr_dict_pr
 
             if col.dtype.kind in np.typecodes['AllInteger']+'uMmf':
                 each_res["missing_value_count"] = pd.isnull(col).sum()
                 each_res["non_missing_value_count"] = col.count()
-                each_res["special_type"]["dtype"] = str(col.dtype)
                 ndistinct = col.nunique()
                 each_res["distinct_value_count"] = ndistinct
                 each_res["distinct_value_ratio"] = ndistinct/ float(col.size)
 
             if col.dtype.kind == 'b':
-                each_res["special_type"]["data_type"] = 'bool'
                 fc_hih.compute_common_values(col.dropna().astype(str), each_res, self._topk)
 
-            elif col.dtype.kind in np.typecodes['AllInteger']+'u':
-                each_res["special_type"]["data_type"] = 'integer'
+            elif col.dtype.kind in np.typecodes['AllInteger']+'uf':
                 fc_hih.compute_numerics(col, each_res)
                 fc_hih.compute_common_values(col.dropna().astype(str), each_res,self._topk)
-
-            elif col.dtype.kind == 'f':
-                each_res["special_type"]["data_type"] = "float"
-                fc_hih.compute_numerics(col, each_res)
-                fc_hih.compute_common_values(col.dropna().astype(str), each_res,self._topk)
-
-            elif col.dtype.kind == 'M':
-                each_res["special_type"]["data_type"] = "datetime"
-
-            elif col.dtype.kind == 'm':
-                each_res["special_type"]["data_type"] = "timedelta"
 
             else:
                 if isDF:
-                    if col.dtype.name == 'category':
-                        each_res["special_type"]["data_type"] = 'category'
                     col = col.astype(object).fillna('').astype(str)
 
                 # compute_missing_space Must be put as the first one because it may change the data content, see function def for details
