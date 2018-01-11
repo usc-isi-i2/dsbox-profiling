@@ -176,20 +176,22 @@ class Profiler(TransformerPrimitiveBase[Input, Output, Hyperparams]):
             # dict: map feature name to content
             each_res = defaultdict(lambda: defaultdict())
             
-            each_res['is_categorical'] = is_category[column_name]
+            if is_category[column_name]:
+                each_res['semantic_types'] = ["https://metadata.datadrivendiscovery.org/types/CategoricalData"]
             
             if column_name in corr_columns:
-                corr_dict_sp = {}
-                corr_dict_sp["column_id"] = corr_id
-                corr_dict_sp["correlation"] = list(corr_spearman[column_name])
-
-                each_res["correlation_spearman"] = corr_dict_sp
-                
-                corr_dict_pr = {}
-                corr_dict_pr["column_id"] = corr_id
-                corr_dict_pr["correlation"] = list(corr_pearson[column_name])
-
-                each_res["correlation_pearson"] = corr_dict_pr
+                stats_sp = corr_spearman[column_name].describe()
+                each_res["spearman_correlation_of_features"] = {'min': stats_sp['min'],
+                                                                'max': stats_sp['max'],
+                                                                'mean': stats_sp['mean'],
+                                                                'median': stats_sp['50%'],
+                                                                'std': stats_sp['std']}
+                stats_pr = corr_pearson[column_name].describe()
+                each_res["pearson_correlation_of_features"] = {'min': stats_pr['min'],
+                                                                'max': stats_pr['max'],
+                                                                'mean': stats_pr['mean'],
+                                                                'median': stats_pr['50%'],
+                                                                'std': stats_pr['std']}
 
             if col.dtype.kind in np.typecodes['AllInteger']+'uMmf':
                 each_res["number_of_missing_values"] = pd.isnull(col).sum()

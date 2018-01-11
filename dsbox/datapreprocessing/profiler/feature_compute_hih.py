@@ -42,21 +42,28 @@ def numerical_stats(feature, column, num_nonblank, sigma=3):
     calculates numerical statistics
     """
     stats = column.describe()
-    feature['number_count'] = int(stats["count"])
-    feature["number_ratio"] = stats["count"]/num_nonblank
-    feature["number_mean"] = stats["mean"]
-    feature["number_std"] = stats["std"]
+    feature['number_of_numeric_values'] = int(stats["count"])
+    feature["ratio_of_numeric_values"] = stats["count"]/num_nonblank
+    #feature["number_mean"] = stats["mean"]
+    #feature["number_std"] = stats["std"]
     if stats["count"]==1: feature["number_std"]= 0
-    feature["number_quartile_1"] = stats["25%"]
-    feature["number_quartile_2"] = stats["50%"]
-    feature["number_quartile_3"] = stats["75%"]
+    #feature["number_quartile_1"] = stats["25%"]
+    #feature["number_quartile_2"] = stats["50%"]
+    #feature["number_quartile_3"] = stats["75%"]
     outlier = column[(np.abs(column-stats["mean"])>(sigma*stats["std"]))]
-    feature["number_outlier"] = outlier.count()
-    feature["number_positive_count"] = column[column>0].count()
-    feature["number_negative_count"] = column[column<0].count()
-    feature["number_0"] = column[column==0].count()
-    feature["number_1"] = column[column==1].count()
-    feature["number_-1"] = column[column==-1].count()
+    feature["number_of_outlier_numeric_values"] = outlier.count()
+    feature["number_of_positive_numeric_values"] = column[column>0].count()
+    feature["number_of_negative_numeric_values"] = column[column<0].count()
+    feature["number_of_numeric_values_equal_0"] = column[column==0].count()
+    feature["number_of_numeric_values_equal_1"] = column[column==1].count()
+    feature["number_of_numeric_values_equal_-1"] = column[column==-1].count()
+    
+    feature['target_values'] = {'mean':stats['mean'],
+                                'std':stats['std'],
+                                'median': stats['50%'],
+                                'quartile_1': stats['25%'],
+                                'quartile_3': stats['75%']}
+    
 
 
 def compute_numerics(column, feature):
@@ -104,7 +111,7 @@ def compute_common_values(column, feature, k):
     compute top k frequent cell values and their counts.
     """
     if column.count() > 0:
-        feature["most_common_values"] = ordered_dict(column, k)
+        feature["most_common_raw_values"] = ordered_dict(column, k)
 
 def compute_common_tokens(column, feature, k):
     """
@@ -119,8 +126,8 @@ def compute_common_tokens(column, feature, k):
         feature["most_common_tokens"] = ordered_dict2(token, k)
         cnt = sum([any(char.isdigit() for char in c) for c in token])
         if cnt > 0:
-            feature["contain_numeric_token_count"] = cnt
-            feature["contain_numeric_token_ratio"] = float(cnt)/token.size
+            feature["number_of_tokens_containing_numeric_char"] = cnt
+            feature["ratio_of_tokens_containing_numeric_char"] = float(cnt)/token.size
 
 def compute_common_tokens_by_puncs(column, feature, k):
     """
@@ -133,12 +140,12 @@ def compute_common_tokens_by_puncs(column, feature, k):
     if token.size:
         feature["most_common_tokens_split_by_punctuation"] = ordered_dict2(token, k)
         dist_cnt = np.unique(token).size
-        feature["distinct_token_split_by_punctuation_count"] = dist_cnt
-        feature["distinct_token_split_by_punctuation_ratio"] = float(dist_cnt)/token.size
+        feature["number_of_distinct_tokens_split_by_punctuation"] = dist_cnt
+        feature["ratio_of_distinct_tokens_split_by_punctuation"] = float(dist_cnt)/token.size
         cnt = sum([any(char.isdigit() for char in c) for c in token])
         if cnt > 0:
-            feature["contain_numeric_token_split_by_punctuation_count"] = cnt
-            feature["contain_numeric_token_split_by_punctuation_ratio"] = float(cnt)/token.size
+            feature["number_of_tokens_split_by_punctuation_containing_numeric_char"] = cnt
+            feature["ratio_of_tokens_split_by_punctuation_containing_numeric_char"] = float(cnt)/token.size
 
 def compute_numeric_density(column, feature):
     """
@@ -148,7 +155,7 @@ def compute_numeric_density(column, feature):
     if col.size:
         density = np.array([(sum(char.isdigit() for char in c), len(c)) for c in col])
         digit_total = density.sum(axis=0)
-        feature["numeric_character_density"] = float(digit_total[0])/digit_total[1]
+        feature["numeric_char_density"] = {'mean':float(digit_total[0])/digit_total[1]}
 
 def compute_contain_numeric_values(column, feature):
     """
@@ -157,5 +164,5 @@ def compute_contain_numeric_values(column, feature):
     contain_digits = lambda x: any(char.isdigit() for char in x)
     cnt = column.dropna().apply(contain_digits).sum()
     if cnt > 0:
-        feature["contain_numeric_count"] = cnt
-        feature["contain_numeric_ratio"] = float(cnt)/column.count()
+        feature["number_of_values_containing_numeric_char"] = cnt
+        feature["ratio_of_values_containing_numeric_char"] = float(cnt)/column.count()
