@@ -84,7 +84,7 @@ def compute_length_distinct(column, feature, delimiter):
 
     # (2)
     feature["number_of_distinct_values"] = column.nunique()
-    feature["ratio_of_distinct_values"] = feature["ratio_of_distinct_values"] / float(column.size)
+    feature["ratio_of_distinct_values"] = feature["number_of_distinct_values"] / float(column.size)
         # using the pre-computed tokenlized in (1), which is series of all tokens
     feature["number_of_distinct_tokens"] = tokenlized.nunique()
     feature["ratio_of_distinct_tokens"] = feature["number_of_distinct_tokens"] / float(tokenlized.size)
