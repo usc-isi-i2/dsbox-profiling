@@ -45,12 +45,13 @@ def compute_missing_space(column, feature):
             else:
                 column[id] = trim_trailing_cell
 
-    feature["leading_space_count"] = leading_space
-    feature["trailing_space_count"] = trailing_space
+    feature["number_of_values_with_leading_spaces"] = leading_space
+    feature["ratio_of_values_with_leading_spaces"] = leading_space / column.size
+    feature["number_of_values_with_trailing_spaces"] = trailing_space
+    feature["ratio_of_values_with_trailing_spaces"] = trailing_space / column.size
 
-    feature["missing_value_count"] = pd.isnull(column).sum()
-    feature["non_missing_value_count"] = column.count()
-
+    feature["number_of_missing_values"] = pd.isnull(column).sum()
+    feature["ratio_of_missing_values"] = feature["number_of_missing_values"] / column.size
 
 
 def compute_length_distinct(column, feature, delimiter):
@@ -71,22 +72,22 @@ def compute_length_distinct(column, feature, delimiter):
 
 
     # 1. for character
-    lenth_for_all =  column.apply(len)
-    feature["string_length_mean"] = lenth_for_all.mean()
-    feature["string_length_std"] = lenth_for_all.std()
+    # lenth_for_all =  column.apply(len)
+    # feature["string_length_mean"] = lenth_for_all.mean()
+    # feature["string_length_std"] = lenth_for_all.std()
 
     # 2. for token
     tokenlized = column.str.split(delimiter, expand=True).unstack().dropna()    # tokenlized Series
     lenth_for_token = tokenlized.apply(len)
-    feature["token_count_mean"] = lenth_for_token.mean()
-    feature["token_count_std"] = lenth_for_token.std()
+    # feature["token_count_mean"] = lenth_for_token.mean()
+    # feature["token_count_std"] = lenth_for_token.std()
 
     # (2)
-    feature["distinct_value_count"] = column.nunique()
-    feature["distinct_value_ratio"] = feature["distinct_value_count"] / float(column.size)
+    feature["number_of_distinct_values"] = column.nunique()
+    feature["ratio_of_distinct_values"] = feature["ratio_of_distinct_values"] / float(column.size)
         # using the pre-computed tokenlized in (1), which is series of all tokens
-    feature["distinct_token_count"] = tokenlized.nunique()
-    feature["distinct_token_ratio"] = feature["distinct_token_count"] / float(tokenlized.size)
+    feature["number_of_distinct_tokens"] = tokenlized.nunique()
+    feature["ratio_of_distinct_tokens"] = feature["number_of_distinct_tokens"] / float(tokenlized.size)
 
 
 
@@ -104,7 +105,7 @@ def compute_lang(column, feature):
     if (column.size == 0):      # if the column is empty, do nothing
         return
 
-    feature["natural_language"] = list()
+    feature["natural_language_of_feature"] = list()
     language_count = {}
 
     for cell in column:
@@ -127,7 +128,7 @@ def compute_lang(column, feature):
         lang_obj = {}
         lang_obj['name'] = lang
         lang_obj['count'] = language_count[lang]
-        feature["natural_language"].append(lang_obj)
+        feature["natural_language_of_feature"].append(lang_obj)
 
 
 def compute_filename(column, feature):
@@ -186,13 +187,15 @@ def compute_punctuation(column, feature, weight_outlier):
                 continue
             else:
                 punc_obj = {}
-                punc_obj["name"] = string.punctuation[i]
+                punc_obj["punctuation"] = string.punctuation[i]
                 punc_obj["count"] = counts_column_punc[i]
-                punc_obj["density_of_all"] = counts_column_punc[i] / float(number_of_chars)
-                punc_obj["density_of_cell"] = puncs_density_average[i]
+                punc_obj["ratio"] = counts_column_punc[i] / float(number_of_chars)
+                punc_obj["punctuation_density_aggregate"] = {"mean" : puncs_density_average[i]}
                 # calculate outlier
                 outlier_array = helper_outlier_calcu(cell_density_array[:, i], weight_outlier)
-                punc_obj["num_outlier_cells"] = sum(outlier_array)
+                    # only one element in outlier 
+                punc_obj["punctuation_density_outliers"] = [{"n": weight_outlier,
+                                                            "count": sum(outlier_array)}]
                 feature["most_common_punctuations"].append(punc_obj)
 
     # step 3: sort

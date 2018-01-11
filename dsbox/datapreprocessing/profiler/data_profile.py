@@ -192,11 +192,12 @@ class Profiler(TransformerPrimitiveBase[Input, Output, Hyperparams]):
                 each_res["correlation_pearson"] = corr_dict_pr
 
             if col.dtype.kind in np.typecodes['AllInteger']+'uMmf':
-                each_res["missing_value_count"] = pd.isnull(col).sum()
-                each_res["non_missing_value_count"] = col.count()
+                each_res["number_of_missing_values"] = pd.isnull(col).sum()
+                each_res["ratio_of_missing_values"] = each_res["number_of_missing_values"] / col.size
+                # each_res["non_missing_value_count"] = col.count()
                 ndistinct = col.nunique()
-                each_res["distinct_value_count"] = ndistinct
-                each_res["distinct_value_ratio"] = ndistinct/ float(col.size)
+                each_res["number_of_distinct_values"] = ndistinct
+                each_res["ratio_of_distinct_values"] = ndistinct/ float(col.size)
 
             if col.dtype.kind == 'b':
                 fc_hih.compute_common_values(col.dropna().astype(str), each_res, self._topk)
