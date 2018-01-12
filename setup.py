@@ -1,8 +1,8 @@
 from setuptools import setup
 
 setup(name='dsbox-dataprofiling',
-      version='0.2.2',
-      url='https://github.com/usc-isi-i2/dsbox-cleaning.git',
+      version='1.0.0',
+      url='https://github.com/usc-isi-i2/dsbox-dataprofiling.git',
       maintainer_email='kyao@isi.edu',
       maintainer='Ke-Thia Yao',
       description='DSBox data profiling  tools',

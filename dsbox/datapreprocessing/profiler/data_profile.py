@@ -5,11 +5,11 @@ import time
 import numpy as np  # type: ignore
 import typing
 
-
 # from feature computation functions
 from . import feature_compute_lfh as fc_lfh
 from . import feature_compute_hih as fc_hih
 from . import category_detection
+from . import config
 from collections import defaultdict
 
 from primitive_interfaces.transformer import TransformerPrimitiveBase
@@ -55,39 +55,30 @@ class Profiler(TransformerPrimitiveBase[Input, Output, Hyperparams]):
     ----------
 
     """
-    __author__ = 'USC ISI'
-    __version__ = '0.2.0'
     metadata = metadata.PrimitiveMetadata({
-            'id': 'b2612849-39e4-33ce-bfda-24f3e2cb1e93',
-            'version': __version__,
-            'name': "Profiler",
-            'keywords': ['profiler'],
-            'source': {
-                'name': __author__,
-                'uris': [
-                    # Unstructured URIs. Link to file and link to repo in this case.
-                    'https://github.com/usc-isi-i2/dsbox-profiling/blob/master/dsbox/datapreprocessing/profiler/data_profile.py',
-                    'https://github.com/usc-isi-i2/dsbox-profiling.git',
-                    ],
-            },
+        'id': 'b2612849-39e4-33ce-bfda-24f3e2cb1e93',
+        'version': 'v' + config.VERSION, 
+        'name': "DSBox Profiler",
+        'description': 'Generate profiles of datasets',
+        'python_path': 'd3m.primitives.dsbox.Profiler',
+        'primitive_family': metadata.PrimitiveFamily.DATA_PREPROCESSING,
+        'algorithm_types': [
+            metadata.PrimitiveAlgorithmType.DATA_PROFILING,
+        ],
+        'keywords': ['data_profiler'],
+        'source': {
+            'name': config.D3M_PERFORMER_TEAM,
+            'uris': [ config.REPOSITORY ],
+        },
             # The same path the primitive is registered with entry points in setup.py.
-            'installation': [{
-                'type': metadata.PrimitiveInstallationType.PIP,
-                'package_uri': 'https://github.com/usc-isi-i2/dsbox-profiling.git'
-            }],
-            'python_path': 'd3m.primitives.dsbox.profiler',
-            # Choose these from a controlled vocabulary in the schema. If anything is missing which would
-            # best describe the primitive, make a merge request.
+        'installation': [ config.INSTALLATION ],
+        # Choose these from a controlled vocabulary in the schema. If anything is missing which would
+        # best describe the primitive, make a merge request.
 
-            'algorithm_types': [
-                metadata.PrimitiveAlgorithmType.DATA_PROFILING,
-            ],
-            'primitive_family': metadata.PrimitiveFamily.DATA_PREPROCESSING,
-            # A metafeature about preconditions required for this primitive to operate well.
-
-            # for profiler, maybe no precon
-            "precondition": []
-        })
+        # A metafeature about preconditions required for this primitive to operate well.
+        "precondition": [],
+        "hyperparms_to_tune": []
+    })
     
     
     def __init__(self, *, hyperparams: Hyperparams, random_seed: int = 0, 
