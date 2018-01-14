@@ -2,7 +2,8 @@
 
 D3M_API_VERSION = '2018.1.5'
 VERSION = "1.0.0"
-TAG_NAME = "v1.0"
+TAG_NAME = "1379033565e367e7983e4d42f0a1dbbfef280c25"
+# TAG_NAME = "v1.0"
 
 REPOSITORY = "https://github.com/usc-isi-i2/dsbox-profiling"
 PACAKGE_NAME = "dsbox-dataprofiling"
