@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(name='dsbox-dataprofiling',
-      version='1.0.0',
+      version='1.1.0',
       url='https://github.com/usc-isi-i2/dsbox-dataprofiling.git',
       maintainer_email='kyao@isi.edu',
       maintainer='Ke-Thia Yao',

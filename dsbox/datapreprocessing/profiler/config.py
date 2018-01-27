@@ -1,9 +1,9 @@
+import os
+from d3m_metadata import utils
 
-
-D3M_API_VERSION = '2018.1.5'
-VERSION = "1.0.0"
-TAG_NAME = "1379033565e367e7983e4d42f0a1dbbfef280c25"
-# TAG_NAME = "v1.0"
+D3M_API_VERSION = '2018.1.26'
+VERSION = "1.1.0"
+TAG_NAME = "{git_commit}".format(git_commit=utils.current_git_commit(os.path.dirname(__file__)), )
 
 REPOSITORY = "https://github.com/usc-isi-i2/dsbox-profiling"
 PACAKGE_NAME = "dsbox-dataprofiling"

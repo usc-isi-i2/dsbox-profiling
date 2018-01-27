@@ -57,7 +57,7 @@ class Profiler(TransformerPrimitiveBase[Input, Output, Hyperparams]):
     """
     metadata = metadata.PrimitiveMetadata({
         'id': 'b2612849-39e4-33ce-bfda-24f3e2cb1e93',
-        'version': 'v' + config.VERSION, 
+        'version': config.VERSION, 
         'name': "DSBox Profiler",
         'description': 'Generate profiles of datasets',
         'python_path': 'd3m.primitives.dsbox.Profiler',
