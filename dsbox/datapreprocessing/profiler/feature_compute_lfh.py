@@ -22,9 +22,7 @@ def compute_missing_space(column, feature):
     leading_space = 0
     trailing_space = 0
 
-    for id in range(len(column)):
-        cell = column[id]
-    #for cell in column:    # 5x faster loop, but cannot modify the column
+    for id, cell in column.iteritems():
         if (pd.isnull(cell)):
             continue
 
@@ -193,7 +191,7 @@ def compute_punctuation(column, feature, weight_outlier):
                 punc_obj["punctuation_density_aggregate"] = {"mean" : puncs_density_average[i]}
                 # calculate outlier
                 outlier_array = helper_outlier_calcu(cell_density_array[:, i], weight_outlier)
-                    # only one element in outlier 
+                    # only one element in outlier
                 punc_obj["punctuation_density_outliers"] = [{"n": weight_outlier,
                                                             "count": sum(outlier_array)}]
                 feature["most_common_punctuations"].append(punc_obj)
