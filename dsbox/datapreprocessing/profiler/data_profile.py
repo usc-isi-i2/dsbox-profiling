@@ -21,12 +21,39 @@ Input = typing.Union[container.Dataset, \
 # Input = container.DataFrame
 Output = container.Dataset
 
+VERBOSE = 0
+
+computable_metafeatures = ['ratio_of_values_containing_numeric_char', 'ratio_of_numeric_values', 
+    'number_of_outlier_numeric_values', 'num_filename', 'number_of_tokens_containing_numeric_char', 
+    'number_of_numeric_values_equal_-1', 'most_common_numeric_tokens', 'most_common_tokens', 
+    'ratio_of_distinct_tokens', 'number_of_missing_values', 
+    'number_of_distinct_tokens_split_by_punctuation', 'number_of_distinct_tokens', 
+    'ratio_of_missing_values', 'semantic_types', 'number_of_numeric_values_equal_0', 
+    'number_of_positive_numeric_values', 'most_common_alphanumeric_tokens', 
+    'numeric_char_density', 'ratio_of_distinct_values', 'number_of_negative_numeric_values', 
+    'target_values', 'ratio_of_tokens_split_by_punctuation_containing_numeric_char', 
+    'ratio_of_values_with_leading_spaces', 'number_of_values_with_trailing_spaces', 
+    'ratio_of_values_with_trailing_spaces', 'number_of_numeric_values_equal_1', 
+    'natural_language_of_feature', 'most_common_punctuations', 'spearman_correlation_of_features', 
+    'number_of_values_with_leading_spaces', 'ratio_of_tokens_containing_numeric_char', 
+    'number_of_tokens_split_by_punctuation_containing_numeric_char', 'number_of_numeric_values', 
+    'ratio_of_distinct_tokens_split_by_punctuation', 'number_of_values_containing_numeric_char', 
+    'most_common_tokens_split_by_punctuation', 'number_of_distinct_values', 
+    'pearson_correlation_of_features']
+
+default_metafeatures = ['ratio_of_values_containing_numeric_char', 'ratio_of_numeric_values', 
+    'number_of_outlier_numeric_values', 'num_filename', 'number_of_tokens_containing_numeric_char']
+
 class Hyperparams(hyperparams.Hyperparams):
     """
     No hyper-parameters for this primitive.
     """
 
-    pass
+    features = hyperparams.EnumerationSet(values = computable_metafeatures, 
+        default = default_metafeatures, 
+        semantic_types=['https://metadata.datadrivendiscovery.org/types/DataMetafeatures'])
+    
+
 
 class Profiler(TransformerPrimitiveBase[Input, Output, Hyperparams]):
     """
@@ -94,72 +121,77 @@ class Profiler(TransformerPrimitiveBase[Input, Output, Hyperparams]):
         self._token_delimiter = " "
         self._detect_language = False
         self._topk = 10
-        self._verbose = hyperparams['verbose'] if hyperparams else 0
+        self._verbose = VERBOSE
+        # list of specified features to compute
+        self._specified_features = hyperparams['features'] if hyperparams else default_metafeatures
 
 
 
     def produce(self, *, inputs: Input, timeout: float = None, iterations: int = None) -> Output:
+        """
+        generate features for the input. 
+
+        Input:
+            dataset.Dataset or DataFrame
+        Output:
+            dataset.Dataset
+
+
+        """
         if isinstance(inputs, dataset.Dataset):
             # perhaps multiple tables
-            # return self._profile_data(inputs)
-            self.results = inputs.metadata
+            self.results = inputs.metadata # store metadata as a class-level variable
             for table_id in inputs:
                 dataframe = pd.DataFrame(data = inputs[table_id])
-                print (dataframe)
-                self._profile_data(dataframe, table_id)    # inplace manipulate
+                self._profile_data(dataframe, table_id)    # inplace manipulate metadata
 
             inputs.metadata = self.results
             return inputs
         else:
             # single table
             key = "0" # default key for single table
-            self.results = metadata.Metadata()
-            self._profile_data(inputs, key)
- 
+            self.results = metadata.Metadata() # store metadata as a class-level variable
+            
+            self._profile_data(inputs, table_id=key)
             
             ds = dataset.Dataset({key: inputs}, self.results)
             return ds
             
 
-    def _profile_data(self, data_path, table_id="0"):
+    def _profile_data(self, data, table_id="0"):
 
         """
-        Main function to profile the data.
+        Main function to profile the data. This functions will 
+        1. calculate features
+        2. put them in self.results
+
         Parameters
         ----------
-        data_path: file or pandas DataFrame that needs to be profiled
+        data: pandas.DataFrame that needs to be profiled
         ----------
         """
-        # STEP 1: get dependency and read data
-
-        isDF = False
-        ## csv as input ##
-        if not isinstance(data_path, pd.DataFrame):
-            data = pd.read_csv(data_path, dtype = object)   # all read as str
-            data_for_corr = pd.read_csv(data_path)
-            corr_pearson = data_for_corr.corr()
-            corr_spearman = data_for_corr.corr(method='spearman')
-
-        ## data frame as imput ##
-        else:
-            data = data_path
-            isDF = True
-            corr_pearson = data.corr()
-            corr_spearman = data.corr(method='spearman')
-
-        corr_columns = list(corr_pearson.columns)
-        corr_id = [data.columns.get_loc(n) for n in corr_columns]
-        
-        is_category = category_detection.category_detect(data)
-
         if self._verbose:
             print("====================have a look on the data: ====================\n")
             print(data.head())
 
-        # STEP 2: calculations
+        # calculations
         if self._verbose:
             print("====================calculating the features ... ====================\n")
-        result = {} # final result: dict of dict
+
+        # STEP 1: data-level calculations
+        if ("pearson_correlation_of_features" in self._specified_features):
+            corr_pearson = data.corr()
+            corr_columns = list(corr_pearson.columns)
+            corr_id = [data.columns.get_loc(n) for n in corr_columns]
+
+        if ("spearman_correlation_of_features" in self._specified_features):
+            corr_spearman = data.corr(method='spearman')
+            corr_columns = list(corr_spearman.columns)
+            corr_id = [data.columns.get_loc(n) for n in corr_columns]
+        
+        is_category = category_detection.category_detect(data)
+
+        # STEP 2: column-level calculations
         column_counter = -1
         for column_name in data:
             column_counter += 1
@@ -170,13 +202,17 @@ class Profiler(TransformerPrimitiveBase[Input, Output, Hyperparams]):
             if is_category[column_name]:
                 each_res['semantic_types'] = ["https://metadata.datadrivendiscovery.org/types/CategoricalData"]
             
-            if column_name in corr_columns:
+            if (("spearman_correlation_of_features" in self._specified_features) and 
+                (column_name in corr_columns) ):
                 stats_sp = corr_spearman[column_name].describe()
                 each_res["spearman_correlation_of_features"] = {'min': stats_sp['min'],
                                                                 'max': stats_sp['max'],
                                                                 'mean': stats_sp['mean'],
                                                                 'median': stats_sp['50%'],
                                                                 'std': stats_sp['std']}
+            
+            if (("spearman_correlation_of_features" in self._specified_features) and 
+                (column_name in corr_columns) ):
                 stats_pr = corr_pearson[column_name].describe()
                 each_res["pearson_correlation_of_features"] = {'min': stats_pr['min'],
                                                                 'max': stats_pr['max'],
@@ -185,43 +221,50 @@ class Profiler(TransformerPrimitiveBase[Input, Output, Hyperparams]):
                                                                 'std': stats_pr['std']}
 
             if col.dtype.kind in np.typecodes['AllInteger']+'uMmf':
-                each_res["number_of_missing_values"] = pd.isnull(col).sum()
-                each_res["ratio_of_missing_values"] = each_res["number_of_missing_values"] / col.size
-                # each_res["non_missing_value_count"] = col.count()
-                ndistinct = col.nunique()
-                each_res["number_of_distinct_values"] = ndistinct
-                each_res["ratio_of_distinct_values"] = ndistinct/ float(col.size)
+                if ("number_of_missing_values" in self._specified_features):
+                    each_res["number_of_missing_values"] = pd.isnull(col).sum()
+                if ("ratio_of_missing_values" in self._specified_features):
+                    each_res["ratio_of_missing_values"] = pd.isnull(col).sum() / col.size
+                if ("number_of_distinct_values" in self._specified_features):   
+                    each_res["number_of_distinct_values"] = col.nunique()
+                if ("ratio_of_distinct_values" in self._specified_features):
+                    each_res["ratio_of_distinct_values"] = col.nunique() / float(col.size)
 
             if col.dtype.kind == 'b':
-                fc_hih.compute_common_values(col.dropna().astype(str), each_res, self._topk)
+                if ("most_common_raw_values" in self._specified_features):
+                    fc_hih.compute_common_values(col.dropna().astype(str), each_res, self._topk)
 
             elif col.dtype.kind in np.typecodes['AllInteger']+'uf':
-                fc_hih.compute_numerics(col, each_res)
-                fc_hih.compute_common_values(col.dropna().astype(str), each_res,self._topk)
+                fc_hih.compute_numerics(col, each_res) # TODO: do the checks inside the function
+                if ("most_common_raw_values" in self._specified_features):
+                    fc_hih.compute_common_values(col.dropna().astype(str), each_res,self._topk)
 
             else:
-                if isDF:
-                    col = col.astype(object).fillna('').astype(str)
+                col = col.astype(object).fillna('').astype(str)
 
                 # compute_missing_space Must be put as the first one because it may change the data content, see function def for details
-                fc_lfh.compute_missing_space(col, each_res)
+                fc_lfh.compute_missing_space(col, each_res, self._specified_features)
                 # fc_lfh.compute_filename(col, each_res)
-                fc_lfh.compute_length_distinct(col, each_res, delimiter=self._token_delimiter)
-                if self._detect_language: fc_lfh.compute_lang(col, each_res)
-                fc_lfh.compute_punctuation(col, each_res, weight_outlier=self._punctuation_outlier_weight)
+                fc_lfh.compute_length_distinct(col, each_res, delimiter=self._token_delimiter, feature_list=self._specified_features)
+                if ("natural_language_of_feature" in self._specified_features): 
+                    fc_lfh.compute_lang(col, each_res)
+                if ("most_common_punctuations" in self._specified_features):
+                    fc_lfh.compute_punctuation(col, each_res, weight_outlier=self._punctuation_outlier_weight)
 
-                fc_hih.compute_numerics(col, each_res)
-                fc_hih.compute_common_numeric_tokens(col, each_res,self._topk)
-                fc_hih.compute_common_alphanumeric_tokens(col, each_res, self._topk)
-                fc_hih.compute_common_values(col, each_res, self._topk)
-                fc_hih.compute_common_tokens(col, each_res, self._topk)
-                fc_hih.compute_numeric_density(col, each_res)
-                fc_hih.compute_contain_numeric_values(col, each_res)
-                fc_hih.compute_common_tokens_by_puncs(col, each_res, self._topk)
+                fc_hih.compute_numerics(col, each_res, self._specified_features)
+                if ("most_common_numeric_tokens" in self._specified_features):
+                    fc_hih.compute_common_numeric_tokens(col, each_res,self._topk)
+                if ("most_common_alphanumeric_tokens" in self._specified_features):
+                    fc_hih.compute_common_alphanumeric_tokens(col, each_res, self._topk)
+                if ("most_common_raw_values" in self._specified_features):
+                    fc_hih.compute_common_values(col, each_res, self._topk)
+                fc_hih.compute_common_tokens(col, each_res, self._topk, self._specified_features)
+                if ("numeric_char_density" in self._specified_features):
+                    fc_hih.compute_numeric_density(col, each_res)
+                fc_hih.compute_contain_numeric_values(col, each_res, self._specified_features)
+                fc_hih.compute_common_tokens_by_puncs(col, each_res, self._topk, self._specified_features)
 
-
-            # result[column_name] = each_res # add this column features into final result
-
+            # update metadata for a specific column
             self.results = self.results.update((table_id, metadata.ALL_ELEMENTS, column_counter,), each_res)
 
         if self._verbose: print("====================calculations finished ====================\n")

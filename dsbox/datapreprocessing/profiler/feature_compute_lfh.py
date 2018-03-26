@@ -9,7 +9,7 @@ from collections import OrderedDict
 
 # till now, this file totally compute 16 types of features
 
-def compute_missing_space(column, feature):
+def compute_missing_space(column, feature, feature_list):
     """
     NOTE: this function may change the input column. It will trim all the leading and trailing whitespace.
             if a cell is empty after trimming(which means it only contains whitespaces),
@@ -19,40 +19,52 @@ def compute_missing_space(column, feature):
         note that more than one leading(trailing) spaces in a cell will still be counted as 1.
     (2). compute the number of missing value for a given series (column); store the result into (feature)
     """
-    leading_space = 0
-    trailing_space = 0
 
-    for id, cell in column.iteritems():
-        if (pd.isnull(cell)):
-            continue
-
-        change = False
-        trim_leading_cell = re.sub(r"^\s+", "", cell)
-        if (trim_leading_cell != cell):
-            leading_space += 1
-            change = True
-        trim_trailing_cell = re.sub(r"\s+$", "", trim_leading_cell)
-        if ( (trim_trailing_cell != trim_leading_cell) or len(trim_trailing_cell) == 0):
-            trailing_space += 1
-            change = True
-
-        # change the origin value in data
-        if change:
-            if (len(trim_trailing_cell) == 0):
-                column[id] = np.nan
-            else:
-                column[id] = trim_trailing_cell
-
-    feature["number_of_values_with_leading_spaces"] = leading_space
-    feature["ratio_of_values_with_leading_spaces"] = leading_space / column.size
-    feature["number_of_values_with_trailing_spaces"] = trailing_space
-    feature["ratio_of_values_with_trailing_spaces"] = trailing_space / column.size
-
-    feature["number_of_missing_values"] = pd.isnull(column).sum()
-    feature["ratio_of_missing_values"] = feature["number_of_missing_values"] / column.size
+    if "number_of_missing_values" in feature_list:
+        feature["number_of_missing_values"] = pd.isnull(column).sum()
+    if "ratio_of_missing_values" in feature_list:
+        feature["ratio_of_missing_values"] = pd.isnull(column).sum() / column.size
 
 
-def compute_length_distinct(column, feature, delimiter):
+    # if one of them is specified, just compute all; since does not increase lot computations
+    if (("number_of_values_with_leading_spaces" in feature_list) or 
+        ("ratio_of_values_with_leading_spaces" in feature_list) or 
+        ("number_of_values_with_trailing_spaces" in feature_list) or 
+        ("ratio_of_values_with_trailing_spaces" in feature_list)):
+
+        leading_space = 0
+        trailing_space = 0
+
+        for id, cell in column.iteritems():
+            if (pd.isnull(cell)):
+                continue
+
+            change = False
+            trim_leading_cell = re.sub(r"^\s+", "", cell)
+            if (trim_leading_cell != cell):
+                leading_space += 1
+                change = True
+            trim_trailing_cell = re.sub(r"\s+$", "", trim_leading_cell)
+            if ( (trim_trailing_cell != trim_leading_cell) or len(trim_trailing_cell) == 0):
+                trailing_space += 1
+                change = True
+
+            # change the origin value in data
+            if change:
+                if (len(trim_trailing_cell) == 0):
+                    column[id] = np.nan
+                else:
+                    column[id] = trim_trailing_cell
+
+        feature["number_of_values_with_leading_spaces"] = leading_space
+        feature["ratio_of_values_with_leading_spaces"] = leading_space / column.size
+        feature["number_of_values_with_trailing_spaces"] = trailing_space
+        feature["ratio_of_values_with_trailing_spaces"] = trailing_space / column.size
+
+    
+
+
+def compute_length_distinct(column, feature, delimiter, feature_list):
     """
     two tasks because of some overlaping computation:
 
@@ -74,18 +86,22 @@ def compute_length_distinct(column, feature, delimiter):
     # feature["string_length_mean"] = lenth_for_all.mean()
     # feature["string_length_std"] = lenth_for_all.std()
 
-    # 2. for token
-    tokenlized = column.str.split(delimiter, expand=True).unstack().dropna()    # tokenlized Series
-    lenth_for_token = tokenlized.apply(len)
-    # feature["token_count_mean"] = lenth_for_token.mean()
-    # feature["token_count_std"] = lenth_for_token.std()
+    
 
     # (2)
-    feature["number_of_distinct_values"] = column.nunique()
-    feature["ratio_of_distinct_values"] = feature["number_of_distinct_values"] / float(column.size)
-        # using the pre-computed tokenlized in (1), which is series of all tokens
-    feature["number_of_distinct_tokens"] = tokenlized.nunique()
-    feature["ratio_of_distinct_tokens"] = feature["number_of_distinct_tokens"] / float(tokenlized.size)
+    if (("number_of_distinct_values" in feature_list) or
+        ("ratio_of_distinct_values" in feature_list)):
+        feature["number_of_distinct_values"] = column.nunique()
+        feature["ratio_of_distinct_values"] = feature["number_of_distinct_values"] / float(column.size)
+
+    if (("number_of_distinct_tokens" in feature_list) or
+        ("ratio_of_distinct_tokens" in feature_list)):
+        tokenlized = column.str.split(delimiter, expand=True).unstack().dropna()    # tokenlized Series
+        lenth_for_token = tokenlized.apply(len)
+        # feature["token_count_mean"] = lenth_for_token.mean()
+        # feature["token_count_std"] = lenth_for_token.std()
+        feature["number_of_distinct_tokens"] = tokenlized.nunique()
+        feature["ratio_of_distinct_tokens"] = feature["number_of_distinct_tokens"] / float(tokenlized.size)
 
 
 
