@@ -12,9 +12,10 @@ from . import category_detection
 from . import config
 from collections import defaultdict
 
-from primitive_interfaces.transformer import TransformerPrimitiveBase
-from d3m_metadata import container, hyperparams, metadata
-from d3m_metadata.container import dataset
+from d3m.primitive_interfaces.transformer import TransformerPrimitiveBase
+from d3m import container, metadata
+from d3m.container import dataset
+from d3m.metadata import hyperparams, base
 
 Input = typing.Union[container.Dataset, \
                     container.DataFrame]
@@ -49,7 +50,7 @@ class Hyperparams(hyperparams.Hyperparams):
     No hyper-parameters for this primitive.
     """
 
-    features = hyperparams.EnumerationSet(values = computable_metafeatures, 
+    features = hyperparams.EnumerationList(values = computable_metafeatures, 
         default = default_metafeatures, 
         semantic_types=['https://metadata.datadrivendiscovery.org/types/DataMetafeatures'])
     
@@ -82,15 +83,15 @@ class Profiler(TransformerPrimitiveBase[Input, Output, Hyperparams]):
     ----------
 
     """
-    metadata = metadata.PrimitiveMetadata({
+    metadata = hyperparams.base.PrimitiveMetadata({
         'id': 'b2612849-39e4-33ce-bfda-24f3e2cb1e93',
         'version': config.VERSION, 
         'name': "DSBox Profiler",
         'description': 'Generate profiles of datasets',
         'python_path': 'd3m.primitives.dsbox.Profiler',
-        'primitive_family': metadata.PrimitiveFamily.DATA_PREPROCESSING,
+        'primitive_family': base.PrimitiveFamily.DATA_PREPROCESSING,
         'algorithm_types': [
-            metadata.PrimitiveAlgorithmType.DATA_PROFILING,
+            base.PrimitiveAlgorithmType.DATA_PROFILING,
         ],
         'keywords': ['data_profiler'],
         'source': {
@@ -108,12 +109,8 @@ class Profiler(TransformerPrimitiveBase[Input, Output, Hyperparams]):
     })
     
     
-    def __init__(self, *, hyperparams: Hyperparams, random_seed: int = 0, 
-            docker_containers: typing.Union[typing.Dict[str, str], None] = None) -> None:
-        # All primitives must define these attributes
-        self.hyperparams = hyperparams
-        self.random_seed = random_seed
-        self.docker_containers = docker_containers
+    def __init__(self, *, hyperparams: Hyperparams) -> None:
+        super().__init__(hyperparams=hyperparams)
 
         # All other attributes must be private with leading underscore  
         self._punctuation_outlier_weight = 3
@@ -265,7 +262,7 @@ class Profiler(TransformerPrimitiveBase[Input, Output, Hyperparams]):
                 fc_hih.compute_common_tokens_by_puncs(col, each_res, self._topk, self._specified_features)
 
             # update metadata for a specific column
-            self.results = self.results.update((table_id, metadata.ALL_ELEMENTS, column_counter,), each_res)
+            self.results = self.results.update((table_id, metadata.base.ALL_ELEMENTS, column_counter,), each_res)
 
         if self._verbose: print("====================calculations finished ====================\n")
 
