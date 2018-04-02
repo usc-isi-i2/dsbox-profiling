@@ -46,10 +46,6 @@ default_metafeatures = ['ratio_of_values_containing_numeric_char', 'ratio_of_num
     'number_of_outlier_numeric_values', 'num_filename', 'number_of_tokens_containing_numeric_char']
 
 class Hyperparams(hyperparams.Hyperparams):
-    """
-    No hyper-parameters for this primitive.
-    """
-
     features = hyperparams.EnumerationList(values = computable_metafeatures, 
         default = default_metafeatures, 
         semantic_types=['https://metadata.datadrivendiscovery.org/types/DataMetafeatures'])
