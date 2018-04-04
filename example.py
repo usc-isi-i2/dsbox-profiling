@@ -1,15 +1,15 @@
-from dsbox.datapreprocessing.profiler import Profiler, Hyperparams
+from dsbox.datapreprocessing.profiler import Profiler, metafeature_hyperparam
 from d3m.container import dataset
 from d3m.metadata import hyperparams
 from d3m import metadata
 
 # first, specify the metafeaures that you want to compute
-hp = Hyperparams({'features': ['target_values', 
-                                'ratio_of_tokens_split_by_punctuation_containing_numeric_char'
-                            ]})
+feature_names = ['ratio_of_values_containing_numeric_char', 'ratio_of_numeric_values', 
+    'number_of_outlier_numeric_values', 'num_filename']
+hp = hyperparams.Set(metafeature_hyperparam, set(feature_names), 100, 0)
 
 # 1. dataset.Dataset as input
-dataset_doc_path = "/nas/home/fangaol/seed_datasets_current/38_sick/TRAIN/dataset_TRAIN/datasetDoc.json"
+dataset_doc_path = "/Users/luofanghao/work/USC_lab/isi-II/work/DSBox_project/seed_datasets_current/38_sick/TRAIN/dataset_TRAIN/datasetDoc.json"
 ds = dataset.Dataset.load('file://{dataset_doc_path}'.format(dataset_doc_path=dataset_doc_path))
 
 profiler = Profiler(hyperparams=hp)
