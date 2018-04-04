@@ -1,4 +1,4 @@
-from dsbox.datapreprocessing.profiler import Profiler, metafeature_hyperparam
+from dsbox.datapreprocessing.profiler import Profiler, Hyperparams
 from d3m.container import dataset
 from d3m.metadata import hyperparams
 from d3m import metadata
@@ -6,7 +6,7 @@ from d3m import metadata
 # first, specify the metafeaures that you want to compute
 feature_names = ['ratio_of_values_containing_numeric_char', 'ratio_of_numeric_values', 
     'number_of_outlier_numeric_values', 'num_filename']
-hp = hyperparams.Set(metafeature_hyperparam, set(feature_names), 100, 0)
+hp = Hyperparams({'metafeatures' : set(feature_names)})
 
 # 1. dataset.Dataset as input
 dataset_doc_path = "/Users/luofanghao/work/USC_lab/isi-II/work/DSBox_project/seed_datasets_current/38_sick/TRAIN/dataset_TRAIN/datasetDoc.json"

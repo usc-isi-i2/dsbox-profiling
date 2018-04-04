@@ -21,7 +21,6 @@ Input = typing.Union[container.Dataset, \
                     container.DataFrame]
 # Input = container.DataFrame
 Output = container.Dataset
-Hyperparams = hyperparams.Hyperparams
 
 VERBOSE = 0
 
@@ -51,7 +50,9 @@ metafeature_hyperparam = hyperparams.Enumeration(computable_metafeatures,
         computable_metafeatures[0],
         semantic_types=['https://metadata.datadrivendiscovery.org/types/MetafeatureParameter'])
 
-    
+class Hyperparams(hyperparams.Hyperparams):
+    metafeatures = hyperparams.Set(metafeature_hyperparam, set(default_metafeatures), 
+                                    len(computable_metafeatures), 1)
 
 
 class Profiler(TransformerPrimitiveBase[Input, Output, Hyperparams]):
@@ -118,7 +119,7 @@ class Profiler(TransformerPrimitiveBase[Input, Output, Hyperparams]):
         self._topk = 10
         self._verbose = VERBOSE
         # list of specified features to compute
-        self._specified_features = hyperparams.default if hyperparams else default_metafeatures
+        self._specified_features = hyperparams["metafeatures"] if hyperparams else default_metafeatures
 
 
 
