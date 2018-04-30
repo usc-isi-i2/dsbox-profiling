@@ -1,13 +1,11 @@
 #!/usr/bin/env python3
 
-import os
-from d3m_metadata import hyperparams, container
-from d3m_metadata.metadata import DataMetadata, ALL_ELEMENTS
+from d3m import container
+from d3m.metadata.base import DataMetadata, ALL_ELEMENTS
 
 from os import path
-from dsbox.datapreprocessing.profiler import Profiler, Hyperparams, MyEncoder
+from dsbox.datapreprocessing.profiler import Profiler, Hyperparams
 import pandas as pd
-import numpy as np
 import json
 
 # Example for the documentation of the TA1 pipeline submission process
@@ -47,18 +45,18 @@ ds2 = prof.produce(inputs=ds)
 # Get resource Ids, return ['0'] for this dataset
 print(ds.metadata.get_elements( () ))
 
-# Get available columns, returns [0, 1, 2, ..., 30] for 38_sick dataset 
+# Get available columns, returns [0, 1, 2, ..., 30] for 38_sick dataset
 print(ds.metadata.get_elements(('0', ALL_ELEMENTS)))
 
 # Metadata for column 1
 column_one_metadata = ds.metadata.query(('0', ALL_ELEMENTS, 1))
 
 # Print metadata for entire dataset as json
-ds2.metadata.pretty_print()  
+ds2.metadata.pretty_print()
 
 
 ###### The rest of this file has nothing to do with the DSBox data profiling primitive.
-###### Needed just to pass the pipeline submission 
+###### Needed just to pass the pipeline submission
 
 # Get the target and attribute column ids from the dataset schema for training data
 trainAttributesColumnIds = [ item['colIndex'] for item in datasetSchema['dataResources'][0]['columns'] if 'attribute' in item['role'] ]
@@ -96,4 +94,3 @@ outputFilePath = path.join(jsonCall['output_folder'], problemSchema['expectedOut
 # Outputs the predicted targets in the location specified in the JSON configuration file
 with open(outputFilePath, 'w') as outputFile:
     output = predictedTargets.to_csv(outputFile, header=True, index=True, index_label='d3m')
-
