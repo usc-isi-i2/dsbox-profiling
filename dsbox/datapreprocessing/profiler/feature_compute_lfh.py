@@ -27,9 +27,9 @@ def compute_missing_space(column, feature, feature_list):
 
 
     # if one of them is specified, just compute all; since does not increase lot computations
-    if (("number_of_values_with_leading_spaces" in feature_list) or 
-        ("ratio_of_values_with_leading_spaces" in feature_list) or 
-        ("number_of_values_with_trailing_spaces" in feature_list) or 
+    if (("number_of_values_with_leading_spaces" in feature_list) or
+        ("ratio_of_values_with_leading_spaces" in feature_list) or
+        ("number_of_values_with_trailing_spaces" in feature_list) or
         ("ratio_of_values_with_trailing_spaces" in feature_list)):
 
         leading_space = 0
@@ -61,7 +61,7 @@ def compute_missing_space(column, feature, feature_list):
         feature["number_of_values_with_trailing_spaces"] = trailing_space
         feature["ratio_of_values_with_trailing_spaces"] = trailing_space / column.size
 
-    
+
 
 
 def compute_length_distinct(column, feature, delimiter, feature_list):
@@ -86,7 +86,7 @@ def compute_length_distinct(column, feature, delimiter, feature_list):
     # feature["string_length_mean"] = lenth_for_all.mean()
     # feature["string_length_std"] = lenth_for_all.std()
 
-    
+
 
     # (2)
     if (("number_of_distinct_values" in feature_list) or
@@ -96,7 +96,7 @@ def compute_length_distinct(column, feature, delimiter, feature_list):
 
     if (("number_of_distinct_tokens" in feature_list) or
         ("ratio_of_distinct_tokens" in feature_list)):
-        tokenlized = column.str.split(delimiter, expand=True).unstack().dropna()    # tokenlized Series
+        tokenlized = pd.Series([token for lst in column.str.split().dropna() for token in lst])  # tokenlized Series
         lenth_for_token = tokenlized.apply(len)
         # feature["token_count_mean"] = lenth_for_token.mean()
         # feature["token_count_std"] = lenth_for_token.std()

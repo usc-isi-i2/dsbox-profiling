@@ -68,14 +68,14 @@ def numerical_stats(feature, column, num_nonblank, feature_list):
         feature["number_of_numeric_values_equal_1"] = column[column==1].count()
     if ("number_of_numeric_values_equal_-1" in feature_list):
         feature["number_of_numeric_values_equal_-1"] = column[column==-1].count()
-    
+
     if ("target_values" in feature_list):
         feature["target_values"] = {'mean':stats['mean'],
                                     'std':stats['std'],
                                     'median': stats['50%'],
                                     'quartile_1': stats['25%'],
                                     'quartile_3': stats['75%']}
-    
+
 
 
 def compute_numerics(column, feature, feature_list):
@@ -91,10 +91,10 @@ def compute_numerics(column, feature, feature_list):
         ("number_std" in feature_list) or
         ("number_of_outlier_numeric_values" in feature_list) or
         ("number_of_negative_numeric_values" in feature_list) or
-        ("number_of_positive_numeric_values" in feature_list) or 
-        ("number_of_numeric_values_equal_0" in feature_list) or 
-        ("number_of_numeric_values_equal_1" in feature_list) or 
-        ("number_of_numeric_values_equal_-1" in feature_list) or 
+        ("number_of_positive_numeric_values" in feature_list) or
+        ("number_of_numeric_values_equal_0" in feature_list) or
+        ("number_of_numeric_values_equal_1" in feature_list) or
+        ("number_of_numeric_values_equal_-1" in feature_list) or
         ("target_values" in feature_list)):
 
         cnt = column.count()
@@ -116,7 +116,7 @@ def compute_common_numeric_tokens(column, feature, k):
     tokens are integer or floats
     e.g. "123", "12.3"
     """
-    col = column.str.split(expand=True).unstack().dropna().values
+    col = np.asarray([token for lst in column.str.split().dropna() for token in lst])
     token = np.array(list(filter(lambda x: hf.is_Decimal_Number(x), col)))
     if token.size:
         feature["most_common_numeric_tokens"] = ordered_dict2(token, k)
@@ -126,7 +126,7 @@ def compute_common_alphanumeric_tokens(column, feature, k):
     compute top k frequent alphanumerical tokens and their counts.
     tokens only contain alphabets and/or numbers, decimals with points not included
     """
-    col = column.str.split(expand=True).unstack().dropna().values
+    col = np.asarray([token for lst in column.str.split().dropna() for token in lst])
     token = np.array(list(filter(lambda x: x.isalnum(), col)))
     if token.size:
         feature["most_common_alphanumeric_tokens"] = ordered_dict2(token, k)
@@ -148,11 +148,11 @@ def compute_common_tokens(column, feature, k, feature_list):
     """
 
     # if one of them specified, just compute all
-    if (("most_common_tokens" in feature_list) or 
-        ("number_of_tokens_containing_numeric_char" in feature_list) or 
+    if (("most_common_tokens" in feature_list) or
+        ("number_of_tokens_containing_numeric_char" in feature_list) or
         ("ratio_of_tokens_containing_numeric_char" in feature_list)):
 
-        token = column.str.split(expand=True).unstack().dropna().values
+        token = np.asarray([token for lst in column.str.split().dropna() for token in lst])
         if token.size:
             feature["most_common_tokens"] = ordered_dict2(token, k)
             cnt = sum([any(char.isdigit() for char in c) for c in token])
@@ -166,10 +166,10 @@ def compute_common_tokens_by_puncs(column, feature, k, feature_list):
     '!"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~'
     """
     # if one of them specified, just compute all
-    if (("most_common_tokens_split_by_punctuation" in feature_list) or 
-        ("number_of_distinct_tokens_split_by_punctuation" in feature_list) or 
-        ("ratio_of_distinct_tokens_split_by_punctuation" in feature_list) or 
-        ("number_of_tokens_split_by_punctuation_containing_numeric_char" in feature_list) or 
+    if (("most_common_tokens_split_by_punctuation" in feature_list) or
+        ("number_of_distinct_tokens_split_by_punctuation" in feature_list) or
+        ("ratio_of_distinct_tokens_split_by_punctuation" in feature_list) or
+        ("number_of_tokens_split_by_punctuation_containing_numeric_char" in feature_list) or
         ("ratio_of_tokens_split_by_punctuation_containing_numeric_char" in feature_list)):
 
         col = column.dropna().values
@@ -200,7 +200,7 @@ def compute_contain_numeric_values(column, feature, feature_list):
     caculate # and ratio of cells in the column which contains numbers.
     """
     # if one of them specified, just compute all
-    if (("number_of_values_containing_numeric_char" in feature_list) or 
+    if (("number_of_values_containing_numeric_char" in feature_list) or
         ("ratio_of_values_containing_numeric_char" in feature_list)):
 
         contain_digits = lambda x: any(char.isdigit() for char in x)
