@@ -20,12 +20,6 @@ def compute_missing_space(column, feature, feature_list):
     (2). compute the number of missing value for a given series (column); store the result into (feature)
     """
 
-    if "number_of_missing_values" in feature_list:
-        feature["number_of_missing_values"] = pd.isnull(column).sum()
-    if "ratio_of_missing_values" in feature_list:
-        feature["ratio_of_missing_values"] = pd.isnull(column).sum() / column.size
-
-
     # if one of them is specified, just compute all; since does not increase lot computations
     if (("number_of_values_with_leading_spaces" in feature_list) or
         ("ratio_of_values_with_leading_spaces" in feature_list) or

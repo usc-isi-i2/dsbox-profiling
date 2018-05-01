@@ -282,6 +282,13 @@ class Profiler(TransformerPrimitiveBase[Input, Output, Hyperparams]):
                     fc_hih.compute_common_values(col.dropna().astype(str), each_res,self._topk)
 
             else:
+
+                # Need to compute str missing values before fillna
+                if "number_of_missing_values" in self._specified_features:
+                    each_res["number_of_missing_values"] = pd.isnull(col).sum()
+                if "ratio_of_missing_values" in self._specified_features:
+                    each_res["ratio_of_missing_values"] = pd.isnull(col).sum() / col.size
+
                 col = col.astype(object).fillna('').astype(str)
 
                 # compute_missing_space Must be put as the first one because it may change the data content, see function def for details
