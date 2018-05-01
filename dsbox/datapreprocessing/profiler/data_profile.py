@@ -51,12 +51,12 @@ computable_metafeatures = [
     'number_of_tokens_split_by_punctuation_containing_numeric_char', 'number_of_numeric_values',
     'ratio_of_distinct_tokens_split_by_punctuation', 'number_of_values_containing_numeric_char',
     'most_common_tokens_split_by_punctuation', 'number_of_distinct_values',
-    'pearson_correlation_of_features', 'structural_type', 'dimension', 'name']
+    'pearson_correlation_of_features',
+    'semantic_types']
 
 default_metafeatures = [
     'ratio_of_values_containing_numeric_char', 'ratio_of_numeric_values',
-    'number_of_outlier_numeric_values', 'num_filename', 'number_of_tokens_containing_numeric_char',
-    'structural_type', 'dimension', 'name']
+    'number_of_outlier_numeric_values', 'num_filename', 'number_of_tokens_containing_numeric_char']
 
 
 metafeature_hyperparam = hyperparams.Enumeration(computable_metafeatures,
@@ -241,7 +241,7 @@ class Profiler(TransformerPrimitiveBase[Input, Output, Hyperparams]):
             # dict: map feature name to content
             each_res = defaultdict(lambda: defaultdict())
 
-            if is_category[column_name]:
+            if 'semantic_types' in self._specified_features and is_category[column_name]:
                 each_res['semantic_types'] = ["https://metadata.datadrivendiscovery.org/types/CategoricalData"]
 
             if (("spearman_correlation_of_features" in self._specified_features) and
