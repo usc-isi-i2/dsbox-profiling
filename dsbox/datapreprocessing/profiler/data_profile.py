@@ -20,17 +20,17 @@ from . import feature_compute_hih as fc_hih
 from . import category_detection
 from . import config
 
-# Can handle container.List as well. But, need to figure out how to
-# properly declared so that it will pass D3M type checking.
 Input = typing.Union[container.Dataset,
                      container.DataFrame,
                      container.ndarray,
-                     container.matrix]
+                     container.matrix,
+                     container.List]
 
 Output = typing.Union[container.Dataset,
                       container.DataFrame,
                       container.ndarray,
-                      container.matrix]
+                      container.matrix,
+                      container.List]
 
 VERBOSE = 0
 
@@ -59,13 +59,16 @@ default_metafeatures = [
     'number_of_outlier_numeric_values', 'num_filename', 'number_of_tokens_containing_numeric_char']
 
 
-metafeature_hyperparam = hyperparams.Enumeration(computable_metafeatures,
-        computable_metafeatures[0],
-        semantic_types=['https://metadata.datadrivendiscovery.org/types/MetafeatureParameter'])
+metafeature_hyperparam = hyperparams.Enumeration(
+    computable_metafeatures,
+    computable_metafeatures[0],
+    semantic_types=['https://metadata.datadrivendiscovery.org/types/MetafeatureParameter'])
 
 class Hyperparams(hyperparams.Hyperparams):
-    metafeatures = hyperparams.Set(metafeature_hyperparam, set(default_metafeatures),
-                                    len(computable_metafeatures), 1)
+    metafeatures = hyperparams.Set(
+        metafeature_hyperparam, default_metafeatures, 1, len(computable_metafeatures),
+        description="Compute metadata descriptions of the dataset",
+        semantic_types=['https://metadata.datadrivendiscovery.org/types/MetafeatureParameter'])
 
 
 class Profiler(TransformerPrimitiveBase[Input, Output, Hyperparams]):
