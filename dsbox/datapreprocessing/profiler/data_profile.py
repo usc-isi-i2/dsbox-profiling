@@ -1,36 +1,35 @@
-import numpy as np  # type: ignore
-import pandas as pd  # type: ignore
 import json
 import sys
 import time
 import typing
-
-import pytypes
-
 from collections import defaultdict
+import d3m.metadata.base as mbase
 
+import numpy as np
+import pandas as pd
+import pytypes
 from d3m import container, types
-from d3m.primitive_interfaces.base import CallResult
-from d3m.primitive_interfaces.transformer import TransformerPrimitiveBase
 from d3m.metadata import hyperparams
 from d3m.metadata.base import DataMetadata, PrimitiveFamily, PrimitiveAlgorithmType, Selector, ALL_ELEMENTS
+from d3m.primitive_interfaces.base import CallResult
+from d3m.primitive_interfaces.transformer import TransformerPrimitiveBase
 
-from . import feature_compute_lfh as fc_lfh
-from . import feature_compute_hih as fc_hih
 from . import category_detection
 from . import config
+from . import dtype_detector
+from . import feature_compute_hih as fc_hih
+from . import feature_compute_lfh as fc_lfh
 
 Input = typing.Union[container.Dataset,
                      container.DataFrame,
                      container.ndarray,
-                     container.matrix,
-                     container.List]
+                     container.matrix
+                     ]
 
 Output = typing.Union[container.Dataset,
                       container.DataFrame,
                       container.ndarray,
-                      container.matrix,
-                      container.List]
+                      container.matrix]
 
 VERBOSE = 0
 
@@ -56,17 +55,17 @@ computable_metafeatures = [
 
 default_metafeatures = [
     'ratio_of_values_containing_numeric_char', 'ratio_of_numeric_values',
-    'number_of_outlier_numeric_values', 'num_filename', 'number_of_tokens_containing_numeric_char']
-
+    'number_of_outlier_numeric_values', 'num_filename', 'number_of_tokens_containing_numeric_char','semantic_types']
 
 metafeature_hyperparam = hyperparams.Enumeration(
     computable_metafeatures,
     computable_metafeatures[0],
     semantic_types=['https://metadata.datadrivendiscovery.org/types/MetafeatureParameter'])
 
+
 class Hyperparams(hyperparams.Hyperparams):
     metafeatures = hyperparams.Set(
-        metafeature_hyperparam, default_metafeatures, 1, len(computable_metafeatures),
+        metafeature_hyperparam, set(default_metafeatures), min_size=1, max_size=len(computable_metafeatures),
         description="Compute metadata descriptions of the dataset",
         semantic_types=['https://metadata.datadrivendiscovery.org/types/MetafeatureParameter'])
 
@@ -90,13 +89,11 @@ class Profiler(TransformerPrimitiveBase[Input, Output, Hyperparams]):
 
     _topk: a integer
 
-
     _verbose: boolean
         control the _verbose
 
     Attributes:
     ----------
-
     """
     metadata = hyperparams.base.PrimitiveMetadata({
         'id': 'b2612849-39e4-33ce-bfda-24f3e2cb1e93',
@@ -111,18 +108,16 @@ class Profiler(TransformerPrimitiveBase[Input, Output, Hyperparams]):
         'keywords': ['data_profiler'],
         'source': {
             'name': config.D3M_PERFORMER_TEAM,
-            'uris': [ config.REPOSITORY ],
+            'uris': [config.REPOSITORY],
         },
-            # The same path the primitive is registered with entry points in setup.py.
-        'installation': [ config.INSTALLATION ],
+        # The same path the primitive is registered with entry points in setup.py.
+        'installation': [config.INSTALLATION],
         # Choose these from a controlled vocabulary in the schema. If anything is missing which would
         # best describe the primitive, make a merge request.
-
         # A metafeature about preconditions required for this primitive to operate well.
         "precondition": [],
         "hyperparms_to_tune": []
     })
-
 
     def __init__(self, *, hyperparams: Hyperparams) -> None:
         super().__init__(hyperparams=hyperparams)
@@ -137,19 +132,14 @@ class Profiler(TransformerPrimitiveBase[Input, Output, Hyperparams]):
         # list of specified features to compute
         self._specified_features = hyperparams["metafeatures"] if hyperparams else default_metafeatures
 
-
     def produce(self, *, inputs: Input, timeout: float = None, iterations: int = None) -> CallResult[Output]:
         """
         generate features for the input.
-
         Input:
             typing.Union[container.Dataset, container.DataFrame, container.ndarray, container.matrix, container.List]
         Output:
             typing.Union[container.Dataset, container.DataFrame, container.ndarray, container.matrix, container.List]
-
-
         """
-
         # Wrap as container, if needed
         if not pytypes.is_of_type(inputs, types.Container):
             if isinstance(inputs, pd.DataFrame):
@@ -165,7 +155,12 @@ class Profiler(TransformerPrimitiveBase[Input, Output, Hyperparams]):
                 # Nothing to do, since cannot store the computed metadata.
                 return CallResult(inputs)
 
+        # could call the integer and float datatype here
+
+        inputs = dtype_detector.detector(inputs)
+
         metadata = self._produce(inputs, inputs.metadata, [])
+        # I guess there are updating the metdata here
         inputs.metadata = metadata
 
         return CallResult(inputs)
@@ -188,10 +183,10 @@ class Profiler(TransformerPrimitiveBase[Input, Output, Hyperparams]):
                 metadata = self._produce(resource, metadata, prefix)
         elif isinstance(inputs, list):
             for index, item in enumerate(inputs):
-                metadata =self._produce(item, metadata, prefix + [index])
+                metadata = self._produce(item, metadata, prefix + [index])
         elif isinstance(inputs, pd.DataFrame):
             metadata = self._profile_data(inputs, metadata, prefix)
-        elif isinstance(inputs, np.matrix) or (isinstance(inputs, np.ndarray) and len(inputs.shape)==2):
+        elif isinstance(inputs, np.matrix) or (isinstance(inputs, np.ndarray) and len(inputs.shape) == 2):
             df = pd.DataFrame(inputs)
             metadata = self._profile_data(df, metadata, prefix)
         elif isinstance(inputs, container.ndarray):
@@ -217,7 +212,7 @@ class Profiler(TransformerPrimitiveBase[Input, Output, Hyperparams]):
         """
         if self._verbose:
             print("====================have a look on the data: ====================\n")
-            print(data.head())
+            print(data.head(2))
 
         # calculations
         if self._verbose:
@@ -235,6 +230,8 @@ class Profiler(TransformerPrimitiveBase[Input, Output, Hyperparams]):
             corr_id = [data.columns.get_loc(n) for n in corr_columns]
 
         is_category = category_detection.category_detect(data)
+        print("is_category call", is_category)
+        print("\n")
 
         # STEP 2: column-level calculations
         column_counter = -1
@@ -244,11 +241,27 @@ class Profiler(TransformerPrimitiveBase[Input, Output, Hyperparams]):
             # dict: map feature name to content
             each_res = defaultdict(lambda: defaultdict())
 
+            # if block updated on 6/26
+
             if 'semantic_types' in self._specified_features and is_category[column_name]:
-                each_res['semantic_types'] = ["https://metadata.datadrivendiscovery.org/types/CategoricalData"]
+                #rewrites old metadata
+                print("categorical column index",column_name)
+                print("\n")
+                old_metadata = dict(data.metadata.query((mbase.ALL_ELEMENTS, column_counter)))
+                print("old metadata", old_metadata)
+                print("\n")
+                temp_value = list(old_metadata["semantic_types"])
+                if len(temp_value) > 1:
+                    ##print("$$$$$$", ('https://metadata.datadrivendiscovery.org/types/CategoricalData', temp_value[1]))
+                    each_res["semantic_types"] = ('https://metadata.datadrivendiscovery.org/types/CategoricalData', temp_value[1])
+                else:
+                    each_res["semantic_types"] = ('https://metadata.datadrivendiscovery.org/types/CategoricalData')
+
+
+                #s
 
             if (("spearman_correlation_of_features" in self._specified_features) and
-                (column_name in corr_columns) ):
+                    (column_name in corr_columns)):
                 stats_sp = corr_spearman[column_name].describe()
                 each_res["spearman_correlation_of_features"] = {'min': stats_sp['min'],
                                                                 'max': stats_sp['max'],
@@ -257,15 +270,15 @@ class Profiler(TransformerPrimitiveBase[Input, Output, Hyperparams]):
                                                                 'std': stats_sp['std']}
 
             if (("spearman_correlation_of_features" in self._specified_features) and
-                (column_name in corr_columns) ):
+                    (column_name in corr_columns)):
                 stats_pr = corr_pearson[column_name].describe()
                 each_res["pearson_correlation_of_features"] = {'min': stats_pr['min'],
-                                                                'max': stats_pr['max'],
-                                                                'mean': stats_pr['mean'],
-                                                                'median': stats_pr['50%'],
-                                                                'std': stats_pr['std']}
+                                                               'max': stats_pr['max'],
+                                                               'mean': stats_pr['mean'],
+                                                               'median': stats_pr['50%'],
+                                                               'std': stats_pr['std']}
 
-            if col.dtype.kind in np.typecodes['AllInteger']+'uMmf':
+            if col.dtype.kind in np.typecodes['AllInteger'] + 'uMmf':
                 if ("number_of_missing_values" in self._specified_features):
                     each_res["number_of_missing_values"] = pd.isnull(col).sum()
                 if ("ratio_of_missing_values" in self._specified_features):
@@ -279,10 +292,11 @@ class Profiler(TransformerPrimitiveBase[Input, Output, Hyperparams]):
                 if ("most_common_raw_values" in self._specified_features):
                     fc_hih.compute_common_values(col.dropna().astype(str), each_res, self._topk)
 
-            elif col.dtype.kind in np.typecodes['AllInteger']+'uf':
-                fc_hih.compute_numerics(col, each_res, self._specified_features) # TODO: do the checks inside the function
+            elif col.dtype.kind in np.typecodes['AllInteger'] + 'uf':
+                fc_hih.compute_numerics(col, each_res,
+                                        self._specified_features)  # TODO: do the checks inside the function
                 if ("most_common_raw_values" in self._specified_features):
-                    fc_hih.compute_common_values(col.dropna().astype(str), each_res,self._topk)
+                    fc_hih.compute_common_values(col.dropna().astype(str), each_res, self._topk)
 
             else:
 
@@ -297,7 +311,8 @@ class Profiler(TransformerPrimitiveBase[Input, Output, Hyperparams]):
                 # compute_missing_space Must be put as the first one because it may change the data content, see function def for details
                 fc_lfh.compute_missing_space(col, each_res, self._specified_features)
                 # fc_lfh.compute_filename(col, each_res)
-                fc_lfh.compute_length_distinct(col, each_res, delimiter=self._token_delimiter, feature_list=self._specified_features)
+                fc_lfh.compute_length_distinct(col, each_res, delimiter=self._token_delimiter,
+                                               feature_list=self._specified_features)
                 if ("natural_language_of_feature" in self._specified_features):
                     fc_lfh.compute_lang(col, each_res)
                 if ("most_common_punctuations" in self._specified_features):
@@ -305,7 +320,7 @@ class Profiler(TransformerPrimitiveBase[Input, Output, Hyperparams]):
 
                 fc_hih.compute_numerics(col, each_res, self._specified_features)
                 if ("most_common_numeric_tokens" in self._specified_features):
-                    fc_hih.compute_common_numeric_tokens(col, each_res,self._topk)
+                    fc_hih.compute_common_numeric_tokens(col, each_res, self._topk)
                 if ("most_common_alphanumeric_tokens" in self._specified_features):
                     fc_hih.compute_common_alphanumeric_tokens(col, each_res, self._topk)
                 if ("most_common_raw_values" in self._specified_features):
@@ -317,12 +332,16 @@ class Profiler(TransformerPrimitiveBase[Input, Output, Hyperparams]):
                 fc_hih.compute_common_tokens_by_puncs(col, each_res, self._topk, self._specified_features)
 
             # update metadata for a specific column
+
             metadata = metadata.update(prefix + [ALL_ELEMENTS, column_counter], each_res)
+            new_metadata = dict(data.metadata.query((mbase.ALL_ELEMENTS, column_counter)))
+            print("new metadata", new_metadata)
+            print("\n")
 
         if self._verbose: print("====================calculations finished ====================\n")
 
-
         return metadata
+
 
 class MyEncoder(json.JSONEncoder):
     def default(self, obj):

@@ -115,6 +115,7 @@ def __column_detect(dtype,nunique,nunique_ratio,dropMax,H,M):
                     return False
 
 def category_detect(data):
+    print("In Category detect function \n")
     table = __tableGen(data)
     res_dict = {}
     for index, row in table.iterrows():
