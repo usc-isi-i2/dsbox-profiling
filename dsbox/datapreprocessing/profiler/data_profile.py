@@ -169,27 +169,27 @@ class Profiler(TransformerPrimitiveBase[Input, Output, Hyperparams]):
             self._sample_df = inputs
         cols = self._DateFeaturizer.sample_dataframe(self._sample_df)
         if cols:
-            indices=[inputs.columns.get_loc(c) for c in cols if c in inputs.columns]
-            print("indices",indices)
+            indices = [inputs.columns.get_loc(c) for c in cols if c in inputs.columns]
+            print("indices", indices)
             for i in indices:
                 old_metadata = dict(inputs.metadata.query((mbase.ALL_ELEMENTS, i)))
-                print("old metadata",old_metadata)
+                print("old metadata", old_metadata)
                 temp_value = list(old_metadata["semantic_types"])
                 if len(temp_value) > 1:
-                    old_metadata["semantic_types"] = ('https://metadata.datadrivendiscovery.org/types/CategoricalData','https://metadata.datadrivendiscovery.org/types/Time', temp_value[1])
+                    old_metadata["semantic_types"] = ('https://metadata.datadrivendiscovery.org/types/CategoricalData',
+                                                      'https://metadata.datadrivendiscovery.org/types/Time',
+                                                      temp_value[1])
                 else:
-                    old_metadata["semantic_types"] = ('https://metadata.datadrivendiscovery.org/types/CategoricalData','https://metadata.datadrivendiscovery.org/types/Time')
-                if isinstance(self._sample_df.iloc[:,i].head(1).values[0],str):
+                    old_metadata["semantic_types"] = ('https://metadata.datadrivendiscovery.org/types/CategoricalData',
+                                                      'https://metadata.datadrivendiscovery.org/types/Time')
+                if isinstance(self._sample_df.iloc[:, i].head(1).values[0], str):
                     old_metadata["structural_type"] = type("str")
-                elif isinstance(self._sample_df.iloc[:,i].head(1).values[0],int):
+                elif isinstance(self._sample_df.iloc[:, i].head(1).values[0], int):
                     old_metadata["structural_type"] = type(10)
                 else:
                     old_metadata["structural_type"] = type(10.2)
                 inputs.metadata = inputs.metadata.update((mbase.ALL_ELEMENTS, i), old_metadata)
                 print("updated metdata : ", inputs.metadata.query((mbase.ALL_ELEMENTS, i)))
-
-
-
 
         # calling the utility to categorical datatype columns
         metadata = self._produce(inputs, inputs.metadata, [])
@@ -287,7 +287,7 @@ class Profiler(TransformerPrimitiveBase[Input, Output, Hyperparams]):
                 if len(temp_value) > 1:
                     ##print("$$$$$$", ('https://metadata.datadrivendiscovery.org/types/CategoricalData', temp_value[1]))
                     each_res["semantic_types"] = (
-                    'https://metadata.datadrivendiscovery.org/types/CategoricalData', temp_value[1])
+                        'https://metadata.datadrivendiscovery.org/types/CategoricalData', temp_value[1])
                 else:
                     each_res["semantic_types"] = ('https://metadata.datadrivendiscovery.org/types/CategoricalData')
 
