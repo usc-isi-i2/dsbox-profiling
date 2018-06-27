@@ -3,8 +3,8 @@ import sys
 import time
 import typing
 from collections import defaultdict
-import d3m.metadata.base as mbase
 
+import d3m.metadata.base as mbase
 import numpy as np
 import pandas as pd
 import pytypes
@@ -16,6 +16,7 @@ from d3m.primitive_interfaces.transformer import TransformerPrimitiveBase
 
 from . import category_detection
 from . import config
+from . import date_detector
 from . import dtype_detector
 from . import feature_compute_hih as fc_hih
 from . import feature_compute_lfh as fc_lfh
@@ -24,7 +25,7 @@ Input = typing.Union[container.Dataset,
                      container.DataFrame,
                      container.ndarray,
                      container.matrix
-                     ]
+]
 
 Output = typing.Union[container.Dataset,
                       container.DataFrame,
@@ -55,7 +56,7 @@ computable_metafeatures = [
 
 default_metafeatures = [
     'ratio_of_values_containing_numeric_char', 'ratio_of_numeric_values',
-    'number_of_outlier_numeric_values', 'num_filename', 'number_of_tokens_containing_numeric_char','semantic_types']
+    'number_of_outlier_numeric_values', 'num_filename', 'number_of_tokens_containing_numeric_char', 'semantic_types']
 
 metafeature_hyperparam = hyperparams.Enumeration(
     computable_metafeatures,
@@ -129,6 +130,8 @@ class Profiler(TransformerPrimitiveBase[Input, Output, Hyperparams]):
         self._detect_language = False
         self._topk = 10
         self._verbose = VERBOSE
+        self._sample_df = None
+        self._DateFeaturizer = None
         # list of specified features to compute
         self._specified_features = hyperparams["metafeatures"] if hyperparams else default_metafeatures
 
@@ -155,10 +158,40 @@ class Profiler(TransformerPrimitiveBase[Input, Output, Hyperparams]):
                 # Nothing to do, since cannot store the computed metadata.
                 return CallResult(inputs)
 
-        # could call the integer and float datatype here
-
+        # calling the utility to detect integer and float datatype columns
         inputs = dtype_detector.detector(inputs)
+        # calling date detector
 
+        self._DateFeaturizer = date_detector.DateFeaturizer(inputs)
+        if inputs.shape[0] > 50:
+            self._sample_df = inputs.dropna().iloc[0:50, :]
+        else:
+            self._sample_df = inputs
+        cols = self._DateFeaturizer.sample_dataframe(self._sample_df)
+        if cols:
+            indices=[inputs.columns.get_loc(c) for c in cols if c in inputs.columns]
+            print("indices",indices)
+            for i in indices:
+                old_metadata = dict(inputs.metadata.query((mbase.ALL_ELEMENTS, i)))
+                print("old metadata",old_metadata)
+                temp_value = list(old_metadata["semantic_types"])
+                if len(temp_value) > 1:
+                    old_metadata["semantic_types"] = ('https://metadata.datadrivendiscovery.org/types/CategoricalData','https://metadata.datadrivendiscovery.org/types/Time', temp_value[1])
+                else:
+                    old_metadata["semantic_types"] = ('https://metadata.datadrivendiscovery.org/types/CategoricalData','https://metadata.datadrivendiscovery.org/types/Time')
+                if isinstance(self._sample_df.iloc[:,i].head(1).values[0],str):
+                    old_metadata["structural_type"] = type("str")
+                elif isinstance(self._sample_df.iloc[:,i].head(1).values[0],int):
+                    old_metadata["structural_type"] = type(10)
+                else:
+                    old_metadata["structural_type"] = type(10.2)
+                inputs.metadata = inputs.metadata.update((mbase.ALL_ELEMENTS, i), old_metadata)
+                print("updated metdata : ", inputs.metadata.query((mbase.ALL_ELEMENTS, i)))
+
+
+
+
+        # calling the utility to categorical datatype columns
         metadata = self._produce(inputs, inputs.metadata, [])
         # I guess there are updating the metdata here
         inputs.metadata = metadata
@@ -244,8 +277,8 @@ class Profiler(TransformerPrimitiveBase[Input, Output, Hyperparams]):
             # if block updated on 6/26
 
             if 'semantic_types' in self._specified_features and is_category[column_name]:
-                #rewrites old metadata
-                print("categorical column index",column_name)
+                # rewrites old metadata
+                print("categorical column index", column_name)
                 print("\n")
                 old_metadata = dict(data.metadata.query((mbase.ALL_ELEMENTS, column_counter)))
                 print("old metadata", old_metadata)
@@ -253,12 +286,12 @@ class Profiler(TransformerPrimitiveBase[Input, Output, Hyperparams]):
                 temp_value = list(old_metadata["semantic_types"])
                 if len(temp_value) > 1:
                     ##print("$$$$$$", ('https://metadata.datadrivendiscovery.org/types/CategoricalData', temp_value[1]))
-                    each_res["semantic_types"] = ('https://metadata.datadrivendiscovery.org/types/CategoricalData', temp_value[1])
+                    each_res["semantic_types"] = (
+                    'https://metadata.datadrivendiscovery.org/types/CategoricalData', temp_value[1])
                 else:
                     each_res["semantic_types"] = ('https://metadata.datadrivendiscovery.org/types/CategoricalData')
 
-
-                #s
+                # s
 
             if (("spearman_correlation_of_features" in self._specified_features) and
                     (column_name in corr_columns)):

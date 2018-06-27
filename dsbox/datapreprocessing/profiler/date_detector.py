@@ -4,7 +4,7 @@ import pandas as pd
 from warnings import warn
 import re
 
-from dependencies.date_extractor import DateExtractor
+from . import date_extractor
 
 
 class DateFeaturizer:
@@ -39,7 +39,7 @@ class DateFeaturizer:
             self.extractor_settings = {}
 
         self._samples_to_print = []
-        self.date_extractor = DateExtractor()
+        self.date_extractor = date_extractor.DateExtractor()
 
         # Original settings saved, do not modify - readonly
         self._crY = create_year
@@ -55,77 +55,78 @@ class DateFeaturizer:
         self._month_full = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September',
                             'October', 'November', 'December']
 
-    def featurize_dataframe(self, sampled_df=None):
+    def _parse_column(self, df, column_label):
         """
-        Featurize all date values in the dataframe
-        sampled_df: [dataframe] Df that contains a sample of rows from original df
+        Parse column and detect dates
         """
-        parsed_columns = []
 
-        if sampled_df is not None:
-            parsed_columns = self.sample_dataframe(sampled_df)
+        # relies on pandas dtype, change it to metdata info
+        if df[column_label].dtype == float:
+            return None
+
+        parsed_values = []
+        multiple_values = False
+
+        custom_settings = dict(self.extractor_settings)
+        custom_settings['additional_formats'] = ['D-%d/%m/%y', '%m00%y', "%Y%m%d", "%a %B %d %H:%M:%S EDT %Y",
+                                                 "%a %B %d %H:%M:%S %Z %Y"]
+        custom_settings['use_default_formats'] = False
+
+        month_parsed_values = self._parse_month(df, column_label)
+
+        if self._parse_month_range(df, column_label) is not None:
+            # Do not parse month ranges
+            warn("Month range ignored")
+            print(column_label)
+            return None
+
+        if month_parsed_values is not None:
+            # change featurization settings
+            self.create_day = False
+            self.create_day_of_week = False
+            self.create_epoch = False
+            self.create_month = True
+            self.create_year = False
+            return month_parsed_values
+
+        if self._parse_weekday(df, column_label) is not None:
+            warn("Weekday ignored")
+            return None
+
+        for item in df[column_label]:
+
+            extracted = self.date_extractor.extract(str(item), **custom_settings)
+
+            if len(extracted) == 0:
+                extracted = self.date_extractor.extract(str(item), **self.extractor_settings)
+
+            if len(extracted) > 0:
+                if len(extracted) > 1:
+                    multiple_values = True
+                parsed_values.append(extracted[0])
+            else:
+                parsed_values.append(None)
+        if multiple_values:
+            warn("Warning: multiple dates detected in column: " + column_label)
+
+        frac_parsed = 1 - ((parsed_values.count(None) - df[column_label].isnull().sum()) / len(parsed_values))
+
+        if frac_parsed >= self.min_threshold:
+            return parsed_values
         else:
-            parsed_columns = self.df.columns.values
+            # print(column_label," does not qualify")
+            # print(frac_parsed)
+            return None
 
-        for column_label in parsed_columns:
-            values = self._parse_column(self.df, column_label)
-            if values is not None:
-                self._featurize_column(values, column_label)
-            self.create_day = self._crD
-            self.create_day_of_week = self._crDow
-            self.create_epoch = self._crE
-            self.create_month = self._crM
-            self.create_year = self._crY
-
-        self.df = self.df.drop(parsed_columns, axis=1)
-        return {
-            'df': self.df,
-            'date_columns': self._samples_to_print
-        }
-
-    def _featurize_column(self, values, column_label):
-        """
-        Featurize a column that has been parsed
-        """
-        years = []
-        days = []
-        months = []
-        dows = []
-        epochs = []
-        for x in values:
-            if self.create_year:
-                years.append(x.year if x is not None else None)
-            if self.create_month:
-                months.append(x.month if x is not None else None)
-            if self.create_day:
-                days.append(x.day if x is not None else None)
-            if self.create_day_of_week:
-                dows.append(x.isoweekday() if x is not None else None)
-            if self.create_epoch:
-                if x is not None:
-                    try:
-                        epoch = time.mktime(x.timetuple())
-                    except OverflowError as e:
-                        epoch = None
-                        print(e)
-                else:
-                    epoch = None
-                epochs.append(epoch)
-        if self.create_year:
-            self.df[column_label + "_year"] = years
-            self._samples_to_print.append(column_label + "_year")
-        if self.create_month:
-            self.df[column_label + "_month"] = months
-            self._samples_to_print.append(column_label + "_month")
-        if self.create_day:
-            self.df[column_label + "_day"] = days
-            self._samples_to_print.append(column_label + "_day")
-        if self.create_day_of_week:
-            self.df[column_label + "_day_of_week"] = dows
-            self._samples_to_print.append(column_label + "_day_of_week")
-        if self.create_epoch:
-            self.df[column_label + "_epochs"] = epochs
-            self._samples_to_print.append(column_label + "_epochs")
+    def sample_dataframe(self, sampled_df):
+        date_cols = []
+        print("date detector \n")
+        #loops all the column names
+        for column_label in self.df.columns.values:
+            if self._parse_column(sampled_df, column_label) is not None:
+                #returns
+                date_cols.append(column_label)
+        return date_cols
 
     def _parse_month_range(self, df, column_label):
         pattern = re.compile(self._month_range_pattern)
@@ -223,82 +224,85 @@ class DateFeaturizer:
             # print(frac_parsed)
             return None
 
-    def _parse_column(self, df, column_label):
+
+
+    def _featurize_column(self, values, column_label):
         """
-        Parse column and detect dates
+        Featurize a column that has been parsed
         """
+        years = []
+        days = []
+        months = []
+        dows = []
+        epochs = []
+        for x in values:
+            if self.create_year:
+                years.append(x.year if x is not None else None)
+            if self.create_month:
+                months.append(x.month if x is not None else None)
+            if self.create_day:
+                days.append(x.day if x is not None else None)
+            if self.create_day_of_week:
+                dows.append(x.isoweekday() if x is not None else None)
+            if self.create_epoch:
+                if x is not None:
+                    try:
+                        epoch = time.mktime(x.timetuple())
+                    except OverflowError as e:
+                        epoch = None
+                        print(e)
+                else:
+                    epoch = None
+                epochs.append(epoch)
+        if self.create_year:
+            self.df[column_label + "_year"] = years
+            self._samples_to_print.append(column_label + "_year")
+        if self.create_month:
+            self.df[column_label + "_month"] = months
+            self._samples_to_print.append(column_label + "_month")
+        if self.create_day:
+            self.df[column_label + "_day"] = days
+            self._samples_to_print.append(column_label + "_day")
+        if self.create_day_of_week:
+            self.df[column_label + "_day_of_week"] = dows
+            self._samples_to_print.append(column_label + "_day_of_week")
+        if self.create_epoch:
+            self.df[column_label + "_epochs"] = epochs
+            self._samples_to_print.append(column_label + "_epochs")
 
-        # Do not parse float values
-        if df[column_label].dtype == float:
-            return None
 
-        parsed_values = []
-        multiple_values = False
 
-        custom_settings = dict(self.extractor_settings)
-        custom_settings['additional_formats'] = ['D-%d/%m/%y', '%m00%y', "%Y%m%d", "%a %B %d %H:%M:%S EDT %Y",
-                                                 "%a %B %d %H:%M:%S %Z %Y"]
-        custom_settings['use_default_formats'] = False
 
-        month_parsed_values = self._parse_month(df, column_label)
+    def featurize_dataframe(self, sampled_df=None):
+        """
+        Featurize all date values in the dataframe
 
-        if self._parse_month_range(df, column_label) is not None:
-            # Do not parse month ranges
-            warn("Month range ignored")
-            print(column_label)
-            return None
+        sampled_df: [dataframe] Df that contains a sample of rows from original df
+        """
+        parsed_columns = []
 
-        if month_parsed_values is not None:
-            # change featurization settings
-            self.create_day = False
-            self.create_day_of_week = False
-            self.create_epoch = False
-            self.create_month = True
-            self.create_year = False
-            return month_parsed_values
-
-        if self._parse_weekday(df, column_label) is not None:
-            warn("Weekday ignored")
-            return None
-
-        for item in df[column_label]:
-
-            extracted = self.date_extractor.extract(str(item), **custom_settings)
-
-            if len(extracted) == 0:
-                extracted = self.date_extractor.extract(str(item), **self.extractor_settings)
-
-            if len(extracted) > 0:
-                if len(extracted) > 1:
-                    multiple_values = True
-                parsed_values.append(extracted[0])
-            else:
-                parsed_values.append(None)
-        if multiple_values:
-            warn("Warning: multiple dates detected in column: " + column_label)
-
-        frac_parsed = 1 - ((parsed_values.count(None) - df[column_label].isnull().sum()) / len(parsed_values))
-
-        if frac_parsed >= self.min_threshold:
-            return parsed_values
+        # given a sampled dataframe
+        if sampled_df is not None:
+            parsed_columns = self.sample_dataframe(sampled_df)
         else:
-            # print(column_label," does not qualify")
-            # print(frac_parsed)
-            return None
+            # given the whole dataframe
+            parsed_columns = self.df.columns.values
 
-    def print_sample(self, input_filename):
-        # Put random 20 rows of the dataset with the parsed dates into a sample csv
-        if self.df.shape[0] > 20:
-            N = 20
-        else:
-            N = self.df.shape[0]
-        self.df[self._samples_to_print] \
-            .sample(n=N) \
-            .to_csv(input_filename + "_sample.csv")
+        for column_label in parsed_columns:
+            values = self._parse_column(self.df, column_label)
+            if values is not None:
+                self._featurize_column(values, column_label)
+            self.create_day = self._crD
+            self.create_day_of_week = self._crDow
+            self.create_epoch = self._crE
+            self.create_month = self._crM
+            self.create_year = self._crY
 
-    def sample_dataframe(self, sampled_df):
-        date_cols = []
-        for column_label in self.df.columns.values:
-            if self._parse_column(sampled_df, column_label) is not None:
-                date_cols.append(column_label)
-        return date_cols
+        self.df = self.df.drop(parsed_columns, axis=1)
+        return {
+            'df': self.df,
+            'date_columns': self._samples_to_print
+        }
+
+
+
