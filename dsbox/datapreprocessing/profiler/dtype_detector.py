@@ -32,28 +32,27 @@ def detector(inputs):
                           'https://metadata.datadrivendiscovery.org/types/Attribute')
               }
 
+    print("integer and float detector \n")
+
 
     for col in range(inputs.shape[1]):
         temp = inputs.iloc[:, col]
         old_metadata = dict(inputs.metadata.query((mbase.ALL_ELEMENTS, col)))
-        print("old metadata", old_metadata)
         dtype = pd.DataFrame(temp.dropna().str.isnumeric().value_counts())
         ## if there is already a data type, see if that is equal to what we identified, else update
         ## corner case : Integer type, could be a categorical Arrtribute
         # detetct integers and update metadata
+        
         if True in dtype.index:
             if dtype.loc[True][0] == temp.dropna().shape[0]:
-                print("integer column index", col)
                 if old_metadata["semantic_types"] == lookup["int"] or old_metadata["semantic_types"] == lookup[
                     "Categorical"] or old_metadata["semantic_types"] == lookup["Ordinal"]:
                     old_metadata["structural_type"] = type(10)
+
                 else:
                     temp_value = list(old_metadata["semantic_types"])
-                    #print("temp value", temp_value)
-
-                    #print("temp_value[1]", temp_value[1])
-                    if len(temp_value) > 1:
-                        old_metadata["semantic_types"] = ('http://schema.org/Integer', temp_value[1])
+                    if len(temp_value) >= 1:
+                        old_metadata["semantic_types"] = ('http://schema.org/Integer', temp_value[-1])
                     else:
                         old_metadata["semantic_types"] = ('http://schema.org/Integer')
                     old_metadata["structural_type"] = type(10)
@@ -62,27 +61,18 @@ def detector(inputs):
             dtype = pd.DataFrame(temp.dropna().apply(isfloat).value_counts())
             if True in dtype.index:
                 if dtype.loc[True][0] == temp.dropna().shape[0]:
-                    print("float column index")
-                if old_metadata["semantic_types"] == lookup["float"] or old_metadata["semantic_types"] == lookup[
+                    if old_metadata["semantic_types"] == lookup["float"] or old_metadata["semantic_types"] == lookup[
                     "Categorical"] or old_metadata["semantic_types"] == lookup["Ordinal"]:
-                    old_metadata["structural_type"] = type(10.0)
-                else:
-                    temp_value = list(old_metadata["semantic_types"])
-                    #print("temp value", temp_value)
-                    #print("temp_value[1]", temp_value[1])
-                    if len(temp_value) > 1:
-                        #print("@@@@@", ('http://schema.org/Integer', temp_value[1]))
-                        old_metadata["semantic_types"] = ('http://schema.org/Integer', temp_value[1])
+                        old_metadata["structural_type"] = type(10.0)
                     else:
-                        old_metadata["semantic_types"] = ('http://schema.org/Integer')
-                    old_metadata["structural_type"] = type(10)
-        print("new metadata", old_metadata)
-        print("/n")
+                        temp_value = list(old_metadata["semantic_types"])
+                        if len(temp_value) > 1:
+                            old_metadata["semantic_types"] = ('http://schema.org/Float', temp_value[-1])
+                        else:
+                            old_metadata["semantic_types"] = ('http://schema.org/Float')
+                        old_metadata["structural_type"] = type(10.0)
         inputs.metadata = inputs.metadata.update((mbase.ALL_ELEMENTS, col), old_metadata)
 
-
-    print("Output :", inputs.head(2))
-    print("/n")
     return inputs
 
 

@@ -66,7 +66,7 @@ metafeature_hyperparam = hyperparams.Enumeration(
 
 class Hyperparams(hyperparams.Hyperparams):
     metafeatures = hyperparams.Set(
-        metafeature_hyperparam, set(default_metafeatures), min_size=1, max_size=len(computable_metafeatures),
+        metafeature_hyperparam, default_metafeatures, min_size=1, max_size=len(computable_metafeatures),
         description="Compute metadata descriptions of the dataset",
         semantic_types=['https://metadata.datadrivendiscovery.org/types/MetafeatureParameter'])
 
@@ -160,6 +160,7 @@ class Profiler(TransformerPrimitiveBase[Input, Output, Hyperparams]):
 
         # calling the utility to detect integer and float datatype columns
         inputs = dtype_detector.detector(inputs)
+
         # calling date detector
 
         self._DateFeaturizer = date_detector.DateFeaturizer(inputs)
@@ -170,15 +171,15 @@ class Profiler(TransformerPrimitiveBase[Input, Output, Hyperparams]):
         cols = self._DateFeaturizer.sample_dataframe(self._sample_df)
         if cols:
             indices = [inputs.columns.get_loc(c) for c in cols if c in inputs.columns]
-            print("indices", indices)
+            print("date detector: indices", indices)
             for i in indices:
                 old_metadata = dict(inputs.metadata.query((mbase.ALL_ELEMENTS, i)))
                 print("old metadata", old_metadata)
                 temp_value = list(old_metadata["semantic_types"])
-                if len(temp_value) > 1:
+                if len(temp_value) >= 1:
                     old_metadata["semantic_types"] = ('https://metadata.datadrivendiscovery.org/types/CategoricalData',
                                                       'https://metadata.datadrivendiscovery.org/types/Time',
-                                                      temp_value[1])
+                                                      temp_value[-1])
                 else:
                     old_metadata["semantic_types"] = ('https://metadata.datadrivendiscovery.org/types/CategoricalData',
                                                       'https://metadata.datadrivendiscovery.org/types/Time')
@@ -189,7 +190,7 @@ class Profiler(TransformerPrimitiveBase[Input, Output, Hyperparams]):
                 else:
                     old_metadata["structural_type"] = type(10.2)
                 inputs.metadata = inputs.metadata.update((mbase.ALL_ELEMENTS, i), old_metadata)
-                print("updated metdata : ", inputs.metadata.query((mbase.ALL_ELEMENTS, i)))
+                print("date detector: updated metdata : ", inputs.metadata.query((mbase.ALL_ELEMENTS, i)))
 
         # calling the utility to categorical datatype columns
         metadata = self._produce(inputs, inputs.metadata, [])
@@ -278,20 +279,17 @@ class Profiler(TransformerPrimitiveBase[Input, Output, Hyperparams]):
 
             if 'semantic_types' in self._specified_features and is_category[column_name]:
                 # rewrites old metadata
-                print("categorical column index", column_name)
-                print("\n")
                 old_metadata = dict(data.metadata.query((mbase.ALL_ELEMENTS, column_counter)))
-                print("old metadata", old_metadata)
-                print("\n")
                 temp_value = list(old_metadata["semantic_types"])
-                if len(temp_value) > 1:
+                if len(temp_value) == 2:
                     ##print("$$$$$$", ('https://metadata.datadrivendiscovery.org/types/CategoricalData', temp_value[1]))
                     each_res["semantic_types"] = (
-                        'https://metadata.datadrivendiscovery.org/types/CategoricalData', temp_value[1])
-                else:
-                    each_res["semantic_types"] = ('https://metadata.datadrivendiscovery.org/types/CategoricalData')
-
-                # s
+                        'https://metadata.datadrivendiscovery.org/types/CategoricalData', temp_value[-1])
+                elif len(temp_value) == 1:
+                    each_res["semantic_types"] = ('https://metadata.datadrivendiscovery.org/types/CategoricalData',temp_value[-1])
+                elif len(temp_value) == 3:
+                    each_res["semantic_types"] = (
+                    'https://metadata.datadrivendiscovery.org/types/CategoricalData',temp_value[-2] ,temp_value[-1])
 
             if (("spearman_correlation_of_features" in self._specified_features) and
                     (column_name in corr_columns)):
@@ -367,12 +365,6 @@ class Profiler(TransformerPrimitiveBase[Input, Output, Hyperparams]):
             # update metadata for a specific column
 
             metadata = metadata.update(prefix + [ALL_ELEMENTS, column_counter], each_res)
-            new_metadata = dict(data.metadata.query((mbase.ALL_ELEMENTS, column_counter)))
-            print("new metadata", new_metadata)
-            print("\n")
-
-        if self._verbose: print("====================calculations finished ====================\n")
-
         return metadata
 
 
