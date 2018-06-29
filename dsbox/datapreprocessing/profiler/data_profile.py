@@ -171,10 +171,8 @@ class Profiler(TransformerPrimitiveBase[Input, Output, Hyperparams]):
         cols = self._DateFeaturizer.sample_dataframe(self._sample_df)
         if cols:
             indices = [inputs.columns.get_loc(c) for c in cols if c in inputs.columns]
-            print("date detector: indices", indices)
             for i in indices:
                 old_metadata = dict(inputs.metadata.query((mbase.ALL_ELEMENTS, i)))
-                print("old metadata", old_metadata)
                 temp_value = list(old_metadata["semantic_types"])
                 if len(temp_value) >= 1:
                     old_metadata["semantic_types"] = ('https://metadata.datadrivendiscovery.org/types/CategoricalData',
@@ -190,7 +188,7 @@ class Profiler(TransformerPrimitiveBase[Input, Output, Hyperparams]):
                 else:
                     old_metadata["structural_type"] = type(10.2)
                 inputs.metadata = inputs.metadata.update((mbase.ALL_ELEMENTS, i), old_metadata)
-                print("date detector: updated metdata : ", inputs.metadata.query((mbase.ALL_ELEMENTS, i)))
+                
 
         # calling the utility to categorical datatype columns
         metadata = self._produce(inputs, inputs.metadata, [])
@@ -264,9 +262,7 @@ class Profiler(TransformerPrimitiveBase[Input, Output, Hyperparams]):
             corr_id = [data.columns.get_loc(n) for n in corr_columns]
 
         is_category = category_detection.category_detect(data)
-        print("is_category call", is_category)
-        print("\n")
-
+       
         # STEP 2: column-level calculations
         column_counter = -1
         for column_name in data:
