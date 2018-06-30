@@ -1,5 +1,7 @@
 import json
 import sys
+
+sys.path.append('/Users/runqishao/Documents/github/dsbox-rqs/dsbox-cleaning/dsbox/datapreprocessing/cleaner')
 import time
 import typing
 from collections import defaultdict
@@ -14,9 +16,14 @@ from d3m.metadata.base import DataMetadata, PrimitiveFamily, PrimitiveAlgorithmT
 from d3m.primitive_interfaces.base import CallResult
 from d3m.primitive_interfaces.transformer import TransformerPrimitiveBase
 
+from date_featurizer_org import DateFeaturizer
+
+from column_fold import FoldColumns
+from spliter import PhoneParser, PunctuationSplitter, NumAlphaSplitter
+
 from . import category_detection
 from . import config
-from . import date_detector
+# from . import date_detector
 from . import dtype_detector
 from . import feature_compute_hih as fc_hih
 from . import feature_compute_lfh as fc_lfh
@@ -163,12 +170,13 @@ class Profiler(TransformerPrimitiveBase[Input, Output, Hyperparams]):
 
         # calling date detector
 
-        self._DateFeaturizer = date_detector.DateFeaturizer(inputs)
+        # self._DateFeaturizer = date_detector.DateFeaturizer(inputs)
+        self._DateFeaturizer = DateFeaturizer(inputs)
         if inputs.shape[0] > 50:
             self._sample_df = inputs.dropna().iloc[0:50, :]
         else:
             self._sample_df = inputs
-        cols = self._DateFeaturizer.sample_dataframe(self._sample_df)
+        cols = self._DateFeaturizer.detect_date_columns(self._sample_df)
         if cols:
             indices = [inputs.columns.get_loc(c) for c in cols if c in inputs.columns]
             for i in indices:
@@ -188,12 +196,131 @@ class Profiler(TransformerPrimitiveBase[Input, Output, Hyperparams]):
                 else:
                     old_metadata["structural_type"] = type(10.2)
                 inputs.metadata = inputs.metadata.update((mbase.ALL_ELEMENTS, i), old_metadata)
-                
 
         # calling the utility to categorical datatype columns
         metadata = self._produce(inputs, inputs.metadata, [])
         # I guess there are updating the metdata here
         inputs.metadata = metadata
+
+        # calling the PhoneParser detector
+
+        self._PhoneParser = PhoneParser(self._sample_df)
+
+        PhoneParser_indices = self._PhoneParser.detect()
+        if PhoneParser_indices:
+            print("PhoneParser detector: indices", PhoneParser_indices)
+            for i in PhoneParser_indices:
+                old_metadata = dict(inputs.metadata.query((mbase.ALL_ELEMENTS, i)))
+                # print("old metadata", old_metadata)
+                temp_value = list(old_metadata["semantic_types"])
+                if len(temp_value) >= 1:
+                    old_metadata["semantic_types"] = ('https://metadata.datadrivendiscovery.org/types/AmericanPhoneNumber',
+                                                      temp_value[-1])
+                else:
+                    old_metadata["semantic_types"] = ('https://metadata.datadrivendiscovery.org/types/CategoricalData',)
+
+                if isinstance(self._sample_df.iloc[:, i].head(1).values[0], str):
+                    old_metadata["structural_type"] = type("str")
+                elif isinstance(self._sample_df.iloc[:, i].head(1).values[0], int):
+                    old_metadata["structural_type"] = type(10)
+                else:
+                    old_metadata["structural_type"] = type(10.2)
+                inputs.metadata = inputs.metadata.update((mbase.ALL_ELEMENTS, i), old_metadata)
+                # print("PhoneParser detector: updated metdata : ", inputs.metadata.query((mbase.ALL_ELEMENTS, i)))
+
+
+        # calling the PunctuationSplitter detector
+
+        self._PunctuationSplitter = PunctuationSplitter(self._sample_df)
+
+        PunctuationSplitter_indices = self._PunctuationSplitter.detect()
+        if PunctuationSplitter_indices:
+            print("PunctuationSplitter detector: indices", PunctuationSplitter_indices)
+            for i in PunctuationSplitter_indices:
+                old_metadata = dict(inputs.metadata.query((mbase.ALL_ELEMENTS, i)))
+                # print("old metadata", old_metadata)
+                temp_value = list(old_metadata["semantic_types"])
+                if len(temp_value) >= 1:
+                    old_metadata["semantic_types"] = ('https://metadata.datadrivendiscovery.org/types/CanBeSplitByPunctuation',
+                                                      temp_value[-1])
+                else:
+                    old_metadata["semantic_types"] = ('https://metadata.datadrivendiscovery.org/types/CanBeSplitByPunctuation',)
+
+                if isinstance(self._sample_df.iloc[:, i].head(1).values[0], str):
+                    old_metadata["structural_type"] = type("str")
+                elif isinstance(self._sample_df.iloc[:, i].head(1).values[0], int):
+                    old_metadata["structural_type"] = type(10)
+                else:
+                    old_metadata["structural_type"] = type(10.2)
+                inputs.metadata = inputs.metadata.update((mbase.ALL_ELEMENTS, i), old_metadata)
+                # print("PunctuationSplitter detector: updated metdata : ", inputs.metadata.query((mbase.ALL_ELEMENTS, i)))
+
+        # self._PunctuationSplitter.perform(PunctuationSplitter_indices)
+
+        """
+        Try to perform the cleaner for testing, should be in somewhere in dsbox-cleaning
+        
+        """
+
+        # calling the NumAlphaSplitter detector
+
+        self._NumAlphaSplitter = NumAlphaSplitter(self._sample_df)
+
+        NumAlphaSplitter_indices = self._NumAlphaSplitter.detect()
+
+        if NumAlphaSplitter_indices:
+            print("NumAlphaSplitter detector: indices", NumAlphaSplitter_indices)
+            for i in NumAlphaSplitter_indices:
+                old_metadata = dict(inputs.metadata.query((mbase.ALL_ELEMENTS, i)))
+                # print("old metadata", old_metadata)
+                temp_value = list(old_metadata["semantic_types"])
+                if len(temp_value) >= 1:
+                    old_metadata["semantic_types"] = ('https://metadata.datadrivendiscovery.org/types/CanBeSplitByAlphanumeric',
+                                                      temp_value[-1])
+                else:
+                    old_metadata["semantic_types"] = ('https://metadata.datadrivendiscovery.org/types/CanBeSplitByAlphanumeric',)
+
+                if isinstance(self._sample_df.iloc[:, i].head(1).values[0], str):
+                    old_metadata["structural_type"] = type("str")
+                elif isinstance(self._sample_df.iloc[:, i].head(1).values[0], int):
+                    old_metadata["structural_type"] = type(10)
+                else:
+                    old_metadata["structural_type"] = type(10.2)
+                inputs.metadata = inputs.metadata.update((mbase.ALL_ELEMENTS, i), old_metadata)
+                # print("NumAlphaSplitter detector: updated metdata : ", inputs.metadata.query((mbase.ALL_ELEMENTS, i)))
+
+        # self._NumAlphaSplitter.perform(NumAlphaSplitter_indices)
+
+        # calling foldable detector
+        self._foldcolumns = FoldColumns(self._sample_df)
+
+        foldable_column_lst = self._foldcolumns.detect()
+        indices = list()
+        if len(foldable_column_lst) > 0:
+            for fc in foldable_column_lst:
+                indices.extend(fc)
+
+        print("foldable detector: indices", indices)
+        for i in indices:
+            old_metadata = dict(inputs.metadata.query((mbase.ALL_ELEMENTS, i)))
+            # print("old metadata", old_metadata)
+            temp_value = list(old_metadata["semantic_types"])
+            if len(temp_value) >= 1:
+                old_metadata["semantic_types"] = ('https://metadata.datadrivendiscovery.org/types/Can_be_folded',
+                                                  temp_value[-1])
+            else:
+                old_metadata["semantic_types"] = ('https://metadata.datadrivendiscovery.org/types/Can_be_folded',)
+
+            if isinstance(self._sample_df.iloc[:, i].head(1).values[0], str):
+                old_metadata["structural_type"] = type("str")
+            elif isinstance(self._sample_df.iloc[:, i].head(1).values[0], int):
+                old_metadata["structural_type"] = type(10)
+            else:
+                old_metadata["structural_type"] = type(10.2)
+            inputs.metadata = inputs.metadata.update((mbase.ALL_ELEMENTS, i), old_metadata)
+            # print("foldable detector: updated metdata : ", inputs.metadata.query((mbase.ALL_ELEMENTS, i)))
+
+        # self._foldcolumns.perform(foldable_column_lst)
 
         return CallResult(inputs)
 
@@ -262,7 +389,7 @@ class Profiler(TransformerPrimitiveBase[Input, Output, Hyperparams]):
             corr_id = [data.columns.get_loc(n) for n in corr_columns]
 
         is_category = category_detection.category_detect(data)
-       
+
         # STEP 2: column-level calculations
         column_counter = -1
         for column_name in data:
@@ -282,10 +409,12 @@ class Profiler(TransformerPrimitiveBase[Input, Output, Hyperparams]):
                     each_res["semantic_types"] = (
                         'https://metadata.datadrivendiscovery.org/types/CategoricalData', temp_value[-1])
                 elif len(temp_value) == 1:
-                    each_res["semantic_types"] = ('https://metadata.datadrivendiscovery.org/types/CategoricalData',temp_value[-1])
+                    each_res["semantic_types"] = (
+                        'https://metadata.datadrivendiscovery.org/types/CategoricalData', temp_value[-1])
                 elif len(temp_value) == 3:
                     each_res["semantic_types"] = (
-                    'https://metadata.datadrivendiscovery.org/types/CategoricalData',temp_value[-2] ,temp_value[-1])
+                        'https://metadata.datadrivendiscovery.org/types/CategoricalData', temp_value[-2],
+                        temp_value[-1])
 
             if (("spearman_correlation_of_features" in self._specified_features) and
                     (column_name in corr_columns)):
