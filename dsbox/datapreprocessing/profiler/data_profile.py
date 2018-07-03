@@ -1,7 +1,6 @@
 import json
 import sys
 
-sys.path.append('/Users/runqishao/Documents/github/dsbox-rqs/dsbox-cleaning/dsbox/datapreprocessing/cleaner')
 import time
 import typing
 from collections import defaultdict
@@ -16,9 +15,9 @@ from d3m.metadata.base import DataMetadata, PrimitiveFamily, PrimitiveAlgorithmT
 from d3m.primitive_interfaces.base import CallResult
 from d3m.primitive_interfaces.transformer import TransformerPrimitiveBase
 
-from date_featurizer_org import DateFeaturizerOrg
+from dsbox.datapreprocessing.cleaner.date_featurizer_org import DateFeaturizerOrg
 
-from spliter import PhoneParser, PunctuationParser, NumAlphaParser
+from dsbox.datapreprocessing.cleaner.spliter import PhoneParser, PunctuationParser, NumAlphaParser
 
 from . import category_detection
 from . import config
