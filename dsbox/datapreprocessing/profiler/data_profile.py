@@ -26,16 +26,9 @@ from . import dtype_detector
 from . import feature_compute_hih as fc_hih
 from . import feature_compute_lfh as fc_lfh
 
-Input = typing.Union[container.Dataset,
-                     container.DataFrame,
-                     container.ndarray,
-                     container.matrix
-]
+Input = container.DataFrame
+Output = container.DataFrame
 
-Output = typing.Union[container.Dataset,
-                      container.DataFrame,
-                      container.ndarray,
-                      container.matrix]
 
 VERBOSE = 0
 
