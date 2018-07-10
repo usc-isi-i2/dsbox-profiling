@@ -37,13 +37,6 @@ def detector(inputs):
     for col in range(inputs.shape[1]):
         temp = inputs.iloc[:, col]
         old_metadata = dict(inputs.metadata.query((mbase.ALL_ELEMENTS, col)))
-        _logger.info(
-            "Integer and float detector. 'column_index': '%(column_index)d', 'old_metadata': '%(old_metadata)s'",
-            {
-                'column_index': col,
-                'old_metadata': old_metadata,
-            },
-        )
         dtype = pd.DataFrame(temp.dropna().str.isnumeric().value_counts())
         ## if there is already a data type, see if that is equal to what we identified, else update
         ## corner case : Integer type, could be a categorical Arrtribute
@@ -79,9 +72,10 @@ def detector(inputs):
                         old_metadata["structural_type"] = type(10.0)
 
         _logger.info(
-            "Integer and float detector. 'column_index': '%(column_index)d', 'new_metadata': '%(new_metadata)s'",
+            "Integer and float detector. 'column_index': '%(column_index)d', 'old_metadata': '%(old_metadata)s', 'new_metadata': '%(new_metadata)s'",
             {
                 'column_index': col,
+                'old_metadata': dict(inputs.metadata.query((mbase.ALL_ELEMENTS, col))),
                 'new_metadata': old_metadata,
             },
         )

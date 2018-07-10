@@ -177,13 +177,6 @@ class Profiler(TransformerPrimitiveBase[Input, Output, Hyperparams]):
             indices = [inputs.columns.get_loc(c) for c in cols if c in inputs.columns]
             for i in indices:
                 old_metadata = dict(inputs.metadata.query((mbase.ALL_ELEMENTS, i)))
-                _logger.info(
-                    "Date detector. 'column_index': '%(column_index)d', 'old_metadata': '%(old_metadata)s'",
-                    {
-                        'column_index': i,
-                        'old_metadata': old_metadata,
-                    },
-                )
                 temp_value = list(old_metadata["semantic_types"])
                 if len(temp_value) >= 1:
                     old_metadata["semantic_types"] = ('https://metadata.datadrivendiscovery.org/types/CategoricalData',
@@ -200,9 +193,10 @@ class Profiler(TransformerPrimitiveBase[Input, Output, Hyperparams]):
                     old_metadata["structural_type"] = type(10.2)
 
                 _logger.info(
-                    "Date detector. 'column_index': '%(column_index)d', 'new_metadata': '%(new_metadata)s'",
+                    "Date detector. 'column_index': '%(column_index)d', 'old_metadata': '%(old_metadata)s', 'new_metadata': '%(new_metadata)s'",
                     {
                         'column_index': i,
+                        'old_metadata': dict(inputs.metadata.query((mbase.ALL_ELEMENTS, i))),
                         'new_metadata': old_metadata,
                     },
                 )
@@ -223,13 +217,6 @@ class Profiler(TransformerPrimitiveBase[Input, Output, Hyperparams]):
         if PhoneParser_indices:
             for i in PhoneParser_indices:
                 old_metadata = dict(inputs.metadata.query((mbase.ALL_ELEMENTS, i)))
-                _logger.info(
-                    "Phone detector. 'column_index': '%(column_index)d', 'old_metadata': '%(old_metadata)s'",
-                    {
-                        'column_index': i,
-                        'old_metadata': old_metadata,
-                    },
-                )
                 # print("old metadata", old_metadata)
                 old_metadata["semantic_types"] += ('https://metadata.datadrivendiscovery.org/types/AmericanPhoneNumber',
                                                   'https://metadata.datadrivendiscovery.org/types/UnnormalizedEntity',)
@@ -242,9 +229,10 @@ class Profiler(TransformerPrimitiveBase[Input, Output, Hyperparams]):
                     old_metadata["structural_type"] = type(10.2)
 
                 _logger.info(
-                    "Phone detector. 'column_index': '%(column_index)d', 'new_metadata': '%(new_metadata)s'",
+                    "Phone detector. 'column_index': '%(column_index)d', 'old_metadata': '%(old_metadata)s', 'new_metadata': '%(new_metadata)s'",
                     {
                         'column_index': i,
+                        'old_metadata': dict(inputs.metadata.query((mbase.ALL_ELEMENTS, i))),
                         'new_metadata': old_metadata,
                     },
                 )
@@ -259,13 +247,6 @@ class Profiler(TransformerPrimitiveBase[Input, Output, Hyperparams]):
         if PunctuationSplitter_indices:
             for i in PunctuationSplitter_indices:
                 old_metadata = dict(inputs.metadata.query((mbase.ALL_ELEMENTS, i)))
-                _logger.info(
-                    "Punctuation detector. 'column_index': '%(column_index)d', 'old_metadata': '%(old_metadata)s'",
-                    {
-                        'column_index': i,
-                        'old_metadata': old_metadata,
-                    },
-                )
                 old_metadata["semantic_types"] += ('https://metadata.datadrivendiscovery.org/types/CanBeSplitByPunctuation',)
 
                 if isinstance(self._sample_df.iloc[:, i].head(1).values[0], str):
@@ -276,9 +257,10 @@ class Profiler(TransformerPrimitiveBase[Input, Output, Hyperparams]):
                     old_metadata["structural_type"] = type(10.2)
 
                 _logger.info(
-                    "Punctuation detector. 'column_index': '%(column_index)d', 'new_metadata': '%(new_metadata)s'",
+                    "Punctuation detector. 'column_index': '%(column_index)d', 'old_metadata': '%(old_metadata)s', 'new_metadata': '%(new_metadata)s'",
                     {
                         'column_index': i,
+                        'old_metadata': dict(inputs.metadata.query((mbase.ALL_ELEMENTS, i))),
                         'new_metadata': old_metadata,
                     },
                 )
@@ -294,13 +276,6 @@ class Profiler(TransformerPrimitiveBase[Input, Output, Hyperparams]):
         if NumAlphaSplitter_indices:
             for i in NumAlphaSplitter_indices:
                 old_metadata = dict(inputs.metadata.query((mbase.ALL_ELEMENTS, i)))
-                _logger.info(
-                    "NumAlpha detector. 'column_index': '%(column_index)d', 'old_metadata': '%(old_metadata)s'",
-                    {
-                        'column_index': i,
-                        'old_metadata': old_metadata,
-                    },
-                )
                 old_metadata["semantic_types"] += ('https://metadata.datadrivendiscovery.org/types/CanBeSplitByAlphanumeric',)
 
                 if isinstance(self._sample_df.iloc[:, i].head(1).values[0], str):
@@ -311,9 +286,10 @@ class Profiler(TransformerPrimitiveBase[Input, Output, Hyperparams]):
                     old_metadata["structural_type"] = type(10.2)
 
                 _logger.info(
-                    "NumAlpha detector. 'column_index': '%(column_index)d', 'new_metadata': '%(new_metadata)s'",
+                    "NumAlpha detector. 'column_index': '%(column_index)d', 'old_metadata': '%(old_metadata)s', 'new_metadata': '%(new_metadata)s'",
                     {
                         'column_index': i,
+                        'old_metadata': dict(inputs.metadata.query((mbase.ALL_ELEMENTS, i))),
                         'new_metadata': old_metadata,
                     },
                 )
@@ -397,13 +373,7 @@ class Profiler(TransformerPrimitiveBase[Input, Output, Hyperparams]):
 
             # if block updated on 6/26
 
-            _logger.info(
-                "category detector. 'column_index': '%(column_index)d', 'old_metadata': '%(old_metadata)s'",
-                {
-                    'column_index': column_counter,
-                    'old_metadata': dict(data.metadata.query((mbase.ALL_ELEMENTS, column_counter))),
-                },
-            )
+            old_metadata = dict(data.metadata.query((mbase.ALL_ELEMENTS, column_counter))),
 
             if 'semantic_types' in self._specified_features and is_category[column_name]:
                 # rewrites old metadata
@@ -497,9 +467,10 @@ class Profiler(TransformerPrimitiveBase[Input, Output, Hyperparams]):
             metadata = metadata.update(prefix + [ALL_ELEMENTS, column_counter], each_res)
 
             _logger.info(
-                "category detector. 'column_index': '%(column_index)d', 'new_metadata': '%(new_metadata)s'",
+                "category detector. 'column_index': '%(column_index)d', 'old_metadata': '%(old_metadata)s', 'new_metadata': '%(new_metadata)s'",
                 {
                     'column_index': column_counter,
+                    'old_metadata': old_metadata,
                     'new_metadata': dict(data.metadata.query((mbase.ALL_ELEMENTS, column_counter))),
                 },
             )
