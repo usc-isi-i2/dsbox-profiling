@@ -12,7 +12,7 @@ from d3m.primitive_interfaces.base import CallResult
 from d3m.primitive_interfaces.transformer import TransformerPrimitiveBase
 
 from . import config
-
+import logging
 
 def isfloat(value):
     try:
@@ -32,12 +32,18 @@ def detector(inputs):
                           'https://metadata.datadrivendiscovery.org/types/Attribute')
               }
 
-    print("integer and float detector \n")
-
+    _logger = logging.getLogger(__name__)
 
     for col in range(inputs.shape[1]):
         temp = inputs.iloc[:, col]
         old_metadata = dict(inputs.metadata.query((mbase.ALL_ELEMENTS, col)))
+        _logger.info(
+            "Integer and float detector. 'column_index': '%(column_index)d', 'old_metadata': '%(old_metadata)s'",
+            {
+                'column_index': col,
+                'old_metadata': old_metadata,
+            },
+        )
         dtype = pd.DataFrame(temp.dropna().str.isnumeric().value_counts())
         ## if there is already a data type, see if that is equal to what we identified, else update
         ## corner case : Integer type, could be a categorical Arrtribute
@@ -71,6 +77,15 @@ def detector(inputs):
                         else:
                             old_metadata["semantic_types"] = ('http://schema.org/Float')
                         old_metadata["structural_type"] = type(10.0)
+
+        _logger.info(
+            "Integer and float detector. 'column_index': '%(column_index)d', 'new_metadata': '%(new_metadata)s'",
+            {
+                'column_index': col,
+                'new_metadata': old_metadata,
+            },
+        )
+
         inputs.metadata = inputs.metadata.update((mbase.ALL_ELEMENTS, col), old_metadata)
 
     return inputs
