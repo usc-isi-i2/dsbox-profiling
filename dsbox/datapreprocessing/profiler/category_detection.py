@@ -2,7 +2,6 @@ import pandas as pd
 import numpy as np
 from sklearn.utils import shuffle
 
-
 def __shuffle_dict(col,seed):
     key = col.unique()
     shuffled = np.array(key,copy=True)
@@ -115,7 +114,6 @@ def __column_detect(dtype,nunique,nunique_ratio,dropMax,H,M):
                     return False
 
 def category_detect(data):
-    print("In Category detect function \n")
     table = __tableGen(data)
     res_dict = {}
     for index, row in table.iterrows():
