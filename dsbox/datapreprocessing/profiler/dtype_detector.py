@@ -32,7 +32,7 @@ def detector(inputs):
                           'https://metadata.datadrivendiscovery.org/types/Attribute')
               }
 
-    _logger = logging.getLogger(__name__)
+    # _logger = logging.getLogger(__name__)
 
     for col in range(inputs.shape[1]):
         temp = inputs.iloc[:, col]
@@ -71,14 +71,14 @@ def detector(inputs):
                             old_metadata["semantic_types"] = ('http://schema.org/Float')
                         old_metadata["structural_type"] = type(10.0)
 
-        _logger.info(
-            "Integer and float detector. 'column_index': '%(column_index)d', 'old_metadata': '%(old_metadata)s', 'new_metadata': '%(new_metadata)s'",
-            {
-                'column_index': col,
-                'old_metadata': dict(inputs.metadata.query((mbase.ALL_ELEMENTS, col))),
-                'new_metadata': old_metadata,
-            },
-        )
+        # _logger.info(
+        #     "Integer and float detector. 'column_index': '%(column_index)d', 'old_metadata': '%(old_metadata)s', 'new_metadata': '%(new_metadata)s'",
+        #     {
+        #         'column_index': col,
+        #         'old_metadata': dict(inputs.metadata.query((mbase.ALL_ELEMENTS, col))),
+        #         'new_metadata': old_metadata,
+        #     },
+        # )
 
         inputs.metadata = inputs.metadata.update((mbase.ALL_ELEMENTS, col), old_metadata)
 

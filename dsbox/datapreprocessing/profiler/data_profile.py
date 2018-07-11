@@ -373,7 +373,7 @@ class Profiler(TransformerPrimitiveBase[Input, Output, Hyperparams]):
 
             # if block updated on 6/26
 
-            old_metadata = dict(data.metadata.query((mbase.ALL_ELEMENTS, column_counter))),
+            # old_metadata = dict(data.metadata.query((mbase.ALL_ELEMENTS, column_counter))),
 
             if 'semantic_types' in self._specified_features and is_category[column_name]:
                 # rewrites old metadata
@@ -466,14 +466,14 @@ class Profiler(TransformerPrimitiveBase[Input, Output, Hyperparams]):
 
             metadata = metadata.update(prefix + [ALL_ELEMENTS, column_counter], each_res)
 
-            _logger.info(
-                "category detector. 'column_index': '%(column_index)d', 'old_metadata': '%(old_metadata)s', 'new_metadata': '%(new_metadata)s'",
-                {
-                    'column_index': column_counter,
-                    'old_metadata': old_metadata,
-                    'new_metadata': dict(data.metadata.query((mbase.ALL_ELEMENTS, column_counter))),
-                },
-            )
+            # _logger.info(
+            #     "category detector. 'column_index': '%(column_index)d', 'old_metadata': '%(old_metadata)s', 'new_metadata': '%(new_metadata)s'",
+            #     {
+            #         'column_index': column_counter,
+            #         'old_metadata': old_metadata,
+            #         'new_metadata': dict(data.metadata.query((mbase.ALL_ELEMENTS, column_counter))),
+            #     },
+            # )
         return metadata
 
 
