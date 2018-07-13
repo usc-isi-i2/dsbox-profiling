@@ -179,12 +179,10 @@ class Profiler(TransformerPrimitiveBase[Input, Output, Hyperparams]):
                 old_metadata = dict(inputs.metadata.query((mbase.ALL_ELEMENTS, i)))
                 temp_value = list(old_metadata["semantic_types"])
                 if len(temp_value) >= 1:
-                    old_metadata["semantic_types"] = ('https://metadata.datadrivendiscovery.org/types/CategoricalData',
-                                                      'https://metadata.datadrivendiscovery.org/types/Time',
-                                                      temp_value[-1])
-                else:
-                    old_metadata["semantic_types"] = ('https://metadata.datadrivendiscovery.org/types/CategoricalData',
-                                                      'https://metadata.datadrivendiscovery.org/types/Time')
+                    if 'https://metadata.datadrivendiscovery.org/types/CategoricalData' not in old_metadata["semantic_types"]:
+                        old_metadata["semantic_types"] += ('https://metadata.datadrivendiscovery.org/types/CategoricalData',)
+                    if 'https://metadata.datadrivendiscovery.org/types/Time' not in old_metadata["semantic_types"]:
+                        old_metadata["semantic_types"] += ('https://metadata.datadrivendiscovery.org/types/Time',)
                 if isinstance(self._sample_df.iloc[:, i].head(1).values[0], str):
                     old_metadata["structural_type"] = type("str")
                 elif isinstance(self._sample_df.iloc[:, i].head(1).values[0], int):
@@ -218,8 +216,10 @@ class Profiler(TransformerPrimitiveBase[Input, Output, Hyperparams]):
             for i in PhoneParser_indices:
                 old_metadata = dict(inputs.metadata.query((mbase.ALL_ELEMENTS, i)))
                 # print("old metadata", old_metadata)
-                old_metadata["semantic_types"] += ('https://metadata.datadrivendiscovery.org/types/AmericanPhoneNumber',
-                                                  'https://metadata.datadrivendiscovery.org/types/UnnormalizedEntity',)
+                if 'https://metadata.datadrivendiscovery.org/types/AmericanPhoneNumber' not in old_metadata["semantic_types"]:
+                    old_metadata["semantic_types"] += ('https://metadata.datadrivendiscovery.org/types/AmericanPhoneNumber',)
+                if 'https://metadata.datadrivendiscovery.org/types/UnnormalizedEntity' not in old_metadata["semantic_types"]:
+                    old_metadata["semantic_types"] += ('https://metadata.datadrivendiscovery.org/types/UnnormalizedEntity',)
 
                 if isinstance(self._sample_df.iloc[:, i].head(1).values[0], str):
                     old_metadata["structural_type"] = type("str")
@@ -247,7 +247,8 @@ class Profiler(TransformerPrimitiveBase[Input, Output, Hyperparams]):
         if PunctuationSplitter_indices:
             for i in PunctuationSplitter_indices:
                 old_metadata = dict(inputs.metadata.query((mbase.ALL_ELEMENTS, i)))
-                old_metadata["semantic_types"] += ('https://metadata.datadrivendiscovery.org/types/CanBeSplitByPunctuation',)
+                if 'https://metadata.datadrivendiscovery.org/types/CanBeSplitByPunctuation' not in old_metadata["semantic_types"]:
+                    old_metadata["semantic_types"] += ('https://metadata.datadrivendiscovery.org/types/CanBeSplitByPunctuation',)
 
                 if isinstance(self._sample_df.iloc[:, i].head(1).values[0], str):
                     old_metadata["structural_type"] = type("str")
@@ -276,7 +277,8 @@ class Profiler(TransformerPrimitiveBase[Input, Output, Hyperparams]):
         if NumAlphaSplitter_indices:
             for i in NumAlphaSplitter_indices:
                 old_metadata = dict(inputs.metadata.query((mbase.ALL_ELEMENTS, i)))
-                old_metadata["semantic_types"] += ('https://metadata.datadrivendiscovery.org/types/CanBeSplitByAlphanumeric',)
+                if 'https://metadata.datadrivendiscovery.org/types/CanBeSplitByAlphanumeric' not in old_metadata["semantic_types"]:
+                    old_metadata["semantic_types"] += ('https://metadata.datadrivendiscovery.org/types/CanBeSplitByAlphanumeric',)
 
                 if isinstance(self._sample_df.iloc[:, i].head(1).values[0], str):
                     old_metadata["structural_type"] = type("str")

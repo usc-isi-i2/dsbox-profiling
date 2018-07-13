@@ -49,11 +49,8 @@ def detector(inputs):
                     old_metadata["structural_type"] = type(10)
 
                 else:
-                    temp_value = list(old_metadata["semantic_types"])
-                    if len(temp_value) >= 1:
-                        old_metadata["semantic_types"] = ('http://schema.org/Integer', temp_value[-1])
-                    else:
-                        old_metadata["semantic_types"] = ('http://schema.org/Integer')
+                    if 'http://schema.org/Integer' not in old_metadata["semantic_types"]:
+                        old_metadata["semantic_types"] += ('http://schema.org/Integer',)
                     old_metadata["structural_type"] = type(10)
         # detetct Float and update metadata
         else:
@@ -64,11 +61,8 @@ def detector(inputs):
                     "Categorical"] or old_metadata["semantic_types"] == lookup["Ordinal"]:
                         old_metadata["structural_type"] = type(10.0)
                     else:
-                        temp_value = list(old_metadata["semantic_types"])
-                        if len(temp_value) > 1:
-                            old_metadata["semantic_types"] = ('http://schema.org/Float', temp_value[-1])
-                        else:
-                            old_metadata["semantic_types"] = ('http://schema.org/Float')
+                        if 'http://schema.org/Float' not in old_metadata["semantic_types"]:
+                            old_metadata["semantic_types"] += ('http://schema.org/Float',)
                         old_metadata["structural_type"] = type(10.0)
 
         # _logger.info(
