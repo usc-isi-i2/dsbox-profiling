@@ -244,8 +244,8 @@ class Profiler(TransformerPrimitiveBase[Input, Output, Hyperparams]):
         self._PunctuationSplitter = PunctuationParser(self._sample_df)
 
         PunctuationSplitter_indices = self._PunctuationSplitter.detect()
-        if PunctuationSplitter_indices:
-            for i in PunctuationSplitter_indices:
+        if PunctuationSplitter_indices[0]:
+            for i in PunctuationSplitter_indices[0]:
                 old_metadata = dict(inputs.metadata.query((mbase.ALL_ELEMENTS, i)))
                 if 'https://metadata.datadrivendiscovery.org/types/CanBeSplitByPunctuation' not in old_metadata["semantic_types"]:
                     old_metadata["semantic_types"] += ('https://metadata.datadrivendiscovery.org/types/CanBeSplitByPunctuation',)
@@ -274,8 +274,8 @@ class Profiler(TransformerPrimitiveBase[Input, Output, Hyperparams]):
 
         NumAlphaSplitter_indices = self._NumAlphaSplitter.detect()
 
-        if NumAlphaSplitter_indices:
-            for i in NumAlphaSplitter_indices:
+        if NumAlphaSplitter_indices[0]:
+            for i in NumAlphaSplitter_indices[0]:
                 old_metadata = dict(inputs.metadata.query((mbase.ALL_ELEMENTS, i)))
                 if 'https://metadata.datadrivendiscovery.org/types/CanBeSplitByAlphanumeric' not in old_metadata["semantic_types"]:
                     old_metadata["semantic_types"] += ('https://metadata.datadrivendiscovery.org/types/CanBeSplitByAlphanumeric',)
