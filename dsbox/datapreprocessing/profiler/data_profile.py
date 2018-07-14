@@ -17,9 +17,9 @@ from d3m.metadata.base import DataMetadata, PrimitiveFamily, PrimitiveAlgorithmT
 from d3m.primitive_interfaces.base import CallResult
 from d3m.primitive_interfaces.transformer import TransformerPrimitiveBase
 
-from dsbox.datapreprocessing.cleaner.date_featurizer_org import DateFeaturizerOrg
+from dsbox.datapreprocessing.profiler.date_featurizer_org import DateFeaturizerOrg
 
-from dsbox.datapreprocessing.cleaner.spliter import PhoneParser, PunctuationParser, NumAlphaParser
+from dsbox.datapreprocessing.profiler.spliter import PhoneParser, PunctuationParser, NumAlphaParser
 
 from . import category_detection
 from . import config
